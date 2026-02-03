@@ -15,10 +15,10 @@ jobs:
     if: ${{ github.repository != 'simonw/shot-scraper-template' }}
     steps:
     - uses: actions/checkout@v3
-    - name: Set up Python 3.10
+    - name: Set up Python 3.11
       uses: actions/setup-python@v3
       with:
-        python-version: "3.10"
+        python-version: "3.11"
     - uses: actions/cache@v3
       name: Configure pip caching
       with:
