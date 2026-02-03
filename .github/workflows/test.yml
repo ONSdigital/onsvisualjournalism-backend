@@ -26,12 +26,15 @@ jobs:
         key: ${{ runner.os }}-pip-${{ hashFiles('requirements.txt') }}
         restore-keys: |
           ${{ runner.os }}-pip-
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
     - name: Fetch articles JSON
       run: |
         curl -L "https://raw.githubusercontent.com/ONSdigital/get-ons-vis-screenshots/refs/heads/main/articles-and-dvcs.json" -o articles-and-dvcs.json
     - name: Install notebook runner
       run: |
-        python -m pip install --upgrade pip
         pip install jupyter
     - name: Run notebook
       run: |
