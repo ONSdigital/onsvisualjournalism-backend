@@ -43,7 +43,7 @@
             "vis": [
                   {
                         "url": "/visualisations/dvc3445/fig07/index.html",
-                        "chart_type": "line-chart"
+                        "chart_type": null
                   }
             ]
       },
@@ -60,7 +60,7 @@
             "vis": [
                   {
                         "url": "/visualisations/dvc3451/fig01/index.html",
-                        "chart_type": "bar-chart"
+                        "chart_type": null
                   }
             ]
       },
@@ -131,11 +131,11 @@
                   },
                   {
                         "url": "/visualisations/dvc3441/all_overview/index.html",
-                        "chart_type": "line-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc3441/dov_overview/index.html",
-                        "chart_type": "line-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc3441/dov_sm_wrapper/index.html",
@@ -143,7 +143,7 @@
                   },
                   {
                         "url": "/visualisations/dvc3441/sue_overview/index.html",
-                        "chart_type": "line-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc3441/sue_sm_wrapper/index.html",
@@ -151,7 +151,7 @@
                   },
                   {
                         "url": "/visualisations/dvc3441/horm_overview/index.html",
-                        "chart_type": "line-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc3441/horm_sm_wrapper/index.html",
@@ -167,7 +167,7 @@
                   },
                   {
                         "url": "/visualisations/dvc3441/tai_overview/index.html",
-                        "chart_type": "line-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc3441/tai_sm_wrapper/index.html",
@@ -450,7 +450,7 @@
             "vis": [
                   {
                         "url": "/visualisations/dvc3417/waterfall/index.html",
-                        "chart_type": "range-plot"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc3417/carousels/carousel-1/index.html",
@@ -478,7 +478,7 @@
                   },
                   {
                         "url": "/visualisations/dvc3417/line-chart/index.html",
-                        "chart_type": "line-chart"
+                        "chart_type": null
                   }
             ]
       },
@@ -504,19 +504,19 @@
             "vis": [
                   {
                         "url": "/visualisations/dvc3412/fig02/index.html",
-                        "chart_type": "line-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc3412/fig03/index.html",
-                        "chart_type": "line-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc3412/fig04/index.html",
-                        "chart_type": "line-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc3412/fig05/index.html",
-                        "chart_type": "line-chart"
+                        "chart_type": null
                   }
             ]
       },
@@ -694,7 +694,7 @@
             "vis": [
                   {
                         "url": "/visualisations/dvc3405/fig7/index.html",
-                        "chart_type": "line-chart"
+                        "chart_type": null
                   }
             ]
       },
@@ -718,7 +718,7 @@
                   },
                   {
                         "url": "/visualisations/dvc3339/fig06/index.html",
-                        "chart_type": "range-plot"
+                        "chart_type": null
                   }
             ]
       },
@@ -772,19 +772,19 @@
             "vis": [
                   {
                         "url": "/visualisations/dvc3379/fig-01/index.html",
-                        "chart_type": "line-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc3379/fig-02/index.html",
-                        "chart_type": "line-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc3379/fig-08/index.html",
-                        "chart_type": "range-plot"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc3379/fig-09/index.html",
-                        "chart_type": "range-plot"
+                        "chart_type": null
                   }
             ]
       },
@@ -862,15 +862,15 @@
             "vis": [
                   {
                         "url": "/visualisations/dvc3369/Fig01/index.html",
-                        "chart_type": "column-chart-small-multiple"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc3369/Fig02/index.html",
-                        "chart_type": "column-chart-small-multiple"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc3369/Fig03/index.html",
-                        "chart_type": "column-chart-small-multiple"
+                        "chart_type": null
                   }
             ]
       },
@@ -916,11 +916,11 @@
             "vis": [
                   {
                         "url": "/visualisations/dvc3349/fig01/index.html",
-                        "chart_type": "line-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc3349/fig02/index.html",
-                        "chart_type": "range-plot"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc3349/fig03/index.html",
@@ -932,7 +932,7 @@
                   },
                   {
                         "url": "/visualisations/dvc3349/fig05/index.html",
-                        "chart_type": "static-population-pyramid"
+                        "chart_type": null
                   }
             ]
       },
@@ -950,11 +950,11 @@
             "vis": [
                   {
                         "url": "/visualisations/dvc3367/fig01/index.html",
-                        "chart_type": "range-plot"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc3367/fig02/index.html",
-                        "chart_type": "bar-chart"
+                        "chart_type": null
                   }
             ]
       },
@@ -970,7 +970,7 @@
             "vis": [
                   {
                         "url": "/visualisations/dvc3353/fig05/index.html",
-                        "chart_type": "bar-chart"
+                        "chart_type": null
                   }
             ]
       },
@@ -1032,7 +1032,7 @@
             "vis": [
                   {
                         "url": "/visualisations/dvc3330/fig-01/index.html",
-                        "chart_type": "bar-chart"
+                        "chart_type": null
                   }
             ]
       },
@@ -1048,7 +1048,7 @@
             "vis": [
                   {
                         "url": "/visualisations/dvc3334/fig02/index.html",
-                        "chart_type": "line-chart"
+                        "chart_type": null
                   }
             ]
       },
@@ -1066,11 +1066,11 @@
             "vis": [
                   {
                         "url": "/visualisations/dvc3337/fig6/index.html",
-                        "chart_type": "bar-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc3337/fig7/index.html",
-                        "chart_type": "bar-chart"
+                        "chart_type": null
                   }
             ]
       },
@@ -1104,15 +1104,15 @@
                   },
                   {
                         "url": "/visualisations/dvc3326/fig02/index.html",
-                        "chart_type": "stacked-column-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc3326/fig03/index.html",
-                        "chart_type": "stacked-column-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc3326/fig04/index.html",
-                        "chart_type": "range-plot"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc3326/fig06/index.html",
@@ -1120,15 +1120,15 @@
                   },
                   {
                         "url": "/visualisations/dvc3326/fig11/index.html",
-                        "chart_type": "line-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc3326/fig12/index.html",
-                        "chart_type": "stacked-column-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc3326/fig15/index.html",
-                        "chart_type": "stacked-column-chart"
+                        "chart_type": null
                   }
             ]
       },
@@ -1164,11 +1164,11 @@
             "vis": [
                   {
                         "url": "/visualisations/dvc3304/fig03/index.html",
-                        "chart_type": "split-bar-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc3304/fig04/index.html",
-                        "chart_type": "bar-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc3304/fig05/index.html",
@@ -1254,7 +1254,7 @@
             "vis": [
                   {
                         "url": "/visualisations/dvc3298/fig01/index.html",
-                        "chart_type": "line-chart"
+                        "chart_type": null
                   }
             ]
       },
@@ -1282,11 +1282,11 @@
                   },
                   {
                         "url": "/visualisations/dvc3295/fig02/index.html",
-                        "chart_type": "bar-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc3295/fig03/index.html",
-                        "chart_type": "range-plot"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc3295/fig06/index.html",
@@ -1294,7 +1294,7 @@
                   },
                   {
                         "url": "/visualisations/dvc3295/fig07/index.html",
-                        "chart_type": "line-chart"
+                        "chart_type": null
                   }
             ]
       },
@@ -1313,15 +1313,15 @@
             "vis": [
                   {
                         "url": "/visualisations/dvc3293/employee-pay/index.html",
-                        "chart_type": "column-chart-small-multiple"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc3293/employment-probability/index.html",
-                        "chart_type": "column-chart-small-multiple"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc3293/Fig02/index.html",
-                        "chart_type": "column-chart-small-multiple"
+                        "chart_type": null
                   }
             ]
       },
@@ -1352,7 +1352,7 @@
                   },
                   {
                         "url": "/visualisations/dvc3280/fig02/index.html",
-                        "chart_type": "bar-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc3280/fig03/index.html",
@@ -1360,7 +1360,7 @@
                   },
                   {
                         "url": "/visualisations/dvc3280/fig04/index.html",
-                        "chart_type": "line-chart"
+                        "chart_type": null
                   }
             ]
       },
@@ -1478,7 +1478,7 @@
             "vis": [
                   {
                         "url": "/visualisations/dvc3268/fig2/index.html",
-                        "chart_type": "stacked-horizontal-bar-chart"
+                        "chart_type": null
                   }
             ]
       },
@@ -1596,19 +1596,19 @@
             "vis": [
                   {
                         "url": "/visualisations/dvc3247/fig04/index.html",
-                        "chart_type": "line-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc3247/fig05/index.html",
-                        "chart_type": "line-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc3247/fig06/index.html",
-                        "chart_type": "line-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc3247/fig07/index.html",
-                        "chart_type": "line-chart"
+                        "chart_type": null
                   }
             ]
       },
@@ -1696,7 +1696,7 @@
             "vis": [
                   {
                         "url": "/visualisations/dvc3215/fig02/index.html",
-                        "chart_type": "line-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc3215/fig03/index.html",
@@ -1735,15 +1735,15 @@
             "vis": [
                   {
                         "url": "/visualisations/dvc3225/Fig01/index.html",
-                        "chart_type": "range-plot"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc3225/Fig02/index.html",
-                        "chart_type": "stacked-horizontal-bar-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc3225/Fig03/index.html",
-                        "chart_type": "range-plot"
+                        "chart_type": null
                   }
             ]
       },
@@ -1769,15 +1769,15 @@
                   },
                   {
                         "url": "/visualisations/dvc3216/fig2/index.html",
-                        "chart_type": "grouped-bar-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc3216/fig3/index.html",
-                        "chart_type": "grouped-bar-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc3216/fig4/index.html",
-                        "chart_type": "grouped-bar-chart"
+                        "chart_type": null
                   }
             ]
       },
@@ -1817,11 +1817,11 @@
             "vis": [
                   {
                         "url": "/visualisations/dvc3194/fig05/index.html",
-                        "chart_type": "range-plot"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc3194/fig11/index.html",
-                        "chart_type": "range-plot"
+                        "chart_type": null
                   }
             ]
       },
@@ -1841,7 +1841,7 @@
             "vis": [
                   {
                         "url": "/visualisations/dvc3199/fig02/index.html",
-                        "chart_type": "stacked-horizontal-bar-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc3199/fig03/index.html",
@@ -1849,7 +1849,7 @@
                   },
                   {
                         "url": "/visualisations/dvc3199/fig05/index.html",
-                        "chart_type": "range-plot"
+                        "chart_type": null
                   }
             ]
       },
@@ -1875,7 +1875,7 @@
                   },
                   {
                         "url": "/visualisations/dvc3178/fig02/index.html",
-                        "chart_type": "range-plot"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc3178/fig03/index.html",
@@ -1964,7 +1964,7 @@
                   },
                   {
                         "url": "/visualisations/dvc3144/fig01/index.html",
-                        "chart_type": "range-plot"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc3144/cyp_images/2678Section2.svg",
@@ -1972,7 +1972,7 @@
                   },
                   {
                         "url": "/visualisations/dvc3144/fig02/index.html",
-                        "chart_type": "range-plot"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc3144/cyp_images/2678Section3.svg",
@@ -1980,11 +1980,11 @@
                   },
                   {
                         "url": "/visualisations/dvc3144/fig03/index.html",
-                        "chart_type": "range-plot"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc3144/fig04/index.html",
-                        "chart_type": "range-plot"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc3144/cyp_images/2678Section4.svg",
@@ -1992,11 +1992,11 @@
                   },
                   {
                         "url": "/visualisations/dvc3144/fig05/index.html",
-                        "chart_type": "range-plot"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc3144/fig06/index.html",
-                        "chart_type": "range-plot"
+                        "chart_type": null
                   }
             ]
       },
@@ -2014,11 +2014,11 @@
             "vis": [
                   {
                         "url": "/visualisations/dvc3185/fig01/index.html",
-                        "chart_type": "range-plot"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc3185/fig02/index.html",
-                        "chart_type": "range-plot"
+                        "chart_type": null
                   }
             ]
       },
@@ -2115,15 +2115,15 @@
                   },
                   {
                         "url": "/visualisations/dvc3140/fig03/index.html",
-                        "chart_type": "stacked-horizontal-bar-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc3140/fig04/index.html",
-                        "chart_type": "stacked-horizontal-bar-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc3140/fig05/index.html",
-                        "chart_type": "line-chart"
+                        "chart_type": null
                   }
             ]
       },
@@ -2174,7 +2174,7 @@
             "vis": [
                   {
                         "url": "/visualisations/dvc3155/fig04/index.html",
-                        "chart_type": "static-population-pyramid"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc3155/fig06/index.html",
@@ -2198,11 +2198,11 @@
             "vis": [
                   {
                         "url": "/visualisations/dvc3135/fig3-characteristic/index.html",
-                        "chart_type": "grouped-bar-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc3135/fig4-inequality/index.html",
-                        "chart_type": "dot-plot"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc3135/fig5-region/index.html",
@@ -2327,23 +2327,23 @@
             "vis": [
                   {
                         "url": "/visualisations/dvc3119/fig02/index.html",
-                        "chart_type": "line-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc3119/fig03/index.html",
-                        "chart_type": "range-plot"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc3119/fig04/index.html",
-                        "chart_type": "line-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc3119/fig05/index.html",
-                        "chart_type": "range-plot"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc3119/fig06/index.html",
-                        "chart_type": "line-chart"
+                        "chart_type": null
                   }
             ]
       },
@@ -2452,7 +2452,7 @@
             "vis": [
                   {
                         "url": "/visualisations/dvc3116/fig01/index.html",
-                        "chart_type": "range-plot"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc3116/fig02/index.html",
@@ -2460,7 +2460,7 @@
                   },
                   {
                         "url": "/visualisations/dvc3116/fig03/index.html",
-                        "chart_type": "line-chart"
+                        "chart_type": null
                   }
             ]
       },
@@ -2560,39 +2560,39 @@
             "vis": [
                   {
                         "url": "/visualisations/dvc3078/fig01/index.html",
-                        "chart_type": "line-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc3078/fig02/index.html",
-                        "chart_type": "line-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc3078/fig03/index.html",
-                        "chart_type": "line-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc3078/fig04/index.html",
-                        "chart_type": "line-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc3078/fig05/index.html",
-                        "chart_type": "line-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc3078/fig06/index.html",
-                        "chart_type": "line-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc3078/fig07/index.html",
-                        "chart_type": "line-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc3078/fig08/index.html",
-                        "chart_type": "line-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc3078/fig09/index.html",
-                        "chart_type": "line-chart"
+                        "chart_type": null
                   }
             ]
       },
@@ -2615,23 +2615,23 @@
             "vis": [
                   {
                         "url": "/visualisations/dvc3093/fig01/index.html",
-                        "chart_type": "line-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc3093/fig02/index.html",
-                        "chart_type": "range-plot"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc3093/fig03/index.html",
-                        "chart_type": "line-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc3093/fig06/index.html",
-                        "chart_type": "range-plot"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc3093/fig07/index.html",
-                        "chart_type": "range-plot"
+                        "chart_type": null
                   }
             ]
       },
@@ -2659,7 +2659,7 @@
                   },
                   {
                         "url": "/visualisations/dvc3097/fig5/index.html",
-                        "chart_type": "line-chart"
+                        "chart_type": null
                   }
             ]
       },
@@ -2683,7 +2683,7 @@
             "vis": [
                   {
                         "url": "/visualisations/dvc3043/fig01/index.html",
-                        "chart_type": "line-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc3043/fig02/index.html",
@@ -2691,7 +2691,7 @@
                   },
                   {
                         "url": "/visualisations/dvc3043/fig03/index.html",
-                        "chart_type": "line-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc3043/fig04/index.html",
@@ -2729,23 +2729,23 @@
                   },
                   {
                         "url": "/visualisations/dvc3086/fig02/index.html",
-                        "chart_type": "range-plot"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc3086/fig03/index.html",
-                        "chart_type": "stacked-horizontal-bar-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc3086/fig04/index.html",
-                        "chart_type": "stacked-horizontal-bar-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc3086/fig05/index.html",
-                        "chart_type": "stacked-horizontal-bar-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc3086/fig06/index.html",
-                        "chart_type": "stacked-horizontal-bar-chart"
+                        "chart_type": null
                   }
             ]
       },
@@ -2767,19 +2767,19 @@
             "vis": [
                   {
                         "url": "/visualisations/dvc3085/fig01/index.html",
-                        "chart_type": "bar-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc3085/fig03/index.html",
-                        "chart_type": "range-plot"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc3085/fig05/index.html",
-                        "chart_type": "range-plot"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc3085/fig06/index.html",
-                        "chart_type": "range-plot"
+                        "chart_type": null
                   }
             ]
       },
@@ -2807,7 +2807,7 @@
                   },
                   {
                         "url": "/visualisations/dvc3065/bar-chart/index.html",
-                        "chart_type": "bar-chart"
+                        "chart_type": null
                   }
             ]
       },
@@ -2908,7 +2908,7 @@
                   },
                   {
                         "url": "/visualisations/dvc3089/fig01/index.html",
-                        "chart_type": "line-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc3089/images/Margaret.svg",
@@ -2916,11 +2916,11 @@
                   },
                   {
                         "url": "/visualisations/dvc3089/fig02/index.html",
-                        "chart_type": "line-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc3089/fig03/index.html",
-                        "chart_type": "line-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc3089/images/Susan.svg",
@@ -2928,7 +2928,7 @@
                   },
                   {
                         "url": "/visualisations/dvc3089/fig04/index.html",
-                        "chart_type": "line-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc3089/images/Chloe.svg",
@@ -2936,7 +2936,7 @@
                   },
                   {
                         "url": "/visualisations/dvc3089/fig05/index.html",
-                        "chart_type": "line-chart"
+                        "chart_type": null
                   }
             ]
       },
@@ -3012,7 +3012,7 @@
             "vis": [
                   {
                         "url": "/visualisations/dvc3046/fig03/index.html",
-                        "chart_type": "line-chart"
+                        "chart_type": null
                   }
             ]
       },
@@ -3032,15 +3032,15 @@
             "vis": [
                   {
                         "url": "/visualisations/dvc3074/fig01/index.html",
-                        "chart_type": "line-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc3074/fig02/index.html",
-                        "chart_type": "bar-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc3074/fig04/index.html",
-                        "chart_type": "range-plot"
+                        "chart_type": null
                   }
             ]
       },
@@ -3056,7 +3056,7 @@
             "vis": [
                   {
                         "url": "/visualisations/dvc3039/fig02/index.html",
-                        "chart_type": "bar-chart"
+                        "chart_type": null
                   }
             ]
       },
@@ -3096,7 +3096,7 @@
                   },
                   {
                         "url": "/visualisations/dvc3034/fig04/index.html",
-                        "chart_type": "scatter-plot"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc3034/fig05/index.html",
@@ -3108,7 +3108,7 @@
                   },
                   {
                         "url": "/visualisations/dvc3034/fig07/index.html",
-                        "chart_type": "scatter-plot"
+                        "chart_type": null
                   }
             ]
       },
@@ -3138,31 +3138,31 @@
             "vis": [
                   {
                         "url": "/visualisations/dvc3031/fig01/index.html",
-                        "chart_type": "line-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc3031/fig02/index.html",
-                        "chart_type": "line-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc3031/fig03/index.html",
-                        "chart_type": "range-plot"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc3031/fig04/index.html",
-                        "chart_type": "line-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc3031/fig05/index.html",
-                        "chart_type": "line-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc3031/fig06/index.html",
-                        "chart_type": "range-plot"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc3031/fig07/index.html",
-                        "chart_type": "range-plot"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc3031/fig08/index.html",
@@ -3293,19 +3293,19 @@
             "vis": [
                   {
                         "url": "/visualisations/dvc3035/fig1/index.html",
-                        "chart_type": "stacked-horizontal-bar-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc3035/fig2/index.html",
-                        "chart_type": "stacked-horizontal-bar-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc3035/fig3/index.html",
-                        "chart_type": "stacked-horizontal-bar-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc3035/fig4/index.html",
-                        "chart_type": "bar-chart"
+                        "chart_type": null
                   }
             ]
       },
@@ -3375,15 +3375,15 @@
             "vis": [
                   {
                         "url": "/visualisations/dvc3009/fig06/index.html",
-                        "chart_type": "range-plot"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc3009/fig20/index.html",
-                        "chart_type": "line-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc3009/fig21/index.html",
-                        "chart_type": "line-chart"
+                        "chart_type": null
                   }
             ]
       },
@@ -3409,15 +3409,15 @@
             "vis": [
                   {
                         "url": "/visualisations/dvc2895/fig-1-line/index.html",
-                        "chart_type": "line-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2895/fig-2/index.html",
-                        "chart_type": "column-chart-small-multiple"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2895/fig-3/index.html",
-                        "chart_type": "line-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2895/fig-4/index.html",
@@ -3425,11 +3425,11 @@
                   },
                   {
                         "url": "/visualisations/dvc2895/fig-5-bar-age/index.html",
-                        "chart_type": "bar-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2895/fig-6-bar-country/index.html",
-                        "chart_type": "bar-chart"
+                        "chart_type": null
                   }
             ]
       },
@@ -3576,7 +3576,7 @@
             "vis": [
                   {
                         "url": "/visualisations/dvc2986/heatmap/index.html",
-                        "chart_type": "heatmap"
+                        "chart_type": null
                   }
             ]
       },
@@ -3628,23 +3628,23 @@
             "vis": [
                   {
                         "url": "/visualisations/dvc2957/fig1/index.html",
-                        "chart_type": "small-multiple-stacked-area-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2957/fig2/index.html",
-                        "chart_type": "stacked-area-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2957/fig3/index.html",
-                        "chart_type": "stacked-area-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2957/fig4/index.html",
-                        "chart_type": "stacked-area-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2957/fig5/index.html",
-                        "chart_type": "stacked-area-chart"
+                        "chart_type": null
                   }
             ]
       },
@@ -3670,7 +3670,7 @@
                   },
                   {
                         "url": "/visualisations/dvc2976/fig4/index.html",
-                        "chart_type": "scatter-plot"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2976/fig5/index.html",
@@ -3706,7 +3706,7 @@
                   },
                   {
                         "url": "/visualisations/dvc2944/fig07/index.html",
-                        "chart_type": "range-plot"
+                        "chart_type": null
                   }
             ]
       },
@@ -3736,11 +3736,11 @@
                   },
                   {
                         "url": "/visualisations/dvc2966/fig03/index.html",
-                        "chart_type": "heatmap"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2966/fig04/index.html",
-                        "chart_type": "stacked-horizontal-bar-chart"
+                        "chart_type": null
                   }
             ]
       },
@@ -3838,23 +3838,23 @@
                   },
                   {
                         "url": "/visualisations/dvc2959/fig02/index.html",
-                        "chart_type": "range-plot"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2959/fig04/index.html",
-                        "chart_type": "range-plot"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2959/fig05/index.html",
-                        "chart_type": "range-plot"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2959/fig06/index.html",
-                        "chart_type": "stacked-horizontal-bar-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2959/fig07/index.html",
-                        "chart_type": "range-plot"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2959/fig08/index.html",
@@ -3862,7 +3862,7 @@
                   },
                   {
                         "url": "/visualisations/dvc2959/fig09/index.html",
-                        "chart_type": "range-plot"
+                        "chart_type": null
                   }
             ]
       },
@@ -3933,15 +3933,15 @@
                   },
                   {
                         "url": "/visualisations/dvc2940/scatter2/index.html",
-                        "chart_type": "bar-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2940/scatter1/index.html",
-                        "chart_type": "bar-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2940/region/index.html",
-                        "chart_type": "dot-plot"
+                        "chart_type": null
                   }
             ]
       },
@@ -4109,7 +4109,7 @@
             "vis": [
                   {
                         "url": "/visualisations/dvc2932/fig03/index.html",
-                        "chart_type": "doughnut-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2932/fig05/index.html",
@@ -4145,7 +4145,7 @@
             "vis": [
                   {
                         "url": "/visualisations/dvc2901/interactive-scatter/index.html",
-                        "chart_type": "bar-chart"
+                        "chart_type": null
                   }
             ]
       },
@@ -4205,15 +4205,15 @@
             "vis": [
                   {
                         "url": "/visualisations/dvc2912/fig03/index.html",
-                        "chart_type": "range-plot"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2912/fig04/index.html",
-                        "chart_type": "range-plot"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2912/fig05/index.html",
-                        "chart_type": "bar-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc988/line/index.html",
@@ -4235,7 +4235,7 @@
             "vis": [
                   {
                         "url": "/visualisations/dvc2923/fig01/index.html",
-                        "chart_type": "line-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2923/fig02/index.html",
@@ -4284,55 +4284,55 @@
                   },
                   {
                         "url": "/visualisations/dvc2927/fig02/index.html",
-                        "chart_type": "line-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2927/fig03-doverSingle/index.html",
-                        "chart_type": "line-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2927/fig04-doverMulti/index.html",
-                        "chart_type": "line-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2927/fig05-suezSingle/index.html",
-                        "chart_type": "line-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2927/fig06-suezMulti/index.html",
-                        "chart_type": "line-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2927/fig07-babSingle/index.html",
-                        "chart_type": "line-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2927/fig08-babMulti/index.html",
-                        "chart_type": "line-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2927/fig09-hormuzSingle/index.html",
-                        "chart_type": "line-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2927/fig10-hormuzMulti/index.html",
-                        "chart_type": "line-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2927/fig11-goodHopeSingle/index.html",
-                        "chart_type": "line-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2927/fig12-goodHopeMulti/index.html",
-                        "chart_type": "line-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2927/fig13-taiwanSingle/index.html",
-                        "chart_type": "line-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2927/fig14-taiwanMulti/index.html",
-                        "chart_type": "line-chart"
+                        "chart_type": null
                   }
             ]
       },
@@ -4494,31 +4494,31 @@
                   },
                   {
                         "url": "/visualisations/dvc2899/fig03/index.html",
-                        "chart_type": "bar-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2899/fig04/index.html",
-                        "chart_type": "line-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2899/fig05/index.html",
-                        "chart_type": "line-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2899/fig06/index.html",
-                        "chart_type": "line-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2899/fig07/index.html",
-                        "chart_type": "line-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2899/fig08/index.html",
-                        "chart_type": "line-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2899/fig09/index.html",
-                        "chart_type": "line-chart"
+                        "chart_type": null
                   }
             ]
       },
@@ -4707,11 +4707,11 @@
             "vis": [
                   {
                         "url": "/visualisations/dvc2880/fig01/index.html",
-                        "chart_type": "line-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2880/fig02/index.html",
-                        "chart_type": "line-chart"
+                        "chart_type": null
                   }
             ]
       },
@@ -4736,7 +4736,7 @@
                   },
                   {
                         "url": "/visualisations/dvc2889/fig01/index.html",
-                        "chart_type": "static-population-pyramid"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2889/fig02/index.html",
@@ -4842,23 +4842,23 @@
             "vis": [
                   {
                         "url": "/visualisations/dvc2883/fig01/index.html",
-                        "chart_type": "grouped-bar-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2883/fig02/index.html",
-                        "chart_type": "scatter-plot"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2883/fig03/index.html",
-                        "chart_type": "grouped-bar-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2883/fig04/index.html",
-                        "chart_type": "range-plot"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2883/fig05/index.html",
-                        "chart_type": "stacked-horizontal-bar-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2883/fig06/index.html",
@@ -4866,7 +4866,7 @@
                   },
                   {
                         "url": "/visualisations/dvc2883/fig07/index.html",
-                        "chart_type": "range-plot"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2883/fig08/index.html",
@@ -4874,7 +4874,7 @@
                   },
                   {
                         "url": "/visualisations/dvc2883/fig09/index.html",
-                        "chart_type": "scatter-plot"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2883/fig10/index.html",
@@ -4944,39 +4944,39 @@
             "vis": [
                   {
                         "url": "/visualisations/dvc2849/fig1/index.html",
-                        "chart_type": "line-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2849/fig2/index.html",
-                        "chart_type": "line-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2849/fig3/index.html",
-                        "chart_type": "line-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2849/fig4/index.html",
-                        "chart_type": "line-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2849/fig5/index.html",
-                        "chart_type": "line-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2849/fig6/index.html",
-                        "chart_type": "line-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2849/fig7/index.html",
-                        "chart_type": "line-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2849/fig8/index.html",
-                        "chart_type": "bar-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2849/fig9/index.html",
-                        "chart_type": "line-chart"
+                        "chart_type": null
                   }
             ]
       },
@@ -5014,7 +5014,7 @@
             "vis": [
                   {
                         "url": "/visualisations/dvc2858/line-chart/index.html",
-                        "chart_type": "line-chart"
+                        "chart_type": null
                   }
             ]
       },
@@ -5072,11 +5072,11 @@
                   },
                   {
                         "url": "/visualisations/dvc2879/fig02/index.html",
-                        "chart_type": "range-plot"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2879/fig03/index.html",
-                        "chart_type": "range-plot"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2879/fig04/index.html",
@@ -5136,11 +5136,11 @@
             "vis": [
                   {
                         "url": "/visualisations/dvc2778/Fig01/index.html",
-                        "chart_type": "line-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2778/Fig02/index.html",
-                        "chart_type": "line-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2778/Fig03/index.html",
@@ -5218,7 +5218,7 @@
                   },
                   {
                         "url": "/visualisations/dvc2278/fig04/fig04/index.html",
-                        "chart_type": "stacked-horizontal-bar-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2278/fig05/index.html",
@@ -5226,15 +5226,15 @@
                   },
                   {
                         "url": "/visualisations/dvc2278/fig06/fig06/index.html",
-                        "chart_type": "stacked-horizontal-bar-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2278/fig07/fig07/index.html",
-                        "chart_type": "stacked-horizontal-bar-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2278/fig08/fig08/index.html",
-                        "chart_type": "stacked-horizontal-bar-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2278/fig09/index.html",
@@ -5242,15 +5242,15 @@
                   },
                   {
                         "url": "/visualisations/dvc2278/fig10/fig10/index.html",
-                        "chart_type": "stacked-horizontal-bar-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2278/fig11/fig11/index.html",
-                        "chart_type": "stacked-horizontal-bar-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2278/fig12/fig12/index.html",
-                        "chart_type": "stacked-horizontal-bar-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2278/fig13/build/index.html",
@@ -5286,11 +5286,11 @@
             "vis": [
                   {
                         "url": "/visualisations/dvc2855/fig1/index.html",
-                        "chart_type": "bar-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2855/fig2/index.html",
-                        "chart_type": "bar-chart"
+                        "chart_type": null
                   }
             ]
       },
@@ -5312,7 +5312,7 @@
             "vis": [
                   {
                         "url": "/visualisations/dvc2833/fig01/index.html",
-                        "chart_type": "range-plot"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2833/fig02/index.html",
@@ -5320,7 +5320,7 @@
                   },
                   {
                         "url": "/visualisations/dvc2833/fig03/index.html",
-                        "chart_type": "line-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2833/fig04/index.html",
@@ -5466,11 +5466,11 @@
             "vis": [
                   {
                         "url": "/visualisations/dvc2825/fig1/index.html",
-                        "chart_type": "range-plot"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2825/fig2/index.html",
-                        "chart_type": "range-plot"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2825/fig3/index.html",
@@ -5492,11 +5492,11 @@
             "vis": [
                   {
                         "url": "/visualisations/dvc2824/fig04/index.html",
-                        "chart_type": "line-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2824/fig06/index.html",
-                        "chart_type": "line-chart"
+                        "chart_type": null
                   }
             ]
       },
@@ -5514,7 +5514,7 @@
             "vis": [
                   {
                         "url": "/visualisations/dvc2813/fig02/index.html",
-                        "chart_type": "bar-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2813/fig03/index.html",
@@ -5724,11 +5724,11 @@
             "vis": [
                   {
                         "url": "/visualisations/dvc2804/fig1/index.html",
-                        "chart_type": "static-population-pyramid"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2804/fig2/index.html",
-                        "chart_type": "range-plot"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2804/fig3/index.html",
@@ -5740,19 +5740,19 @@
                   },
                   {
                         "url": "/visualisations/dvc2804/fig5/index.html",
-                        "chart_type": "bar-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2804/fig6/index.html",
-                        "chart_type": "bar-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2804/fig7/index.html",
-                        "chart_type": "grouped-bar-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2804/fig8/index.html",
-                        "chart_type": "grouped-bar-chart"
+                        "chart_type": null
                   }
             ]
       },
@@ -5776,23 +5776,23 @@
             "vis": [
                   {
                         "url": "/visualisations/dvc2283/age-65/index.html",
-                        "chart_type": "range-plot"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2283/age-groupings/index.html",
-                        "chart_type": "range-plot"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2283/household-composition-6a/index.html",
-                        "chart_type": "range-plot"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2283/housing-type/index.html",
-                        "chart_type": "range-plot"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2283/tenure/index.html",
-                        "chart_type": "range-plot"
+                        "chart_type": null
                   }
             ]
       },
@@ -5862,11 +5862,11 @@
             "vis": [
                   {
                         "url": "/visualisations/dvc2280/fig01/index.html",
-                        "chart_type": "doughnut-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2280/fig02/index.html",
-                        "chart_type": "static-population-pyramid"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2280/fig03/index.html",
@@ -5874,19 +5874,19 @@
                   },
                   {
                         "url": "/visualisations/dvc2280/fig04/index.html",
-                        "chart_type": "range-plot"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2280/fig05/index.html",
-                        "chart_type": "range-plot"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2280/fig06/index.html",
-                        "chart_type": "stacked-horizontal-bar-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2280/fig07/index.html",
-                        "chart_type": "split-bar-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2280/fig08/index.html",
@@ -5898,15 +5898,15 @@
                   },
                   {
                         "url": "/visualisations/dvc2280/fig10/index.html",
-                        "chart_type": "bar-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2280/fig11/index.html",
-                        "chart_type": "bar-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2280/fig12/index.html",
-                        "chart_type": "stacked-horizontal-bar-chart"
+                        "chart_type": null
                   }
             ]
       },
@@ -6030,15 +6030,15 @@
             "vis": [
                   {
                         "url": "/visualisations/dvc2805/fig01/index.html",
-                        "chart_type": "grouped-bar-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2805/fig02/index.html",
-                        "chart_type": "line-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2805/fig03/index.html",
-                        "chart_type": "line-chart"
+                        "chart_type": null
                   }
             ]
       },
@@ -6060,7 +6060,7 @@
                   },
                   {
                         "url": "/visualisations/dvc2787/Fig4/index.html",
-                        "chart_type": "range-plot"
+                        "chart_type": null
                   }
             ]
       },
@@ -6093,15 +6093,15 @@
                   },
                   {
                         "url": "/visualisations/dvc2796/fig1/index.html",
-                        "chart_type": "split-bar-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2796/fig2/index.html",
-                        "chart_type": "line-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2796/fig3/index.html",
-                        "chart_type": "bar-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2796/fig4/index.html",
@@ -6109,15 +6109,15 @@
                   },
                   {
                         "url": "/visualisations/dvc2796/fig5/index.html",
-                        "chart_type": "dot-plot"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2796/fig6/index.html",
-                        "chart_type": "dot-plot"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2796/fig7/index.html",
-                        "chart_type": "bar-chart"
+                        "chart_type": null
                   }
             ]
       },
@@ -6231,31 +6231,31 @@
             "vis": [
                   {
                         "url": "/visualisations/dvc2779/fig01/index.html",
-                        "chart_type": "line-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2779/fig02/index.html",
-                        "chart_type": "bar-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2779/fig03/index.html",
-                        "chart_type": "range-plot"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2779/fig04/index.html",
-                        "chart_type": "bar-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2779/fig05/index.html",
-                        "chart_type": "line-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2779/fig06/index.html",
-                        "chart_type": "line-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2779/fig07/index.html",
-                        "chart_type": "line-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2779/fig08/index.html",
@@ -6289,7 +6289,7 @@
             "vis": [
                   {
                         "url": "/visualisations/dvc2738/Fig1/index.html",
-                        "chart_type": "stacked-column-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2738/Fig2/index.html",
@@ -6317,7 +6317,7 @@
                   },
                   {
                         "url": "/visualisations/dvc2738/Fig8/index.html",
-                        "chart_type": "stacked-horizontal-bar-chart"
+                        "chart_type": null
                   }
             ]
       },
@@ -6572,11 +6572,11 @@
             "vis": [
                   {
                         "url": "/visualisations/dvc2752/fig1/index.html",
-                        "chart_type": "heatmap"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2752/fig2/index.html",
-                        "chart_type": "heatmap"
+                        "chart_type": null
                   }
             ]
       },
@@ -6602,11 +6602,11 @@
             "vis": [
                   {
                         "url": "/visualisations/dvc2767/fig01/index.html",
-                        "chart_type": "stacked-horizontal-bar-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2767/fig02/index.html",
-                        "chart_type": "split-bar-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2767/fig03/index.html",
@@ -6614,15 +6614,15 @@
                   },
                   {
                         "url": "/visualisations/dvc2767/fig04/index.html",
-                        "chart_type": "stacked-horizontal-bar-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2767/fig05/index.html",
-                        "chart_type": "stacked-horizontal-bar-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2767/fig06/index.html",
-                        "chart_type": "stacked-horizontal-bar-chart"
+                        "chart_type": null
                   }
             ]
       },
@@ -6678,31 +6678,31 @@
             "vis": [
                   {
                         "url": "/visualisations/dvc2745/Fig01/index.html",
-                        "chart_type": "bar-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2745/Fig02/index.html",
-                        "chart_type": "stacked-horizontal-bar-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2745/Fig03/index.html",
-                        "chart_type": "bar-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2745/Fig04/index.html",
-                        "chart_type": "stacked-horizontal-bar-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2745/Fig05/index.html",
-                        "chart_type": "bar-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2745/Fig06/index.html",
-                        "chart_type": "grouped-bar-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2745/Fig07/index.html",
-                        "chart_type": "bar-chart"
+                        "chart_type": null
                   }
             ]
       },
@@ -6806,43 +6806,43 @@
                   },
                   {
                         "url": "/visualisations/dvc2279/fig02/index.html",
-                        "chart_type": "static-population-pyramid"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2279/fig03/index.html",
-                        "chart_type": "bar-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2279/fig04/index.html",
-                        "chart_type": "bar-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2279/fig05/index.html",
-                        "chart_type": "bar-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2279/fig06/index.html",
-                        "chart_type": "bar-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2279/fig07/index.html",
-                        "chart_type": "chart-wrapper"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2279/fig08/index.html",
-                        "chart_type": "chart-wrapper"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2279/fig09/index.html",
-                        "chart_type": "bar-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2279/fig10/index.html",
-                        "chart_type": "bar-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2279/fig11/index.html",
-                        "chart_type": "chart-wrapper"
+                        "chart_type": null
                   }
             ]
       },
@@ -6861,15 +6861,15 @@
             "vis": [
                   {
                         "url": "/visualisations/dvc2760/fig1/index.html",
-                        "chart_type": "bar-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2760/fig4/index.html",
-                        "chart_type": "bar-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2760/fig5/index.html",
-                        "chart_type": "bar-chart"
+                        "chart_type": null
                   }
             ]
       },
@@ -6987,7 +6987,7 @@
             "vis": [
                   {
                         "url": "/visualisations/dvc2276/fig1/index.html",
-                        "chart_type": "stacked-horizontal-bar-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2276/fig2/index.html",
@@ -7061,7 +7061,7 @@
             "vis": [
                   {
                         "url": "/visualisations/dvc2270/01-regions-comparison/index.html",
-                        "chart_type": "bar-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2270/02-map/index.html",
@@ -7069,43 +7069,43 @@
                   },
                   {
                         "url": "/visualisations/dvc2270/03-population-pyramid/index.html",
-                        "chart_type": "static-population-pyramid"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2270/04-housing-type-bar-ref/index.html",
-                        "chart_type": "bar-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2270/05-occupancy-ref-bar/index.html",
-                        "chart_type": "bar-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2270/06-health/index.html",
-                        "chart_type": "bar-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2270/07-care/index.html",
-                        "chart_type": "bar-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2270/08-employment-range-plot-sm/index.html",
-                        "chart_type": "bar-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2270/09-alternative-clustered-bar/index.html",
-                        "chart_type": "bar-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2270/10-occupation-reference-bar/index.html",
-                        "chart_type": "bar-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2270/11-quals/index.html",
-                        "chart_type": "bar-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2270/12-household-type-bar-chart-horizontal-with-reference-line-grouped/index.html",
-                        "chart_type": "range-plot"
+                        "chart_type": null
                   }
             ]
       },
@@ -7131,7 +7131,7 @@
                   },
                   {
                         "url": "/visualisations/dvc2724/fig03/index.html",
-                        "chart_type": "stacked-horizontal-bar-chart"
+                        "chart_type": null
                   }
             ]
       },
@@ -7251,35 +7251,35 @@
             "vis": [
                   {
                         "url": "/visualisations/dvc2272/fig01/index.html",
-                        "chart_type": "bar-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2272/fig02/index.html",
-                        "chart_type": "bar-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2272/fig03/index.html",
-                        "chart_type": "stacked-horizontal-bar-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2272/fig04/index.html",
-                        "chart_type": "stacked-horizontal-bar-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2272/fig05/index.html",
-                        "chart_type": "stacked-horizontal-bar-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2272/fig06/index.html",
-                        "chart_type": "range-plot"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2272/fig07/index.html",
-                        "chart_type": "stacked-horizontal-bar-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2272/fig08/index.html",
-                        "chart_type": "bar-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2272/fig09/index.html",
@@ -7291,7 +7291,7 @@
                   },
                   {
                         "url": "/visualisations/dvc2272/fig11/index.html",
-                        "chart_type": "bar-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2272/fig12/index.html",
@@ -7315,15 +7315,15 @@
             "vis": [
                   {
                         "url": "/visualisations/dvc2698/fig1/index.html",
-                        "chart_type": "scatter-plot"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2698/fig2/index.html",
-                        "chart_type": "range-plot"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2698/fig3/index.html",
-                        "chart_type": "range-plot"
+                        "chart_type": null
                   }
             ]
       },
@@ -7359,7 +7359,7 @@
             "vis": [
                   {
                         "url": "/visualisations/dvc2271/fig01/index.html",
-                        "chart_type": "doughnut-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2271/fig02/index.html",
@@ -7367,39 +7367,39 @@
                   },
                   {
                         "url": "/visualisations/dvc2271/fig03/index.html",
-                        "chart_type": "static-population-pyramid"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2271/fig04/index.html",
-                        "chart_type": "stacked-horizontal-bar-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2271/fig05/index.html",
-                        "chart_type": "bar-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2271/fig06/index.html",
-                        "chart_type": "chart-wrapper"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2271/fig07/index.html",
-                        "chart_type": "bar-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2271/fig08/index.html",
-                        "chart_type": "stacked-horizontal-bar-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2271/fig09/index.html",
-                        "chart_type": "bar-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2271/fig10/index.html",
-                        "chart_type": "stacked-horizontal-bar-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2271/fig11/index.html",
-                        "chart_type": "bar-chart"
+                        "chart_type": null
                   }
             ]
       },
@@ -7515,43 +7515,43 @@
             "vis": [
                   {
                         "url": "/visualisations/dvc2260/fig01/index.html",
-                        "chart_type": "dot-plot"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2260/fig02/index.html",
-                        "chart_type": "bar-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2260/fig03/index.html",
-                        "chart_type": "bar-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2260/fig04/index.html",
-                        "chart_type": "range-plot"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2260/fig05/index.html",
-                        "chart_type": "range-plot"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2260/fig06/index.html",
-                        "chart_type": "bar-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2260/fig07/index.html",
-                        "chart_type": "scatter-plot"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2260/fig08/index.html",
-                        "chart_type": "bar-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2260/fig09/index.html",
-                        "chart_type": "range-plot"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2260/fig10/index.html",
-                        "chart_type": "bar-chart"
+                        "chart_type": null
                   }
             ]
       },
@@ -7603,7 +7603,7 @@
                   },
                   {
                         "url": "/visualisations/dvc2718/fig3/index.html",
-                        "chart_type": "line-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2718/fig6/index.html",
@@ -7611,7 +7611,7 @@
                   },
                   {
                         "url": "/visualisations/dvc2718/fig8/index.html",
-                        "chart_type": "dot-plot"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2718/fig9/index.html",
@@ -7619,7 +7619,7 @@
                   },
                   {
                         "url": "/visualisations/dvc2718/fig11/index.html",
-                        "chart_type": "split-bar-chart"
+                        "chart_type": null
                   }
             ]
       },
@@ -7647,7 +7647,7 @@
                   },
                   {
                         "url": "/visualisations/dvc2700/fig3-tie-fighter-shading/index.html",
-                        "chart_type": "scatter-plot"
+                        "chart_type": null
                   }
             ]
       },
@@ -7766,75 +7766,75 @@
                   },
                   {
                         "url": "/visualisations/dvc2266/Fig2/index.html",
-                        "chart_type": "dot-plot"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2266/Fig3/index.html",
-                        "chart_type": "stacked-horizontal-bar-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2266/Fig4/index.html",
-                        "chart_type": "stacked-horizontal-bar-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2266/Fig5/index.html",
-                        "chart_type": "stacked-horizontal-bar-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2266/Fig6/index.html",
-                        "chart_type": "split-bar-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2266/Fig7/index.html",
-                        "chart_type": "split-bar-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2266/Fig8/index.html",
-                        "chart_type": "split-bar-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2266/Fig9/index.html",
-                        "chart_type": "stacked-horizontal-bar-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2266/Fig10/index.html",
-                        "chart_type": "split-bar-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2266/Fig11/index.html",
-                        "chart_type": "stacked-horizontal-bar-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2266/Fig12/index.html",
-                        "chart_type": "split-bar-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2266/Fig13/index.html",
-                        "chart_type": "stacked-horizontal-bar-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2266/Fig14/index.html",
-                        "chart_type": "range-plot"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2266/Fig15/index.html",
-                        "chart_type": "split-bar-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2266/Fig16/index.html",
-                        "chart_type": "split-bar-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2266/Fig17/index.html",
-                        "chart_type": "line-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2266/Fig18/index.html",
-                        "chart_type": "stacked-horizontal-bar-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2266/Fig19/index.html",
-                        "chart_type": "stacked-horizontal-bar-chart"
+                        "chart_type": null
                   }
             ]
       },
@@ -7902,11 +7902,11 @@
                   },
                   {
                         "url": "/visualisations/dvc2715g/fig04/index.html",
-                        "chart_type": "bar-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2715g/fig05/index.html",
-                        "chart_type": "grouped-bar-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2715/images/laurettaboston_096.png",
@@ -7918,7 +7918,7 @@
                   },
                   {
                         "url": "/visualisations/dvc2715g/fig06/index.html",
-                        "chart_type": "grouped-bar-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2715/images/laurettaboston_078_port.png",
@@ -7930,15 +7930,15 @@
                   },
                   {
                         "url": "/visualisations/dvc2715g/fig07/index.html",
-                        "chart_type": "grouped-bar-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2715g/fig08/index.html",
-                        "chart_type": "grouped-bar-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2715g/fig09/index.html",
-                        "chart_type": "grouped-bar-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2715/images/laurettaboston_095_port.png",
@@ -7950,7 +7950,7 @@
                   },
                   {
                         "url": "/visualisations/dvc2715g/fig10/index.html",
-                        "chart_type": "grouped-bar-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2715g/fig11/index.html",
@@ -8000,19 +8000,19 @@
                   },
                   {
                         "url": "/visualisations/dvc2267/fig3/index.html",
-                        "chart_type": "static-population-pyramid"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2267/fig4/index.html",
-                        "chart_type": "stacked-horizontal-bar-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2267/fig5/index.html",
-                        "chart_type": "stacked-horizontal-bar-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2267/fig7/index.html",
-                        "chart_type": "grouped-bar-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2267/fig8/wrapper.html",
@@ -8024,7 +8024,7 @@
                   },
                   {
                         "url": "/visualisations/dvc2267/fig10/index.html",
-                        "chart_type": "heatmap"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2267/fig11/index.html",
@@ -8032,7 +8032,7 @@
                   },
                   {
                         "url": "/visualisations/dvc2267/fig12/index.html",
-                        "chart_type": "static-population-pyramid"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2267/fig13/index.html",
@@ -8056,7 +8056,7 @@
             "vis": [
                   {
                         "url": "/visualisations/dvc2711/fig2/index.html",
-                        "chart_type": "bar-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2711/fig4/index.html",
@@ -8064,7 +8064,7 @@
                   },
                   {
                         "url": "/visualisations/dvc2711/fig5/index.html",
-                        "chart_type": "line-chart"
+                        "chart_type": null
                   }
             ]
       },
@@ -8176,27 +8176,27 @@
             "vis": [
                   {
                         "url": "/visualisations/dvc2261/fig01/index.html",
-                        "chart_type": "bar-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2261/fig02/index.html",
-                        "chart_type": "bar-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2261/fig03/index.html",
-                        "chart_type": "bar-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2261/fig04/index.html",
-                        "chart_type": "bar-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2261/fig05/index.html",
-                        "chart_type": "bar-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2261/fig06/index.html",
-                        "chart_type": "range-plot"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2261/fig07/index.html",
@@ -8204,7 +8204,7 @@
                   },
                   {
                         "url": "/visualisations/dvc2261/fig08/index.html",
-                        "chart_type": "range-plot"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2261/fig09/index.html",
@@ -8212,7 +8212,7 @@
                   },
                   {
                         "url": "/visualisations/dvc2261/fig10/index.html",
-                        "chart_type": "range-plot"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2261/fig11/index.html",
@@ -8220,7 +8220,7 @@
                   },
                   {
                         "url": "/visualisations/dvc2261/fig12/index.html",
-                        "chart_type": "range-plot"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2261/fig13/index.html",
@@ -8255,7 +8255,7 @@
             "vis": [
                   {
                         "url": "/visualisations/dvc2668/fig1/index.html",
-                        "chart_type": "range-plot"
+                        "chart_type": null
                   }
             ]
       },
@@ -8295,7 +8295,7 @@
             "vis": [
                   {
                         "url": "/visualisations/dvc2258/fig1/index.html",
-                        "chart_type": "stacked-horizontal-bar-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2258/fig2/wrapper.html",
@@ -8311,7 +8311,7 @@
                   },
                   {
                         "url": "/visualisations/dvc2258/fig5/index.html",
-                        "chart_type": "stacked-horizontal-bar-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2258/fig6/wrapper.html",
@@ -8501,11 +8501,11 @@
             "vis": [
                   {
                         "url": "/visualisations/dvc2250/fig1/index.html",
-                        "chart_type": "stacked-horizontal-bar-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2250/fig2/index.html",
-                        "chart_type": "stacked-horizontal-bar-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2250/fig3/wrapper.html",
@@ -8513,23 +8513,23 @@
                   },
                   {
                         "url": "/visualisations/dvc2250/fig4/index.html",
-                        "chart_type": "stacked-horizontal-bar-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2250/fig5/index.html",
-                        "chart_type": "stacked-horizontal-bar-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2250/fig6/index.html",
-                        "chart_type": "bar-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2250/fig7/index.html",
-                        "chart_type": "bar-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2250/fig8/index.html",
-                        "chart_type": "stacked-horizontal-bar-chart"
+                        "chart_type": null
                   }
             ]
       },
@@ -8613,11 +8613,11 @@
                   },
                   {
                         "url": "/visualisations/dvc2256/fig2/index.html",
-                        "chart_type": "bar-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2256/fig3/index.html",
-                        "chart_type": "bar-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2256/fig4-5-wrapper/index.html",
@@ -8657,7 +8657,7 @@
                   },
                   {
                         "url": "/visualisations/dvc2259/housing/index.html",
-                        "chart_type": "stacked-horizontal-bar-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2259/images/Health-banner.png",
@@ -8665,11 +8665,11 @@
                   },
                   {
                         "url": "/visualisations/dvc2259/health/index.html",
-                        "chart_type": "stacked-horizontal-bar-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2259/unpaidcare/index.html",
-                        "chart_type": "stacked-horizontal-bar-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2259/images/Education-banner.png",
@@ -8677,11 +8677,11 @@
                   },
                   {
                         "url": "/visualisations/dvc2259/bar-chart-horizontal-stacked/index.html",
-                        "chart_type": "stacked-horizontal-bar-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2259/education/index.html",
-                        "chart_type": "stacked-horizontal-bar-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2259/images/Employment-banner.png",
@@ -8689,11 +8689,11 @@
                   },
                   {
                         "url": "/visualisations/dvc2259/employment/index.html",
-                        "chart_type": "stacked-horizontal-bar-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2259/occupation/index.html",
-                        "chart_type": "stacked-horizontal-bar-chart"
+                        "chart_type": null
                   }
             ]
       },
@@ -8851,35 +8851,35 @@
             "vis": [
                   {
                         "url": "/visualisations/dvc2651c/fig1/index.html",
-                        "chart_type": "scatter-plot"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2651c/fig2/index.html",
-                        "chart_type": "stacked-horizontal-bar-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2651c/fig3/index.html",
-                        "chart_type": "scatter-plot"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2651c/fig4/index.html",
-                        "chart_type": "dot-plot"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2651c/fig5/index.html",
-                        "chart_type": "dot-plot"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2651c/fig6/index.html",
-                        "chart_type": "scatter-plot"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2651c/fig6b/index.html",
-                        "chart_type": "split-bar-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2651c/fig7/index.html",
-                        "chart_type": "scatter-plot"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2651c/fig8b/index.html",
@@ -8998,7 +8998,7 @@
                   },
                   {
                         "url": "/visualisations/dvc2620/fig3-tie-fighter/index.html",
-                        "chart_type": "scatter-plot"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2620/fig4-line-chart/index.html",
@@ -9101,7 +9101,7 @@
                   },
                   {
                         "url": "/visualisations/dvc2625/fig4/index.html",
-                        "chart_type": "bar-chart"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2625/fig5/index.html",
@@ -9132,11 +9132,11 @@
             "vis": [
                   {
                         "url": "/visualisations/dvc2624/fig2/index.html",
-                        "chart_type": "range-plot"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2624/fig3/index.html",
-                        "chart_type": "range-plot"
+                        "chart_type": null
                   },
                   {
                         "url": "/visualisations/dvc2624/explore/index.html",
