@@ -1,25 +1,5 @@
 [
       {
-            "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/wellbeing/bulletins/measuringprogresswellbeingandbeyondgdpintheuk/february2026",
-            "release_date": "2026-02-27",
-            "title": "Beyond GDP insights, UK headline measures of National Well-being: February 2026",
-            "vis_urls": [
-                  "/visualisations/dvc3474/dashboard/index.html",
-                  "/visualisations/dvc3474/line-chart/index.html"
-            ],
-            "theme": "peoplepopulationandcommunity",
-            "vis": [
-                  {
-                        "url": "/visualisations/dvc3474/dashboard/index.html",
-                        "chart_type": null
-                  },
-                  {
-                        "url": "/visualisations/dvc3474/line-chart/index.html",
-                        "chart_type": "line-chart"
-                  }
-            ]
-      },
-      {
             "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/internationalmigration/articles/reasonforinternationalmigrationinternationalstudentsupdate/february2026",
             "release_date": "2026-02-27",
             "title": "Reason for international migration, international students update: February 2026",
@@ -51,6 +31,26 @@
                   {
                         "url": "/visualisations/dvc3408/fig05/index.html",
                         "chart_type": "bar-chart"
+                  }
+            ]
+      },
+      {
+            "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/wellbeing/bulletins/measuringprogresswellbeingandbeyondgdpintheuk/february2026",
+            "release_date": "2026-02-27",
+            "title": "Beyond GDP insights, UK headline measures of National Well-being: February 2026",
+            "vis_urls": [
+                  "/visualisations/dvc3474/dashboard/index.html",
+                  "/visualisations/dvc3474/line-chart/index.html"
+            ],
+            "theme": "peoplepopulationandcommunity",
+            "vis": [
+                  {
+                        "url": "/visualisations/dvc3474/dashboard/index.html",
+                        "chart_type": null
+                  },
+                  {
+                        "url": "/visualisations/dvc3474/line-chart/index.html",
+                        "chart_type": "line-chart"
                   }
             ]
       },
@@ -195,6 +195,41 @@
             ]
       },
       {
+            "doc_uri": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/labourproductivity/articles/ukproductivityintroduction/octobertodecember2025andjulytoseptember2025",
+            "release_date": "2026-02-17",
+            "title": "Productivity flash estimate and overview, UK: October to December 2025 and July to September 2025",
+            "vis_urls": [
+                  "/visualisations/dvc3488/fig6/index.html",
+                  "/visualisations/dvc3488/fig7/index.html"
+            ],
+            "theme": "employmentandlabourmarket",
+            "vis": [
+                  {
+                        "url": "/visualisations/dvc3488/fig6/index.html",
+                        "chart_type": "bar-chart"
+                  },
+                  {
+                        "url": "/visualisations/dvc3488/fig7/index.html",
+                        "chart_type": "bar-chart"
+                  }
+            ]
+      },
+      {
+            "doc_uri": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/bulletins/uklabourmarket/february2026",
+            "release_date": "2026-02-17",
+            "title": "Labour market overview, UK: February 2026",
+            "vis_urls": [
+                  "/visualisations/dvc3491/dashwrapper/index.html"
+            ],
+            "theme": "employmentandlabourmarket",
+            "vis": [
+                  {
+                        "url": "/visualisations/dvc3491/dashwrapper/index.html",
+                        "chart_type": null
+                  }
+            ]
+      },
+      {
             "doc_uri": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/earningsandworkinghours/bulletins/earningsandemploymentfrompayasyouearnrealtimeinformationuk/february2026",
             "release_date": "2026-02-17",
             "title": "Earnings and employment from Pay As You Earn Real Time Information, UK: February 2026",
@@ -221,41 +256,6 @@
                   {
                         "url": "/visualisations/dvc3493/fig08/index.html",
                         "chart_type": null
-                  }
-            ]
-      },
-      {
-            "doc_uri": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/bulletins/uklabourmarket/february2026",
-            "release_date": "2026-02-17",
-            "title": "Labour market overview, UK: February 2026",
-            "vis_urls": [
-                  "/visualisations/dvc3491/dashwrapper/index.html"
-            ],
-            "theme": "employmentandlabourmarket",
-            "vis": [
-                  {
-                        "url": "/visualisations/dvc3491/dashwrapper/index.html",
-                        "chart_type": null
-                  }
-            ]
-      },
-      {
-            "doc_uri": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/labourproductivity/articles/ukproductivityintroduction/octobertodecember2025andjulytoseptember2025",
-            "release_date": "2026-02-17",
-            "title": "Productivity flash estimate and overview, UK: October to December 2025 and July to September 2025",
-            "vis_urls": [
-                  "/visualisations/dvc3488/fig6/index.html",
-                  "/visualisations/dvc3488/fig7/index.html"
-            ],
-            "theme": "employmentandlabourmarket",
-            "vis": [
-                  {
-                        "url": "/visualisations/dvc3488/fig6/index.html",
-                        "chart_type": "bar-chart"
-                  },
-                  {
-                        "url": "/visualisations/dvc3488/fig7/index.html",
-                        "chart_type": "bar-chart"
                   }
             ]
       },
@@ -340,21 +340,6 @@
             ]
       },
       {
-            "doc_uri": "https://www.ons.gov.uk/economy/grossdomesticproductgdp/bulletins/gdpfirstquarterlyestimateuk/octobertodecember2025",
-            "release_date": "2026-02-12",
-            "title": "GDP first quarterly estimate, UK: October to December 2025",
-            "vis_urls": [
-                  "/visualisations/econgloss/widget_gloss/index.html"
-            ],
-            "theme": "economy",
-            "vis": [
-                  {
-                        "url": "/visualisations/econgloss/widget_gloss/index.html",
-                        "chart_type": null
-                  }
-            ]
-      },
-      {
             "doc_uri": "https://www.ons.gov.uk/economy/grossdomesticproductgdp/bulletins/gdpmonthlyestimateuk/december2025",
             "release_date": "2026-02-12",
             "title": "GDP monthly estimate, UK: December 2025",
@@ -400,6 +385,21 @@
             ]
       },
       {
+            "doc_uri": "https://www.ons.gov.uk/economy/grossdomesticproductgdp/bulletins/gdpfirstquarterlyestimateuk/octobertodecember2025",
+            "release_date": "2026-02-12",
+            "title": "GDP first quarterly estimate, UK: October to December 2025",
+            "vis_urls": [
+                  "/visualisations/econgloss/widget_gloss/index.html"
+            ],
+            "theme": "economy",
+            "vis": [
+                  {
+                        "url": "/visualisations/econgloss/widget_gloss/index.html",
+                        "chart_type": null
+                  }
+            ]
+      },
+      {
             "doc_uri": "https://www.ons.gov.uk/economy/nationalaccounts/balanceofpayments/articles/consumercardspendingecommerceanddigitaltradeinsightsintheuk/2019to2025",
             "release_date": "2026-02-06",
             "title": "Consumer card spending, e-commerce and digital trade insights in the UK: 2019 to 2025",
@@ -420,21 +420,6 @@
             ]
       },
       {
-            "doc_uri": "https://www.ons.gov.uk/economy/economicoutputandproductivity/output/bulletins/economicactivityandsocialchangeintheukrealtimeindicators/5february2026",
-            "release_date": "2026-02-05",
-            "title": "Economic activity and social change in the UK, real-time indicators: 5 February 2026",
-            "vis_urls": [
-                  "/visualisations/dvc3483/dashboard-weekly/index.html"
-            ],
-            "theme": "economy",
-            "vis": [
-                  {
-                        "url": "/visualisations/dvc3483/dashboard-weekly/index.html",
-                        "chart_type": null
-                  }
-            ]
-      },
-      {
             "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/crimeandjustice/articles/homicideinenglandandwales/yearendingmarch2025",
             "release_date": "2026-02-05",
             "title": "Homicide in England and Wales: year ending March 2025",
@@ -446,6 +431,21 @@
                   {
                         "url": "/visualisations/dvc3470/fig04/index.html",
                         "chart_type": "line-chart"
+                  }
+            ]
+      },
+      {
+            "doc_uri": "https://www.ons.gov.uk/economy/economicoutputandproductivity/output/bulletins/economicactivityandsocialchangeintheukrealtimeindicators/5february2026",
+            "release_date": "2026-02-05",
+            "title": "Economic activity and social change in the UK, real-time indicators: 5 February 2026",
+            "vis_urls": [
+                  "/visualisations/dvc3483/dashboard-weekly/index.html"
+            ],
+            "theme": "economy",
+            "vis": [
+                  {
+                        "url": "/visualisations/dvc3483/dashboard-weekly/index.html",
+                        "chart_type": null
                   }
             ]
       },
@@ -486,61 +486,6 @@
                   {
                         "url": "/visualisations/dvc3352/fig07/index.html",
                         "chart_type": "range-plot-with-confidence-intervals"
-                  }
-            ]
-      },
-      {
-            "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/crimeandjustice/bulletins/crimeinenglandandwales/yearendingseptember2025",
-            "release_date": "2026-01-29T00:00:00.000Z",
-            "title": "Crime in England and Wales",
-            "vis_urls": [
-                  "/visualisations/dvc3456/table1/index.html",
-                  "/visualisations/dvc3456/table1/datadownload.xlsx",
-                  "/visualisations/dvc3456/table1/datadownload.xlsx"
-            ],
-            "theme": "peoplepopulationandcommunity",
-            "vis": [
-                  {
-                        "url": "/visualisations/dvc3456/table1/index.html",
-                        "chart_type": null
-                  }
-            ]
-      },
-      {
-            "doc_uri": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/earningsandworkinghours/bulletins/earningsandemploymentfrompayasyouearnrealtimeinformationuk/january2026",
-            "release_date": "2026-01-20T00:00:00.000Z",
-            "title": "Earnings and employment from Pay As You Earn Real Time Information, UK",
-            "vis_urls": [
-                  "/visualisations/dvc3464/fig05/index.html",
-                  "/visualisations/dvc3464/fig05/datadownload.xlsx",
-                  "/visualisations/dvc3464/fig05/datadownload.xlsx",
-                  "/visualisations/dvc3464/fig06/index.html",
-                  "/visualisations/dvc3464/fig06/datadownload.xlsx",
-                  "/visualisations/dvc3464/fig06/datadownload.xlsx",
-                  "/visualisations/dvc3464/fig07/index.html",
-                  "/visualisations/dvc3464/fig07/datadownload.xlsx",
-                  "/visualisations/dvc3464/fig07/datadownload.xlsx",
-                  "/visualisations/dvc3464/fig08/index.html",
-                  "/visualisations/dvc3464/fig08/datadownload.xlsx",
-                  "/visualisations/dvc3464/fig08/datadownload.xlsx"
-            ],
-            "theme": "employmentandlabourmarket",
-            "vis": [
-                  {
-                        "url": "/visualisations/dvc3464/fig05/index.html",
-                        "chart_type": null
-                  },
-                  {
-                        "url": "/visualisations/dvc3464/fig06/index.html",
-                        "chart_type": null
-                  },
-                  {
-                        "url": "/visualisations/dvc3464/fig07/index.html",
-                        "chart_type": null
-                  },
-                  {
-                        "url": "/visualisations/dvc3464/fig08/index.html",
-                        "chart_type": null
                   }
             ]
       },
@@ -610,28 +555,14 @@
             ]
       },
       {
-            "doc_uri": "https://www.ons.gov.uk/economy/grossdomesticproductgdp/bulletins/businessinvestment/julytoseptember2025revisedresults",
+            "doc_uri": "https://www.ons.gov.uk/economy/grossdomesticproductgdp/bulletins/quarterlynationalaccounts/julytoseptember2025",
             "release_date": "2025-12-22T00:00:00.000Z",
-            "title": "Business investment in the UK",
+            "title": "GDP quarterly national accounts, UK",
             "vis_urls": [
-                  "/visualisations/dvc3447/fig01/index.html",
-                  "/visualisations/dvc3447/fig01/datadownload.xlsx",
-                  "/visualisations/dvc3447/fig01/datadownload.xlsx",
-                  "/visualisations/dvc3447/fig04/index.html",
-                  "/visualisations/dvc3447/fig04/datadownload.xlsx",
-                  "/visualisations/dvc3447/fig04/datadownload.xlsx",
                   "/visualisations/econgloss/widget_gloss/index.html"
             ],
             "theme": "economy",
             "vis": [
-                  {
-                        "url": "/visualisations/dvc3447/fig01/index.html",
-                        "chart_type": "line-chart"
-                  },
-                  {
-                        "url": "/visualisations/dvc3447/fig04/index.html",
-                        "chart_type": "line-chart"
-                  },
                   {
                         "url": "/visualisations/econgloss/widget_gloss/index.html",
                         "chart_type": null
@@ -650,58 +581,6 @@
                   {
                         "url": "/visualisations/econgloss/widget_gloss/index.html",
                         "chart_type": null
-                  }
-            ]
-      },
-      {
-            "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/culturalidentity/sexuality/bulletins/sexualidentityuk/2024",
-            "release_date": "2025-12-09T00:00:00.000Z",
-            "title": "Sexual orientation, UK",
-            "vis_urls": [
-                  "/visualisations/dvc3428/fig01/index.html",
-                  "/visualisations/dvc3428/fig01/datadownload.xlsx",
-                  "/visualisations/dvc3428/fig01/datadownload.xlsx",
-                  "/visualisations/dvc3428/fig02/index.html",
-                  "/visualisations/dvc3428/fig02/datadownload.xlsx",
-                  "/visualisations/dvc3428/fig02/datadownload.xlsx",
-                  "/visualisations/dvc3428/fig03/index.html",
-                  "/visualisations/dvc3428/fig03/datadownload.xlsx",
-                  "/visualisations/dvc3428/fig03/datadownload.xlsx",
-                  "/visualisations/dvc3428/fig04/index.html",
-                  "/visualisations/dvc3428/fig04/datadownload.xlsx",
-                  "/visualisations/dvc3428/fig04/datadownload.xlsx",
-                  "/visualisations/dvc3428/fig05/index.html",
-                  "/visualisations/dvc3428/fig05/datadownload.xlsx",
-                  "/visualisations/dvc3428/fig05/datadownload.xlsx",
-                  "/visualisations/dvc3428/fig06/index.html",
-                  "/visualisations/dvc3428/fig06/datadownload.xlsx",
-                  "/visualisations/dvc3428/fig06/datadownload.xlsx"
-            ],
-            "theme": "peoplepopulationandcommunity",
-            "vis": [
-                  {
-                        "url": "/visualisations/dvc3428/fig01/index.html",
-                        "chart_type": null
-                  },
-                  {
-                        "url": "/visualisations/dvc3428/fig02/index.html",
-                        "chart_type": null
-                  },
-                  {
-                        "url": "/visualisations/dvc3428/fig03/index.html",
-                        "chart_type": "bar-chart"
-                  },
-                  {
-                        "url": "/visualisations/dvc3428/fig04/index.html",
-                        "chart_type": "bar-chart"
-                  },
-                  {
-                        "url": "/visualisations/dvc3428/fig05/index.html",
-                        "chart_type": "stacked-horizontal-bar-chart"
-                  },
-                  {
-                        "url": "/visualisations/dvc3428/fig06/index.html",
-                        "chart_type": "stacked-horizontal-bar-chart"
                   }
             ]
       },
@@ -726,22 +605,6 @@
                   {
                         "url": "/visualisations/dvc3416/fig04/index.html",
                         "chart_type": "range-plot"
-                  }
-            ]
-      },
-      {
-            "doc_uri": "https://www.ons.gov.uk/economy/economicoutputandproductivity/productivitymeasures/bulletins/trendsinukbusinessdynamismandproductivity/2025",
-            "release_date": "2025-12-08T00:00:00.000Z",
-            "title": "Trends in UK business dynamism and productivity",
-            "vis_urls": [
-                  "/visualisations/dvc3430/interactive/index.html#0,index17",
-                  "/visualisations/dvc3430/interactive/datadownload.xlsx"
-            ],
-            "theme": "economy",
-            "vis": [
-                  {
-                        "url": "/visualisations/dvc3430/interactive/index.html#0,index17",
-                        "chart_type": null
                   }
             ]
       },
@@ -827,75 +690,64 @@
             ]
       },
       {
-            "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/housing/bulletins/shorttermletsthroughonlinecollaborativeeconomyplatformsuk/july2024tojune2025",
-            "release_date": "2025-11-28T00:00:00.000Z",
-            "title": "Short-term lets through online collaborative economy platforms, UK",
+            "doc_uri": "https://www.ons.gov.uk/economy/economicoutputandproductivity/productivitymeasures/bulletins/trendsinukbusinessdynamismandproductivity/2025",
+            "release_date": "2025-12-08T00:00:00.000Z",
+            "title": "Trends in UK business dynamism and productivity",
             "vis_urls": [
-                  "/visualisations/dvc3433/fig01/index.html",
-                  "/visualisations/dvc3433/fig02/index.html",
-                  "/visualisations/dvc3433/fig02/datadownload.xlsx",
-                  "/visualisations/dvc3433/fig02/datadownload.xlsx",
-                  "/visualisations/dvc3433/fig03/index.html"
+                  "/visualisations/dvc3430/interactive/index.html#0,index17",
+                  "/visualisations/dvc3430/interactive/datadownload.xlsx"
             ],
-            "theme": "peoplepopulationandcommunity",
+            "theme": "economy",
             "vis": [
                   {
-                        "url": "/visualisations/dvc3433/fig01/index.html",
-                        "chart_type": "line-chart"
-                  },
-                  {
-                        "url": "/visualisations/dvc3433/fig02/index.html",
+                        "url": "/visualisations/dvc3430/interactive/index.html#0,index17",
                         "chart_type": null
-                  },
-                  {
-                        "url": "/visualisations/dvc3433/fig03/index.html",
-                        "chart_type": "line-chart"
                   }
             ]
       },
       {
-            "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/internationalmigration/bulletins/longterminternationalmigrationprovisional/yearendingjune2025",
-            "release_date": "2025-11-27T00:00:00.000Z",
-            "title": "Long-term international migration, provisional",
+            "doc_uri": "https://www.ons.gov.uk/economy/economicoutputandproductivity/productivitymeasures/bulletins/investmentinintangibleassetsintheuk/2023",
+            "release_date": "2025-12-02T00:00:00.000Z",
+            "title": "Investment in intangible assets in the UK",
             "vis_urls": [
-                  "/visualisations/dvc3411/fig01/index.html",
-                  "/visualisations/dvc3411/fig01/datadownload.xlsx",
-                  "/visualisations/dvc3411/fig02/index.html",
-                  "/visualisations/dvc3411/fig02/datadownload.xlsx",
-                  "/visualisations/dvc3411/fig03/index.html",
-                  "/visualisations/dvc3411/fig03/datadownload.xlsx",
-                  "/visualisations/dvc3411/fig04/index.html",
-                  "/visualisations/dvc3411/fig04/datadownload.xlsx",
-                  "/visualisations/dvc3411/fig08/index.html",
-                  "/visualisations/dvc3411/fig08/datadownload.xlsx",
-                  "/visualisations/dvc3411/fig09/index.html",
-                  "/visualisations/dvc3411/fig09/datadownload.xlsx"
+                  "/visualisations/dvc3419/fig06/index.html",
+                  "/visualisations/dvc3419/fig06/datadownload.xlsx",
+                  "/visualisations/dvc3419/fig06/datadownload.xlsx",
+                  "/visualisations/econgloss/widget_gloss/index.html"
+            ],
+            "theme": "economy",
+            "vis": [
+                  {
+                        "url": "/visualisations/dvc3419/fig06/index.html",
+                        "chart_type": "bar-chart"
+                  },
+                  {
+                        "url": "/visualisations/econgloss/widget_gloss/index.html",
+                        "chart_type": null
+                  }
+            ]
+      },
+      {
+            "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/birthsdeathsandmarriages/marriagecohabitationandcivilpartnerships/bulletins/marriagesinenglandandwalesprovisional/2023",
+            "release_date": "2025-11-18T00:00:00.000Z",
+            "title": "Marriages and civil partnerships in England and Wales",
+            "vis_urls": [
+                  "/visualisations/dvc3427/fig01/index.html",
+                  "/visualisations/dvc3427/fig01/datadownload.xlsx",
+                  "/visualisations/dvc3427/fig01/datadownload.xlsx",
+                  "/visualisations/dvc3427/Fig04/index.html",
+                  "/visualisations/dvc3427/Fig04/datadownload.xlsx",
+                  "/visualisations/dvc3427/Fig04/datadownload.xlsx"
             ],
             "theme": "peoplepopulationandcommunity",
             "vis": [
                   {
-                        "url": "/visualisations/dvc3411/fig01/index.html",
-                        "chart_type": "line-chart"
+                        "url": "/visualisations/dvc3427/fig01/index.html",
+                        "chart_type": null
                   },
                   {
-                        "url": "/visualisations/dvc3411/fig02/index.html",
-                        "chart_type": "line-chart"
-                  },
-                  {
-                        "url": "/visualisations/dvc3411/fig03/index.html",
-                        "chart_type": "line-chart"
-                  },
-                  {
-                        "url": "/visualisations/dvc3411/fig04/index.html",
-                        "chart_type": "line-chart"
-                  },
-                  {
-                        "url": "/visualisations/dvc3411/fig08/index.html",
-                        "chart_type": "line-chart"
-                  },
-                  {
-                        "url": "/visualisations/dvc3411/fig09/index.html",
-                        "chart_type": "line-chart"
+                        "url": "/visualisations/dvc3427/Fig04/index.html",
+                        "chart_type": null
                   }
             ]
       },
@@ -933,6 +785,75 @@
                   },
                   {
                         "url": "/visualisations/dvc3401/fig05/index.html",
+                        "chart_type": "line-chart"
+                  }
+            ]
+      },
+      {
+            "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/internationalmigration/articles/implementingnewmethodsforestimatingtheinternationalmigrationofbritishnationalsprogressupdate/november2025",
+            "release_date": "2025-11-18T00:00:00.000Z",
+            "title": "Implementing new methods for estimating the international migration of British nationals, progress update",
+            "vis_urls": [
+                  "/visualisations/dvc3402/fig06/index.html",
+                  "/visualisations/dvc3402/fig06/datadownload.xlsx",
+                  "/visualisations/dvc3402/fig06/datadownload.xlsx",
+                  "/visualisations/dvc3402/fig07/index.html",
+                  "/visualisations/dvc3402/fig07/datadownload.xlsx",
+                  "/visualisations/dvc3402/fig07/datadownload.xlsx",
+                  "/visualisations/dvc3402/fig08/index.html",
+                  "/visualisations/dvc3402/fig08/datadownload.xlsx",
+                  "/visualisations/dvc3402/fig08/datadownload.xlsx"
+            ],
+            "theme": "peoplepopulationandcommunity",
+            "vis": [
+                  {
+                        "url": "/visualisations/dvc3402/fig06/index.html",
+                        "chart_type": "line-chart"
+                  },
+                  {
+                        "url": "/visualisations/dvc3402/fig07/index.html",
+                        "chart_type": "line-chart"
+                  },
+                  {
+                        "url": "/visualisations/dvc3402/fig08/index.html",
+                        "chart_type": "line-chart"
+                  }
+            ]
+      },
+      {
+            "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/internationalmigration/articles/improvinglongterminternationalmigrationstatisticsupdatingourmethodsandestimates/november2025",
+            "release_date": "2025-11-18T00:00:00.000Z",
+            "title": "Improving long-term international migration statistics, updating our methods and estimates",
+            "vis_urls": [
+                  "/visualisations/dvc3412/fig02/index.html",
+                  "/visualisations/dvc3412/fig02/datadownload.xlsx",
+                  "/visualisations/dvc3412/fig02/datadownload.xlsx",
+                  "/visualisations/dvc3412/fig03/index.html",
+                  "/visualisations/dvc3412/fig03/datadownload.xlsx",
+                  "/visualisations/dvc3412/fig03/datadownload.xlsx",
+                  "/visualisations/dvc3412/fig04/index.html",
+                  "/visualisations/dvc3412/fig04/datadownload.xlsx",
+                  "/visualisations/dvc3412/fig04/datadownload.xlsx",
+                  "/visualisations/dvc3412/fig05/index.html",
+                  "/visualisations/dvc3412/fig05/datadownload.xlsx",
+                  "/visualisations/dvc3412/fig05/datadownload.xlsx"
+            ],
+            "theme": "peoplepopulationandcommunity",
+            "vis": [
+                  {
+                        "url": "/visualisations/dvc3412/fig02/index.html",
+                        "chart_type": "line-chart"
+                  },
+                  {
+                        "url": "/visualisations/dvc3412/fig03/index.html",
+                        "chart_type": "line-chart"
+                  },
+                  {
+                        "url": "/visualisations/dvc3412/fig04/index.html",
+                        "chart_type": "line-chart"
+                  },
+                  {
+                        "url": "/visualisations/dvc3412/fig05/index.html",
                         "chart_type": "line-chart"
                   }
             ]
@@ -990,75 +911,6 @@
             ]
       },
       {
-            "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/internationalmigration/articles/improvinglongterminternationalmigrationstatisticsupdatingourmethodsandestimates/november2025",
-            "release_date": "2025-11-18T00:00:00.000Z",
-            "title": "Improving long-term international migration statistics, updating our methods and estimates",
-            "vis_urls": [
-                  "/visualisations/dvc3412/fig02/index.html",
-                  "/visualisations/dvc3412/fig02/datadownload.xlsx",
-                  "/visualisations/dvc3412/fig02/datadownload.xlsx",
-                  "/visualisations/dvc3412/fig03/index.html",
-                  "/visualisations/dvc3412/fig03/datadownload.xlsx",
-                  "/visualisations/dvc3412/fig03/datadownload.xlsx",
-                  "/visualisations/dvc3412/fig04/index.html",
-                  "/visualisations/dvc3412/fig04/datadownload.xlsx",
-                  "/visualisations/dvc3412/fig04/datadownload.xlsx",
-                  "/visualisations/dvc3412/fig05/index.html",
-                  "/visualisations/dvc3412/fig05/datadownload.xlsx",
-                  "/visualisations/dvc3412/fig05/datadownload.xlsx"
-            ],
-            "theme": "peoplepopulationandcommunity",
-            "vis": [
-                  {
-                        "url": "/visualisations/dvc3412/fig02/index.html",
-                        "chart_type": "line-chart"
-                  },
-                  {
-                        "url": "/visualisations/dvc3412/fig03/index.html",
-                        "chart_type": "line-chart"
-                  },
-                  {
-                        "url": "/visualisations/dvc3412/fig04/index.html",
-                        "chart_type": "line-chart"
-                  },
-                  {
-                        "url": "/visualisations/dvc3412/fig05/index.html",
-                        "chart_type": "line-chart"
-                  }
-            ]
-      },
-      {
-            "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/internationalmigration/articles/implementingnewmethodsforestimatingtheinternationalmigrationofbritishnationalsprogressupdate/november2025",
-            "release_date": "2025-11-18T00:00:00.000Z",
-            "title": "Implementing new methods for estimating the international migration of British nationals, progress update",
-            "vis_urls": [
-                  "/visualisations/dvc3402/fig06/index.html",
-                  "/visualisations/dvc3402/fig06/datadownload.xlsx",
-                  "/visualisations/dvc3402/fig06/datadownload.xlsx",
-                  "/visualisations/dvc3402/fig07/index.html",
-                  "/visualisations/dvc3402/fig07/datadownload.xlsx",
-                  "/visualisations/dvc3402/fig07/datadownload.xlsx",
-                  "/visualisations/dvc3402/fig08/index.html",
-                  "/visualisations/dvc3402/fig08/datadownload.xlsx",
-                  "/visualisations/dvc3402/fig08/datadownload.xlsx"
-            ],
-            "theme": "peoplepopulationandcommunity",
-            "vis": [
-                  {
-                        "url": "/visualisations/dvc3402/fig06/index.html",
-                        "chart_type": "line-chart"
-                  },
-                  {
-                        "url": "/visualisations/dvc3402/fig07/index.html",
-                        "chart_type": "line-chart"
-                  },
-                  {
-                        "url": "/visualisations/dvc3402/fig08/index.html",
-                        "chart_type": "line-chart"
-                  }
-            ]
-      },
-      {
             "doc_uri": "https://www.ons.gov.uk/economy/environmentalaccounts/articles/beyondgdpinsightsenvironmentclimateandnatureuk/2025",
             "release_date": "2025-11-18T00:00:00.000Z",
             "title": "Beyond GDP insights \u2013 environment, climate and nature, UK",
@@ -1071,30 +923,6 @@
             "vis": [
                   {
                         "url": "/visualisations/dvc3426/fig03/index.html",
-                        "chart_type": null
-                  }
-            ]
-      },
-      {
-            "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/birthsdeathsandmarriages/marriagecohabitationandcivilpartnerships/bulletins/marriagesinenglandandwalesprovisional/2023",
-            "release_date": "2025-11-18T00:00:00.000Z",
-            "title": "Marriages and civil partnerships in England and Wales",
-            "vis_urls": [
-                  "/visualisations/dvc3427/fig01/index.html",
-                  "/visualisations/dvc3427/fig01/datadownload.xlsx",
-                  "/visualisations/dvc3427/fig01/datadownload.xlsx",
-                  "/visualisations/dvc3427/Fig04/index.html",
-                  "/visualisations/dvc3427/Fig04/datadownload.xlsx",
-                  "/visualisations/dvc3427/Fig04/datadownload.xlsx"
-            ],
-            "theme": "peoplepopulationandcommunity",
-            "vis": [
-                  {
-                        "url": "/visualisations/dvc3427/fig01/index.html",
-                        "chart_type": null
-                  },
-                  {
-                        "url": "/visualisations/dvc3427/Fig04/index.html",
                         "chart_type": null
                   }
             ]
@@ -1131,40 +959,6 @@
             ]
       },
       {
-            "doc_uri": "https://www.ons.gov.uk/businessindustryandtrade/business/businessservices/articles/businessinsightsandimpactontheukandsubnationaleconomy/november2025",
-            "release_date": "2025-11-03T00:00:00.000Z",
-            "title": "Business insights and impact on the UK subnational single-site economy",
-            "vis_urls": [
-                  "/visualisations/dvc3403/fig01/index.html",
-                  "/visualisations/dvc3403/fig01/datadownload.xlsx",
-                  "/visualisations/dvc3403/fig03/index.html",
-                  "/visualisations/dvc3403/fig03/datadownload.xlsx",
-                  "/visualisations/dvc3403/fig05/index.html",
-                  "/visualisations/dvc3403/fig05/datadownload.xlsx",
-                  "/visualisations/dvc3403/fig07/index.html",
-                  "/visualisations/dvc3403/fig07/datadownload.xlsx"
-            ],
-            "theme": "businessindustryandtrade",
-            "vis": [
-                  {
-                        "url": "/visualisations/dvc3403/fig01/index.html",
-                        "chart_type": null
-                  },
-                  {
-                        "url": "/visualisations/dvc3403/fig03/index.html",
-                        "chart_type": null
-                  },
-                  {
-                        "url": "/visualisations/dvc3403/fig05/index.html",
-                        "chart_type": null
-                  },
-                  {
-                        "url": "/visualisations/dvc3403/fig07/index.html",
-                        "chart_type": null
-                  }
-            ]
-      },
-      {
             "doc_uri": "https://www.ons.gov.uk/economy/nationalaccounts/uksectoraccounts/articles/gdprevisionsinbluebook2020/2025",
             "release_date": "2025-10-31T00:00:00.000Z",
             "title": "GDP revisions in Blue Book",
@@ -1177,23 +971,6 @@
                   {
                         "url": "/visualisations/dvc3405/fig7/index.html",
                         "chart_type": "line-chart"
-                  }
-            ]
-      },
-      {
-            "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/housing/articles/energyefficiencyofhousinginenglandandwales/2025",
-            "release_date": "2025-10-28T00:00:00.000Z",
-            "title": "Energy efficiency of housing in England and Wales",
-            "vis_urls": [
-                  "/visualisations/dvc3378/fig01/index.html",
-                  "/visualisations/dvc3378/fig01/datadownload.xlsx",
-                  "/visualisations/dvc3378/fig01/datadownload.xlsx"
-            ],
-            "theme": "peoplepopulationandcommunity",
-            "vis": [
-                  {
-                        "url": "/visualisations/dvc3378/fig01/index.html",
-                        "chart_type": null
                   }
             ]
       },
@@ -1222,53 +999,42 @@
             ]
       },
       {
-            "doc_uri": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/earningsandworkinghours/bulletins/genderpaygapintheuk/2025",
+            "doc_uri": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/earningsandworkinghours/bulletins/annualsurveyofhoursandearnings/2025",
             "release_date": "2025-10-22T23:00:00.000Z",
-            "title": "Gender pay gap in the UK",
+            "title": "Employee earnings in the UK",
             "vis_urls": [
-                  "/visualisations/dvc3394/fig05/index.html",
-                  "/visualisations/dvc3394/fig05/datadownload.xlsx",
-                  "/visualisations/dvc3394/fig07/index.html",
-                  "/visualisations/dvc3394/fig07/datadownload.xlsx",
-                  "/visualisations/dvc3394/fig08/index.html",
-                  "/visualisations/dvc3394/fig08/datadownload.xlsx"
+                  "/visualisations/dvc3393/fig05/index.html",
+                  "/visualisations/dvc3393/fig05/datadownload.xlsx",
+                  "/visualisations/dvc3393/fig05/datadownload.xlsx",
+                  "/visualisations/dvc3393/fig08/index.html",
+                  "/visualisations/dvc3393/fig08/datadownload.xlsx",
+                  "/visualisations/dvc3393/fig08/datadownload.xlsx"
             ],
             "theme": "employmentandlabourmarket",
             "vis": [
                   {
-                        "url": "/visualisations/dvc3394/fig05/index.html",
+                        "url": "/visualisations/dvc3393/fig05/index.html",
                         "chart_type": null
                   },
                   {
-                        "url": "/visualisations/dvc3394/fig07/index.html",
-                        "chart_type": "bar-chart"
-                  },
-                  {
-                        "url": "/visualisations/dvc3394/fig08/index.html",
-                        "chart_type": "range-plot"
+                        "url": "/visualisations/dvc3393/fig08/index.html",
+                        "chart_type": null
                   }
             ]
       },
       {
-            "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/birthsdeathsandmarriages/deaths/bulletins/deathsregistrationsummarytables/2024",
-            "release_date": "2025-10-08T23:00:00.000Z",
-            "title": "Deaths registered in England and Wales",
+            "doc_uri": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/earningsandworkinghours/bulletins/lowandhighpayuk/2025",
+            "release_date": "2025-10-22T23:00:00.000Z",
+            "title": "Low and high pay in the UK",
             "vis_urls": [
-                  "/visualisations/dvc3381/fig02/index.html",
-                  "/visualisations/dvc3381/fig02/datadownload.xlsx",
-                  "/visualisations/dvc3381/fig02/datadownload.xlsx",
-                  "/visualisations/dvc3381/fig05/index.html",
-                  "/visualisations/dvc3381/fig05/datadownload.xlsx",
-                  "/visualisations/dvc3381/fig05/datadownload.xlsx"
+                  "/visualisations/dvc3395/fig04/index.html",
+                  "/visualisations/dvc3395/fig04/datadownload.xlsx",
+                  "/visualisations/dvc3395/fig04/datadownload.xlsx"
             ],
-            "theme": "peoplepopulationandcommunity",
+            "theme": "employmentandlabourmarket",
             "vis": [
                   {
-                        "url": "/visualisations/dvc3381/fig02/index.html",
-                        "chart_type": "line-chart"
-                  },
-                  {
-                        "url": "/visualisations/dvc3381/fig05/index.html",
+                        "url": "/visualisations/dvc3395/fig04/index.html",
                         "chart_type": null
                   }
             ]
@@ -1346,70 +1112,6 @@
             ]
       },
       {
-            "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/birthsdeathsandmarriages/deaths/bulletins/suicidesintheunitedkingdom/2024registrations",
-            "release_date": "2025-10-02T23:00:00.000Z",
-            "title": "Suicides in England and Wales",
-            "vis_urls": [
-                  "/visualisations/dvc3366/fig01/index.html",
-                  "/visualisations/dvc3366/fig01/datadownload.xlsx",
-                  "/visualisations/dvc3366/fig02/index.html",
-                  "/visualisations/dvc3366/fig02/datadownload.xlsx",
-                  "/visualisations/dvc3366/fig03/index.html",
-                  "/visualisations/dvc3366/fig03/datadownload.xlsx",
-                  "/visualisations/dvc3366/fig04/index.html",
-                  "/visualisations/dvc3366/fig04/datadownload.xlsx",
-                  "/visualisations/dvc3366/fig07/index.html",
-                  "/visualisations/dvc3366/fig07/datadownload.xlsx"
-            ],
-            "theme": "peoplepopulationandcommunity",
-            "vis": [
-                  {
-                        "url": "/visualisations/dvc3366/fig01/index.html",
-                        "chart_type": "line-chart"
-                  },
-                  {
-                        "url": "/visualisations/dvc3366/fig02/index.html",
-                        "chart_type": "bar-chart"
-                  },
-                  {
-                        "url": "/visualisations/dvc3366/fig03/index.html",
-                        "chart_type": "heatmap"
-                  },
-                  {
-                        "url": "/visualisations/dvc3366/fig04/index.html",
-                        "chart_type": "line-chart"
-                  },
-                  {
-                        "url": "/visualisations/dvc3366/fig07/index.html",
-                        "chart_type": "line-chart"
-                  }
-            ]
-      },
-      {
-            "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/birthsdeathsandmarriages/deaths/articles/understandingsuicideregistrationsfollowingachangetothestandardofproofinenglandandwales/2025-10-03",
-            "release_date": "2025-10-02T23:00:00.000Z",
-            "title": "Understanding suicide registrations following a change to the standard of proof in England and Wales ",
-            "vis_urls": [
-                  "/visualisations/dvc3368/fig02/index.html",
-                  "/visualisations/dvc3368/fig02/datadownload.xlsx",
-                  "/visualisations/dvc3368/fig02/datadownload.xlsx",
-                  "/visualisations/dvc3368/fig04/index.html",
-                  "/visualisations/dvc3368/fig04/datadownload.xlsx",
-                  "/visualisations/dvc3368/fig04/datadownload.xlsx"
-            ],
-            "theme": "peoplepopulationandcommunity",
-            "vis": [
-                  {
-                        "url": "/visualisations/dvc3368/fig02/index.html",
-                        "chart_type": "line-chart"
-                  },
-                  {
-                        "url": "/visualisations/dvc3368/fig04/index.html",
-                        "chart_type": "line-chart"
-                  }
-            ]
-      },
-      {
             "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/healthandsocialcare/healthandwellbeing/bulletins/theimpactofmotherhoodonmonthlyemployeeearningsandemploymentstatusengland/april2014todecember2022",
             "release_date": "2025-10-02T23:00:00.000Z",
             "title": "The impact of motherhood on monthly employee earnings and employment status, England",
@@ -1434,6 +1136,30 @@
                   {
                         "url": "/visualisations/dvc3369/Fig03/index.html",
                         "chart_type": "column-chart-small-multiple"
+                  }
+            ]
+      },
+      {
+            "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/birthsdeathsandmarriages/deaths/articles/understandingsuicideregistrationsfollowingachangetothestandardofproofinenglandandwales/2025-10-03",
+            "release_date": "2025-10-02T23:00:00.000Z",
+            "title": "Understanding suicide registrations following a change to the standard of proof in England and Wales ",
+            "vis_urls": [
+                  "/visualisations/dvc3368/fig02/index.html",
+                  "/visualisations/dvc3368/fig02/datadownload.xlsx",
+                  "/visualisations/dvc3368/fig02/datadownload.xlsx",
+                  "/visualisations/dvc3368/fig04/index.html",
+                  "/visualisations/dvc3368/fig04/datadownload.xlsx",
+                  "/visualisations/dvc3368/fig04/datadownload.xlsx"
+            ],
+            "theme": "peoplepopulationandcommunity",
+            "vis": [
+                  {
+                        "url": "/visualisations/dvc3368/fig02/index.html",
+                        "chart_type": "line-chart"
+                  },
+                  {
+                        "url": "/visualisations/dvc3368/fig04/index.html",
+                        "chart_type": "line-chart"
                   }
             ]
       },
@@ -1516,26 +1242,45 @@
             ]
       },
       {
-            "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/housing/bulletins/housingpurchaseaffordabilitygreatbritain/2024",
-            "release_date": "2025-09-17T23:00:00.000Z",
-            "title": "Housing Purchase Affordability, UK",
+            "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/personalandhouseholdfinances/incomeandwealth/bulletins/theeffectsoftaxesandbenefitsonhouseholdincome/2024",
+            "release_date": "2025-09-24T23:00:00.000Z",
+            "title": "Effects of taxes and benefits on UK household income",
             "vis_urls": [
-                  "/visualisations/dvc3356/fig04/index.html",
-                  "/visualisations/dvc3356/fig05/index.html",
-                  "/visualisations/dvc3356/fig06/index.html"
+                  "/visualisations/dvc3367/fig01/index.html",
+                  "/visualisations/dvc3367/fig01/datadownload.xlsx",
+                  "/visualisations/dvc3367/fig02/index.html",
+                  "/visualisations/dvc3367/fig02/datadownload.xlsx"
             ],
             "theme": "peoplepopulationandcommunity",
             "vis": [
                   {
-                        "url": "/visualisations/dvc3356/fig04/index.html",
+                        "url": "/visualisations/dvc3367/fig01/index.html",
                         "chart_type": "range-plot"
                   },
                   {
-                        "url": "/visualisations/dvc3356/fig05/index.html",
-                        "chart_type": "beeswarm"
+                        "url": "/visualisations/dvc3367/fig02/index.html",
+                        "chart_type": "bar-chart"
+                  }
+            ]
+      },
+      {
+            "doc_uri": "https://www.ons.gov.uk/economy/regionalaccounts/grossdisposablehouseholdincome/bulletins/regionalgrossdisposablehouseholdincomegdhi/1997to2023",
+            "release_date": "2025-09-09T23:00:00.000Z",
+            "title": "Regional gross disposable household income, UK",
+            "vis_urls": [
+                  "/visualisations/dvc3347/beeswarm/index.html",
+                  "/visualisations/dvc3347/beeswarm/datadownload.xlsx",
+                  "/visualisations/dvc3347/map/index.html",
+                  "/visualisations/dvc3347/map/datadownload.xlsx"
+            ],
+            "theme": "economy",
+            "vis": [
+                  {
+                        "url": "/visualisations/dvc3347/beeswarm/index.html",
+                        "chart_type": null
                   },
                   {
-                        "url": "/visualisations/dvc3356/fig06/index.html",
+                        "url": "/visualisations/dvc3347/map/index.html",
                         "chart_type": null
                   }
             ]
@@ -1599,21 +1344,6 @@
                   {
                         "url": "/visualisations/dvc3330/fig-01/index.html",
                         "chart_type": "bar-chart"
-                  }
-            ]
-      },
-      {
-            "doc_uri": "https://www.ons.gov.uk/economy/governmentpublicsectorandtaxes/publicsectorfinance/bulletins/publicsectorfinances/july2025",
-            "release_date": "2025-08-20T23:00:00.000Z",
-            "title": "Public sector finances, UK",
-            "vis_urls": [
-                  "/visualisations/dvc3341/table1/index.html"
-            ],
-            "theme": "economy",
-            "vis": [
-                  {
-                        "url": "/visualisations/dvc3341/table1/index.html",
-                        "chart_type": null
                   }
             ]
       },
@@ -1708,46 +1438,6 @@
             ]
       },
       {
-            "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/wellbeing/bulletins/publicopinionsandsocialtrendsgreatbritain/june2025",
-            "release_date": "2025-07-17T23:00:00.000Z",
-            "title": "Public opinions and social trends, Great Britain",
-            "vis_urls": [
-                  "/visualisations/dvc3307/fig01/index.html",
-                  "/visualisations/dvc3307/fig01/datadownload.xlsx",
-                  "/visualisations/dvc3307/fig07/index.html",
-                  "/visualisations/dvc3307/fig07/datadownload.xlsx",
-                  "/visualisations/dvc3307/fig08/index.html",
-                  "/visualisations/dvc3307/fig08/datadownload.xlsx",
-                  "/visualisations/dvc3307/fig09/index.html",
-                  "/visualisations/dvc3307/fig09/datadownload.xlsx",
-                  "/visualisations/dvc3307/fig10/index.html",
-                  "/visualisations/dvc3307/fig10/datadownload.xlsx"
-            ],
-            "theme": "peoplepopulationandcommunity",
-            "vis": [
-                  {
-                        "url": "/visualisations/dvc3307/fig01/index.html",
-                        "chart_type": "line-chart"
-                  },
-                  {
-                        "url": "/visualisations/dvc3307/fig07/index.html",
-                        "chart_type": "bar-chart"
-                  },
-                  {
-                        "url": "/visualisations/dvc3307/fig08/index.html",
-                        "chart_type": "bar-chart"
-                  },
-                  {
-                        "url": "/visualisations/dvc3307/fig09/index.html",
-                        "chart_type": "bar-chart"
-                  },
-                  {
-                        "url": "/visualisations/dvc3307/fig10/index.html",
-                        "chart_type": "bar-chart"
-                  }
-            ]
-      },
-      {
             "doc_uri": "https://www.ons.gov.uk/economy/environmentalaccounts/bulletins/experimentalestimatesofgreenjobsuk/july2025",
             "release_date": "2025-07-17T23:00:00.000Z",
             "title": "Estimates of green jobs, UK",
@@ -1771,6 +1461,52 @@
                   },
                   {
                         "url": "/visualisations/dvc3304/fig05/index.html",
+                        "chart_type": null
+                  }
+            ]
+      },
+      {
+            "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/healthandsocialcare/healthcaresystem/bulletins/experiencesofnhshealthcareservicesinengland/july2025",
+            "release_date": "2025-07-16T23:00:00.000Z",
+            "title": "Experiences of NHS healthcare services in England",
+            "vis_urls": [
+                  "/visualisations/dvc3281/fig01/index.html",
+                  "/visualisations/dvc3281/fig01/datadownload.xlsx",
+                  "/visualisations/dvc3281/fig02/index.html",
+                  "/visualisations/dvc3281/fig02/datadownload.xlsx",
+                  "/visualisations/dvc3281/fig03/index.html",
+                  "/visualisations/dvc3281/fig03/datadownload.xlsx",
+                  "/visualisations/dvc3281/fig04/index.html",
+                  "/visualisations/dvc3281/fig04/datadownload.xlsx",
+                  "/visualisations/dvc3281/fig05/index.html",
+                  "/visualisations/dvc3281/fig05/datadownload.xlsx",
+                  "/visualisations/dvc3281/fig06/index.html",
+                  "/visualisations/dvc3281/fig06/datadownload.xlsx"
+            ],
+            "theme": "peoplepopulationandcommunity",
+            "vis": [
+                  {
+                        "url": "/visualisations/dvc3281/fig01/index.html",
+                        "chart_type": "line-chart"
+                  },
+                  {
+                        "url": "/visualisations/dvc3281/fig02/index.html",
+                        "chart_type": "line-chart"
+                  },
+                  {
+                        "url": "/visualisations/dvc3281/fig03/index.html",
+                        "chart_type": "line-chart"
+                  },
+                  {
+                        "url": "/visualisations/dvc3281/fig04/index.html",
+                        "chart_type": "line-chart"
+                  },
+                  {
+                        "url": "/visualisations/dvc3281/fig05/index.html",
+                        "chart_type": "bar-chart"
+                  },
+                  {
+                        "url": "/visualisations/dvc3281/fig06/index.html",
                         "chart_type": null
                   }
             ]
@@ -1819,6 +1555,46 @@
             "vis": [
                   {
                         "url": "/visualisations/dvc3298/fig01/index.html",
+                        "chart_type": "line-chart"
+                  }
+            ]
+      },
+      {
+            "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/birthsdeathsandmarriages/livebirths/bulletins/birthsummarytablesenglandandwales/2024",
+            "release_date": "2025-06-30T23:00:00.000Z",
+            "title": "Births in England and Wales",
+            "vis_urls": [
+                  "/visualisations/dvc3295/fig01/index.html",
+                  "/visualisations/dvc3295/fig01/datadownload.xlsx",
+                  "/visualisations/dvc3295/fig02/index.html",
+                  "/visualisations/dvc3295/fig02/datadownload.xlsx",
+                  "/visualisations/dvc3295/fig03/index.html",
+                  "/visualisations/dvc3295/fig03/datadownload.xlsx",
+                  "/visualisations/dvc3295/fig06/index.html",
+                  "/visualisations/dvc3295/fig06/datadownload.xlsx",
+                  "/visualisations/dvc3295/fig07/index.html",
+                  "/visualisations/dvc3295/fig07/datadownload.xlsx"
+            ],
+            "theme": "peoplepopulationandcommunity",
+            "vis": [
+                  {
+                        "url": "/visualisations/dvc3295/fig01/index.html",
+                        "chart_type": "line-chart"
+                  },
+                  {
+                        "url": "/visualisations/dvc3295/fig02/index.html",
+                        "chart_type": "bar-chart"
+                  },
+                  {
+                        "url": "/visualisations/dvc3295/fig03/index.html",
+                        "chart_type": "range-plot"
+                  },
+                  {
+                        "url": "/visualisations/dvc3295/fig06/index.html",
+                        "chart_type": null
+                  },
+                  {
+                        "url": "/visualisations/dvc3295/fig07/index.html",
                         "chart_type": "line-chart"
                   }
             ]
@@ -1890,17 +1666,45 @@
             ]
       },
       {
-            "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/housing/articles/ukhomelessness/2004to2024",
-            "release_date": "2025-06-10T23:00:00.000Z",
-            "title": "Homelessness in the UK",
+            "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/wellbeing/bulletins/publicopinionsandsocialtrendsgreatbritain/may2025",
+            "release_date": "2025-06-19T23:00:00.000Z",
+            "title": "Public opinions and social trends, Great Britain",
             "vis_urls": [
-                  "/visualisations/dvc3269/fig1/index.html",
-                  "/visualisations/dvc3269/fig1/datadownload.xlsx"
+                  "/visualisations/dvc3285/fig01/index.html",
+                  "/visualisations/dvc3285/fig01/datadownload.xlsx>"
             ],
             "theme": "peoplepopulationandcommunity",
             "vis": [
                   {
-                        "url": "/visualisations/dvc3269/fig1/index.html",
+                        "url": "/visualisations/dvc3285/fig01/index.html",
+                        "chart_type": "line-chart"
+                  }
+            ]
+      },
+      {
+            "doc_uri": "https://www.ons.gov.uk/economy/economicoutputandproductivity/productivitymeasures/bulletins/regionalandsubregionallabourproductivityuk/2023",
+            "release_date": "2025-06-18T23:00:00.000Z",
+            "title": "Regional and subregional labour productivity, UK",
+            "vis_urls": [
+                  "/visualisations/dvc3288/fig1/index.html",
+                  "/visualisations/dvc3288/fig1/datadownload.xlsx",
+                  "/visualisations/dvc3288/fig2/index.html",
+                  "/visualisations/dvc3288/fig2/datadownload.xlsx",
+                  "/visualisations/dvc3288/fig3/index.html",
+                  "/visualisations/dvc3288/fig3/datadownload.xlsx"
+            ],
+            "theme": "economy",
+            "vis": [
+                  {
+                        "url": "/visualisations/dvc3288/fig1/index.html",
+                        "chart_type": null
+                  },
+                  {
+                        "url": "/visualisations/dvc3288/fig2/index.html",
+                        "chart_type": "bar-chart"
+                  },
+                  {
+                        "url": "/visualisations/dvc3288/fig3/index.html",
                         "chart_type": "bar-chart"
                   }
             ]
@@ -1992,6 +1796,22 @@
             ]
       },
       {
+            "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/housing/articles/ukhomelessness/2004to2024",
+            "release_date": "2025-06-10T23:00:00.000Z",
+            "title": "Homelessness in the UK",
+            "vis_urls": [
+                  "/visualisations/dvc3269/fig1/index.html",
+                  "/visualisations/dvc3269/fig1/datadownload.xlsx"
+            ],
+            "theme": "peoplepopulationandcommunity",
+            "vis": [
+                  {
+                        "url": "/visualisations/dvc3269/fig1/index.html",
+                        "chart_type": "bar-chart"
+                  }
+            ]
+      },
+      {
             "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/wellbeing/bulletins/measuringprogresswellbeingandbeyondgdpintheuk/may2025",
             "release_date": "2025-05-27T23:00:00.000Z",
             "title": "Measuring progress, well-being and beyond GDP in the UK",
@@ -2004,6 +1824,46 @@
                   {
                         "url": "/visualisations/dvc3268/fig2/index.html",
                         "chart_type": "stacked-horizontal-bar-chart"
+                  }
+            ]
+      },
+      {
+            "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/internationalmigration/articles/reasonforinternationalmigrationinternationalstudentsupdate/may2025",
+            "release_date": "2025-05-21T23:00:00.000Z",
+            "title": "Reason for international migration, international students update",
+            "vis_urls": [
+                  "/visualisations/dvc3223/fig01/index.html",
+                  "/visualisations/dvc3223/fig01/datadownload.xlsx",
+                  "/visualisations/dvc3223/fig02/index.html",
+                  "/visualisations/dvc3223/fig02/datadownload.xlsx",
+                  "/visualisations/dvc3223/fig03/index.html",
+                  "/visualisations/dvc3223/fig03/datadownload.xlsx",
+                  "/visualisations/dvc3223/fig04/index.html",
+                  "/visualisations/dvc3223/fig04/datadownload.xlsx",
+                  "/visualisations/dvc3223/fig05/index.html",
+                  "/visualisations/dvc3223/fig05/datadownload.xlsx"
+            ],
+            "theme": "peoplepopulationandcommunity",
+            "vis": [
+                  {
+                        "url": "/visualisations/dvc3223/fig01/index.html",
+                        "chart_type": "line-chart"
+                  },
+                  {
+                        "url": "/visualisations/dvc3223/fig02/index.html",
+                        "chart_type": "bar-chart"
+                  },
+                  {
+                        "url": "/visualisations/dvc3223/fig03/index.html",
+                        "chart_type": "bar-chart"
+                  },
+                  {
+                        "url": "/visualisations/dvc3223/fig04/index.html",
+                        "chart_type": "stacked-horizontal-bar-chart"
+                  },
+                  {
+                        "url": "/visualisations/dvc3223/fig05/index.html",
+                        "chart_type": null
                   }
             ]
       },
@@ -2054,6 +1914,28 @@
                   {
                         "url": "/visualisations/dvc3247/fig07/index.html",
                         "chart_type": "line-chart"
+                  }
+            ]
+      },
+      {
+            "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/birthsdeathsandmarriages/deaths/bulletins/childhoodinfantandperinatalmortalityinenglandandwales/2023",
+            "release_date": "2025-04-21T23:00:00.000Z",
+            "title": "Child and infant mortality in England and Wales",
+            "vis_urls": [
+                  "/visualisations/dvc3215/fig02/index.html",
+                  "/visualisations/dvc3215/fig02/datadownload.xlsx",
+                  "/visualisations/dvc3215/fig03/index.html",
+                  "/visualisations/dvc3215/fig03/datadownload.xlsx"
+            ],
+            "theme": "peoplepopulationandcommunity",
+            "vis": [
+                  {
+                        "url": "/visualisations/dvc3215/fig02/index.html",
+                        "chart_type": "line-chart"
+                  },
+                  {
+                        "url": "/visualisations/dvc3215/fig03/index.html",
+                        "chart_type": null
                   }
             ]
       },
@@ -2123,28 +2005,6 @@
                   },
                   {
                         "url": "/visualisations/dvc3222/fig11wrapper/index.html",
-                        "chart_type": null
-                  }
-            ]
-      },
-      {
-            "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/birthsdeathsandmarriages/deaths/bulletins/childhoodinfantandperinatalmortalityinenglandandwales/2023",
-            "release_date": "2025-04-21T23:00:00.000Z",
-            "title": "Child and infant mortality in England and Wales",
-            "vis_urls": [
-                  "/visualisations/dvc3215/fig02/index.html",
-                  "/visualisations/dvc3215/fig02/datadownload.xlsx",
-                  "/visualisations/dvc3215/fig03/index.html",
-                  "/visualisations/dvc3215/fig03/datadownload.xlsx"
-            ],
-            "theme": "peoplepopulationandcommunity",
-            "vis": [
-                  {
-                        "url": "/visualisations/dvc3215/fig02/index.html",
-                        "chart_type": "line-chart"
-                  },
-                  {
-                        "url": "/visualisations/dvc3215/fig03/index.html",
                         "chart_type": null
                   }
             ]
@@ -2249,6 +2109,46 @@
             ]
       },
       {
+            "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/housing/bulletins/housingaffordabilityinenglandandwales/2024",
+            "release_date": "2025-03-24T00:00:00.000Z",
+            "title": "Housing affordability in England and Wales",
+            "vis_urls": [
+                  "/visualisations/dvc3204/fig2/index.html",
+                  "/visualisations/dvc3204/fig2/datadownload.xlsx",
+                  "/visualisations/dvc3204/fig3/index.html",
+                  "/visualisations/dvc3204/fig3/datadownload.xlsx",
+                  "/visualisations/dvc3204/fig4/index.html",
+                  "/visualisations/dvc3204/fig4/datadownload.xlsx",
+                  "/visualisations/dvc3204/fig5/index.html",
+                  "/visualisations/dvc3204/fig5/datadownload.xlsx",
+                  "/visualisations/dvc3204/fig6/index.html",
+                  "/visualisations/dvc3204/fig6/datadownload.xlsx"
+            ],
+            "theme": "peoplepopulationandcommunity",
+            "vis": [
+                  {
+                        "url": "/visualisations/dvc3204/fig2/index.html",
+                        "chart_type": "line-chart"
+                  },
+                  {
+                        "url": "/visualisations/dvc3204/fig3/index.html",
+                        "chart_type": null
+                  },
+                  {
+                        "url": "/visualisations/dvc3204/fig4/index.html",
+                        "chart_type": null
+                  },
+                  {
+                        "url": "/visualisations/dvc3204/fig5/index.html",
+                        "chart_type": null
+                  },
+                  {
+                        "url": "/visualisations/dvc3204/fig6/index.html",
+                        "chart_type": "line-chart"
+                  }
+            ]
+      },
+      {
             "doc_uri": "https://www.ons.gov.uk/economy/economicoutputandproductivity/productivitymeasures/articles/managementpracticesandtheadoptionoftechnologyandartificialintelligenceinukfirms2023/2025-03-24",
             "release_date": "2025-03-24T00:00:00.000Z",
             "title": "Management practices and the adoption of technology and artificial intelligence in UK firms",
@@ -2267,22 +2167,6 @@
                   {
                         "url": "/visualisations/dvc3194/fig11/index.html",
                         "chart_type": "range-plot"
-                  }
-            ]
-      },
-      {
-            "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/birthsdeathsandmarriages/deaths/bulletins/deathsregisteredweeklyinenglandandwalesprovisional/weekending7march2025",
-            "release_date": "2025-03-19T00:00:00.000Z",
-            "title": "Deaths registered weekly in England and Wales, provisional",
-            "vis_urls": [
-                  "/visualisations/dvc3208/fig1/index.html",
-                  "/visualisations/dvc3208/fig1/datadownload.xlsx"
-            ],
-            "theme": "peoplepopulationandcommunity",
-            "vis": [
-                  {
-                        "url": "/visualisations/dvc3208/fig1/index.html",
-                        "chart_type": null
                   }
             ]
       },
@@ -2391,6 +2275,21 @@
             ]
       },
       {
+            "doc_uri": "https://www.ons.gov.uk/economy/economicoutputandproductivity/output/bulletins/economicactivityandsocialchangeintheukrealtimeindicators/27february2025",
+            "release_date": "2025-02-27T00:00:00.000Z",
+            "title": "Economic activity and social change in the UK, real-time indicators",
+            "vis_urls": [
+                  "/visualisations/dvc3191/dashboard/index.html"
+            ],
+            "theme": "economy",
+            "vis": [
+                  {
+                        "url": "/visualisations/dvc3191/dashboard/index.html",
+                        "chart_type": null
+                  }
+            ]
+      },
+      {
             "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/healthandsocialcare/mentalhealth/articles/riskfactorsforsuicideinchildrenandyoungpeopleinengland/2025-02-27",
             "release_date": "2025-02-27T00:00:00.000Z",
             "title": "Risk factors for suicide in children and young people in England",
@@ -2484,22 +2383,6 @@
             ]
       },
       {
-            "doc_uri": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/labourproductivity/articles/ukproductivityintroduction/octobertodecember2024andjulytoseptember2024",
-            "release_date": "2025-02-18T00:00:00.000Z",
-            "title": "Productivity flash estimate and overview, UK",
-            "vis_urls": [
-                  "/visualisations/dvc3182/bar-chart-horizontal/index.html",
-                  "/visualisations/dvc3182/bar-chart-horizontal/datadownload.xlsx"
-            ],
-            "theme": "employmentandlabourmarket",
-            "vis": [
-                  {
-                        "url": "/visualisations/dvc3182/bar-chart-horizontal/index.html",
-                        "chart_type": "bar-chart"
-                  }
-            ]
-      },
-      {
             "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/birthsdeathsandmarriages/lifeexpectancies/bulletins/pastandprojecteddatafromtheperiodandcohortlifetables/2022baseduk1981to2072",
             "release_date": "2025-02-14T00:00:00.000Z",
             "title": "Past and projected period and cohort life tables",
@@ -2529,21 +2412,6 @@
                   {
                         "url": "/visualisations/dvc3169/fig5/index.html",
                         "chart_type": "line-chart"
-                  }
-            ]
-      },
-      {
-            "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/wellbeing/articles/ukmeasuresofnationalwellbeing/dashboard",
-            "release_date": "2025-02-11T00:00:00.000Z",
-            "title": "UK Measures of National Well-being Dashboard",
-            "vis_urls": [
-                  "/visualisations/dvcwellbeing/index.html"
-            ],
-            "theme": "peoplepopulationandcommunity",
-            "vis": [
-                  {
-                        "url": "/visualisations/dvcwellbeing/index.html",
-                        "chart_type": null
                   }
             ]
       },
@@ -2728,22 +2596,6 @@
             ]
       },
       {
-            "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/crimeandjustice/articles/drugmisuseinenglandandwales/yearendingmarch2024",
-            "release_date": "2024-12-12T00:00:00.000Z",
-            "title": "Drug misuse in England and Wales",
-            "vis_urls": [
-                  "/visualisations/dvc3130/fig3/index.html",
-                  "/visualisations/dvc3130/fig3/datadownload.xlsx"
-            ],
-            "theme": "peoplepopulationandcommunity",
-            "vis": [
-                  {
-                        "url": "/visualisations/dvc3130/fig3/index.html",
-                        "chart_type": null
-                  }
-            ]
-      },
-      {
             "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/healthandsocialcare/healthandlifeexpectancies/bulletins/healthstatelifeexpectanciesuk/between2011to2013and2021to2023",
             "release_date": "2024-12-12T00:00:00.000Z",
             "title": "Healthy life expectancy in England and Wales",
@@ -2755,6 +2607,22 @@
             "vis": [
                   {
                         "url": "/visualisations/dvc3126/changeovertime/index.html",
+                        "chart_type": null
+                  }
+            ]
+      },
+      {
+            "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/crimeandjustice/articles/drugmisuseinenglandandwales/yearendingmarch2024",
+            "release_date": "2024-12-12T00:00:00.000Z",
+            "title": "Drug misuse in England and Wales",
+            "vis_urls": [
+                  "/visualisations/dvc3130/fig3/index.html",
+                  "/visualisations/dvc3130/fig3/datadownload.xlsx"
+            ],
+            "theme": "peoplepopulationandcommunity",
+            "vis": [
+                  {
+                        "url": "/visualisations/dvc3130/fig3/index.html",
                         "chart_type": null
                   }
             ]
@@ -2778,6 +2646,46 @@
                   {
                         "url": "/visualisations/dvc3122/fig02/index.html",
                         "chart_type": "scatter-plot"
+                  }
+            ]
+      },
+      {
+            "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/housing/bulletins/housingpurchaseaffordabilitygreatbritain/2023",
+            "release_date": "2024-12-09T00:00:00.000Z",
+            "title": "Housing Purchase Affordability, UK",
+            "vis_urls": [
+                  "/visualisations/dvc3119/fig02/index.html",
+                  "/visualisations/dvc3119/fig02/datadownload.xlsx>",
+                  "/visualisations/dvc3119/fig03/index.html",
+                  "/visualisations/dvc3119/fig03/datadownload.xlsx>",
+                  "/visualisations/dvc3119/fig04/index.html",
+                  "/visualisations/dvc3119/fig04/datadownload.xlsx>",
+                  "/visualisations/dvc3119/fig05/index.html",
+                  "/visualisations/dvc3119/fig05/datadownload.xlsx>",
+                  "/visualisations/dvc3119/fig06/index.html",
+                  "/visualisations/dvc3119/fig06/datadownload.xlsx>"
+            ],
+            "theme": "peoplepopulationandcommunity",
+            "vis": [
+                  {
+                        "url": "/visualisations/dvc3119/fig02/index.html",
+                        "chart_type": "line-chart"
+                  },
+                  {
+                        "url": "/visualisations/dvc3119/fig03/index.html",
+                        "chart_type": "range-plot"
+                  },
+                  {
+                        "url": "/visualisations/dvc3119/fig04/index.html",
+                        "chart_type": "line-chart"
+                  },
+                  {
+                        "url": "/visualisations/dvc3119/fig05/index.html",
+                        "chart_type": "range-plot"
+                  },
+                  {
+                        "url": "/visualisations/dvc3119/fig06/index.html",
+                        "chart_type": "line-chart"
                   }
             ]
       },
@@ -2877,52 +2785,6 @@
             ]
       },
       {
-            "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/crimeandjustice/bulletins/domesticabuseinenglandandwalesoverview/november2024",
-            "release_date": "2024-11-27T00:00:00.000Z",
-            "title": "Domestic abuse in England and Wales overview",
-            "vis_urls": [
-                  "/visualisations/dvc3104/fig01/index.html",
-                  "/visualisations/dvc3104/fig01/datadownload.xlsx",
-                  "/visualisations/dvc3104/fig02/index.html",
-                  "/visualisations/dvc3104/fig02/datadownload.xlsx",
-                  "/visualisations/dvc3104/fig03/index.html",
-                  "/visualisations/dvc3104/fig03/datadownload.xlsx",
-                  "/visualisations/dvc3104/fig04/index.html",
-                  "/visualisations/dvc3104/fig04/datadownload.xlsx",
-                  "/visualisations/dvc3104/fig05/index.html",
-                  "/visualisations/dvc3104/fig05/datadownload.xlsx",
-                  "/visualisations/dvc3104/fig06/index.html",
-                  "/visualisations/dvc3104/fig06/datadownload.xlsx"
-            ],
-            "theme": "peoplepopulationandcommunity",
-            "vis": [
-                  {
-                        "url": "/visualisations/dvc3104/fig01/index.html",
-                        "chart_type": "bar-chart"
-                  },
-                  {
-                        "url": "/visualisations/dvc3104/fig02/index.html",
-                        "chart_type": "stacked-horizontal-bar-chart"
-                  },
-                  {
-                        "url": "/visualisations/dvc3104/fig03/index.html",
-                        "chart_type": "stacked-horizontal-bar-chart"
-                  },
-                  {
-                        "url": "/visualisations/dvc3104/fig04/index.html",
-                        "chart_type": "stacked-horizontal-bar-chart"
-                  },
-                  {
-                        "url": "/visualisations/dvc3104/fig05/index.html",
-                        "chart_type": "stacked-horizontal-bar-chart"
-                  },
-                  {
-                        "url": "/visualisations/dvc3104/fig06/index.html",
-                        "chart_type": "stacked-horizontal-bar-chart"
-                  }
-            ]
-      },
-      {
             "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/internationalmigration/articles/adminbasedpopulationestimates/localauthoritycasestudiesenglandandwalesmid2023",
             "release_date": "2024-11-22T00:00:00.000Z",
             "title": "Admin-based population estimates",
@@ -2987,30 +2849,42 @@
             ]
       },
       {
-            "doc_uri": "https://www.ons.gov.uk/economy/nationalaccounts/uksectoraccounts/bulletins/profitabilityofukcompanies/apriltojune2024",
+            "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/housing/bulletins/shorttermletsthroughonlinecollaborativeeconomyplatformsuk/yeartoquarter2aprtojune2024",
             "release_date": "2024-11-13T00:00:00.000Z",
-            "title": "Profitability of UK companies",
+            "title": "Short-term lets through online collaborative economy platforms, UK",
             "vis_urls": [
-                  "/visualisations/dvc3097/fig2-wrapper/index.html",
-                  "/visualisations/dvc3097/fig2-wrapper/datadownload.xlsx",
-                  "/visualisations/dvc3097/fig4-wrapper/index.html",
-                  "/visualisations/dvc3097/fig4-wrapper/datadownload.xlsx",
-                  "/visualisations/dvc3097/fig5/index.html",
-                  "/visualisations/dvc3097/fig5/datadownload.xlsx"
+                  "/visualisations/dvc3043/fig01/index.html",
+                  "/visualisations/dvc3043/fig01/datadownload.xlsx",
+                  "/visualisations/dvc3043/fig02/index.html",
+                  "/visualisations/dvc3043/fig02/datadownload.xlsx",
+                  "/visualisations/dvc3043/fig03/index.html",
+                  "/visualisations/dvc3043/fig03/datadownload.xlsx",
+                  "/visualisations/dvc3043/fig04/index.html",
+                  "/visualisations/dvc3043/fig04/datadownload.xlsx",
+                  "/visualisations/dvc3043/fig05/index.html",
+                  "/visualisations/dvc3043/fig05/datadownload.xlsx"
             ],
-            "theme": "economy",
+            "theme": "peoplepopulationandcommunity",
             "vis": [
                   {
-                        "url": "/visualisations/dvc3097/fig2-wrapper/index.html",
-                        "chart_type": null
-                  },
-                  {
-                        "url": "/visualisations/dvc3097/fig4-wrapper/index.html",
-                        "chart_type": null
-                  },
-                  {
-                        "url": "/visualisations/dvc3097/fig5/index.html",
+                        "url": "/visualisations/dvc3043/fig01/index.html",
                         "chart_type": "line-chart"
+                  },
+                  {
+                        "url": "/visualisations/dvc3043/fig02/index.html",
+                        "chart_type": null
+                  },
+                  {
+                        "url": "/visualisations/dvc3043/fig03/index.html",
+                        "chart_type": "line-chart"
+                  },
+                  {
+                        "url": "/visualisations/dvc3043/fig04/index.html",
+                        "chart_type": null
+                  },
+                  {
+                        "url": "/visualisations/dvc3043/fig05/index.html",
+                        "chart_type": null
                   }
             ]
       },
@@ -3096,44 +2970,6 @@
                   {
                         "url": "/visualisations/dvc3086/fig06/index.html",
                         "chart_type": "stacked-horizontal-bar-chart"
-                  }
-            ]
-      },
-      {
-            "doc_uri": "https://www.ons.gov.uk/economy/environmentalaccounts/bulletins/uknaturalcapitalaccounts/2024",
-            "release_date": "2024-11-08T00:00:00.000Z",
-            "title": "UK natural capital accounts",
-            "vis_urls": [
-                  "/visualisations/dvc3096/Fig2/index.html",
-                  "/visualisations/dvc3096/Fig2/datadownload.xlsx",
-                  "/visualisations/dvc3096/Fig3/index.html",
-                  "/visualisations/dvc3096/Fig3/datadownload.xlsx"
-            ],
-            "theme": "economy",
-            "vis": [
-                  {
-                        "url": "/visualisations/dvc3096/Fig2/index.html",
-                        "chart_type": null
-                  },
-                  {
-                        "url": "/visualisations/dvc3096/Fig3/index.html",
-                        "chart_type": null
-                  }
-            ]
-      },
-      {
-            "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/birthsdeathsandmarriages/livebirths/bulletins/parentscountryofbirthenglandandwales/2023",
-            "release_date": "2024-11-08T00:00:00.000Z",
-            "title": "Births by parents\u2019 country of birth, England and Wales",
-            "vis_urls": [
-                  "/visualisations/dvc3090/map/index.html",
-                  "/visualisations/dvc3090/map/datadownload.xlsx"
-            ],
-            "theme": "peoplepopulationandcommunity",
-            "vis": [
-                  {
-                        "url": "/visualisations/dvc3090/map/index.html",
-                        "chart_type": null
                   }
             ]
       },
@@ -3250,51 +3086,51 @@
             ]
       },
       {
-            "doc_uri": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/earningsandworkinghours/bulletins/annualsurveyofhoursandearnings/2024",
+            "doc_uri": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/earningsandworkinghours/bulletins/genderpaygapintheuk/2024",
             "release_date": "2024-10-29T00:00:00.000Z",
-            "title": "Employee earnings in the UK",
+            "title": "Gender pay gap in the UK",
             "vis_urls": [
-                  "/visualisations/dvc3068/fig06/index.html",
-                  "/visualisations/dvc3068/fig06/datadownload.xlsx",
-                  "/visualisations/dvc3068/fig07/index.html",
-                  "/visualisations/dvc3068/fig07/datadownload.xlsx"
+                  "/visualisations/dvc3069/fig05/index.html",
+                  "/visualisations/dvc3069/fig05/datadownload.xlsx",
+                  "/visualisations/dvc3069/fig06/index.html",
+                  "/visualisations/dvc3069/fig06/datadownload.xlsx",
+                  "/visualisations/dvc3069/fig08/index.html",
+                  "/visualisations/dvc3069/fig08/datadownload.xlsx"
             ],
             "theme": "employmentandlabourmarket",
             "vis": [
                   {
-                        "url": "/visualisations/dvc3068/fig06/index.html",
+                        "url": "/visualisations/dvc3069/fig05/index.html",
+                        "chart_type": "bar-chart"
+                  },
+                  {
+                        "url": "/visualisations/dvc3069/fig06/index.html",
                         "chart_type": null
                   },
                   {
-                        "url": "/visualisations/dvc3068/fig07/index.html",
+                        "url": "/visualisations/dvc3069/fig08/index.html",
                         "chart_type": null
                   }
             ]
       },
       {
-            "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/birthsdeathsandmarriages/livebirths/bulletins/birthsummarytablesenglandandwales/2023",
+            "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/housing/bulletins/privaterentalaffordabilityengland/2023",
             "release_date": "2024-10-28T00:00:00.000Z",
-            "title": "Births in England and Wales",
+            "title": "Private rental affordability, England and Wales",
             "vis_urls": [
-                  "/visualisations/dvc3083/fig01/index.html",
-                  "/visualisations/dvc3083/fig01/datadownload.xlsx",
-                  "/visualisations/dvc3083/fig02/index.html",
-                  "/visualisations/dvc3083/fig02/datadownload.xlsx",
-                  "/visualisations/dvc3083/fig04/index.html",
-                  "/visualisations/dvc3083/fig04/datadownload.xlsx"
+                  "/visualisations/dvc3056/fig04/index.html",
+                  "/visualisations/dvc3056/fig04/datadownload.xlsx",
+                  "/visualisations/dvc3056/fig05/index.html",
+                  "/visualisations/dvc3056/fig05/datadownload.xlsx"
             ],
             "theme": "peoplepopulationandcommunity",
             "vis": [
                   {
-                        "url": "/visualisations/dvc3083/fig01/index.html",
-                        "chart_type": "line-chart"
+                        "url": "/visualisations/dvc3056/fig04/index.html",
+                        "chart_type": null
                   },
                   {
-                        "url": "/visualisations/dvc3083/fig02/index.html",
-                        "chart_type": "line-chart"
-                  },
-                  {
-                        "url": "/visualisations/dvc3083/fig04/index.html",
+                        "url": "/visualisations/dvc3056/fig05/index.html",
                         "chart_type": null
                   }
             ]
@@ -3375,50 +3211,6 @@
             ]
       },
       {
-            "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/housing/bulletins/privaterentalaffordabilityengland/2023",
-            "release_date": "2024-10-28T00:00:00.000Z",
-            "title": "Private rental affordability, England and Wales",
-            "vis_urls": [
-                  "/visualisations/dvc3056/fig04/index.html",
-                  "/visualisations/dvc3056/fig04/datadownload.xlsx",
-                  "/visualisations/dvc3056/fig05/index.html",
-                  "/visualisations/dvc3056/fig05/datadownload.xlsx"
-            ],
-            "theme": "peoplepopulationandcommunity",
-            "vis": [
-                  {
-                        "url": "/visualisations/dvc3056/fig04/index.html",
-                        "chart_type": null
-                  },
-                  {
-                        "url": "/visualisations/dvc3056/fig05/index.html",
-                        "chart_type": null
-                  }
-            ]
-      },
-      {
-            "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/birthsdeathsandmarriages/deaths/bulletins/deathsrelatedtodrugpoisoninginenglandandwales/2023registrations",
-            "release_date": "2024-10-22T23:00:00.000Z",
-            "title": "Deaths related to drug poisoning in England and Wales",
-            "vis_urls": [
-                  "/visualisations/dvc3062/fig04/index.html",
-                  "/visualisations/dvc3062/fig04/datadownload.xlsx",
-                  "/visualisations/dvc3062/fig06/index.html",
-                  "/visualisations/dvc3062/fig06/datadownload.xlsx"
-            ],
-            "theme": "peoplepopulationandcommunity",
-            "vis": [
-                  {
-                        "url": "/visualisations/dvc3062/fig04/index.html",
-                        "chart_type": "line-chart"
-                  },
-                  {
-                        "url": "/visualisations/dvc3062/fig06/index.html",
-                        "chart_type": "line-chart"
-                  }
-            ]
-      },
-      {
             "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/birthsdeathsandmarriages/lifeexpectancies/bulletins/nationallifetablesunitedkingdom/2021to2023",
             "release_date": "2024-10-22T23:00:00.000Z",
             "title": "National life tables \u2013 life expectancy in England and Wales",
@@ -3451,22 +3243,6 @@
             ]
       },
       {
-            "doc_uri": "https://www.ons.gov.uk/economy/economicoutputandproductivity/publicservicesproductivity/bulletins/timeuseinthepublicsectorgreatbritain/furtheranalysisfebruary2024",
-            "release_date": "2024-10-20T23:00:00.000Z",
-            "title": "Time use in the public sector, Great Britain",
-            "vis_urls": [
-                  "/visualisations/dvc3039/fig02/index.html",
-                  "/visualisations/dvc3039/fig02/datadownload.xlsx"
-            ],
-            "theme": "economy",
-            "vis": [
-                  {
-                        "url": "/visualisations/dvc3039/fig02/index.html",
-                        "chart_type": "bar-chart"
-                  }
-            ]
-      },
-      {
             "doc_uri": "https://www.ons.gov.uk/economy/economicoutputandproductivity/publicservicesproductivity/bulletins/publicsectormanagementpracticessurveypilotuk/2023",
             "release_date": "2024-10-20T23:00:00.000Z",
             "title": "Public Sector Management Practices Survey pilot, UK",
@@ -3491,6 +3267,22 @@
                   {
                         "url": "/visualisations/dvc3074/fig04/index.html",
                         "chart_type": "range-plot"
+                  }
+            ]
+      },
+      {
+            "doc_uri": "https://www.ons.gov.uk/economy/economicoutputandproductivity/publicservicesproductivity/bulletins/timeuseinthepublicsectorgreatbritain/furtheranalysisfebruary2024",
+            "release_date": "2024-10-20T23:00:00.000Z",
+            "title": "Time use in the public sector, Great Britain",
+            "vis_urls": [
+                  "/visualisations/dvc3039/fig02/index.html",
+                  "/visualisations/dvc3039/fig02/datadownload.xlsx"
+            ],
+            "theme": "economy",
+            "vis": [
+                  {
+                        "url": "/visualisations/dvc3039/fig02/index.html",
+                        "chart_type": "bar-chart"
                   }
             ]
       },
@@ -3605,6 +3397,40 @@
             ]
       },
       {
+            "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/housing/articles/energyefficiencyofhousinginenglandandwales/2024",
+            "release_date": "2024-10-07T23:00:00.000Z",
+            "title": "Energy efficiency of housing in England and Wales",
+            "vis_urls": [
+                  "/visualisations/dvc3033/fig01/index.html",
+                  "/visualisations/dvc3033/fig01/datadownload.xlsx",
+                  "/visualisations/dvc3033/fig02/index.html",
+                  "/visualisations/dvc3033/fig02/datadownload.xlsx",
+                  "/visualisations/dvc3033/fig03/index.html",
+                  "/visualisations/dvc3033/fig03/datadownload.xlsx",
+                  "/visualisations/dvc3033/fig04/index.html",
+                  "/visualisations/dvc3033/fig04/datadownload.xlsx"
+            ],
+            "theme": "peoplepopulationandcommunity",
+            "vis": [
+                  {
+                        "url": "/visualisations/dvc3033/fig01/index.html",
+                        "chart_type": null
+                  },
+                  {
+                        "url": "/visualisations/dvc3033/fig02/index.html",
+                        "chart_type": null
+                  },
+                  {
+                        "url": "/visualisations/dvc3033/fig03/index.html",
+                        "chart_type": "range-plot"
+                  },
+                  {
+                        "url": "/visualisations/dvc3033/fig04/index.html",
+                        "chart_type": "bar-chart"
+                  }
+            ]
+      },
+      {
             "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/healthandsocialcare/healthandlifeexpectancies/bulletins/adultsmokinghabitsingreatbritain/2023",
             "release_date": "2024-09-30T23:00:00.000Z",
             "title": "Adult smoking habits in the UK",
@@ -3669,22 +3495,6 @@
             ]
       },
       {
-            "doc_uri": "https://www.ons.gov.uk/economy/grossdomesticproductgdp/bulletins/quarterlynationalaccounts/apriltojune2024",
-            "release_date": "2024-09-29T23:00:00.000Z",
-            "title": "GDP quarterly national accounts, UK",
-            "vis_urls": [
-                  "/visualisations/dvc3053/fig12/index.html",
-                  "/visualisations/dvc3053/fig12/datadownload.xlsx"
-            ],
-            "theme": "economy",
-            "vis": [
-                  {
-                        "url": "/visualisations/dvc3053/fig12/index.html",
-                        "chart_type": "scatter-plot"
-                  }
-            ]
-      },
-      {
             "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/crimeandjustice/articles/ifeellikeiamlivingsomeoneelseslifeoneinsevenpeopleavictimofstalking/2024-09-26",
             "release_date": "2024-09-25T23:00:00.000Z",
             "title": "\u2018I feel like I am living someone else\u2019s life\u2019: one in seven people a victim of stalking ",
@@ -3734,67 +3544,23 @@
             ]
       },
       {
-            "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/healthandsocialcare/healthcaresystem/bulletins/experiencesofnhshealthcareservicesinengland/september2024",
-            "release_date": "2024-09-11T23:00:00.000Z",
-            "title": "Experiences of NHS healthcare services in England",
+            "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/birthsdeathsandmarriages/deaths/bulletins/suicidesintheunitedkingdom/2023",
+            "release_date": "2024-08-28T23:00:00.000Z",
+            "title": "Suicides in England and Wales",
             "vis_urls": [
-                  "/visualisations/dvc3035/fig1/index.html",
-                  "/visualisations/dvc3035/fig1/datadownload.xlsx>",
-                  "/visualisations/dvc3035/fig2/index.html",
-                  "/visualisations/dvc3035/fig2/datadownload.xlsx>",
-                  "/visualisations/dvc3035/fig3/index.html",
-                  "/visualisations/dvc3035/fig3/datadownload.xlsx>",
-                  "/visualisations/dvc3035/fig4/index.html",
-                  "/visualisations/dvc3035/fig4/datadownload.xlsx>"
+                  "/visualisations/dvc3026/fig02/index.html",
+                  "/visualisations/dvc3026/fig02/datadownload.xlsx",
+                  "/visualisations/dvc3026/fig03/index.html",
+                  "/visualisations/dvc3026/fig03/datadownload.xlsx"
             ],
             "theme": "peoplepopulationandcommunity",
             "vis": [
                   {
-                        "url": "/visualisations/dvc3035/fig1/index.html",
-                        "chart_type": "stacked-horizontal-bar-chart"
-                  },
-                  {
-                        "url": "/visualisations/dvc3035/fig2/index.html",
-                        "chart_type": "stacked-horizontal-bar-chart"
-                  },
-                  {
-                        "url": "/visualisations/dvc3035/fig3/index.html",
-                        "chart_type": "stacked-horizontal-bar-chart"
-                  },
-                  {
-                        "url": "/visualisations/dvc3035/fig4/index.html",
+                        "url": "/visualisations/dvc3026/fig02/index.html",
                         "chart_type": "bar-chart"
-                  }
-            ]
-      },
-      {
-            "doc_uri": "https://www.ons.gov.uk/economy/regionalaccounts/grossdisposablehouseholdincome/bulletins/regionalgrossdisposablehouseholdincomegdhi/1997to2022",
-            "release_date": "2024-09-03T23:00:00.000Z",
-            "title": "Regional gross disposable household income, UK",
-            "vis_urls": [
-                  "/visualisations/dvc3029/fig2/index.html",
-                  "/visualisations/dvc3029/fig2/datadownload.xlsx"
-            ],
-            "theme": "economy",
-            "vis": [
+                  },
                   {
-                        "url": "/visualisations/dvc3029/fig2/index.html",
-                        "chart_type": null
-                  }
-            ]
-      },
-      {
-            "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/personalandhouseholdfinances/expenditure/bulletins/familyspendingintheuk/april2022tomarch2023",
-            "release_date": "2024-08-22T23:00:00.000Z",
-            "title": "Family spending in the UK",
-            "vis_urls": [
-                  "/visualisations/dvc3011/treemap/index.html",
-                  "/visualisations/dvc3011/treemap/datadownload.xlsx"
-            ],
-            "theme": "peoplepopulationandcommunity",
-            "vis": [
-                  {
-                        "url": "/visualisations/dvc3011/treemap/index.html",
+                        "url": "/visualisations/dvc3026/fig03/index.html",
                         "chart_type": null
                   }
             ]
@@ -3830,6 +3596,81 @@
                   {
                         "url": "/visualisations/dvc3013/fig4/index.html",
                         "chart_type": "line-chart"
+                  }
+            ]
+      },
+      {
+            "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/personalandhouseholdfinances/expenditure/bulletins/familyspendingintheuk/april2022tomarch2023",
+            "release_date": "2024-08-22T23:00:00.000Z",
+            "title": "Family spending in the UK",
+            "vis_urls": [
+                  "/visualisations/dvc3011/treemap/index.html",
+                  "/visualisations/dvc3011/treemap/datadownload.xlsx"
+            ],
+            "theme": "peoplepopulationandcommunity",
+            "vis": [
+                  {
+                        "url": "/visualisations/dvc3011/treemap/index.html",
+                        "chart_type": null
+                  }
+            ]
+      },
+      {
+            "doc_uri": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/labourproductivity/articles/ukproductivityintroduction/august2024",
+            "release_date": "2024-08-14T23:00:00.000Z",
+            "title": "Productivity flash estimate and overview, UK",
+            "vis_urls": [
+                  "/visualisations/dvc3010/bar-chart-horizontal/index.html",
+                  "/visualisations/dvc3010/bar-chart-horizontal/datadownload.xlsx"
+            ],
+            "theme": "employmentandlabourmarket",
+            "vis": [
+                  {
+                        "url": "/visualisations/dvc3010/bar-chart-horizontal/index.html",
+                        "chart_type": "bar-chart"
+                  }
+            ]
+      },
+      {
+            "doc_uri": "https://www.ons.gov.uk/economy/inflationandpriceindices/bulletins/privaterentandhousepricesuk/august2024",
+            "release_date": "2024-08-13T23:00:00.000Z",
+            "title": "Private rent and house prices, UK",
+            "vis_urls": [
+                  "/visualisations/dvc3006/fig06/index.html",
+                  "/visualisations/dvc3006/fig06/datadownload.xlsx",
+                  "/visualisations/dvc3006/fig07/index.html",
+                  "/visualisations/dvc3006/fig07/datadownload.xlsx",
+                  "/visualisations/dvc3006/fig08/index.html",
+                  "/visualisations/dvc3006/fig08/datadownload.xlsx"
+            ],
+            "theme": "economy",
+            "vis": [
+                  {
+                        "url": "/visualisations/dvc3006/fig06/index.html",
+                        "chart_type": "line-chart"
+                  },
+                  {
+                        "url": "/visualisations/dvc3006/fig07/index.html",
+                        "chart_type": null
+                  },
+                  {
+                        "url": "/visualisations/dvc3006/fig08/index.html",
+                        "chart_type": null
+                  }
+            ]
+      },
+      {
+            "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/wellbeing/articles/ukmeasuresofnationalwellbeing/dashboard",
+            "release_date": "2024-08-07T23:00:00.000Z",
+            "title": "UK Measures of National Well-being Dashboard",
+            "vis_urls": [
+                  "/visualisations/dvcwellbeing/index.html"
+            ],
+            "theme": "peoplepopulationandcommunity",
+            "vis": [
+                  {
+                        "url": "/visualisations/dvcwellbeing/index.html",
+                        "chart_type": null
                   }
             ]
       },
@@ -4028,34 +3869,6 @@
             ]
       },
       {
-            "doc_uri": "https://www.ons.gov.uk/economy/inflationandpriceindices/bulletins/privaterentandhousepricesuk/june2024",
-            "release_date": "2024-06-18T23:00:00.000Z",
-            "title": "Private rent and house prices, UK",
-            "vis_urls": [
-                  "/visualisations/dvc2974/fig05/index.html",
-                  "/visualisations/dvc2974/fig05/datadownload.xlsx",
-                  "/visualisations/dvc2974/fig06/index.html",
-                  "/visualisations/dvc2974/fig06/datadownload.xlsx",
-                  "/visualisations/dvc2974/fig07/index.html",
-                  "/visualisations/dvc2974/fig07/datadownload.xlsx"
-            ],
-            "theme": "economy",
-            "vis": [
-                  {
-                        "url": "/visualisations/dvc2974/fig05/index.html",
-                        "chart_type": "line-chart"
-                  },
-                  {
-                        "url": "/visualisations/dvc2974/fig06/index.html",
-                        "chart_type": null
-                  },
-                  {
-                        "url": "/visualisations/dvc2974/fig07/index.html",
-                        "chart_type": null
-                  }
-            ]
-      },
-      {
             "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/healthandsocialcare/healthcaresystem/articles/nhsplannedcarewaitingtimesacrosstheuk/2024-06-18",
             "release_date": "2024-06-17T23:00:00.000Z",
             "title": "NHS planned care waiting times across the UK",
@@ -4092,40 +3905,6 @@
                   {
                         "url": "/visualisations/dvc2957/fig5/index.html",
                         "chart_type": "stacked-area-chart"
-                  }
-            ]
-      },
-      {
-            "doc_uri": "https://www.ons.gov.uk/economy/economicoutputandproductivity/productivitymeasures/bulletins/regionalandsubregionallabourproductivityuk/2022",
-            "release_date": "2024-06-16T23:00:00.000Z",
-            "title": "Regional and subregional labour productivity, UK",
-            "vis_urls": [
-                  "/visualisations/dvc2976/fig1/index.html",
-                  "/visualisations/dvc2976/fig1/datadownload.xlsx",
-                  "/visualisations/dvc2976/fig4/index.html",
-                  "/visualisations/dvc2976/fig4/datadownload.xlsx",
-                  "/visualisations/dvc2976/fig5/index.html",
-                  "/visualisations/dvc2976/fig5/datadownload.xlsx",
-                  "/visualisations/dvc2976/fig6/index.html",
-                  "/visualisations/dvc2976/fig6/datadownload.xlsx"
-            ],
-            "theme": "economy",
-            "vis": [
-                  {
-                        "url": "/visualisations/dvc2976/fig1/index.html",
-                        "chart_type": null
-                  },
-                  {
-                        "url": "/visualisations/dvc2976/fig4/index.html",
-                        "chart_type": "scatter-plot"
-                  },
-                  {
-                        "url": "/visualisations/dvc2976/fig5/index.html",
-                        "chart_type": null
-                  },
-                  {
-                        "url": "/visualisations/dvc2976/fig6/index.html",
-                        "chart_type": null
                   }
             ]
       },
@@ -4192,64 +3971,6 @@
             ]
       },
       {
-            "doc_uri": "https://www.ons.gov.uk/economy/governmentpublicsectorandtaxes/publicsectorfinance/articles/countryandregionalpublicsectorfinances/financialyearending2023",
-            "release_date": "2024-06-06T23:00:00.000Z",
-            "title": "Country and regional public sector finances, UK",
-            "vis_urls": [
-                  "/visualisations/dvc2959/fig01/index.html",
-                  "/visualisations/dvc2959/fig01/datadownload.xlsx",
-                  "/visualisations/dvc2959/fig02/index.html",
-                  "/visualisations/dvc2959/fig02/datadownload.xlsx",
-                  "/visualisations/dvc2959/fig04/index.html",
-                  "/visualisations/dvc2959/fig04/datadownload.xlsx",
-                  "/visualisations/dvc2959/fig05/index.html",
-                  "/visualisations/dvc2959/fig05/datadownload.xlsx",
-                  "/visualisations/dvc2959/fig06/index.html",
-                  "/visualisations/dvc2959/fig06/datadownload.xlsx",
-                  "/visualisations/dvc2959/fig07/index.html",
-                  "/visualisations/dvc2959/fig07/datadownload.xlsx",
-                  "/visualisations/dvc2959/fig08/index.html",
-                  "/visualisations/dvc2959/fig08/datadownload.xlsx",
-                  "/visualisations/dvc2959/fig09/index.html",
-                  "/visualisations/dvc2959/fig09/datadownload.xlsx"
-            ],
-            "theme": "economy",
-            "vis": [
-                  {
-                        "url": "/visualisations/dvc2959/fig01/index.html",
-                        "chart_type": null
-                  },
-                  {
-                        "url": "/visualisations/dvc2959/fig02/index.html",
-                        "chart_type": "range-plot"
-                  },
-                  {
-                        "url": "/visualisations/dvc2959/fig04/index.html",
-                        "chart_type": "range-plot"
-                  },
-                  {
-                        "url": "/visualisations/dvc2959/fig05/index.html",
-                        "chart_type": "range-plot"
-                  },
-                  {
-                        "url": "/visualisations/dvc2959/fig06/index.html",
-                        "chart_type": "stacked-horizontal-bar-chart"
-                  },
-                  {
-                        "url": "/visualisations/dvc2959/fig07/index.html",
-                        "chart_type": "range-plot"
-                  },
-                  {
-                        "url": "/visualisations/dvc2959/fig08/index.html",
-                        "chart_type": "range-plot"
-                  },
-                  {
-                        "url": "/visualisations/dvc2959/fig09/index.html",
-                        "chart_type": "range-plot"
-                  }
-            ]
-      },
-      {
             "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/armedforcescommunity/articles/thelabourmarketstatusofukarmedforcesveteransenglandandwales/census2021",
             "release_date": "2024-06-06T23:00:00.000Z",
             "title": "The labour market status of UK armed forces veterans, England and Wales",
@@ -4310,6 +4031,64 @@
                   {
                         "url": "/visualisations/dvc2952/fig9/index.html",
                         "chart_type": "grouped-bar-chart"
+                  }
+            ]
+      },
+      {
+            "doc_uri": "https://www.ons.gov.uk/economy/governmentpublicsectorandtaxes/publicsectorfinance/articles/countryandregionalpublicsectorfinances/financialyearending2023",
+            "release_date": "2024-06-06T23:00:00.000Z",
+            "title": "Country and regional public sector finances, UK",
+            "vis_urls": [
+                  "/visualisations/dvc2959/fig01/index.html",
+                  "/visualisations/dvc2959/fig01/datadownload.xlsx",
+                  "/visualisations/dvc2959/fig02/index.html",
+                  "/visualisations/dvc2959/fig02/datadownload.xlsx",
+                  "/visualisations/dvc2959/fig04/index.html",
+                  "/visualisations/dvc2959/fig04/datadownload.xlsx",
+                  "/visualisations/dvc2959/fig05/index.html",
+                  "/visualisations/dvc2959/fig05/datadownload.xlsx",
+                  "/visualisations/dvc2959/fig06/index.html",
+                  "/visualisations/dvc2959/fig06/datadownload.xlsx",
+                  "/visualisations/dvc2959/fig07/index.html",
+                  "/visualisations/dvc2959/fig07/datadownload.xlsx",
+                  "/visualisations/dvc2959/fig08/index.html",
+                  "/visualisations/dvc2959/fig08/datadownload.xlsx",
+                  "/visualisations/dvc2959/fig09/index.html",
+                  "/visualisations/dvc2959/fig09/datadownload.xlsx"
+            ],
+            "theme": "economy",
+            "vis": [
+                  {
+                        "url": "/visualisations/dvc2959/fig01/index.html",
+                        "chart_type": null
+                  },
+                  {
+                        "url": "/visualisations/dvc2959/fig02/index.html",
+                        "chart_type": "range-plot"
+                  },
+                  {
+                        "url": "/visualisations/dvc2959/fig04/index.html",
+                        "chart_type": "range-plot"
+                  },
+                  {
+                        "url": "/visualisations/dvc2959/fig05/index.html",
+                        "chart_type": "range-plot"
+                  },
+                  {
+                        "url": "/visualisations/dvc2959/fig06/index.html",
+                        "chart_type": "stacked-horizontal-bar-chart"
+                  },
+                  {
+                        "url": "/visualisations/dvc2959/fig07/index.html",
+                        "chart_type": "range-plot"
+                  },
+                  {
+                        "url": "/visualisations/dvc2959/fig08/index.html",
+                        "chart_type": "range-plot"
+                  },
+                  {
+                        "url": "/visualisations/dvc2959/fig09/index.html",
+                        "chart_type": "range-plot"
                   }
             ]
       },
@@ -4409,6 +4188,64 @@
             ]
       },
       {
+            "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/internationalmigration/bulletins/longterminternationalmigrationprovisional/yearendingdecember2023",
+            "release_date": "2024-05-22T23:00:00.000Z",
+            "title": "Long-term international migration, provisional",
+            "vis_urls": [
+                  "/visualisations/dvc2953/fig01/index.html",
+                  "/visualisations/dvc2953/fig01/datadownload.xlsx",
+                  "/visualisations/dvc2953/fig02/index.html",
+                  "/visualisations/dvc2953/fig02/datadownload.xlsx",
+                  "/visualisations/dvc2953/fig03/index.html",
+                  "/visualisations/dvc2953/fig03/datadownload.xlsx",
+                  "/visualisations/dvc2953/fig04/index.html",
+                  "/visualisations/dvc2953/fig04/datadownload.xlsx",
+                  "/visualisations/dvc2953/fig05/index.html",
+                  "/visualisations/dvc2953/fig05/datadownload.xlsx",
+                  "/visualisations/dvc2953/fig06/index.html",
+                  "/visualisations/dvc2953/fig06/datadownload.xlsx",
+                  "/visualisations/dvc2953/fig07/index.html",
+                  "/visualisations/dvc2953/fig07/datadownload.xlsx",
+                  "/visualisations/dvc2953/fig08/index.html",
+                  "/visualisations/dvc2953/fig08/datadownload.xlsx"
+            ],
+            "theme": "peoplepopulationandcommunity",
+            "vis": [
+                  {
+                        "url": "/visualisations/dvc2953/fig01/index.html",
+                        "chart_type": "line-chart"
+                  },
+                  {
+                        "url": "/visualisations/dvc2953/fig02/index.html",
+                        "chart_type": "line-chart"
+                  },
+                  {
+                        "url": "/visualisations/dvc2953/fig03/index.html",
+                        "chart_type": "line-chart"
+                  },
+                  {
+                        "url": "/visualisations/dvc2953/fig04/index.html",
+                        "chart_type": "line-chart"
+                  },
+                  {
+                        "url": "/visualisations/dvc2953/fig05/index.html",
+                        "chart_type": "line-chart"
+                  },
+                  {
+                        "url": "/visualisations/dvc2953/fig06/index.html",
+                        "chart_type": "line-chart"
+                  },
+                  {
+                        "url": "/visualisations/dvc2953/fig07/index.html",
+                        "chart_type": "line-chart"
+                  },
+                  {
+                        "url": "/visualisations/dvc2953/fig08/index.html",
+                        "chart_type": "line-chart"
+                  }
+            ]
+      },
+      {
             "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/internationalmigration/articles/internationalmigrationresearchprogressupdate/may2024",
             "release_date": "2024-05-22T23:00:00.000Z",
             "title": "International migration research, progress update",
@@ -4476,6 +4313,21 @@
                   },
                   {
                         "url": "/visualisations/dvc2910/fig07/index.html",
+                        "chart_type": null
+                  }
+            ]
+      },
+      {
+            "doc_uri": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/bulletins/uklabourmarket/may2024",
+            "release_date": "2024-05-13T23:00:00.000Z",
+            "title": "Labour market overview, UK",
+            "vis_urls": [
+                  "/visualisations/dvc2947/dashwrapper/index.html"
+            ],
+            "theme": "employmentandlabourmarket",
+            "vis": [
+                  {
+                        "url": "/visualisations/dvc2947/dashwrapper/index.html",
                         "chart_type": null
                   }
             ]
@@ -4563,45 +4415,6 @@
                   {
                         "url": "/visualisations/dvc2901/interactive-scatter/index.html",
                         "chart_type": "bar-chart"
-                  }
-            ]
-      },
-      {
-            "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/crimeandjustice/articles/crimetrendsinenglandandwalesandhowwemeasurethem/2024-03-06",
-            "release_date": "2024-04-24T23:00:00.000Z",
-            "title": "Crime trends in England and Wales and how we measure them ",
-            "vis_urls": [
-                  "/visualisations/dvc2885/fig1/index.html",
-                  "/visualisations/dvc2885/fig1/datadownload.xlsx",
-                  "/visualisations/dvc2885/fig2/index.html",
-                  "/visualisations/dvc2885/fig2/datadownload.xlsx",
-                  "/visualisations/dvc2885/fig3/index.html",
-                  "/visualisations/dvc2885/fig3/datadownload.xlsx",
-                  "/visualisations/dvc2885/table/index.html",
-                  "/visualisations/dvc2885/table/datadownload.xlsx",
-                  "/visualisations/dvc2885/table/data_quality_framework.pdf"
-            ],
-            "theme": "peoplepopulationandcommunity",
-            "vis": [
-                  {
-                        "url": "/visualisations/dvc2885/fig1/index.html",
-                        "chart_type": null
-                  },
-                  {
-                        "url": "/visualisations/dvc2885/fig2/index.html",
-                        "chart_type": null
-                  },
-                  {
-                        "url": "/visualisations/dvc2885/fig3/index.html",
-                        "chart_type": null
-                  },
-                  {
-                        "url": "/visualisations/dvc2885/table/index.html",
-                        "chart_type": null
-                  },
-                  {
-                        "url": "/visualisations/dvc2885/table/data_quality_framework.pdf",
-                        "chart_type": null
                   }
             ]
       },
@@ -4750,22 +4563,6 @@
                   {
                         "url": "/visualisations/dvc2927/fig14-taiwanMulti/index.html",
                         "chart_type": "line-chart"
-                  }
-            ]
-      },
-      {
-            "doc_uri": "https://www.ons.gov.uk/economy/economicoutputandproductivity/productivitymeasures/bulletins/investmentinintangibleassetsintheuk/2021",
-            "release_date": "2024-04-22T23:00:00.000Z",
-            "title": "Investment in intangible assets in the UK",
-            "vis_urls": [
-                  "/visualisations/dvc2911/fig06/index.html",
-                  "/visualisations/dvc2911/fig06/datadownload.xlsx>"
-            ],
-            "theme": "economy",
-            "vis": [
-                  {
-                        "url": "/visualisations/dvc2911/fig06/index.html",
-                        "chart_type": "bar-chart"
                   }
             ]
       },
@@ -5182,34 +4979,6 @@
             ]
       },
       {
-            "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/housing/bulletins/housingaffordabilityinenglandandwales/2023",
-            "release_date": "2024-03-25T00:00:00.000Z",
-            "title": "Housing affordability in England and Wales",
-            "vis_urls": [
-                  "/visualisations/dvc2891/fig3/index.html",
-                  "/visualisations/dvc2891/fig3/datadownload.xlsx",
-                  "/visualisations/dvc2891/fig4/index.html",
-                  "/visualisations/dvc2891/fig4/datadownload.xlsx",
-                  "/visualisations/dvc2891/fig5/index.html",
-                  "/visualisations/dvc2891/fig5/datadownload.xlsx"
-            ],
-            "theme": "peoplepopulationandcommunity",
-            "vis": [
-                  {
-                        "url": "/visualisations/dvc2891/fig3/index.html",
-                        "chart_type": null
-                  },
-                  {
-                        "url": "/visualisations/dvc2891/fig4/index.html",
-                        "chart_type": null
-                  },
-                  {
-                        "url": "/visualisations/dvc2891/fig5/index.html",
-                        "chart_type": null
-                  }
-            ]
-      },
-      {
             "doc_uri": "https://www.ons.gov.uk/economy/economicoutputandproductivity/output/articles/consumercardspendingflowofspendingacrosstheuk/2019to2023",
             "release_date": "2024-03-25T00:00:00.000Z",
             "title": "Consumer card spending, flow of spending across the UK",
@@ -5225,6 +4994,21 @@
                   },
                   {
                         "url": "/visualisations/dvc2893/fig4/index.html",
+                        "chart_type": null
+                  }
+            ]
+      },
+      {
+            "doc_uri": "https://www.ons.gov.uk/economy/governmentpublicsectorandtaxes/publicsectorfinance/bulletins/publicsectorfinances/february2024",
+            "release_date": "2024-03-21T00:00:00.000Z",
+            "title": "Public sector finances, UK",
+            "vis_urls": [
+                  "/visualisations/dvc2902/dashwrapper/index.html"
+            ],
+            "theme": "economy",
+            "vis": [
+                  {
+                        "url": "/visualisations/dvc2902/dashwrapper/index.html",
                         "chart_type": null
                   }
             ]
@@ -5311,21 +5095,6 @@
             "vis": [
                   {
                         "url": "/visualisations/dvc2734/build/index.html",
-                        "chart_type": null
-                  }
-            ]
-      },
-      {
-            "doc_uri": "https://www.ons.gov.uk/economy/economicoutputandproductivity/output/bulletins/economicactivityandsocialchangeintheukrealtimeindicators/14march2024",
-            "release_date": "2024-03-14T00:00:00.000Z",
-            "title": "Economic activity and social change in the UK, real-time indicators",
-            "vis_urls": [
-                  "/visualisations/dvc2894/dashboard/index.html"
-            ],
-            "theme": "economy",
-            "vis": [
-                  {
-                        "url": "/visualisations/dvc2894/dashboard/index.html",
                         "chart_type": null
                   }
             ]
@@ -5463,18 +5232,41 @@
             ]
       },
       {
-            "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/healthandsocialcare/healthcaresystem/articles/thehealthcareworkforceacrosstheuk/2024",
+            "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/crimeandjustice/articles/crimetrendsinenglandandwalesandhowwemeasurethem/2024-03-06",
             "release_date": "2024-03-06T00:00:00.000Z",
-            "title": "The healthcare workforce across the UK",
+            "title": "Crime trends in England and Wales and how we measure them ",
             "vis_urls": [
-                  "/visualisations/dvc2858/line-chart/index.html",
-                  "/visualisations/dvc2858/line-chart/datadownload.xlsx"
+                  "/visualisations/dvc2885/fig1/index.html",
+                  "/visualisations/dvc2885/fig1/datadownload.xlsx",
+                  "/visualisations/dvc2885/fig2/index.html",
+                  "/visualisations/dvc2885/fig2/datadownload.xlsx",
+                  "/visualisations/dvc2885/fig3/index.html",
+                  "/visualisations/dvc2885/fig3/datadownload.xlsx",
+                  "/visualisations/dvc2885/table/index.html",
+                  "/visualisations/dvc2885/table/datadownload.xlsx",
+                  "/visualisations/dvc2885/table/data_quality_framework.pdf"
             ],
             "theme": "peoplepopulationandcommunity",
             "vis": [
                   {
-                        "url": "/visualisations/dvc2858/line-chart/index.html",
-                        "chart_type": "line-chart"
+                        "url": "/visualisations/dvc2885/fig1/index.html",
+                        "chart_type": null
+                  },
+                  {
+                        "url": "/visualisations/dvc2885/fig2/index.html",
+                        "chart_type": null
+                  },
+                  {
+                        "url": "/visualisations/dvc2885/fig3/index.html",
+                        "chart_type": null
+                  },
+                  {
+                        "url": "/visualisations/dvc2885/table/index.html",
+                        "chart_type": null
+                  },
+                  {
+                        "url": "/visualisations/dvc2885/table/data_quality_framework.pdf",
+                        "chart_type": null
                   }
             ]
       },
@@ -5497,6 +5289,22 @@
                   {
                         "url": "/visualisations/dvc2881/fig05/index.html",
                         "chart_type": "range-plot"
+                  }
+            ]
+      },
+      {
+            "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/healthandsocialcare/healthcaresystem/articles/thehealthcareworkforceacrosstheuk/2024",
+            "release_date": "2024-03-06T00:00:00.000Z",
+            "title": "The healthcare workforce across the UK",
+            "vis_urls": [
+                  "/visualisations/dvc2858/line-chart/index.html",
+                  "/visualisations/dvc2858/line-chart/datadownload.xlsx"
+            ],
+            "theme": "peoplepopulationandcommunity",
+            "vis": [
+                  {
+                        "url": "/visualisations/dvc2858/line-chart/index.html",
+                        "chart_type": "line-chart"
                   }
             ]
       },
@@ -5945,46 +5753,24 @@
             ]
       },
       {
-            "doc_uri": "https://www.ons.gov.uk/economy/nationalaccounts/balanceofpayments/bulletins/balanceofpayments/julytoseptember2023",
-            "release_date": "2023-12-22T00:00:00.000Z",
-            "title": "Balance of payments, UK",
+            "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/birthsdeathsandmarriages/deaths/bulletins/deathsrelatedtodrugpoisoninginenglandandwales/2022registrations",
+            "release_date": "2023-12-19T00:00:00.000Z",
+            "title": "Deaths related to drug poisoning in England and Wales",
             "vis_urls": [
-                  "/visualisations/dvc2827/fig3/index.html",
-                  "/visualisations/dvc2827/fig3/datadownload.xlsx"
-            ],
-            "theme": "economy",
-            "vis": [
-                  {
-                        "url": "/visualisations/dvc2827/fig3/index.html",
-                        "chart_type": null
-                  }
-            ]
-      },
-      {
-            "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/housing/bulletins/privaterentalmarketsummarystatisticsinengland/october2022toseptember2023",
-            "release_date": "2023-12-20T00:00:00.000Z",
-            "title": "Private rental market summary statistics in England",
-            "vis_urls": [
-                  "/visualisations/dvc2825/fig1/index.html",
-                  "/visualisations/dvc2825/fig1/datadownload.xlsx",
-                  "/visualisations/dvc2825/fig2/index.html",
-                  "/visualisations/dvc2825/fig2/datadownload.xlsx",
-                  "/visualisations/dvc2825/fig3/index.html",
-                  "/visualisations/dvc2825/fig3/datadownload.xlsx"
+                  "/visualisations/dvc2824/fig04/index.html",
+                  "/visualisations/dvc2824/fig04/datadownload.xlsx",
+                  "/visualisations/dvc2824/fig06/index.html",
+                  "/visualisations/dvc2824/fig06/datadownload.xlsx"
             ],
             "theme": "peoplepopulationandcommunity",
             "vis": [
                   {
-                        "url": "/visualisations/dvc2825/fig1/index.html",
-                        "chart_type": "range-plot"
+                        "url": "/visualisations/dvc2824/fig04/index.html",
+                        "chart_type": "line-chart"
                   },
                   {
-                        "url": "/visualisations/dvc2825/fig2/index.html",
-                        "chart_type": "range-plot"
-                  },
-                  {
-                        "url": "/visualisations/dvc2825/fig3/index.html",
-                        "chart_type": null
+                        "url": "/visualisations/dvc2824/fig06/index.html",
+                        "chart_type": "line-chart"
                   }
             ]
       },
@@ -6067,64 +5853,6 @@
                   {
                         "url": "/visualisations/dvc2284/fig12/index.html",
                         "chart_type": "range-plot"
-                  }
-            ]
-      },
-      {
-            "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/armedforcescommunity/articles/veteranssurvey2022demographicoverviewandcoverageanalysisuk/december2023",
-            "release_date": "2023-12-15T00:00:00.000Z",
-            "title": "Veterans\u2019 Survey 2022, demographic overview and coverage analysis, UK",
-            "vis_urls": [
-                  "/visualisations/dvc2804/fig1/index.html",
-                  "/visualisations/dvc2804/fig1/datadownload.xlsx",
-                  "/visualisations/dvc2804/fig2/index.html",
-                  "/visualisations/dvc2804/fig2/datadownload.xlsx",
-                  "/visualisations/dvc2804/fig3/index.html",
-                  "/visualisations/dvc2804/fig3/datadownload.xlsx",
-                  "/visualisations/dvc2804/fig4/index.html",
-                  "/visualisations/dvc2804/fig4/datadownload.xlsx",
-                  "/visualisations/dvc2804/fig5/index.html",
-                  "/visualisations/dvc2804/fig5/datadownload.xlsx",
-                  "/visualisations/dvc2804/fig6/index.html",
-                  "/visualisations/dvc2804/fig6/datadownload.xlsx",
-                  "/visualisations/dvc2804/fig7/index.html",
-                  "/visualisations/dvc2804/fig7/datadownload.xlsx",
-                  "/visualisations/dvc2804/fig8/index.html",
-                  "/visualisations/dvc2804/fig8/datadownload.xlsx"
-            ],
-            "theme": "peoplepopulationandcommunity",
-            "vis": [
-                  {
-                        "url": "/visualisations/dvc2804/fig1/index.html",
-                        "chart_type": "static-population-pyramid"
-                  },
-                  {
-                        "url": "/visualisations/dvc2804/fig2/index.html",
-                        "chart_type": "range-plot"
-                  },
-                  {
-                        "url": "/visualisations/dvc2804/fig3/index.html",
-                        "chart_type": null
-                  },
-                  {
-                        "url": "/visualisations/dvc2804/fig4/index.html",
-                        "chart_type": null
-                  },
-                  {
-                        "url": "/visualisations/dvc2804/fig5/index.html",
-                        "chart_type": "bar-chart"
-                  },
-                  {
-                        "url": "/visualisations/dvc2804/fig6/index.html",
-                        "chart_type": "bar-chart"
-                  },
-                  {
-                        "url": "/visualisations/dvc2804/fig7/index.html",
-                        "chart_type": "grouped-bar-chart"
-                  },
-                  {
-                        "url": "/visualisations/dvc2804/fig8/index.html",
-                        "chart_type": "grouped-bar-chart"
                   }
             ]
       },
@@ -6223,6 +5951,86 @@
             ]
       },
       {
+            "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/birthsdeathsandmarriages/deaths/bulletins/deathsregistrationsummarytables/2022",
+            "release_date": "2023-12-15T00:00:00.000Z",
+            "title": "Deaths registered in England and Wales",
+            "vis_urls": [
+                  "/visualisations/dvc2812/fig02/index.html",
+                  "/visualisations/dvc2812/fig02/datadownload.xlsx",
+                  "/visualisations/dvc2812/fig04/index.html",
+                  "/visualisations/dvc2812/fig04/datadownload.xlsx"
+            ],
+            "theme": "peoplepopulationandcommunity",
+            "vis": [
+                  {
+                        "url": "/visualisations/dvc2812/fig02/index.html",
+                        "chart_type": null
+                  },
+                  {
+                        "url": "/visualisations/dvc2812/fig04/index.html",
+                        "chart_type": null
+                  }
+            ]
+      },
+      {
+            "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/armedforcescommunity/articles/veteranssurvey2022demographicoverviewandcoverageanalysisuk/december2023",
+            "release_date": "2023-12-15T00:00:00.000Z",
+            "title": "Veterans\u2019 Survey 2022, demographic overview and coverage analysis, UK",
+            "vis_urls": [
+                  "/visualisations/dvc2804/fig1/index.html",
+                  "/visualisations/dvc2804/fig1/datadownload.xlsx",
+                  "/visualisations/dvc2804/fig2/index.html",
+                  "/visualisations/dvc2804/fig2/datadownload.xlsx",
+                  "/visualisations/dvc2804/fig3/index.html",
+                  "/visualisations/dvc2804/fig3/datadownload.xlsx",
+                  "/visualisations/dvc2804/fig4/index.html",
+                  "/visualisations/dvc2804/fig4/datadownload.xlsx",
+                  "/visualisations/dvc2804/fig5/index.html",
+                  "/visualisations/dvc2804/fig5/datadownload.xlsx",
+                  "/visualisations/dvc2804/fig6/index.html",
+                  "/visualisations/dvc2804/fig6/datadownload.xlsx",
+                  "/visualisations/dvc2804/fig7/index.html",
+                  "/visualisations/dvc2804/fig7/datadownload.xlsx",
+                  "/visualisations/dvc2804/fig8/index.html",
+                  "/visualisations/dvc2804/fig8/datadownload.xlsx"
+            ],
+            "theme": "peoplepopulationandcommunity",
+            "vis": [
+                  {
+                        "url": "/visualisations/dvc2804/fig1/index.html",
+                        "chart_type": "static-population-pyramid"
+                  },
+                  {
+                        "url": "/visualisations/dvc2804/fig2/index.html",
+                        "chart_type": "range-plot"
+                  },
+                  {
+                        "url": "/visualisations/dvc2804/fig3/index.html",
+                        "chart_type": null
+                  },
+                  {
+                        "url": "/visualisations/dvc2804/fig4/index.html",
+                        "chart_type": null
+                  },
+                  {
+                        "url": "/visualisations/dvc2804/fig5/index.html",
+                        "chart_type": "bar-chart"
+                  },
+                  {
+                        "url": "/visualisations/dvc2804/fig6/index.html",
+                        "chart_type": "bar-chart"
+                  },
+                  {
+                        "url": "/visualisations/dvc2804/fig7/index.html",
+                        "chart_type": "grouped-bar-chart"
+                  },
+                  {
+                        "url": "/visualisations/dvc2804/fig8/index.html",
+                        "chart_type": "grouped-bar-chart"
+                  }
+            ]
+      },
+      {
             "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/housing/articles/whoismostlikelytoliveinhomesthatarehardertokeepwarm/2023-12-14",
             "release_date": "2023-12-14T00:00:00.000Z",
             "title": "Who is most likely to live in homes that are harder to keep warm? ",
@@ -6259,6 +6067,72 @@
                   {
                         "url": "/visualisations/dvc2283/tenure/index.html",
                         "chart_type": "range-plot"
+                  }
+            ]
+      },
+      {
+            "doc_uri": "https://www.ons.gov.uk/economy/nationalaccounts/balanceofpayments/bulletins/uktrade/october2023",
+            "release_date": "2023-12-13T00:00:00.000Z",
+            "title": "UK trade",
+            "vis_urls": [
+                  "/visualisations/dvc2817/fig01/index.html",
+                  "/visualisations/dvc2817/fig01/datadownload.xlsx",
+                  "/visualisations/dvc2817/fig02/index.html",
+                  "/visualisations/dvc2817/fig02/datadownload.xlsx",
+                  "/visualisations/dvc2817/fig03/index.html",
+                  "/visualisations/dvc2817/fig03/datadownload.xlsx",
+                  "/visualisations/dvc2817/fig05/index.html",
+                  "/visualisations/dvc2817/fig05/datadownload.xlsx",
+                  "/visualisations/dvc2817/fig06/index.html",
+                  "/visualisations/dvc2817/fig06/datadownload.xlsx",
+                  "/visualisations/dvc2737/worldmap/index.html",
+                  "/visualisations/dvc2737/worldmap/datadownload.xlsx",
+                  "/visualisations/dvc2737/treemap/imports.html",
+                  "/visualisations/dvc2737/treemap/imports.xlsx",
+                  "/visualisations/dvc2737/treemap/exports.html",
+                  "/visualisations/dvc2737/treemap/exports.xlsx"
+            ],
+            "theme": "economy",
+            "vis": [
+                  {
+                        "url": "/visualisations/dvc2817/fig01/index.html",
+                        "chart_type": null
+                  },
+                  {
+                        "url": "/visualisations/dvc2817/fig02/index.html",
+                        "chart_type": null
+                  },
+                  {
+                        "url": "/visualisations/dvc2817/fig03/index.html",
+                        "chart_type": null
+                  },
+                  {
+                        "url": "/visualisations/dvc2817/fig05/index.html",
+                        "chart_type": null
+                  },
+                  {
+                        "url": "/visualisations/dvc2817/fig06/index.html",
+                        "chart_type": null
+                  },
+                  {
+                        "url": "/visualisations/dvc2737/worldmap/index.html",
+                        "chart_type": null
+                  },
+                  {
+                        "url": "/visualisations/dvc2737/treemap/imports.html",
+                        "chart_type": null
+                  },
+                  {
+                        "url": "/visualisations/dvc2737/treemap/imports.xlsx",
+                        "chart_type": null
+                  },
+                  {
+                        "url": "/visualisations/dvc2737/treemap/exports.html",
+                        "chart_type": null
+                  },
+                  {
+                        "url": "/visualisations/dvc2737/treemap/exports.xlsx",
+                        "chart_type": null
                   }
             ]
       },
@@ -6399,34 +6273,6 @@
             ]
       },
       {
-            "doc_uri": "https://www.ons.gov.uk/employmentandlabourmarket/peoplenotinwork/outofworkbenefits/bulletins/benefitrecipientsduringthecoronaviruscovid19pandemicengland/november2019tomarch2021",
-            "release_date": "2023-12-06T00:00:00.000Z",
-            "title": "Benefit recipients during the coronavirus (COVID-19) pandemic, England",
-            "vis_urls": [
-                  "/visualisations/dvc2805/fig01/index.html",
-                  "/visualisations/dvc2805/fig01/datadownload.xlsx",
-                  "/visualisations/dvc2805/fig02/index.html",
-                  "/visualisations/dvc2805/fig02/datadownload.xlsx",
-                  "/visualisations/dvc2805/fig03/index.html",
-                  "/visualisations/dvc2805/fig03/datadownload.xlsx"
-            ],
-            "theme": "employmentandlabourmarket",
-            "vis": [
-                  {
-                        "url": "/visualisations/dvc2805/fig01/index.html",
-                        "chart_type": "grouped-bar-chart"
-                  },
-                  {
-                        "url": "/visualisations/dvc2805/fig02/index.html",
-                        "chart_type": "line-chart"
-                  },
-                  {
-                        "url": "/visualisations/dvc2805/fig03/index.html",
-                        "chart_type": "line-chart"
-                  }
-            ]
-      },
-      {
             "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/housing/articles/peopleexperiencinghomelessnessenglandandwales/census2021",
             "release_date": "2023-12-06T00:00:00.000Z",
             "title": "People experiencing homelessness, England and Wales",
@@ -6511,6 +6357,34 @@
                   {
                         "url": "/visualisations/dvc2808/fig13/index.html",
                         "chart_type": "bar-chart"
+                  }
+            ]
+      },
+      {
+            "doc_uri": "https://www.ons.gov.uk/employmentandlabourmarket/peoplenotinwork/outofworkbenefits/bulletins/benefitrecipientsduringthecoronaviruscovid19pandemicengland/november2019tomarch2021",
+            "release_date": "2023-12-06T00:00:00.000Z",
+            "title": "Benefit recipients during the coronavirus (COVID-19) pandemic, England",
+            "vis_urls": [
+                  "/visualisations/dvc2805/fig01/index.html",
+                  "/visualisations/dvc2805/fig01/datadownload.xlsx",
+                  "/visualisations/dvc2805/fig02/index.html",
+                  "/visualisations/dvc2805/fig02/datadownload.xlsx",
+                  "/visualisations/dvc2805/fig03/index.html",
+                  "/visualisations/dvc2805/fig03/datadownload.xlsx"
+            ],
+            "theme": "employmentandlabourmarket",
+            "vis": [
+                  {
+                        "url": "/visualisations/dvc2805/fig01/index.html",
+                        "chart_type": "grouped-bar-chart"
+                  },
+                  {
+                        "url": "/visualisations/dvc2805/fig02/index.html",
+                        "chart_type": "line-chart"
+                  },
+                  {
+                        "url": "/visualisations/dvc2805/fig03/index.html",
+                        "chart_type": "line-chart"
                   }
             ]
       },
@@ -6738,6 +6612,34 @@
             ]
       },
       {
+            "doc_uri": "https://www.ons.gov.uk/economy/environmentalaccounts/bulletins/uknaturalcapitalaccounts/2023",
+            "release_date": "2023-11-27T00:00:00.000Z",
+            "title": "UK natural capital accounts",
+            "vis_urls": [
+                  "/visualisations/dvc2780/Fig1/index.html",
+                  "/visualisations/dvc2780/Fig1/datadownload.xlsx",
+                  "/visualisations/dvc2780/Fig2/index.html",
+                  "/visualisations/dvc2780/Fig2/datadownload.xlsx",
+                  "/visualisations/dvc2780/Fig3/index.html",
+                  "/visualisations/dvc2780/Fig3/datadownload.xlsx"
+            ],
+            "theme": "economy",
+            "vis": [
+                  {
+                        "url": "/visualisations/dvc2780/Fig1/index.html",
+                        "chart_type": null
+                  },
+                  {
+                        "url": "/visualisations/dvc2780/Fig2/index.html",
+                        "chart_type": null
+                  },
+                  {
+                        "url": "/visualisations/dvc2780/Fig3/index.html",
+                        "chart_type": null
+                  }
+            ]
+      },
+      {
             "doc_uri": "https://www.ons.gov.uk/economy/environmentalaccounts/articles/amillionfewerpeoplearegaininghealthbenefitsfromnaturesince2020/2023-11-27",
             "release_date": "2023-11-27T00:00:00.000Z",
             "title": "A million fewer people are gaining health benefits from nature since 2020",
@@ -6777,6 +6679,49 @@
             ]
       },
       {
+            "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/crimeandjustice/bulletins/domesticabuseinenglandandwalesoverview/november2023",
+            "release_date": "2023-11-24T00:00:00.000Z",
+            "title": "Domestic abuse in England and Wales overview",
+            "vis_urls": [
+                  "/visualisations/dvc2772a/Fig1/index.html",
+                  "/visualisations/dvc2772a/Fig1/datadownload.xlsx"
+            ],
+            "theme": "peoplepopulationandcommunity",
+            "vis": [
+                  {
+                        "url": "/visualisations/dvc2772a/Fig1/index.html",
+                        "chart_type": null
+                  }
+            ]
+      },
+      {
+            "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/populationestimates/bulletins/populationestimatesforenglandandwales/mid2022",
+            "release_date": "2023-11-23T00:00:00.000Z",
+            "title": "Population estimates for England and Wales",
+            "vis_urls": [
+                  "/visualisations/dvc2391/statements/index.html",
+                  "/visualisations/dvc2706/fig05/index.html",
+                  "/visualisations/dvc2706/fig05/datadownload.xlsx",
+                  "/visualisations/dvc2706/fig08/index.html",
+                  "/visualisations/dvc2706/fig08/datadownload.xlsx"
+            ],
+            "theme": "peoplepopulationandcommunity",
+            "vis": [
+                  {
+                        "url": "/visualisations/dvc2391/statements/index.html",
+                        "chart_type": null
+                  },
+                  {
+                        "url": "/visualisations/dvc2706/fig05/index.html",
+                        "chart_type": "static-population-pyramid"
+                  },
+                  {
+                        "url": "/visualisations/dvc2706/fig08/index.html",
+                        "chart_type": null
+                  }
+            ]
+      },
+      {
             "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/internationalmigration/articles/estimatingukinternationalmigration2012to2021/2023-11-23",
             "release_date": "2023-11-23T00:00:00.000Z",
             "title": "Estimating UK international migration: 2012 to 2021",
@@ -6810,61 +6755,6 @@
             ]
       },
       {
-            "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/internationalmigration/articles/reasonforinternationalmigrationinternationalstudentsupdate/november2023",
-            "release_date": "2023-11-23T00:00:00.000Z",
-            "title": "Reason for international migration, international students update",
-            "vis_urls": [
-                  "/visualisations/dvc2761/fig02/index.html",
-                  "/visualisations/dvc2761/fig02/datadownload.xlsx",
-                  "/visualisations/dvc2761/fig03/index.html",
-                  "/visualisations/dvc2761/fig03/datadownload.xlsx",
-                  "/visualisations/dvc2761/fig04/index.html",
-                  "/visualisations/dvc2761/fig04/datadownload.xlsx"
-            ],
-            "theme": "peoplepopulationandcommunity",
-            "vis": [
-                  {
-                        "url": "/visualisations/dvc2761/fig02/index.html",
-                        "chart_type": "bar-chart"
-                  },
-                  {
-                        "url": "/visualisations/dvc2761/fig03/index.html",
-                        "chart_type": "bar-chart"
-                  },
-                  {
-                        "url": "/visualisations/dvc2761/fig04/index.html",
-                        "chart_type": null
-                  }
-            ]
-      },
-      {
-            "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/populationestimates/bulletins/populationestimatesforenglandandwales/mid2022",
-            "release_date": "2023-11-23T00:00:00.000Z",
-            "title": "Population estimates for England and Wales",
-            "vis_urls": [
-                  "/visualisations/dvc2391/statements/index.html",
-                  "/visualisations/dvc2706/fig05/index.html",
-                  "/visualisations/dvc2706/fig05/datadownload.xlsx",
-                  "/visualisations/dvc2706/fig08/index.html",
-                  "/visualisations/dvc2706/fig08/datadownload.xlsx"
-            ],
-            "theme": "peoplepopulationandcommunity",
-            "vis": [
-                  {
-                        "url": "/visualisations/dvc2391/statements/index.html",
-                        "chart_type": null
-                  },
-                  {
-                        "url": "/visualisations/dvc2706/fig05/index.html",
-                        "chart_type": "static-population-pyramid"
-                  },
-                  {
-                        "url": "/visualisations/dvc2706/fig08/index.html",
-                        "chart_type": null
-                  }
-            ]
-      },
-      {
             "doc_uri": "https://www.ons.gov.uk/businessindustryandtrade/business/businessservices/bulletins/businessinsightsandimpactontheukeconomy/16november2023",
             "release_date": "2023-11-16T00:00:00.000Z",
             "title": "Business insights and impact on the UK economy",
@@ -6876,6 +6766,62 @@
             "vis": [
                   {
                         "url": "/visualisations/dvc2788/fig1/index.html",
+                        "chart_type": null
+                  }
+            ]
+      },
+      {
+            "doc_uri": "https://www.ons.gov.uk/economy/grossdomesticproductgdp/bulletins/gdpmonthlyestimateuk/september2023",
+            "release_date": "2023-11-10T00:00:00.000Z",
+            "title": "GDP monthly estimate, UK",
+            "vis_urls": [
+                  "/visualisations/dvc2775/fig5/index.html",
+                  "/visualisations/dvc2775/fig5/datadownload.xlsx"
+            ],
+            "theme": "economy",
+            "vis": [
+                  {
+                        "url": "/visualisations/dvc2775/fig5/index.html",
+                        "chart_type": null
+                  }
+            ]
+      },
+      {
+            "doc_uri": "https://www.ons.gov.uk/businessindustryandtrade/business/businessservices/articles/businessinsightsandimpactontheukandsubnationaleconomy/november2023",
+            "release_date": "2023-11-09T00:00:00.000Z",
+            "title": "Business insights and impact on the UK subnational single-site economy",
+            "vis_urls": [
+                  "/visualisations/dvc2765/fig01/index.html",
+                  "/visualisations/dvc2765/fig01/datadownload.xlsx",
+                  "/visualisations/dvc2765/fig03/index.html",
+                  "/visualisations/dvc2765/fig03/datadownload.xlsx",
+                  "/visualisations/dvc2765/fig04/index.html",
+                  "/visualisations/dvc2765/fig04/datadownload.xlsx",
+                  "/visualisations/dvc2765/fig07/index.html",
+                  "/visualisations/dvc2765/fig07/datadownload.xlsx",
+                  "/visualisations/dvc2765/fig09/index.html",
+                  "/visualisations/dvc2765/fig09/datadownload.xlsx"
+            ],
+            "theme": "businessindustryandtrade",
+            "vis": [
+                  {
+                        "url": "/visualisations/dvc2765/fig01/index.html",
+                        "chart_type": null
+                  },
+                  {
+                        "url": "/visualisations/dvc2765/fig03/index.html",
+                        "chart_type": "split-bar-chart"
+                  },
+                  {
+                        "url": "/visualisations/dvc2765/fig04/index.html",
+                        "chart_type": null
+                  },
+                  {
+                        "url": "/visualisations/dvc2765/fig07/index.html",
+                        "chart_type": null
+                  },
+                  {
+                        "url": "/visualisations/dvc2765/fig09/index.html",
                         "chart_type": null
                   }
             ]
@@ -7003,28 +6949,6 @@
             ]
       },
       {
-            "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/healthandsocialcare/healthinequalities/articles/understandingconsistencyofethnicitydatarecordedinhealthrelatedadministrativedatasetsinengland2011to2021/november2023",
-            "release_date": "2023-11-06T00:00:00.000Z",
-            "title": "Quality of ethnicity data in health-related administrative data sources, England",
-            "vis_urls": [
-                  "/visualisations/dvc2752/fig1/index.html",
-                  "/visualisations/dvc2752/fig1/datadownload.xlsx",
-                  "/visualisations/dvc2752/fig2/index.html",
-                  "/visualisations/dvc2752/fig2/datadownload.xlsx"
-            ],
-            "theme": "peoplepopulationandcommunity",
-            "vis": [
-                  {
-                        "url": "/visualisations/dvc2752/fig1/index.html",
-                        "chart_type": "heatmap"
-                  },
-                  {
-                        "url": "/visualisations/dvc2752/fig2/index.html",
-                        "chart_type": "heatmap"
-                  }
-            ]
-      },
-      {
             "doc_uri": "https://www.ons.gov.uk/economy/economicoutputandproductivity/output/articles/regionalconsumercardspendinguk/2019to2023",
             "release_date": "2023-11-06T00:00:00.000Z",
             "title": "Regional consumer card spending, UK",
@@ -7099,17 +7023,51 @@
             ]
       },
       {
-            "doc_uri": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/earningsandworkinghours/bulletins/lowandhighpayuk/2023",
-            "release_date": "2023-11-01T00:00:00.000Z",
-            "title": "Low and high pay in the UK",
+            "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/healthandsocialcare/healthinequalities/articles/understandingconsistencyofethnicitydatarecordedinhealthrelatedadministrativedatasetsinengland2011to2021/november2023",
+            "release_date": "2023-11-06T00:00:00.000Z",
+            "title": "Quality of ethnicity data in health-related administrative data sources, England",
             "vis_urls": [
-                  "/visualisations/dvc2757/fig04/index.html",
-                  "/visualisations/dvc2757/fig04/datadownload.xlsx"
+                  "/visualisations/dvc2752/fig1/index.html",
+                  "/visualisations/dvc2752/fig1/datadownload.xlsx",
+                  "/visualisations/dvc2752/fig2/index.html",
+                  "/visualisations/dvc2752/fig2/datadownload.xlsx"
             ],
-            "theme": "employmentandlabourmarket",
+            "theme": "peoplepopulationandcommunity",
             "vis": [
                   {
-                        "url": "/visualisations/dvc2757/fig04/index.html",
+                        "url": "/visualisations/dvc2752/fig1/index.html",
+                        "chart_type": "heatmap"
+                  },
+                  {
+                        "url": "/visualisations/dvc2752/fig2/index.html",
+                        "chart_type": "heatmap"
+                  }
+            ]
+      },
+      {
+            "doc_uri": "https://www.ons.gov.uk/economy/nationalaccounts/uksectoraccounts/bulletins/profitabilityofukcompanies/apriltojune2023",
+            "release_date": "2023-11-03T00:00:00.000Z",
+            "title": "Profitability of UK companies",
+            "vis_urls": [
+                  "/visualisations/dvc2771/fig1/index.html",
+                  "/visualisations/dvc2771/fig1/datadownload.xlsx",
+                  "/visualisations/dvc2771/fig2/wrapper/index.html",
+                  "/visualisations/dvc2771/fig2/wrapper/datadownload.xlsx",
+                  "/visualisations/dvc2771/fig3/index.html",
+                  "/visualisations/dvc2771/fig3/datadownload.xlsx"
+            ],
+            "theme": "economy",
+            "vis": [
+                  {
+                        "url": "/visualisations/dvc2771/fig1/index.html",
+                        "chart_type": null
+                  },
+                  {
+                        "url": "/visualisations/dvc2771/fig2/wrapper/index.html",
+                        "chart_type": null
+                  },
+                  {
+                        "url": "/visualisations/dvc2771/fig3/index.html",
                         "chart_type": null
                   }
             ]
@@ -7162,49 +7120,6 @@
                   },
                   {
                         "url": "/visualisations/dvc2745/Fig07/index.html",
-                        "chart_type": "bar-chart"
-                  }
-            ]
-      },
-      {
-            "doc_uri": "https://www.ons.gov.uk/economy/nationalaccounts/balanceofpayments/articles/foreigndirectinvestmentukinwardnetwork/2021",
-            "release_date": "2023-10-30T00:00:00.000Z",
-            "title": "Foreign direct investment, UK inward network",
-            "vis_urls": [
-                  "/visualisations/dvc2766/fig4/index.html",
-                  "/visualisations/dvc2766/fig4/datadownload.xlsx"
-            ],
-            "theme": "economy",
-            "vis": [
-                  {
-                        "url": "/visualisations/dvc2766/fig4/index.html",
-                        "chart_type": null
-                  }
-            ]
-      },
-      {
-            "doc_uri": "https://www.ons.gov.uk/businessindustryandtrade/itandinternetindustry/articles/publicawarenessopinionsandexpectationsaboutartificialintelligence/julytooctober2023",
-            "release_date": "2023-10-30T00:00:00.000Z",
-            "title": "Public awareness, opinions and expectations about artificial intelligence",
-            "vis_urls": [
-                  "/visualisations/dvc2760/fig1/index.html",
-                  "/visualisations/dvc2760/fig4/index.html",
-                  "/visualisations/dvc2760/fig4/datadownload.xlsx",
-                  "/visualisations/dvc2760/fig5/index.html",
-                  "/visualisations/dvc2760/fig5/datadownload.xlsx"
-            ],
-            "theme": "businessindustryandtrade",
-            "vis": [
-                  {
-                        "url": "/visualisations/dvc2760/fig1/index.html",
-                        "chart_type": "bar-chart"
-                  },
-                  {
-                        "url": "/visualisations/dvc2760/fig4/index.html",
-                        "chart_type": "bar-chart"
-                  },
-                  {
-                        "url": "/visualisations/dvc2760/fig5/index.html",
                         "chart_type": "bar-chart"
                   }
             ]
@@ -7288,6 +7203,49 @@
                   {
                         "url": "/visualisations/dvc2279/fig11/index.html",
                         "chart_type": "chart-wrapper"
+                  }
+            ]
+      },
+      {
+            "doc_uri": "https://www.ons.gov.uk/businessindustryandtrade/itandinternetindustry/articles/publicawarenessopinionsandexpectationsaboutartificialintelligence/julytooctober2023",
+            "release_date": "2023-10-30T00:00:00.000Z",
+            "title": "Public awareness, opinions and expectations about artificial intelligence",
+            "vis_urls": [
+                  "/visualisations/dvc2760/fig1/index.html",
+                  "/visualisations/dvc2760/fig4/index.html",
+                  "/visualisations/dvc2760/fig4/datadownload.xlsx",
+                  "/visualisations/dvc2760/fig5/index.html",
+                  "/visualisations/dvc2760/fig5/datadownload.xlsx"
+            ],
+            "theme": "businessindustryandtrade",
+            "vis": [
+                  {
+                        "url": "/visualisations/dvc2760/fig1/index.html",
+                        "chart_type": "bar-chart"
+                  },
+                  {
+                        "url": "/visualisations/dvc2760/fig4/index.html",
+                        "chart_type": "bar-chart"
+                  },
+                  {
+                        "url": "/visualisations/dvc2760/fig5/index.html",
+                        "chart_type": "bar-chart"
+                  }
+            ]
+      },
+      {
+            "doc_uri": "https://www.ons.gov.uk/economy/nationalaccounts/balanceofpayments/articles/foreigndirectinvestmentukinwardnetwork/2021",
+            "release_date": "2023-10-30T00:00:00.000Z",
+            "title": "Foreign direct investment, UK inward network",
+            "vis_urls": [
+                  "/visualisations/dvc2766/fig4/index.html",
+                  "/visualisations/dvc2766/fig4/datadownload.xlsx"
+            ],
+            "theme": "economy",
+            "vis": [
+                  {
+                        "url": "/visualisations/dvc2766/fig4/index.html",
+                        "chart_type": null
                   }
             ]
       },
@@ -7430,21 +7388,6 @@
             ]
       },
       {
-            "doc_uri": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/bulletins/uklabourmarket/october2023",
-            "release_date": "2023-10-23T23:00:00.000Z",
-            "title": "Labour market overview, UK",
-            "vis_urls": [
-                  "/visualisations/dvc2735/dashwrapper/index.html"
-            ],
-            "theme": "employmentandlabourmarket",
-            "vis": [
-                  {
-                        "url": "/visualisations/dvc2735/dashwrapper/index.html",
-                        "chart_type": null
-                  }
-            ]
-      },
-      {
             "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/housing/bulletins/privaterentalaffordabilityengland/2022",
             "release_date": "2023-10-22T23:00:00.000Z",
             "title": "Private rental affordability, England, Wales and Northern Ireland",
@@ -7457,6 +7400,22 @@
                   {
                         "url": "/visualisations/dvc2756/fig4/index.html",
                         "chart_type": "range-plot"
+                  }
+            ]
+      },
+      {
+            "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/birthsdeathsandmarriages/deaths/bulletins/deathsregisteredweeklyinenglandandwalesprovisional/weekending06october2023",
+            "release_date": "2023-10-16T23:00:00.000Z",
+            "title": "Deaths registered weekly in England and Wales, provisional",
+            "vis_urls": [
+                  "/visualisations/dvc2743/fig1/index.html",
+                  "/visualisations/dvc2743/fig1/datadownload.xlsx"
+            ],
+            "theme": "peoplepopulationandcommunity",
+            "vis": [
+                  {
+                        "url": "/visualisations/dvc2743/fig1/index.html",
+                        "chart_type": null
                   }
             ]
       },
@@ -7539,22 +7498,6 @@
                   {
                         "url": "/visualisations/dvc2270/12-household-type-bar-chart-horizontal-with-reference-line-grouped/index.html",
                         "chart_type": "range-plot"
-                  }
-            ]
-      },
-      {
-            "doc_uri": "https://www.ons.gov.uk/economy/grossdomesticproductgdp/bulletins/gdpmonthlyestimateuk/august2023",
-            "release_date": "2023-10-11T23:00:00.000Z",
-            "title": "GDP monthly estimate, UK",
-            "vis_urls": [
-                  "/visualisations/dvc2736/fig5/index.html",
-                  "/visualisations/dvc2736/fig5/datadownload.xlsx"
-            ],
-            "theme": "economy",
-            "vis": [
-                  {
-                        "url": "/visualisations/dvc2736/fig5/index.html",
-                        "chart_type": null
                   }
             ]
       },
@@ -7853,6 +7796,34 @@
             ]
       },
       {
+            "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/culturalidentity/sexuality/bulletins/sexualidentityuk/2021and2022",
+            "release_date": "2023-09-26T23:00:00.000Z",
+            "title": "Sexual orientation, UK",
+            "vis_urls": [
+                  "/visualisations/dvc2720/fig1/index.html",
+                  "/visualisations/dvc2720/fig1/datadownload.xlsx",
+                  "/visualisations/dvc2720/fig2/index.html",
+                  "/visualisations/dvc2720/fig2/datadownload.xlsx",
+                  "/visualisations/dvc2720/fig4/index.html",
+                  "/visualisations/dvc2720/fig4/datadownload.xlsx"
+            ],
+            "theme": "peoplepopulationandcommunity",
+            "vis": [
+                  {
+                        "url": "/visualisations/dvc2720/fig1/index.html",
+                        "chart_type": null
+                  },
+                  {
+                        "url": "/visualisations/dvc2720/fig2/index.html",
+                        "chart_type": null
+                  },
+                  {
+                        "url": "/visualisations/dvc2720/fig4/index.html",
+                        "chart_type": "range-plot"
+                  }
+            ]
+      },
+      {
             "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/birthsdeathsandmarriages/families/articles/kinshipcareinenglandandwales/census2021",
             "release_date": "2023-09-25T23:00:00.000Z",
             "title": "Kinship care in England and Wales",
@@ -7935,6 +7906,28 @@
             ]
       },
       {
+            "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/populationestimates/bulletins/smallpopulationsenglandandwales/census2021",
+            "release_date": "2023-09-24T23:00:00.000Z",
+            "title": "Small populations, England and Wales",
+            "vis_urls": [
+                  "/visualisations/dvc2269/fig1/index.html",
+                  "/visualisations/dvc2269/fig1/datadownload.xlsx",
+                  "/visualisations/dvc2269/fig2/index.html",
+                  "/visualisations/dvc2269/fig2/datadownload.xlsx"
+            ],
+            "theme": "peoplepopulationandcommunity",
+            "vis": [
+                  {
+                        "url": "/visualisations/dvc2269/fig1/index.html",
+                        "chart_type": "static-population-pyramid"
+                  },
+                  {
+                        "url": "/visualisations/dvc2269/fig2/index.html",
+                        "chart_type": null
+                  }
+            ]
+      },
+      {
             "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/birthsdeathsandmarriages/deaths/articles/comparisonsofallcausemortalitybetweeneuropeancountriesatlocallevels/28december2019toweekending1july2022",
             "release_date": "2023-09-24T23:00:00.000Z",
             "title": "Comparisons of all-cause mortality between European countries at local levels",
@@ -7977,28 +7970,6 @@
                   {
                         "url": "/visualisations/dvc2718/fig11/index.html",
                         "chart_type": "split-bar-chart"
-                  }
-            ]
-      },
-      {
-            "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/populationestimates/bulletins/smallpopulationsenglandandwales/census2021",
-            "release_date": "2023-09-24T23:00:00.000Z",
-            "title": "Small populations, England and Wales",
-            "vis_urls": [
-                  "/visualisations/dvc2269/fig1/index.html",
-                  "/visualisations/dvc2269/fig1/datadownload.xlsx",
-                  "/visualisations/dvc2269/fig2/index.html",
-                  "/visualisations/dvc2269/fig2/datadownload.xlsx"
-            ],
-            "theme": "peoplepopulationandcommunity",
-            "vis": [
-                  {
-                        "url": "/visualisations/dvc2269/fig1/index.html",
-                        "chart_type": "static-population-pyramid"
-                  },
-                  {
-                        "url": "/visualisations/dvc2269/fig2/index.html",
-                        "chart_type": null
                   }
             ]
       },
@@ -8518,88 +8489,6 @@
             ]
       },
       {
-            "doc_uri": "https://www.ons.gov.uk/economy/nationalaccounts/balanceofpayments/bulletins/uktrade/july2023",
-            "release_date": "2023-09-12T23:00:00.000Z",
-            "title": "UK trade",
-            "vis_urls": [
-                  "/visualisations/dvc2708/fig01/wrapper/index.html",
-                  "/visualisations/dvc2708/fig01/wrapper/datadownload.xlsx",
-                  "/visualisations/dvc2708/fig02/index.html",
-                  "/visualisations/dvc2708/fig02/datadownload.xlsx",
-                  "/visualisations/dvc2708/fig03/index.html",
-                  "/visualisations/dvc2708/fig03/datadownload.xlsx",
-                  "/visualisations/dvc2708/fig05/index.html",
-                  "/visualisations/dvc2708/fig05/datadownload.xlsx",
-                  "/visualisations/dvc2708/fig06/index.html",
-                  "/visualisations/dvc2708/fig06/datadownload.xlsx",
-                  "/visualisations/dvc2546/worldmap/index.html",
-                  "/visualisations/dvc2546/worldmap/datadownload.xlsx",
-                  "/visualisations/dvc2546/treemap/imports.html",
-                  "/visualisations/dvc2546/treemap/imports.xlsx",
-                  "/visualisations/dvc2546/treemap/exports.html",
-                  "/visualisations/dvc2546/treemap/exports.xlsx"
-            ],
-            "theme": "economy",
-            "vis": [
-                  {
-                        "url": "/visualisations/dvc2708/fig01/wrapper/index.html",
-                        "chart_type": null
-                  },
-                  {
-                        "url": "/visualisations/dvc2708/fig02/index.html",
-                        "chart_type": null
-                  },
-                  {
-                        "url": "/visualisations/dvc2708/fig03/index.html",
-                        "chart_type": null
-                  },
-                  {
-                        "url": "/visualisations/dvc2708/fig05/index.html",
-                        "chart_type": null
-                  },
-                  {
-                        "url": "/visualisations/dvc2708/fig06/index.html",
-                        "chart_type": null
-                  },
-                  {
-                        "url": "/visualisations/dvc2546/worldmap/index.html",
-                        "chart_type": null
-                  },
-                  {
-                        "url": "/visualisations/dvc2546/treemap/imports.html",
-                        "chart_type": null
-                  },
-                  {
-                        "url": "/visualisations/dvc2546/treemap/imports.xlsx",
-                        "chart_type": null
-                  },
-                  {
-                        "url": "/visualisations/dvc2546/treemap/exports.html",
-                        "chart_type": null
-                  },
-                  {
-                        "url": "/visualisations/dvc2546/treemap/exports.xlsx",
-                        "chart_type": null
-                  }
-            ]
-      },
-      {
-            "doc_uri": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/bulletins/employmentintheuk/september2023",
-            "release_date": "2023-09-11T23:00:00.000Z",
-            "title": "Employment in the UK",
-            "vis_urls": [
-                  "/visualisations/dvc2710/fig1/index.html",
-                  "/visualisations/dvc2710/fig1/datadownload.xlsx"
-            ],
-            "theme": "employmentandlabourmarket",
-            "vis": [
-                  {
-                        "url": "/visualisations/dvc2710/fig1/index.html",
-                        "chart_type": null
-                  }
-            ]
-      },
-      {
             "doc_uri": "https://www.ons.gov.uk/economy/environmentalaccounts/bulletins/urbannaturalcapitalaccountsuk/2023",
             "release_date": "2023-09-06T23:00:00.000Z",
             "title": "Urban natural capital accounts, UK",
@@ -8728,37 +8617,6 @@
             ]
       },
       {
-            "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/healthandsocialcare/healthinequalities/bulletins/sociodemographicdifferencesintheriskoftestingpositiveforcoronaviruscovid19england/12september2020to13december2021",
-            "release_date": "2023-08-30T23:00:00.000Z",
-            "title": "Sociodemographic differences in the risk of testing positive for coronavirus (COVID-19), England",
-            "vis_urls": [
-                  "/visualisations/dvc2668/fig1/index.html",
-                  "/visualisations/dvc2668/fig1/datadownload.xlsx"
-            ],
-            "theme": "peoplepopulationandcommunity",
-            "vis": [
-                  {
-                        "url": "/visualisations/dvc2668/fig1/index.html",
-                        "chart_type": "range-plot"
-                  }
-            ]
-      },
-      {
-            "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/healthandsocialcare/healthinequalities/bulletins/inequalitiesinmortalityinvolvingcommonphysicalhealthconditionsengland/21march2021to31january2023",
-            "release_date": "2023-08-30T23:00:00.000Z",
-            "title": "Inequalities in mortality involving common physical health conditions, England",
-            "vis_urls": [
-                  "/visualisations/dvc2667/index.html"
-            ],
-            "theme": "peoplepopulationandcommunity",
-            "vis": [
-                  {
-                        "url": "/visualisations/dvc2667/index.html",
-                        "chart_type": null
-                  }
-            ]
-      },
-      {
             "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/internationalmigration/articles/dualcitizenslivinginenglandandwales/census2021",
             "release_date": "2023-08-30T23:00:00.000Z",
             "title": "Dual citizens living in England and Wales",
@@ -8843,6 +8701,37 @@
                   {
                         "url": "/visualisations/dvc2258/fig13/index.html",
                         "chart_type": null
+                  }
+            ]
+      },
+      {
+            "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/healthandsocialcare/healthinequalities/bulletins/inequalitiesinmortalityinvolvingcommonphysicalhealthconditionsengland/21march2021to31january2023",
+            "release_date": "2023-08-30T23:00:00.000Z",
+            "title": "Inequalities in mortality involving common physical health conditions, England",
+            "vis_urls": [
+                  "/visualisations/dvc2667/index.html"
+            ],
+            "theme": "peoplepopulationandcommunity",
+            "vis": [
+                  {
+                        "url": "/visualisations/dvc2667/index.html",
+                        "chart_type": null
+                  }
+            ]
+      },
+      {
+            "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/healthandsocialcare/healthinequalities/bulletins/sociodemographicdifferencesintheriskoftestingpositiveforcoronaviruscovid19england/12september2020to13december2021",
+            "release_date": "2023-08-30T23:00:00.000Z",
+            "title": "Sociodemographic differences in the risk of testing positive for coronavirus (COVID-19), England",
+            "vis_urls": [
+                  "/visualisations/dvc2668/fig1/index.html",
+                  "/visualisations/dvc2668/fig1/datadownload.xlsx"
+            ],
+            "theme": "peoplepopulationandcommunity",
+            "vis": [
+                  {
+                        "url": "/visualisations/dvc2668/fig1/index.html",
+                        "chart_type": "range-plot"
                   }
             ]
       },
@@ -8941,40 +8830,6 @@
             ]
       },
       {
-            "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/birthsdeathsandmarriages/deaths/bulletins/monthlymortalityanalysisenglandandwales/july2023",
-            "release_date": "2023-08-22T23:00:00.000Z",
-            "title": "Monthly mortality analysis, England and Wales",
-            "vis_urls": [
-                  "/visualisations/dvc2684/fig3/index.html",
-                  "/visualisations/dvc2684/fig3/datadownload.xlsx",
-                  "/visualisations/dvc2684/fig4/index.html",
-                  "/visualisations/dvc2684/fig4/datadownload.xlsx",
-                  "/visualisations/dvc2684/fig11/index.html",
-                  "/visualisations/dvc2684/fig11/datadownload.xlsx",
-                  "/visualisations/dvc2684/fig12/index.html",
-                  "/visualisations/dvc2684/fig12/datadownload.xlsx"
-            ],
-            "theme": "peoplepopulationandcommunity",
-            "vis": [
-                  {
-                        "url": "/visualisations/dvc2684/fig3/index.html",
-                        "chart_type": null
-                  },
-                  {
-                        "url": "/visualisations/dvc2684/fig4/index.html",
-                        "chart_type": null
-                  },
-                  {
-                        "url": "/visualisations/dvc2684/fig11/index.html",
-                        "chart_type": null
-                  },
-                  {
-                        "url": "/visualisations/dvc2684/fig12/index.html",
-                        "chart_type": null
-                  }
-            ]
-      },
-      {
             "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/housing/articles/howpeoplelivingincommunalestablishmentsdifferfromthehouseholdpopulationenglandandwales/census2021",
             "release_date": "2023-08-17T23:00:00.000Z",
             "title": "How people living in communal establishments differ from the household population, England and Wales",
@@ -9033,6 +8888,34 @@
             ]
       },
       {
+            "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/birthsdeathsandmarriages/livebirths/bulletins/parentscountryofbirthenglandandwales/2022",
+            "release_date": "2023-08-16T23:00:00.000Z",
+            "title": "Births by parents\u2019 country of birth, England and Wales",
+            "vis_urls": [
+                  "/visualisations/dvc2646/fig2/index.html",
+                  "/visualisations/dvc2646/fig2/datadownload.xlsx",
+                  "/visualisations/dvc2646/fig3/index.html",
+                  "/visualisations/dvc2646/fig3/datadownload.xlsx",
+                  "/visualisations/dvc2646/map/index.html",
+                  "/visualisations/dvc2646/map/datadownload.xlsx"
+            ],
+            "theme": "peoplepopulationandcommunity",
+            "vis": [
+                  {
+                        "url": "/visualisations/dvc2646/fig2/index.html",
+                        "chart_type": null
+                  },
+                  {
+                        "url": "/visualisations/dvc2646/fig3/index.html",
+                        "chart_type": null
+                  },
+                  {
+                        "url": "/visualisations/dvc2646/map/index.html",
+                        "chart_type": null
+                  }
+            ]
+      },
+      {
             "doc_uri": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/bulletins/approximatedsocialgradeenglandandwales/census2021",
             "release_date": "2023-08-16T23:00:00.000Z",
             "title": "Approximated Social Grade, England and Wales",
@@ -9067,6 +8950,52 @@
             ]
       },
       {
+            "doc_uri": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/earningsandworkinghours/bulletins/earningsandemploymentfrompayasyouearnrealtimeinformationuk/august2023",
+            "release_date": "2023-08-14T23:00:00.000Z",
+            "title": "Earnings and employment from Pay As You Earn Real Time Information, UK",
+            "vis_urls": [
+                  "/visualisations/dvc2683/fig6/index.html",
+                  "/visualisations/dvc2683/fig6/datadownload.xlsx",
+                  "/visualisations/dvc2683/fig7/index.html",
+                  "/visualisations/dvc2683/fig7/datadownload.xlsx",
+                  "/visualisations/dvc2683/fig8/index.html",
+                  "/visualisations/dvc2683/fig8/datadownload.xlsx",
+                  "/visualisations/dvc2683/fig9/index.html",
+                  "/visualisations/dvc2683/fig9/datadownload.xlsx",
+                  "/visualisations/dvc2683/fig10/index.html",
+                  "/visualisations/dvc2683/fig10/datadownload.xlsx",
+                  "/visualisations/dvc2683/fig15/index.html",
+                  "/visualisations/dvc2683/fig15/datadownload.xlsx"
+            ],
+            "theme": "employmentandlabourmarket",
+            "vis": [
+                  {
+                        "url": "/visualisations/dvc2683/fig6/index.html",
+                        "chart_type": null
+                  },
+                  {
+                        "url": "/visualisations/dvc2683/fig7/index.html",
+                        "chart_type": null
+                  },
+                  {
+                        "url": "/visualisations/dvc2683/fig8/index.html",
+                        "chart_type": null
+                  },
+                  {
+                        "url": "/visualisations/dvc2683/fig9/index.html",
+                        "chart_type": null
+                  },
+                  {
+                        "url": "/visualisations/dvc2683/fig10/index.html",
+                        "chart_type": null
+                  },
+                  {
+                        "url": "/visualisations/dvc2683/fig15/index.html",
+                        "chart_type": null
+                  }
+            ]
+      },
+      {
             "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/educationandchildcare/articles/howqualifiedarethepeopleinmyindustry/2023-08-14",
             "release_date": "2023-08-13T23:00:00.000Z",
             "title": "How qualified are the people in my industry? ",
@@ -9092,6 +9021,22 @@
                   },
                   {
                         "url": "/visualisations/dvc2256/fig4-5-wrapper/index.html",
+                        "chart_type": null
+                  }
+            ]
+      },
+      {
+            "doc_uri": "https://www.ons.gov.uk/economy/grossdomesticproductgdp/bulletins/businessinvestment/apriltojune2023provisionalresults",
+            "release_date": "2023-08-10T23:00:00.000Z",
+            "title": "Business investment in the UK",
+            "vis_urls": [
+                  "/visualisations/dvc2682/line/index.html",
+                  "/visualisations/dvc2682/line/datadownload.xlsx"
+            ],
+            "theme": "economy",
+            "vis": [
+                  {
+                        "url": "/visualisations/dvc2682/line/index.html",
                         "chart_type": null
                   }
             ]
@@ -9337,39 +9282,33 @@
             ]
       },
       {
-            "doc_uri": "https://www.ons.gov.uk/economy/inflationandpriceindices/bulletins/indexofprivatehousingrentalprices/june2023",
-            "release_date": "2023-07-18T23:00:00.000Z",
-            "title": "Index of Private Housing Rental Prices, UK",
+            "doc_uri": "https://www.ons.gov.uk/economy/nationalaccounts/balanceofpayments/articles/ukforeigndirectinvestmenttrendsandanalysis/2021",
+            "release_date": "2023-07-24T23:00:00.000Z",
+            "title": "Foreign direct investment by ultimate controlling economy, UK trends and analysis",
             "vis_urls": [
-                  "/visualisations/dvc2652/rpm/index.html",
-                  "/visualisations/dvc2652/rpm/datadownload.xlsx"
+                  "/visualisations/dvc2662/fig2/index.html",
+                  "/visualisations/dvc2662/fig2/datadownload.xlsx"
             ],
             "theme": "economy",
             "vis": [
                   {
-                        "url": "/visualisations/dvc2652/rpm/index.html",
+                        "url": "/visualisations/dvc2662/fig2/index.html",
                         "chart_type": null
                   }
             ]
       },
       {
-            "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/personalandhouseholdfinances/incomeandwealth/bulletins/theeffectsoftaxesandbenefitsonhouseholdincome/financialyearending2022",
-            "release_date": "2023-07-17T23:00:00.000Z",
-            "title": "Effects of taxes and benefits on UK household income",
+            "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/crimeandjustice/bulletins/crimeinenglandandwales/yearendingmarch2023",
+            "release_date": "2023-07-19T23:00:00.000Z",
+            "title": "Crime in England and Wales",
             "vis_urls": [
-                  "/visualisations/dvc2657/fig1wrapper/index.html",
-                  "/visualisations/dvc2657/fig1wrapper/datadownload.xlsx",
-                  "/visualisations/dvc2657/fig2/index.html",
-                  "/visualisations/dvc2657/fig2/datadownload.xlsx"
+                  "/visualisations/dvc2661/Fig4/index.html",
+                  "/visualisations/dvc2661/Fig4/datadownload.xlsx"
             ],
             "theme": "peoplepopulationandcommunity",
             "vis": [
                   {
-                        "url": "/visualisations/dvc2657/fig1wrapper/index.html",
-                        "chart_type": null
-                  },
-                  {
-                        "url": "/visualisations/dvc2657/fig2/index.html",
+                        "url": "/visualisations/dvc2661/Fig4/index.html",
                         "chart_type": null
                   }
             ]
@@ -9399,6 +9338,37 @@
                   {
                         "url": "/visualisations/dvc2642b/fig7/index.html",
                         "chart_type": "bar-chart"
+                  }
+            ]
+      },
+      {
+            "doc_uri": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/bulletins/employmentintheuk/july2023",
+            "release_date": "2023-07-10T23:00:00.000Z",
+            "title": "Employment in the UK",
+            "vis_urls": [
+                  "/visualisations/dvc2658/fig1/index.html",
+                  "/visualisations/dvc2658/fig1/datadownload.xlsx"
+            ],
+            "theme": "employmentandlabourmarket",
+            "vis": [
+                  {
+                        "url": "/visualisations/dvc2658/fig1/index.html",
+                        "chart_type": null
+                  }
+            ]
+      },
+      {
+            "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/healthandsocialcare/conditionsanddiseases/bulletins/selfreportedlongcovidsymptomsuk/10july2023",
+            "release_date": "2023-07-09T23:00:00.000Z",
+            "title": "Self-reported long COVID symptoms, UK",
+            "vis_urls": [
+                  "/visualisations/dvc988/line/index.html"
+            ],
+            "theme": "peoplepopulationandcommunity",
+            "vis": [
+                  {
+                        "url": "/visualisations/dvc988/line/index.html",
+                        "chart_type": null
                   }
             ]
       },
@@ -9448,21 +9418,6 @@
             ]
       },
       {
-            "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/healthandsocialcare/conditionsanddiseases/bulletins/selfreportedlongcovidsymptomsuk/10july2023",
-            "release_date": "2023-07-09T23:00:00.000Z",
-            "title": "Self-reported long COVID symptoms, UK",
-            "vis_urls": [
-                  "/visualisations/dvc988/line/index.html"
-            ],
-            "theme": "peoplepopulationandcommunity",
-            "vis": [
-                  {
-                        "url": "/visualisations/dvc988/line/index.html",
-                        "chart_type": null
-                  }
-            ]
-      },
-      {
             "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/personalandhouseholdfinances/incomeandwealth/bulletins/timeuseintheuk/march2023",
             "release_date": "2023-07-03T23:00:00.000Z",
             "title": "Time Use in the UK",
@@ -9475,6 +9430,38 @@
                   {
                         "url": "/visualisations/dvc2631/fig3/index.html",
                         "chart_type": "stacked-area-chart"
+                  }
+            ]
+      },
+      {
+            "doc_uri": "https://www.ons.gov.uk/economy/nationalaccounts/balanceofpayments/bulletins/balanceofpayments/januarytomarch2023",
+            "release_date": "2023-06-29T23:00:00.000Z",
+            "title": "Balance of payments, UK",
+            "vis_urls": [
+                  "/visualisations/dvc2639/fig3/index.html",
+                  "/visualisations/dvc2639/fig3/datadownload.xlsx"
+            ],
+            "theme": "economy",
+            "vis": [
+                  {
+                        "url": "/visualisations/dvc2639/fig3/index.html",
+                        "chart_type": null
+                  }
+            ]
+      },
+      {
+            "doc_uri": "https://www.ons.gov.uk/economy/governmentpublicsectorandtaxes/publicsectorfinance/articles/usingadministrativedatatoimprovepublicsectorfinancestatisticsuk/2023-06-29",
+            "release_date": "2023-06-28T23:00:00.000Z",
+            "title": "Using administrative data to improve public sector finance statistics, UK",
+            "vis_urls": [
+                  "/visualisations/dvc2637/fig2/index.html",
+                  "/visualisations/dvc2637/fig2/datadownload.xlsx"
+            ],
+            "theme": "economy",
+            "vis": [
+                  {
+                        "url": "/visualisations/dvc2637/fig2/index.html",
+                        "chart_type": null
                   }
             ]
       },
@@ -9519,39 +9506,79 @@
             ]
       },
       {
-            "doc_uri": "https://www.ons.gov.uk/economy/governmentpublicsectorandtaxes/publicsectorfinance/articles/usingadministrativedatatoimprovepublicsectorfinancestatisticsuk/2023-06-29",
-            "release_date": "2023-06-28T23:00:00.000Z",
-            "title": "Using administrative data to improve public sector finance statistics, UK",
+            "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/birthsdeathsandmarriages/deaths/bulletins/monthlymortalityanalysisenglandandwales/may2023",
+            "release_date": "2023-06-22T23:00:00.000Z",
+            "title": "Monthly mortality analysis, England and Wales",
             "vis_urls": [
-                  "/visualisations/dvc2637/fig2/index.html",
-                  "/visualisations/dvc2637/fig2/datadownload.xlsx"
+                  "/visualisations/dvc2626/fig3/index.html",
+                  "/visualisations/dvc2626/fig3/datadownload.xlsx",
+                  "/visualisations/dvc2626/fig4/index.html",
+                  "/visualisations/dvc2626/fig4/datadownload.xlsx",
+                  "/visualisations/dvc2626/fig11/index.html",
+                  "/visualisations/dvc2626/fig11/datadownload.xlsx",
+                  "/visualisations/dvc2626/fig12/index.html",
+                  "/visualisations/dvc2626/fig12/datadownload.xlsx"
             ],
-            "theme": "economy",
+            "theme": "peoplepopulationandcommunity",
             "vis": [
                   {
-                        "url": "/visualisations/dvc2637/fig2/index.html",
+                        "url": "/visualisations/dvc2626/fig3/index.html",
+                        "chart_type": null
+                  },
+                  {
+                        "url": "/visualisations/dvc2626/fig4/index.html",
+                        "chart_type": null
+                  },
+                  {
+                        "url": "/visualisations/dvc2626/fig11/index.html",
+                        "chart_type": null
+                  },
+                  {
+                        "url": "/visualisations/dvc2626/fig12/index.html",
                         "chart_type": null
                   }
             ]
       },
       {
-            "doc_uri": "https://www.ons.gov.uk/economy/nationalaccounts/balanceofpayments/articles/ukforeigndirectinvestmenttrendsandanalysis/july2021",
-            "release_date": "2021-07-18T23:00:00.000Z",
-            "title": "Foreign direct investment by ultimate controlling economy, UK trends and analysis",
+            "doc_uri": "https://www.ons.gov.uk/economy/inflationandpriceindices/bulletins/indexofprivatehousingrentalprices/may2023",
+            "release_date": "2023-06-20T23:00:00.000Z",
+            "title": "Index of Private Housing Rental Prices, UK",
             "vis_urls": [
-                  "/visualisations/dvc1477/immediateultimate/index.html",
-                  "/visualisations/dvc1477/immediateultimate/datadownload.xlsx",
-                  "/visualisations/dvc1477/roundtripping/index.html",
-                  "/visualisations/dvc1477/roundtripping/datadownload.xlsx"
+                  "/visualisations/dvc2618/rpm/index.html",
+                  "/visualisations/dvc2618/rpm/datadownload.xlsx"
             ],
             "theme": "economy",
             "vis": [
                   {
-                        "url": "/visualisations/dvc1477/immediateultimate/index.html",
+                        "url": "/visualisations/dvc2618/rpm/index.html",
+                        "chart_type": null
+                  }
+            ]
+      },
+      {
+            "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/housing/bulletins/privaterentalmarketsummarystatisticsinengland/april2022tomarch2023",
+            "release_date": "2023-06-20T23:00:00.000Z",
+            "title": "Private rental market summary statistics in England",
+            "vis_urls": [
+                  "/visualisations/dvc2630/fig-1/index.html",
+                  "/visualisations/dvc2630/fig-1/datadownload.xlsx",
+                  "/visualisations/dvc2630/fig-2/index.html",
+                  "/visualisations/dvc2630/fig-2/datadownload.xlsx",
+                  "/visualisations/dvc2630/fig-3/index.html",
+                  "/visualisations/dvc2630/fig-3/datadownload.xlsx"
+            ],
+            "theme": "peoplepopulationandcommunity",
+            "vis": [
+                  {
+                        "url": "/visualisations/dvc2630/fig-1/index.html",
                         "chart_type": null
                   },
                   {
-                        "url": "/visualisations/dvc1477/roundtripping/index.html",
+                        "url": "/visualisations/dvc2630/fig-2/index.html",
+                        "chart_type": null
+                  },
+                  {
+                        "url": "/visualisations/dvc2630/fig-3/index.html",
                         "chart_type": null
                   }
             ]
