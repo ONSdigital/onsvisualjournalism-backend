@@ -17,35 +17,35 @@
             "vis": [
                   {
                         "url": "/visualisations/dvc3498/fig01/index.html",
-                        "chart_type": null
+                        "chart_type": "stacked-bar-chart"
                   },
                   {
                         "url": "/visualisations/dvc3498/fig02/index.html",
-                        "chart_type": null
+                        "chart_type": "choropleth"
                   },
                   {
                         "url": "/visualisations/dvc3498/fig03/index.html",
-                        "chart_type": null
+                        "chart_type": "small-multiple-stacked-bar-chart"
                   },
                   {
                         "url": "/visualisations/dvc3498/fig04/index.html",
-                        "chart_type": null
+                        "chart_type": "bar-chart"
                   },
                   {
                         "url": "/visualisations/dvc3498/fig05/index.html",
-                        "chart_type": null
+                        "chart_type": "small-multiple-range-arrow-dot-bar-reference-plot"
                   },
                   {
                         "url": "/visualisations/dvc3498/fig06/index.html",
-                        "chart_type": null
+                        "chart_type": "bar-chart-with-dropdown"
                   },
                   {
                         "url": "/visualisations/dvc3498/fig07/index.html",
-                        "chart_type": null
+                        "chart_type": "small-multiple-line-chart-multiline"
                   },
                   {
                         "url": "/visualisations/dvc3498/fig08/index.html",
-                        "chart_type": null
+                        "chart_type": "small-multiple-line-chart-multiline"
                   }
             ]
       },
@@ -93,19 +93,19 @@
             "vis": [
                   {
                         "url": "/visualisations/dvc3418/fig01/index.html",
-                        "chart_type": null
+                        "chart_type": "line-chart"
                   },
                   {
                         "url": "/visualisations/dvc3418/fig02/index.html",
-                        "chart_type": null
+                        "chart_type": "line-chart"
                   },
                   {
                         "url": "/visualisations/dvc3418/fig03/index.html",
-                        "chart_type": null
+                        "chart_type": "line-chart"
                   },
                   {
                         "url": "/visualisations/dvc3418/fig05/index.html",
-                        "chart_type": null
+                        "chart_type": "line-chart"
                   }
             ]
       },
@@ -160,7 +160,7 @@
                   },
                   {
                         "url": "/visualisations/dvc3474/line-chart/index.html",
-                        "chart_type": null
+                        "chart_type": "line-chart"
                   }
             ]
       },
