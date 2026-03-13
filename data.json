@@ -1,5 +1,20 @@
 [
       {
+            "doc_uri": "https://www.ons.gov.uk/economy/economicoutputandproductivity/output/bulletins/economicactivityandsocialchangeintheukrealtimeindicators/12march2026",
+            "release_date": "2026-03-12",
+            "title": "Economic activity and social change in the UK, real-time indicators: 12 March 2026",
+            "vis_urls": [
+                  "/visualisations/dvc3512/dashboard-weekly/index.html"
+            ],
+            "theme": "economy",
+            "vis": [
+                  {
+                        "url": "/visualisations/dvc3512/dashboard-weekly/index.html",
+                        "chart_type": null
+                  }
+            ]
+      },
+      {
             "doc_uri": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/articles/highstreetsandretailareasingreatbritain/march2026",
             "release_date": "2026-03-10",
             "title": "High streets and retail areas in Great Britain: March 2026",
