@@ -1,5 +1,105 @@
 [
       {
+            "doc_uri": "https://www.ons.gov.uk/economy/grossdomesticproductgdp/bulletins/gdpmonthlyestimateuk/january2026",
+            "release_date": "2026-03-13",
+            "title": "GDP monthly estimate, UK: January 2026",
+            "vis_urls": [
+                  "/visualisations/dvc3511/fig03/index.html",
+                  "/visualisations/dvc3511/fig08/index.html",
+                  "/visualisations/dvc3511/fig09/index.html",
+                  "/visualisations/dvc3511/fig12/index.html",
+                  "/visualisations/dvc3511/fig13/index.html",
+                  "/visualisations/econgloss/widget_gloss/index.html"
+            ],
+            "theme": "economy",
+            "vis": [
+                  {
+                        "url": "/visualisations/dvc3511/fig03/index.html",
+                        "chart_type": "line-chart"
+                  },
+                  {
+                        "url": "/visualisations/dvc3511/fig08/index.html",
+                        "chart_type": "line-chart"
+                  },
+                  {
+                        "url": "/visualisations/dvc3511/fig09/index.html",
+                        "chart_type": "line-chart"
+                  },
+                  {
+                        "url": "/visualisations/dvc3511/fig12/index.html",
+                        "chart_type": "line-chart"
+                  },
+                  {
+                        "url": "/visualisations/dvc3511/fig13/index.html",
+                        "chart_type": "line-chart"
+                  },
+                  {
+                        "url": "/visualisations/econgloss/widget_gloss/index.html",
+                        "chart_type": null
+                  }
+            ]
+      },
+      {
+            "doc_uri": "https://www.ons.gov.uk/economy/nationalaccounts/balanceofpayments/bulletins/uktrade/january2026",
+            "release_date": "2026-03-13",
+            "title": "UK trade: January 2026",
+            "vis_urls": [
+                  "/visualisations/dvc3509/fig01/index.html",
+                  "/visualisations/dvc3509/fig02/index.html",
+                  "/visualisations/dvc3509/fig03/index.html",
+                  "/visualisations/dvc3509/fig04/index.html",
+                  "/visualisations/dvc3509/fig05/index.html",
+                  "/visualisations/dvc3509/fig06/index.html",
+                  "/visualisations/dvc3477/worldmap/index.html",
+                  "/visualisations/dvc3477/treemap-export/index.html",
+                  "/visualisations/dvc3477/treemap-import/index.html",
+                  "/visualisations/econgloss/widget_gloss/index.html"
+            ],
+            "theme": "economy",
+            "vis": [
+                  {
+                        "url": "/visualisations/dvc3509/fig01/index.html",
+                        "chart_type": "line-chart"
+                  },
+                  {
+                        "url": "/visualisations/dvc3509/fig02/index.html",
+                        "chart_type": "line-chart"
+                  },
+                  {
+                        "url": "/visualisations/dvc3509/fig03/index.html",
+                        "chart_type": "line-chart"
+                  },
+                  {
+                        "url": "/visualisations/dvc3509/fig04/index.html",
+                        "chart_type": "range-plot"
+                  },
+                  {
+                        "url": "/visualisations/dvc3509/fig05/index.html",
+                        "chart_type": "range-plot"
+                  },
+                  {
+                        "url": "/visualisations/dvc3509/fig06/index.html",
+                        "chart_type": "line-chart"
+                  },
+                  {
+                        "url": "/visualisations/dvc3477/worldmap/index.html",
+                        "chart_type": null
+                  },
+                  {
+                        "url": "/visualisations/dvc3477/treemap-export/index.html",
+                        "chart_type": null
+                  },
+                  {
+                        "url": "/visualisations/dvc3477/treemap-import/index.html",
+                        "chart_type": null
+                  },
+                  {
+                        "url": "/visualisations/econgloss/widget_gloss/index.html",
+                        "chart_type": null
+                  }
+            ]
+      },
+      {
             "doc_uri": "https://www.ons.gov.uk/economy/economicoutputandproductivity/output/bulletins/economicactivityandsocialchangeintheukrealtimeindicators/12march2026",
             "release_date": "2026-03-12",
             "title": "Economic activity and social change in the UK, real-time indicators: 12 March 2026",
