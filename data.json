@@ -1,5 +1,75 @@
 [
       {
+            "doc_uri": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/earningsandworkinghours/bulletins/earningsandemploymentfrompayasyouearnrealtimeinformationuk/march2026",
+            "release_date": "2026-03-19",
+            "title": "Earnings and employment from Pay As You Earn Real Time Information, UK: March 2026",
+            "vis_urls": [
+                  "/visualisations/dvc3515/fig05/index.html",
+                  "/visualisations/dvc3515/fig06/index.html",
+                  "/visualisations/dvc3515/fig07/index.html",
+                  "/visualisations/dvc3515/fig08/index.html"
+            ],
+            "theme": "employmentandlabourmarket",
+            "vis": [
+                  {
+                        "url": "/visualisations/dvc3515/fig05/index.html",
+                        "chart_type": null
+                  },
+                  {
+                        "url": "/visualisations/dvc3515/fig06/index.html",
+                        "chart_type": null
+                  },
+                  {
+                        "url": "/visualisations/dvc3515/fig07/index.html",
+                        "chart_type": null
+                  },
+                  {
+                        "url": "/visualisations/dvc3515/fig08/index.html",
+                        "chart_type": null
+                  }
+            ]
+      },
+      {
+            "doc_uri": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/bulletins/uklabourmarket/march2026",
+            "release_date": "2026-03-19",
+            "title": "Labour market overview, UK: March 2026",
+            "vis_urls": [
+                  "/visualisations/dvc3516/dashwrapper/index.html"
+            ],
+            "theme": "employmentandlabourmarket",
+            "vis": [
+                  {
+                        "url": "/visualisations/dvc3516/dashwrapper/index.html",
+                        "chart_type": null
+                  }
+            ]
+      },
+      {
+            "doc_uri": "https://www.ons.gov.uk/economy/economicoutputandproductivity/output/bulletins/economicactivityandsocialchangeintheukrealtimeindicators/19march2026",
+            "release_date": "2026-03-19",
+            "title": "Economic activity and social change in the UK, real-time indicators: 19 March 2026",
+            "vis_urls": [
+                  "/visualisations/dvc3517/dashboard-monthly/index.html",
+                  "/visualisations/dvc3517/footfall-bar-chart/index.html",
+                  "/visualisations/dvc3517/vat-new/index.html"
+            ],
+            "theme": "economy",
+            "vis": [
+                  {
+                        "url": "/visualisations/dvc3517/dashboard-monthly/index.html",
+                        "chart_type": null
+                  },
+                  {
+                        "url": "/visualisations/dvc3517/footfall-bar-chart/index.html",
+                        "chart_type": "bar-chart"
+                  },
+                  {
+                        "url": "/visualisations/dvc3517/vat-new/index.html",
+                        "chart_type": null
+                  }
+            ]
+      },
+      {
             "doc_uri": "https://www.ons.gov.uk/economy/grossdomesticproductgdp/bulletins/gdpmonthlyestimateuk/january2026",
             "release_date": "2026-03-13",
             "title": "GDP monthly estimate, UK: January 2026",
