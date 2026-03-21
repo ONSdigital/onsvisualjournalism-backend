@@ -1,5 +1,40 @@
 [
       {
+            "doc_uri": "https://www.ons.gov.uk/economy/governmentpublicsectorandtaxes/publicsectorfinance/bulletins/publicsectorfinances/february2026",
+            "release_date": "2026-03-20",
+            "title": "Public sector finances, UK: February 2026",
+            "vis_urls": [
+                  "/visualisations/dvc3518/table1/index.html"
+            ],
+            "theme": "economy",
+            "vis": [
+                  {
+                        "url": "/visualisations/dvc3518/table1/index.html",
+                        "chart_type": null
+                  }
+            ]
+      },
+      {
+            "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/wellbeing/bulletins/publicopinionsandsocialtrendsgreatbritain/february2026",
+            "release_date": "2026-03-20",
+            "title": "Public opinions and social trends, Great Britain: February 2026",
+            "vis_urls": [
+                  "/visualisations/dvc3508/fig01/index.html",
+                  "/visualisations/dvc3508/fig03/index.html"
+            ],
+            "theme": "peoplepopulationandcommunity",
+            "vis": [
+                  {
+                        "url": "/visualisations/dvc3508/fig01/index.html",
+                        "chart_type": "bar-chart"
+                  },
+                  {
+                        "url": "/visualisations/dvc3508/fig03/index.html",
+                        "chart_type": "line-chart"
+                  }
+            ]
+      },
+      {
             "doc_uri": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/earningsandworkinghours/bulletins/earningsandemploymentfrompayasyouearnrealtimeinformationuk/march2026",
             "release_date": "2026-03-19",
             "title": "Earnings and employment from Pay As You Earn Real Time Information, UK: March 2026",
