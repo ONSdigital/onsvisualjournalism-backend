@@ -1,5 +1,35 @@
 [
       {
+            "doc_uri": "https://www.ons.gov.uk/economy/environmentalaccounts/bulletins/experimentalestimatesofgreenjobsuk/march2026",
+            "release_date": "2026-03-24",
+            "title": "Estimates of green jobs, UK: March 2026",
+            "vis_urls": [
+                  "/visualisations/dvc3501/fig03/index.html",
+                  "/visualisations/dvc3501/fig04/index.html",
+                  "/visualisations/dvc3501/fig05/index.html",
+                  "/visualisations/dvc3501/fig06/index.html"
+            ],
+            "theme": "economy",
+            "vis": [
+                  {
+                        "url": "/visualisations/dvc3501/fig03/index.html",
+                        "chart_type": "small-multiple-bar-chart"
+                  },
+                  {
+                        "url": "/visualisations/dvc3501/fig04/index.html",
+                        "chart_type": "choropleth"
+                  },
+                  {
+                        "url": "/visualisations/dvc3501/fig05/index.html",
+                        "chart_type": "range-plot"
+                  },
+                  {
+                        "url": "/visualisations/dvc3501/fig06/index.html",
+                        "chart_type": "range-plot-with-confidence-intervals"
+                  }
+            ]
+      },
+      {
             "doc_uri": "https://www.ons.gov.uk/economy/governmentpublicsectorandtaxes/publicsectorfinance/bulletins/publicsectorfinances/february2026",
             "release_date": "2026-03-20",
             "title": "Public sector finances, UK: February 2026",
