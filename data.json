@@ -1,5 +1,40 @@
 [
       {
+            "doc_uri": "https://www.ons.gov.uk/economy/inflationandpriceindices/bulletins/privaterentandhousepricesuk/march2026",
+            "release_date": "2026-03-25",
+            "title": "Private rent and house prices, UK: March 2026",
+            "vis_urls": [
+                  "/visualisations/dvc3520/fig03/index.html",
+                  "/visualisations/dvc3520/fig04/index.html",
+                  "/visualisations/dvc3520/fig06/index.html",
+                  "/visualisations/dvc3520/fig07/index.html",
+                  "/visualisations/dvc3520/fig08/index.html"
+            ],
+            "theme": "economy",
+            "vis": [
+                  {
+                        "url": "/visualisations/dvc3520/fig03/index.html",
+                        "chart_type": "line-chart"
+                  },
+                  {
+                        "url": "/visualisations/dvc3520/fig04/index.html",
+                        "chart_type": "line-chart"
+                  },
+                  {
+                        "url": "/visualisations/dvc3520/fig06/index.html",
+                        "chart_type": "line-chart"
+                  },
+                  {
+                        "url": "/visualisations/dvc3520/fig07/index.html",
+                        "chart_type": null
+                  },
+                  {
+                        "url": "/visualisations/dvc3520/fig08/index.html",
+                        "chart_type": null
+                  }
+            ]
+      },
+      {
             "doc_uri": "https://www.ons.gov.uk/economy/environmentalaccounts/bulletins/experimentalestimatesofgreenjobsuk/march2026",
             "release_date": "2026-03-24",
             "title": "Estimates of green jobs, UK: March 2026",
