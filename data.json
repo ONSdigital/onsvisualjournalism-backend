@@ -1,5 +1,55 @@
 [
       {
+            "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/housing/articles/howaffordablearehomesinyourneighbourhood/2026-03-26",
+            "release_date": "2026-03-26",
+            "title": "How affordable are homes in your neighbourhood?",
+            "vis_urls": [
+                  "/visualisations/dvc3506/index.html"
+            ],
+            "theme": "peoplepopulationandcommunity",
+            "vis": [
+                  {
+                        "url": "/visualisations/dvc3506/index.html",
+                        "chart_type": null
+                  }
+            ]
+      },
+      {
+            "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/housing/bulletins/housingaffordabilityinenglandandwales/2025",
+            "release_date": "2026-03-26",
+            "title": "Housing affordability in England and Wales: 2025",
+            "vis_urls": [
+                  "/visualisations/dvc3507/fig1wrapper/index.html",
+                  "/visualisations/dvc3507/fig2/index.html",
+                  "/visualisations/dvc3507/fig3/index.html",
+                  "/visualisations/dvc3507/fig4/index.html",
+                  "/visualisations/dvc3507/fig5/index.html"
+            ],
+            "theme": "peoplepopulationandcommunity",
+            "vis": [
+                  {
+                        "url": "/visualisations/dvc3507/fig1wrapper/index.html",
+                        "chart_type": null
+                  },
+                  {
+                        "url": "/visualisations/dvc3507/fig2/index.html",
+                        "chart_type": "choropleth"
+                  },
+                  {
+                        "url": "/visualisations/dvc3507/fig3/index.html",
+                        "chart_type": "choropleth"
+                  },
+                  {
+                        "url": "/visualisations/dvc3507/fig4/index.html",
+                        "chart_type": "beeswarm"
+                  },
+                  {
+                        "url": "/visualisations/dvc3507/fig5/index.html",
+                        "chart_type": "choropleth"
+                  }
+            ]
+      },
+      {
             "doc_uri": "https://www.ons.gov.uk/economy/inflationandpriceindices/bulletins/privaterentandhousepricesuk/march2026",
             "release_date": "2026-03-25",
             "title": "Private rent and house prices, UK: March 2026",
