@@ -1,5 +1,80 @@
 [
       {
+            "doc_uri": "https://www.ons.gov.uk/economy/grossdomesticproductgdp/bulletins/quarterlynationalaccounts/octobertodecember2025",
+            "release_date": "2026-03-31",
+            "title": "GDP quarterly national accounts, UK: October to December 2025",
+            "vis_urls": [
+                  "/visualisations/econgloss/widget_gloss/index.html"
+            ],
+            "theme": "economy",
+            "vis": [
+                  {
+                        "url": "/visualisations/econgloss/widget_gloss/index.html",
+                        "chart_type": null
+                  }
+            ]
+      },
+      {
+            "doc_uri": "https://www.ons.gov.uk/economy/nationalaccounts/balanceofpayments/bulletins/balanceofpayments/octobertodecember2025",
+            "release_date": "2026-03-31",
+            "title": "Balance of payments, UK: October to December 2025",
+            "vis_urls": [
+                  "/visualisations/dvc3522/fig3/index.html",
+                  "/visualisations/pinkgloss/pinkbook_gloss/index.html"
+            ],
+            "theme": "economy",
+            "vis": [
+                  {
+                        "url": "/visualisations/dvc3522/fig3/index.html",
+                        "chart_type": "bar-chart"
+                  },
+                  {
+                        "url": "/visualisations/pinkgloss/pinkbook_gloss/index.html",
+                        "chart_type": null
+                  }
+            ]
+      },
+      {
+            "doc_uri": "https://www.ons.gov.uk/economy/grossdomesticproductgdp/bulletins/businessinvestment/octobertodecember2025revisedresults",
+            "release_date": "2026-03-31",
+            "title": "Business investment in the UK: October to December 2025 revised results",
+            "vis_urls": [
+                  "/visualisations/dvc3519/fig01/index.html",
+                  "/visualisations/dvc3519/fig04/index.html",
+                  "/visualisations/econgloss/widget_gloss/index.html"
+            ],
+            "theme": "economy",
+            "vis": [
+                  {
+                        "url": "/visualisations/dvc3519/fig01/index.html",
+                        "chart_type": "line-chart"
+                  },
+                  {
+                        "url": "/visualisations/dvc3519/fig04/index.html",
+                        "chart_type": "line-chart"
+                  },
+                  {
+                        "url": "/visualisations/econgloss/widget_gloss/index.html",
+                        "chart_type": null
+                  }
+            ]
+      },
+      {
+            "doc_uri": "https://www.ons.gov.uk/economy/nationalaccounts/uksectoraccounts/bulletins/quarterlysectoraccounts/octobertodecember2025",
+            "release_date": "2026-03-31",
+            "title": "Quarterly sector accounts, UK: October to December 2025",
+            "vis_urls": [
+                  "/visualisations/econgloss/widget_gloss/index.html"
+            ],
+            "theme": "economy",
+            "vis": [
+                  {
+                        "url": "/visualisations/econgloss/widget_gloss/index.html",
+                        "chart_type": null
+                  }
+            ]
+      },
+      {
             "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/housing/articles/howaffordablearehomesinyourneighbourhood/2026-03-26",
             "release_date": "2026-03-26",
             "title": "How affordable are homes in your neighbourhood?",
