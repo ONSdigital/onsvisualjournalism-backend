@@ -1,5 +1,70 @@
 [
       {
+            "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/birthsdeathsandmarriages/families/bulletins/familiesandhouseholds/2025",
+            "release_date": "2026-04-17",
+            "title": "Families and households in the UK: 2025",
+            "vis_urls": [
+                  "/visualisations/dvc3524/fig01/index.html",
+                  "/visualisations/dvc3524/fig02/index.html",
+                  "/visualisations/dvc3524/fig03/index.html",
+                  "/visualisations/dvc3524/fig05/index.html",
+                  "/visualisations/dvc3524/fig06/index.html"
+            ],
+            "theme": "peoplepopulationandcommunity",
+            "vis": [
+                  {
+                        "url": "/visualisations/dvc3524/fig01/index.html",
+                        "chart_type": "doughnut-chart"
+                  },
+                  {
+                        "url": "/visualisations/dvc3524/fig02/index.html",
+                        "chart_type": "range-arrow-dot-bar-reference-plot"
+                  },
+                  {
+                        "url": "/visualisations/dvc3524/fig03/index.html",
+                        "chart_type": "range-arrow-dot-bar-reference-plot"
+                  },
+                  {
+                        "url": "/visualisations/dvc3524/fig05/index.html",
+                        "chart_type": "range-arrow-dot-bar-reference-plot"
+                  },
+                  {
+                        "url": "/visualisations/dvc3524/fig06/index.html",
+                        "chart_type": "range-arrow-dot-bar-reference-plot"
+                  }
+            ]
+      },
+      {
+            "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/wellbeing/bulletins/publicopinionsandsocialtrendsgreatbritain/march2026",
+            "release_date": "2026-04-17",
+            "title": "Public opinions and social trends, Great Britain: March 2026",
+            "vis_urls": [
+                  "/visualisations/dvc3527/fig01/index.html",
+                  "/visualisations/dvc3527/fig03/index.html",
+                  "/visualisations/dvc3527/fig04/index.html",
+                  "/visualisations/dvc3527/fig05/index.html"
+            ],
+            "theme": "peoplepopulationandcommunity",
+            "vis": [
+                  {
+                        "url": "/visualisations/dvc3527/fig01/index.html",
+                        "chart_type": "line-chart"
+                  },
+                  {
+                        "url": "/visualisations/dvc3527/fig03/index.html",
+                        "chart_type": "small-multiple-line-chart-focus"
+                  },
+                  {
+                        "url": "/visualisations/dvc3527/fig04/index.html",
+                        "chart_type": "grouped-bar-chart"
+                  },
+                  {
+                        "url": "/visualisations/dvc3527/fig05/index.html",
+                        "chart_type": "grouped-bar-chart"
+                  }
+            ]
+      },
+      {
             "doc_uri": "https://www.ons.gov.uk/economy/grossdomesticproductgdp/bulletins/quarterlynationalaccounts/octobertodecember2025",
             "release_date": "2026-03-31",
             "title": "GDP quarterly national accounts, UK: October to December 2025",
