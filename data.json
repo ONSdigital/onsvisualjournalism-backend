@@ -1,5 +1,50 @@
 [
       {
+            "doc_uri": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/bulletins/uklabourmarket/april2026",
+            "release_date": "2026-04-21",
+            "title": "Labour market overview, UK: April 2026",
+            "vis_urls": [
+                  "/visualisations/dvc3534/dashwrapper/index.html"
+            ],
+            "theme": "employmentandlabourmarket",
+            "vis": [
+                  {
+                        "url": "/visualisations/dvc3534/dashwrapper/index.html",
+                        "chart_type": null
+                  }
+            ]
+      },
+      {
+            "doc_uri": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/earningsandworkinghours/bulletins/earningsandemploymentfrompayasyouearnrealtimeinformationuk/april2026",
+            "release_date": "2026-04-21",
+            "title": "Earnings and employment from Pay As You Earn Real Time Information, UK: April 2026",
+            "vis_urls": [
+                  "/visualisations/dvc3533/fig05/index.html",
+                  "/visualisations/dvc3533/fig06/index.html",
+                  "/visualisations/dvc3533/fig07/index.html",
+                  "/visualisations/dvc3533/fig08/index.html"
+            ],
+            "theme": "employmentandlabourmarket",
+            "vis": [
+                  {
+                        "url": "/visualisations/dvc3533/fig05/index.html",
+                        "chart_type": null
+                  },
+                  {
+                        "url": "/visualisations/dvc3533/fig06/index.html",
+                        "chart_type": null
+                  },
+                  {
+                        "url": "/visualisations/dvc3533/fig07/index.html",
+                        "chart_type": null
+                  },
+                  {
+                        "url": "/visualisations/dvc3533/fig08/index.html",
+                        "chart_type": null
+                  }
+            ]
+      },
+      {
             "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/birthsdeathsandmarriages/families/bulletins/familiesandhouseholds/2025",
             "release_date": "2026-04-17",
             "title": "Families and households in the UK: 2025",
