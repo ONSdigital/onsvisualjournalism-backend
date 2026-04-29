@@ -1,5 +1,60 @@
 [
       {
+            "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/populationprojections/methodologies/nationalpopulationprojectionsvariantprojections2024based",
+            "release_date": "2026-04-28",
+            "title": "National population projections, variant projections: 2024-based",
+            "vis_urls": [
+                  "/visualisations/dvc3531/fig01/index.html"
+            ],
+            "theme": "peoplepopulationandcommunity",
+            "vis": [
+                  {
+                        "url": "/visualisations/dvc3531/fig01/index.html",
+                        "chart_type": "small-multiple-line-chart-multiline"
+                  }
+            ]
+      },
+      {
+            "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/populationprojections/articles/ukpopulationprojectionexplorer/2025-01-28",
+            "release_date": "2026-04-28",
+            "title": "UK population projection explorer",
+            "vis_urls": [
+                  "/visualisations/populationprojectionsexplorer/index.html"
+            ],
+            "theme": "peoplepopulationandcommunity",
+            "vis": [
+                  {
+                        "url": "/visualisations/populationprojectionsexplorer/index.html",
+                        "chart_type": null
+                  }
+            ]
+      },
+      {
+            "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/populationprojections/bulletins/nationalpopulationprojections/2024based",
+            "release_date": "2026-04-28",
+            "title": "National population projections: 2024-based",
+            "vis_urls": [
+                  "/visualisations/dvc3528/fig03/index.html",
+                  "/visualisations/dvc3528/fig05/index.html",
+                  "/visualisations/dvc3528/fig07/index.html"
+            ],
+            "theme": "peoplepopulationandcommunity",
+            "vis": [
+                  {
+                        "url": "/visualisations/dvc3528/fig03/index.html",
+                        "chart_type": "waterfall"
+                  },
+                  {
+                        "url": "/visualisations/dvc3528/fig05/index.html",
+                        "chart_type": "static-population-pyramid"
+                  },
+                  {
+                        "url": "/visualisations/dvc3528/fig07/index.html",
+                        "chart_type": null
+                  }
+            ]
+      },
+      {
             "doc_uri": "https://www.ons.gov.uk/economy/economicoutputandproductivity/output/bulletins/economicactivityandsocialchangeintheukrealtimeindicators/23april2026",
             "release_date": "2026-04-23",
             "title": "Economic activity and social change in the UK, real-time indicators: 23 April 2026",
