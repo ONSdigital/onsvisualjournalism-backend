@@ -1,5 +1,60 @@
 [
       {
+            "doc_uri": "https://www.ons.gov.uk/economy/nationalaccounts/balanceofpayments/articles/uktradewiththeunitedstates/exportsandimportsofgoodsfollowingtheintroductionofustariffsapril2025tofebruary2026",
+            "release_date": "2026-05-01",
+            "title": "UK trade with the United States: exports and imports of goods following the introduction of US tariffs, April 2025 to February 2026",
+            "vis_urls": [
+                  "/visualisations/dvc3540/fig01/index.html",
+                  "/visualisations/dvc3540/fig02/index.html",
+                  "/visualisations/dvc3540/fig03/index.html",
+                  "/visualisations/dvc3540/fig04/index.html",
+                  "/visualisations/dvc3540/fig05/index.html",
+                  "/visualisations/dvc3540/worldmap/index.html",
+                  "/visualisations/dvc3529/treemap-export/index.html",
+                  "/visualisations/dvc3529/treemap-import/index.html",
+                  "/visualisations/econgloss/widget_gloss/index.html"
+            ],
+            "theme": "economy",
+            "vis": [
+                  {
+                        "url": "/visualisations/dvc3540/fig01/index.html",
+                        "chart_type": null
+                  },
+                  {
+                        "url": "/visualisations/dvc3540/fig02/index.html",
+                        "chart_type": "column-and-line-small-multiple"
+                  },
+                  {
+                        "url": "/visualisations/dvc3540/fig03/index.html",
+                        "chart_type": "column-and-line-small-multiple"
+                  },
+                  {
+                        "url": "/visualisations/dvc3540/fig04/index.html",
+                        "chart_type": "line-chart"
+                  },
+                  {
+                        "url": "/visualisations/dvc3540/fig05/index.html",
+                        "chart_type": "line-chart"
+                  },
+                  {
+                        "url": "/visualisations/dvc3540/worldmap/index.html",
+                        "chart_type": null
+                  },
+                  {
+                        "url": "/visualisations/dvc3529/treemap-export/index.html",
+                        "chart_type": null
+                  },
+                  {
+                        "url": "/visualisations/dvc3529/treemap-import/index.html",
+                        "chart_type": null
+                  },
+                  {
+                        "url": "/visualisations/econgloss/widget_gloss/index.html",
+                        "chart_type": null
+                  }
+            ]
+      },
+      {
             "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/populationprojections/methodologies/nationalpopulationprojectionsvariantprojections2024based",
             "release_date": "2026-04-28",
             "title": "National population projections, variant projections: 2024-based",
