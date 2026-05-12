@@ -1,5 +1,60 @@
 [
       {
+            "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/birthsdeathsandmarriages/deaths/methodologies/childmortalitystatisticsqmi",
+            "release_date": "2026-05-11",
+            "title": "Child and infant mortality statistics QMI",
+            "vis_urls": [
+                  "/visualisations/dvc637/post/index.html"
+            ],
+            "theme": "peoplepopulationandcommunity",
+            "vis": [
+                  {
+                        "url": "/visualisations/dvc637/post/index.html",
+                        "chart_type": null
+                  }
+            ]
+      },
+      {
+            "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/birthsdeathsandmarriages/deaths/bulletins/childhoodinfantandperinatalmortalityinenglandandwales/2024",
+            "release_date": "2026-05-11",
+            "title": "Child and infant mortality in England and Wales: 2024",
+            "vis_urls": [
+                  "/visualisations/dvc3546/fig02/index.html",
+                  "/visualisations/dvc3546/fig03/index.html"
+            ],
+            "theme": "peoplepopulationandcommunity",
+            "vis": [
+                  {
+                        "url": "/visualisations/dvc3546/fig02/index.html",
+                        "chart_type": "line-chart"
+                  },
+                  {
+                        "url": "/visualisations/dvc3546/fig03/index.html",
+                        "chart_type": null
+                  }
+            ]
+      },
+      {
+            "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/birthsdeathsandmarriages/deaths/methodologies/userguidetochildmortalitystatistics",
+            "release_date": "2026-05-11",
+            "title": "User guide to child and infant mortality statistics",
+            "vis_urls": [
+                  "/visualisations/dvc637/post/index.html",
+                  "/visualisations/dvc1158/pre/index.html"
+            ],
+            "theme": "peoplepopulationandcommunity",
+            "vis": [
+                  {
+                        "url": "/visualisations/dvc637/post/index.html",
+                        "chart_type": null
+                  },
+                  {
+                        "url": "/visualisations/dvc1158/pre/index.html",
+                        "chart_type": null
+                  }
+            ]
+      },
+      {
             "doc_uri": "https://www.ons.gov.uk/economy/nationalaccounts/balanceofpayments/articles/uktradewiththeunitedstates/exportsandimportsofgoodsfollowingtheintroductionofustariffsapril2025tofebruary2026",
             "release_date": "2026-05-01",
             "title": "UK trade with the United States: exports and imports of goods following the introduction of US tariffs, April 2025 to February 2026",
