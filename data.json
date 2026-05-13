@@ -1,5 +1,60 @@
 [
       {
+            "doc_uri": "https://www.ons.gov.uk/economy/grossdomesticproductgdp/methodologies/howtheonsassessesstatisticaloutputsforresidualseasonality",
+            "release_date": "2026-05-12",
+            "title": "How the ONS assesses statistical outputs for residual seasonality",
+            "vis_urls": [
+                  "/visualisations/dvc3535/fig01/index.html",
+                  "/visualisations/dvc3535/fig02/index.html",
+                  "/visualisations/dvc3535/fig03/index.html",
+                  "/visualisations/dvc3535/fig04/index.html",
+                  "/visualisations/dvc3535/fig05/index.html"
+            ],
+            "theme": "economy",
+            "vis": [
+                  {
+                        "url": "/visualisations/dvc3535/fig01/index.html",
+                        "chart_type": "line-chart"
+                  },
+                  {
+                        "url": "/visualisations/dvc3535/fig02/index.html",
+                        "chart_type": "column-chart-ci-bands"
+                  },
+                  {
+                        "url": "/visualisations/dvc3535/fig03/index.html",
+                        "chart_type": "small-multiple-line-chart-multiline"
+                  },
+                  {
+                        "url": "/visualisations/dvc3535/fig04/index.html",
+                        "chart_type": "line-chart"
+                  },
+                  {
+                        "url": "/visualisations/dvc3535/fig05/index.html",
+                        "chart_type": "small-multiple-line-chart-multiline"
+                  }
+            ]
+      },
+      {
+            "doc_uri": "https://www.ons.gov.uk/economy/nationalaccounts/balanceofpayments/articles/foreigndirectinvestmentexperimentaluksubnationalstatistics/2024",
+            "release_date": "2026-05-12",
+            "title": "Foreign direct investment, UK subnational estimates: 2024",
+            "vis_urls": [
+                  "/visualisations/dvc3539/fig02/index.html",
+                  "/visualisations/dvc3539/fig03/index.html"
+            ],
+            "theme": "economy",
+            "vis": [
+                  {
+                        "url": "/visualisations/dvc3539/fig02/index.html",
+                        "chart_type": "choropleth"
+                  },
+                  {
+                        "url": "/visualisations/dvc3539/fig03/index.html",
+                        "chart_type": "choropleth"
+                  }
+            ]
+      },
+      {
             "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/birthsdeathsandmarriages/deaths/methodologies/childmortalitystatisticsqmi",
             "release_date": "2026-05-11",
             "title": "Child and infant mortality statistics QMI",
