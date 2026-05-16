@@ -1,5 +1,90 @@
 [
       {
+            "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/birthsdeathsandmarriages/lifeexpectancies/bulletins/pastandprojecteddatafromtheperiodandcohortlifetables/2024baseduk1981to2074",
+            "release_date": "2026-05-15",
+            "title": "Past and projected period and cohort life tables: 2024-based, UK, 1981 to 2074",
+            "vis_urls": [
+                  "/visualisations/dvc221/index.html",
+                  "/visualisations/dvc3544/fig02/index.html",
+                  "/visualisations/dvc3544/fig03/index.html",
+                  "/visualisations/dvc3544/fig06/index.html"
+            ],
+            "theme": "peoplepopulationandcommunity",
+            "vis": [
+                  {
+                        "url": "/visualisations/dvc221/index.html",
+                        "chart_type": null
+                  },
+                  {
+                        "url": "/visualisations/dvc3544/fig02/index.html",
+                        "chart_type": "small-multiple-line-chart-multiline"
+                  },
+                  {
+                        "url": "/visualisations/dvc3544/fig03/index.html",
+                        "chart_type": "small-multiple-line-chart-multiline"
+                  },
+                  {
+                        "url": "/visualisations/dvc3544/fig06/index.html",
+                        "chart_type": "small-multiple-line-chart-multiline"
+                  }
+            ]
+      },
+      {
+            "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/populationestimates/articles/understandingtownsinenglandandwalesinvestigatingsocioeconomictrends/may2026",
+            "release_date": "2026-05-15",
+            "title": "Understanding towns in England and Wales, investigating socioeconomic trends: May 2026",
+            "vis_urls": [
+                  "/visualisations/dvc3489/fig03/index.html",
+                  "/visualisations/dvc3489/fig06/index.html",
+                  "/visualisations/dvc3489/fig07/index.html",
+                  "/visualisations/dvc3489/fig08/index.html",
+                  "/visualisations/dvc3489/fig09/index.html"
+            ],
+            "theme": "peoplepopulationandcommunity",
+            "vis": [
+                  {
+                        "url": "/visualisations/dvc3489/fig03/index.html",
+                        "chart_type": "beeswarm"
+                  },
+                  {
+                        "url": "/visualisations/dvc3489/fig06/index.html",
+                        "chart_type": "beeswarm"
+                  },
+                  {
+                        "url": "/visualisations/dvc3489/fig07/index.html",
+                        "chart_type": "beeswarm"
+                  },
+                  {
+                        "url": "/visualisations/dvc3489/fig08/index.html",
+                        "chart_type": "choropleth"
+                  },
+                  {
+                        "url": "/visualisations/dvc3489/fig09/index.html",
+                        "chart_type": "column-and-line-small-multiple"
+                  }
+            ]
+      },
+      {
+            "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/wellbeing/bulletins/publicopinionsandsocialtrendsgreatbritain/april2026",
+            "release_date": "2026-05-15",
+            "title": "Public opinions and social trends, Great Britain: April 2026",
+            "vis_urls": [
+                  "/visualisations/dvc3543/fig01/index.html",
+                  "/visualisations/dvc3543/fig02/index.html"
+            ],
+            "theme": "peoplepopulationandcommunity",
+            "vis": [
+                  {
+                        "url": "/visualisations/dvc3543/fig01/index.html",
+                        "chart_type": "line-chart"
+                  },
+                  {
+                        "url": "/visualisations/dvc3543/fig02/index.html",
+                        "chart_type": "bar-chart"
+                  }
+            ]
+      },
+      {
             "doc_uri": "https://www.ons.gov.uk/economy/grossdomesticproductgdp/methodologies/howtheonsassessesstatisticaloutputsforresidualseasonality",
             "release_date": "2026-05-12",
             "title": "How the ONS assesses statistical outputs for residual seasonality",
