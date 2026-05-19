@@ -1,5 +1,40 @@
 [
       {
+            "doc_uri": "https://www.ons.gov.uk/economy/governmentpublicsectorandtaxes/publicspending/articles/governmentexpenditureintheuk/2026-05-18",
+            "release_date": "2026-05-18",
+            "title": "Government expenditure in the UK",
+            "vis_urls": [
+                  "/visualisations/dvc3545/fig03/index.html",
+                  "/visualisations/dvc3545/fig06/index.html",
+                  "/visualisations/dvc3545/fig07/index.html",
+                  "/visualisations/dvc3545/fig08/index.html",
+                  "/visualisations/dvc3545/fig09/index.html"
+            ],
+            "theme": "economy",
+            "vis": [
+                  {
+                        "url": "/visualisations/dvc3545/fig03/index.html",
+                        "chart_type": "small-multiple-line-chart-focus"
+                  },
+                  {
+                        "url": "/visualisations/dvc3545/fig06/index.html",
+                        "chart_type": "small-multiple-line-chart-focus"
+                  },
+                  {
+                        "url": "/visualisations/dvc3545/fig07/index.html",
+                        "chart_type": "small-multiple-line-chart-focus"
+                  },
+                  {
+                        "url": "/visualisations/dvc3545/fig08/index.html",
+                        "chart_type": "small-multiple-line-chart-focus"
+                  },
+                  {
+                        "url": "/visualisations/dvc3545/fig09/index.html",
+                        "chart_type": "small-multiple-line-chart-focus"
+                  }
+            ]
+      },
+      {
             "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/birthsdeathsandmarriages/lifeexpectancies/bulletins/pastandprojecteddatafromtheperiodandcohortlifetables/2024baseduk1981to2074",
             "release_date": "2026-05-15",
             "title": "Past and projected period and cohort life tables: 2024-based, UK, 1981 to 2074",
