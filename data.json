@@ -1,5 +1,75 @@
 [
       {
+            "doc_uri": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/earningsandworkinghours/bulletins/earningsandemploymentfrompayasyouearnrealtimeinformationuk/may2026",
+            "release_date": "2026-05-19",
+            "title": "Earnings and employment from Pay As You Earn Real Time Information, UK: May 2026",
+            "vis_urls": [
+                  "/visualisations/dvc3554/fig05/index.html",
+                  "/visualisations/dvc3554/fig06/index.html",
+                  "/visualisations/dvc3554/fig07/index.html",
+                  "/visualisations/dvc3554/fig08/index.html"
+            ],
+            "theme": "employmentandlabourmarket",
+            "vis": [
+                  {
+                        "url": "/visualisations/dvc3554/fig05/index.html",
+                        "chart_type": null
+                  },
+                  {
+                        "url": "/visualisations/dvc3554/fig06/index.html",
+                        "chart_type": null
+                  },
+                  {
+                        "url": "/visualisations/dvc3554/fig07/index.html",
+                        "chart_type": null
+                  },
+                  {
+                        "url": "/visualisations/dvc3554/fig08/index.html",
+                        "chart_type": null
+                  }
+            ]
+      },
+      {
+            "doc_uri": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/labourproductivity/articles/ukproductivityintroduction/januarytomarch2026andoctobertodecember2025",
+            "release_date": "2026-05-19",
+            "title": "Productivity flash estimate and overview, UK: January to March 2026 and October to December 2025",
+            "vis_urls": [
+                  "/visualisations/dvc3542/fig2/index.html",
+                  "/visualisations/dvc3542/fig6/index.html",
+                  "/visualisations/dvc3542/fig7/index.html"
+            ],
+            "theme": "employmentandlabourmarket",
+            "vis": [
+                  {
+                        "url": "/visualisations/dvc3542/fig2/index.html",
+                        "chart_type": "line-chart-with-area"
+                  },
+                  {
+                        "url": "/visualisations/dvc3542/fig6/index.html",
+                        "chart_type": "bar-chart"
+                  },
+                  {
+                        "url": "/visualisations/dvc3542/fig7/index.html",
+                        "chart_type": "bar-chart"
+                  }
+            ]
+      },
+      {
+            "doc_uri": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/bulletins/uklabourmarket/may2026",
+            "release_date": "2026-05-19",
+            "title": "Labour market overview, UK: May 2026",
+            "vis_urls": [
+                  "/visualisations/dvc3555/dashwrapper/index.html"
+            ],
+            "theme": "employmentandlabourmarket",
+            "vis": [
+                  {
+                        "url": "/visualisations/dvc3555/dashwrapper/index.html",
+                        "chart_type": null
+                  }
+            ]
+      },
+      {
             "doc_uri": "https://www.ons.gov.uk/economy/governmentpublicsectorandtaxes/publicspending/articles/governmentexpenditureintheuk/2026-05-18",
             "release_date": "2026-05-18",
             "title": "Government expenditure in the UK",
