@@ -1,5 +1,180 @@
 [
       {
+            "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/internationalmigration/articles/whatisinternationalmigrationandhowdoweestimateit/2025-11-18",
+            "release_date": "2026-05-21",
+            "title": "What is international migration and how do we estimate it?",
+            "vis_urls": [
+                  "/visualisations/dvc3417/waterfall/index.html",
+                  "/visualisations/dvc3417/carousels/carousel-1/index.html",
+                  "/visualisations/dvc3417/carousels/carousel-2/index.html",
+                  "/visualisations/dvc3417/carousels/carousel-3/index.html",
+                  "/visualisations/dvc3417/carousels/carousel-4/index.html",
+                  "/visualisations/dvc3417/carousels/carousel-5/index.html",
+                  "/visualisations/dvc3417/carousels/carousel-6/index.html",
+                  "/visualisations/dvc3417/line-chart/index.html"
+            ],
+            "theme": "peoplepopulationandcommunity",
+            "vis": [
+                  {
+                        "url": "/visualisations/dvc3417/waterfall/index.html",
+                        "chart_type": "waterfall"
+                  },
+                  {
+                        "url": "/visualisations/dvc3417/carousels/carousel-1/index.html",
+                        "chart_type": null
+                  },
+                  {
+                        "url": "/visualisations/dvc3417/carousels/carousel-2/index.html",
+                        "chart_type": null
+                  },
+                  {
+                        "url": "/visualisations/dvc3417/carousels/carousel-3/index.html",
+                        "chart_type": null
+                  },
+                  {
+                        "url": "/visualisations/dvc3417/carousels/carousel-4/index.html",
+                        "chart_type": null
+                  },
+                  {
+                        "url": "/visualisations/dvc3417/carousels/carousel-5/index.html",
+                        "chart_type": null
+                  },
+                  {
+                        "url": "/visualisations/dvc3417/carousels/carousel-6/index.html",
+                        "chart_type": null
+                  },
+                  {
+                        "url": "/visualisations/dvc3417/line-chart/index.html",
+                        "chart_type": "line-chart"
+                  }
+            ]
+      },
+      {
+            "doc_uri": "https://www.ons.gov.uk/economy/economicoutputandproductivity/output/bulletins/economicactivityandsocialchangeintheukrealtimeindicators/21may2026",
+            "release_date": "2026-05-21",
+            "title": "Economic activity and social change in the UK, real-time indicators: 21 May 2026",
+            "vis_urls": [
+                  "/visualisations/dvc3557/dashboard-monthly/index.html",
+                  "/visualisations/dvc3557/footfall-bar-chart/index.html"
+            ],
+            "theme": "economy",
+            "vis": [
+                  {
+                        "url": "/visualisations/dvc3557/dashboard-monthly/index.html",
+                        "chart_type": null
+                  },
+                  {
+                        "url": "/visualisations/dvc3557/footfall-bar-chart/index.html",
+                        "chart_type": "bar-chart"
+                  }
+            ]
+      },
+      {
+            "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/internationalmigration/articles/ukemigrationexplainedwhatweknowaboutbritsmovingabroad/2026-05-21",
+            "release_date": "2026-05-21",
+            "title": "UK emigration explained: what we know about Brits moving abroad",
+            "vis_urls": [
+                  "/visualisations/dvc3547/ons-british-migration-with-arrows/index.html",
+                  "/visualisations/dvc3547/ons-british-migration-over-time/index.html",
+                  "/visualisations/dvc3547/ons-british-migration-age-groups/index.html",
+                  "/visualisations/dvc3547/UN-residents-worldmap/index.html",
+                  "/visualisations/dvc3547/migration-australia/index.html",
+                  "/visualisations/dvc3547/australia-stocks-age-group/index.html",
+                  "/visualisations/dvc3547/spain-population-pyramid/index.html",
+                  "/visualisations/dvc3547/spain-migration-age-groups/index.html",
+                  "/visualisations/dvc3547/UN-residents-worldmap-change/index.html"
+            ],
+            "theme": "peoplepopulationandcommunity",
+            "vis": [
+                  {
+                        "url": "/visualisations/dvc3547/ons-british-migration-with-arrows/index.html",
+                        "chart_type": "column-and-line-chart"
+                  },
+                  {
+                        "url": "/visualisations/dvc3547/ons-british-migration-over-time/index.html",
+                        "chart_type": "small-multiple-line-chart-multiline"
+                  },
+                  {
+                        "url": "/visualisations/dvc3547/ons-british-migration-age-groups/index.html",
+                        "chart_type": "column-and-line-small-multiple"
+                  },
+                  {
+                        "url": "/visualisations/dvc3547/UN-residents-worldmap/index.html",
+                        "chart_type": "proportional-symbol"
+                  },
+                  {
+                        "url": "/visualisations/dvc3547/migration-australia/index.html",
+                        "chart_type": "column-and-line-chart"
+                  },
+                  {
+                        "url": "/visualisations/dvc3547/australia-stocks-age-group/index.html",
+                        "chart_type": "small-multiple-line-chart-multiline"
+                  },
+                  {
+                        "url": "/visualisations/dvc3547/spain-population-pyramid/index.html",
+                        "chart_type": "population-pyramid"
+                  },
+                  {
+                        "url": "/visualisations/dvc3547/spain-migration-age-groups/index.html",
+                        "chart_type": "column-chart-sm"
+                  },
+                  {
+                        "url": "/visualisations/dvc3547/UN-residents-worldmap-change/index.html",
+                        "chart_type": "proportional-symbol"
+                  }
+            ]
+      },
+      {
+            "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/internationalmigration/bulletins/longterminternationalmigrationprovisional/yearendingdecember2025",
+            "release_date": "2026-05-21",
+            "title": "Long-term international migration, provisional: year ending December 2025",
+            "vis_urls": [
+                  "/visualisations/dvc3538/fig01/index.html",
+                  "/visualisations/dvc3538/fig02/index.html",
+                  "/visualisations/dvc3538/fig03/index.html",
+                  "/visualisations/dvc3538/fig04/index.html",
+                  "/visualisations/dvc3538/fig05/index.html",
+                  "/visualisations/dvc3538/fig09/index.html",
+                  "/visualisations/dvc3538/fig10/index.html",
+                  "/visualisations/dvc3538/fig14/index.html"
+            ],
+            "theme": "peoplepopulationandcommunity",
+            "vis": [
+                  {
+                        "url": "/visualisations/dvc3538/fig01/index.html",
+                        "chart_type": "waterfall"
+                  },
+                  {
+                        "url": "/visualisations/dvc3538/fig02/index.html",
+                        "chart_type": "line-chart"
+                  },
+                  {
+                        "url": "/visualisations/dvc3538/fig03/index.html",
+                        "chart_type": "line-chart"
+                  },
+                  {
+                        "url": "/visualisations/dvc3538/fig04/index.html",
+                        "chart_type": "line-chart"
+                  },
+                  {
+                        "url": "/visualisations/dvc3538/fig05/index.html",
+                        "chart_type": "line-chart"
+                  },
+                  {
+                        "url": "/visualisations/dvc3538/fig09/index.html",
+                        "chart_type": "line-chart"
+                  },
+                  {
+                        "url": "/visualisations/dvc3538/fig10/index.html",
+                        "chart_type": "line-chart"
+                  },
+                  {
+                        "url": "/visualisations/dvc3538/fig14/index.html",
+                        "chart_type": "line-chart"
+                  }
+            ]
+      },
+      {
             "doc_uri": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/earningsandworkinghours/bulletins/earningsandemploymentfrompayasyouearnrealtimeinformationuk/may2026",
             "release_date": "2026-05-19",
             "title": "Earnings and employment from Pay As You Earn Real Time Information, UK: May 2026",
@@ -2085,58 +2260,6 @@
                   {
                         "url": "/visualisations/dvc3401/fig05/index.html",
                         "chart_type": "line-chart"
-                  }
-            ]
-      },
-      {
-            "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/internationalmigration/articles/whatisinternationalmigrationandhowdoweestimateit/2025-11-18",
-            "release_date": "2025-11-18T00:00:00.000Z",
-            "title": "What is international migration and how do we estimate it?",
-            "vis_urls": [
-                  "/visualisations/dvc3417/waterfall/index.html",
-                  "/visualisations/dvc3417/waterfall/datadownload.xlsx",
-                  "/visualisations/dvc3417/carousels/carousel-1/index.html",
-                  "/visualisations/dvc3417/carousels/carousel-2/index.html",
-                  "/visualisations/dvc3417/carousels/carousel-3/index.html",
-                  "/visualisations/dvc3417/carousels/carousel-4/index.html",
-                  "/visualisations/dvc3417/carousels/carousel-5/index.html",
-                  "/visualisations/dvc3417/carousels/carousel-6/index.html",
-                  "/visualisations/dvc3417/line-chart/index.html",
-                  "/visualisations/dvc3417/line-chart/datadownload.xlsx"
-            ],
-            "theme": "peoplepopulationandcommunity",
-            "vis": [
-                  {
-                        "url": "/visualisations/dvc3417/waterfall/index.html",
-                        "chart_type": null
-                  },
-                  {
-                        "url": "/visualisations/dvc3417/carousels/carousel-1/index.html",
-                        "chart_type": null
-                  },
-                  {
-                        "url": "/visualisations/dvc3417/carousels/carousel-2/index.html",
-                        "chart_type": null
-                  },
-                  {
-                        "url": "/visualisations/dvc3417/carousels/carousel-3/index.html",
-                        "chart_type": null
-                  },
-                  {
-                        "url": "/visualisations/dvc3417/carousels/carousel-4/index.html",
-                        "chart_type": null
-                  },
-                  {
-                        "url": "/visualisations/dvc3417/carousels/carousel-5/index.html",
-                        "chart_type": null
-                  },
-                  {
-                        "url": "/visualisations/dvc3417/carousels/carousel-6/index.html",
-                        "chart_type": null
-                  },
-                  {
-                        "url": "/visualisations/dvc3417/line-chart/index.html",
-                        "chart_type": null
                   }
             ]
       },
