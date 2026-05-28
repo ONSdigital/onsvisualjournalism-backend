@@ -1,5 +1,20 @@
 [
       {
+            "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/birthsdeathsandmarriages/livebirths/methodologies/userguidetobirthstatistics",
+            "release_date": "2026-05-27",
+            "title": "User guide to birth statistics",
+            "vis_urls": [
+                  "/visualisations/dvc925/pre/index.html"
+            ],
+            "theme": "peoplepopulationandcommunity",
+            "vis": [
+                  {
+                        "url": "/visualisations/dvc925/pre/index.html",
+                        "chart_type": null
+                  }
+            ]
+      },
+      {
             "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/healthandsocialcare/mentalhealth/bulletins/theimpactofemploymentadvisorsinnhstalkingtherapiesonemployeeearningsandemploymentstatusengland/april2014tomarch2025",
             "release_date": "2026-05-26",
             "title": "The impact of employment advisors in NHS Talking Therapies on employee earnings and employment status, England: April 2014 to March 2025",
