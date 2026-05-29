@@ -1,5 +1,25 @@
 [
       {
+            "doc_uri": "https://www.ons.gov.uk/economy/regionalaccounts/grossdisposablehouseholdincome/articles/disaggregatinguksubnationalgrossdisposablehouseholdincometolowerlevelsofgeography/2010to2023",
+            "release_date": "2026-05-28",
+            "title": "Disaggregating UK subnational gross disposable household income to lower levels of geography: 2010 to 2023",
+            "vis_urls": [
+                  "/visualisations/dvc3499/fig01/index.html",
+                  "/visualisations/dvc3499/fig02/index.html"
+            ],
+            "theme": "economy",
+            "vis": [
+                  {
+                        "url": "/visualisations/dvc3499/fig01/index.html",
+                        "chart_type": null
+                  },
+                  {
+                        "url": "/visualisations/dvc3499/fig02/index.html",
+                        "chart_type": "line-chart"
+                  }
+            ]
+      },
+      {
             "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/birthsdeathsandmarriages/livebirths/methodologies/userguidetobirthstatistics",
             "release_date": "2026-05-27",
             "title": "User guide to birth statistics",
