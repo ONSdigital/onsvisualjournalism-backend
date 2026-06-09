@@ -1,5 +1,20 @@
 [
       {
+            "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/wellbeing/articles/ukmeasuresofnationalwellbeing/dashboard",
+            "release_date": "2026-06-08",
+            "title": "UK Measures of National Well-being Dashboard",
+            "vis_urls": [
+                  "/visualisations/dvcwellbeing/index.html"
+            ],
+            "theme": "peoplepopulationandcommunity",
+            "vis": [
+                  {
+                        "url": "/visualisations/dvcwellbeing/index.html",
+                        "chart_type": null
+                  }
+            ]
+      },
+      {
             "doc_uri": "https://www.ons.gov.uk/economy/environmentalaccounts/bulletins/ukenvironmentalaccounts/2026",
             "release_date": "2026-06-05",
             "title": "UK Environmental Accounts: 2026",
@@ -5749,21 +5764,6 @@
                   },
                   {
                         "url": "/visualisations/dvc2937/fig07/index.html",
-                        "chart_type": null
-                  }
-            ]
-      },
-      {
-            "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/wellbeing/articles/ukmeasuresofnationalwellbeing/dashboard",
-            "release_date": "2024-05-08T23:00:00.000Z",
-            "title": "UK Measures of National Well-being Dashboard",
-            "vis_urls": [
-                  "/visualisations/dvcwellbeing/index.html"
-            ],
-            "theme": "peoplepopulationandcommunity",
-            "vis": [
-                  {
-                        "url": "/visualisations/dvcwellbeing/index.html",
                         "chart_type": null
                   }
             ]
