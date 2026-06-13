@@ -1,5 +1,100 @@
 [
       {
+            "doc_uri": "https://www.ons.gov.uk/economy/grossdomesticproductgdp/bulletins/gdpmonthlyestimateuk/april2026",
+            "release_date": "2026-06-12",
+            "title": "GDP monthly estimate, UK: April 2026",
+            "vis_urls": [
+                  "/visualisations/dvc3565/fig03/index.html",
+                  "/visualisations/dvc3565/fig07/index.html",
+                  "/visualisations/dvc3565/fig08/index.html",
+                  "/visualisations/dvc3565/fig10/index.html",
+                  "/visualisations/dvc3565/fig11/index.html",
+                  "/visualisations/econgloss/widget_gloss/index.html"
+            ],
+            "theme": "economy",
+            "vis": [
+                  {
+                        "url": "/visualisations/dvc3565/fig03/index.html",
+                        "chart_type": "line-chart"
+                  },
+                  {
+                        "url": "/visualisations/dvc3565/fig07/index.html",
+                        "chart_type": "line-chart"
+                  },
+                  {
+                        "url": "/visualisations/dvc3565/fig08/index.html",
+                        "chart_type": "line-chart"
+                  },
+                  {
+                        "url": "/visualisations/dvc3565/fig10/index.html",
+                        "chart_type": "line-chart"
+                  },
+                  {
+                        "url": "/visualisations/dvc3565/fig11/index.html",
+                        "chart_type": "line-chart"
+                  },
+                  {
+                        "url": "/visualisations/econgloss/widget_gloss/index.html",
+                        "chart_type": null
+                  }
+            ]
+      },
+      {
+            "doc_uri": "https://www.ons.gov.uk/economy/nationalaccounts/balanceofpayments/bulletins/uktrade/april2026",
+            "release_date": "2026-06-12",
+            "title": "UK trade: April 2026",
+            "vis_urls": [
+                  "/visualisations/dvc3569/fig01/index.html",
+                  "/visualisations/dvc3569/fig02/index.html",
+                  "/visualisations/dvc3569/fig03/index.html",
+                  "/visualisations/dvc3569/fig04/index.html",
+                  "/visualisations/dvc3569/fig05/index.html",
+                  "/visualisations/dvc3549/worldmap/index.html",
+                  "/visualisations/dvc3549/treemap-export/index.html",
+                  "/visualisations/dvc3549/treemap-import/index.html",
+                  "/visualisations/econgloss/widget_gloss/index.html"
+            ],
+            "theme": "economy",
+            "vis": [
+                  {
+                        "url": "/visualisations/dvc3569/fig01/index.html",
+                        "chart_type": "line-chart"
+                  },
+                  {
+                        "url": "/visualisations/dvc3569/fig02/index.html",
+                        "chart_type": "line-chart"
+                  },
+                  {
+                        "url": "/visualisations/dvc3569/fig03/index.html",
+                        "chart_type": "range-plot"
+                  },
+                  {
+                        "url": "/visualisations/dvc3569/fig04/index.html",
+                        "chart_type": "range-plot"
+                  },
+                  {
+                        "url": "/visualisations/dvc3569/fig05/index.html",
+                        "chart_type": "line-chart"
+                  },
+                  {
+                        "url": "/visualisations/dvc3549/worldmap/index.html",
+                        "chart_type": null
+                  },
+                  {
+                        "url": "/visualisations/dvc3549/treemap-export/index.html",
+                        "chart_type": null
+                  },
+                  {
+                        "url": "/visualisations/dvc3549/treemap-import/index.html",
+                        "chart_type": null
+                  },
+                  {
+                        "url": "/visualisations/econgloss/widget_gloss/index.html",
+                        "chart_type": null
+                  }
+            ]
+      },
+      {
             "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/wellbeing/articles/ukmeasuresofnationalwellbeing/dashboard",
             "release_date": "2026-06-08",
             "title": "UK Measures of National Well-being Dashboard",
