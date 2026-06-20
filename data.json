@@ -1,5 +1,35 @@
 [
       {
+            "doc_uri": "https://www.ons.gov.uk/economy/governmentpublicsectorandtaxes/publicsectorfinance/bulletins/publicsectorfinances/may2026",
+            "release_date": "2026-06-19",
+            "title": "Public sector finances, UK: May 2026",
+            "vis_urls": [
+                  "/visualisations/dvc3575/table1/index.html"
+            ],
+            "theme": "economy",
+            "vis": [
+                  {
+                        "url": "/visualisations/dvc3575/table1/index.html",
+                        "chart_type": null
+                  }
+            ]
+      },
+      {
+            "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/wellbeing/bulletins/publicopinionsandsocialtrendsgreatbritain/may2026",
+            "release_date": "2026-06-19",
+            "title": "Public opinions and social trends, Great Britain: May 2026",
+            "vis_urls": [
+                  "/visualisations/dvc3564/fig01/index.html"
+            ],
+            "theme": "peoplepopulationandcommunity",
+            "vis": [
+                  {
+                        "url": "/visualisations/dvc3564/fig01/index.html",
+                        "chart_type": "line-chart"
+                  }
+            ]
+      },
+      {
             "doc_uri": "https://www.ons.gov.uk/economy/economicoutputandproductivity/output/bulletins/economicactivityandsocialchangeintheukrealtimeindicators/18june2026",
             "release_date": "2026-06-18",
             "title": "Economic activity and social change in the UK, real-time indicators: 18 June 2026",
