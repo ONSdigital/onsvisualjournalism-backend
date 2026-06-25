@@ -1,5 +1,35 @@
 [
       {
+            "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/housing/bulletins/shorttermletsthroughonlinecollaborativeeconomyplatformsuk/july2023todecember2025",
+            "release_date": "2026-06-24",
+            "title": "Short-term lets through online collaborative economy platforms, UK: July 2023 to December 2025",
+            "vis_urls": [
+                  "/visualisations/dvc3574/figure-1/index.html",
+                  "/visualisations/dvc3574/figure-2/index.html",
+                  "/visualisations/dvc3574/figure-3/index.html",
+                  "/visualisations/dvc3574/figure-4/index.html"
+            ],
+            "theme": "peoplepopulationandcommunity",
+            "vis": [
+                  {
+                        "url": "/visualisations/dvc3574/figure-1/index.html",
+                        "chart_type": "column-and-line-small-multiple"
+                  },
+                  {
+                        "url": "/visualisations/dvc3574/figure-2/index.html",
+                        "chart_type": "choropleth"
+                  },
+                  {
+                        "url": "/visualisations/dvc3574/figure-3/index.html",
+                        "chart_type": "choropleth"
+                  },
+                  {
+                        "url": "/visualisations/dvc3574/figure-4/index.html",
+                        "chart_type": "slope-chart"
+                  }
+            ]
+      },
+      {
             "doc_uri": "https://www.ons.gov.uk/economy/grossdomesticproductgdp/methodologies/incorporatingtheannualsurveyofgoodsandservicesintotheuknationalaccountsbluebook2026",
             "release_date": "2026-06-22",
             "title": "Incorporating the Annual Survey of Goods and Services into the UK National Accounts, Blue Book: 2026",
