@@ -1,5 +1,25 @@
 [
       {
+            "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/birthsdeathsandmarriages/conceptionandfertilityrates/bulletins/conceptionstatistics/2023",
+            "release_date": "2026-06-26",
+            "title": "Conceptions in England and Wales: 2023",
+            "vis_urls": [
+                  "/visualisations/dvc3561/fig02/index.html",
+                  "/visualisations/dvc3561/fig05/index.html"
+            ],
+            "theme": "peoplepopulationandcommunity",
+            "vis": [
+                  {
+                        "url": "/visualisations/dvc3561/fig02/index.html",
+                        "chart_type": "line-chart"
+                  },
+                  {
+                        "url": "/visualisations/dvc3561/fig05/index.html",
+                        "chart_type": "choropleth"
+                  }
+            ]
+      },
+      {
             "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/housing/bulletins/shorttermletsthroughonlinecollaborativeeconomyplatformsuk/july2023todecember2025",
             "release_date": "2026-06-24",
             "title": "Short-term lets through online collaborative economy platforms, UK: July 2023 to December 2025",
