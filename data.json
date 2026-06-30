@@ -1,5 +1,30 @@
 [
       {
+            "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/healthandsocialcare/healthandwellbeing/bulletins/impactofmultiplecardiometabolicconditionsrequiringhospitalisationonmonthlyemployeeearningsandemploymentstatusengland/april2014todecember2022",
+            "release_date": "2026-06-29",
+            "title": "Impact of multiple cardiometabolic conditions requiring hospitalisation on monthly employee earnings and employment status, England: April 2014 to December 2022",
+            "vis_urls": [
+                  "/visualisations/dvc3576/fig01/index.html",
+                  "/visualisations/dvc3576/fig02/index.html",
+                  "/visualisations/dvc3576/fig03/index.html"
+            ],
+            "theme": "peoplepopulationandcommunity",
+            "vis": [
+                  {
+                        "url": "/visualisations/dvc3576/fig01/index.html",
+                        "chart_type": "column-chart-small-multiple"
+                  },
+                  {
+                        "url": "/visualisations/dvc3576/fig02/index.html",
+                        "chart_type": "column-chart-small-multiple"
+                  },
+                  {
+                        "url": "/visualisations/dvc3576/fig03/index.html",
+                        "chart_type": "column-chart-small-multiple"
+                  }
+            ]
+      },
+      {
             "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/birthsdeathsandmarriages/conceptionandfertilityrates/bulletins/conceptionstatistics/2023",
             "release_date": "2026-06-26",
             "title": "Conceptions in England and Wales: 2023",
