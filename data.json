@@ -1,5 +1,50 @@
 [
       {
+            "doc_uri": "https://www.ons.gov.uk/economy/environmentalaccounts/bulletins/enclosedfarmlandnaturalcapitalaccountsuk/2026",
+            "release_date": "2026-07-08",
+            "title": "Enclosed farmland natural capital accounts, UK: 2026",
+            "vis_urls": [
+                  "/visualisations/dvc3396/fig14/index.html",
+                  "/visualisations/dvc3521/fig02/index.html",
+                  "/visualisations/dvc3521/tab01/index.html",
+                  "/visualisations/dvc3521/fig03/index.html",
+                  "/visualisations/dvc3521/fig05/index.html",
+                  "/visualisations/dvc3521/fig07/index.html",
+                  "/visualisations/dvc3521/fig10/index.html"
+            ],
+            "theme": "economy",
+            "vis": [
+                  {
+                        "url": "/visualisations/dvc3396/fig14/index.html",
+                        "chart_type": null
+                  },
+                  {
+                        "url": "/visualisations/dvc3521/fig02/index.html",
+                        "chart_type": "choropleth"
+                  },
+                  {
+                        "url": "/visualisations/dvc3521/tab01/index.html",
+                        "chart_type": "grouped-row-table"
+                  },
+                  {
+                        "url": "/visualisations/dvc3521/fig03/index.html",
+                        "chart_type": "column-and-line-small-multiple"
+                  },
+                  {
+                        "url": "/visualisations/dvc3521/fig05/index.html",
+                        "chart_type": "small-multiple-line-chart-with-area"
+                  },
+                  {
+                        "url": "/visualisations/dvc3521/fig07/index.html",
+                        "chart_type": "line-chart-with-dropdown"
+                  },
+                  {
+                        "url": "/visualisations/dvc3521/fig10/index.html",
+                        "chart_type": "bar-chart"
+                  }
+            ]
+      },
+      {
             "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/populationestimates/methodologies/longitudinalstudy2011to2021completenessofcensuslinkage",
             "release_date": "2026-07-07",
             "title": "Longitudinal Study 2011 to 2021: Completeness of census linkage",
