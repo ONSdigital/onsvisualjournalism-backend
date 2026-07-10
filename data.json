@@ -1,5 +1,30 @@
 [
       {
+            "doc_uri": "https://www.ons.gov.uk/economy/environmentalaccounts/articles/environmentclimateandnatureinsightsuk/2026",
+            "release_date": "2026-07-09",
+            "title": "Environment, climate and nature insights, UK: 2026",
+            "vis_urls": [
+                  "/visualisations/dvc3521/fig05/index.html",
+                  "/visualisations/dvc3581/Fig02/index.html",
+                  "/visualisations/dvc3559/fig08/index.html"
+            ],
+            "theme": "economy",
+            "vis": [
+                  {
+                        "url": "/visualisations/dvc3521/fig05/index.html",
+                        "chart_type": "small-multiple-line-chart-with-area"
+                  },
+                  {
+                        "url": "/visualisations/dvc3581/Fig02/index.html",
+                        "chart_type": "line-chart"
+                  },
+                  {
+                        "url": "/visualisations/dvc3559/fig08/index.html",
+                        "chart_type": "line-chart"
+                  }
+            ]
+      },
+      {
             "doc_uri": "https://www.ons.gov.uk/economy/environmentalaccounts/bulletins/enclosedfarmlandnaturalcapitalaccountsuk/2026",
             "release_date": "2026-07-08",
             "title": "Enclosed farmland natural capital accounts, UK: 2026",
