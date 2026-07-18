@@ -1,5 +1,20 @@
 [
       {
+            "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/wellbeing/bulletins/publicopinionsandsocialtrendsgreatbritain/june2026",
+            "release_date": "2026-07-17",
+            "title": "Public opinions and social trends, Great Britain: June 2026",
+            "vis_urls": [
+                  "/visualisations/dvc3587/fig01/index.html"
+            ],
+            "theme": "peoplepopulationandcommunity",
+            "vis": [
+                  {
+                        "url": "/visualisations/dvc3587/fig01/index.html",
+                        "chart_type": "line-chart"
+                  }
+            ]
+      },
+      {
             "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/birthsdeathsandmarriages/deaths/articles/deathsregisteredweeklyinenglandandwales/2025-03-26",
             "release_date": "2026-07-15",
             "title": "Dashboard: Deaths registered weekly in England and Wales: week ending 26 June 2026",
