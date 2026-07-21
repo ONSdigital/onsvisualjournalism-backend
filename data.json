@@ -1,5 +1,20 @@
 [
       {
+            "doc_uri": "https://www.ons.gov.uk/businessindustryandtrade/business/businessservices/articles/artificialintelligenceinukbusinesses/2023to2026",
+            "release_date": "2026-07-20",
+            "title": "Artificial intelligence in UK businesses: 2023 to 2026",
+            "vis_urls": [
+                  "/visualisations/dvc3591/fig10/index.html"
+            ],
+            "theme": "businessindustryandtrade",
+            "vis": [
+                  {
+                        "url": "/visualisations/dvc3591/fig10/index.html",
+                        "chart_type": "grouped-clustered-bar-chart"
+                  }
+            ]
+      },
+      {
             "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/wellbeing/bulletins/publicopinionsandsocialtrendsgreatbritain/june2026",
             "release_date": "2026-07-17",
             "title": "Public opinions and social trends, Great Britain: June 2026",
