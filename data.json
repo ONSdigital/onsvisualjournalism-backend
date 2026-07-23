@@ -1,5 +1,40 @@
 [
       {
+            "doc_uri": "https://www.ons.gov.uk/economy/inflationandpriceindices/bulletins/privaterentandhousepricesuk/july2026",
+            "release_date": "2026-07-22",
+            "title": "Private rent and house prices, UK: July 2026",
+            "vis_urls": [
+                  "/visualisations/dvc3592/fig03/index.html",
+                  "/visualisations/dvc3592/fig04/index.html",
+                  "/visualisations/dvc3592/fig06/index.html",
+                  "/visualisations/dvc3592/fig07/index.html",
+                  "/visualisations/dvc3592/fig08/index.html"
+            ],
+            "theme": "economy",
+            "vis": [
+                  {
+                        "url": "/visualisations/dvc3592/fig03/index.html",
+                        "chart_type": "small-multiple-line-chart-focus"
+                  },
+                  {
+                        "url": "/visualisations/dvc3592/fig04/index.html",
+                        "chart_type": "small-multiple-line-chart-focus"
+                  },
+                  {
+                        "url": "/visualisations/dvc3592/fig06/index.html",
+                        "chart_type": "small-multiple-line-chart-focus"
+                  },
+                  {
+                        "url": "/visualisations/dvc3592/fig07/index.html",
+                        "chart_type": "choropleth"
+                  },
+                  {
+                        "url": "/visualisations/dvc3592/fig08/index.html",
+                        "chart_type": "choropleth"
+                  }
+            ]
+      },
+      {
             "doc_uri": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/earningsandworkinghours/bulletins/earningsandemploymentfrompayasyouearnrealtimeinformationuk/july2026",
             "release_date": "2026-07-21",
             "title": "Earnings and employment from Pay As You Earn Real Time Information, UK: July 2026",
