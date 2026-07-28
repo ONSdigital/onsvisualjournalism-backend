@@ -1,5 +1,45 @@
 [
       {
+            "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/healthandsocialcare/healthandlifeexpectancies/methodologies/targetedincentivesontheopinionsandlifestylesurvey",
+            "release_date": "2026-07-27",
+            "title": "Targeted incentives on the Opinions and Lifestyle Survey",
+            "vis_urls": [
+                  "/visualisations/dvc3586/fig01/index.html",
+                  "/visualisations/dvc3586/fig02/index.html",
+                  "/visualisations/dvc3586/fig03/index.html",
+                  "/visualisations/dvc3586/fig04/index.html",
+                  "/visualisations/dvc3586/fig05/index.html",
+                  "/visualisations/dvc3586/fig06/index.html"
+            ],
+            "theme": "peoplepopulationandcommunity",
+            "vis": [
+                  {
+                        "url": "/visualisations/dvc3586/fig01/index.html",
+                        "chart_type": "line-chart"
+                  },
+                  {
+                        "url": "/visualisations/dvc3586/fig02/index.html",
+                        "chart_type": "column-and-line-chart"
+                  },
+                  {
+                        "url": "/visualisations/dvc3586/fig03/index.html",
+                        "chart_type": "line-chart"
+                  },
+                  {
+                        "url": "/visualisations/dvc3586/fig04/index.html",
+                        "chart_type": "grouped-clustered-bar-chart"
+                  },
+                  {
+                        "url": "/visualisations/dvc3586/fig05/index.html",
+                        "chart_type": "grouped-clustered-bar-chart"
+                  },
+                  {
+                        "url": "/visualisations/dvc3586/fig06/index.html",
+                        "chart_type": "small-multiple-clustered-bar-chart"
+                  }
+            ]
+      },
+      {
             "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/crimeandjustice/bulletins/crimeinenglandandwales/yearendingmarch2026",
             "release_date": "2026-07-23",
             "title": "Crime in England and Wales: year ending March 2026",
