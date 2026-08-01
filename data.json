@@ -1,5 +1,20 @@
 [
       {
+            "doc_uri": "https://www.ons.gov.uk/economy/grossdomesticproductgdp/methodologies/updateonreinstatingquarterlyregionalgdpestimatesforenglandandwalesjuly2026",
+            "release_date": "2026-07-31",
+            "title": "Update on reinstating quarterly regional GDP estimates for England and Wales: July 2026",
+            "vis_urls": [
+                  "/visualisations/dvc3596/fig01/index.html"
+            ],
+            "theme": "economy",
+            "vis": [
+                  {
+                        "url": "/visualisations/dvc3596/fig01/index.html",
+                        "chart_type": "line-chart"
+                  }
+            ]
+      },
+      {
             "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/healthandsocialcare/healthandlifeexpectancies/methodologies/targetedincentivesontheopinionsandlifestylesurvey",
             "release_date": "2026-07-27",
             "title": "Targeted incentives on the Opinions and Lifestyle Survey",
