@@ -1,5 +1,20 @@
 [
       {
+            "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/healthandsocialcare/mentalhealth/bulletins/theimpactofemploymentadvisorsinnhstalkingtherapiesonbenefitsreceiptengland/april2014toapril2024",
+            "release_date": "2026-08-11",
+            "title": "The impact of employment advisors in NHS Talking Therapies on benefits receipt, England: April 2014 to April 2024",
+            "vis_urls": [
+                  "/visualisations/dvc3605/fig01/index.html"
+            ],
+            "theme": "peoplepopulationandcommunity",
+            "vis": [
+                  {
+                        "url": "/visualisations/dvc3605/fig01/index.html",
+                        "chart_type": "column-chart-small-multiple"
+                  }
+            ]
+      },
+      {
             "doc_uri": "https://www.ons.gov.uk/businessindustryandtrade/internationaltrade/bulletins/asymmetriesininternationaltradeinservicesukandinternationalpartnercountries/2024",
             "release_date": "2026-08-10",
             "title": "Asymmetries in international trade in services, UK and international partner countries: 2024",
