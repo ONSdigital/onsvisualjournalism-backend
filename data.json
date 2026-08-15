@@ -1,5 +1,30 @@
 [
       {
+            "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/wellbeing/bulletins/publicopinionsandsocialtrendsgreatbritain/july2026",
+            "release_date": "2026-08-14",
+            "title": "Public opinions and social trends, Great Britain: July 2026",
+            "vis_urls": [
+                  "/visualisations/dvc3603/fig01/index.html",
+                  "/visualisations/dvc3603/fig02/index.html",
+                  "/visualisations/dvc3603/fig03/index.html"
+            ],
+            "theme": "peoplepopulationandcommunity",
+            "vis": [
+                  {
+                        "url": "/visualisations/dvc3603/fig01/index.html",
+                        "chart_type": "line-chart"
+                  },
+                  {
+                        "url": "/visualisations/dvc3603/fig02/index.html",
+                        "chart_type": "line-chart"
+                  },
+                  {
+                        "url": "/visualisations/dvc3603/fig03/index.html",
+                        "chart_type": "small-multiple-line-chart-focus"
+                  }
+            ]
+      },
+      {
             "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/healthandsocialcare/mentalhealth/bulletins/theimpactofemploymentadvisorsinnhstalkingtherapiesonbenefitsreceiptengland/april2014toapril2024",
             "release_date": "2026-08-11",
             "title": "The impact of employment advisors in NHS Talking Therapies on benefits receipt, England: April 2014 to April 2024",
