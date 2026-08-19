@@ -1,5 +1,70 @@
 [
       {
+            "doc_uri": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/bulletins/uklabourmarket/august2026",
+            "release_date": "2026-08-18",
+            "title": "Labour market overview, UK: August 2026",
+            "vis_urls": [
+                  "/visualisations/dvc3614/dashwrapper/index.html"
+            ],
+            "theme": "employmentandlabourmarket",
+            "vis": [
+                  {
+                        "url": "/visualisations/dvc3614/dashwrapper/index.html",
+                        "chart_type": null
+                  }
+            ]
+      },
+      {
+            "doc_uri": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/earningsandworkinghours/bulletins/earningsandemploymentfrompayasyouearnrealtimeinformationuk/august2026",
+            "release_date": "2026-08-18",
+            "title": "Earnings and employment from Pay As You Earn Real Time Information, UK: August 2026",
+            "vis_urls": [
+                  "/visualisations/dvc3615/fig05/index.html",
+                  "/visualisations/dvc3615/fig06/index.html",
+                  "/visualisations/dvc3615/fig07/index.html",
+                  "/visualisations/dvc3615/fig08/index.html"
+            ],
+            "theme": "employmentandlabourmarket",
+            "vis": [
+                  {
+                        "url": "/visualisations/dvc3615/fig05/index.html",
+                        "chart_type": null
+                  },
+                  {
+                        "url": "/visualisations/dvc3615/fig06/index.html",
+                        "chart_type": null
+                  },
+                  {
+                        "url": "/visualisations/dvc3615/fig07/index.html",
+                        "chart_type": null
+                  },
+                  {
+                        "url": "/visualisations/dvc3615/fig08/index.html",
+                        "chart_type": null
+                  }
+            ]
+      },
+      {
+            "doc_uri": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/labourproductivity/articles/ukproductivityintroduction/apriltojune2026andjanuarytomarch2026",
+            "release_date": "2026-08-18",
+            "title": "Productivity flash estimate and overview, UK: April to June 2026 and January to March 2026",
+            "vis_urls": [
+                  "/visualisations/dvc3611/fig6/index.html",
+                  "/visualisations/dvc3611/fig7/index.html"
+            ],
+            "theme": "employmentandlabourmarket",
+            "vis": [
+                  {
+                        "url": "/visualisations/dvc3611/fig6/index.html",
+                        "chart_type": "bar-chart"
+                  },
+                  {
+                        "url": "/visualisations/dvc3611/fig7/index.html",
+                        "chart_type": "bar-chart"
+                  }
+            ]
+      },
+      {
             "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/wellbeing/bulletins/publicopinionsandsocialtrendsgreatbritain/july2026",
             "release_date": "2026-08-14",
             "title": "Public opinions and social trends, Great Britain: July 2026",
