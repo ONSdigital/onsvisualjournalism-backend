@@ -1,5 +1,120 @@
 [
       {
+            "doc_uri": "https://www.ons.gov.uk/economy/economicoutputandproductivity/output/bulletins/economicactivityandsocialchangeintheukrealtimeindicators/20august2026",
+            "release_date": "2026-08-20",
+            "title": "Economic activity and social change in the UK, real-time indicators:  20 August 2026",
+            "vis_urls": [
+                  "/visualisations/dvc3618/dashboard-monthly/index.html",
+                  "/visualisations/dvc3618/footfall-bar-chart/index.html"
+            ],
+            "theme": "economy",
+            "vis": [
+                  {
+                        "url": "/visualisations/dvc3618/dashboard-monthly/index.html",
+                        "chart_type": null
+                  },
+                  {
+                        "url": "/visualisations/dvc3618/footfall-bar-chart/index.html",
+                        "chart_type": "bar-chart"
+                  }
+            ]
+      },
+      {
+            "doc_uri": "https://www.ons.gov.uk/economy/grossdomesticproductgdp/articles/bluebook2026industryimpactanalysis/2026-08-20",
+            "release_date": "2026-08-20",
+            "title": "Blue Book 2026: industry impact analysis",
+            "vis_urls": [
+                  "/visualisations/dvc3607/fig01/index.html",
+                  "/visualisations/dvc3607/fig02/index.html",
+                  "/visualisations/dvc3607/fig03/index.html",
+                  "/visualisations/dvc3607/fig04/index.html",
+                  "/visualisations/dvc3607/fig05/index.html",
+                  "/visualisations/dvc3607/fig06/index.html",
+                  "/visualisations/dvc3607/fig07/index.html",
+                  "/visualisations/dvc3607/fig08/index.html",
+                  "/visualisations/dvc3607/fig09/index.html",
+                  "/visualisations/dvc3607/fig10/index.html",
+                  "/visualisations/dvc3607/fig11/index.html",
+                  "/visualisations/dvc3607/fig12/index.html",
+                  "/visualisations/dvc3607/fig13/index.html",
+                  "/visualisations/econgloss/widget_gloss/index.html"
+            ],
+            "theme": "economy",
+            "vis": [
+                  {
+                        "url": "/visualisations/dvc3607/fig01/index.html",
+                        "chart_type": "bar-chart"
+                  },
+                  {
+                        "url": "/visualisations/dvc3607/fig02/index.html",
+                        "chart_type": "line-chart"
+                  },
+                  {
+                        "url": "/visualisations/dvc3607/fig03/index.html",
+                        "chart_type": "column-chart"
+                  },
+                  {
+                        "url": "/visualisations/dvc3607/fig04/index.html",
+                        "chart_type": "clustered-bar-chart"
+                  },
+                  {
+                        "url": "/visualisations/dvc3607/fig05/index.html",
+                        "chart_type": "column-chart"
+                  },
+                  {
+                        "url": "/visualisations/dvc3607/fig06/index.html",
+                        "chart_type": "line-chart"
+                  },
+                  {
+                        "url": "/visualisations/dvc3607/fig07/index.html",
+                        "chart_type": "column-chart"
+                  },
+                  {
+                        "url": "/visualisations/dvc3607/fig08/index.html",
+                        "chart_type": "clustered-bar-chart"
+                  },
+                  {
+                        "url": "/visualisations/dvc3607/fig09/index.html",
+                        "chart_type": "small-multiple-line-chart-multiline"
+                  },
+                  {
+                        "url": "/visualisations/dvc3607/fig10/index.html",
+                        "chart_type": "small-multiple-line-chart-multiline"
+                  },
+                  {
+                        "url": "/visualisations/dvc3607/fig11/index.html",
+                        "chart_type": "column-chart"
+                  },
+                  {
+                        "url": "/visualisations/dvc3607/fig12/index.html",
+                        "chart_type": "clustered-bar-chart"
+                  },
+                  {
+                        "url": "/visualisations/dvc3607/fig13/index.html",
+                        "chart_type": "line-chart"
+                  },
+                  {
+                        "url": "/visualisations/econgloss/widget_gloss/index.html",
+                        "chart_type": null
+                  }
+            ]
+      },
+      {
+            "doc_uri": "https://www.ons.gov.uk/economy/grossdomesticproductgdp/articles/bluebook2026impactongdpandmaincomponents/2026-08-20",
+            "release_date": "2026-08-20",
+            "title": "Blue Book 2026: impact on GDP and main components",
+            "vis_urls": [
+                  "/visualisations/econgloss/widget_gloss/index.html"
+            ],
+            "theme": "economy",
+            "vis": [
+                  {
+                        "url": "/visualisations/econgloss/widget_gloss/index.html",
+                        "chart_type": null
+                  }
+            ]
+      },
+      {
             "doc_uri": "https://www.ons.gov.uk/economy/regionalaccounts/grossdisposablehouseholdincome/bulletins/regionalgrossdisposablehouseholdincomegdhi/1997to2024",
             "release_date": "2026-08-19",
             "title": "Regional gross disposable household income, UK: 1997 to 2024",
