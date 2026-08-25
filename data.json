@@ -1,5 +1,20 @@
 [
       {
+            "doc_uri": "https://www.ons.gov.uk/economy/economicoutputandproductivity/productivitymeasures/articles/redefininginvestmentindigitalinfrastructureintheuk/2026",
+            "release_date": "2026-08-24",
+            "title": "Redefining investment in digital infrastructure in the UK: 2026",
+            "vis_urls": [
+                  "/visualisations/dvc3619/fig04/index.html"
+            ],
+            "theme": "economy",
+            "vis": [
+                  {
+                        "url": "/visualisations/dvc3619/fig04/index.html",
+                        "chart_type": "line-chart"
+                  }
+            ]
+      },
+      {
             "doc_uri": "https://www.ons.gov.uk/economy/economicoutputandproductivity/output/bulletins/economicactivityandsocialchangeintheukrealtimeindicators/20august2026",
             "release_date": "2026-08-20",
             "title": "Economic activity and social change in the UK, real-time indicators:  20 August 2026",
