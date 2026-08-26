@@ -1,5 +1,25 @@
 [
       {
+            "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/crimeandjustice/methodologies/howachangeinthecrimesurveyforenglandandwalesquestionnaireinapril2025affectedresponsestoquestionsonantisocialbehaviour",
+            "release_date": "2026-08-25",
+            "title": "How a change in the Crime Survey for England and Wales questionnaire in April 2025 affected responses to questions on anti-social behaviour",
+            "vis_urls": [
+                  "/visualisations/dvc3606/fig01/index.html",
+                  "/visualisations/dvc3606/fig02/index.html"
+            ],
+            "theme": "peoplepopulationandcommunity",
+            "vis": [
+                  {
+                        "url": "/visualisations/dvc3606/fig01/index.html",
+                        "chart_type": "line-chart"
+                  },
+                  {
+                        "url": "/visualisations/dvc3606/fig02/index.html",
+                        "chart_type": "small-multiple-line-chart-multiline"
+                  }
+            ]
+      },
+      {
             "doc_uri": "https://www.ons.gov.uk/economy/economicoutputandproductivity/productivitymeasures/articles/redefininginvestmentindigitalinfrastructureintheuk/2026",
             "release_date": "2026-08-24",
             "title": "Redefining investment in digital infrastructure in the UK: 2026",
