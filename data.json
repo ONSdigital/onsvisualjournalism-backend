@@ -1,5 +1,50 @@
 [
       {
+            "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/crimeandjustice/bulletins/childrensperceptionsofcrimeandonlinesafetyinenglandandwales/yearendingfebruary2026",
+            "release_date": "2026-09-02",
+            "title": "Children's perceptions of crime and online safety in England and Wales: year ending February 2026",
+            "vis_urls": [
+                  "/visualisations/dvc3600/fig01/index.html",
+                  "/visualisations/dvc3600/fig02/index.html",
+                  "/visualisations/dvc3600/fig03/index.html",
+                  "/visualisations/dvc3600/fig04/index.html",
+                  "/visualisations/dvc3600/fig05/index.html",
+                  "/visualisations/dvc3600/fig06/index.html",
+                  "/visualisations/dvc3600/fig07/index.html"
+            ],
+            "theme": "peoplepopulationandcommunity",
+            "vis": [
+                  {
+                        "url": "/visualisations/dvc3600/fig01/index.html",
+                        "chart_type": "bar-chart"
+                  },
+                  {
+                        "url": "/visualisations/dvc3600/fig02/index.html",
+                        "chart_type": "bar-chart"
+                  },
+                  {
+                        "url": "/visualisations/dvc3600/fig03/index.html",
+                        "chart_type": "grouped-stacked-bar-chart"
+                  },
+                  {
+                        "url": "/visualisations/dvc3600/fig04/index.html",
+                        "chart_type": "clustered-bar-chart"
+                  },
+                  {
+                        "url": "/visualisations/dvc3600/fig05/index.html",
+                        "chart_type": "grouped-stacked-bar-chart"
+                  },
+                  {
+                        "url": "/visualisations/dvc3600/fig06/index.html",
+                        "chart_type": "grouped-stacked-bar-chart"
+                  },
+                  {
+                        "url": "/visualisations/dvc3600/fig07/index.html",
+                        "chart_type": "clustered-bar-chart"
+                  }
+            ]
+      },
+      {
             "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/crimeandjustice/methodologies/howachangeinthecrimesurveyforenglandandwalesquestionnaireinapril2025affectedresponsestoquestionsonantisocialbehaviour",
             "release_date": "2026-08-25",
             "title": "How a change in the Crime Survey for England and Wales questionnaire in April 2025 affected responses to questions on anti-social behaviour",
