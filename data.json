@@ -1,5 +1,20 @@
 [
       {
+            "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/birthsdeathsandmarriages/deaths/articles/deathsregisteredweeklyinenglandandwales/2025-03-26",
+            "release_date": "2026-09-09",
+            "title": "Dashboard: Deaths registered weekly in England and Wales: week ending 28 August 2026",
+            "vis_urls": [
+                  "/visualisations/weeklydeathsdashboard/"
+            ],
+            "theme": "peoplepopulationandcommunity",
+            "vis": [
+                  {
+                        "url": "/visualisations/weeklydeathsdashboard/",
+                        "chart_type": null
+                  }
+            ]
+      },
+      {
             "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/birthsdeathsandmarriages/livebirths/bulletins/birthsummarytablesenglandandwales/2025finalrates",
             "release_date": "2026-09-08",
             "title": "Births in England and Wales: 2025 (final rates)",
