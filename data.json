@@ -1,5 +1,100 @@
 [
       {
+            "doc_uri": "https://www.ons.gov.uk/economy/nationalaccounts/balanceofpayments/bulletins/uktrade/july2026",
+            "release_date": "2026-09-11",
+            "title": "UK trade: July 2026",
+            "vis_urls": [
+                  "/visualisations/dvc3626/fig01/index.html",
+                  "/visualisations/dvc3626/fig02/index.html",
+                  "/visualisations/dvc3626/fig03/index.html",
+                  "/visualisations/dvc3626/fig04/index.html",
+                  "/visualisations/dvc3626/fig05/index.html",
+                  "/visualisations/dvc3588/worldmap/index.html",
+                  "/visualisations/dvc3588/treemap-export/index.html",
+                  "/visualisations/dvc3588/treemap-import/index.html",
+                  "/visualisations/econgloss/widget_gloss/index.html"
+            ],
+            "theme": "economy",
+            "vis": [
+                  {
+                        "url": "/visualisations/dvc3626/fig01/index.html",
+                        "chart_type": "line-chart"
+                  },
+                  {
+                        "url": "/visualisations/dvc3626/fig02/index.html",
+                        "chart_type": "line-chart"
+                  },
+                  {
+                        "url": "/visualisations/dvc3626/fig03/index.html",
+                        "chart_type": "range-plot"
+                  },
+                  {
+                        "url": "/visualisations/dvc3626/fig04/index.html",
+                        "chart_type": "range-plot"
+                  },
+                  {
+                        "url": "/visualisations/dvc3626/fig05/index.html",
+                        "chart_type": "line-chart"
+                  },
+                  {
+                        "url": "/visualisations/dvc3588/worldmap/index.html",
+                        "chart_type": null
+                  },
+                  {
+                        "url": "/visualisations/dvc3588/treemap-export/index.html",
+                        "chart_type": null
+                  },
+                  {
+                        "url": "/visualisations/dvc3588/treemap-import/index.html",
+                        "chart_type": null
+                  },
+                  {
+                        "url": "/visualisations/econgloss/widget_gloss/index.html",
+                        "chart_type": null
+                  }
+            ]
+      },
+      {
+            "doc_uri": "https://www.ons.gov.uk/economy/grossdomesticproductgdp/bulletins/gdpmonthlyestimateuk/july2026",
+            "release_date": "2026-09-11",
+            "title": "GDP monthly estimate, UK: July 2026",
+            "vis_urls": [
+                  "/visualisations/dvc3630/fig03/index.html",
+                  "/visualisations/dvc3630/fig07/index.html",
+                  "/visualisations/dvc3630/fig08/index.html",
+                  "/visualisations/dvc3630/fig10/index.html",
+                  "/visualisations/dvc3630/fig11/index.html",
+                  "/visualisations/econgloss/widget_gloss/index.html"
+            ],
+            "theme": "economy",
+            "vis": [
+                  {
+                        "url": "/visualisations/dvc3630/fig03/index.html",
+                        "chart_type": "line-chart"
+                  },
+                  {
+                        "url": "/visualisations/dvc3630/fig07/index.html",
+                        "chart_type": "line-chart"
+                  },
+                  {
+                        "url": "/visualisations/dvc3630/fig08/index.html",
+                        "chart_type": "line-chart"
+                  },
+                  {
+                        "url": "/visualisations/dvc3630/fig10/index.html",
+                        "chart_type": "line-chart"
+                  },
+                  {
+                        "url": "/visualisations/dvc3630/fig11/index.html",
+                        "chart_type": "line-chart"
+                  },
+                  {
+                        "url": "/visualisations/econgloss/widget_gloss/index.html",
+                        "chart_type": null
+                  }
+            ]
+      },
+      {
             "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/healthandsocialcare/healthcaresystem/bulletins/experiencesofnhshealthcareservicesinengland/september2026",
             "release_date": "2026-09-10",
             "title": "Experiences of NHS healthcare services in England: September 2026",
