@@ -1,5 +1,50 @@
 [
       {
+            "doc_uri": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/bulletins/uklabourmarket/september2026",
+            "release_date": "2026-09-15",
+            "title": "Labour market overview, UK: September 2026",
+            "vis_urls": [
+                  "/visualisations/dvc3634/build"
+            ],
+            "theme": "employmentandlabourmarket",
+            "vis": [
+                  {
+                        "url": "/visualisations/dvc3634/build",
+                        "chart_type": null
+                  }
+            ]
+      },
+      {
+            "doc_uri": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/earningsandworkinghours/bulletins/earningsandemploymentfrompayasyouearnrealtimeinformationuk/september2026",
+            "release_date": "2026-09-15",
+            "title": "Earnings and employment from Pay As You Earn Real Time Information, UK: September 2026",
+            "vis_urls": [
+                  "/visualisations/dvc3631/Fig05/index.html",
+                  "/visualisations/dvc3631/fig06/index.html",
+                  "/visualisations/dvc3631/fig07/index.html",
+                  "/visualisations/dvc3631/Fig08/index.html"
+            ],
+            "theme": "employmentandlabourmarket",
+            "vis": [
+                  {
+                        "url": "/visualisations/dvc3631/Fig05/index.html",
+                        "chart_type": "small-multiple-line-chart-multiline"
+                  },
+                  {
+                        "url": "/visualisations/dvc3631/fig06/index.html",
+                        "chart_type": "choropleth"
+                  },
+                  {
+                        "url": "/visualisations/dvc3631/fig07/index.html",
+                        "chart_type": "choropleth"
+                  },
+                  {
+                        "url": "/visualisations/dvc3631/Fig08/index.html",
+                        "chart_type": "small-multiple-line-chart-multiline"
+                  }
+            ]
+      },
+      {
             "doc_uri": "https://www.ons.gov.uk/economy/nationalaccounts/balanceofpayments/bulletins/uktrade/july2026",
             "release_date": "2026-09-11",
             "title": "UK trade: July 2026",
