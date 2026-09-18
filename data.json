@@ -1,5 +1,30 @@
 [
       {
+            "doc_uri": "https://www.ons.gov.uk/economy/economicoutputandproductivity/output/bulletins/economicactivityandsocialchangeintheukrealtimeindicators/17september2026",
+            "release_date": "2026-09-17",
+            "title": "Economic activity and social change in the UK, real-time indicators: 17 September 2026",
+            "vis_urls": [
+                  "/visualisations/dvc3636/dashboard-monthly/index.html",
+                  "/visualisations/dvc3636/footfall-bar-chart/index.html",
+                  "/visualisations/dvc3636/vat-new/index.html"
+            ],
+            "theme": "economy",
+            "vis": [
+                  {
+                        "url": "/visualisations/dvc3636/dashboard-monthly/index.html",
+                        "chart_type": null
+                  },
+                  {
+                        "url": "/visualisations/dvc3636/footfall-bar-chart/index.html",
+                        "chart_type": "bar-chart"
+                  },
+                  {
+                        "url": "/visualisations/dvc3636/vat-new/index.html",
+                        "chart_type": null
+                  }
+            ]
+      },
+      {
             "doc_uri": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/bulletins/uklabourmarket/september2026",
             "release_date": "2026-09-15",
             "title": "Labour market overview, UK: September 2026",
