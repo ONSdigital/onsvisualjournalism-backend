@@ -1,5 +1,60 @@
 [
       {
+            "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/wellbeing/bulletins/measuringprogresswellbeingandbeyondgdpintheuk/september2026",
+            "release_date": "2026-09-18",
+            "title": "Beyond GDP insights, UK headline measures of National Well-being: September 2026",
+            "vis_urls": [
+                  "/visualisations/dvc3635/dashboard/index.html"
+            ],
+            "theme": "peoplepopulationandcommunity",
+            "vis": [
+                  {
+                        "url": "/visualisations/dvc3635/dashboard/index.html",
+                        "chart_type": null
+                  }
+            ]
+      },
+      {
+            "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/wellbeing/bulletins/publicopinionsandsocialtrendsgreatbritain/august2026",
+            "release_date": "2026-09-18",
+            "title": "Public opinions and social trends, Great Britain: August 2026",
+            "vis_urls": [
+                  "/visualisations/dvc3629/fig01/index.html"
+            ],
+            "theme": "peoplepopulationandcommunity",
+            "vis": [
+                  {
+                        "url": "/visualisations/dvc3629/fig01/index.html",
+                        "chart_type": "line-chart"
+                  }
+            ]
+      },
+      {
+            "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/housing/bulletins/mortgagestatisticsuk/2025",
+            "release_date": "2026-09-18",
+            "title": "Mortgage statistics, UK: 2025",
+            "vis_urls": [
+                  "/visualisations/dvc3624/fig1/index.html",
+                  "/visualisations/dvc3624/fig2/index.html",
+                  "/visualisations/dvc3624/fig3/index.html"
+            ],
+            "theme": "peoplepopulationandcommunity",
+            "vis": [
+                  {
+                        "url": "/visualisations/dvc3624/fig1/index.html",
+                        "chart_type": "column-and-line-chart"
+                  },
+                  {
+                        "url": "/visualisations/dvc3624/fig2/index.html",
+                        "chart_type": "scatter-bubble-plot"
+                  },
+                  {
+                        "url": "/visualisations/dvc3624/fig3/index.html",
+                        "chart_type": "range-plot"
+                  }
+            ]
+      },
+      {
             "doc_uri": "https://www.ons.gov.uk/economy/economicoutputandproductivity/output/bulletins/economicactivityandsocialchangeintheukrealtimeindicators/17september2026",
             "release_date": "2026-09-17",
             "title": "Economic activity and social change in the UK, real-time indicators: 17 September 2026",
