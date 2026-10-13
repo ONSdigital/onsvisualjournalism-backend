@@ -1,5 +1,20 @@
 [
       {
+            "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/healthandsocialcare/healthandwellbeing/bulletins/theimpactofelectivewaitingtimesonbenefitsreceiptengland/april2014toapril2024",
+            "release_date": "2026-10-12",
+            "title": "The impact of elective waiting times on benefits receipt, England: April 2014 to April 2024",
+            "vis_urls": [
+                  "/visualisations/dvc3643/fig01/index.html"
+            ],
+            "theme": "peoplepopulationandcommunity",
+            "vis": [
+                  {
+                        "url": "/visualisations/dvc3643/fig01/index.html",
+                        "chart_type": null
+                  }
+            ]
+      },
+      {
             "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/healthandsocialcare/healthandlifeexpectancies/bulletins/adultsmokinghabitsingreatbritain/2025",
             "release_date": "2026-10-06",
             "title": "Adult smoking habits in the UK: 2025",
