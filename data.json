@@ -1,5 +1,20 @@
 [
       {
+            "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/birthsdeathsandmarriages/deaths/articles/deathsregisteredweeklyinenglandandwales/2025-03-26",
+            "release_date": "2026-10-14",
+            "title": "Dashboard: Deaths registered weekly in England and Wales: week ending Friday, 2 October 2026",
+            "vis_urls": [
+                  "/visualisations/weeklydeathsdashboard/"
+            ],
+            "theme": "peoplepopulationandcommunity",
+            "vis": [
+                  {
+                        "url": "/visualisations/weeklydeathsdashboard/",
+                        "chart_type": null
+                  }
+            ]
+      },
+      {
             "doc_uri": "https://www.ons.gov.uk/businessindustryandtrade/business/activitysizeandlocation/bulletins/trendsinukindustryconcentration/2007to2025",
             "release_date": "2026-10-13",
             "title": "Trends in UK industry concentration: 2007 to 2025",
