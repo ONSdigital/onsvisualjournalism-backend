@@ -1,5 +1,45 @@
 [
       {
+            "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/leisureandtourism/articles/improvingourtravelandtourismstatistics/october2026update",
+            "release_date": "2026-10-16",
+            "title": "Improving our travel and tourism statistics: October 2026 update",
+            "vis_urls": [
+                  "/visualisations/dvc3654/line-chart/index.html"
+            ],
+            "theme": "peoplepopulationandcommunity",
+            "vis": [
+                  {
+                        "url": "/visualisations/dvc3654/line-chart/index.html",
+                        "chart_type": "line-chart"
+                  }
+            ]
+      },
+      {
+            "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/wellbeing/bulletins/publicopinionsandsocialtrendsgreatbritain/attitudestoclimatechangeandenvironmentalissuesseptember2026",
+            "release_date": "2026-10-16",
+            "title": "Public opinions and social trends, Great Britain: attitudes to climate change and environmental issues, September 2026",
+            "vis_urls": [
+                  "/visualisations/dvc3657/fig01/index.html",
+                  "/visualisations/dvc3657/fig03/index.html",
+                  "/visualisations/dvc3657/fig04/index.html"
+            ],
+            "theme": "peoplepopulationandcommunity",
+            "vis": [
+                  {
+                        "url": "/visualisations/dvc3657/fig01/index.html",
+                        "chart_type": "range-plot-with-confidence-intervals"
+                  },
+                  {
+                        "url": "/visualisations/dvc3657/fig03/index.html",
+                        "chart_type": "range-plot-with-confidence-intervals"
+                  },
+                  {
+                        "url": "/visualisations/dvc3657/fig04/index.html",
+                        "chart_type": "range-plot-with-confidence-intervals"
+                  }
+            ]
+      },
+      {
             "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/birthsdeathsandmarriages/deaths/articles/deathsregisteredweeklyinenglandandwales/2025-03-26",
             "release_date": "2026-10-14",
             "title": "Dashboard: Deaths registered weekly in England and Wales: week ending Friday, 2 October 2026",
