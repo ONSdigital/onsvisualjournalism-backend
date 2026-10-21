@@ -1,5 +1,65 @@
 [
       {
+            "doc_uri": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/earningsandworkinghours/bulletins/earningsandemploymentfrompayasyouearnrealtimeinformationuk/october2026",
+            "release_date": "2026-10-20",
+            "title": "Earnings and employment from Pay As You Earn Real Time Information, UK: October 2026",
+            "vis_urls": [
+                  "/visualisations/dvc3667/Fig05/index.html",
+                  "/visualisations/dvc3667/fig06/index.html",
+                  "/visualisations/dvc3667/fig07/index.html",
+                  "/visualisations/dvc3667/Fig08/index.html"
+            ],
+            "theme": "employmentandlabourmarket",
+            "vis": [
+                  {
+                        "url": "/visualisations/dvc3667/Fig05/index.html",
+                        "chart_type": "small-multiple-line-chart-multiline"
+                  },
+                  {
+                        "url": "/visualisations/dvc3667/fig06/index.html",
+                        "chart_type": "choropleth"
+                  },
+                  {
+                        "url": "/visualisations/dvc3667/fig07/index.html",
+                        "chart_type": "choropleth"
+                  },
+                  {
+                        "url": "/visualisations/dvc3667/Fig08/index.html",
+                        "chart_type": "small-multiple-line-chart-multiline"
+                  }
+            ]
+      },
+      {
+            "doc_uri": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/bulletins/uklabourmarket/october2026",
+            "release_date": "2026-10-20",
+            "title": "Labour market overview, UK: October 2026",
+            "vis_urls": [
+                  "/visualisations/dvc3661/build/"
+            ],
+            "theme": "employmentandlabourmarket",
+            "vis": [
+                  {
+                        "url": "/visualisations/dvc3661/build/",
+                        "chart_type": null
+                  }
+            ]
+      },
+      {
+            "doc_uri": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/articles/labourforcesurveyqualityupdate/october2026",
+            "release_date": "2026-10-20",
+            "title": "Labour Force Survey quality update: October 2026",
+            "vis_urls": [
+                  "/visualisations/dvc3660/fig06/index.html"
+            ],
+            "theme": "employmentandlabourmarket",
+            "vis": [
+                  {
+                        "url": "/visualisations/dvc3660/fig06/index.html",
+                        "chart_type": "small-multiple-line-chart-multiline"
+                  }
+            ]
+      },
+      {
             "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/leisureandtourism/articles/improvingourtravelandtourismstatistics/october2026update",
             "release_date": "2026-10-16",
             "title": "Improving our travel and tourism statistics: October 2026 update",
