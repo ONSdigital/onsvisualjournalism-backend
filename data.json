@@ -1,5 +1,155 @@
 [
       {
+            "doc_uri": "https://www.ons.gov.uk/economy/economicoutputandproductivity/output/articles/economicactivityandsocialchangerealtimeindicatorsukdashboard/2026-03-05",
+            "release_date": "2026-10-22",
+            "title": "Economic activity and social change real-time indicators, UK, dashboard",
+            "vis_urls": [
+                  "/visualisations/realtimeindicatorsdashboard"
+            ],
+            "theme": "economy",
+            "vis": [
+                  {
+                        "url": "/visualisations/realtimeindicatorsdashboard",
+                        "chart_type": null
+                  }
+            ]
+      },
+      {
+            "doc_uri": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/earningsandworkinghours/bulletins/lowandhighpayuk/2026",
+            "release_date": "2026-10-22",
+            "title": "Low and high pay in the UK: 2026",
+            "vis_urls": [
+                  "/visualisations/dvc3656/fig02/index.html",
+                  "/visualisations/dvc3656/fig04/index.html"
+            ],
+            "theme": "employmentandlabourmarket",
+            "vis": [
+                  {
+                        "url": "/visualisations/dvc3656/fig02/index.html",
+                        "chart_type": "line-chart"
+                  },
+                  {
+                        "url": "/visualisations/dvc3656/fig04/index.html",
+                        "chart_type": null
+                  }
+            ]
+      },
+      {
+            "doc_uri": "https://www.ons.gov.uk/economy/economicoutputandproductivity/output/bulletins/economicactivityandsocialchangeintheukrealtimeindicators/22october2026",
+            "release_date": "2026-10-22",
+            "title": "Economic activity and social change in the UK, real-time indicators: 22 October 2026",
+            "vis_urls": [
+                  "/visualisations/dvc3669/dashboard-monthly/index.html",
+                  "/visualisations/dvc3669/footfall-bar-chart/index.html",
+                  "/visualisations/dvc3669/vat-new/index.html"
+            ],
+            "theme": "economy",
+            "vis": [
+                  {
+                        "url": "/visualisations/dvc3669/dashboard-monthly/index.html",
+                        "chart_type": null
+                  },
+                  {
+                        "url": "/visualisations/dvc3669/footfall-bar-chart/index.html",
+                        "chart_type": "bar-chart"
+                  },
+                  {
+                        "url": "/visualisations/dvc3669/vat-new/index.html",
+                        "chart_type": null
+                  }
+            ]
+      },
+      {
+            "doc_uri": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/earningsandworkinghours/bulletins/annualsurveyofhoursandearnings/2026",
+            "release_date": "2026-10-22",
+            "title": "Employee earnings in the UK: 2026",
+            "vis_urls": [
+                  "/visualisations/dvc3663/fig01/index.html",
+                  "/visualisations/dvc3663/fig03/index.html",
+                  "/visualisations/dvc3663/fig05/index.html",
+                  "/visualisations/dvc3663/fig07/index.html",
+                  "/visualisations/dvc3663/fig08/index.html"
+            ],
+            "theme": "employmentandlabourmarket",
+            "vis": [
+                  {
+                        "url": "/visualisations/dvc3663/fig01/index.html",
+                        "chart_type": "line-chart"
+                  },
+                  {
+                        "url": "/visualisations/dvc3663/fig03/index.html",
+                        "chart_type": "line-chart"
+                  },
+                  {
+                        "url": "/visualisations/dvc3663/fig05/index.html",
+                        "chart_type": "beeswarm"
+                  },
+                  {
+                        "url": "/visualisations/dvc3663/fig07/index.html",
+                        "chart_type": "bar-chart"
+                  },
+                  {
+                        "url": "/visualisations/dvc3663/fig08/index.html",
+                        "chart_type": "choropleth"
+                  }
+            ]
+      },
+      {
+            "doc_uri": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/earningsandworkinghours/bulletins/genderpaygapintheuk/2026",
+            "release_date": "2026-10-22",
+            "title": "Gender pay gap in the UK: 2026",
+            "vis_urls": [
+                  "/visualisations/dvc3653/fig01/index.html",
+                  "/visualisations/dvc3653/fig02/index.html",
+                  "/visualisations/dvc3653/fig03/index.html",
+                  "/visualisations/dvc3653/fig06/index.html",
+                  "/visualisations/dvc3653/fig07/index.html",
+                  "/visualisations/dvc3653/fig08/index.html"
+            ],
+            "theme": "employmentandlabourmarket",
+            "vis": [
+                  {
+                        "url": "/visualisations/dvc3653/fig01/index.html",
+                        "chart_type": "clustered-bar-chart"
+                  },
+                  {
+                        "url": "/visualisations/dvc3653/fig02/index.html",
+                        "chart_type": "line-chart"
+                  },
+                  {
+                        "url": "/visualisations/dvc3653/fig03/index.html",
+                        "chart_type": "line-chart"
+                  },
+                  {
+                        "url": "/visualisations/dvc3653/fig06/index.html",
+                        "chart_type": "line-chart"
+                  },
+                  {
+                        "url": "/visualisations/dvc3653/fig07/index.html",
+                        "chart_type": "bar-chart"
+                  },
+                  {
+                        "url": "/visualisations/dvc3653/fig08/index.html",
+                        "chart_type": "range-plot"
+                  }
+            ]
+      },
+      {
+            "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/crimeandjustice/bulletins/crimeinenglandandwales/yearendingjune2026",
+            "release_date": "2026-10-22",
+            "title": "Crime in England and Wales: year ending June 2026",
+            "vis_urls": [
+                  "/visualisations/dvc3664/table1/index.html"
+            ],
+            "theme": "peoplepopulationandcommunity",
+            "vis": [
+                  {
+                        "url": "/visualisations/dvc3664/table1/index.html",
+                        "chart_type": null
+                  }
+            ]
+      },
+      {
             "doc_uri": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/earningsandworkinghours/bulletins/earningsandemploymentfrompayasyouearnrealtimeinformationuk/october2026",
             "release_date": "2026-10-20",
             "title": "Earnings and employment from Pay As You Earn Real Time Information, UK: October 2026",
@@ -3131,21 +3281,6 @@
                   {
                         "url": "/visualisations/dvc3498/fig08/index.html",
                         "chart_type": "small-multiple-line-chart-multiline"
-                  }
-            ]
-      },
-      {
-            "doc_uri": "https://www.ons.gov.uk/economy/economicoutputandproductivity/output/articles/economicactivityandsocialchangerealtimeindicatorsukdashboard/2026-03-05",
-            "release_date": "2026-03-05",
-            "title": "Economic activity and social change real-time indicators, UK, dashboard",
-            "vis_urls": [
-                  "/visualisations/realtimeindicatorsdashboard"
-            ],
-            "theme": "economy",
-            "vis": [
-                  {
-                        "url": "/visualisations/realtimeindicatorsdashboard",
-                        "chart_type": null
                   }
             ]
       },
