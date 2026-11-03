@@ -1,5 +1,30 @@
 [
       {
+            "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/healthandsocialcare/causesofdeath/bulletins/avoidablemortalityinenglandandwales/2025",
+            "release_date": "2026-11-02",
+            "title": "Avoidable mortality in England and Wales: 2025",
+            "vis_urls": [
+                  "/visualisations/dvc3659/Fig02/index.html",
+                  "/visualisations/dvc3659/Fig05/index.html",
+                  "/visualisations/dvc3659/Fig06/index.html"
+            ],
+            "theme": "peoplepopulationandcommunity",
+            "vis": [
+                  {
+                        "url": "/visualisations/dvc3659/Fig02/index.html",
+                        "chart_type": "small-multiple-line-chart-multiline"
+                  },
+                  {
+                        "url": "/visualisations/dvc3659/Fig05/index.html",
+                        "chart_type": "small-multiple-line-chart-multiline"
+                  },
+                  {
+                        "url": "/visualisations/dvc3659/Fig06/index.html",
+                        "chart_type": "small-multiple-line-chart-multiline"
+                  }
+            ]
+      },
+      {
             "doc_uri": "https://www.ons.gov.uk/economy/nationalaccounts/balanceofpayments/bulletins/unitedkingdombalanceofpaymentsthepinkbook/2026",
             "release_date": "2026-10-30",
             "title": "UK Balance of Payments, The Pink Book: 2026",
