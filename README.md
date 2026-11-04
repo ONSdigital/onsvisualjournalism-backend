@@ -15,6 +15,26 @@ a duplicate. Input entries with empty `vis_urls` are still excluded from
 processing. Recovering historical releases collapsed by the previous title-based
 logic requires running the full rebuild notebook.
 
+## Theme Hierarchy
+
+Both notebooks derive three hierarchy fields locally from `doc_uri`:
+
+- `theme`: the top-level theme, such as `employmentandlabourmarket`.
+- `topic`: the second level, such as `peopleinwork`.
+- `subtopic`: the third level, such as `employmentandemployeetypes`, or `null`
+	when the URL has only two levels.
+
+The fields retain the original URL slugs. Only path segments before `articles`,
+`bulletins` or `methodologies` are taxonomy levels; publication types and article
+slugs are excluded. For example, `economy/grossdomesticproductgdp/bulletins/...`
+has `theme: economy`, `topic: grossdomesticproductgdp` and `subtopic: null`.
+
+All output records are enriched before writing, including retained records in
+incremental updates. This needs no additional page requests. Unsupported paths
+without a recognised publication boundary or with more than three hierarchy
+levels stop the run before output is written rather than silently mislabelling
+the fields. Missing levels are `null`.
+
 ## Release Titles and Series
 
 Both notebooks preserve `title` as supplied and derive `series` by removing a
