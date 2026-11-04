@@ -33,6 +33,39 @@ remove it from every output record before writing `data.json`. The `vis` array
 retains each visualisation URL and its chart type. The update merge also removes
 `vis_urls` from older records already in the output file.
 
-Run the offline regression checks with `python -m unittest test_series.py`.
+## Release Editions
+
+Both notebooks fetch the publication page at `doc_uri` for each processed release
+with non-empty `vis_urls` and add an `edition` field. This is local enrichment;
+the upstream input does not provide a separate edition field.
+
+The extractor reads the main heading, taking the text after the known title
+when present, or a recognised trailing date expression otherwise. For example,
+`GDP monthly estimate, UK: July 2025` yields `July 2025`. Descriptive colons are
+not split indiscriminately. The existing `title` and `series` are unchanged.
+
+If no edition is found, the value is `null`, not the publication date. Publication
+requests have a 30-second timeout and HTTP errors stop the run before output is
+written. The update notebook preserves editions on unprocessed records and adds
+`null` for older records missing the field; run the rebuild notebook to backfill
+all eligible historical releases. `doc_uri` remains the release identifier.
+
+## Latest Releases
+
+Every output record has a boolean `latest` field. Both notebooks recompute it
+across the complete output immediately before writing, including older records
+outside the update notebook's latest-ten processing batch.
+
+Within each exact `series` value, records with the newest `release_date` are
+`latest: true`; all others are `false`. Edition labels are not used, including
+when they are missing. A single-entry series is always latest, and all records
+tied on the newest publication day are latest.
+
+ISO dates and timestamps are parsed using the calendar date recorded in
+`release_date`; time of day and timezone offsets do not shift that date.
+Missing or invalid publication dates stop the run before output is written.
+Latest means newest in this dataset, not necessarily the latest release on ONS.
+
+Run the offline regression checks with `python -m unittest test_editions.py -v`.
 These check both notebook helpers and output cells without fetching charts or
 overwriting the data file.
