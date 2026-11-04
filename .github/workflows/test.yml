@@ -38,7 +38,7 @@ jobs:
         pip install jupyter
     - name: Run notebook
       run: |
-        python -m jupyter nbconvert --to notebook --execute update-catalogue.ipynb --output update-catalogue-output.ipynb --output-dir /tmp
+        python -m jupyter nbconvert --to notebook --execute catalogue.ipynb --output catalogue-output.ipynb --output-dir /tmp
     - name: Commit and push
       run: |-
         git config user.name "Automated"
