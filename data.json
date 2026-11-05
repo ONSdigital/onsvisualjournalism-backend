@@ -163,11 +163,11 @@
                         "chart_type": null
                   }
             ],
+            "series": "Low and high pay in the UK",
+            "latest": true,
             "theme": "employmentandlabourmarket",
             "topic": "peopleinwork",
-            "subtopic": "earningsandworkinghours",
-            "series": "Low and high pay in the UK",
-            "latest": true
+            "subtopic": "earningsandworkinghours"
       },
       {
             "doc_uri": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/earningsandworkinghours/bulletins/annualsurveyofhoursandearnings/2026",
@@ -250,11 +250,11 @@
                         "chart_type": null
                   }
             ],
-            "series": "Crime in England and Wales",
-            "latest": true,
             "theme": "peoplepopulationandcommunity",
             "topic": "crimeandjustice",
-            "subtopic": null
+            "subtopic": null,
+            "series": "Crime in England and Wales",
+            "latest": true
       },
       {
             "doc_uri": "https://www.ons.gov.uk/economy/economicoutputandproductivity/output/articles/economicactivityandsocialchangerealtimeindicatorsukdashboard/2026-03-05",
@@ -267,11 +267,11 @@
                         "chart_type": null
                   }
             ],
+            "series": "Economic activity and social change real-time indicators, UK, dashboard",
+            "latest": true,
             "theme": "economy",
             "topic": "economicoutputandproductivity",
-            "subtopic": "output",
-            "series": "Economic activity and social change real-time indicators, UK, dashboard",
-            "latest": true
+            "subtopic": "output"
       },
       {
             "doc_uri": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/bulletins/uklabourmarket/october2026",
