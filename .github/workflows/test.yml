@@ -11,6 +11,10 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: ons-catalogue-scraping
+  cancel-in-progress: false
+
 jobs:
   build-json:
     runs-on: ubuntu-latest
@@ -40,7 +44,7 @@ jobs:
         pip install jupyter
     - name: Run notebook
       run: |
-        python -m jupyter nbconvert --to notebook --execute catalogue.ipynb --output catalogue-output.ipynb --output-dir /tmp
+        python -m jupyter nbconvert --to notebook --execute catalogue.ipynb --ExecutePreprocessor.timeout=-1 --output catalogue-output.ipynb --output-dir /tmp
     - name: Commit and push
       run: |-
         git config user.name "Automated"
