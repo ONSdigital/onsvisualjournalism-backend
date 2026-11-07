@@ -1,5 +1,26 @@
 [
       {
+            "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/populationestimates/methodologies/developingpopulationestimatesbyethnicityforenglandandwales",
+            "release_date": "2026-11-06",
+            "title": "Developing population estimates by ethnicity for England and Wales",
+            "edition": null,
+            "vis": [
+                  {
+                        "url": "/visualisations/dvc3672/fig02/index.html",
+                        "chart_type": "small-multiple-bar-chart"
+                  },
+                  {
+                        "url": "/visualisations/dvc3672/fig03/index.html",
+                        "chart_type": "beeswarm"
+                  }
+            ],
+            "theme": "peoplepopulationandcommunity",
+            "topic": "populationandmigration",
+            "subtopic": "populationestimates",
+            "series": "Developing population estimates by ethnicity for England and Wales",
+            "latest": true
+      },
+      {
             "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/healthandsocialcare/causesofdeath/bulletins/avoidablemortalityinenglandandwales/2025",
             "release_date": "2026-11-02",
             "title": "Avoidable mortality in England and Wales: 2025",
@@ -142,11 +163,11 @@
                         "chart_type": null
                   }
             ],
+            "series": "Economic activity and social change in the UK, real-time indicators",
+            "latest": true,
             "theme": "economy",
             "topic": "economicoutputandproductivity",
-            "subtopic": "output",
-            "series": "Economic activity and social change in the UK, real-time indicators",
-            "latest": true
+            "subtopic": "output"
       },
       {
             "doc_uri": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/earningsandworkinghours/bulletins/lowandhighpayuk/2026",
@@ -163,11 +184,11 @@
                         "chart_type": null
                   }
             ],
-            "series": "Low and high pay in the UK",
-            "latest": true,
             "theme": "employmentandlabourmarket",
             "topic": "peopleinwork",
-            "subtopic": "earningsandworkinghours"
+            "subtopic": "earningsandworkinghours",
+            "series": "Low and high pay in the UK",
+            "latest": true
       },
       {
             "doc_uri": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/earningsandworkinghours/bulletins/annualsurveyofhoursandearnings/2026",
@@ -196,11 +217,11 @@
                         "chart_type": "choropleth"
                   }
             ],
+            "series": "Employee earnings in the UK",
+            "latest": true,
             "theme": "employmentandlabourmarket",
             "topic": "peopleinwork",
-            "subtopic": "earningsandworkinghours",
-            "series": "Employee earnings in the UK",
-            "latest": true
+            "subtopic": "earningsandworkinghours"
       },
       {
             "doc_uri": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/earningsandworkinghours/bulletins/genderpaygapintheuk/2026",
@@ -233,11 +254,11 @@
                         "chart_type": "range-plot"
                   }
             ],
-            "series": "Gender pay gap in the UK",
-            "latest": true,
             "theme": "employmentandlabourmarket",
             "topic": "peopleinwork",
-            "subtopic": "earningsandworkinghours"
+            "subtopic": "earningsandworkinghours",
+            "series": "Gender pay gap in the UK",
+            "latest": true
       },
       {
             "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/crimeandjustice/bulletins/crimeinenglandandwales/yearendingjune2026",
@@ -250,11 +271,11 @@
                         "chart_type": null
                   }
             ],
+            "series": "Crime in England and Wales",
+            "latest": true,
             "theme": "peoplepopulationandcommunity",
             "topic": "crimeandjustice",
-            "subtopic": null,
-            "series": "Crime in England and Wales",
-            "latest": true
+            "subtopic": null
       },
       {
             "doc_uri": "https://www.ons.gov.uk/economy/economicoutputandproductivity/output/articles/economicactivityandsocialchangerealtimeindicatorsukdashboard/2026-03-05",
