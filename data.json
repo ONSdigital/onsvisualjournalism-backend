@@ -184,11 +184,11 @@
                         "chart_type": null
                   }
             ],
+            "series": "Low and high pay in the UK",
+            "latest": true,
             "theme": "employmentandlabourmarket",
             "topic": "peopleinwork",
-            "subtopic": "earningsandworkinghours",
-            "series": "Low and high pay in the UK",
-            "latest": true
+            "subtopic": "earningsandworkinghours"
       },
       {
             "doc_uri": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/earningsandworkinghours/bulletins/annualsurveyofhoursandearnings/2026",
@@ -217,11 +217,11 @@
                         "chart_type": "choropleth"
                   }
             ],
-            "series": "Employee earnings in the UK",
-            "latest": true,
             "theme": "employmentandlabourmarket",
             "topic": "peopleinwork",
-            "subtopic": "earningsandworkinghours"
+            "subtopic": "earningsandworkinghours",
+            "series": "Employee earnings in the UK",
+            "latest": true
       },
       {
             "doc_uri": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/earningsandworkinghours/bulletins/genderpaygapintheuk/2026",
