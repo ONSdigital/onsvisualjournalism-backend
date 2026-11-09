@@ -163,11 +163,11 @@
                         "chart_type": null
                   }
             ],
-            "series": "Economic activity and social change in the UK, real-time indicators",
-            "latest": true,
             "theme": "economy",
             "topic": "economicoutputandproductivity",
-            "subtopic": "output"
+            "subtopic": "output",
+            "series": "Economic activity and social change in the UK, real-time indicators",
+            "latest": true
       },
       {
             "doc_uri": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/earningsandworkinghours/bulletins/lowandhighpayuk/2026",
@@ -254,11 +254,11 @@
                         "chart_type": "range-plot"
                   }
             ],
+            "series": "Gender pay gap in the UK",
+            "latest": true,
             "theme": "employmentandlabourmarket",
             "topic": "peopleinwork",
-            "subtopic": "earningsandworkinghours",
-            "series": "Gender pay gap in the UK",
-            "latest": true
+            "subtopic": "earningsandworkinghours"
       },
       {
             "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/crimeandjustice/bulletins/crimeinenglandandwales/yearendingjune2026",
