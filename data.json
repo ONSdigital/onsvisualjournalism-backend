@@ -1,5 +1,34 @@
 [
       {
+            "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/housing/bulletins/shorttermletsthroughonlinecollaborativeeconomyplatformsuk/july2023tojune2026",
+            "release_date": "2026-11-13",
+            "title": "Short-term lets through online collaborative economy platforms, UK:  July 2023 to June 2026",
+            "edition": "July 2023 to June 2026",
+            "vis": [
+                  {
+                        "url": "/visualisations/dvc3682/Fig01/index.html",
+                        "chart_type": "line-chart"
+                  },
+                  {
+                        "url": "/visualisations/dvc3682/Fig02/index.html",
+                        "chart_type": "choropleth"
+                  },
+                  {
+                        "url": "/visualisations/dvc3682/Fig03/index.html",
+                        "chart_type": "stacked-bar-chart"
+                  },
+                  {
+                        "url": "/visualisations/dvc3682/Fig04/index.html",
+                        "chart_type": "choropleth"
+                  }
+            ],
+            "theme": "peoplepopulationandcommunity",
+            "topic": "housing",
+            "subtopic": null,
+            "series": "Short-term lets through online collaborative economy platforms, UK",
+            "latest": true
+      },
+      {
             "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/internationalmigration/methodologies/researchupdateonpopulationestimatesbycountryofbirthforenglandandwales",
             "release_date": "2026-11-10",
             "title": "Research update on population estimates by country of birth for England and Wales",
@@ -196,11 +225,11 @@
                         "chart_type": "clustered-bar-chart"
                   }
             ],
-            "series": "Estimates of the very old, including centenarians, UK",
-            "latest": true,
             "theme": "peoplepopulationandcommunity",
             "topic": "birthsdeathsandmarriages",
-            "subtopic": "ageing"
+            "subtopic": "ageing",
+            "series": "Estimates of the very old, including centenarians, UK",
+            "latest": true
       },
       {
             "doc_uri": "https://www.ons.gov.uk/economy/economicoutputandproductivity/output/bulletins/economicactivityandsocialchangeintheukrealtimeindicators/22october2026",
@@ -1829,7 +1858,7 @@
                   }
             ],
             "series": "Short-term lets through online collaborative economy platforms, UK",
-            "latest": true,
+            "latest": false,
             "theme": "peoplepopulationandcommunity",
             "topic": "housing",
             "subtopic": null
