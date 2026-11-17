@@ -1,59 +1,8 @@
 [
       {
-            "doc_uri": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/labourproductivity/articles/ukproductivityintroduction/julytoseptember2026",
-            "release_date": "2026-11-17",
-            "title": "Labour productivity, UK: July to September 2026",
-            "edition": "July to September 2026",
-            "vis": [
-                  {
-                        "url": "/visualisations/dvc3685/fig05/index.html",
-                        "chart_type": "small-multiple-line-chart-focus"
-                  }
-            ],
-            "theme": "employmentandlabourmarket",
-            "topic": "peopleinwork",
-            "subtopic": "labourproductivity",
-            "series": "Labour productivity, UK",
-            "latest": true
-      },
-      {
-            "doc_uri": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/bulletins/uklabourmarket/november2026",
-            "release_date": "2026-11-17",
-            "title": "Labour market overview, UK: November 2026",
-            "edition": "November 2026",
-            "vis": [
-                  {
-                        "url": "/visualisations/dvc3692/build/",
-                        "chart_type": null
-                  }
-            ],
-            "theme": "employmentandlabourmarket",
-            "topic": "peopleinwork",
-            "subtopic": "employmentandemployeetypes",
-            "series": "Labour market overview, UK",
-            "latest": true
-      },
-      {
-            "doc_uri": "https://www.ons.gov.uk/economy/nationalaccounts/articles/dashboardunderstandingtheukeconomy/2017-02-22",
-            "release_date": "2026-11-17",
-            "title": "Understanding the UK economy",
-            "edition": null,
-            "vis": [
-                  {
-                        "url": "/visualisations/dvc368/dashboard/index.html",
-                        "chart_type": null
-                  }
-            ],
-            "theme": "economy",
-            "topic": "nationalaccounts",
-            "subtopic": null,
-            "series": "Understanding the UK economy",
-            "latest": true
-      },
-      {
             "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/housing/bulletins/shorttermletsthroughonlinecollaborativeeconomyplatformsuk/july2023tojune2026",
             "release_date": "2026-11-13",
-            "title": "Short-term lets through online collaborative economy platforms, UK: July 2023 to June 2026",
+            "title": "Short-term lets through online collaborative economy platforms, UK:  July 2023 to June 2026",
             "edition": "July 2023 to June 2026",
             "vis": [
                   {
@@ -77,130 +26,6 @@
             "topic": "housing",
             "subtopic": null,
             "series": "Short-term lets through online collaborative economy platforms, UK",
-            "latest": true
-      },
-      {
-            "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/housing/articles/howaffordablearehomesinyourneighbourhood/2026-03-26",
-            "release_date": "2026-11-13",
-            "title": "How affordable are homes in your neighbourhood?",
-            "edition": null,
-            "vis": [
-                  {
-                        "url": "/visualisations/affordabilityexplorer/",
-                        "chart_type": null
-                  }
-            ],
-            "theme": "peoplepopulationandcommunity",
-            "topic": "housing",
-            "subtopic": null,
-            "series": "How affordable are homes in your neighbourhood?",
-            "latest": true
-      },
-      {
-            "doc_uri": "https://www.ons.gov.uk/economy/grossdomesticproductgdp/bulletins/gdpmonthlyestimateuk/september2026",
-            "release_date": "2026-11-12",
-            "title": "GDP monthly estimate, UK: September 2026",
-            "edition": "September 2026",
-            "vis": [
-                  {
-                        "url": "/visualisations/dvc3683/fig03/index.html",
-                        "chart_type": "line-chart"
-                  },
-                  {
-                        "url": "/visualisations/dvc3683/fig08/index.html",
-                        "chart_type": "line-chart"
-                  },
-                  {
-                        "url": "/visualisations/dvc3683/fig09/index.html",
-                        "chart_type": "line-chart"
-                  },
-                  {
-                        "url": "/visualisations/dvc3683/fig11/index.html",
-                        "chart_type": "line-chart"
-                  },
-                  {
-                        "url": "/visualisations/dvc3683/fig12/index.html",
-                        "chart_type": "line-chart"
-                  },
-                  {
-                        "url": "/visualisations/econgloss/widget_gloss/index.html",
-                        "chart_type": null
-                  }
-            ],
-            "theme": "economy",
-            "topic": "grossdomesticproductgdp",
-            "subtopic": null,
-            "series": "GDP monthly estimate, UK",
-            "latest": true
-      },
-      {
-            "doc_uri": "https://www.ons.gov.uk/economy/nationalaccounts/balanceofpayments/bulletins/uktrade/september2026",
-            "release_date": "2026-11-12",
-            "title": "UK trade: September 2026",
-            "edition": "September 2026",
-            "vis": [
-                  {
-                        "url": "/visualisations/dvc3681/fig01/index.html",
-                        "chart_type": "line-chart"
-                  },
-                  {
-                        "url": "/visualisations/dvc3681/fig02/index.html",
-                        "chart_type": "line-chart"
-                  },
-                  {
-                        "url": "/visualisations/dvc3681/fig03/index.html",
-                        "chart_type": "range-plot"
-                  },
-                  {
-                        "url": "/visualisations/dvc3681/fig04/index.html",
-                        "chart_type": "range-plot"
-                  },
-                  {
-                        "url": "/visualisations/dvc3681/fig05/index.html",
-                        "chart_type": "line-chart"
-                  },
-                  {
-                        "url": "/visualisations/dvc3681/fig06/index.html",
-                        "chart_type": "bar-chart"
-                  },
-                  {
-                        "url": "/visualisations/dvc3681/worldmap/index.html",
-                        "chart_type": null
-                  },
-                  {
-                        "url": "/visualisations/dvc3658/treemap-export/index.html",
-                        "chart_type": null
-                  },
-                  {
-                        "url": "/visualisations/dvc3658/treemap-import/index.html",
-                        "chart_type": null
-                  },
-                  {
-                        "url": "/visualisations/econgloss/widget_gloss/index.html",
-                        "chart_type": null
-                  }
-            ],
-            "theme": "economy",
-            "topic": "nationalaccounts",
-            "subtopic": "balanceofpayments",
-            "series": "UK trade",
-            "latest": true
-      },
-      {
-            "doc_uri": "https://www.ons.gov.uk/economy/grossdomesticproductgdp/bulletins/gdpfirstquarterlyestimateuk/julytoseptember2026",
-            "release_date": "2026-11-12",
-            "title": "GDP first quarterly estimate, UK: July to September 2026",
-            "edition": "July to September 2026",
-            "vis": [
-                  {
-                        "url": "/visualisations/econgloss/widget_gloss/index.html",
-                        "chart_type": null
-                  }
-            ],
-            "theme": "economy",
-            "topic": "grossdomesticproductgdp",
-            "subtopic": null,
-            "series": "GDP first quarterly estimate, UK",
             "latest": true
       },
       {
@@ -469,46 +294,75 @@
             "latest": true
       },
       {
-            "doc_uri": "https://www.ons.gov.uk/economy/economicoutputandproductivity/output/articles/economicactivityandsocialchangerealtimeindicatorsukdashboard/2026-03-05",
-            "release_date": "2026-10-21",
-            "title": "Economic activity and social change real-time indicators, UK, dashboard",
-            "edition": null,
+            "doc_uri": "https://www.ons.gov.uk/economy/economicoutputandproductivity/output/bulletins/economicactivityandsocialchangeintheukrealtimeindicators/22october2026",
+            "release_date": "2026-10-22",
+            "title": "Economic activity and social change in the UK, real-time indicators: 22 October 2026",
+            "edition": "22 October 2026",
             "vis": [
                   {
                         "url": "/visualisations/realtimeindicatorsdashboard",
                         "chart_type": null
                   }
             ],
+            "series": "Economic activity and social change in the UK, real-time indicators",
+            "latest": true,
             "theme": "economy",
             "topic": "economicoutputandproductivity",
-            "subtopic": "output",
-            "series": "Economic activity and social change real-time indicators, UK, dashboard",
-            "latest": true
+            "subtopic": "output"
       },
       {
-            "doc_uri": "https://www.ons.gov.uk/economy/economicoutputandproductivity/output/bulletins/economicactivityandsocialchangeintheukrealtimeindicators/22october2026",
-            "release_date": "2026-10-21",
-            "title": "Economic activity and social change in the UK, real-time indicators: 22 October 2026",
-            "edition": "22 October 2026",
+            "doc_uri": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/earningsandworkinghours/bulletins/lowandhighpayuk/2026",
+            "release_date": "2026-10-22",
+            "title": "Low and high pay in the UK: 2026",
+            "edition": "2026",
             "vis": [
                   {
-                        "url": "/visualisations/dvc3669/dashboard-monthly/index.html",
-                        "chart_type": null
+                        "url": "/visualisations/dvc3656/fig02/index.html",
+                        "chart_type": "line-chart"
                   },
                   {
-                        "url": "/visualisations/dvc3669/footfall-bar-chart/index.html",
-                        "chart_type": "bar-chart"
-                  },
-                  {
-                        "url": "/visualisations/dvc3669/vat-new/index.html",
+                        "url": "/visualisations/dvc3656/fig04/index.html",
                         "chart_type": null
                   }
             ],
-            "theme": "economy",
-            "topic": "economicoutputandproductivity",
-            "subtopic": "output",
-            "series": "Economic activity and social change in the UK, real-time indicators",
-            "latest": true
+            "series": "Low and high pay in the UK",
+            "latest": true,
+            "theme": "employmentandlabourmarket",
+            "topic": "peopleinwork",
+            "subtopic": "earningsandworkinghours"
+      },
+      {
+            "doc_uri": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/earningsandworkinghours/bulletins/annualsurveyofhoursandearnings/2026",
+            "release_date": "2026-10-22",
+            "title": "Employee earnings in the UK: 2026",
+            "edition": "2026",
+            "vis": [
+                  {
+                        "url": "/visualisations/dvc3663/fig01/index.html",
+                        "chart_type": "line-chart"
+                  },
+                  {
+                        "url": "/visualisations/dvc3663/fig03/index.html",
+                        "chart_type": "line-chart"
+                  },
+                  {
+                        "url": "/visualisations/dvc3663/fig05/index.html",
+                        "chart_type": "beeswarm"
+                  },
+                  {
+                        "url": "/visualisations/dvc3663/fig07/index.html",
+                        "chart_type": "bar-chart"
+                  },
+                  {
+                        "url": "/visualisations/dvc3663/fig08/index.html",
+                        "chart_type": "choropleth"
+                  }
+            ],
+            "series": "Employee earnings in the UK",
+            "latest": true,
+            "theme": "employmentandlabourmarket",
+            "topic": "peopleinwork",
+            "subtopic": "earningsandworkinghours"
       },
       {
             "doc_uri": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/earningsandworkinghours/bulletins/genderpaygapintheuk/2026",
@@ -541,32 +395,11 @@
                         "chart_type": "range-plot"
                   }
             ],
-            "theme": "employmentandlabourmarket",
-            "topic": "peopleinwork",
-            "subtopic": "earningsandworkinghours",
             "series": "Gender pay gap in the UK",
-            "latest": true
-      },
-      {
-            "doc_uri": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/earningsandworkinghours/bulletins/lowandhighpayuk/2026",
-            "release_date": "2026-10-21",
-            "title": "Low and high pay in the UK: 2026",
-            "edition": "2026",
-            "vis": [
-                  {
-                        "url": "/visualisations/dvc3656/fig02/index.html",
-                        "chart_type": "line-chart"
-                  },
-                  {
-                        "url": "/visualisations/dvc3656/fig04/index.html",
-                        "chart_type": null
-                  }
-            ],
+            "latest": true,
             "theme": "employmentandlabourmarket",
             "topic": "peopleinwork",
-            "subtopic": "earningsandworkinghours",
-            "series": "Low and high pay in the UK",
-            "latest": true
+            "subtopic": "earningsandworkinghours"
       },
       {
             "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/crimeandjustice/bulletins/crimeinenglandandwales/yearendingjune2026",
@@ -2111,6 +1944,8 @@
                         "chart_type": "slope-chart"
                   }
             ],
+            "series": "Short-term lets through online collaborative economy platforms, UK",
+            "latest": false,
             "theme": "peoplepopulationandcommunity",
             "topic": "housing",
             "subtopic": null,
