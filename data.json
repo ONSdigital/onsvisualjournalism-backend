@@ -225,11 +225,11 @@
                         "chart_type": "clustered-bar-chart"
                   }
             ],
-            "series": "Estimates of the very old, including centenarians, UK",
-            "latest": true,
             "theme": "peoplepopulationandcommunity",
             "topic": "birthsdeathsandmarriages",
-            "subtopic": "ageing"
+            "subtopic": "ageing",
+            "series": "Estimates of the very old, including centenarians, UK",
+            "latest": true
       },
       {
             "doc_uri": "https://www.ons.gov.uk/economy/economicoutputandproductivity/output/bulletins/economicactivityandsocialchangeintheukrealtimeindicators/22october2026",
