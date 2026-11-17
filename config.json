@@ -1,4 +1,12 @@
 {
-    "mode": "update",
-    "update_limit": 10
+  "discovery": {
+    "mode": "new",
+    "limit": null,
+    "url": null,
+    "start_date": null
+  },
+  "catalogue": {
+    "mode": "new",
+    "limit": null
+  }
 }

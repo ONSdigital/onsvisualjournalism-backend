@@ -8,15 +8,15 @@ and combines them with locally cached history and fetched page metadata, produci
 [data.json](data.json) for downstream consumers such as a catalogue UI.
 
 The catalogue is not an exhaustive list of ONS publications. Eligibility depends
-on finding a non-empty `vis_urls` array after PNG filtering.
+on finding a non-empty `vis_urls` array after PNG and download-link filtering.
 
 ## Project Map
 
 | File | Role |
 | --- | --- |
-| [catalogue.ipynb](catalogue.ipynb) | The single implementation for both run modes |
-| [config.json](config.json) | Selects update or rebuild mode and discovery settings |
-| [ons_discovery.py](ons_discovery.py) | Metadata-only discovery, parsing, HTTP and safe JSON-writing helpers |
+| [catalogue.ipynb](catalogue.ipynb) | The single orchestration entry point for independent stages |
+| [config.json](config.json) | Selects discovery/catalogue modes, limits and optional URL/start date |
+| [ons_discovery.py](ons_discovery.py) | Configuration, selection, discovery, metadata reuse, HTTP and safe JSON-writing helpers |
 | [articles-and-dvcs.json](articles-and-dvcs.json) | Locally maintained history cache, initially seeded from upstream |
 | [data.json](data.json) | Generated, enriched catalogue |
 | `discovery-state.json` | Last successfully scanned published-release day; created by a successful run |
@@ -32,7 +32,7 @@ rebuild implementations: their scraping and enrichment logic must stay shared.
 The original scraper was adapted from
 [ONSdigital/get-ons-vis-screenshots](https://github.com/ONSdigital/get-ons-vis-screenshots).
 The backend no longer downloads that repository's data or runs its screenshot
-code. Both local and automated runs query
+code. When enabled, release-search discovery queries
 `https://api.beta.ons.gov.uk/v1/search/releases` in newest-first order, selecting
 published, non-cancelled release entries. Their landing pages link to publication
 URLs under `articles`, `bulletins` or `methodologies`.
@@ -43,7 +43,10 @@ The local history cache retains these fields:
 - `release_date`: freshly parsed dates are normalized to `YYYY-MM-DD`; retained
   legacy records can still contain ISO timestamps.
 - `title`: publication heading, with the HTML title as a fallback.
-- `vis_urls`: normalized, unique visualisation paths, excluding PNG links.
+- `vis_urls`: normalized, unique visualisation paths, excluding PNG and download links.
+- Optional `enrichment`: `source_signature`, nullable `edition` and a `vis`
+  array of URL/chart-type pairs. This is reusable processing input, not a public
+  output field. No raw HTML is persisted.
 
 Publication parsing prefers JSON-LD publication dates, with analytics and visible
 release-date fallbacks. Pym embed attributes are preferred for visualisations;
@@ -54,74 +57,75 @@ PNG assets are rejected.
 
 The cache preserves known historical URLs, including publications with no
 eligible embeds. It is not discarded when recent release discovery finds fewer
-records. A full rebuild refreshes all known URLs; neither mode claims a complete
-historical crawl of the ONS archive.
+records. Discovery `all` refreshes all known URLs; a catalogue rebuild
+does not imply a source refresh. No mode claims a complete historical archive crawl.
 
 ## Configuration and Modes
 
-The notebook reads configuration from the repository root. This is an example,
-not a statement about the current contents of the configuration file:
+The single configuration reference, default JSON and common-run instructions
+are in [README.md](README.md#pipeline-configuration). The notebook reads
+[config.json](config.json) from the repository root; GitHub Actions executes that
+same notebook with the committed configuration and no overrides.
 
-```json
-{
-    "mode": "update",
-  "discovery": {
-    "page_size": 50,
-    "max_pages": 15,
-    "lookback_days": 7
-  }
-}
-```
+Discovery modes are `off`, `new`, `recent`, `all`, `datestart` and `url`.
+Catalogue modes are `off`, `new`, `recent` and `all`. Both default to `new`, with
+`limit: null`. Discovery also defaults `url` and `start_date` to `null`.
+Limits are positive article counts or null; recent mode requires a count.
+Start-date discovery uses publication dates strictly after the selected day.
+Unused URL/date inputs may remain in place when switching modes.
 
-Only `mode` is required. Discovery settings are optional and default to the
-values shown. The old positive-integer `update_limit` is accepted for backwards
-compatibility but no longer limits processing. Standard JSON comments and
-unrecognized keys are not supported.
+Earlier settings such as top-level mode, update_limit, scope, metadata policy,
+URL arrays and date ranges are no longer supported. Replace the whole config
+object with the documented default before changing modes. The excluded user
+configuration must be edited manually, never retrieved via alternate tools.
 
-| Setting | Meaning |
-| --- | --- |
-| `mode: "update"` | Process all recently discovered publications and retain unvisited output records |
-| `mode: "rebuild"` | Refresh all cached URLs plus recent discovery, starting with an empty output lookup |
-| `page_size` | Positive integer defining the release API page size |
-| `max_pages` | Positive integer safety cap; incomplete coverage is an error, not success |
-| `lookback_days` | Non-negative integer overlap before the last completed release day |
+Catalogue rebuilding automatically reuses enrichment whose source signature
+matches normalized URL, day, title and eligible visualisation URLs. Matching
+existing catalogue metadata can seed the enrichment cache. Present null edition
+and chart-type values are complete results; missing or changed inputs are fetched.
+Signature-valid enrichment is retained across unchanged source refreshes. There
+is no raw-HTML snapshot: new information that was never saved needs HTTP access.
+When an enabled catalogue stage processes a publication refreshed by discovery
+in the same run, it re-extracts edition and chart metadata, sharing the fetched
+publication HTML. Discovery-off catalogue rebuilding instead reuses saved data.
 
-Boolean limits are invalid. Invalid configuration stops the run before requests
-or writes. Existing configuration files need not be edited immediately: legacy
-mode/update-limit files use the discovery defaults, without the ten-entry cap.
+Catalogue `new` selects missing, changed or freshly discovered/refreshed records,
+including pending work left by a source-only run. Catalogue `recent` and `all`
+select newest-first cached publications; recent requires a limit. Limits cap
+selected work, not the complete output. Only a complete catalogue `all` rebuild
+replaces the full output; every partial run preserves unselected history.
 
-Every discovered eligible publication is processed, including records rediscovered
-in the overlap. Update mode retains unvisited history but removes a visited
-publication if it now has no eligible embeds. Retained visualisation arrays also
-have PNG links removed. Use rebuild mode to refresh all historical metadata and
-fully remove historical PNG-only publications.
+Discovery `new` counts uncached publications toward its limit. Recent counts
+unique publication URLs reached through newest-first release links, including
+known or ineligible publications. These links can include older documents, so
+the sample is not an exact newest-publication ranking. Discovery `all` refreshes
+known cache history plus incremental discoveries, not the entire ONS archive.
+With a limit, source discovery takes matching release links first and uses any
+remaining all-mode budget on cached history in newest-publication order.
 
-With no existing output, update mode starts empty and populates only the discovery
-window. Rebuild uses the cache to restore known historical coverage. Preserve that
-cache: rebuilding with no cache only has recent discoveries available.
-
-The configuration also governs GitHub Actions. Return `mode` to `update` after a
-one-off rebuild unless automated full rebuilds are intentional. The notebook does
-not reset configuration after running.
+Both stages off is a logged no-op. Preserve the source cache and return config
+to normal settings after one-off runs. Commit the new config for scheduled runs;
+the notebook does not change it automatically.
 
 ## Processing Stages
 
 1. Import dependencies, load configuration and validate its settings.
 2. Load cached history and the optional discovery checkpoint; normalize and
   deduplicate cached URLs, preferring the newest source snapshot.
-3. Discover recent releases and their linked publications. In rebuild mode,
-  refresh all additional cached publication URLs too.
-4. Initialize an empty output lookup for rebuilds, or load existing output for
-  updates. Keys are canonical `doc_uri` values.
-5. Exclude publications with no eligible embeds, removing visited ineligible
-  records from the update lookup.
-6. Reuse the publication HTML to extract edition; fetch chart HTML for template
-  metadata. Paths containing `datadownload.xlsx` remain skipped.
+3. Execute the selected discovery policy, or skip discovery. Do not read the
+  checkpoint in discovery-off mode.
+4. If catalogue processing is enabled, load existing output for merge or metadata
+  reuse. Catalogue-off does not open or write the catalogue.
+5. Select cached publications by mode and limit. Use an empty output lookup only
+  for a complete catalogue `all` rebuild; preserve unrelated records otherwise.
+6. Reuse saved edition/chart metadata and fetch missing inputs. Remove selected
+  records without eligible embeds; exclude PNG and download links. Save reusable
+  enrichment separately from the public output fields.
 7. Merge processed records, sort by publication day, group taxonomy fields,
   derive series, preserve/default editions and remove `vis_urls` and PNG links.
 8. Recalculate `latest` across the entire output.
-9. Stage all generated JSON files before replacing any of them. Replace the
-  catalogue, then cache, then checkpoint. Close the HTTP session.
+9. Stage only enabled/changed JSON artifacts before replacing any. Replace the
+  catalogue, then cache, then checkpoint when applicable. Close the HTTP session.
 
 ### Checkpoint and Failure Recovery
 
@@ -134,7 +138,19 @@ Pagination stops after exhausting results or a complete page establishes coverag
 before the cutoff. Old linked publications do not stop discovery. Repeated links
 are deduplicated and publication HTML is cached for the run. Reaching the safety
 cap without establishing coverage raises an error and does not advance state.
-Increase `max_pages` deliberately when catching up after a long gap.
+Incremental modes have an internal page safety cap. Explicit `datestart` scans
+can traverse beyond it until they reach the date or exhaust results. Repeated
+identical API pages are rejected rather than causing an unbounded loop.
+
+Only completed `new` and `all` scans can advance the global checkpoint.
+`recent`, `datestart`, `url` and `off` neither advance it nor create it when absent.
+A bounded sample is not evidence that the incremental window has been covered.
+Limited incremental runs retain the existing checkpoint. A first limited run
+saves its initial baseline day so newly cached records cannot move that baseline
+ahead of pending releases on the next run.
+`new` skips known publication pages; periodic recent or explicit refresh runs are
+needed to pick up corrections to those pages. Discovery-off preserves the state
+file byte-for-byte, although catalogue enrichment can still update the cache.
 
 Request, discovery, parsing and staging failures leave existing JSON untouched.
 Each file replacement is atomic, but the three-file update is not a transaction:
@@ -164,9 +180,9 @@ The output is a JSON array with one record per stored `doc_uri`.
 values are raw URL slugs, not human-readable labels. Key order helps readability
 but is not a JSON identity or grouping mechanism.
 
-The output omits `vis_urls`; visualisation URLs are available under `vis`.
-Do not infer eligibility from `vis` alone: a non-empty input `vis_urls` array can
-produce an empty `vis` array when every path is skipped.
+The output omits `vis_urls` and cache-only `enrichment`; visualisation URLs are
+available under `vis`. PNG and download links are filtered before eligibility,
+so publications containing only those paths are excluded.
 
 ## Release Identity Versus Series
 
@@ -220,8 +236,9 @@ An edition of `null` can mean either:
   never processed by the edition scraper. Final enrichment defaults missing
   editions to `null` without fetching old publication pages.
 
-The current schema does not distinguish these cases. An update does not retry
-every null edition automatically; rebuild mode revisits every known publication.
+The public schema does not distinguish these cases. Matching saved nulls are
+reused, including during cached rebuilds. Choose source discovery `recent`,
+`all` or `url` with catalogue enabled to revisit pages after extractor changes.
 Even after a successful rebuild, null editions can be legitimate or reflect an
 extraction limitation. Do not manufacture editions from URL slugs or publication
 dates without an explicit change to the agreed extraction policy.
@@ -274,14 +291,16 @@ python -m jupyter nbconvert --to notebook --execute catalogue.ipynb --ExecutePre
 ```
 
 The executed notebook goes outside the repository; the catalogue still writes
-to the repository. Both modes perform live HTTP requests, maintain the cache and
-checkpoint, and update `data.json`. Requests have a 30-second timeout and one
+to the repository. Which files and pages are touched depends on both stage
+settings. Catalogue-only rebuilding reuses saved inputs, fetching missing
+metadata when necessary. Explicit discovery refreshes also refresh catalogue
+metadata for processed publications. Live requests have a 30-second timeout and one
 second of pacing between uncached requests. Up to three retries with bounded
 exponential backoff handle selected transient failures. A full rebuild can take
 many minutes; publication HTML is reused, and no browser or screenshot step runs.
 
 Before a production rebuild, retain copies of cache, data and checkpoint. Afterward, inspect
-the output diff and restore update mode if required. Neither the notebook nor a
+the output diff and restore normal stage settings if required. Neither the notebook nor a
 local run commits or pushes changes automatically.
 
 If configuration or another file is excluded from an AI agent's access, respect
@@ -297,7 +316,7 @@ of `35 4 * * *` (04:35 UTC). It:
 2. Installs requirements; there is no upstream-repository download step.
 3. Installs Jupyter and executes the integrated notebook using the tracked config.
 4. Saves the executed notebook under `/tmp`.
-5. Stages only cache, catalogue and checkpoint, then uses the automated Git
+5. Stages only existing cache, catalogue and checkpoint files, then uses the automated Git
   identity, stashes generated changes, rebases
    against `origin/main`, reapplies the stash, and commits and pushes changes.
 
@@ -314,13 +333,17 @@ coordination to avoid concurrent writers.
 - Requests use `verify=False`, and insecure-request warnings are suppressed.
   This disables TLS certificate verification; it is existing behavior, not a
   recommendation for new integrations.
-- The chart metadata fallback is evaluated after the `vis` entry is appended.
-  A template found only by that fallback is not copied into the stored entry.
-  A null chart type does not establish that the chart is unclassifiable.
+- Chart metadata extraction tries template-name and template-property fallbacks
+  before saving the entry. A null chart type still does not establish that the
+  chart is unclassifiable; use discovery refresh with catalogue enabled after
+  extractor changes.
 - PNG paths are excluded and `datadownload.xlsx` paths are skipped. Other
   non-PNG file types can still enter the visualisation list.
 - Discovery is bounded by the checkpoint/overlap and safety cap, not a complete
-  archive crawl. Old pages changed outside that window need an explicit rebuild.
+  archive crawl. New-only mode does not refresh known pages, even in the overlap.
+  Use discovery `recent`, `all` or `url` with catalogue enabled to capture changes.
+- Cached enrichment is parsed metadata, not an HTML snapshot. New fields that
+  require previously unrecorded page content cannot be rebuilt strictly offline.
 - Separate atomic file replacements are not a cross-file transaction. Failed
   replacement leaves the checkpoint behind for replay; do not advance it manually
   to hide a failed run.
@@ -334,7 +357,13 @@ There is currently no committed automated test suite in this workspace. Do not
 document commands for removed test files. Validate changes with focused offline
 fixtures and mocked HTTP/file writes before running the live pipeline.
 
-- Exercise both modes with duplicate cached URLs and more than ten discoveries.
+- Exercise every discovery/catalogue mode with duplicate cached URLs
+  and more than ten discoveries.
+- Assert zero HTTP requests for catalogue-only `all` rebuilds with complete metadata,
+  saved-null reuse, unchanged-source enrichment retention, and processing
+  of pending cache records after a discovery-only run.
+- Verify limited catalogue runs preserve other output, off stages preserve
+  their artifacts, and recent/start-date/URL scans do not advance the global checkpoint.
 - Verify distinct URLs with matching titles survive, repeated URLs follow the
   intended snapshot policy, and empty `vis_urls` inputs are skipped.
 - Verify all retained update records receive derived metadata and recalculated

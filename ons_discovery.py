@@ -3,6 +3,7 @@ import os
 from copy import deepcopy
 from dataclasses import dataclass
 from datetime import date, datetime, timedelta
+import hashlib
 from pathlib import Path
 import re
 import tempfile
@@ -22,21 +23,46 @@ DEFAULT_DISCOVERY = {'page_size': 50, 'max_pages': 15, 'lookback_days': 7}
 
 
 def validate_config(config):
-    allowed = {'mode', 'update_limit', 'discovery'}
-    if not isinstance(config, dict) or set(config) - allowed or 'mode' not in config:
-        raise ValueError('Config requires mode and accepts discovery settings or legacy update_limit')
-    if config['mode'] not in ('update', 'rebuild'):
-        raise ValueError('mode must be update or rebuild')
-    if 'update_limit' in config and (type(config['update_limit']) is not int or config['update_limit'] < 1):
-        raise ValueError('Legacy update_limit must be a positive integer')
+    if not isinstance(config, dict) or set(config) - {'discovery', 'catalogue'}:
+        raise ValueError('Unsupported pipeline configuration')
     supplied = config.get('discovery', {})
-    if not isinstance(supplied, dict) or set(supplied) - set(DEFAULT_DISCOVERY):
+    if not isinstance(supplied, dict):
         raise ValueError('Unsupported discovery settings')
-    settings = {**DEFAULT_DISCOVERY, **supplied}
-    for name, value in settings.items():
-        if type(value) is not int or value < (0 if name == 'lookback_days' else 1):
-            raise ValueError(f'Invalid discovery setting: {name}')
-    return {'mode': config['mode'], 'discovery': settings}
+    discovery = {'mode': 'new', 'limit': None, 'url': None, 'start_date': None, **supplied}
+    if set(discovery) - {'mode', 'limit', 'url', 'start_date'}:
+        raise ValueError('Unsupported discovery settings')
+    if discovery['mode'] not in ('off', 'new', 'recent', 'all', 'datestart', 'url'):
+        raise ValueError('Unsupported discovery mode')
+    validate_limit(discovery, 'Discovery')
+    if discovery['mode'] == 'url':
+        value = discovery['url']
+        url = ons_url(value) if isinstance(value, str) and value.startswith(('https://', 'http://')) else None
+        if url is None or not extract_doc_urls(f'<a href="{url}"></a>', ONS_URL):
+            raise ValueError('Discovery mode url requires an absolute ONS publication URL')
+        discovery['url'] = url
+    if discovery['mode'] == 'datestart':
+        value = discovery['start_date']
+        if not isinstance(value, str) or date.fromisoformat(value).isoformat() != value:
+            raise ValueError('Discovery mode datestart requires start_date as YYYY-MM-DD')
+
+    supplied = config.get('catalogue', {})
+    if not isinstance(supplied, dict):
+        raise ValueError('Unsupported catalogue settings')
+    catalogue = {'mode': 'new', 'limit': None, **supplied}
+    if set(catalogue) - {'mode', 'limit'}:
+        raise ValueError('Unsupported catalogue settings')
+    if catalogue['mode'] not in ('off', 'new', 'recent', 'all'):
+        raise ValueError('Unsupported catalogue mode')
+    validate_limit(catalogue, 'Catalogue')
+    return {'discovery': discovery, 'catalogue': catalogue}
+
+
+def validate_limit(settings, stage):
+    limit = settings['limit']
+    if limit is not None and (type(limit) is not int or limit < 1):
+        raise ValueError(f'{stage} limit must be null or a positive integer')
+    if settings['mode'] == 'recent' and limit is None:
+        raise ValueError(f'{stage} mode recent requires a positive limit')
 
 
 def normalize_date(value):
@@ -211,16 +237,27 @@ class DiscoveryClient:
 class DiscoveryResult:
     publications: list
     last_release_date: str
+    coverage_complete: bool = True
 
 
-def discover_publications(client, cutoff, settings, baseline):
+def discover_publications(client, cutoff, settings, baseline, known=None, refresh_known=True):
     publications = {}
+    inspected = set()
+    known = known or {}
     newest = baseline
     previous_day = None
-    for page in range(settings['max_pages']):
+    page = 0
+    previous_page = None
+    while settings['mode'] == 'datestart' or page < settings['max_pages']:
+        print(f'Discovery: search page {page + 1}', flush=True)
         releases = client.get_releases(settings['page_size'], page * settings['page_size'])
         if not releases:
             return DiscoveryResult(list(publications.values()), newest.isoformat())
+        page_signature = json.dumps(releases, sort_keys=True)
+        if page_signature == previous_page:
+            raise RuntimeError('ONS release search repeated a page; checkpoint not advanced')
+        previous_page = page_signature
+        page += 1
         page_days = []
         for release in releases:
             description = release.get('description', {})
@@ -238,22 +275,38 @@ def discover_publications(client, cutoff, settings, baseline):
             if landing is None:
                 raise ValueError('Invalid release landing URL')
             for doc_uri in extract_doc_urls(client.get_text(landing), landing):
-                if doc_uri not in publications:
-                    publications[doc_uri] = parse_publication(doc_uri, client.get_text(doc_uri))
+                if doc_uri in inspected:
+                    continue
+                inspected.add(doc_uri)
+                if refresh_known or doc_uri not in known:
+                    publication = parse_publication(doc_uri, client.get_text(doc_uri))
+                    if settings['mode'] != 'datestart' or normalize_date(publication['release_date']) > settings['start_date']:
+                        publications[doc_uri] = publication
+                if settings['limit'] is not None and len(publications) >= settings['limit']:
+                    return DiscoveryResult(list(publications.values()), newest.isoformat(), False)
         if len(releases) < settings['page_size'] or page_days and max(page_days) < cutoff:
             return DiscoveryResult(list(publications.values()), newest.isoformat())
     raise RuntimeError('Discovery page cap reached before coverage completed; checkpoint not advanced')
 
 
 def prepare_run(seed, config, state, client):
+    settings = {**DEFAULT_DISCOVERY, **config['discovery']}
+    mode = settings['mode']
     cache = {}
     for record in sorted(seed, key=lambda item: normalize_date(item.get('release_date'))):
         doc_uri = ons_url(record.get('doc_uri'))
         if doc_uri is None:
             raise ValueError(f'Invalid cached doc_uri: {record.get("doc_uri")}')
-        cache[doc_uri] = {**record, 'doc_uri': doc_uri,
-                          'vis_urls': list(dict.fromkeys(path for url in record.get('vis_urls', [])
-                                                        if (path := visualisation_path(url, doc_uri))))}
+        cache[doc_uri] = {**deepcopy(record), 'doc_uri': doc_uri,
+                          'vis_urls': eligible_vis_urls(record.get('vis_urls', []), doc_uri)}
+    if mode in ('off', 'url'):
+        selected = {}
+        if mode == 'url':
+            doc_uri = settings['url']
+            selected[doc_uri] = parse_publication(doc_uri, client.get_text(doc_uri))
+        merge_publications(cache, selected)
+        return (sorted(cache.values(), key=lambda item: normalize_date(item['release_date']), reverse=True),
+                deepcopy(list(selected.values())), deepcopy(state))
     today = date.today()
     if state is not None:
         if not isinstance(state, dict) or set(state) != {'last_release_date'}:
@@ -264,19 +317,174 @@ def prepare_run(seed, config, state, client):
     else:
         known_days = [date.fromisoformat(normalize_date(record['release_date'])) for record in cache.values()]
         baseline = min(max(known_days, default=today), today)
-    cutoff = baseline - timedelta(days=config['discovery']['lookback_days'])
-    discovery = discover_publications(client, cutoff, config['discovery'], baseline)
+    cutoff = baseline - timedelta(days=settings['lookback_days'])
+    if mode == 'datestart':
+        cutoff = date.fromisoformat(settings['start_date']) + timedelta(days=1)
+    elif mode == 'recent':
+        cutoff = date.min
+    refresh_known = mode != 'new'
+    discovery = discover_publications(client, cutoff, settings, baseline, cache, refresh_known)
     selected = {record['doc_uri']: record for record in discovery.publications}
-    cache.update(selected)
-    if config['mode'] == 'rebuild':
-        for doc_uri in cache:
+    merge_publications(cache, selected)
+    if mode == 'all':
+        ordered = sorted(cache, key=lambda doc_uri: normalize_date(cache[doc_uri]['release_date']), reverse=True)
+        for index, doc_uri in enumerate(ordered, start=1):
             if doc_uri not in selected:
+                if settings['limit'] is not None and len(selected) >= settings['limit']:
+                    discovery.coverage_complete = False
+                    break
                 selected[doc_uri] = parse_publication(doc_uri, client.get_text(doc_uri))
-        cache.update(selected)
+            if index == 1 or index % 25 == 0:
+                print(f'Discovery: refreshed {index}/{len(cache)} known publications', flush=True)
+        merge_publications(cache, selected)
     ordered_cache = sorted(cache.values(), key=lambda item: normalize_date(item['release_date']), reverse=True)
     ordered_selected = sorted(deepcopy(list(selected.values())),
                               key=lambda item: normalize_date(item['release_date']), reverse=True)
-    return ordered_cache, ordered_selected, {'last_release_date': discovery.last_release_date}
+    next_state = ({'last_release_date': discovery.last_release_date}
+                  if mode in ('new', 'all') and discovery.coverage_complete else deepcopy(state))
+    if mode in ('new', 'all') and state is None and not discovery.coverage_complete:
+        next_state = {'last_release_date': baseline.isoformat()}
+    return ordered_cache, ordered_selected, next_state
+
+
+def merge_publications(cache, publications):
+    for doc_uri, publication in publications.items():
+        previous = cache.get(doc_uri)
+        if previous is not None and source_signature(previous) == source_signature(publication):
+            metadata = saved_metadata(previous)
+            if metadata is not None:
+                publication['enrichment'] = metadata
+        cache[doc_uri] = publication
+
+
+def eligible_vis_urls(urls, base=ONS_URL):
+    return list(dict.fromkeys(path for url in urls
+                              if (path := visualisation_path(url, base))
+                              and 'datadownload.xlsx' not in path.lower()))
+
+
+def source_signature(record):
+    source = {'doc_uri': ons_url(record['doc_uri']),
+              'title': record['title'], 'release_date': normalize_date(record['release_date']),
+              'vis_urls': sorted(eligible_vis_urls(record.get('vis_urls', []), record['doc_uri']))}
+    return hashlib.sha256(json.dumps(source, sort_keys=True).encode('utf-8')).hexdigest()
+
+
+def saved_metadata(record, existing=None):
+    signature = source_signature(record)
+    metadata = record.get('enrichment')
+    if not isinstance(metadata, dict) or metadata.get('source_signature') != signature:
+        metadata = None
+    if metadata is None and existing is not None:
+        old_source = {**existing, 'vis_urls': [vis['url'] for vis in existing.get('vis', [])]}
+        if source_signature(old_source) == signature:
+            metadata = existing
+    if metadata is None or 'edition' not in metadata or not isinstance(metadata.get('vis'), list):
+        return None
+    if metadata['edition'] is not None and not isinstance(metadata['edition'], str):
+        return None
+    charts = {}
+    for chart in metadata['vis']:
+        if not isinstance(chart, dict) or 'url' not in chart or 'chart_type' not in chart:
+            return None
+        if chart['chart_type'] is not None and not isinstance(chart['chart_type'], str):
+            return None
+        url = visualisation_path(chart['url'], record['doc_uri'])
+        if url is not None:
+            charts[url] = {'url': url, 'chart_type': chart['chart_type']}
+    urls = eligible_vis_urls(record.get('vis_urls', []), record['doc_uri'])
+    if set(charts) != set(urls):
+        return None
+    return {'source_signature': signature, 'edition': metadata['edition'],
+            'vis': [charts[url] for url in urls]}
+
+
+def extract_chart_type(html):
+    soup = BeautifulSoup(html, 'lxml')
+    meta = soup.find('meta', attrs={'name': 'template'})
+    if meta is None:
+        meta = soup.find('meta', attrs={'name': lambda value: value and 'template' in value.lower()})
+    if meta is None:
+        meta = soup.find('meta', attrs={'property': lambda value: value and 'template' in value.lower()})
+    return meta.get('content') if meta else None
+
+
+def prepare_catalogue(cached_publications, existing_data, config, refreshed, client, extract_edition):
+    settings = config['catalogue']
+    if settings['mode'] == 'off':
+        return None
+    existing = {}
+    for article in sorted(existing_data, key=lambda item: normalize_date(item['release_date'])):
+        doc_uri = ons_url(article['doc_uri'])
+        if doc_uri is None:
+            raise ValueError(f"Invalid existing doc_uri: {article['doc_uri']}")
+        existing[doc_uri] = {**deepcopy(article), 'doc_uri': doc_uri}
+    ordered = sorted(cached_publications,
+                     key=lambda record: (-date.fromisoformat(normalize_date(record['release_date'])).toordinal(),
+                                         record['doc_uri']))
+    refreshed_urls = {record['doc_uri'] for record in refreshed}
+    selected = []
+    for record in ordered:
+        doc_uri = record['doc_uri']
+        old = existing.get(doc_uri)
+        urls = eligible_vis_urls(record.get('vis_urls', []), doc_uri)
+        if settings['mode'] == 'new' and doc_uri not in refreshed_urls:
+            if not urls and old is None:
+                continue
+            metadata = saved_metadata(record, old)
+            if old is not None and metadata is not None:
+                old_source = {**old, 'vis_urls': [vis['url'] for vis in old.get('vis', [])]}
+                if (urls and source_signature(old_source) == source_signature(record)
+                        and old.get('edition') == metadata['edition']
+                        and old.get('vis') == metadata['vis']):
+                    continue
+        selected.append(record)
+        if settings['limit'] is not None and len(selected) >= settings['limit']:
+            break
+    metadata_lookup = {record['doc_uri']: (None if record['doc_uri'] in refreshed_urls
+                                         else saved_metadata(record, existing.get(record['doc_uri'])))
+                       for record in selected}
+    replace_all = settings['mode'] == 'all' and len(selected) == len(cached_publications)
+    output = {} if replace_all else deepcopy(existing)
+    fetched = 0
+    reused = 0
+    print(f"Catalogue: {settings['mode']}, limit={settings['limit']}, candidates={len(selected)}", flush=True)
+    for index, record in enumerate(selected, start=1):
+        doc_uri = record['doc_uri']
+        metadata = metadata_lookup[doc_uri]
+        urls = eligible_vis_urls(record.get('vis_urls', []), doc_uri)
+        if urls and metadata is None:
+            html = client.get_text(doc_uri)
+            record.update(parse_publication(doc_uri, html))
+            urls = eligible_vis_urls(record['vis_urls'], doc_uri)
+            record['vis_urls'] = urls
+            metadata = None
+            fetched += 1
+        elif doc_uri in client.html_cache:
+            html = client.html_cache[doc_uri]
+        else:
+            html = None
+        if not urls:
+            output.pop(doc_uri, None)
+            record.pop('enrichment', None)
+        else:
+            if metadata is None:
+                edition = extract_edition(html, record['title'])
+                charts = [{'url': url, 'chart_type': extract_chart_type(client.get_text(ons_url(url)))}
+                          for url in urls]
+                metadata = {'source_signature': source_signature(record), 'edition': edition, 'vis': charts}
+            else:
+                reused += 1
+                if html is not None:
+                    metadata['edition'] = extract_edition(html, record['title'])
+            record['enrichment'] = deepcopy(metadata)
+            output[doc_uri] = {'doc_uri': doc_uri, 'release_date': record['release_date'],
+                               'title': record['title'], 'edition': metadata['edition'],
+                               'vis': deepcopy(metadata['vis'])}
+        if index == 1 or index % 25 == 0 or index == len(selected):
+            print(f'Catalogue: processed {index}/{len(selected)}, reused={reused}, '
+                  f'publication fetches={fetched}', flush=True)
+    return list(output.values())
 
 
 def write_json_files(files):

@@ -11,25 +11,88 @@ Actions runs. It reads [config.json](config.json) from the repository root:
 
 ```json
 {
-    "mode": "update",
     "discovery": {
-        "page_size": 50,
-        "max_pages": 15,
-        "lookback_days": 7
+        "mode": "new",
+        "limit": null,
+        "url": null,
+        "start_date": null
+    },
+    "catalogue": {
+        "mode": "new",
+        "limit": null
     }
 }
 ```
 
-| Mode | Inputs processed | Existing output |
-| --- | --- | --- |
-| `update` | All publications discovered in the recent release window | Retained and merged by `doc_uri`; visited publications without non-PNG embeds are removed |
-| `rebuild` | Recent discoveries plus every known publication in the local history cache | Replaced using refreshed eligible publications |
+Paste the whole object above into `config.json`, replacing the previous format.
+JSON uses `null`, not `undefined`, for unset values. All settings are optional;
+omitted settings use the defaults above. `null` limit means no article-count
+limit within the selected mode. A positive integer caps that stage's work.
 
-Only `mode` is required. Discovery settings default to the values above. Page
-size and page cap must be positive integers; lookback days must be a non-negative
-integer. The legacy `update_limit` setting is still accepted and validated but
-does not limit work: every discovered eligible publication is processed.
-Invalid configuration stops the run before fetching or writing.
+Discovery maintains the source list in [articles-and-dvcs.json](articles-and-dvcs.json).
+Catalogue builds the enriched output in [data.json](data.json). Their limits are
+independent. Turning a stage off leaves its output untouched.
+
+| `discovery.mode` | Work performed |
+| --- | --- |
+| `off` | Do not search or refresh source publications |
+| `new` | Find publication URLs not already in the source cache, scanning since the last checkpoint with a seven-day overlap |
+| `recent` | Refresh `limit` distinct publication URLs encountered through newest-first releases; a positive limit is required |
+| `all` | Refresh all known publication URLs and discover new ones in the checkpoint window |
+| `datestart` | Find publications dated strictly after `start_date`, e.g. `"2025-01-01"`; no end date |
+| `url` | Scrape the single ONS publication URL pasted into `url`, without release search |
+
+`url` and `start_date` are used only by their matching mode; leave them `null`
+otherwise. In `url` mode the stage handles exactly one publication. A recent
+release may link older documents, so discovery `recent` is a sample from recent
+release links, not a guaranteed ranking of the newest publication dates.
+`all` refreshes known history, not every publication ever released by ONS.
+
+| `catalogue.mode` | Work performed |
+| --- | --- |
+| `off` | Do not read or write the catalogue |
+| `new` | Add missing articles and process changed or freshly discovered/refreshed source records; retain other output |
+| `recent` | Reprocess the newest `limit` cached publications by publication date; a positive limit is required |
+| `all` | Rebuild the catalogue from all cached publications, reusing saved edition and chart metadata |
+
+Catalogue `recent` and `all` regenerate output; they do not automatically
+rescrape source pages. Missing metadata is fetched when needed. Valid saved
+nulls are reused. For schema-only changes, use discovery `off` and catalogue
+`all`: with complete saved metadata this needs no HTTP requests.
+When discovery explicitly refreshes a publication and catalogue processes it
+in the same run, its edition and chart metadata are refreshed too.
+Limited runs preserve all unprocessed output. A complete catalogue `all` rebuild
+replaces the output from the source cache. Local fields and `latest` flags are
+always recalculated over the complete resulting catalogue.
+
+### Common Runs
+
+Rebuild the catalogue after a data-structure change, without source discovery:
+
+```json
+{
+    "discovery": {"mode": "off"},
+    "catalogue": {"mode": "all", "limit": null}
+}
+```
+
+Other runs only need a few changes to the default object:
+
+- Refresh a recent sample: set discovery mode to `recent` and its limit to `50`.
+    Leave catalogue mode as `new` to process the refreshed records.
+- Find everything after a day: set discovery mode to `datestart` and
+    `start_date` to a date such as `"2025-01-01"`. Leave its limit `null` for all
+    matching articles available through the release API.
+- Capture one article: set discovery mode to `url` and paste its full ONS
+    article/bulletin/methodology URL into `url`. Catalogue `new` adds or updates it.
+- Refresh known history and rebuild: set both modes to `all`, with both limits
+    `null`. This is intentionally a longer live source refresh.
+
+Keep the null fields in place when switching modes. Zero, negative, boolean or
+string limits are invalid. Old top-level `mode`/`update_limit`, `scope`,
+`metadata`, `urls`, and date-range settings are no longer accepted.
+
+### Automation and Safety
 
 [ons_discovery.py](ons_discovery.py) queries the ONS release search API directly,
 follows publication links and maintains [articles-and-dvcs.json](articles-and-dvcs.json)
@@ -38,23 +101,23 @@ No screenshots, browser automation or PNG files are generated; original PNG
 visualisation links are excluded too. SVG and JPEG publication assets are retained.
 
 `discovery-state.json` records the last successfully scanned published-release
-day. Each scan revisits that day minus `lookback_days` to cover same-day additions
-and recently changed pages. On the first run, the newest cached publication day
-(no later than today) supplies the baseline. With no cache, discovery begins with
-the recent lookback window. Reaching `max_pages` before coverage is complete
-fails the run rather than silently accepting a partial scan.
+day. Only completed `new` and `all` scans advance it. A scan stopped by its
+article limit retains the old checkpoint; on a first limited run the starting
+day is saved so later runs do not skip unfinished discovery. `recent`,
+`datestart`, `url` and `off` leave the checkpoint untouched. Incremental scans
+have an internal page safety cap and fail rather than silently skip work;
+explicit `datestart` scans continue until they reach the requested date or exhaust
+results. Historical discovery is limited by the ONS API's available coverage.
 
-Update mode retains history outside the discovery window. Rebuild mode refreshes
-all known cached publication URLs; it does not crawl the entire ONS archive.
-Preserve the local cache when historical coverage matters.
+GitHub Actions uses the same configuration without an override. Restore your
+normal settings after a one-off run; the notebook does not reset configuration.
+After pasting the new format locally, commit `config.json` so the automated
+pipeline uses the same settings. No separate workflow configuration is needed.
 
-To rebuild, set `mode` to `rebuild` and run the notebook. Afterwards, set it back
-to `update` before committing configuration changes. GitHub Actions uses the same
-configuration without an override, so a committed rebuild setting also affects
-scheduled runs. The notebook does not reset configuration automatically.
-
-Both modes use the same fetching, merge and enrichment code. All three generated
-JSON files are staged before publication. Catalogue and cache are replaced first,
+Both stages use shared fetching, merge and enrichment code. Only enabled or
+changed artifacts are written; catalogue-off leaves output untouched. Catalogue
+enrichment can update the source cache even with discovery off. All selected
+JSON writes are staged before publication. Catalogue and cache are replaced first,
 with the discovery checkpoint last. Each file replacement is atomic, but the
 three-file update is not a transaction: a replacement failure can leave newer
 data with the older checkpoint, which is replayed on the next successful run.
@@ -66,9 +129,9 @@ that share a title. A repeated URL refreshes the same release instead of adding
 a duplicate. Cached duplicate URLs prefer the newest publication date. Publication
 HTML is fetched once per URL per run and reused for title, date, embed and edition
 extraction. Publications with empty `vis_urls` after PNG filtering are excluded
-from the output, including visited records previously present in update mode.
+from the output, including selected records already present in the catalogue.
 Recovering historical releases collapsed by the previous title-based logic
-requires retaining the history cache and running in rebuild mode.
+requires retaining the history cache and using catalogue mode `all`.
 
 ## Theme Hierarchy
 
@@ -98,19 +161,20 @@ suffixes include years, month/day dates, date ranges, `year ending` periods,
 compound ranges and `mid-YYYY`. Descriptive colons and embedded years are retained.
 Years in narrative titles such as "nature since 2020" are also retained.
 
-Both modes enrich every record in the final output before writing, including
+All enabled catalogue modes enrich the final output before writing, including
 existing records outside an update batch. `series` is a grouping field, not a merge key.
 Date removal does not reconcile historical changes in series wording.
 
 The pipeline uses `vis_urls` from the source input to fetch visualisations, then
 removes it from every output record before writing `data.json`. The `vis` array
-retains each visualisation URL and its chart type. Update mode also removes
+retains each visualisation URL and its chart type. Final processing also removes
 `vis_urls` from older records already in the output file.
 
 ## Release Editions
 
-Discovery fetches publication pages and the pipeline reuses that HTML to add an
-`edition` field for eligible releases. No second edition-only request is needed.
+When publication pages are fetched, the pipeline reuses that HTML to add an
+`edition` field for eligible releases. Otherwise it uses matching saved metadata.
+No second edition-only request is needed.
 
 The extractor reads the main heading, taking the text after the known title
 when present, or a recognised trailing date expression otherwise. For example,
@@ -120,13 +184,14 @@ not split indiscriminately. The existing `title` and `series` are unchanged.
 If no edition is found, the value is `null`, not the publication date. Requests
 have a 30-second timeout, bounded retries for transient errors, and pacing between
 uncached requests. HTTP errors stop the run before generated files are published.
-Update mode preserves editions on unprocessed records and adds
-`null` for older records missing the field; run in rebuild mode to backfill
-all eligible historical releases. `doc_uri` remains the release identifier.
+Saved nulls are treated as completed extraction results, not automatically
+retried. Use source discovery `recent`, `all` or `url` to refetch publications
+when edition extraction needs to see their HTML again. `doc_uri` remains the
+release identifier.
 
 ## Latest Releases
 
-Every output record has a boolean `latest` field. Both modes recompute it
+Every output record has a boolean `latest` field. Catalogue runs recompute it
 across the complete output immediately before writing, including older records
 outside an update batch.
 
