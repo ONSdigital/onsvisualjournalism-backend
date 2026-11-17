@@ -1,5 +1,56 @@
 [
       {
+            "doc_uri": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/bulletins/uklabourmarket/november2026",
+            "release_date": "2026-11-17",
+            "title": "Labour market overview, UK: November 2026",
+            "edition": "November 2026",
+            "vis": [
+                  {
+                        "url": "/visualisations/dvc3692/build/",
+                        "chart_type": null
+                  }
+            ],
+            "theme": "employmentandlabourmarket",
+            "topic": "peopleinwork",
+            "subtopic": "employmentandemployeetypes",
+            "series": "Labour market overview, UK",
+            "latest": true
+      },
+      {
+            "doc_uri": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/labourproductivity/articles/ukproductivityintroduction/julytoseptember2026",
+            "release_date": "2026-11-17",
+            "title": "Labour productivity, UK: July to September 2026",
+            "edition": "July to September 2026",
+            "vis": [
+                  {
+                        "url": "/visualisations/dvc3685/fig05/index.html",
+                        "chart_type": "small-multiple-line-chart-focus"
+                  }
+            ],
+            "theme": "employmentandlabourmarket",
+            "topic": "peopleinwork",
+            "subtopic": "labourproductivity",
+            "series": "Labour productivity, UK",
+            "latest": true
+      },
+      {
+            "doc_uri": "https://www.ons.gov.uk/economy/nationalaccounts/articles/dashboardunderstandingtheukeconomy/2017-02-22",
+            "release_date": "2026-11-17",
+            "title": "Understanding the UK economy",
+            "edition": null,
+            "vis": [
+                  {
+                        "url": "/visualisations/dvc368/dashboard/index.html",
+                        "chart_type": null
+                  }
+            ],
+            "theme": "economy",
+            "topic": "nationalaccounts",
+            "subtopic": null,
+            "series": "Understanding the UK economy",
+            "latest": true
+      },
+      {
             "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/housing/bulletins/shorttermletsthroughonlinecollaborativeeconomyplatformsuk/july2023tojune2026",
             "release_date": "2026-11-13",
             "title": "Short-term lets through online collaborative economy platforms, UK:  July 2023 to June 2026",
@@ -22,10 +73,134 @@
                         "chart_type": "choropleth"
                   }
             ],
+            "series": "Short-term lets through online collaborative economy platforms, UK",
+            "latest": true,
+            "theme": "peoplepopulationandcommunity",
+            "topic": "housing",
+            "subtopic": null
+      },
+      {
+            "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/housing/articles/howaffordablearehomesinyourneighbourhood/2026-03-26",
+            "release_date": "2026-11-13",
+            "title": "How affordable are homes in your neighbourhood?",
+            "edition": null,
+            "vis": [
+                  {
+                        "url": "/visualisations/affordabilityexplorer/",
+                        "chart_type": null
+                  }
+            ],
             "theme": "peoplepopulationandcommunity",
             "topic": "housing",
             "subtopic": null,
-            "series": "Short-term lets through online collaborative economy platforms, UK",
+            "series": "How affordable are homes in your neighbourhood?",
+            "latest": true
+      },
+      {
+            "doc_uri": "https://www.ons.gov.uk/economy/grossdomesticproductgdp/bulletins/gdpfirstquarterlyestimateuk/julytoseptember2026",
+            "release_date": "2026-11-12",
+            "title": "GDP first quarterly estimate, UK: July to September 2026",
+            "edition": "July to September 2026",
+            "vis": [
+                  {
+                        "url": "/visualisations/econgloss/widget_gloss/index.html",
+                        "chart_type": null
+                  }
+            ],
+            "theme": "economy",
+            "topic": "grossdomesticproductgdp",
+            "subtopic": null,
+            "series": "GDP first quarterly estimate, UK",
+            "latest": true
+      },
+      {
+            "doc_uri": "https://www.ons.gov.uk/economy/grossdomesticproductgdp/bulletins/gdpmonthlyestimateuk/september2026",
+            "release_date": "2026-11-12",
+            "title": "GDP monthly estimate, UK: September 2026",
+            "edition": "September 2026",
+            "vis": [
+                  {
+                        "url": "/visualisations/dvc3683/fig03/index.html",
+                        "chart_type": "line-chart"
+                  },
+                  {
+                        "url": "/visualisations/dvc3683/fig08/index.html",
+                        "chart_type": "line-chart"
+                  },
+                  {
+                        "url": "/visualisations/dvc3683/fig09/index.html",
+                        "chart_type": "line-chart"
+                  },
+                  {
+                        "url": "/visualisations/dvc3683/fig11/index.html",
+                        "chart_type": "line-chart"
+                  },
+                  {
+                        "url": "/visualisations/dvc3683/fig12/index.html",
+                        "chart_type": "line-chart"
+                  },
+                  {
+                        "url": "/visualisations/econgloss/widget_gloss/index.html",
+                        "chart_type": null
+                  }
+            ],
+            "theme": "economy",
+            "topic": "grossdomesticproductgdp",
+            "subtopic": null,
+            "series": "GDP monthly estimate, UK",
+            "latest": true
+      },
+      {
+            "doc_uri": "https://www.ons.gov.uk/economy/nationalaccounts/balanceofpayments/bulletins/uktrade/september2026",
+            "release_date": "2026-11-12",
+            "title": "UK trade: September 2026",
+            "edition": "September 2026",
+            "vis": [
+                  {
+                        "url": "/visualisations/dvc3681/fig01/index.html",
+                        "chart_type": "line-chart"
+                  },
+                  {
+                        "url": "/visualisations/dvc3681/fig02/index.html",
+                        "chart_type": "line-chart"
+                  },
+                  {
+                        "url": "/visualisations/dvc3681/fig03/index.html",
+                        "chart_type": "range-plot"
+                  },
+                  {
+                        "url": "/visualisations/dvc3681/fig04/index.html",
+                        "chart_type": "range-plot"
+                  },
+                  {
+                        "url": "/visualisations/dvc3681/fig05/index.html",
+                        "chart_type": "line-chart"
+                  },
+                  {
+                        "url": "/visualisations/dvc3681/fig06/index.html",
+                        "chart_type": "bar-chart"
+                  },
+                  {
+                        "url": "/visualisations/dvc3681/worldmap/index.html",
+                        "chart_type": null
+                  },
+                  {
+                        "url": "/visualisations/dvc3658/treemap-export/index.html",
+                        "chart_type": null
+                  },
+                  {
+                        "url": "/visualisations/dvc3658/treemap-import/index.html",
+                        "chart_type": null
+                  },
+                  {
+                        "url": "/visualisations/econgloss/widget_gloss/index.html",
+                        "chart_type": null
+                  }
+            ],
+            "theme": "economy",
+            "topic": "nationalaccounts",
+            "subtopic": "balanceofpayments",
+            "series": "UK trade",
             "latest": true
       },
       {
@@ -47,11 +222,11 @@
                         "chart_type": "grouped-bar-chart"
                   }
             ],
+            "series": "Research update on population estimates by country of birth for England and Wales",
+            "latest": true,
             "theme": "peoplepopulationandcommunity",
             "topic": "populationandmigration",
-            "subtopic": "internationalmigration",
-            "series": "Research update on population estimates by country of birth for England and Wales",
-            "latest": true
+            "subtopic": "internationalmigration"
       },
       {
             "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/populationestimates/methodologies/developmentofadminbasedhouseholdestimatesbysizeforlocalauthoritiesinenglandandwales2021",
@@ -80,11 +255,11 @@
                         "chart_type": "grouped-row-table"
                   }
             ],
+            "series": "Development of admin-based household estimates by size for local authorities in England and Wales",
+            "latest": true,
             "theme": "peoplepopulationandcommunity",
             "topic": "populationandmigration",
-            "subtopic": "populationestimates",
-            "series": "Development of admin-based household estimates by size for local authorities in England and Wales",
-            "latest": true
+            "subtopic": "populationestimates"
       },
       {
             "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/populationestimates/methodologies/developingpopulationestimatesbyethnicityforenglandandwales",
@@ -101,11 +276,11 @@
                         "chart_type": "beeswarm"
                   }
             ],
+            "series": "Developing population estimates by ethnicity for England and Wales",
+            "latest": true,
             "theme": "peoplepopulationandcommunity",
             "topic": "populationandmigration",
-            "subtopic": "populationestimates",
-            "series": "Developing population estimates by ethnicity for England and Wales",
-            "latest": true
+            "subtopic": "populationestimates"
       },
       {
             "doc_uri": "https://www.ons.gov.uk/businessindustryandtrade/business/businessservices/bulletins/businessinsightsandimpactontheukeconomy/5november2026",
@@ -118,11 +293,11 @@
                         "chart_type": "small-multiple-line-chart-focus"
                   }
             ],
+            "series": "Business insights and impact on the UK economy",
+            "latest": true,
             "theme": "businessindustryandtrade",
             "topic": "business",
-            "subtopic": "businessservices",
-            "series": "Business insights and impact on the UK economy",
-            "latest": true
+            "subtopic": "businessservices"
       },
       {
             "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/birthsdeathsandmarriages/deaths/bulletins/deathsrelatedtodrugpoisoninginenglandandwales/2025registrations",
@@ -163,11 +338,11 @@
                         "chart_type": "line-chart"
                   }
             ],
+            "series": "Deaths related to drug poisoning in England and Wales: 2025 registrations",
+            "latest": true,
             "theme": "peoplepopulationandcommunity",
             "topic": "birthsdeathsandmarriages",
-            "subtopic": "deaths",
-            "series": "Deaths related to drug poisoning in England and Wales: 2025 registrations",
-            "latest": true
+            "subtopic": "deaths"
       },
       {
             "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/healthandsocialcare/causesofdeath/bulletins/avoidablemortalityinenglandandwales/2025",
@@ -188,11 +363,11 @@
                         "chart_type": "small-multiple-line-chart-multiline"
                   }
             ],
+            "series": "Avoidable mortality in England and Wales",
+            "latest": true,
             "theme": "peoplepopulationandcommunity",
             "topic": "healthandsocialcare",
-            "subtopic": "causesofdeath",
-            "series": "Avoidable mortality in England and Wales",
-            "latest": true
+            "subtopic": "causesofdeath"
       },
       {
             "doc_uri": "https://www.ons.gov.uk/economy/nationalaccounts/uksectoraccounts/articles/gdprevisionsinbluebook2020/2026",
@@ -225,11 +400,11 @@
                         "chart_type": "line-chart"
                   }
             ],
+            "series": "GDP revisions in Blue Book",
+            "latest": true,
             "theme": "economy",
             "topic": "nationalaccounts",
-            "subtopic": "uksectoraccounts",
-            "series": "GDP revisions in Blue Book",
-            "latest": true
+            "subtopic": "uksectoraccounts"
       },
       {
             "doc_uri": "https://www.ons.gov.uk/economy/nationalaccounts/balanceofpayments/bulletins/unitedkingdombalanceofpaymentsthepinkbook/2026",
@@ -258,11 +433,44 @@
                         "chart_type": null
                   }
             ],
+            "series": "UK Balance of Payments, The Pink Book",
+            "latest": true,
             "theme": "economy",
             "topic": "nationalaccounts",
-            "subtopic": "balanceofpayments",
-            "series": "UK Balance of Payments, The Pink Book",
-            "latest": true
+            "subtopic": "balanceofpayments"
+      },
+      {
+            "doc_uri": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/earningsandworkinghours/bulletins/annualsurveyofhoursandearnings/2026",
+            "release_date": "2026-10-22",
+            "title": "Employee earnings in the UK: 2026",
+            "edition": "2026",
+            "vis": [
+                  {
+                        "url": "/visualisations/dvc3663/fig01/index.html",
+                        "chart_type": "line-chart"
+                  },
+                  {
+                        "url": "/visualisations/dvc3663/fig03/index.html",
+                        "chart_type": "line-chart"
+                  },
+                  {
+                        "url": "/visualisations/dvc3663/fig05/index.html",
+                        "chart_type": "beeswarm"
+                  },
+                  {
+                        "url": "/visualisations/dvc3663/fig07/index.html",
+                        "chart_type": "bar-chart"
+                  },
+                  {
+                        "url": "/visualisations/dvc3663/fig08/index.html",
+                        "chart_type": "choropleth"
+                  }
+            ],
+            "series": "Employee earnings in the UK",
+            "latest": true,
+            "theme": "employmentandlabourmarket",
+            "topic": "peopleinwork",
+            "subtopic": "earningsandworkinghours"
       },
       {
             "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/birthsdeathsandmarriages/ageing/bulletins/estimatesoftheveryoldincludingcentenarians/2002to2025",
@@ -294,23 +502,6 @@
             "latest": true
       },
       {
-            "doc_uri": "https://www.ons.gov.uk/economy/economicoutputandproductivity/output/bulletins/economicactivityandsocialchangeintheukrealtimeindicators/22october2026",
-            "release_date": "2026-10-22",
-            "title": "Economic activity and social change in the UK, real-time indicators: 22 October 2026",
-            "edition": "22 October 2026",
-            "vis": [
-                  {
-                        "url": "/visualisations/realtimeindicatorsdashboard",
-                        "chart_type": null
-                  }
-            ],
-            "series": "Economic activity and social change in the UK, real-time indicators",
-            "latest": true,
-            "theme": "economy",
-            "topic": "economicoutputandproductivity",
-            "subtopic": "output"
-      },
-      {
             "doc_uri": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/earningsandworkinghours/bulletins/lowandhighpayuk/2026",
             "release_date": "2026-10-22",
             "title": "Low and high pay in the UK: 2026",
@@ -326,39 +517,6 @@
                   }
             ],
             "series": "Low and high pay in the UK",
-            "latest": true,
-            "theme": "employmentandlabourmarket",
-            "topic": "peopleinwork",
-            "subtopic": "earningsandworkinghours"
-      },
-      {
-            "doc_uri": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/earningsandworkinghours/bulletins/annualsurveyofhoursandearnings/2026",
-            "release_date": "2026-10-22",
-            "title": "Employee earnings in the UK: 2026",
-            "edition": "2026",
-            "vis": [
-                  {
-                        "url": "/visualisations/dvc3663/fig01/index.html",
-                        "chart_type": "line-chart"
-                  },
-                  {
-                        "url": "/visualisations/dvc3663/fig03/index.html",
-                        "chart_type": "line-chart"
-                  },
-                  {
-                        "url": "/visualisations/dvc3663/fig05/index.html",
-                        "chart_type": "beeswarm"
-                  },
-                  {
-                        "url": "/visualisations/dvc3663/fig07/index.html",
-                        "chart_type": "bar-chart"
-                  },
-                  {
-                        "url": "/visualisations/dvc3663/fig08/index.html",
-                        "chart_type": "choropleth"
-                  }
-            ],
-            "series": "Employee earnings in the UK",
             "latest": true,
             "theme": "employmentandlabourmarket",
             "topic": "peopleinwork",
@@ -395,11 +553,11 @@
                         "chart_type": "range-plot"
                   }
             ],
-            "series": "Gender pay gap in the UK",
-            "latest": true,
             "theme": "employmentandlabourmarket",
             "topic": "peopleinwork",
-            "subtopic": "earningsandworkinghours"
+            "subtopic": "earningsandworkinghours",
+            "series": "Gender pay gap in the UK",
+            "latest": true
       },
       {
             "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/crimeandjustice/bulletins/crimeinenglandandwales/yearendingjune2026",
@@ -419,36 +577,45 @@
             "latest": true
       },
       {
-            "doc_uri": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/earningsandworkinghours/bulletins/annualsurveyofhoursandearnings/2026",
+            "doc_uri": "https://www.ons.gov.uk/economy/economicoutputandproductivity/output/bulletins/economicactivityandsocialchangeintheukrealtimeindicators/22october2026",
             "release_date": "2026-10-21",
-            "title": "Employee earnings in the UK: 2026",
-            "edition": "2026",
+            "title": "Economic activity and social change in the UK, real-time indicators: 22 October 2026",
+            "edition": "22 October 2026",
             "vis": [
                   {
-                        "url": "/visualisations/dvc3663/fig01/index.html",
-                        "chart_type": "line-chart"
+                        "url": "/visualisations/dvc3669/dashboard-monthly/index.html",
+                        "chart_type": null
                   },
                   {
-                        "url": "/visualisations/dvc3663/fig03/index.html",
-                        "chart_type": "line-chart"
-                  },
-                  {
-                        "url": "/visualisations/dvc3663/fig05/index.html",
-                        "chart_type": "beeswarm"
-                  },
-                  {
-                        "url": "/visualisations/dvc3663/fig07/index.html",
+                        "url": "/visualisations/dvc3669/footfall-bar-chart/index.html",
                         "chart_type": "bar-chart"
                   },
                   {
-                        "url": "/visualisations/dvc3663/fig08/index.html",
-                        "chart_type": "choropleth"
+                        "url": "/visualisations/dvc3669/vat-new/index.html",
+                        "chart_type": null
                   }
             ],
-            "theme": "employmentandlabourmarket",
-            "topic": "peopleinwork",
-            "subtopic": "earningsandworkinghours",
-            "series": "Employee earnings in the UK",
+            "theme": "economy",
+            "topic": "economicoutputandproductivity",
+            "subtopic": "output",
+            "series": "Economic activity and social change in the UK, real-time indicators",
+            "latest": true
+      },
+      {
+            "doc_uri": "https://www.ons.gov.uk/economy/economicoutputandproductivity/output/articles/economicactivityandsocialchangerealtimeindicatorsukdashboard/2026-03-05",
+            "release_date": "2026-10-21",
+            "title": "Economic activity and social change real-time indicators, UK, dashboard",
+            "edition": null,
+            "vis": [
+                  {
+                        "url": "/visualisations/realtimeindicatorsdashboard",
+                        "chart_type": null
+                  }
+            ],
+            "theme": "economy",
+            "topic": "economicoutputandproductivity",
+            "subtopic": "output",
+            "series": "Economic activity and social change real-time indicators, UK, dashboard",
             "latest": true
       },
       {
@@ -762,11 +929,11 @@
                         "chart_type": "line-chart"
                   }
             ],
+            "series": "Investigating non-response to the Labour Force Survey using administrative data",
+            "latest": true,
             "theme": "employmentandlabourmarket",
             "topic": "peopleinwork",
-            "subtopic": "employmentandemployeetypes",
-            "series": "Investigating non-response to the Labour Force Survey using administrative data",
-            "latest": true
+            "subtopic": "employmentandemployeetypes"
       },
       {
             "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/birthsdeathsandmarriages/deaths/bulletins/deathsregistrationsummarytables/2025",
@@ -845,11 +1012,11 @@
                         "chart_type": "bar-chart"
                   }
             ],
+            "series": "Measuring artificial intelligence in the UK economy using a thematic account",
+            "latest": true,
             "theme": "economy",
             "topic": "nationalaccounts",
-            "subtopic": "satelliteaccounts",
-            "series": "Measuring artificial intelligence in the UK economy using a thematic account",
-            "latest": true
+            "subtopic": "satelliteaccounts"
       },
       {
             "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/wellbeing/bulletins/publicopinionsandsocialtrendsgreatbritain/august2026",
@@ -1194,11 +1361,11 @@
                         "chart_type": "small-multiple-line-chart-multiline"
                   }
             ],
+            "series": "How a change in the Crime Survey for England and Wales questionnaire in April 2025 affected responses to questions on anti-social behaviour",
+            "latest": true,
             "theme": "peoplepopulationandcommunity",
             "topic": "crimeandjustice",
-            "subtopic": null,
-            "series": "How a change in the Crime Survey for England and Wales questionnaire in April 2025 affected responses to questions on anti-social behaviour",
-            "latest": true
+            "subtopic": null
       },
       {
             "doc_uri": "https://www.ons.gov.uk/economy/economicoutputandproductivity/productivitymeasures/articles/redefininginvestmentindigitalinfrastructureintheuk/2026",
@@ -1514,11 +1681,11 @@
                         "chart_type": "line-chart"
                   }
             ],
+            "series": "Update on reinstating quarterly regional GDP estimates for England and Wales",
+            "latest": true,
             "theme": "economy",
             "topic": "grossdomesticproductgdp",
-            "subtopic": null,
-            "series": "Update on reinstating quarterly regional GDP estimates for England and Wales",
-            "latest": true
+            "subtopic": null
       },
       {
             "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/healthandsocialcare/healthandlifeexpectancies/methodologies/targetedincentivesontheopinionsandlifestylesurvey",
@@ -1551,11 +1718,11 @@
                         "chart_type": "small-multiple-clustered-bar-chart"
                   }
             ],
+            "series": "Targeted incentives on the Opinions and Lifestyle Survey",
+            "latest": true,
             "theme": "peoplepopulationandcommunity",
             "topic": "healthandsocialcare",
-            "subtopic": "healthandlifeexpectancies",
-            "series": "Targeted incentives on the Opinions and Lifestyle Survey",
-            "latest": true
+            "subtopic": "healthandlifeexpectancies"
       },
       {
             "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/crimeandjustice/bulletins/crimeinenglandandwales/yearendingmarch2026",
@@ -1748,11 +1915,11 @@
                         "chart_type": "range-plot-with-confidence-intervals"
                   }
             ],
+            "series": "Longitudinal Study 2011 to 2021: Completeness of census linkage",
+            "latest": true,
             "theme": "peoplepopulationandcommunity",
             "topic": "populationandmigration",
-            "subtopic": "populationestimates",
-            "series": "Longitudinal Study 2011 to 2021: Completeness of census linkage",
-            "latest": true
+            "subtopic": "populationestimates"
       },
       {
             "doc_uri": "https://www.ons.gov.uk/economy/environmentalaccounts/bulletins/enclosedfarmlandnaturalcapitalaccountsuk/2026",
@@ -1944,8 +2111,6 @@
                         "chart_type": "slope-chart"
                   }
             ],
-            "series": "Short-term lets through online collaborative economy platforms, UK",
-            "latest": false,
             "theme": "peoplepopulationandcommunity",
             "topic": "housing",
             "subtopic": null,
@@ -1979,11 +2144,11 @@
                         "chart_type": null
                   }
             ],
+            "series": "Improvements to private actual and imputed rentals in household expenditure in UK National Accounts, Blue Book 2026",
+            "latest": true,
             "theme": "economy",
             "topic": "grossdomesticproductgdp",
-            "subtopic": null,
-            "series": "Improvements to private actual and imputed rentals in household expenditure in UK National Accounts, Blue Book 2026",
-            "latest": true
+            "subtopic": null
       },
       {
             "doc_uri": "https://www.ons.gov.uk/economy/grossdomesticproductgdp/methodologies/improvementstothelocalgovernmentmeasureofintermediateconsumptioninuknationalaccountsbluebook2026",
@@ -1996,11 +2161,11 @@
                         "chart_type": null
                   }
             ],
+            "series": "Improvements to the Local Government measure of intermediate consumption in UK National Accounts, Blue Book 2026",
+            "latest": true,
             "theme": "economy",
             "topic": "grossdomesticproductgdp",
-            "subtopic": null,
-            "series": "Improvements to the Local Government measure of intermediate consumption in UK National Accounts, Blue Book 2026",
-            "latest": true
+            "subtopic": null
       },
       {
             "doc_uri": "https://www.ons.gov.uk/economy/grossdomesticproductgdp/methodologies/incorporatingtheannualsurveyofgoodsandservicesintotheuknationalaccountsbluebook2026",
@@ -2017,11 +2182,11 @@
                         "chart_type": null
                   }
             ],
+            "series": "Incorporating the Annual Survey of Goods and Services into the UK National Accounts, Blue Book",
+            "latest": true,
             "theme": "economy",
             "topic": "grossdomesticproductgdp",
-            "subtopic": null,
-            "series": "Incorporating the Annual Survey of Goods and Services into the UK National Accounts, Blue Book",
-            "latest": true
+            "subtopic": null
       },
       {
             "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/wellbeing/bulletins/publicopinionsandsocialtrendsgreatbritain/may2026",
@@ -2713,11 +2878,11 @@
                         "chart_type": "small-multiple-line-chart-multiline"
                   }
             ],
+            "series": "How the ONS assesses statistical outputs for residual seasonality",
+            "latest": true,
             "theme": "economy",
             "topic": "grossdomesticproductgdp",
-            "subtopic": null,
-            "series": "How the ONS assesses statistical outputs for residual seasonality",
-            "latest": true
+            "subtopic": null
       },
       {
             "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/birthsdeathsandmarriages/deaths/methodologies/userguidetochildmortalitystatistics",
@@ -2734,11 +2899,11 @@
                         "chart_type": null
                   }
             ],
+            "series": "User guide to child and infant mortality statistics",
+            "latest": true,
             "theme": "peoplepopulationandcommunity",
             "topic": "birthsdeathsandmarriages",
-            "subtopic": "deaths",
-            "series": "User guide to child and infant mortality statistics",
-            "latest": true
+            "subtopic": "deaths"
       },
       {
             "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/birthsdeathsandmarriages/deaths/methodologies/childmortalitystatisticsqmi",
@@ -2751,11 +2916,11 @@
                         "chart_type": null
                   }
             ],
+            "series": "Child and infant mortality statistics QMI",
+            "latest": true,
             "theme": "peoplepopulationandcommunity",
             "topic": "birthsdeathsandmarriages",
-            "subtopic": "deaths",
-            "series": "Child and infant mortality statistics QMI",
-            "latest": true
+            "subtopic": "deaths"
       },
       {
             "doc_uri": "https://www.ons.gov.uk/economy/nationalaccounts/balanceofpayments/articles/foreigndirectinvestmentexperimentaluksubnationalstatistics/2024",
@@ -2859,11 +3024,11 @@
                         "chart_type": "small-multiple-line-chart-multiline"
                   }
             ],
+            "series": "National population projections, variant projections: 2024-based",
+            "latest": true,
             "theme": "peoplepopulationandcommunity",
             "topic": "populationandmigration",
-            "subtopic": "populationprojections",
-            "series": "National population projections, variant projections: 2024-based",
-            "latest": true
+            "subtopic": "populationprojections"
       },
       {
             "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/populationprojections/articles/ukpopulationprojectionexplorer/2025-01-28",
@@ -3181,11 +3346,11 @@
                         "chart_type": "choropleth"
                   }
             ],
+            "series": "Housing affordability in England and Wales",
+            "latest": true,
             "theme": "peoplepopulationandcommunity",
             "topic": "housing",
-            "subtopic": null,
-            "series": "Housing affordability in England and Wales",
-            "latest": true
+            "subtopic": null
       },
       {
             "doc_uri": "https://www.ons.gov.uk/economy/inflationandpriceindices/bulletins/privaterentandhousepricesuk/march2026",
@@ -3214,11 +3379,11 @@
                         "chart_type": null
                   }
             ],
+            "series": "Private rent and house prices, UK",
+            "latest": false,
             "theme": "economy",
             "topic": "inflationandpriceindices",
-            "subtopic": null,
-            "series": "Private rent and house prices, UK",
-            "latest": false
+            "subtopic": null
       },
       {
             "doc_uri": "https://www.ons.gov.uk/economy/environmentalaccounts/bulletins/experimentalestimatesofgreenjobsuk/march2026",
@@ -3243,11 +3408,11 @@
                         "chart_type": "range-plot-with-confidence-intervals"
                   }
             ],
+            "series": "Estimates of green jobs, UK",
+            "latest": true,
             "theme": "economy",
             "topic": "environmentalaccounts",
-            "subtopic": null,
-            "series": "Estimates of green jobs, UK",
-            "latest": true
+            "subtopic": null
       },
       {
             "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/wellbeing/bulletins/publicopinionsandsocialtrendsgreatbritain/february2026",
@@ -3264,11 +3429,11 @@
                         "chart_type": "line-chart"
                   }
             ],
+            "series": "Public opinions and social trends, Great Britain",
+            "latest": false,
             "theme": "peoplepopulationandcommunity",
             "topic": "wellbeing",
-            "subtopic": null,
-            "series": "Public opinions and social trends, Great Britain",
-            "latest": false
+            "subtopic": null
       },
       {
             "doc_uri": "https://www.ons.gov.uk/economy/governmentpublicsectorandtaxes/publicsectorfinance/bulletins/publicsectorfinances/february2026",
@@ -3281,11 +3446,11 @@
                         "chart_type": null
                   }
             ],
+            "series": "Public sector finances, UK",
+            "latest": false,
             "theme": "economy",
             "topic": "governmentpublicsectorandtaxes",
-            "subtopic": "publicsectorfinance",
-            "series": "Public sector finances, UK",
-            "latest": false
+            "subtopic": "publicsectorfinance"
       },
       {
             "doc_uri": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/bulletins/uklabourmarket/march2026",
@@ -3298,11 +3463,11 @@
                         "chart_type": null
                   }
             ],
+            "series": "Labour market overview, UK",
+            "latest": false,
             "theme": "employmentandlabourmarket",
             "topic": "peopleinwork",
-            "subtopic": "employmentandemployeetypes",
-            "series": "Labour market overview, UK",
-            "latest": false
+            "subtopic": "employmentandemployeetypes"
       },
       {
             "doc_uri": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/earningsandworkinghours/bulletins/earningsandemploymentfrompayasyouearnrealtimeinformationuk/march2026",
@@ -3327,11 +3492,11 @@
                         "chart_type": null
                   }
             ],
+            "series": "Earnings and employment from Pay As You Earn Real Time Information, UK",
+            "latest": false,
             "theme": "employmentandlabourmarket",
             "topic": "peopleinwork",
-            "subtopic": "earningsandworkinghours",
-            "series": "Earnings and employment from Pay As You Earn Real Time Information, UK",
-            "latest": false
+            "subtopic": "earningsandworkinghours"
       },
       {
             "doc_uri": "https://www.ons.gov.uk/economy/economicoutputandproductivity/output/bulletins/economicactivityandsocialchangeintheukrealtimeindicators/19march2026",
@@ -3352,11 +3517,11 @@
                         "chart_type": null
                   }
             ],
+            "series": "Economic activity and social change in the UK, real-time indicators",
+            "latest": false,
             "theme": "economy",
             "topic": "economicoutputandproductivity",
-            "subtopic": "output",
-            "series": "Economic activity and social change in the UK, real-time indicators",
-            "latest": false
+            "subtopic": "output"
       },
       {
             "doc_uri": "https://www.ons.gov.uk/economy/nationalaccounts/balanceofpayments/bulletins/uktrade/january2026",
@@ -3405,11 +3570,11 @@
                         "chart_type": null
                   }
             ],
+            "series": "UK trade",
+            "latest": false,
             "theme": "economy",
             "topic": "nationalaccounts",
-            "subtopic": "balanceofpayments",
-            "series": "UK trade",
-            "latest": false
+            "subtopic": "balanceofpayments"
       },
       {
             "doc_uri": "https://www.ons.gov.uk/economy/grossdomesticproductgdp/bulletins/gdpmonthlyestimateuk/january2026",
@@ -3442,11 +3607,11 @@
                         "chart_type": null
                   }
             ],
+            "series": "GDP monthly estimate, UK",
+            "latest": false,
             "theme": "economy",
             "topic": "grossdomesticproductgdp",
-            "subtopic": null,
-            "series": "GDP monthly estimate, UK",
-            "latest": false
+            "subtopic": null
       },
       {
             "doc_uri": "https://www.ons.gov.uk/economy/economicoutputandproductivity/output/bulletins/economicactivityandsocialchangeintheukrealtimeindicators/12march2026",
@@ -3459,11 +3624,11 @@
                         "chart_type": null
                   }
             ],
+            "series": "Economic activity and social change in the UK, real-time indicators",
+            "latest": false,
             "theme": "economy",
             "topic": "economicoutputandproductivity",
-            "subtopic": "output",
-            "series": "Economic activity and social change in the UK, real-time indicators",
-            "latest": false
+            "subtopic": "output"
       },
       {
             "doc_uri": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/articles/highstreetsandretailareasingreatbritain/march2026",
@@ -3504,11 +3669,11 @@
                         "chart_type": "small-multiple-line-chart-multiline"
                   }
             ],
+            "series": "High streets and retail areas in Great Britain",
+            "latest": true,
             "theme": "employmentandlabourmarket",
             "topic": "peopleinwork",
-            "subtopic": "employmentandemployeetypes",
-            "series": "High streets and retail areas in Great Britain",
-            "latest": true
+            "subtopic": "employmentandemployeetypes"
       },
       {
             "doc_uri": "https://www.ons.gov.uk/economy/economicoutputandproductivity/output/bulletins/economicactivityandsocialchangeintheukrealtimeindicators/5march2026",
@@ -3521,11 +3686,11 @@
                         "chart_type": null
                   }
             ],
+            "series": "Economic activity and social change in the UK, real-time indicators",
+            "latest": false,
             "theme": "economy",
             "topic": "economicoutputandproductivity",
-            "subtopic": "output",
-            "series": "Economic activity and social change in the UK, real-time indicators",
-            "latest": false
+            "subtopic": "output"
       },
       {
             "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/internationalmigration/articles/adminbasedpopulationestimates/localauthoritycasestudiesenglandandwalesmid2024",
@@ -3550,11 +3715,11 @@
                         "chart_type": "line-chart"
                   }
             ],
+            "series": "Admin-based population estimates: local authority case studies, England and Wales",
+            "latest": true,
             "theme": "peoplepopulationandcommunity",
             "topic": "populationandmigration",
-            "subtopic": "internationalmigration",
-            "series": "Admin-based population estimates: local authority case studies, England and Wales",
-            "latest": true
+            "subtopic": "internationalmigration"
       },
       {
             "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/internationalmigration/articles/reasonforinternationalmigrationinternationalstudentsupdate/february2026",
@@ -3583,11 +3748,11 @@
                         "chart_type": "bar-chart"
                   }
             ],
+            "series": "Reason for international migration, international students update",
+            "latest": true,
             "theme": "peoplepopulationandcommunity",
             "topic": "populationandmigration",
-            "subtopic": "internationalmigration",
-            "series": "Reason for international migration, international students update",
-            "latest": true
+            "subtopic": "internationalmigration"
       },
       {
             "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/wellbeing/bulletins/measuringprogresswellbeingandbeyondgdpintheuk/february2026",
@@ -3604,11 +3769,11 @@
                         "chart_type": "line-chart"
                   }
             ],
+            "series": "Beyond GDP insights, UK headline measures of National Well-being",
+            "latest": false,
             "theme": "peoplepopulationandcommunity",
             "topic": "wellbeing",
-            "subtopic": null,
-            "series": "Beyond GDP insights, UK headline measures of National Well-being",
-            "latest": false
+            "subtopic": null
       },
       {
             "doc_uri": "https://www.ons.gov.uk/economy/economicoutputandproductivity/output/bulletins/economicactivityandsocialchangeintheukrealtimeindicators/26february2026",
@@ -3621,11 +3786,11 @@
                         "chart_type": null
                   }
             ],
+            "series": "Economic activity and social change in the UK, real-time indicators",
+            "latest": false,
             "theme": "economy",
             "topic": "economicoutputandproductivity",
-            "subtopic": "output",
-            "series": "Economic activity and social change in the UK, real-time indicators",
-            "latest": false
+            "subtopic": "output"
       },
       {
             "doc_uri": "https://www.ons.gov.uk/economy/regionalaccounts/grossdisposablehouseholdincome/bulletins/regionalhouseholdfinalconsumptionexpenditureuk/2009to2023",
@@ -3642,11 +3807,11 @@
                         "chart_type": null
                   }
             ],
+            "series": "Regional household final consumption expenditure, UK",
+            "latest": true,
             "theme": "economy",
             "topic": "regionalaccounts",
-            "subtopic": "grossdisposablehouseholdincome",
-            "series": "Regional household final consumption expenditure, UK",
-            "latest": true
+            "subtopic": "grossdisposablehouseholdincome"
       },
       {
             "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/healthandsocialcare/causesofdeath/bulletins/avoidablemortalityinenglandandwales/2024",
@@ -3667,11 +3832,11 @@
                         "chart_type": "small-multiple-line-chart-with-area"
                   }
             ],
+            "series": "Avoidable mortality in England and Wales",
+            "latest": false,
             "theme": "peoplepopulationandcommunity",
             "topic": "healthandsocialcare",
-            "subtopic": "causesofdeath",
-            "series": "Avoidable mortality in England and Wales",
-            "latest": false
+            "subtopic": "causesofdeath"
       },
       {
             "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/wellbeing/bulletins/publicopinionsandsocialtrendsgreatbritain/january2026",
@@ -3684,11 +3849,11 @@
                         "chart_type": "line-chart"
                   }
             ],
+            "series": "Public opinions and social trends, Great Britain",
+            "latest": false,
             "theme": "peoplepopulationandcommunity",
             "topic": "wellbeing",
-            "subtopic": null,
-            "series": "Public opinions and social trends, Great Britain",
-            "latest": false
+            "subtopic": null
       },
       {
             "doc_uri": "https://www.ons.gov.uk/economy/governmentpublicsectorandtaxes/publicsectorfinance/bulletins/publicsectorfinances/january2026",
@@ -3701,11 +3866,11 @@
                         "chart_type": null
                   }
             ],
+            "series": "Public sector finances, UK",
+            "latest": false,
             "theme": "economy",
             "topic": "governmentpublicsectorandtaxes",
-            "subtopic": "publicsectorfinance",
-            "series": "Public sector finances, UK",
-            "latest": false
+            "subtopic": "publicsectorfinance"
       },
       {
             "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/healthandsocialcare/healthandlifeexpectancies/bulletins/healthstatelifeexpectanciesuk/between2011to2013and2022to2024",
@@ -3730,11 +3895,11 @@
                         "chart_type": "range-plot"
                   }
             ],
+            "series": "Healthy life expectancy, UK",
+            "latest": true,
             "theme": "peoplepopulationandcommunity",
             "topic": "healthandsocialcare",
-            "subtopic": "healthandlifeexpectancies",
-            "series": "Healthy life expectancy, UK",
-            "latest": true
+            "subtopic": "healthandlifeexpectancies"
       },
       {
             "doc_uri": "https://www.ons.gov.uk/economy/economicoutputandproductivity/output/bulletins/economicactivityandsocialchangeintheukrealtimeindicators/19february2026",
@@ -3751,11 +3916,11 @@
                         "chart_type": "bar-chart"
                   }
             ],
+            "series": "Economic activity and social change in the UK, real-time indicators",
+            "latest": false,
             "theme": "economy",
             "topic": "economicoutputandproductivity",
-            "subtopic": "output",
-            "series": "Economic activity and social change in the UK, real-time indicators",
-            "latest": false
+            "subtopic": "output"
       },
       {
             "doc_uri": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/bulletins/uklabourmarket/february2026",
@@ -3768,11 +3933,11 @@
                         "chart_type": null
                   }
             ],
+            "series": "Labour market overview, UK",
+            "latest": false,
             "theme": "employmentandlabourmarket",
             "topic": "peopleinwork",
-            "subtopic": "employmentandemployeetypes",
-            "series": "Labour market overview, UK",
-            "latest": false
+            "subtopic": "employmentandemployeetypes"
       },
       {
             "doc_uri": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/labourproductivity/articles/ukproductivityintroduction/octobertodecember2025andjulytoseptember2025",
@@ -3789,11 +3954,11 @@
                         "chart_type": "bar-chart"
                   }
             ],
+            "series": "Productivity flash estimate and overview, UK",
+            "latest": false,
             "theme": "employmentandlabourmarket",
             "topic": "peopleinwork",
-            "subtopic": "labourproductivity",
-            "series": "Productivity flash estimate and overview, UK",
-            "latest": false
+            "subtopic": "labourproductivity"
       },
       {
             "doc_uri": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/earningsandworkinghours/bulletins/earningsandemploymentfrompayasyouearnrealtimeinformationuk/february2026",
@@ -3818,11 +3983,11 @@
                         "chart_type": null
                   }
             ],
+            "series": "Earnings and employment from Pay As You Earn Real Time Information, UK",
+            "latest": false,
             "theme": "employmentandlabourmarket",
             "topic": "peopleinwork",
-            "subtopic": "earningsandworkinghours",
-            "series": "Earnings and employment from Pay As You Earn Real Time Information, UK",
-            "latest": false
+            "subtopic": "earningsandworkinghours"
       },
       {
             "doc_uri": "https://www.ons.gov.uk/economy/economicoutputandproductivity/output/bulletins/economicactivityandsocialchangeintheukrealtimeindicators/12february2026",
@@ -3835,11 +4000,11 @@
                         "chart_type": null
                   }
             ],
+            "series": "Economic activity and social change in the UK, real-time indicators",
+            "latest": false,
             "theme": "economy",
             "topic": "economicoutputandproductivity",
-            "subtopic": "output",
-            "series": "Economic activity and social change in the UK, real-time indicators",
-            "latest": false
+            "subtopic": "output"
       },
       {
             "doc_uri": "https://www.ons.gov.uk/economy/nationalaccounts/balanceofpayments/bulletins/uktrade/december2025",
@@ -3892,11 +4057,11 @@
                         "chart_type": null
                   }
             ],
+            "series": "UK trade",
+            "latest": false,
             "theme": "economy",
             "topic": "nationalaccounts",
-            "subtopic": "balanceofpayments",
-            "series": "UK trade",
-            "latest": false
+            "subtopic": "balanceofpayments"
       },
       {
             "doc_uri": "https://www.ons.gov.uk/economy/grossdomesticproductgdp/bulletins/gdpfirstquarterlyestimateuk/octobertodecember2025",
@@ -3909,11 +4074,11 @@
                         "chart_type": null
                   }
             ],
+            "series": "GDP first quarterly estimate, UK",
+            "latest": false,
             "theme": "economy",
             "topic": "grossdomesticproductgdp",
-            "subtopic": null,
-            "series": "GDP first quarterly estimate, UK",
-            "latest": false
+            "subtopic": null
       },
       {
             "doc_uri": "https://www.ons.gov.uk/economy/grossdomesticproductgdp/bulletins/gdpmonthlyestimateuk/december2025",
@@ -3950,11 +4115,11 @@
                         "chart_type": null
                   }
             ],
+            "series": "GDP monthly estimate, UK",
+            "latest": false,
             "theme": "economy",
             "topic": "grossdomesticproductgdp",
-            "subtopic": null,
-            "series": "GDP monthly estimate, UK",
-            "latest": false
+            "subtopic": null
       },
       {
             "doc_uri": "https://www.ons.gov.uk/economy/nationalaccounts/balanceofpayments/articles/consumercardspendingecommerceanddigitaltradeinsightsintheuk/2019to2025",
@@ -3971,11 +4136,11 @@
                         "chart_type": "range-arrow-dot-bar-reference-plot"
                   }
             ],
+            "series": "Consumer card spending, e-commerce and digital trade insights in the UK",
+            "latest": true,
             "theme": "economy",
             "topic": "nationalaccounts",
-            "subtopic": "balanceofpayments",
-            "series": "Consumer card spending, e-commerce and digital trade insights in the UK",
-            "latest": true
+            "subtopic": "balanceofpayments"
       },
       {
             "doc_uri": "https://www.ons.gov.uk/economy/economicoutputandproductivity/output/bulletins/economicactivityandsocialchangeintheukrealtimeindicators/5february2026",
@@ -3988,11 +4153,11 @@
                         "chart_type": null
                   }
             ],
+            "series": "Economic activity and social change in the UK, real-time indicators",
+            "latest": false,
             "theme": "economy",
             "topic": "economicoutputandproductivity",
-            "subtopic": "output",
-            "series": "Economic activity and social change in the UK, real-time indicators",
-            "latest": false
+            "subtopic": "output"
       },
       {
             "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/crimeandjustice/articles/homicideinenglandandwales/yearendingmarch2025",
@@ -4005,11 +4170,11 @@
                         "chart_type": "line-chart"
                   }
             ],
+            "series": "Homicide in England and Wales",
+            "latest": true,
             "theme": "peoplepopulationandcommunity",
             "topic": "crimeandjustice",
-            "subtopic": null,
-            "series": "Homicide in England and Wales",
-            "latest": true
+            "subtopic": null
       },
       {
             "doc_uri": "https://www.ons.gov.uk/economy/economicoutputandproductivity/output/articles/industrytoindustrypaymentflowsuk/2019to2025",
@@ -4042,11 +4207,11 @@
                         "chart_type": "range-plot-with-confidence-intervals"
                   }
             ],
+            "series": "Industry-to-industry payment flows, UK",
+            "latest": true,
             "theme": "economy",
             "topic": "economicoutputandproductivity",
-            "subtopic": "output",
-            "series": "Industry-to-industry payment flows, UK",
-            "latest": true
+            "subtopic": "output"
       },
       {
             "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/crimeandjustice/bulletins/crimeinenglandandwales/yearendingseptember2025",
@@ -5592,23 +5757,6 @@
             "latest": false
       },
       {
-            "doc_uri": "https://www.ons.gov.uk/economy/nationalaccounts/uksectoraccounts/articles/businessinvestmentintheukrevisionsinbluebook/2025",
-            "release_date": "2025-10-31",
-            "title": "Business investment in the UK revisions in Blue Book: 2025",
-            "edition": "2025",
-            "vis": [
-                  {
-                        "url": "/visualisations/econgloss/widget_gloss/index.html",
-                        "chart_type": null
-                  }
-            ],
-            "theme": "economy",
-            "topic": "nationalaccounts",
-            "subtopic": "uksectoraccounts",
-            "series": "Business investment in the UK revisions in Blue Book",
-            "latest": true
-      },
-      {
             "doc_uri": "https://www.ons.gov.uk/economy/nationalaccounts/balanceofpayments/bulletins/unitedkingdombalanceofpaymentsthepinkbook/2025",
             "release_date": "2025-10-31",
             "title": "UK Balance of Payments, The Pink Book: 2025",
@@ -6252,40 +6400,6 @@
             "latest": false
       },
       {
-            "doc_uri": "https://www.ons.gov.uk/economy/grossdomesticproductgdp/bulletins/quarterlynationalaccounts/apriltojune2025",
-            "release_date": "2025-09-29",
-            "title": "GDP quarterly national accounts, UK: April to June 2025",
-            "edition": "April to June 2025",
-            "vis": [
-                  {
-                        "url": "/visualisations/econgloss/widget_gloss/index.html",
-                        "chart_type": null
-                  }
-            ],
-            "theme": "economy",
-            "topic": "grossdomesticproductgdp",
-            "subtopic": null,
-            "series": "GDP quarterly national accounts, UK",
-            "latest": false
-      },
-      {
-            "doc_uri": "https://www.ons.gov.uk/economy/nationalaccounts/uksectoraccounts/bulletins/quarterlysectoraccounts/apriltojune2025",
-            "release_date": "2025-09-29",
-            "title": "Quarterly sector accounts, UK: April to June 2025",
-            "edition": "April to June 2025",
-            "vis": [
-                  {
-                        "url": "/visualisations/econgloss/widget_gloss/index.html",
-                        "chart_type": null
-                  }
-            ],
-            "theme": "economy",
-            "topic": "nationalaccounts",
-            "subtopic": "uksectoraccounts",
-            "series": "Quarterly sector accounts, UK",
-            "latest": false
-      },
-      {
             "doc_uri": "https://www.ons.gov.uk/economy/grossdomesticproductgdp/bulletins/businessinvestment/apriltojune2025revisedresults",
             "release_date": "2025-09-29",
             "title": "Business investment in the UK: April to June 2025 revised results",
@@ -6874,23 +6988,6 @@
             "latest": true
       },
       {
-            "doc_uri": "https://www.ons.gov.uk/economy/grossdomesticproductgdp/articles/bluebook2025advancedaggregateestimates/2025-08-19",
-            "release_date": "2025-08-18",
-            "title": "Blue Book 2025: advanced aggregate estimates",
-            "edition": null,
-            "vis": [
-                  {
-                        "url": "/visualisations/econgloss/widget_gloss/index.html",
-                        "chart_type": null
-                  }
-            ],
-            "theme": "economy",
-            "topic": "grossdomesticproductgdp",
-            "subtopic": null,
-            "series": "Blue Book 2025: advanced aggregate estimates",
-            "latest": true
-      },
-      {
             "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/housing/bulletins/privaterentalaffordabilityengland/2024",
             "release_date": "2025-08-17",
             "title": "Private rental affordability, England, Wales and Northern Ireland: 2024",
@@ -7017,40 +7114,6 @@
             "topic": "peopleinwork",
             "subtopic": "labourproductivity",
             "series": "Productivity flash estimate and overview, UK",
-            "latest": false
-      },
-      {
-            "doc_uri": "https://www.ons.gov.uk/economy/grossdomesticproductgdp/bulletins/gdpfirstquarterlyestimateuk/apriltojune2025",
-            "release_date": "2025-08-13",
-            "title": "GDP first quarterly estimate, UK: April to June 2025",
-            "edition": "April to June 2025",
-            "vis": [
-                  {
-                        "url": "/visualisations/econgloss/widget_gloss/index.html",
-                        "chart_type": null
-                  }
-            ],
-            "theme": "economy",
-            "topic": "grossdomesticproductgdp",
-            "subtopic": null,
-            "series": "GDP first quarterly estimate, UK",
-            "latest": false
-      },
-      {
-            "doc_uri": "https://www.ons.gov.uk/economy/grossdomesticproductgdp/bulletins/gdpmonthlyestimateuk/june2025",
-            "release_date": "2025-08-13",
-            "title": "GDP monthly estimate, UK: June 2025",
-            "edition": "June 2025",
-            "vis": [
-                  {
-                        "url": "/visualisations/econgloss/widget_gloss/index.html",
-                        "chart_type": null
-                  }
-            ],
-            "theme": "economy",
-            "topic": "grossdomesticproductgdp",
-            "subtopic": null,
-            "series": "GDP monthly estimate, UK",
             "latest": false
       },
       {
@@ -7507,23 +7570,6 @@
             "latest": false
       },
       {
-            "doc_uri": "https://www.ons.gov.uk/economy/grossdomesticproductgdp/bulletins/gdpmonthlyestimateuk/may2025",
-            "release_date": "2025-07-10",
-            "title": "GDP monthly estimate, UK: May 2025",
-            "edition": "May 2025",
-            "vis": [
-                  {
-                        "url": "/visualisations/econgloss/widget_gloss/index.html",
-                        "chart_type": null
-                  }
-            ],
-            "theme": "economy",
-            "topic": "grossdomesticproductgdp",
-            "subtopic": null,
-            "series": "GDP monthly estimate, UK",
-            "latest": false
-      },
-      {
             "doc_uri": "https://www.ons.gov.uk/economy/economicoutputandproductivity/output/bulletins/economicactivityandsocialchangeintheukrealtimeindicators/10july2025",
             "release_date": "2025-07-09",
             "title": "Economic activity and social change in the UK, real-time indicators: 10 July 2025",
@@ -7726,23 +7772,6 @@
             "latest": true
       },
       {
-            "doc_uri": "https://www.ons.gov.uk/economy/nationalaccounts/uksectoraccounts/bulletins/quarterlysectoraccounts/januarytomarch2025",
-            "release_date": "2025-06-29",
-            "title": "Quarterly sector accounts, UK: January to March 2025",
-            "edition": "January to March 2025",
-            "vis": [
-                  {
-                        "url": "/visualisations/econgloss/widget_gloss/index.html",
-                        "chart_type": null
-                  }
-            ],
-            "theme": "economy",
-            "topic": "nationalaccounts",
-            "subtopic": "uksectoraccounts",
-            "series": "Quarterly sector accounts, UK",
-            "latest": false
-      },
-      {
             "doc_uri": "https://www.ons.gov.uk/economy/nationalaccounts/balanceofpayments/bulletins/balanceofpayments/januarytomarch2025",
             "release_date": "2025-06-29",
             "title": "Balance of payments, UK: January to March 2025",
@@ -7757,23 +7786,6 @@
             "topic": "nationalaccounts",
             "subtopic": "balanceofpayments",
             "series": "Balance of payments, UK",
-            "latest": false
-      },
-      {
-            "doc_uri": "https://www.ons.gov.uk/economy/grossdomesticproductgdp/bulletins/quarterlynationalaccounts/januarytomarch2025",
-            "release_date": "2025-06-29",
-            "title": "GDP quarterly national accounts, UK: January to March 2025",
-            "edition": "January to March 2025",
-            "vis": [
-                  {
-                        "url": "/visualisations/econgloss/widget_gloss/index.html",
-                        "chart_type": null
-                  }
-            ],
-            "theme": "economy",
-            "topic": "grossdomesticproductgdp",
-            "subtopic": null,
-            "series": "GDP quarterly national accounts, UK",
             "latest": false
       },
       {
@@ -8052,23 +8064,6 @@
             "latest": false
       },
       {
-            "doc_uri": "https://www.ons.gov.uk/economy/grossdomesticproductgdp/bulletins/gdpmonthlyestimateuk/april2025",
-            "release_date": "2025-06-11",
-            "title": "GDP monthly estimate, UK: April 2025",
-            "edition": "April 2025",
-            "vis": [
-                  {
-                        "url": "/visualisations/econgloss/widget_gloss/index.html",
-                        "chart_type": null
-                  }
-            ],
-            "theme": "economy",
-            "topic": "grossdomesticproductgdp",
-            "subtopic": null,
-            "series": "GDP monthly estimate, UK",
-            "latest": false
-      },
-      {
             "doc_uri": "https://www.ons.gov.uk/economy/economicoutputandproductivity/output/bulletins/economicactivityandsocialchangeintheukrealtimeindicators/12june2025",
             "release_date": "2025-06-11",
             "title": "Economic activity and social change in the UK, real-time indicators: 12 June 2025",
@@ -8116,11 +8111,11 @@
                         "chart_type": "bar-chart"
                   }
             ],
+            "series": "Who has access to hybrid work in Great Britain?",
+            "latest": true,
             "theme": "employmentandlabourmarket",
             "topic": "peopleinwork",
-            "subtopic": "employmentandemployeetypes",
-            "series": "Who has access to hybrid work in Great Britain?",
-            "latest": true
+            "subtopic": "employmentandemployeetypes"
       },
       {
             "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/healthandsocialcare/healthandwellbeing/bulletins/theimpactofadversepregnancyeventsonmonthlyemployeeearningsandemploymentengland/april2014todecember2022",
@@ -8567,40 +8562,6 @@
             "topic": "wellbeing",
             "subtopic": null,
             "series": "Public opinions and social trends, Great Britain",
-            "latest": false
-      },
-      {
-            "doc_uri": "https://www.ons.gov.uk/economy/grossdomesticproductgdp/bulletins/gdpfirstquarterlyestimateuk/januarytomarch2025",
-            "release_date": "2025-05-14",
-            "title": "GDP first quarterly estimate, UK: January to March 2025",
-            "edition": "January to March 2025",
-            "vis": [
-                  {
-                        "url": "/visualisations/econgloss/widget_gloss/index.html",
-                        "chart_type": null
-                  }
-            ],
-            "theme": "economy",
-            "topic": "grossdomesticproductgdp",
-            "subtopic": null,
-            "series": "GDP first quarterly estimate, UK",
-            "latest": false
-      },
-      {
-            "doc_uri": "https://www.ons.gov.uk/economy/grossdomesticproductgdp/bulletins/gdpmonthlyestimateuk/march2025",
-            "release_date": "2025-05-14",
-            "title": "GDP monthly estimate, UK: March 2025",
-            "edition": "March 2025",
-            "vis": [
-                  {
-                        "url": "/visualisations/econgloss/widget_gloss/index.html",
-                        "chart_type": null
-                  }
-            ],
-            "theme": "economy",
-            "topic": "grossdomesticproductgdp",
-            "subtopic": null,
-            "series": "GDP monthly estimate, UK",
             "latest": false
       },
       {
@@ -9239,23 +9200,6 @@
             "latest": false
       },
       {
-            "doc_uri": "https://www.ons.gov.uk/economy/grossdomesticproductgdp/bulletins/gdpmonthlyestimateuk/february2025",
-            "release_date": "2025-04-10",
-            "title": "GDP monthly estimate, UK: February 2025",
-            "edition": "February 2025",
-            "vis": [
-                  {
-                        "url": "/visualisations/econgloss/widget_gloss/index.html",
-                        "chart_type": null
-                  }
-            ],
-            "theme": "economy",
-            "topic": "grossdomesticproductgdp",
-            "subtopic": null,
-            "series": "GDP monthly estimate, UK",
-            "latest": false
-      },
-      {
             "doc_uri": "https://www.ons.gov.uk/economy/nationalaccounts/balanceofpayments/bulletins/uktrade/february2025",
             "release_date": "2025-04-10",
             "title": "UK trade: February 2025",
@@ -9467,40 +9411,6 @@
             "subtopic": null,
             "series": "Business investment in the UK: October to December 2024 revised results",
             "latest": true
-      },
-      {
-            "doc_uri": "https://www.ons.gov.uk/economy/grossdomesticproductgdp/bulletins/quarterlynationalaccounts/octobertodecember2024",
-            "release_date": "2025-03-28",
-            "title": "GDP quarterly national accounts, UK: October to December 2024",
-            "edition": "October to December 2024",
-            "vis": [
-                  {
-                        "url": "/visualisations/econgloss/widget_gloss/index.html",
-                        "chart_type": null
-                  }
-            ],
-            "theme": "economy",
-            "topic": "grossdomesticproductgdp",
-            "subtopic": null,
-            "series": "GDP quarterly national accounts, UK",
-            "latest": false
-      },
-      {
-            "doc_uri": "https://www.ons.gov.uk/economy/nationalaccounts/uksectoraccounts/bulletins/quarterlysectoraccounts/octobertodecember2024",
-            "release_date": "2025-03-28",
-            "title": "Quarterly sector accounts, UK: October to December 2024",
-            "edition": "October to December 2024",
-            "vis": [
-                  {
-                        "url": "/visualisations/econgloss/widget_gloss/index.html",
-                        "chart_type": null
-                  }
-            ],
-            "theme": "economy",
-            "topic": "nationalaccounts",
-            "subtopic": "uksectoraccounts",
-            "series": "Quarterly sector accounts, UK",
-            "latest": false
       },
       {
             "doc_uri": "https://www.ons.gov.uk/economy/nationalaccounts/balanceofpayments/bulletins/balanceofpayments/octobertodecember2024",
@@ -9805,23 +9715,6 @@
             "latest": true
       },
       {
-            "doc_uri": "https://www.ons.gov.uk/economy/grossdomesticproductgdp/bulletins/gdpmonthlyestimateuk/january2025",
-            "release_date": "2025-03-14",
-            "title": "GDP monthly estimate, UK: January 2025",
-            "edition": "January 2025",
-            "vis": [
-                  {
-                        "url": "/visualisations/econgloss/widget_gloss/index.html",
-                        "chart_type": null
-                  }
-            ],
-            "theme": "economy",
-            "topic": "grossdomesticproductgdp",
-            "subtopic": null,
-            "series": "GDP monthly estimate, UK",
-            "latest": false
-      },
-      {
             "doc_uri": "https://www.ons.gov.uk/economy/economicoutputandproductivity/output/bulletins/economicactivityandsocialchangeintheukrealtimeindicators/13march2025",
             "release_date": "2025-03-13",
             "title": "Economic activity and social change in the UK, real-time indicators: 13 March 2025",
@@ -9853,11 +9746,11 @@
                         "chart_type": null
                   }
             ],
+            "series": "Development of regional household expenditure measures",
+            "latest": true,
             "theme": "economy",
             "topic": "regionalaccounts",
-            "subtopic": "grossdisposablehouseholdincome",
-            "series": "Development of regional household expenditure measures",
-            "latest": true
+            "subtopic": "grossdisposablehouseholdincome"
       },
       {
             "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/birthsdeathsandmarriages/deaths/bulletins/deathsregisteredweeklyinenglandandwalesprovisional/weekending28february2025",
@@ -10283,40 +10176,6 @@
             "latest": false
       },
       {
-            "doc_uri": "https://www.ons.gov.uk/economy/grossdomesticproductgdp/bulletins/gdpfirstquarterlyestimateuk/octobertodecember2024",
-            "release_date": "2025-02-13",
-            "title": "GDP first quarterly estimate, UK: October to December 2024",
-            "edition": "October to December 2024",
-            "vis": [
-                  {
-                        "url": "/visualisations/econgloss/widget_gloss/index.html",
-                        "chart_type": null
-                  }
-            ],
-            "theme": "economy",
-            "topic": "grossdomesticproductgdp",
-            "subtopic": null,
-            "series": "GDP first quarterly estimate, UK",
-            "latest": false
-      },
-      {
-            "doc_uri": "https://www.ons.gov.uk/economy/grossdomesticproductgdp/bulletins/gdpmonthlyestimateuk/december2024",
-            "release_date": "2025-02-13",
-            "title": "GDP monthly estimate, UK: December 2024",
-            "edition": "December 2024",
-            "vis": [
-                  {
-                        "url": "/visualisations/econgloss/widget_gloss/index.html",
-                        "chart_type": null
-                  }
-            ],
-            "theme": "economy",
-            "topic": "grossdomesticproductgdp",
-            "subtopic": null,
-            "series": "GDP monthly estimate, UK",
-            "latest": false
-      },
-      {
             "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/birthsdeathsandmarriages/deaths/bulletins/deathsregisteredweeklyinenglandandwalesprovisional/weekending31january2025",
             "release_date": "2025-02-12",
             "title": "Deaths registered weekly in England and Wales, provisional: week ending 31 January 2025",
@@ -10691,23 +10550,6 @@
             "latest": false
       },
       {
-            "doc_uri": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/bulletins/uklabourmarket/january2025",
-            "release_date": "2025-01-21",
-            "title": "Labour market overview, UK: January 2025",
-            "edition": "January 2025",
-            "vis": [
-                  {
-                        "url": "/visualisations/dv3158/dashwrapper/index.html",
-                        "chart_type": null
-                  }
-            ],
-            "theme": "employmentandlabourmarket",
-            "topic": "peopleinwork",
-            "subtopic": "employmentandemployeetypes",
-            "series": "Labour market overview, UK",
-            "latest": false
-      },
-      {
             "doc_uri": "https://www.ons.gov.uk/economy/nationalaccounts/balanceofpayments/articles/uktradewiththeunitedstates2023/2023",
             "release_date": "2025-01-17",
             "title": "UK trade with the United States: 2023",
@@ -10808,23 +10650,6 @@
             "topic": "nationalaccounts",
             "subtopic": "balanceofpayments",
             "series": "UK trade",
-            "latest": false
-      },
-      {
-            "doc_uri": "https://www.ons.gov.uk/economy/grossdomesticproductgdp/bulletins/gdpmonthlyestimateuk/november2024",
-            "release_date": "2025-01-16",
-            "title": "GDP monthly estimate, UK: November 2024",
-            "edition": "November 2024",
-            "vis": [
-                  {
-                        "url": "/visualisations/econgloss/widget_gloss/index.html",
-                        "chart_type": null
-                  }
-            ],
-            "theme": "economy",
-            "topic": "grossdomesticproductgdp",
-            "subtopic": null,
-            "series": "GDP monthly estimate, UK",
             "latest": false
       },
       {
@@ -10977,40 +10802,6 @@
             "subtopic": null,
             "series": "Business investment in the UK: July to September 2024 revised results",
             "latest": true
-      },
-      {
-            "doc_uri": "https://www.ons.gov.uk/economy/nationalaccounts/uksectoraccounts/bulletins/quarterlysectoraccounts/julytoseptember2024",
-            "release_date": "2024-12-23",
-            "title": "Quarterly sector accounts, UK: July to September 2024",
-            "edition": "July to September 2024",
-            "vis": [
-                  {
-                        "url": "/visualisations/econgloss/widget_gloss/index.html",
-                        "chart_type": null
-                  }
-            ],
-            "theme": "economy",
-            "topic": "nationalaccounts",
-            "subtopic": "uksectoraccounts",
-            "series": "Quarterly sector accounts, UK",
-            "latest": false
-      },
-      {
-            "doc_uri": "https://www.ons.gov.uk/economy/grossdomesticproductgdp/bulletins/quarterlynationalaccounts/julytoseptember2024",
-            "release_date": "2024-12-23",
-            "title": "GDP quarterly national accounts, UK: July to September 2024",
-            "edition": "July to September 2024",
-            "vis": [
-                  {
-                        "url": "/visualisations/econgloss/widget_gloss/index.html",
-                        "chart_type": null
-                  }
-            ],
-            "theme": "economy",
-            "topic": "grossdomesticproductgdp",
-            "subtopic": null,
-            "series": "GDP quarterly national accounts, UK",
-            "latest": false
       },
       {
             "doc_uri": "https://www.ons.gov.uk/economy/nationalaccounts/balanceofpayments/bulletins/balanceofpayments/julytoseptember2024",
@@ -11252,23 +11043,6 @@
             "topic": "nationalaccounts",
             "subtopic": "balanceofpayments",
             "series": "UK trade",
-            "latest": false
-      },
-      {
-            "doc_uri": "https://www.ons.gov.uk/economy/grossdomesticproductgdp/bulletins/gdpmonthlyestimateuk/october2024",
-            "release_date": "2024-12-13",
-            "title": "GDP monthly estimate, UK: October 2024",
-            "edition": "October 2024",
-            "vis": [
-                  {
-                        "url": "/visualisations/econgloss/widget_gloss/index.html",
-                        "chart_type": null
-                  }
-            ],
-            "theme": "economy",
-            "topic": "grossdomesticproductgdp",
-            "subtopic": null,
-            "series": "GDP monthly estimate, UK",
             "latest": false
       },
       {
@@ -11822,23 +11596,6 @@
             "latest": false
       },
       {
-            "doc_uri": "https://www.ons.gov.uk/economy/grossdomesticproductgdp/bulletins/gdpmonthlyestimateuk/september2024",
-            "release_date": "2024-11-15",
-            "title": "GDP monthly estimate, UK: September 2024",
-            "edition": "September 2024",
-            "vis": [
-                  {
-                        "url": "/visualisations/econgloss/widget_gloss/index.html",
-                        "chart_type": null
-                  }
-            ],
-            "theme": "economy",
-            "topic": "grossdomesticproductgdp",
-            "subtopic": null,
-            "series": "GDP monthly estimate, UK",
-            "latest": false
-      },
-      {
             "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/wellbeing/bulletins/publicopinionsandsocialtrendsgreatbritain/october2024",
             "release_date": "2024-11-15",
             "title": "Public opinions and social trends, Great Britain: October 2024",
@@ -11853,23 +11610,6 @@
             "topic": "wellbeing",
             "subtopic": null,
             "series": "Public opinions and social trends, Great Britain",
-            "latest": false
-      },
-      {
-            "doc_uri": "https://www.ons.gov.uk/economy/grossdomesticproductgdp/bulletins/gdpfirstquarterlyestimateuk/julytoseptember2024",
-            "release_date": "2024-11-15",
-            "title": "GDP first quarterly estimate, UK: July to September 2024",
-            "edition": "July to September 2024",
-            "vis": [
-                  {
-                        "url": "/visualisations/econgloss/widget_gloss/index.html",
-                        "chart_type": null
-                  }
-            ],
-            "theme": "economy",
-            "topic": "grossdomesticproductgdp",
-            "subtopic": null,
-            "series": "GDP first quarterly estimate, UK",
             "latest": false
       },
       {
@@ -12148,11 +11888,11 @@
                         "chart_type": "stacked-horizontal-bar-chart"
                   }
             ],
+            "series": "Who are the hybrid workers?",
+            "latest": true,
             "theme": "employmentandlabourmarket",
             "topic": "peopleinwork",
-            "subtopic": "employmentandemployeetypes",
-            "series": "Who are the hybrid workers?",
-            "latest": true
+            "subtopic": "employmentandemployeetypes"
       },
       {
             "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/birthsdeathsandmarriages/livebirths/bulletins/parentscountryofbirthenglandandwales/2023",
@@ -12945,23 +12685,6 @@
             "latest": false
       },
       {
-            "doc_uri": "https://www.ons.gov.uk/economy/grossdomesticproductgdp/bulletins/gdpmonthlyestimateuk/august2024",
-            "release_date": "2024-10-10",
-            "title": "GDP monthly estimate, UK: August 2024",
-            "edition": "August 2024",
-            "vis": [
-                  {
-                        "url": "/visualisations/econgloss/widget_gloss/index.html",
-                        "chart_type": null
-                  }
-            ],
-            "theme": "economy",
-            "topic": "grossdomesticproductgdp",
-            "subtopic": null,
-            "series": "GDP monthly estimate, UK",
-            "latest": false
-      },
-      {
             "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/birthsdeathsandmarriages/deaths/bulletins/deathsregistrationsummarytables/2023",
             "release_date": "2024-10-09",
             "title": "Deaths registered in England and Wales: 2023",
@@ -13130,23 +12853,6 @@
             "topic": "healthandsocialcare",
             "subtopic": "healthandlifeexpectancies",
             "series": "Adult smoking habits in the UK",
-            "latest": false
-      },
-      {
-            "doc_uri": "https://www.ons.gov.uk/economy/nationalaccounts/uksectoraccounts/bulletins/quarterlysectoraccounts/apriltojune2024",
-            "release_date": "2024-09-29",
-            "title": "Quarterly sector accounts, UK: April to June 2024",
-            "edition": "April to June 2024",
-            "vis": [
-                  {
-                        "url": "/visualisations/econgloss/widget_gloss/index.html",
-                        "chart_type": null
-                  }
-            ],
-            "theme": "economy",
-            "topic": "nationalaccounts",
-            "subtopic": "uksectoraccounts",
-            "series": "Quarterly sector accounts, UK",
             "latest": false
       },
       {
@@ -13493,23 +13199,6 @@
             "latest": true
       },
       {
-            "doc_uri": "https://www.ons.gov.uk/economy/grossdomesticproductgdp/bulletins/gdpmonthlyestimateuk/july2024",
-            "release_date": "2024-09-10",
-            "title": "GDP monthly estimate, UK: July 2024",
-            "edition": "July 2024",
-            "vis": [
-                  {
-                        "url": "/visualisations/econgloss/widget_gloss/index.html",
-                        "chart_type": null
-                  }
-            ],
-            "theme": "economy",
-            "topic": "grossdomesticproductgdp",
-            "subtopic": null,
-            "series": "GDP monthly estimate, UK",
-            "latest": false
-      },
-      {
             "doc_uri": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/earningsandworkinghours/bulletins/earningsandemploymentfrompayasyouearnrealtimeinformationuk/september2024",
             "release_date": "2024-09-09",
             "title": "Earnings and employment from Pay As You Earn Real Time Information, UK: September 2024",
@@ -13701,11 +13390,11 @@
                         "chart_type": "line-chart"
                   }
             ],
+            "series": "Waiting times for cancer treatment across the UK",
+            "latest": true,
             "theme": "peoplepopulationandcommunity",
             "topic": "healthandsocialcare",
-            "subtopic": "healthcaresystem",
-            "series": "Waiting times for cancer treatment across the UK",
-            "latest": true
+            "subtopic": "healthcaresystem"
       },
       {
             "doc_uri": "https://www.ons.gov.uk/economy/economicoutputandproductivity/output/bulletins/economicactivityandsocialchangeintheukrealtimeindicators/22august2024",
@@ -13784,23 +13473,6 @@
             "latest": false
       },
       {
-            "doc_uri": "https://www.ons.gov.uk/economy/grossdomesticproductgdp/bulletins/gdpfirstquarterlyestimateuk/apriltojune2024",
-            "release_date": "2024-08-14",
-            "title": "GDP first quarterly estimate, UK: April to June 2024",
-            "edition": "April to June 2024",
-            "vis": [
-                  {
-                        "url": "/visualisations/econgloss/widget_gloss/index.html",
-                        "chart_type": null
-                  }
-            ],
-            "theme": "economy",
-            "topic": "grossdomesticproductgdp",
-            "subtopic": null,
-            "series": "GDP first quarterly estimate, UK",
-            "latest": false
-      },
-      {
             "doc_uri": "https://www.ons.gov.uk/economy/nationalaccounts/balanceofpayments/bulletins/uktrade/june2024",
             "release_date": "2024-08-14",
             "title": "UK trade: June 2024",
@@ -13868,23 +13540,6 @@
             "topic": "peopleinwork",
             "subtopic": "labourproductivity",
             "series": "Productivity flash estimate and overview, UK",
-            "latest": false
-      },
-      {
-            "doc_uri": "https://www.ons.gov.uk/economy/grossdomesticproductgdp/bulletins/gdpmonthlyestimateuk/june2024",
-            "release_date": "2024-08-14",
-            "title": "GDP monthly estimate, UK: June 2024",
-            "edition": "June 2024",
-            "vis": [
-                  {
-                        "url": "/visualisations/econgloss/widget_gloss/index.html",
-                        "chart_type": null
-                  }
-            ],
-            "theme": "economy",
-            "topic": "grossdomesticproductgdp",
-            "subtopic": null,
-            "series": "GDP monthly estimate, UK",
             "latest": false
       },
       {
@@ -14032,11 +13687,11 @@
                         "chart_type": "line-chart"
                   }
             ],
+            "series": "Blue Book 2024: advanced aggregate estimates",
+            "latest": true,
             "theme": "economy",
             "topic": "grossdomesticproductgdp",
-            "subtopic": null,
-            "series": "Blue Book 2024: advanced aggregate estimates",
-            "latest": true
+            "subtopic": null
       },
       {
             "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/birthsdeathsandmarriages/deaths/bulletins/deathsregisteredweeklyinenglandandwalesprovisional/weekending26july2024",
@@ -14086,11 +13741,11 @@
                         "chart_type": "bar-chart"
                   }
             ],
+            "series": "Train tickets and hybrid cars: understanding spending habits",
+            "latest": true,
             "theme": "economy",
             "topic": "inflationandpriceindices",
-            "subtopic": null,
-            "series": "Train tickets and hybrid cars: understanding spending habits",
-            "latest": true
+            "subtopic": null
       },
       {
             "doc_uri": "https://www.ons.gov.uk/economy/economicoutputandproductivity/output/bulletins/economicactivityandsocialchangeintheukrealtimeindicators/1august2024",
@@ -14415,23 +14070,6 @@
             "latest": false
       },
       {
-            "doc_uri": "https://www.ons.gov.uk/economy/grossdomesticproductgdp/bulletins/gdpmonthlyestimateuk/may2024",
-            "release_date": "2024-07-10",
-            "title": "GDP monthly estimate, UK: May 2024",
-            "edition": "May 2024",
-            "vis": [
-                  {
-                        "url": "/visualisations/econgloss/widget_gloss/index.html",
-                        "chart_type": null
-                  }
-            ],
-            "theme": "economy",
-            "topic": "grossdomesticproductgdp",
-            "subtopic": null,
-            "series": "GDP monthly estimate, UK",
-            "latest": false
-      },
-      {
             "doc_uri": "https://www.ons.gov.uk/economy/economicoutputandproductivity/output/bulletins/economicactivityandsocialchangeintheukrealtimeindicators/11july2024",
             "release_date": "2024-07-10",
             "title": "Economic activity and social change in the UK, real-time indicators: 11 July 2024",
@@ -14599,23 +14237,6 @@
             "latest": true
       },
       {
-            "doc_uri": "https://www.ons.gov.uk/economy/grossdomesticproductgdp/bulletins/quarterlynationalaccounts/januarytomarch2024",
-            "release_date": "2024-06-27",
-            "title": "GDP quarterly national accounts, UK: January to March 2024",
-            "edition": "January to March 2024",
-            "vis": [
-                  {
-                        "url": "/visualisations/econgloss/widget_gloss/index.html",
-                        "chart_type": null
-                  }
-            ],
-            "theme": "economy",
-            "topic": "grossdomesticproductgdp",
-            "subtopic": null,
-            "series": "GDP quarterly national accounts, UK",
-            "latest": false
-      },
-      {
             "doc_uri": "https://www.ons.gov.uk/economy/nationalaccounts/balanceofpayments/bulletins/balanceofpayments/januarytomarch2024",
             "release_date": "2024-06-27",
             "title": "Balance of payments, UK: January to March 2024",
@@ -14630,23 +14251,6 @@
             "topic": "nationalaccounts",
             "subtopic": "balanceofpayments",
             "series": "Balance of payments, UK",
-            "latest": false
-      },
-      {
-            "doc_uri": "https://www.ons.gov.uk/economy/nationalaccounts/uksectoraccounts/bulletins/quarterlysectoraccounts/januarytomarch2024",
-            "release_date": "2024-06-27",
-            "title": "Quarterly sector accounts, UK: January to March 2024",
-            "edition": "January to March 2024",
-            "vis": [
-                  {
-                        "url": "/visualisations/econgloss/widget_gloss/index.html",
-                        "chart_type": null
-                  }
-            ],
-            "theme": "economy",
-            "topic": "nationalaccounts",
-            "subtopic": "uksectoraccounts",
-            "series": "Quarterly sector accounts, UK",
             "latest": false
       },
       {
@@ -14836,11 +14440,11 @@
                         "chart_type": "stacked-area-chart"
                   }
             ],
+            "series": "NHS planned care waiting times across the UK",
+            "latest": true,
             "theme": "peoplepopulationandcommunity",
             "topic": "healthandsocialcare",
-            "subtopic": "healthcaresystem",
-            "series": "NHS planned care waiting times across the UK",
-            "latest": true
+            "subtopic": "healthcaresystem"
       },
       {
             "doc_uri": "https://www.ons.gov.uk/economy/economicoutputandproductivity/output/articles/internationalconsumercardspendingukandabroad/2019to2023",
@@ -15010,23 +14614,6 @@
             "topic": "nationalaccounts",
             "subtopic": "balanceofpayments",
             "series": "UK trade",
-            "latest": false
-      },
-      {
-            "doc_uri": "https://www.ons.gov.uk/economy/grossdomesticproductgdp/bulletins/gdpmonthlyestimateuk/april2024",
-            "release_date": "2024-06-11",
-            "title": "GDP monthly estimate, UK: April 2024",
-            "edition": "April 2024",
-            "vis": [
-                  {
-                        "url": "/visualisations/econgloss/widget_gloss/index.html",
-                        "chart_type": null
-                  }
-            ],
-            "theme": "economy",
-            "topic": "grossdomesticproductgdp",
-            "subtopic": null,
-            "series": "GDP monthly estimate, UK",
             "latest": false
       },
       {
@@ -15634,23 +15221,6 @@
             "latest": true
       },
       {
-            "doc_uri": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/articles/employmentunemploymentandrelatedstatisticsforyourarea/2023-10-05",
-            "release_date": "2024-05-13",
-            "title": "Employment, unemployment and related statistics for your area",
-            "edition": null,
-            "vis": [
-                  {
-                        "url": "/visualisations/labourmarketlocal/landing/",
-                        "chart_type": null
-                  }
-            ],
-            "theme": "employmentandlabourmarket",
-            "topic": "peopleinwork",
-            "subtopic": "employmentandemployeetypes",
-            "series": "Employment, unemployment and related statistics for your area",
-            "latest": true
-      },
-      {
             "doc_uri": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/bulletins/uklabourmarket/may2024",
             "release_date": "2024-05-13",
             "title": "Labour market overview, UK: May 2024",
@@ -15739,23 +15309,6 @@
             "latest": false
       },
       {
-            "doc_uri": "https://www.ons.gov.uk/economy/grossdomesticproductgdp/bulletins/gdpfirstquarterlyestimateuk/januarytomarch2024",
-            "release_date": "2024-05-09",
-            "title": "GDP first quarterly estimate, UK: January to March 2024",
-            "edition": "January to March 2024",
-            "vis": [
-                  {
-                        "url": "/visualisations/econgloss/widget_gloss/index.html",
-                        "chart_type": null
-                  }
-            ],
-            "theme": "economy",
-            "topic": "grossdomesticproductgdp",
-            "subtopic": null,
-            "series": "GDP first quarterly estimate, UK",
-            "latest": false
-      },
-      {
             "doc_uri": "https://www.ons.gov.uk/economy/nationalaccounts/balanceofpayments/bulletins/uktrade/march2024",
             "release_date": "2024-05-09",
             "title": "UK trade: March 2024",
@@ -15806,23 +15359,6 @@
             "topic": "nationalaccounts",
             "subtopic": "balanceofpayments",
             "series": "UK trade",
-            "latest": false
-      },
-      {
-            "doc_uri": "https://www.ons.gov.uk/economy/grossdomesticproductgdp/bulletins/gdpmonthlyestimateuk/march2024",
-            "release_date": "2024-05-09",
-            "title": "GDP monthly estimate, UK: March 2024",
-            "edition": "March 2024",
-            "vis": [
-                  {
-                        "url": "/visualisations/econgloss/widget_gloss/index.html",
-                        "chart_type": null
-                  }
-            ],
-            "theme": "economy",
-            "topic": "grossdomesticproductgdp",
-            "subtopic": null,
-            "series": "GDP monthly estimate, UK",
             "latest": false
       },
       {
@@ -15929,23 +15465,6 @@
             "topic": "personalandhouseholdfinances",
             "subtopic": "incomeandwealth",
             "series": "Exploring the use of admin data to derive small area income estimates, England and Wales",
-            "latest": true
-      },
-      {
-            "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/housing/articles/whoismostexposedtorisinghousingcostsinenglandandwales/2024-04-25",
-            "release_date": "2024-04-24",
-            "title": "Who is most exposed to rising housing costs in England and Wales?",
-            "edition": null,
-            "vis": [
-                  {
-                        "url": "/visualisations/housingpressures/index.html",
-                        "chart_type": null
-                  }
-            ],
-            "theme": "peoplepopulationandcommunity",
-            "topic": "housing",
-            "subtopic": null,
-            "series": "Who is most exposed to rising housing costs in England and Wales?",
             "latest": true
       },
       {
@@ -16363,23 +15882,6 @@
             "latest": false
       },
       {
-            "doc_uri": "https://www.ons.gov.uk/economy/grossdomesticproductgdp/bulletins/gdpmonthlyestimateuk/february2024",
-            "release_date": "2024-04-11",
-            "title": "GDP monthly estimate, UK: February 2024",
-            "edition": "February 2024",
-            "vis": [
-                  {
-                        "url": "/visualisations/econgloss/widget_gloss/index.html",
-                        "chart_type": null
-                  }
-            ],
-            "theme": "economy",
-            "topic": "grossdomesticproductgdp",
-            "subtopic": null,
-            "series": "GDP monthly estimate, UK",
-            "latest": false
-      },
-      {
             "doc_uri": "https://www.ons.gov.uk/economy/economicoutputandproductivity/output/bulletins/economicactivityandsocialchangeintheukrealtimeindicators/11april2024",
             "release_date": "2024-04-10",
             "title": "Economic activity and social change in the UK, real-time indicators: 11 April 2024",
@@ -16585,40 +16087,6 @@
             "subtopic": "healthandwellbeing",
             "series": "Suicides in UK armed forces veterans, England and Wales",
             "latest": true
-      },
-      {
-            "doc_uri": "https://www.ons.gov.uk/economy/grossdomesticproductgdp/bulletins/quarterlynationalaccounts/octobertodecember2023",
-            "release_date": "2024-03-28",
-            "title": "GDP quarterly national accounts, UK: October to December 2023",
-            "edition": "October to December 2023",
-            "vis": [
-                  {
-                        "url": "/visualisations/econgloss/widget_gloss/index.html",
-                        "chart_type": null
-                  }
-            ],
-            "theme": "economy",
-            "topic": "grossdomesticproductgdp",
-            "subtopic": null,
-            "series": "GDP quarterly national accounts, UK",
-            "latest": false
-      },
-      {
-            "doc_uri": "https://www.ons.gov.uk/economy/nationalaccounts/uksectoraccounts/bulletins/quarterlysectoraccounts/octobertodecember2023",
-            "release_date": "2024-03-28",
-            "title": "Quarterly sector accounts, UK: October to December 2023",
-            "edition": "October to December 2023",
-            "vis": [
-                  {
-                        "url": "/visualisations/econgloss/widget_gloss/index.html",
-                        "chart_type": null
-                  }
-            ],
-            "theme": "economy",
-            "topic": "nationalaccounts",
-            "subtopic": "uksectoraccounts",
-            "series": "Quarterly sector accounts, UK",
-            "latest": false
       },
       {
             "doc_uri": "https://www.ons.gov.uk/economy/economicoutputandproductivity/output/bulletins/economicactivityandsocialchangeintheukrealtimeindicators/28march2024",
@@ -16844,23 +16312,6 @@
             "latest": true
       },
       {
-            "doc_uri": "https://www.ons.gov.uk/economy/inflationandpriceindices/articles/housingpricesinyourarea/2024-03-20",
-            "release_date": "2024-03-20",
-            "title": "Housing prices in your area",
-            "edition": null,
-            "vis": [
-                  {
-                        "url": "/visualisations/housingpriceslocal/landing",
-                        "chart_type": null
-                  }
-            ],
-            "theme": "economy",
-            "topic": "inflationandpriceindices",
-            "subtopic": null,
-            "series": "Housing prices in your area",
-            "latest": true
-      },
-      {
             "doc_uri": "https://www.ons.gov.uk/economy/inflationandpriceindices/bulletins/privaterentandhousepricesuk/march2024",
             "release_date": "2024-03-20",
             "title": "Private rent and house prices, UK: March 2024",
@@ -16945,11 +16396,11 @@
                         "chart_type": null
                   }
             ],
+            "series": "Explore: Which towns attract people with advanced education?",
+            "latest": true,
             "theme": "peoplepopulationandcommunity",
             "topic": "educationandchildcare",
-            "subtopic": null,
-            "series": "Explore: Which towns attract people with advanced education?",
-            "latest": true
+            "subtopic": null
       },
       {
             "doc_uri": "https://www.ons.gov.uk/economy/economicoutputandproductivity/output/bulletins/economicactivityandsocialchangeintheukrealtimeindicators/14march2024",
@@ -16966,23 +16417,6 @@
             "topic": "economicoutputandproductivity",
             "subtopic": "output",
             "series": "Economic activity and social change in the UK, real-time indicators",
-            "latest": false
-      },
-      {
-            "doc_uri": "https://www.ons.gov.uk/economy/grossdomesticproductgdp/bulletins/gdpmonthlyestimateuk/january2024",
-            "release_date": "2024-03-13",
-            "title": "GDP monthly estimate, UK: January 2024",
-            "edition": "January 2024",
-            "vis": [
-                  {
-                        "url": "/visualisations/econgloss/widget_gloss/index.html",
-                        "chart_type": null
-                  }
-            ],
-            "theme": "economy",
-            "topic": "grossdomesticproductgdp",
-            "subtopic": null,
-            "series": "GDP monthly estimate, UK",
             "latest": false
       },
       {
@@ -17486,23 +16920,6 @@
             "latest": false
       },
       {
-            "doc_uri": "https://www.ons.gov.uk/economy/grossdomesticproductgdp/bulletins/gdpfirstquarterlyestimateuk/octobertodecember2023",
-            "release_date": "2024-02-15",
-            "title": "GDP first quarterly estimate, UK: October to December 2023",
-            "edition": "October to December 2023",
-            "vis": [
-                  {
-                        "url": "/visualisations/econgloss/widget_gloss/index.html",
-                        "chart_type": null
-                  }
-            ],
-            "theme": "economy",
-            "topic": "grossdomesticproductgdp",
-            "subtopic": null,
-            "series": "GDP first quarterly estimate, UK",
-            "latest": false
-      },
-      {
             "doc_uri": "https://www.ons.gov.uk/economy/economicoutputandproductivity/output/bulletins/economicactivityandsocialchangeintheukrealtimeindicators/15february2024",
             "release_date": "2024-02-15",
             "title": "Economic activity and social change in the UK, real-time indicators: 15 February 2024",
@@ -17866,35 +17283,6 @@
             "latest": false
       },
       {
-            "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/populationestimates/articles/createapopulationgroupprofile/2023-10-24",
-            "release_date": "2024-01-18",
-            "title": "Create a population group profile",
-            "edition": null,
-            "vis": [
-                  {
-                        "url": "/visualisations/populationprofiles/",
-                        "chart_type": null
-                  },
-                  {
-                        "url": "/visualisations/populationprofiles/?main_language_23a=6",
-                        "chart_type": null
-                  },
-                  {
-                        "url": "/visualisations/populationprofiles/?country_of_birth_3a=1&disability_3a=1",
-                        "chart_type": null
-                  },
-                  {
-                        "url": "/visualisations/populationprofiles/?resident_age_3a=2&sex=1&country_of_birth_3a=1",
-                        "chart_type": null
-                  }
-            ],
-            "theme": "peoplepopulationandcommunity",
-            "topic": "populationandmigration",
-            "subtopic": "populationestimates",
-            "series": "Create a population group profile",
-            "latest": true
-      },
-      {
             "doc_uri": "https://www.ons.gov.uk/economy/economicoutputandproductivity/output/bulletins/economicactivityandsocialchangeintheukrealtimeindicators/18january2024",
             "release_date": "2024-01-18",
             "title": "Economic activity and social change in the UK, real-time indicators: 18 January 2024",
@@ -18148,40 +17536,6 @@
             "topic": "business",
             "subtopic": "businessservices",
             "series": "Business insights and impact on the UK economy",
-            "latest": false
-      },
-      {
-            "doc_uri": "https://www.ons.gov.uk/economy/grossdomesticproductgdp/bulletins/quarterlynationalaccounts/julytoseptember2023",
-            "release_date": "2023-12-22",
-            "title": "GDP quarterly national accounts, UK: July to September 2023",
-            "edition": "July to September 2023",
-            "vis": [
-                  {
-                        "url": "/visualisations/econgloss/widget_gloss/index.html",
-                        "chart_type": null
-                  }
-            ],
-            "theme": "economy",
-            "topic": "grossdomesticproductgdp",
-            "subtopic": null,
-            "series": "GDP quarterly national accounts, UK",
-            "latest": false
-      },
-      {
-            "doc_uri": "https://www.ons.gov.uk/economy/nationalaccounts/uksectoraccounts/bulletins/quarterlysectoraccounts/julytoseptember2023",
-            "release_date": "2023-12-22",
-            "title": "Quarterly sector accounts, UK: July to September 2023",
-            "edition": "July to September 2023",
-            "vis": [
-                  {
-                        "url": "/visualisations/econgloss/widget_gloss/index.html",
-                        "chart_type": null
-                  }
-            ],
-            "theme": "economy",
-            "topic": "nationalaccounts",
-            "subtopic": "uksectoraccounts",
-            "series": "Quarterly sector accounts, UK",
             "latest": false
       },
       {
@@ -19306,11 +18660,11 @@
                         "chart_type": "line-chart"
                   }
             ],
+            "series": "A million fewer people are gaining health benefits from nature since 2020",
+            "latest": true,
             "theme": "economy",
             "topic": "environmentalaccounts",
-            "subtopic": null,
-            "series": "A million fewer people are gaining health benefits from nature since 2020",
-            "latest": true
+            "subtopic": null
       },
       {
             "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/crimeandjustice/bulletins/domesticabuseinenglandandwalesoverview/november2023",
@@ -19451,11 +18805,11 @@
                         "chart_type": null
                   }
             ],
+            "series": "Estimating UK international migration",
+            "latest": true,
             "theme": "peoplepopulationandcommunity",
             "topic": "populationandmigration",
-            "subtopic": "internationalmigration",
-            "series": "Estimating UK international migration",
-            "latest": true
+            "subtopic": "internationalmigration"
       },
       {
             "doc_uri": "https://www.ons.gov.uk/economy/economicoutputandproductivity/output/bulletins/economicactivityandsocialchangeintheukrealtimeindicators/23november2023",
@@ -19506,23 +18860,6 @@
             "topic": "birthsdeathsandmarriages",
             "subtopic": "deaths",
             "series": "Deaths registered weekly in England and Wales, provisional: week ending 10 November 2023",
-            "latest": true
-      },
-      {
-            "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/populationestimates/articles/origindestinationdataexplorercensus2021/2023-11-21",
-            "release_date": "2023-11-21",
-            "title": "Origin-destination data explorer: Census 2021",
-            "edition": null,
-            "vis": [
-                  {
-                        "url": "/visualisations/censusorigindestination/",
-                        "chart_type": null
-                  }
-            ],
-            "theme": "peoplepopulationandcommunity",
-            "topic": "populationandmigration",
-            "subtopic": "populationestimates",
-            "series": "Origin-destination data explorer: Census 2021",
             "latest": true
       },
       {
@@ -19649,23 +18986,6 @@
             "topic": "peopleinwork",
             "subtopic": "employmentandemployeetypes",
             "series": "Labour market overview, UK",
-            "latest": false
-      },
-      {
-            "doc_uri": "https://www.ons.gov.uk/economy/grossdomesticproductgdp/bulletins/gdpfirstquarterlyestimateuk/julytoseptember2023",
-            "release_date": "2023-11-10",
-            "title": "GDP first quarterly estimate, UK: July to September 2023",
-            "edition": "July to September 2023",
-            "vis": [
-                  {
-                        "url": "/visualisations/econgloss/widget_gloss/index.html",
-                        "chart_type": null
-                  }
-            ],
-            "theme": "economy",
-            "topic": "grossdomesticproductgdp",
-            "subtopic": null,
-            "series": "GDP first quarterly estimate, UK",
             "latest": false
       },
       {
@@ -19951,11 +19271,11 @@
                         "chart_type": "stacked-horizontal-bar-chart"
                   }
             ],
+            "series": "Young people from disadvantaged backgrounds feel less in control of their futures",
+            "latest": true,
             "theme": "peoplepopulationandcommunity",
             "topic": "educationandchildcare",
-            "subtopic": null,
-            "series": "Young people from disadvantaged backgrounds feel less in control of their futures",
-            "latest": true
+            "subtopic": null
       },
       {
             "doc_uri": "https://www.ons.gov.uk/economy/economicoutputandproductivity/output/articles/regionalconsumercardspendinguk/2019to2023",
@@ -20498,27 +19818,6 @@
             "latest": false
       },
       {
-            "doc_uri": "https://www.ons.gov.uk/economy/regionalaccounts/grossdisposablehouseholdincome/articles/subnationalstatisticsandanalysiscurrentandupcomingwork/october2023",
-            "release_date": "2023-10-22",
-            "title": "Subnational statistics and analysis, current and upcoming work: October 2023",
-            "edition": "October 2023",
-            "vis": [
-                  {
-                        "url": "/visualisations/areas",
-                        "chart_type": null
-                  },
-                  {
-                        "url": "/visualisations/areas/",
-                        "chart_type": null
-                  }
-            ],
-            "theme": "economy",
-            "topic": "regionalaccounts",
-            "subtopic": "grossdisposablehouseholdincome",
-            "series": "Subnational statistics and analysis, current and upcoming work",
-            "latest": true
-      },
-      {
             "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/housing/bulletins/privaterentalaffordabilityengland/2022",
             "release_date": "2023-10-22",
             "title": "Private rental affordability, England, Wales and Northern Ireland: 2022",
@@ -20976,11 +20275,11 @@
                         "chart_type": null
                   }
             ],
+            "series": "Older people living in care homes in 2021 and changes since 2011",
+            "latest": true,
             "theme": "peoplepopulationandcommunity",
             "topic": "birthsdeathsandmarriages",
-            "subtopic": "ageing",
-            "series": "Older people living in care homes in 2021 and changes since 2011",
-            "latest": true
+            "subtopic": "ageing"
       },
       {
             "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/healthandsocialcare/healthcaresystem/articles/inequalitiesinaccidentandemergencydepartmentattendanceengland/march2021tomarch2022",
@@ -21148,57 +20447,6 @@
             "subtopic": "balanceofpayments",
             "series": "Balance of payments, UK",
             "latest": false
-      },
-      {
-            "doc_uri": "https://www.ons.gov.uk/economy/nationalaccounts/uksectoraccounts/bulletins/quarterlysectoraccounts/apriltojune2023",
-            "release_date": "2023-09-28",
-            "title": "Quarterly sector accounts, UK: April to June 2023",
-            "edition": "April to June 2023",
-            "vis": [
-                  {
-                        "url": "/visualisations/econgloss/widget_gloss/index.html",
-                        "chart_type": null
-                  }
-            ],
-            "theme": "economy",
-            "topic": "nationalaccounts",
-            "subtopic": "uksectoraccounts",
-            "series": "Quarterly sector accounts, UK",
-            "latest": false
-      },
-      {
-            "doc_uri": "https://www.ons.gov.uk/economy/grossdomesticproductgdp/bulletins/quarterlynationalaccounts/apriltojune2023",
-            "release_date": "2023-09-28",
-            "title": "GDP quarterly national accounts, UK: April to June 2023",
-            "edition": "April to June 2023",
-            "vis": [
-                  {
-                        "url": "/visualisations/econgloss/widget_gloss/index.html",
-                        "chart_type": null
-                  }
-            ],
-            "theme": "economy",
-            "topic": "grossdomesticproductgdp",
-            "subtopic": null,
-            "series": "GDP quarterly national accounts, UK",
-            "latest": false
-      },
-      {
-            "doc_uri": "https://www.ons.gov.uk/economy/nationalaccounts/uksectoraccounts/articles/detailedassessmentofchangestoinstitutionalsectoraccounts/1997to2021",
-            "release_date": "2023-09-28",
-            "title": "Detailed assessment of changes to institutional sector accounts: 1997 to 2021",
-            "edition": "1997 to 2021",
-            "vis": [
-                  {
-                        "url": "/visualisations/econgloss/widget_gloss/index.html",
-                        "chart_type": null
-                  }
-            ],
-            "theme": "economy",
-            "topic": "nationalaccounts",
-            "subtopic": "uksectoraccounts",
-            "series": "Detailed assessment of changes to institutional sector accounts",
-            "latest": true
       },
       {
             "doc_uri": "https://www.ons.gov.uk/economy/economicoutputandproductivity/output/bulletins/economicactivityandsocialchangeintheukrealtimeindicators/28september2023",
@@ -21645,11 +20893,11 @@
                         "chart_type": null
                   }
             ],
+            "series": "Centenarians living in England and Wales in 2021",
+            "latest": true,
             "theme": "peoplepopulationandcommunity",
             "topic": "birthsdeathsandmarriages",
-            "subtopic": "ageing",
-            "series": "Centenarians living in England and Wales in 2021",
-            "latest": true
+            "subtopic": "ageing"
       },
       {
             "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/internationalmigration/articles/analysisofsocialcharacteristicsofinternationalmigrantslivinginenglandandwales/census2021",
@@ -21820,11 +21068,11 @@
                         "chart_type": null
                   }
             ],
+            "series": "Characteristics of those not in employment as of Census Day 2021",
+            "latest": true,
             "theme": "employmentandlabourmarket",
             "topic": "peoplenotinwork",
-            "subtopic": "unemployment",
-            "series": "Characteristics of those not in employment as of Census Day 2021",
-            "latest": true
+            "subtopic": "unemployment"
       },
       {
             "doc_uri": "https://www.ons.gov.uk/economy/regionalaccounts/grossdisposablehouseholdincome/bulletins/regionalgrossdisposablehouseholdincomegdhi/1997to2021",
@@ -21907,23 +21155,6 @@
             "topic": "nationalaccounts",
             "subtopic": "balanceofpayments",
             "series": "UK trade",
-            "latest": false
-      },
-      {
-            "doc_uri": "https://www.ons.gov.uk/economy/grossdomesticproductgdp/bulletins/gdpmonthlyestimateuk/july2023",
-            "release_date": "2023-09-12",
-            "title": "GDP monthly estimate, UK: July 2023",
-            "edition": "July 2023",
-            "vis": [
-                  {
-                        "url": "/visualisations/econgloss/widget_gloss/index.html",
-                        "chart_type": null
-                  }
-            ],
-            "theme": "economy",
-            "topic": "grossdomesticproductgdp",
-            "subtopic": null,
-            "series": "GDP monthly estimate, UK",
             "latest": false
       },
       {
@@ -22143,23 +21374,6 @@
             "latest": true
       },
       {
-            "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/educationandchildcare/articles/studentvoicesexperiencesoftherisingcostofliving/2023-09-06",
-            "release_date": "2023-09-05",
-            "title": "Student voices: experiences of the rising cost of living",
-            "edition": null,
-            "vis": [
-                  {
-                        "url": "/visualisations/studentvoices/css/voices-students.css",
-                        "chart_type": null
-                  }
-            ],
-            "theme": "peoplepopulationandcommunity",
-            "topic": "educationandchildcare",
-            "subtopic": null,
-            "series": "Student voices: experiences of the rising cost of living",
-            "latest": true
-      },
-      {
             "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/birthsdeathsandmarriages/deaths/bulletins/deathsregisteredweeklyinenglandandwalesprovisional/weekending25august2023",
             "release_date": "2023-09-04",
             "title": "Deaths registered weekly in England and Wales, provisional: week ending 25 August 2023",
@@ -22217,23 +21431,6 @@
             "subtopic": "output",
             "series": "Economic activity and social change in the UK, real-time indicators",
             "latest": false
-      },
-      {
-            "doc_uri": "https://www.ons.gov.uk/economy/grossdomesticproductgdp/articles/impactofbluebook2023changesongrossdomesticproduct/2023-09-01",
-            "release_date": "2023-08-31",
-            "title": "Impact of Blue Book 2023 changes on gross domestic product",
-            "edition": null,
-            "vis": [
-                  {
-                        "url": "/visualisations/econgloss/widget_gloss/index.html",
-                        "chart_type": null
-                  }
-            ],
-            "theme": "economy",
-            "topic": "grossdomesticproductgdp",
-            "subtopic": null,
-            "series": "Impact of Blue Book 2023 changes on gross domestic product",
-            "latest": true
       },
       {
             "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/healthandsocialcare/healthinequalities/bulletins/sociodemographicdifferencesintheriskoftestingpositiveforcoronaviruscovid19england/12september2020to13december2021",
@@ -22617,23 +21814,6 @@
             "latest": false
       },
       {
-            "doc_uri": "https://www.ons.gov.uk/economy/nationalaccounts/uksectoraccounts/bulletins/profitabilityofukcompanies/januarytomarch2023",
-            "release_date": "2023-08-16",
-            "title": "Profitability of UK companies: January to March 2023",
-            "edition": "January to March 2023",
-            "vis": [
-                  {
-                        "url": "/visualisations/econgloss/widget_gloss/index.html",
-                        "chart_type": null
-                  }
-            ],
-            "theme": "economy",
-            "topic": "nationalaccounts",
-            "subtopic": "uksectoraccounts",
-            "series": "Profitability of UK companies",
-            "latest": false
-      },
-      {
             "doc_uri": "https://www.ons.gov.uk/economy/economicoutputandproductivity/output/bulletins/economicactivityandsocialchangeintheukrealtimeindicators/17august2023",
             "release_date": "2023-08-16",
             "title": "Economic activity and social change in the UK, real-time indicators: 17 August 2023",
@@ -22808,23 +21988,6 @@
             "subtopic": null,
             "series": "Business investment in the UK: April to June 2023 provisional results",
             "latest": true
-      },
-      {
-            "doc_uri": "https://www.ons.gov.uk/economy/grossdomesticproductgdp/bulletins/gdpfirstquarterlyestimateuk/apriltojune2023",
-            "release_date": "2023-08-10",
-            "title": "GDP first quarterly estimate, UK: April to June 2023",
-            "edition": "April to June 2023",
-            "vis": [
-                  {
-                        "url": "/visualisations/econgloss/widget_gloss/index.html",
-                        "chart_type": null
-                  }
-            ],
-            "theme": "economy",
-            "topic": "grossdomesticproductgdp",
-            "subtopic": null,
-            "series": "GDP first quarterly estimate, UK",
-            "latest": false
       },
       {
             "doc_uri": "https://www.ons.gov.uk/economy/nationalaccounts/balanceofpayments/bulletins/uktrade/june2023",
@@ -23436,23 +22599,6 @@
             "latest": false
       },
       {
-            "doc_uri": "https://www.ons.gov.uk/economy/grossdomesticproductgdp/bulletins/gdpmonthlyestimateuk/may2023",
-            "release_date": "2023-07-12",
-            "title": "GDP monthly estimate, UK: May 2023",
-            "edition": "May 2023",
-            "vis": [
-                  {
-                        "url": "/visualisations/econgloss/widget_gloss/index.html",
-                        "chart_type": null
-                  }
-            ],
-            "theme": "economy",
-            "topic": "grossdomesticproductgdp",
-            "subtopic": null,
-            "series": "GDP monthly estimate, UK",
-            "latest": false
-      },
-      {
             "doc_uri": "https://www.ons.gov.uk/economy/nationalaccounts/balanceofpayments/bulletins/uktrade/may2023",
             "release_date": "2023-07-12",
             "title": "UK trade: May 2023",
@@ -23722,23 +22868,6 @@
             "topic": "nationalaccounts",
             "subtopic": "balanceofpayments",
             "series": "Balance of payments, UK",
-            "latest": false
-      },
-      {
-            "doc_uri": "https://www.ons.gov.uk/economy/nationalaccounts/uksectoraccounts/bulletins/quarterlysectoraccounts/januarytomarch2023",
-            "release_date": "2023-06-29",
-            "title": "Quarterly sector accounts, UK: January to March 2023",
-            "edition": "January to March 2023",
-            "vis": [
-                  {
-                        "url": "/visualisations/econgloss/widget_gloss/index.html",
-                        "chart_type": null
-                  }
-            ],
-            "theme": "economy",
-            "topic": "nationalaccounts",
-            "subtopic": "uksectoraccounts",
-            "series": "Quarterly sector accounts, UK",
             "latest": false
       },
       {
