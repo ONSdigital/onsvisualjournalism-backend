@@ -66,6 +66,24 @@
             "vis_urls": []
       },
       {
+            "doc_uri": "https://www.ons.gov.uk/economy/nationalaccounts/articles/dashboardunderstandingtheukeconomy/2017-02-22",
+            "release_date": "2026-11-17",
+            "title": "Understanding the UK economy",
+            "vis_urls": [
+                  "/visualisations/dvc368/dashboard/index.html"
+            ],
+            "enrichment": {
+                  "source_signature": "64d2a91b00d8776f06852dfc9dc69b60d556fc8222925ecc2505a5ac2e808d07",
+                  "edition": null,
+                  "vis": [
+                        {
+                              "url": "/visualisations/dvc368/dashboard/index.html",
+                              "chart_type": null
+                        }
+                  ]
+            }
+      },
+      {
             "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/housing/bulletins/shorttermletsthroughonlinecollaborativeeconomyplatformsuk/july2023tojune2026",
             "release_date": "2026-11-13",
             "title": "Short-term lets through online collaborative economy platforms, UK:  July 2023 to June 2026",
@@ -75,6 +93,24 @@
                   "/visualisations/dvc3682/Fig03/index.html",
                   "/visualisations/dvc3682/Fig04/index.html"
             ]
+      },
+      {
+            "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/housing/articles/howaffordablearehomesinyourneighbourhood/2026-03-26",
+            "release_date": "2026-11-13",
+            "title": "How affordable are homes in your neighbourhood?",
+            "vis_urls": [
+                  "/visualisations/affordabilityexplorer/"
+            ],
+            "enrichment": {
+                  "source_signature": "23ec09b62cbdad31b0844afcb62164a62e48bff6c86e29448059e580709b0c67",
+                  "edition": null,
+                  "vis": [
+                        {
+                              "url": "/visualisations/affordabilityexplorer/",
+                              "chart_type": null
+                        }
+                  ]
+            }
       },
       {
             "doc_uri": "https://www.ons.gov.uk/economy/grossdomesticproductgdp/bulletins/businessinvestment/julytoseptember2026provisionalresults",
@@ -303,6 +339,18 @@
             ]
       },
       {
+            "doc_uri": "https://www.ons.gov.uk/businessindustryandtrade/retailindustry/bulletins/retailsales/september2026",
+            "release_date": "2026-10-23",
+            "title": "Retail sales, Great Britain: September 2026",
+            "vis_urls": []
+      },
+      {
+            "doc_uri": "https://www.ons.gov.uk/businessindustryandtrade/constructionindustry/articles/constructionstatistics/2025",
+            "release_date": "2026-10-23",
+            "title": "Construction statistics, Great Britain: 2025",
+            "vis_urls": []
+      },
+      {
             "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/birthsdeathsandmarriages/ageing/bulletins/estimatesoftheveryoldincludingcentenarians/2002to2025",
             "release_date": "2026-10-22",
             "title": "Estimates of the very old, including centenarians, UK: 2002 to 2025",
@@ -336,16 +384,31 @@
             }
       },
       {
-            "doc_uri": "https://www.ons.gov.uk/businessindustryandtrade/retailindustry/bulletins/retailsales/september2026",
-            "release_date": "2026-10-23",
-            "title": "Retail sales, Great Britain: September 2026",
+            "doc_uri": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/earningsandworkinghours/bulletins/annualsurveyofhoursandearnings/2026",
+            "release_date": "2026-10-22",
+            "title": "Employee earnings in the UK: 2026",
+            "vis_urls": [
+                  "/visualisations/dvc3663/fig01/index.html",
+                  "/visualisations/dvc3663/fig03/index.html",
+                  "/visualisations/dvc3663/fig05/index.html",
+                  "/visualisations/dvc3663/fig07/index.html",
+                  "/visualisations/dvc3663/fig08/index.html"
+            ]
+      },
+      {
+            "doc_uri": "https://www.ons.gov.uk/businessindustryandtrade/business/businessservices/bulletins/businessinsightsandimpactontheukeconomy/22october2026",
+            "release_date": "2026-10-22",
+            "title": "Business insights and impact on the UK economy: 22 October 2026",
             "vis_urls": []
       },
       {
-            "doc_uri": "https://www.ons.gov.uk/businessindustryandtrade/constructionindustry/articles/constructionstatistics/2025",
-            "release_date": "2026-10-23",
-            "title": "Construction statistics, Great Britain: 2025",
-            "vis_urls": []
+            "doc_uri": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/earningsandworkinghours/bulletins/lowandhighpayuk/2026",
+            "release_date": "2026-10-22",
+            "title": "Low and high pay in the UK: 2026",
+            "vis_urls": [
+                  "/visualisations/dvc3656/fig02/index.html",
+                  "/visualisations/dvc3656/fig04/index.html"
+            ]
       },
       {
             "doc_uri": "https://www.ons.gov.uk/economy/economicoutputandproductivity/output/articles/economicactivityandsocialchangerealtimeindicatorsukdashboard/2026-03-05",
@@ -409,18 +472,6 @@
             }
       },
       {
-            "doc_uri": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/earningsandworkinghours/bulletins/annualsurveyofhoursandearnings/2026",
-            "release_date": "2026-10-22",
-            "title": "Employee earnings in the UK: 2026",
-            "vis_urls": [
-                  "/visualisations/dvc3663/fig01/index.html",
-                  "/visualisations/dvc3663/fig03/index.html",
-                  "/visualisations/dvc3663/fig05/index.html",
-                  "/visualisations/dvc3663/fig07/index.html",
-                  "/visualisations/dvc3663/fig08/index.html"
-            ]
-      },
-      {
             "doc_uri": "https://www.ons.gov.uk/economy/economicoutputandproductivity/output/bulletins/economicactivityandsocialchangeintheukrealtimeindicators/22october2026",
             "release_date": "2026-10-21",
             "title": "Economic activity and social change in the UK, real-time indicators: 22 October 2026",
@@ -449,12 +500,6 @@
             }
       },
       {
-            "doc_uri": "https://www.ons.gov.uk/businessindustryandtrade/business/businessservices/bulletins/businessinsightsandimpactontheukeconomy/22october2026",
-            "release_date": "2026-10-22",
-            "title": "Business insights and impact on the UK economy: 22 October 2026",
-            "vis_urls": []
-      },
-      {
             "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/crimeandjustice/bulletins/crimeinenglandandwales/yearendingjune2026",
             "release_date": "2026-10-21",
             "title": "Crime in England and Wales: year ending June 2026",
@@ -473,13 +518,28 @@
             }
       },
       {
-            "doc_uri": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/earningsandworkinghours/bulletins/lowandhighpayuk/2026",
-            "release_date": "2026-10-22",
-            "title": "Low and high pay in the UK: 2026",
-            "vis_urls": [
-                  "/visualisations/dvc3656/fig02/index.html",
-                  "/visualisations/dvc3656/fig04/index.html"
-            ]
+            "doc_uri": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/bulletins/jobsandvacanciesintheuk/october2026",
+            "release_date": "2026-10-20",
+            "title": "Vacancies and jobs in the UK: October 2026",
+            "vis_urls": []
+      },
+      {
+            "doc_uri": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/bulletins/averageweeklyearningsingreatbritain/october2026",
+            "release_date": "2026-10-20",
+            "title": "Average weekly earnings in Great Britain: October 2026",
+            "vis_urls": []
+      },
+      {
+            "doc_uri": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/bulletins/employmentintheuk/october2026",
+            "release_date": "2026-10-20",
+            "title": "Employment in the UK: October 2026",
+            "vis_urls": []
+      },
+      {
+            "doc_uri": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/bulletins/regionallabourmarket/october2026",
+            "release_date": "2026-10-20",
+            "title": "Labour market in the regions of the UK: October 2026",
+            "vis_urls": []
       },
       {
             "doc_uri": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/articles/labourforcesurveyqualityupdate/october2026",
@@ -518,18 +578,6 @@
             }
       },
       {
-            "doc_uri": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/bulletins/jobsandvacanciesintheuk/october2026",
-            "release_date": "2026-10-20",
-            "title": "Vacancies and jobs in the UK: October 2026",
-            "vis_urls": []
-      },
-      {
-            "doc_uri": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/bulletins/averageweeklyearningsingreatbritain/october2026",
-            "release_date": "2026-10-20",
-            "title": "Average weekly earnings in Great Britain: October 2026",
-            "vis_urls": []
-      },
-      {
             "doc_uri": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/earningsandworkinghours/bulletins/earningsandemploymentfrompayasyouearnrealtimeinformationuk/october2026",
             "release_date": "2026-10-19",
             "title": "Earnings and employment from Pay As You Earn Real Time Information, UK: October 2026",
@@ -561,18 +609,6 @@
                         }
                   ]
             }
-      },
-      {
-            "doc_uri": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/bulletins/employmentintheuk/october2026",
-            "release_date": "2026-10-20",
-            "title": "Employment in the UK: October 2026",
-            "vis_urls": []
-      },
-      {
-            "doc_uri": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/bulletins/regionallabourmarket/october2026",
-            "release_date": "2026-10-20",
-            "title": "Labour market in the regions of the UK: October 2026",
-            "vis_urls": []
       },
       {
             "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/birthsdeathsandmarriages/deaths/bulletins/quarterlysuicidedeathregistrationsinengland/2001to2025registrationsandquarter1jantomartoquarter2aprtojune2026provisionaldata",
@@ -651,6 +687,12 @@
             }
       },
       {
+            "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/armedforcescommunity/methodologies/ukarmedforcesveteransenglandandwalesqualityandmethodsguide",
+            "release_date": "2026-10-13",
+            "title": "UK armed forces veterans, England and Wales quality and methods guide",
+            "vis_urls": []
+      },
+      {
             "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/birthsdeathsandmarriages/deaths/bulletins/suicidesintheunitedkingdom/1981to2025",
             "release_date": "2026-10-12",
             "title": "Suicides in England and Wales: 1981 to 2025",
@@ -705,12 +747,6 @@
                         }
                   ]
             }
-      },
-      {
-            "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/armedforcescommunity/methodologies/ukarmedforcesveteransenglandandwalesqualityandmethodsguide",
-            "release_date": "2026-10-13",
-            "title": "UK armed forces veterans, England and Wales quality and methods guide",
-            "vis_urls": []
       },
       {
             "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/armedforcescommunity/bulletins/ukarmedforcesveteransenglandandwales/2024and2025",
@@ -835,6 +871,12 @@
             "vis_urls": []
       },
       {
+            "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/birthsdeathsandmarriages/deaths/methodologies/deathsofhomelesspeopleinenglandandwalesqmi",
+            "release_date": "2026-10-01",
+            "title": "Deaths of people experiencing homelessness in England and Wales QMI",
+            "vis_urls": []
+      },
+      {
             "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/birthsdeathsandmarriages/deaths/bulletins/deathsofhomelesspeopleinenglandandwales/2013to2025registrations",
             "release_date": "2026-09-30",
             "title": "Deaths of people experiencing homelessness in England and Wales: 2013 to 2025 registrations",
@@ -856,12 +898,6 @@
                         }
                   ]
             }
-      },
-      {
-            "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/birthsdeathsandmarriages/deaths/methodologies/deathsofhomelesspeopleinenglandandwalesqmi",
-            "release_date": "2026-10-01",
-            "title": "Deaths of people experiencing homelessness in England and Wales QMI",
-            "vis_urls": []
       },
       {
             "doc_uri": "https://www.ons.gov.uk/economy/nationalaccounts/uksectoraccounts/articles/quarterlyeconomiccommentary/apriltojune2026",
@@ -1002,6 +1038,12 @@
             ]
       },
       {
+            "doc_uri": "https://www.ons.gov.uk/businessindustryandtrade/retailindustry/bulletins/retailsales/august2026",
+            "release_date": "2026-09-18",
+            "title": "Retail sales, Great Britain: August 2026",
+            "vis_urls": []
+      },
+      {
             "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/housing/bulletins/mortgagestatisticsuk/2025",
             "release_date": "2026-09-17",
             "title": "Mortgage statistics, UK: 2025",
@@ -1066,9 +1108,15 @@
             }
       },
       {
-            "doc_uri": "https://www.ons.gov.uk/businessindustryandtrade/retailindustry/bulletins/retailsales/august2026",
-            "release_date": "2026-09-18",
-            "title": "Retail sales, Great Britain: August 2026",
+            "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/educationandchildcare/articles/childrenandyoungpeoplesperspectivesonsharingtheirviewsandinformationwiththeukgovernment/march2026",
+            "release_date": "2026-09-17",
+            "title": "Children and young people's perspectives on sharing their views and information with the UK government: March 2026",
+            "vis_urls": []
+      },
+      {
+            "doc_uri": "https://www.ons.gov.uk/economy/economicoutputandproductivity/productivitymeasures/methodologies/componentapproachtomeasuringlabourproductivityuk1997to2024",
+            "release_date": "2026-09-17",
+            "title": "Component approach to measuring labour productivity, UK: 1997 to 2024",
             "vis_urls": []
       },
       {
@@ -1100,21 +1148,39 @@
             }
       },
       {
-            "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/educationandchildcare/articles/childrenandyoungpeoplesperspectivesonsharingtheirviewsandinformationwiththeukgovernment/march2026",
-            "release_date": "2026-09-17",
-            "title": "Children and young people's perspectives on sharing their views and information with the UK government: March 2026",
-            "vis_urls": []
-      },
-      {
-            "doc_uri": "https://www.ons.gov.uk/economy/economicoutputandproductivity/productivitymeasures/methodologies/componentapproachtomeasuringlabourproductivityuk1997to2024",
-            "release_date": "2026-09-17",
-            "title": "Component approach to measuring labour productivity, UK: 1997 to 2024",
-            "vis_urls": []
-      },
-      {
             "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/healthandsocialcare/healthcaresystem/bulletins/relationshipbetweentimespentinemergencydepartmentsemploymentandhospitalisationengland/2021to2025",
             "release_date": "2026-09-16",
             "title": "Relationship between time spent in emergency departments, employment, and hospitalisation, England: 2021 to 2025",
+            "vis_urls": []
+      },
+      {
+            "doc_uri": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/bulletins/averageweeklyearningsingreatbritain/september2026",
+            "release_date": "2026-09-15",
+            "title": "Average weekly earnings in Great Britain: September 2026",
+            "vis_urls": []
+      },
+      {
+            "doc_uri": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/bulletins/regionallabourmarket/september2026",
+            "release_date": "2026-09-15",
+            "title": "Labour market in the regions of the UK: September 2026",
+            "vis_urls": []
+      },
+      {
+            "doc_uri": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/bulletins/jobsandvacanciesintheuk/september2026",
+            "release_date": "2026-09-15",
+            "title": "Vacancies and jobs in the UK: September 2026",
+            "vis_urls": []
+      },
+      {
+            "doc_uri": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/bulletins/employmentintheuk/september2026",
+            "release_date": "2026-09-15",
+            "title": "Employment in the UK: September 2026",
+            "vis_urls": []
+      },
+      {
+            "doc_uri": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/publicsectorpersonnel/bulletins/publicsectoremployment/june2026",
+            "release_date": "2026-09-15",
+            "title": "Public sector employment, UK: June 2026",
             "vis_urls": []
       },
       {
@@ -1151,24 +1217,6 @@
             }
       },
       {
-            "doc_uri": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/bulletins/averageweeklyearningsingreatbritain/september2026",
-            "release_date": "2026-09-15",
-            "title": "Average weekly earnings in Great Britain: September 2026",
-            "vis_urls": []
-      },
-      {
-            "doc_uri": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/bulletins/regionallabourmarket/september2026",
-            "release_date": "2026-09-15",
-            "title": "Labour market in the regions of the UK: September 2026",
-            "vis_urls": []
-      },
-      {
-            "doc_uri": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/bulletins/jobsandvacanciesintheuk/september2026",
-            "release_date": "2026-09-15",
-            "title": "Vacancies and jobs in the UK: September 2026",
-            "vis_urls": []
-      },
-      {
             "doc_uri": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/bulletins/uklabourmarket/september2026",
             "release_date": "2026-09-14",
             "title": "Labour market overview, UK: September 2026",
@@ -1185,18 +1233,6 @@
                         }
                   ]
             }
-      },
-      {
-            "doc_uri": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/bulletins/employmentintheuk/september2026",
-            "release_date": "2026-09-15",
-            "title": "Employment in the UK: September 2026",
-            "vis_urls": []
-      },
-      {
-            "doc_uri": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/publicsectorpersonnel/bulletins/publicsectoremployment/june2026",
-            "release_date": "2026-09-15",
-            "title": "Public sector employment, UK: June 2026",
-            "vis_urls": []
       },
       {
             "doc_uri": "https://www.ons.gov.uk/economy/economicoutputandproductivity/output/bulletins/indexofservices/july2026",
@@ -1347,6 +1383,12 @@
             "vis_urls": []
       },
       {
+            "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/populationestimates/bulletins/adminbasedhouseholdestimatesforlocalauthoritiesinenglandandwales/2021to2023",
+            "release_date": "2026-09-08",
+            "title": "Admin-based household estimates for local authorities in England and Wales: 2021 to 2023",
+            "vis_urls": []
+      },
+      {
             "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/birthsdeathsandmarriages/livebirths/bulletins/birthsummarytablesenglandandwales/2025finalrates",
             "release_date": "2026-09-07",
             "title": "Births in England and Wales: 2025 (final rates)",
@@ -1385,10 +1427,22 @@
             }
       },
       {
-            "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/populationestimates/bulletins/adminbasedhouseholdestimatesforlocalauthoritiesinenglandandwales/2021to2023",
-            "release_date": "2026-09-08",
-            "title": "Admin-based household estimates for local authorities in England and Wales: 2021 to 2023",
-            "vis_urls": []
+            "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/birthsdeathsandmarriages/livebirths/methodologies/userguidetobirthstatistics",
+            "release_date": "2026-09-07",
+            "title": "User guide to birth statistics",
+            "vis_urls": [
+                  "/visualisations/dvc925/pre/index.html"
+            ],
+            "enrichment": {
+                  "source_signature": "9661fdf5190e97a89a081aee92911b180fe2d58301a6f9d87e065590324dbaf9",
+                  "edition": null,
+                  "vis": [
+                        {
+                              "url": "/visualisations/dvc925/pre/index.html",
+                              "chart_type": null
+                        }
+                  ]
+            }
       },
       {
             "doc_uri": "https://www.ons.gov.uk/businessindustryandtrade/business/businessservices/bulletins/businessinsightsandimpactontheukeconomy/3september2026",
@@ -1412,6 +1466,12 @@
             "doc_uri": "https://www.ons.gov.uk/employmentandlabourmarket/peoplenotinwork/economicinactivity/bulletins/characteristicsofyoungpeoplenotineducationemploymentortrainingneetwhodidnotreceivebenefitsengland/march2021",
             "release_date": "2026-09-02",
             "title": "Characteristics of young people not in education, employment or training (NEET) who did not receive benefits, England: March 2021",
+            "vis_urls": []
+      },
+      {
+            "doc_uri": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/bulletins/workingandworklesshouseholds/apriltojune2026",
+            "release_date": "2026-09-02",
+            "title": "Working and workless households in the UK: April to June 2026",
             "vis_urls": []
       },
       {
@@ -1463,12 +1523,6 @@
             }
       },
       {
-            "doc_uri": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/bulletins/workingandworklesshouseholds/apriltojune2026",
-            "release_date": "2026-09-02",
-            "title": "Working and workless households in the UK: April to June 2026",
-            "vis_urls": []
-      },
-      {
             "doc_uri": "https://www.ons.gov.uk/businessindustryandtrade/changestobusiness/mergersandacquisitions/bulletins/mergersandacquisitionsinvolvingukcompanies/apriltojune2026",
             "release_date": "2026-09-01",
             "title": "Mergers and acquisitions involving UK companies: April to June 2026",
@@ -1502,6 +1556,12 @@
             ]
       },
       {
+            "doc_uri": "https://www.ons.gov.uk/economy/nationalaccounts/uksectoraccounts/methodologies/datacentresandtheuknationalaccounts",
+            "release_date": "2026-08-24",
+            "title": "Data centres and the UK National Accounts",
+            "vis_urls": []
+      },
+      {
             "doc_uri": "https://www.ons.gov.uk/economy/economicoutputandproductivity/productivitymeasures/articles/redefininginvestmentindigitalinfrastructureintheuk/2026",
             "release_date": "2026-08-23",
             "title": "Redefining investment in digital infrastructure in the UK: 2026",
@@ -1520,12 +1580,6 @@
             }
       },
       {
-            "doc_uri": "https://www.ons.gov.uk/economy/nationalaccounts/uksectoraccounts/methodologies/datacentresandtheuknationalaccounts",
-            "release_date": "2026-08-24",
-            "title": "Data centres and the UK National Accounts",
-            "vis_urls": []
-      },
-      {
             "doc_uri": "https://www.ons.gov.uk/economy/governmentpublicsectorandtaxes/publicsectorfinance/bulletins/publicsectorfinances/july2026",
             "release_date": "2026-08-21",
             "title": "Public sector finances, UK: July 2026",
@@ -1541,6 +1595,12 @@
             "doc_uri": "https://www.ons.gov.uk/businessindustryandtrade/retailindustry/bulletins/retailsales/july2026",
             "release_date": "2026-08-21",
             "title": "Retail sales, Great Britain: July 2026",
+            "vis_urls": []
+      },
+      {
+            "doc_uri": "https://www.ons.gov.uk/businessindustryandtrade/business/businessservices/bulletins/businessinsightsandimpactontheukeconomy/20august2026",
+            "release_date": "2026-08-20",
+            "title": "Business insights and impact on the UK economy: 20 August 2026",
             "vis_urls": []
       },
       {
@@ -1645,12 +1705,6 @@
             }
       },
       {
-            "doc_uri": "https://www.ons.gov.uk/businessindustryandtrade/business/businessservices/bulletins/businessinsightsandimpactontheukeconomy/20august2026",
-            "release_date": "2026-08-20",
-            "title": "Business insights and impact on the UK economy: 20 August 2026",
-            "vis_urls": []
-      },
-      {
             "doc_uri": "https://www.ons.gov.uk/economy/economicoutputandproductivity/output/bulletins/economicactivityandsocialchangeintheukrealtimeindicators/20august2026",
             "release_date": "2026-08-19",
             "title": "Economic activity and social change in the UK, real-time indicators: 20 August 2026",
@@ -1709,6 +1763,18 @@
             "vis_urls": []
       },
       {
+            "doc_uri": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/bulletins/averageweeklyearningsingreatbritain/august2026",
+            "release_date": "2026-08-18",
+            "title": "Average weekly earnings in Great Britain: August 2026",
+            "vis_urls": []
+      },
+      {
+            "doc_uri": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/bulletins/jobsandvacanciesintheuk/august2026",
+            "release_date": "2026-08-18",
+            "title": "Vacancies and jobs in the UK: August 2026",
+            "vis_urls": []
+      },
+      {
             "doc_uri": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/labourproductivity/articles/ukproductivityintroduction/apriltojune2026andjanuarytomarch2026",
             "release_date": "2026-08-17",
             "title": "Productivity flash estimate and overview, UK: April to June 2026 and January to March 2026",
@@ -1732,12 +1798,6 @@
             }
       },
       {
-            "doc_uri": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/bulletins/averageweeklyearningsingreatbritain/august2026",
-            "release_date": "2026-08-18",
-            "title": "Average weekly earnings in Great Britain: August 2026",
-            "vis_urls": []
-      },
-      {
             "doc_uri": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/bulletins/uklabourmarket/august2026",
             "release_date": "2026-08-17",
             "title": "Labour market overview, UK: August 2026",
@@ -1754,12 +1814,6 @@
                         }
                   ]
             }
-      },
-      {
-            "doc_uri": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/bulletins/jobsandvacanciesintheuk/august2026",
-            "release_date": "2026-08-18",
-            "title": "Vacancies and jobs in the UK: August 2026",
-            "vis_urls": []
       },
       {
             "doc_uri": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/earningsandworkinghours/bulletins/earningsandemploymentfrompayasyouearnrealtimeinformationuk/august2026",
@@ -2100,6 +2154,18 @@
             "vis_urls": []
       },
       {
+            "doc_uri": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/bulletins/averageweeklyearningsingreatbritain/july2026",
+            "release_date": "2026-07-21",
+            "title": "Average weekly earnings in Great Britain: July 2026",
+            "vis_urls": []
+      },
+      {
+            "doc_uri": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/bulletins/employmentintheuk/july2026",
+            "release_date": "2026-07-21",
+            "title": "Employment in the UK: July 2026",
+            "vis_urls": []
+      },
+      {
             "doc_uri": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/bulletins/uklabourmarket/july2026",
             "release_date": "2026-07-20",
             "title": "Labour market overview, UK: July 2026",
@@ -2116,18 +2182,6 @@
                         }
                   ]
             }
-      },
-      {
-            "doc_uri": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/bulletins/averageweeklyearningsingreatbritain/july2026",
-            "release_date": "2026-07-21",
-            "title": "Average weekly earnings in Great Britain: July 2026",
-            "vis_urls": []
-      },
-      {
-            "doc_uri": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/bulletins/employmentintheuk/july2026",
-            "release_date": "2026-07-21",
-            "title": "Employment in the UK: July 2026",
-            "vis_urls": []
       },
       {
             "doc_uri": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/earningsandworkinghours/bulletins/earningsandemploymentfrompayasyouearnrealtimeinformationuk/july2026",
@@ -2239,6 +2293,12 @@
             }
       },
       {
+            "doc_uri": "https://www.ons.gov.uk/economy/environmentalaccounts/methodologies/ukhabitatnaturalcapitalaccountsqualityandmethodsguide",
+            "release_date": "2026-07-08",
+            "title": "UK habitat natural capital accounts quality and methods guide",
+            "vis_urls": []
+      },
+      {
             "doc_uri": "https://www.ons.gov.uk/economy/environmentalaccounts/bulletins/enclosedfarmlandnaturalcapitalaccountsuk/2026",
             "release_date": "2026-07-07",
             "title": "Enclosed farmland natural capital accounts, UK: 2026",
@@ -2287,12 +2347,6 @@
             }
       },
       {
-            "doc_uri": "https://www.ons.gov.uk/economy/environmentalaccounts/methodologies/ukhabitatnaturalcapitalaccountsqualityandmethodsguide",
-            "release_date": "2026-07-08",
-            "title": "UK habitat natural capital accounts quality and methods guide",
-            "vis_urls": []
-      },
-      {
             "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/populationestimates/methodologies/longitudinalstudy2011to2021completenessofcensuslinkage",
             "release_date": "2026-07-07",
             "title": "Longitudinal Study 2011 to 2021: Completeness of census linkage",
@@ -2328,6 +2382,12 @@
             "doc_uri": "https://www.ons.gov.uk/economy/nationalaccounts/satelliteaccounts/bulletins/consumertrends/januarytomarch2026",
             "release_date": "2026-06-30",
             "title": "Consumer trends, UK: January to March 2026",
+            "vis_urls": []
+      },
+      {
+            "doc_uri": "https://www.ons.gov.uk/economy/nationalaccounts/uksectoraccounts/articles/quarterlyeconomiccommentary/januarytomarch2026",
+            "release_date": "2026-06-30",
+            "title": "Quarterly economic commentary: January to March 2026",
             "vis_urls": []
       },
       {
@@ -2375,12 +2435,6 @@
                         }
                   ]
             }
-      },
-      {
-            "doc_uri": "https://www.ons.gov.uk/economy/nationalaccounts/uksectoraccounts/articles/quarterlyeconomiccommentary/januarytomarch2026",
-            "release_date": "2026-06-30",
-            "title": "Quarterly economic commentary: January to March 2026",
-            "vis_urls": []
       },
       {
             "doc_uri": "https://www.ons.gov.uk/economy/nationalaccounts/balanceofpayments/bulletins/balanceofpayments/januarytomarch2026",
@@ -2549,6 +2603,18 @@
             ]
       },
       {
+            "doc_uri": "https://www.ons.gov.uk/economy/governmentpublicsectorandtaxes/publicsectorfinance/articles/developmentofpublicsectorfinancestatistics/may2026",
+            "release_date": "2026-06-19",
+            "title": "Economic statistics classifications and developments in public sector finances: May 2026",
+            "vis_urls": []
+      },
+      {
+            "doc_uri": "https://www.ons.gov.uk/businessindustryandtrade/retailindustry/bulletins/retailsales/may2026",
+            "release_date": "2026-06-19",
+            "title": "Retail sales, Great Britain: May 2026",
+            "vis_urls": []
+      },
+      {
             "doc_uri": "https://www.ons.gov.uk/economy/governmentpublicsectorandtaxes/publicsectorfinance/bulletins/publicsectorfinances/may2026",
             "release_date": "2026-06-18",
             "title": "Public sector finances, UK: May 2026",
@@ -2567,12 +2633,6 @@
             }
       },
       {
-            "doc_uri": "https://www.ons.gov.uk/economy/governmentpublicsectorandtaxes/publicsectorfinance/articles/developmentofpublicsectorfinancestatistics/may2026",
-            "release_date": "2026-06-19",
-            "title": "Economic statistics classifications and developments in public sector finances: May 2026",
-            "vis_urls": []
-      },
-      {
             "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/wellbeing/bulletins/publicopinionsandsocialtrendsgreatbritain/may2026",
             "release_date": "2026-06-18",
             "title": "Public opinions and social trends, Great Britain: May 2026",
@@ -2589,12 +2649,6 @@
                         }
                   ]
             }
-      },
-      {
-            "doc_uri": "https://www.ons.gov.uk/businessindustryandtrade/retailindustry/bulletins/retailsales/may2026",
-            "release_date": "2026-06-19",
-            "title": "Retail sales, Great Britain: May 2026",
-            "vis_urls": []
       },
       {
             "doc_uri": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/bulletins/jobsandvacanciesintheuk/june2026",
@@ -2618,6 +2672,18 @@
             "doc_uri": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/publicsectorpersonnel/bulletins/publicsectoremployment/march2026",
             "release_date": "2026-06-18",
             "title": "Public sector employment, UK: March 2026",
+            "vis_urls": []
+      },
+      {
+            "doc_uri": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/bulletins/regionallabourmarket/june2026",
+            "release_date": "2026-06-18",
+            "title": "Labour market in the regions of the UK: June 2026",
+            "vis_urls": []
+      },
+      {
+            "doc_uri": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/bulletins/employmentintheuk/june2026",
+            "release_date": "2026-06-18",
+            "title": "Employment in the UK: June 2026",
             "vis_urls": []
       },
       {
@@ -2652,12 +2718,6 @@
                         }
                   ]
             }
-      },
-      {
-            "doc_uri": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/bulletins/regionallabourmarket/june2026",
-            "release_date": "2026-06-18",
-            "title": "Labour market in the regions of the UK: June 2026",
-            "vis_urls": []
       },
       {
             "doc_uri": "https://www.ons.gov.uk/economy/economicoutputandproductivity/output/bulletins/economicactivityandsocialchangeintheukrealtimeindicators/18june2026",
@@ -2704,12 +2764,6 @@
                         }
                   ]
             }
-      },
-      {
-            "doc_uri": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/bulletins/employmentintheuk/june2026",
-            "release_date": "2026-06-18",
-            "title": "Employment in the UK: June 2026",
-            "vis_urls": []
       },
       {
             "doc_uri": "https://www.ons.gov.uk/economy/economicoutputandproductivity/output/bulletins/indexofservices/april2026",
@@ -2837,6 +2891,18 @@
             "vis_urls": []
       },
       {
+            "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/wellbeing/methodologies/ukmeasuresofnationalwellbeinguserguide",
+            "release_date": "2026-06-08",
+            "title": "UK Measures of National Well-being framework user guide",
+            "vis_urls": []
+      },
+      {
+            "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/wellbeing/bulletins/measuringprogresswellbeingandbeyondgdpintheuk/june2026",
+            "release_date": "2026-06-08",
+            "title": "Beyond GDP insights, UK measures of National Well-being: June 2026",
+            "vis_urls": []
+      },
+      {
             "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/wellbeing/articles/ukmeasuresofnationalwellbeing/dashboard",
             "release_date": "2026-06-07",
             "title": "UK Measures of National Well-being Dashboard",
@@ -2853,18 +2919,6 @@
                         }
                   ]
             }
-      },
-      {
-            "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/wellbeing/methodologies/ukmeasuresofnationalwellbeinguserguide",
-            "release_date": "2026-06-08",
-            "title": "UK Measures of National Well-being framework user guide",
-            "vis_urls": []
-      },
-      {
-            "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/wellbeing/bulletins/measuringprogresswellbeingandbeyondgdpintheuk/june2026",
-            "release_date": "2026-06-08",
-            "title": "Beyond GDP insights, UK measures of National Well-being: June 2026",
-            "vis_urls": []
       },
       {
             "doc_uri": "https://www.ons.gov.uk/economy/environmentalaccounts/bulletins/ukenvironmentalaccounts/2026",
@@ -2948,6 +3002,12 @@
             "vis_urls": []
       },
       {
+            "doc_uri": "https://www.ons.gov.uk/economy/inflationandpriceindices/bulletins/householdcostsindicesforukhouseholdgroups/januarytomarch2026",
+            "release_date": "2026-05-28",
+            "title": "Household Costs Indices for UK household groups:  January to March 2026",
+            "vis_urls": []
+      },
+      {
             "doc_uri": "https://www.ons.gov.uk/economy/regionalaccounts/grossdisposablehouseholdincome/articles/disaggregatinguksubnationalgrossdisposablehouseholdincometolowerlevelsofgeography/2010to2023",
             "release_date": "2026-05-27",
             "title": "Disaggregating UK subnational gross disposable household income to lower levels of geography: 2010 to 2023",
@@ -2971,34 +3031,10 @@
             }
       },
       {
-            "doc_uri": "https://www.ons.gov.uk/economy/inflationandpriceindices/bulletins/householdcostsindicesforukhouseholdgroups/januarytomarch2026",
-            "release_date": "2026-05-28",
-            "title": "Household Costs Indices for UK household groups:  January to March 2026",
-            "vis_urls": []
-      },
-      {
             "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/birthsdeathsandmarriages/livebirths/methodologies/birthsqmi",
             "release_date": "2026-05-27",
             "title": "Births QMI",
             "vis_urls": []
-      },
-      {
-            "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/birthsdeathsandmarriages/livebirths/methodologies/userguidetobirthstatistics",
-            "release_date": "2026-09-07",
-            "title": "User guide to birth statistics",
-            "vis_urls": [
-                  "/visualisations/dvc925/pre/index.html"
-            ],
-            "enrichment": {
-                  "source_signature": "9661fdf5190e97a89a081aee92911b180fe2d58301a6f9d87e065590324dbaf9",
-                  "edition": null,
-                  "vis": [
-                        {
-                              "url": "/visualisations/dvc925/pre/index.html",
-                              "chart_type": null
-                        }
-                  ]
-            }
       },
       {
             "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/birthsdeathsandmarriages/deaths/bulletins/deathregistrationsummarystatisticsenglandandwales/2025",
@@ -3010,6 +3046,24 @@
             "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/birthsdeathsandmarriages/livebirths/bulletins/birthsummarytablesenglandandwales/2025",
             "release_date": "2026-05-27",
             "title": "Births in England and Wales: 2025",
+            "vis_urls": []
+      },
+      {
+            "doc_uri": "https://www.ons.gov.uk/economy/governmentpublicsectorandtaxes/publicsectorfinance/methodologies/countryandregionalpublicsectorfinancesqmi",
+            "release_date": "2026-05-26",
+            "title": "Country and regional public sector finances, UK quality and methods guide",
+            "vis_urls": []
+      },
+      {
+            "doc_uri": "https://www.ons.gov.uk/businessindustryandtrade/business/businessservices/bulletins/energygoodsandservicesusedbyukbusinesses/2024",
+            "release_date": "2026-05-26",
+            "title": "Energy, goods and services used by UK businesses: 2024",
+            "vis_urls": []
+      },
+      {
+            "doc_uri": "https://www.ons.gov.uk/businessindustryandtrade/business/businessservices/bulletins/nonfinancialbusinesseconomyukannualbusinesssurvey/2024results",
+            "release_date": "2026-05-26",
+            "title": "Non-financial business economy, UK (Annual Business Survey): 2024 results",
             "vis_urls": []
       },
       {
@@ -3029,24 +3083,6 @@
                         }
                   ]
             }
-      },
-      {
-            "doc_uri": "https://www.ons.gov.uk/economy/governmentpublicsectorandtaxes/publicsectorfinance/methodologies/countryandregionalpublicsectorfinancesqmi",
-            "release_date": "2026-05-26",
-            "title": "Country and regional public sector finances, UK quality and methods guide",
-            "vis_urls": []
-      },
-      {
-            "doc_uri": "https://www.ons.gov.uk/businessindustryandtrade/business/businessservices/bulletins/energygoodsandservicesusedbyukbusinesses/2024",
-            "release_date": "2026-05-26",
-            "title": "Energy, goods and services used by UK businesses: 2024",
-            "vis_urls": []
-      },
-      {
-            "doc_uri": "https://www.ons.gov.uk/businessindustryandtrade/business/businessservices/bulletins/nonfinancialbusinesseconomyukannualbusinesssurvey/2024results",
-            "release_date": "2026-05-26",
-            "title": "Non-financial business economy, UK (Annual Business Survey): 2024 results",
-            "vis_urls": []
       },
       {
             "doc_uri": "https://www.ons.gov.uk/businessindustryandtrade/retailindustry/bulletins/retailsales/april2026",
@@ -3077,6 +3113,24 @@
                         }
                   ]
             }
+      },
+      {
+            "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/internationalmigration/methodologies/methodstoproduceprovisionallongterminternationalmigrationestimates",
+            "release_date": "2026-05-21",
+            "title": "Methods to produce provisional long-term international migration estimates",
+            "vis_urls": []
+      },
+      {
+            "doc_uri": "https://www.ons.gov.uk/businessindustryandtrade/business/businessservices/bulletins/businessinsightsandimpactontheukeconomy/21may2026",
+            "release_date": "2026-05-21",
+            "title": "Business insights and impact on the UK economy: 21 May 2026",
+            "vis_urls": []
+      },
+      {
+            "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/internationalmigration/methodologies/provisionallongterminternationalmigrationestimatestechnicaluserguide",
+            "release_date": "2026-05-21",
+            "title": "Provisional long-term international migration estimates: technical user guide",
+            "vis_urls": []
       },
       {
             "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/internationalmigration/articles/whatisinternationalmigrationandhowdoweestimateit/2025-11-18",
@@ -3130,18 +3184,6 @@
                         }
                   ]
             }
-      },
-      {
-            "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/internationalmigration/methodologies/methodstoproduceprovisionallongterminternationalmigrationestimates",
-            "release_date": "2026-05-21",
-            "title": "Methods to produce provisional long-term international migration estimates",
-            "vis_urls": []
-      },
-      {
-            "doc_uri": "https://www.ons.gov.uk/businessindustryandtrade/business/businessservices/bulletins/businessinsightsandimpactontheukeconomy/21may2026",
-            "release_date": "2026-05-21",
-            "title": "Business insights and impact on the UK economy: 21 May 2026",
-            "vis_urls": []
       },
       {
             "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/internationalmigration/articles/ukemigrationexplainedwhatweknowaboutbritsmovingabroad/2026-05-21",
@@ -3278,12 +3320,6 @@
             }
       },
       {
-            "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/internationalmigration/methodologies/provisionallongterminternationalmigrationestimatestechnicaluserguide",
-            "release_date": "2026-05-21",
-            "title": "Provisional long-term international migration estimates: technical user guide",
-            "vis_urls": []
-      },
-      {
             "doc_uri": "https://www.ons.gov.uk/economy/inflationandpriceindices/bulletins/consumerpriceinflation/april2026",
             "release_date": "2026-05-20",
             "title": "Consumer price inflation, UK: April 2026",
@@ -3299,6 +3335,24 @@
             "doc_uri": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/bulletins/jobsandvacanciesintheuk/may2026",
             "release_date": "2026-05-19",
             "title": "Vacancies and jobs in the UK: May 2026",
+            "vis_urls": []
+      },
+      {
+            "doc_uri": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/bulletins/averageweeklyearningsingreatbritain/may2026",
+            "release_date": "2026-05-19",
+            "title": "Average weekly earnings in Great Britain: May 2026",
+            "vis_urls": []
+      },
+      {
+            "doc_uri": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/bulletins/regionallabourmarket/may2026",
+            "release_date": "2026-05-19",
+            "title": "Labour market in the regions of the UK: May 2026",
+            "vis_urls": []
+      },
+      {
+            "doc_uri": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/bulletins/employmentintheuk/may2026",
+            "release_date": "2026-05-19",
+            "title": "Employment in the UK: May 2026",
             "vis_urls": []
       },
       {
@@ -3318,12 +3372,6 @@
                         }
                   ]
             }
-      },
-      {
-            "doc_uri": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/bulletins/averageweeklyearningsingreatbritain/may2026",
-            "release_date": "2026-05-19",
-            "title": "Average weekly earnings in Great Britain: May 2026",
-            "vis_urls": []
       },
       {
             "doc_uri": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/labourproductivity/articles/ukproductivityintroduction/januarytomarch2026andoctobertodecember2025",
@@ -3387,18 +3435,6 @@
             }
       },
       {
-            "doc_uri": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/bulletins/regionallabourmarket/may2026",
-            "release_date": "2026-05-19",
-            "title": "Labour market in the regions of the UK: May 2026",
-            "vis_urls": []
-      },
-      {
-            "doc_uri": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/bulletins/employmentintheuk/may2026",
-            "release_date": "2026-05-19",
-            "title": "Employment in the UK: May 2026",
-            "vis_urls": []
-      },
-      {
             "doc_uri": "https://www.ons.gov.uk/economy/governmentpublicsectorandtaxes/publicspending/articles/governmentexpenditureintheuk/2026-05-18",
             "release_date": "2026-05-17",
             "title": "Government expenditure in the UK",
@@ -3435,6 +3471,18 @@
                         }
                   ]
             }
+      },
+      {
+            "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/healthandsocialcare/healthandlifeexpectancies/methodologies/guidetointerpretingpastandprojectedperiodandcohortlifetables",
+            "release_date": "2026-05-15",
+            "title": "Guide to interpreting past and projected period and cohort life tables",
+            "vis_urls": []
+      },
+      {
+            "doc_uri": "https://www.ons.gov.uk/businessindustryandtrade/business/businessservices/articles/businessinsightsandimpactontheukandsubnationaleconomy/may2026",
+            "release_date": "2026-05-15",
+            "title": "Business insights and impact on the UK subnational single-site economy: May 2026",
+            "vis_urls": []
       },
       {
             "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/populationestimates/articles/understandingtownsinenglandandwalesinvestigatingsocioeconomictrends/may2026",
@@ -3508,12 +3556,6 @@
             }
       },
       {
-            "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/healthandsocialcare/healthandlifeexpectancies/methodologies/guidetointerpretingpastandprojectedperiodandcohortlifetables",
-            "release_date": "2026-05-15",
-            "title": "Guide to interpreting past and projected period and cohort life tables",
-            "vis_urls": []
-      },
-      {
             "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/wellbeing/bulletins/publicopinionsandsocialtrendsgreatbritain/april2026",
             "release_date": "2026-05-14",
             "title": "Public opinions and social trends, Great Britain: April 2026",
@@ -3537,16 +3579,22 @@
             }
       },
       {
-            "doc_uri": "https://www.ons.gov.uk/businessindustryandtrade/business/businessservices/articles/businessinsightsandimpactontheukandsubnationaleconomy/may2026",
-            "release_date": "2026-05-15",
-            "title": "Business insights and impact on the UK subnational single-site economy: May 2026",
-            "vis_urls": []
-      },
-      {
             "doc_uri": "https://www.ons.gov.uk/economy/grossdomesticproductgdp/bulletins/businessinvestment/januarytomarch2026provisionalresults",
             "release_date": "2026-05-14",
             "title": "Business investment in the UK: January to March 2026 provisional results",
             "vis_urls": []
+      },
+      {
+            "doc_uri": "https://www.ons.gov.uk/economy/grossdomesticproductgdp/methodologies/howtheonsassessesstatisticaloutputsforresidualseasonality",
+            "release_date": "2026-05-12",
+            "title": "How the ONS assesses statistical outputs for residual seasonality",
+            "vis_urls": [
+                  "/visualisations/dvc3535/fig01/index.html",
+                  "/visualisations/dvc3535/fig02/index.html",
+                  "/visualisations/dvc3535/fig03/index.html",
+                  "/visualisations/dvc3535/fig04/index.html",
+                  "/visualisations/dvc3535/fig05/index.html"
+            ]
       },
       {
             "doc_uri": "https://www.ons.gov.uk/economy/nationalaccounts/balanceofpayments/articles/foreigndirectinvestmentexperimentaluksubnationalstatistics/2024",
@@ -3572,22 +3620,27 @@
             }
       },
       {
-            "doc_uri": "https://www.ons.gov.uk/economy/grossdomesticproductgdp/methodologies/howtheonsassessesstatisticaloutputsforresidualseasonality",
-            "release_date": "2026-05-12",
-            "title": "How the ONS assesses statistical outputs for residual seasonality",
-            "vis_urls": [
-                  "/visualisations/dvc3535/fig01/index.html",
-                  "/visualisations/dvc3535/fig02/index.html",
-                  "/visualisations/dvc3535/fig03/index.html",
-                  "/visualisations/dvc3535/fig04/index.html",
-                  "/visualisations/dvc3535/fig05/index.html"
-            ]
-      },
-      {
             "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/healthandsocialcare/causesofdeath/bulletins/alcoholrelateddeathsintheunitedkingdom/registeredin2024",
             "release_date": "2026-05-11",
             "title": "Alcohol-specific deaths in the UK: registered in 2024",
             "vis_urls": []
+      },
+      {
+            "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/birthsdeathsandmarriages/deaths/methodologies/userguidetochildmortalitystatistics",
+            "release_date": "2026-05-11",
+            "title": "User guide to child and infant mortality statistics",
+            "vis_urls": [
+                  "/visualisations/dvc637/post/index.html",
+                  "/visualisations/dvc1158/pre/index.html"
+            ]
+      },
+      {
+            "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/birthsdeathsandmarriages/deaths/methodologies/childmortalitystatisticsqmi",
+            "release_date": "2026-05-11",
+            "title": "Child and infant mortality statistics QMI",
+            "vis_urls": [
+                  "/visualisations/dvc637/post/index.html"
+            ]
       },
       {
             "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/birthsdeathsandmarriages/deaths/bulletins/childhoodinfantandperinatalmortalityinenglandandwales/2024",
@@ -3611,23 +3664,6 @@
                         }
                   ]
             }
-      },
-      {
-            "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/birthsdeathsandmarriages/deaths/methodologies/userguidetochildmortalitystatistics",
-            "release_date": "2026-05-11",
-            "title": "User guide to child and infant mortality statistics",
-            "vis_urls": [
-                  "/visualisations/dvc637/post/index.html",
-                  "/visualisations/dvc1158/pre/index.html"
-            ]
-      },
-      {
-            "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/birthsdeathsandmarriages/deaths/methodologies/childmortalitystatisticsqmi",
-            "release_date": "2026-05-11",
-            "title": "Child and infant mortality statistics QMI",
-            "vis_urls": [
-                  "/visualisations/dvc637/post/index.html"
-            ]
       },
       {
             "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/housing/articles/privaterentalpricesdevelopmentplan/updatedmay2026",
@@ -3712,56 +3748,10 @@
             }
       },
       {
-            "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/populationprojections/articles/ukpopulationprojectionexplorer/2025-01-28",
-            "release_date": "2026-04-27",
-            "title": "UK population projection explorer",
-            "vis_urls": [
-                  "/visualisations/populationprojectionsexplorer/index.html"
-            ],
-            "enrichment": {
-                  "source_signature": "de72efb1755e9ec73972b8fa89a9d62d6b11007457c602cf667ffc5563900e33",
-                  "edition": null,
-                  "vis": [
-                        {
-                              "url": "/visualisations/populationprojectionsexplorer/index.html",
-                              "chart_type": null
-                        }
-                  ]
-            }
-      },
-      {
             "doc_uri": "https://www.ons.gov.uk/economy/nationalaccounts/uksectoraccounts/articles/ukfinancialaccountsupdate/2026",
             "release_date": "2026-04-28",
             "title": "UK Financial Accounts Update: 2026",
             "vis_urls": []
-      },
-      {
-            "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/populationprojections/bulletins/nationalpopulationprojections/2024based",
-            "release_date": "2026-04-27",
-            "title": "National population projections: 2024-based",
-            "vis_urls": [
-                  "/visualisations/dvc3528/fig03/index.html",
-                  "/visualisations/dvc3528/fig05/index.html",
-                  "/visualisations/dvc3528/fig07/index.html"
-            ],
-            "enrichment": {
-                  "source_signature": "ca62437ab279c8b181de42fe62b96411866dc85f3deacb086c596e13214e42b1",
-                  "edition": null,
-                  "vis": [
-                        {
-                              "url": "/visualisations/dvc3528/fig03/index.html",
-                              "chart_type": "waterfall"
-                        },
-                        {
-                              "url": "/visualisations/dvc3528/fig05/index.html",
-                              "chart_type": "static-population-pyramid"
-                        },
-                        {
-                              "url": "/visualisations/dvc3528/fig07/index.html",
-                              "chart_type": null
-                        }
-                  ]
-            }
       },
       {
             "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/populationprojections/methodologies/nationalpopulationprojectionsfertilityassumptions2024based",
@@ -3796,6 +3786,52 @@
             "vis_urls": []
       },
       {
+            "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/populationprojections/articles/ukpopulationprojectionexplorer/2025-01-28",
+            "release_date": "2026-04-27",
+            "title": "UK population projection explorer",
+            "vis_urls": [
+                  "/visualisations/populationprojectionsexplorer/index.html"
+            ],
+            "enrichment": {
+                  "source_signature": "de72efb1755e9ec73972b8fa89a9d62d6b11007457c602cf667ffc5563900e33",
+                  "edition": null,
+                  "vis": [
+                        {
+                              "url": "/visualisations/populationprojectionsexplorer/index.html",
+                              "chart_type": null
+                        }
+                  ]
+            }
+      },
+      {
+            "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/populationprojections/bulletins/nationalpopulationprojections/2024based",
+            "release_date": "2026-04-27",
+            "title": "National population projections: 2024-based",
+            "vis_urls": [
+                  "/visualisations/dvc3528/fig03/index.html",
+                  "/visualisations/dvc3528/fig05/index.html",
+                  "/visualisations/dvc3528/fig07/index.html"
+            ],
+            "enrichment": {
+                  "source_signature": "ca62437ab279c8b181de42fe62b96411866dc85f3deacb086c596e13214e42b1",
+                  "edition": null,
+                  "vis": [
+                        {
+                              "url": "/visualisations/dvc3528/fig03/index.html",
+                              "chart_type": "waterfall"
+                        },
+                        {
+                              "url": "/visualisations/dvc3528/fig05/index.html",
+                              "chart_type": "static-population-pyramid"
+                        },
+                        {
+                              "url": "/visualisations/dvc3528/fig07/index.html",
+                              "chart_type": null
+                        }
+                  ]
+            }
+      },
+      {
             "doc_uri": "https://www.ons.gov.uk/businessindustryandtrade/retailindustry/bulletins/retailsales/march2026",
             "release_date": "2026-04-24",
             "title": "Retail sales, Great Britain: March 2026",
@@ -3811,6 +3847,24 @@
             "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/wellbeing/bulletins/humancapitalstocksestimatesintheuk/2004to2024",
             "release_date": "2026-04-24",
             "title": "Human capital stocks estimates in the UK: 2004 to 2024",
+            "vis_urls": []
+      },
+      {
+            "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/internationalmigration/articles/internationalmigrationresearchprogressupdate/april2026",
+            "release_date": "2026-04-23",
+            "title": "International migration research, progress update: April 2026",
+            "vis_urls": []
+      },
+      {
+            "doc_uri": "https://www.ons.gov.uk/businessindustryandtrade/business/businessservices/bulletins/businessinsightsandimpactontheukeconomy/23april2026",
+            "release_date": "2026-04-23",
+            "title": "Business insights and impact on the UK economy: 23 April 2026",
+            "vis_urls": []
+      },
+      {
+            "doc_uri": "https://www.ons.gov.uk/economy/governmentpublicsectorandtaxes/publicsectorfinance/articles/developmentofpublicsectorfinancestatistics/march2026",
+            "release_date": "2026-04-23",
+            "title": "Economic statistics classifications and developments in public sector finances: March 2026",
             "vis_urls": []
       },
       {
@@ -3832,12 +3886,6 @@
             }
       },
       {
-            "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/internationalmigration/articles/internationalmigrationresearchprogressupdate/april2026",
-            "release_date": "2026-04-23",
-            "title": "International migration research, progress update: April 2026",
-            "vis_urls": []
-      },
-      {
             "doc_uri": "https://www.ons.gov.uk/economy/governmentpublicsectorandtaxes/publicsectorfinance/bulletins/publicsectorfinances/march2026",
             "release_date": "2026-04-22",
             "title": "Public sector finances, UK: March 2026",
@@ -3854,12 +3902,6 @@
                         }
                   ]
             }
-      },
-      {
-            "doc_uri": "https://www.ons.gov.uk/businessindustryandtrade/business/businessservices/bulletins/businessinsightsandimpactontheukeconomy/23april2026",
-            "release_date": "2026-04-23",
-            "title": "Business insights and impact on the UK economy: 23 April 2026",
-            "vis_urls": []
       },
       {
             "doc_uri": "https://www.ons.gov.uk/economy/economicoutputandproductivity/output/bulletins/economicactivityandsocialchangeintheukrealtimeindicators/23april2026",
@@ -3890,12 +3932,6 @@
             }
       },
       {
-            "doc_uri": "https://www.ons.gov.uk/economy/governmentpublicsectorandtaxes/publicsectorfinance/articles/developmentofpublicsectorfinancestatistics/march2026",
-            "release_date": "2026-04-23",
-            "title": "Economic statistics classifications and developments in public sector finances: March 2026",
-            "vis_urls": []
-      },
-      {
             "doc_uri": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/bulletins/regionallabourmarket/april2026",
             "release_date": "2026-04-21",
             "title": "Labour market in the regions of the UK: April 2026",
@@ -3917,6 +3953,12 @@
             "doc_uri": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/bulletins/employmentintheuk/april2026",
             "release_date": "2026-04-21",
             "title": "Employment in the UK: April 2026",
+            "vis_urls": []
+      },
+      {
+            "doc_uri": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/articles/labourforcesurveyqualityupdate/april2026",
+            "release_date": "2026-04-21",
+            "title": "Labour Force Survey quality update: April 2026",
             "vis_urls": []
       },
       {
@@ -3953,12 +3995,6 @@
             }
       },
       {
-            "doc_uri": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/articles/labourforcesurveyqualityupdate/april2026",
-            "release_date": "2026-04-21",
-            "title": "Labour Force Survey quality update: April 2026",
-            "vis_urls": []
-      },
-      {
             "doc_uri": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/bulletins/uklabourmarket/april2026",
             "release_date": "2026-04-20",
             "title": "Labour market overview, UK: April 2026",
@@ -3975,6 +4011,12 @@
                         }
                   ]
             }
+      },
+      {
+            "doc_uri": "https://www.ons.gov.uk/economy/governmentpublicsectorandtaxes/researchanddevelopmentexpenditure/bulletins/ukgovernmentexpenditureonscienceengineeringandtechnology/2024",
+            "release_date": "2026-04-17",
+            "title": "Research and development expenditure by the UK government: 2024",
+            "vis_urls": []
       },
       {
             "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/birthsdeathsandmarriages/families/bulletins/familiesandhouseholds/2025",
@@ -4013,12 +4055,6 @@
                         }
                   ]
             }
-      },
-      {
-            "doc_uri": "https://www.ons.gov.uk/economy/governmentpublicsectorandtaxes/researchanddevelopmentexpenditure/bulletins/ukgovernmentexpenditureonscienceengineeringandtechnology/2024",
-            "release_date": "2026-04-17",
-            "title": "Research and development expenditure by the UK government: 2024",
-            "vis_urls": []
       },
       {
             "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/wellbeing/bulletins/publicopinionsandsocialtrendsgreatbritain/march2026",
@@ -4066,6 +4102,18 @@
             "vis_urls": []
       },
       {
+            "doc_uri": "https://www.ons.gov.uk/economy/nationalaccounts/uksectoraccounts/articles/quarterlyeconomiccommentary/octobertodecember2025",
+            "release_date": "2026-03-31",
+            "title": "Quarterly economic commentary: October to December 2025",
+            "vis_urls": []
+      },
+      {
+            "doc_uri": "https://www.ons.gov.uk/economy/nationalaccounts/satelliteaccounts/bulletins/consumertrends/octobertodecember2025",
+            "release_date": "2026-03-31",
+            "title": "Consumer trends, UK: October to December 2025",
+            "vis_urls": []
+      },
+      {
             "doc_uri": "https://www.ons.gov.uk/economy/nationalaccounts/uksectoraccounts/bulletins/quarterlysectoraccounts/octobertodecember2025",
             "release_date": "2026-03-30",
             "title": "Quarterly sector accounts, UK: October to December 2025",
@@ -4105,12 +4153,6 @@
                         }
                   ]
             }
-      },
-      {
-            "doc_uri": "https://www.ons.gov.uk/economy/nationalaccounts/uksectoraccounts/articles/quarterlyeconomiccommentary/octobertodecember2025",
-            "release_date": "2026-03-31",
-            "title": "Quarterly economic commentary: October to December 2025",
-            "vis_urls": []
       },
       {
             "doc_uri": "https://www.ons.gov.uk/economy/grossdomesticproductgdp/bulletins/businessinvestment/octobertodecember2025revisedresults",
@@ -4159,12 +4201,6 @@
             }
       },
       {
-            "doc_uri": "https://www.ons.gov.uk/economy/nationalaccounts/satelliteaccounts/bulletins/consumertrends/octobertodecember2025",
-            "release_date": "2026-03-31",
-            "title": "Consumer trends, UK: October to December 2025",
-            "vis_urls": []
-      },
-      {
             "doc_uri": "https://www.ons.gov.uk/economy/economicoutputandproductivity/publicservicesproductivity/articles/publicservicesproductivityestimatestotalpublicservices/totaluk2023",
             "release_date": "2026-03-30",
             "title": "Public service productivity: total, UK, 2023",
@@ -4181,24 +4217,6 @@
             "release_date": "2026-03-27",
             "title": "Retail sales, Great Britain: February 2026",
             "vis_urls": []
-      },
-      {
-            "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/housing/articles/howaffordablearehomesinyourneighbourhood/2026-03-26",
-            "release_date": "2026-11-13",
-            "title": "How affordable are homes in your neighbourhood?",
-            "vis_urls": [
-                  "/visualisations/affordabilityexplorer/"
-            ],
-            "enrichment": {
-                  "source_signature": "23ec09b62cbdad31b0844afcb62164a62e48bff6c86e29448059e580709b0c67",
-                  "edition": null,
-                  "vis": [
-                        {
-                              "url": "/visualisations/affordabilityexplorer/",
-                              "chart_type": null
-                        }
-                  ]
-            }
       },
       {
             "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/housing/bulletins/housingaffordabilityinenglandandwales/2025",
@@ -9039,6 +9057,24 @@
             "vis_urls": []
       },
       {
+            "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/housing/articles/researchoutputssubnationaldwellingstockbytenureestimatesengland2012to2015/2023",
+            "release_date": "2025-07-31",
+            "title": "Subnational estimates of dwellings and households by tenure, England: 2023",
+            "vis_urls": [
+                  "/visualisations/dvc3322/index.html"
+            ],
+            "enrichment": {
+                  "source_signature": "412a445864ec8467c2a45371b1b20da30aea56a2d15629fb23d76e4f0913bf1d",
+                  "edition": "2023",
+                  "vis": [
+                        {
+                              "url": "/visualisations/dvc3322/index.html",
+                              "chart_type": null
+                        }
+                  ]
+            }
+      },
+      {
             "doc_uri": "https://www.ons.gov.uk/employmentandlabourmarket/peoplenotinwork/unemployment/bulletins/worklesshouseholdsforregionsacrosstheuk/2024",
             "release_date": "2025-07-29T23:00:00.000Z",
             "title": "Workless households for regions across the UK",
@@ -9061,24 +9097,6 @@
             "release_date": "2025-07-27T23:00:00.000Z",
             "title": "Improving crime statistics for England and Wales \u2013 progress update",
             "vis_urls": []
-      },
-      {
-            "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/housing/articles/researchoutputssubnationaldwellingstockbytenureestimatesengland2012to2015/2023",
-            "release_date": "2025-07-31",
-            "title": "Subnational estimates of dwellings and households by tenure, England: 2023",
-            "vis_urls": [
-                  "/visualisations/dvc3322/index.html"
-            ],
-            "enrichment": {
-                  "source_signature": "412a445864ec8467c2a45371b1b20da30aea56a2d15629fb23d76e4f0913bf1d",
-                  "edition": "2023",
-                  "vis": [
-                        {
-                              "url": "/visualisations/dvc3322/index.html",
-                              "chart_type": null
-                        }
-                  ]
-            }
       },
       {
             "doc_uri": "https://www.ons.gov.uk/businessindustryandtrade/retailindustry/bulletins/retailsales/june2025",
@@ -11733,24 +11751,6 @@
             }
       },
       {
-            "doc_uri": "https://www.ons.gov.uk/economy/nationalaccounts/articles/dashboardunderstandingtheukeconomy/2017-02-22",
-            "release_date": "2026-11-17",
-            "title": "Understanding the UK economy",
-            "vis_urls": [
-                  "/visualisations/dvc368/dashboard/index.html"
-            ],
-            "enrichment": {
-                  "source_signature": "64d2a91b00d8776f06852dfc9dc69b60d556fc8222925ecc2505a5ac2e808d07",
-                  "edition": null,
-                  "vis": [
-                        {
-                              "url": "/visualisations/dvc368/dashboard/index.html",
-                              "chart_type": null
-                        }
-                  ]
-            }
-      },
-      {
             "doc_uri": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/earningsandworkinghours/bulletins/earningsandemploymentfrompayasyouearnrealtimeinformationuk/april2025",
             "release_date": "2025-04-14",
             "title": "Earnings and employment from Pay As You Earn Real Time Information, UK: April 2025",
@@ -13997,6 +13997,49 @@
                   "vis": [
                         {
                               "url": "/visualisations/dvc3143/fig1/index.html",
+                              "chart_type": null
+                        }
+                  ]
+            }
+      },
+      {
+            "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/crimeandjustice/articles/womenwhohavesurviveddomesticabuseandtheirexperiencesoftemporarysafeaccommodationinengland/januarytojune2023",
+            "release_date": "2025-01-08",
+            "title": "Women who have survived domestic abuse and their accommodation experiences in England: January to June 2023",
+            "vis_urls": [
+                  "/visualisations/dvc2842/image0.svg",
+                  "/visualisations/dvc2842/image1.svg",
+                  "/visualisations/dvc2842/image2.svg",
+                  "/visualisations/dvc2842/image3.svg",
+                  "/visualisations/dvc2842/image4.svg",
+                  "/visualisations/dvc2842/image5.svg"
+            ],
+            "enrichment": {
+                  "source_signature": "ab89c6391cc78332b6d9ff3586f74b5d947229fc9a238e81bae8ebe61fc9592c",
+                  "edition": "January to June 2023",
+                  "vis": [
+                        {
+                              "url": "/visualisations/dvc2842/image0.svg",
+                              "chart_type": null
+                        },
+                        {
+                              "url": "/visualisations/dvc2842/image1.svg",
+                              "chart_type": null
+                        },
+                        {
+                              "url": "/visualisations/dvc2842/image2.svg",
+                              "chart_type": null
+                        },
+                        {
+                              "url": "/visualisations/dvc2842/image3.svg",
+                              "chart_type": null
+                        },
+                        {
+                              "url": "/visualisations/dvc2842/image4.svg",
+                              "chart_type": null
+                        },
+                        {
+                              "url": "/visualisations/dvc2842/image5.svg",
                               "chart_type": null
                         }
                   ]
@@ -18867,6 +18910,24 @@
             }
       },
       {
+            "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/crimeandjustice/articles/crimetrendsinenglandandwalesandhowwemeasurethem/2024-03-06",
+            "release_date": "2024-06-26",
+            "title": "Crime trends in England and Wales and how we measure them : June 2024",
+            "vis_urls": [
+                  "/visualisations/dvc2885/table/index.html"
+            ],
+            "enrichment": {
+                  "source_signature": "8b54c1d4d980543149d3dee77433eb120c196336bf02d983884da8cab1b76a89",
+                  "edition": "June 2024",
+                  "vis": [
+                        {
+                              "url": "/visualisations/dvc2885/table/index.html",
+                              "chart_type": null
+                        }
+                  ]
+            }
+      },
+      {
             "doc_uri": "https://www.ons.gov.uk/economy/environmentalaccounts/articles/greenhousegasemissionsandtradeuk/2024",
             "release_date": "2024-06-25T23:00:00.000Z",
             "title": "Greenhouse gas emissions and trade, UK",
@@ -20561,24 +20622,6 @@
             "release_date": "2024-04-25T23:00:00.000Z",
             "title": "Public opinions and social trends, Great Britain",
             "vis_urls": []
-      },
-      {
-            "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/crimeandjustice/articles/crimetrendsinenglandandwalesandhowwemeasurethem/2024-03-06",
-            "release_date": "2024-06-26",
-            "title": "Crime trends in England and Wales and how we measure them : June 2024",
-            "vis_urls": [
-                  "/visualisations/dvc2885/table/index.html"
-            ],
-            "enrichment": {
-                  "source_signature": "8b54c1d4d980543149d3dee77433eb120c196336bf02d983884da8cab1b76a89",
-                  "edition": "June 2024",
-                  "vis": [
-                        {
-                              "url": "/visualisations/dvc2885/table/index.html",
-                              "chart_type": null
-                        }
-                  ]
-            }
       },
       {
             "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/housing/articles/whoismostexposedtorisinghousingcostsinenglandandwales/2024-04-25",
@@ -23556,49 +23599,6 @@
                         },
                         {
                               "url": "/visualisations/dvc2281/",
-                              "chart_type": null
-                        }
-                  ]
-            }
-      },
-      {
-            "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/crimeandjustice/articles/womenwhohavesurviveddomesticabuseandtheirexperiencesoftemporarysafeaccommodationinengland/januarytojune2023",
-            "release_date": "2025-01-08",
-            "title": "Women who have survived domestic abuse and their accommodation experiences in England: January to June 2023",
-            "vis_urls": [
-                  "/visualisations/dvc2842/image0.svg",
-                  "/visualisations/dvc2842/image1.svg",
-                  "/visualisations/dvc2842/image2.svg",
-                  "/visualisations/dvc2842/image3.svg",
-                  "/visualisations/dvc2842/image4.svg",
-                  "/visualisations/dvc2842/image5.svg"
-            ],
-            "enrichment": {
-                  "source_signature": "ab89c6391cc78332b6d9ff3586f74b5d947229fc9a238e81bae8ebe61fc9592c",
-                  "edition": "January to June 2023",
-                  "vis": [
-                        {
-                              "url": "/visualisations/dvc2842/image0.svg",
-                              "chart_type": null
-                        },
-                        {
-                              "url": "/visualisations/dvc2842/image1.svg",
-                              "chart_type": null
-                        },
-                        {
-                              "url": "/visualisations/dvc2842/image2.svg",
-                              "chart_type": null
-                        },
-                        {
-                              "url": "/visualisations/dvc2842/image3.svg",
-                              "chart_type": null
-                        },
-                        {
-                              "url": "/visualisations/dvc2842/image4.svg",
-                              "chart_type": null
-                        },
-                        {
-                              "url": "/visualisations/dvc2842/image5.svg",
                               "chart_type": null
                         }
                   ]
