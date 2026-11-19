@@ -1,5 +1,55 @@
 [
       {
+            "doc_uri": "https://www.ons.gov.uk/economy/inflationandpriceindices/bulletins/privaterentandhousepricesuk/november2026",
+            "release_date": "2026-11-18",
+            "title": "Private rent and house prices, UK: November 2026",
+            "vis_urls": [
+                  "/visualisations/dvc3686/fig03/index.html",
+                  "/visualisations/dvc3686/fig04/index.html",
+                  "/visualisations/dvc3686/fig06/index.html",
+                  "/visualisations/dvc3686/fig07/index.html",
+                  "/visualisations/dvc3686/fig08/index.html"
+            ],
+            "enrichment": {
+                  "source_signature": "25c9e4775defaff283490c175cb587434a70621aa1c4cdb200b24ef212a8406f",
+                  "edition": "November 2026",
+                  "vis": [
+                        {
+                              "url": "/visualisations/dvc3686/fig03/index.html",
+                              "chart_type": "small-multiple-line-chart-focus"
+                        },
+                        {
+                              "url": "/visualisations/dvc3686/fig04/index.html",
+                              "chart_type": "small-multiple-line-chart-focus"
+                        },
+                        {
+                              "url": "/visualisations/dvc3686/fig06/index.html",
+                              "chart_type": "small-multiple-line-chart-focus"
+                        },
+                        {
+                              "url": "/visualisations/dvc3686/fig07/index.html",
+                              "chart_type": "choropleth"
+                        },
+                        {
+                              "url": "/visualisations/dvc3686/fig08/index.html",
+                              "chart_type": "choropleth"
+                        }
+                  ]
+            }
+      },
+      {
+            "doc_uri": "https://www.ons.gov.uk/economy/inflationandpriceindices/bulletins/producerpriceinflation/october2026",
+            "release_date": "2026-11-18",
+            "title": "Producer price inflation, UK: October 2026",
+            "vis_urls": []
+      },
+      {
+            "doc_uri": "https://www.ons.gov.uk/economy/inflationandpriceindices/bulletins/consumerpriceinflation/october2026",
+            "release_date": "2026-11-18",
+            "title": "Consumer price inflation, UK: October 2026",
+            "vis_urls": []
+      },
+      {
             "doc_uri": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/labourproductivity/articles/ukproductivityintroduction/julytoseptember2026",
             "release_date": "2026-11-17",
             "title": "Labour productivity, UK: July to September 2026",
