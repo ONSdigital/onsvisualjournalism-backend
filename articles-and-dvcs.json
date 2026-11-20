@@ -1,5 +1,51 @@
 [
       {
+            "doc_uri": "https://www.ons.gov.uk/economy/economicoutputandproductivity/output/bulletins/economicactivityandsocialchangeintheukrealtimeindicators/19november2026",
+            "release_date": "2026-11-19",
+            "title": "Economic activity and social change in the UK, real-time indicators: 19 November 2026",
+            "vis_urls": [
+                  "/visualisations/dvc3695/dashboard-monthly/index.html",
+                  "/visualisations/dvc3695/footfall-bar-chart/index.html",
+                  "/visualisations/dvc3695/vat-new/index.html"
+            ],
+            "enrichment": {
+                  "source_signature": "6fc133db879208be32c61faf4e16988c6e40a19536c4b138ee943446b1b1cb0e",
+                  "edition": "19 November 2026",
+                  "vis": [
+                        {
+                              "url": "/visualisations/dvc3695/dashboard-monthly/index.html",
+                              "chart_type": null
+                        },
+                        {
+                              "url": "/visualisations/dvc3695/footfall-bar-chart/index.html",
+                              "chart_type": "bar-chart"
+                        },
+                        {
+                              "url": "/visualisations/dvc3695/vat-new/index.html",
+                              "chart_type": null
+                        }
+                  ]
+            }
+      },
+      {
+            "doc_uri": "https://www.ons.gov.uk/businessindustryandtrade/business/activitysizeandlocation/bulletins/businessdemography/2025",
+            "release_date": "2026-11-19",
+            "title": "Business demography, UK: 2025",
+            "vis_urls": []
+      },
+      {
+            "doc_uri": "https://www.ons.gov.uk/businessindustryandtrade/business/activitysizeandlocation/methodologies/businessdemographyqmi",
+            "release_date": "2026-11-19",
+            "title": "Business demography QMI",
+            "vis_urls": []
+      },
+      {
+            "doc_uri": "https://www.ons.gov.uk/businessindustryandtrade/business/businessservices/bulletins/businessinsightsandimpactontheukeconomy/19november2026",
+            "release_date": "2026-11-19",
+            "title": "Business insights and impact on the UK economy: 19 November 2026",
+            "vis_urls": []
+      },
+      {
             "doc_uri": "https://www.ons.gov.uk/economy/inflationandpriceindices/bulletins/privaterentandhousepricesuk/november2026",
             "release_date": "2026-11-18",
             "title": "Private rent and house prices, UK: November 2026",
