@@ -1,5 +1,22 @@
 [
       {
+            "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/wellbeing/bulletins/publicopinionsandsocialtrendsgreatbritain/october2026",
+            "release_date": "2026-11-20",
+            "title": "Public opinions and social trends, Great Britain: October 2026",
+            "edition": "October 2026",
+            "vis": [
+                  {
+                        "url": "/visualisations/dvc3678/fig01/index.html",
+                        "chart_type": "line-chart"
+                  }
+            ],
+            "theme": "peoplepopulationandcommunity",
+            "topic": "wellbeing",
+            "subtopic": null,
+            "series": "Public opinions and social trends, Great Britain",
+            "latest": true
+      },
+      {
             "doc_uri": "https://www.ons.gov.uk/economy/economicoutputandproductivity/output/bulletins/economicactivityandsocialchangeintheukrealtimeindicators/19november2026",
             "release_date": "2026-11-19",
             "title": "Economic activity and social change in the UK, real-time indicators: 19 November 2026",
@@ -18,11 +35,11 @@
                         "chart_type": null
                   }
             ],
+            "series": "Economic activity and social change in the UK, real-time indicators",
+            "latest": true,
             "theme": "economy",
             "topic": "economicoutputandproductivity",
-            "subtopic": "output",
-            "series": "Economic activity and social change in the UK, real-time indicators",
-            "latest": true
+            "subtopic": "output"
       },
       {
             "doc_uri": "https://www.ons.gov.uk/economy/inflationandpriceindices/bulletins/privaterentandhousepricesuk/november2026",
@@ -1088,7 +1105,7 @@
                   }
             ],
             "series": "Public opinions and social trends, Great Britain",
-            "latest": true,
+            "latest": false,
             "theme": "peoplepopulationandcommunity",
             "topic": "wellbeing",
             "subtopic": null

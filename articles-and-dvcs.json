@@ -1,5 +1,41 @@
 [
       {
+            "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/wellbeing/bulletins/publicopinionsandsocialtrendsgreatbritain/october2026",
+            "release_date": "2026-11-20",
+            "title": "Public opinions and social trends, Great Britain: October 2026",
+            "vis_urls": [
+                  "/visualisations/dvc3678/fig01/index.html"
+            ],
+            "enrichment": {
+                  "source_signature": "0f8a8a5a85d054473ba4bd9c7284e9de199a88ed6bcdcdae4a1f6e9b541ba582",
+                  "edition": "October 2026",
+                  "vis": [
+                        {
+                              "url": "/visualisations/dvc3678/fig01/index.html",
+                              "chart_type": "line-chart"
+                        }
+                  ]
+            }
+      },
+      {
+            "doc_uri": "https://www.ons.gov.uk/businessindustryandtrade/retailindustry/bulletins/retailsales/october2026",
+            "release_date": "2026-11-20",
+            "title": "Retail sales, Great Britain: October 2026",
+            "vis_urls": []
+      },
+      {
+            "doc_uri": "https://www.ons.gov.uk/economy/governmentpublicsectorandtaxes/publicsectorfinance/articles/developmentofpublicsectorfinancestatistics/october2026",
+            "release_date": "2026-11-20",
+            "title": "Economic statistics classifications and developments in public sector finances: October 2026",
+            "vis_urls": []
+      },
+      {
+            "doc_uri": "https://www.ons.gov.uk/economy/governmentpublicsectorandtaxes/publicsectorfinance/bulletins/publicsectorfinances/october2026",
+            "release_date": "2026-11-20",
+            "title": "Public sector finances, UK: October 2026",
+            "vis_urls": []
+      },
+      {
             "doc_uri": "https://www.ons.gov.uk/economy/economicoutputandproductivity/output/bulletins/economicactivityandsocialchangeintheukrealtimeindicators/19november2026",
             "release_date": "2026-11-19",
             "title": "Economic activity and social change in the UK, real-time indicators: 19 November 2026",
