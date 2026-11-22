@@ -10,11 +10,11 @@
                         "chart_type": "line-chart"
                   }
             ],
+            "series": "Public opinions and social trends, Great Britain",
+            "latest": true,
             "theme": "peoplepopulationandcommunity",
             "topic": "wellbeing",
-            "subtopic": null,
-            "series": "Public opinions and social trends, Great Britain",
-            "latest": true
+            "subtopic": null
       },
       {
             "doc_uri": "https://www.ons.gov.uk/economy/economicoutputandproductivity/output/bulletins/economicactivityandsocialchangeintheukrealtimeindicators/19november2026",
