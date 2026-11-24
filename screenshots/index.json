@@ -300,6 +300,7 @@
             "https://www.ons.gov.uk/visualisations/dvc3658/treemap-export/index.html": {
                   "filename": "dvc3658-treemap-export.jpg",
                   "publications": [
+                        "https://www.ons.gov.uk/economy/nationalaccounts/balanceofpayments/bulletins/uktrade/september2026",
                         "https://www.ons.gov.uk/economy/nationalaccounts/balanceofpayments/bulletins/unitedkingdombalanceofpaymentsthepinkbook/2026"
                   ],
                   "last_success": null,
@@ -312,6 +313,7 @@
             "https://www.ons.gov.uk/visualisations/dvc3658/treemap-import/index.html": {
                   "filename": "dvc3658-treemap-import.jpg",
                   "publications": [
+                        "https://www.ons.gov.uk/economy/nationalaccounts/balanceofpayments/bulletins/uktrade/september2026",
                         "https://www.ons.gov.uk/economy/nationalaccounts/balanceofpayments/bulletins/unitedkingdombalanceofpaymentsthepinkbook/2026"
                   ],
                   "last_success": null,
@@ -339,6 +341,7 @@
                         "https://www.ons.gov.uk/economy/nationalaccounts/balanceofpayments/bulletins/balanceofpayments/januarytomarch2026",
                         "https://www.ons.gov.uk/economy/nationalaccounts/balanceofpayments/bulletins/balanceofpayments/julytoseptember2025",
                         "https://www.ons.gov.uk/economy/nationalaccounts/balanceofpayments/bulletins/balanceofpayments/octobertodecember2025",
+                        "https://www.ons.gov.uk/economy/nationalaccounts/balanceofpayments/bulletins/unitedkingdombalanceofpaymentsthepinkbook/2025",
                         "https://www.ons.gov.uk/economy/nationalaccounts/balanceofpayments/bulletins/unitedkingdombalanceofpaymentsthepinkbook/2026"
                   ],
                   "last_success": null,
@@ -1859,35 +1862,83 @@
             "https://www.ons.gov.uk/visualisations/econgloss/widget_gloss/index.html": {
                   "filename": "econgloss-widget_gloss.jpg",
                   "publications": [
+                        "https://www.ons.gov.uk/economy/economicoutputandproductivity/productivitymeasures/bulletins/investmentinintangibleassetsintheuk/2022",
                         "https://www.ons.gov.uk/economy/economicoutputandproductivity/productivitymeasures/bulletins/investmentinintangibleassetsintheuk/2023",
                         "https://www.ons.gov.uk/economy/grossdomesticproductgdp/articles/bluebook2026impactongdpandmaincomponents/2026-08-20",
                         "https://www.ons.gov.uk/economy/grossdomesticproductgdp/articles/bluebook2026industryimpactanalysis/2026-08-20",
+                        "https://www.ons.gov.uk/economy/grossdomesticproductgdp/bulletins/businessinvestment/apriltojune2024revisedresults",
+                        "https://www.ons.gov.uk/economy/grossdomesticproductgdp/bulletins/businessinvestment/apriltojune2025revisedresults",
                         "https://www.ons.gov.uk/economy/grossdomesticproductgdp/bulletins/businessinvestment/janaurytomarch2026revisedresults",
+                        "https://www.ons.gov.uk/economy/grossdomesticproductgdp/bulletins/businessinvestment/januarytomarch2023revisedresults",
+                        "https://www.ons.gov.uk/economy/grossdomesticproductgdp/bulletins/businessinvestment/januarytomarch2024revisedresults",
+                        "https://www.ons.gov.uk/economy/grossdomesticproductgdp/bulletins/businessinvestment/januarytomarch2025revisedresults",
+                        "https://www.ons.gov.uk/economy/grossdomesticproductgdp/bulletins/businessinvestment/julytoseptember2023revisedresults",
+                        "https://www.ons.gov.uk/economy/grossdomesticproductgdp/bulletins/businessinvestment/julytoseptember2024revisedresults",
                         "https://www.ons.gov.uk/economy/grossdomesticproductgdp/bulletins/businessinvestment/julytoseptember2025revisedresults",
+                        "https://www.ons.gov.uk/economy/grossdomesticproductgdp/bulletins/businessinvestment/octobertodecember2023revisedresults",
+                        "https://www.ons.gov.uk/economy/grossdomesticproductgdp/bulletins/businessinvestment/octobertodecember2024revisedresults",
                         "https://www.ons.gov.uk/economy/grossdomesticproductgdp/bulletins/businessinvestment/octobertodecember2025revisedresults",
                         "https://www.ons.gov.uk/economy/grossdomesticproductgdp/bulletins/gdpfirstquarterlyestimateuk/julytoseptember2025",
+                        "https://www.ons.gov.uk/economy/grossdomesticproductgdp/bulletins/gdpfirstquarterlyestimateuk/julytoseptember2026",
                         "https://www.ons.gov.uk/economy/grossdomesticproductgdp/bulletins/gdpfirstquarterlyestimateuk/octobertodecember2025",
                         "https://www.ons.gov.uk/economy/grossdomesticproductgdp/bulletins/gdpmonthlyestimateuk/april2026",
+                        "https://www.ons.gov.uk/economy/grossdomesticproductgdp/bulletins/gdpmonthlyestimateuk/august2025",
                         "https://www.ons.gov.uk/economy/grossdomesticproductgdp/bulletins/gdpmonthlyestimateuk/december2025",
                         "https://www.ons.gov.uk/economy/grossdomesticproductgdp/bulletins/gdpmonthlyestimateuk/january2026",
+                        "https://www.ons.gov.uk/economy/grossdomesticproductgdp/bulletins/gdpmonthlyestimateuk/july2025",
                         "https://www.ons.gov.uk/economy/grossdomesticproductgdp/bulletins/gdpmonthlyestimateuk/july2026",
+                        "https://www.ons.gov.uk/economy/grossdomesticproductgdp/bulletins/gdpmonthlyestimateuk/june2023",
                         "https://www.ons.gov.uk/economy/grossdomesticproductgdp/bulletins/gdpmonthlyestimateuk/november2025",
                         "https://www.ons.gov.uk/economy/grossdomesticproductgdp/bulletins/gdpmonthlyestimateuk/october2025",
                         "https://www.ons.gov.uk/economy/grossdomesticproductgdp/bulletins/gdpmonthlyestimateuk/september2025",
+                        "https://www.ons.gov.uk/economy/grossdomesticproductgdp/bulletins/gdpmonthlyestimateuk/september2026",
+                        "https://www.ons.gov.uk/economy/grossdomesticproductgdp/bulletins/quarterlynationalaccounts/apriltojune2024",
                         "https://www.ons.gov.uk/economy/grossdomesticproductgdp/bulletins/quarterlynationalaccounts/januarytomarch2026",
                         "https://www.ons.gov.uk/economy/grossdomesticproductgdp/bulletins/quarterlynationalaccounts/julytoseptember2025",
                         "https://www.ons.gov.uk/economy/grossdomesticproductgdp/bulletins/quarterlynationalaccounts/octobertodecember2025",
                         "https://www.ons.gov.uk/economy/grossdomesticproductgdp/methodologies/improvementstoprivateactualandimputedrentalsinhouseholdexpenditureinuknationalaccountsbluebook2026",
                         "https://www.ons.gov.uk/economy/grossdomesticproductgdp/methodologies/improvementstothelocalgovernmentmeasureofintermediateconsumptioninuknationalaccountsbluebook2026",
                         "https://www.ons.gov.uk/economy/grossdomesticproductgdp/methodologies/incorporatingtheannualsurveyofgoodsandservicesintotheuknationalaccountsbluebook2026",
+                        "https://www.ons.gov.uk/economy/investmentspensionsandtrusts/bulletins/ownershipofukquotedshares/2022",
+                        "https://www.ons.gov.uk/economy/nationalaccounts/balanceofpayments/articles/uktradeingoodsyearinreview/2023",
+                        "https://www.ons.gov.uk/economy/nationalaccounts/balanceofpayments/articles/uktradewiththeunitedstates/2024",
                         "https://www.ons.gov.uk/economy/nationalaccounts/balanceofpayments/articles/uktradewiththeunitedstates/exportsandimportsofgoodsfollowingtheintroductionofustariffsapril2025tofebruary2026",
+                        "https://www.ons.gov.uk/economy/nationalaccounts/balanceofpayments/articles/uktradewiththeunitedstates2023/2023",
+                        "https://www.ons.gov.uk/economy/nationalaccounts/balanceofpayments/bulletins/uktrade/april2024",
+                        "https://www.ons.gov.uk/economy/nationalaccounts/balanceofpayments/bulletins/uktrade/april2025",
                         "https://www.ons.gov.uk/economy/nationalaccounts/balanceofpayments/bulletins/uktrade/april2026",
+                        "https://www.ons.gov.uk/economy/nationalaccounts/balanceofpayments/bulletins/uktrade/august2023",
+                        "https://www.ons.gov.uk/economy/nationalaccounts/balanceofpayments/bulletins/uktrade/august2025",
+                        "https://www.ons.gov.uk/economy/nationalaccounts/balanceofpayments/bulletins/uktrade/december2023",
+                        "https://www.ons.gov.uk/economy/nationalaccounts/balanceofpayments/bulletins/uktrade/december2024",
                         "https://www.ons.gov.uk/economy/nationalaccounts/balanceofpayments/bulletins/uktrade/december2025",
+                        "https://www.ons.gov.uk/economy/nationalaccounts/balanceofpayments/bulletins/uktrade/february2024",
+                        "https://www.ons.gov.uk/economy/nationalaccounts/balanceofpayments/bulletins/uktrade/february2025",
+                        "https://www.ons.gov.uk/economy/nationalaccounts/balanceofpayments/bulletins/uktrade/january2024",
                         "https://www.ons.gov.uk/economy/nationalaccounts/balanceofpayments/bulletins/uktrade/january2026",
+                        "https://www.ons.gov.uk/economy/nationalaccounts/balanceofpayments/bulletins/uktrade/july2023",
+                        "https://www.ons.gov.uk/economy/nationalaccounts/balanceofpayments/bulletins/uktrade/july2024",
+                        "https://www.ons.gov.uk/economy/nationalaccounts/balanceofpayments/bulletins/uktrade/july2025",
                         "https://www.ons.gov.uk/economy/nationalaccounts/balanceofpayments/bulletins/uktrade/july2026",
+                        "https://www.ons.gov.uk/economy/nationalaccounts/balanceofpayments/bulletins/uktrade/june2023",
+                        "https://www.ons.gov.uk/economy/nationalaccounts/balanceofpayments/bulletins/uktrade/june2024",
+                        "https://www.ons.gov.uk/economy/nationalaccounts/balanceofpayments/bulletins/uktrade/march2024",
+                        "https://www.ons.gov.uk/economy/nationalaccounts/balanceofpayments/bulletins/uktrade/march2025",
+                        "https://www.ons.gov.uk/economy/nationalaccounts/balanceofpayments/bulletins/uktrade/may2023",
+                        "https://www.ons.gov.uk/economy/nationalaccounts/balanceofpayments/bulletins/uktrade/may2024",
+                        "https://www.ons.gov.uk/economy/nationalaccounts/balanceofpayments/bulletins/uktrade/may2025",
+                        "https://www.ons.gov.uk/economy/nationalaccounts/balanceofpayments/bulletins/uktrade/november2023",
+                        "https://www.ons.gov.uk/economy/nationalaccounts/balanceofpayments/bulletins/uktrade/november2024",
                         "https://www.ons.gov.uk/economy/nationalaccounts/balanceofpayments/bulletins/uktrade/november2025",
+                        "https://www.ons.gov.uk/economy/nationalaccounts/balanceofpayments/bulletins/uktrade/october2023",
+                        "https://www.ons.gov.uk/economy/nationalaccounts/balanceofpayments/bulletins/uktrade/october2024",
                         "https://www.ons.gov.uk/economy/nationalaccounts/balanceofpayments/bulletins/uktrade/october2025",
+                        "https://www.ons.gov.uk/economy/nationalaccounts/balanceofpayments/bulletins/uktrade/september2023",
+                        "https://www.ons.gov.uk/economy/nationalaccounts/balanceofpayments/bulletins/uktrade/september2024",
                         "https://www.ons.gov.uk/economy/nationalaccounts/balanceofpayments/bulletins/uktrade/september2025",
+                        "https://www.ons.gov.uk/economy/nationalaccounts/balanceofpayments/bulletins/uktrade/september2026",
+                        "https://www.ons.gov.uk/economy/nationalaccounts/uksectoraccounts/bulletins/profitabilityofukcompanies/apriltojune2023",
+                        "https://www.ons.gov.uk/economy/nationalaccounts/uksectoraccounts/bulletins/profitabilityofukcompanies/apriltojune2024",
                         "https://www.ons.gov.uk/economy/nationalaccounts/uksectoraccounts/bulletins/quarterlysectoraccounts/januarytomarch2026",
                         "https://www.ons.gov.uk/economy/nationalaccounts/uksectoraccounts/bulletins/quarterlysectoraccounts/julytoseptember2025",
                         "https://www.ons.gov.uk/economy/nationalaccounts/uksectoraccounts/bulletins/quarterlysectoraccounts/octobertodecember2025"
@@ -5218,6 +5269,309 @@
                   },
                   "last_attempt": {
                         "at": "2026-11-24T14:40:54.875231+00:00",
+                        "status": "success"
+                  }
+            },
+            "https://www.ons.gov.uk/visualisations/dvc3690/fig01/index.html": {
+                  "filename": "dvc3690-fig01.jpg",
+                  "publications": [
+                        "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/articles/newinsightsonlabourmarketdynamicsfromuklinkedemployeremployeedataleed/2026"
+                  ],
+                  "last_success": {
+                        "width": 700,
+                        "height": 589,
+                        "viewport_width": 700,
+                        "captured_at": "2026-11-24T15:08:15.110583+00:00",
+                        "target_reached": false
+                  },
+                  "last_attempt": {
+                        "at": "2026-11-24T15:07:42.847206+00:00",
+                        "status": "success"
+                  }
+            },
+            "https://www.ons.gov.uk/visualisations/dvc3690/fig02/index.html": {
+                  "filename": "dvc3690-fig02.jpg",
+                  "publications": [
+                        "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/articles/newinsightsonlabourmarketdynamicsfromuklinkedemployeremployeedataleed/2026"
+                  ],
+                  "last_success": {
+                        "width": 510,
+                        "height": 764,
+                        "viewport_width": 510,
+                        "captured_at": "2026-11-24T15:08:57.426578+00:00",
+                        "target_reached": false
+                  },
+                  "last_attempt": {
+                        "at": "2026-11-24T15:08:15.128056+00:00",
+                        "status": "success"
+                  }
+            },
+            "https://www.ons.gov.uk/visualisations/dvc3690/fig03/index.html": {
+                  "filename": "dvc3690-fig03.jpg",
+                  "publications": [
+                        "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/articles/newinsightsonlabourmarketdynamicsfromuklinkedemployeremployeedataleed/2026"
+                  ],
+                  "last_success": {
+                        "width": 328,
+                        "height": 714,
+                        "viewport_width": 328,
+                        "captured_at": "2026-11-24T15:09:19.019993+00:00",
+                        "target_reached": false
+                  },
+                  "last_attempt": {
+                        "at": "2026-11-24T15:08:57.443581+00:00",
+                        "status": "success"
+                  }
+            },
+            "https://www.ons.gov.uk/visualisations/dvc3690/fig04/index.html": {
+                  "filename": "dvc3690-fig04.jpg",
+                  "publications": [
+                        "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/articles/newinsightsonlabourmarketdynamicsfromuklinkedemployeremployeedataleed/2026"
+                  ],
+                  "last_success": {
+                        "width": 552,
+                        "height": 700,
+                        "viewport_width": 552,
+                        "captured_at": "2026-11-24T15:09:43.422989+00:00",
+                        "target_reached": true
+                  },
+                  "last_attempt": {
+                        "at": "2026-11-24T15:09:19.036509+00:00",
+                        "status": "success"
+                  }
+            },
+            "https://www.ons.gov.uk/visualisations/dvc3690/fig05/index.html": {
+                  "filename": "dvc3690-fig05.jpg",
+                  "publications": [
+                        "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/articles/newinsightsonlabourmarketdynamicsfromuklinkedemployeremployeedataleed/2026"
+                  ],
+                  "last_success": {
+                        "width": 700,
+                        "height": 509,
+                        "viewport_width": 700,
+                        "captured_at": "2026-11-24T15:10:00.688796+00:00",
+                        "target_reached": false
+                  },
+                  "last_attempt": {
+                        "at": "2026-11-24T15:09:43.445981+00:00",
+                        "status": "success"
+                  }
+            },
+            "https://www.ons.gov.uk/visualisations/dvc3690/fig06/index.html": {
+                  "filename": "dvc3690-fig06.jpg",
+                  "publications": [
+                        "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/articles/newinsightsonlabourmarketdynamicsfromuklinkedemployeremployeedataleed/2026"
+                  ],
+                  "last_success": {
+                        "width": 434,
+                        "height": 700,
+                        "viewport_width": 434,
+                        "captured_at": "2026-11-24T15:10:26.401259+00:00",
+                        "target_reached": true
+                  },
+                  "last_attempt": {
+                        "at": "2026-11-24T15:10:00.706802+00:00",
+                        "status": "success"
+                  }
+            },
+            "https://www.ons.gov.uk/visualisations/dvc3690/fig07/index.html": {
+                  "filename": "dvc3690-fig07.jpg",
+                  "publications": [
+                        "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/articles/newinsightsonlabourmarketdynamicsfromuklinkedemployeremployeedataleed/2026"
+                  ],
+                  "last_success": {
+                        "width": 694,
+                        "height": 700,
+                        "viewport_width": 694,
+                        "captured_at": "2026-11-24T15:10:46.308347+00:00",
+                        "target_reached": true
+                  },
+                  "last_attempt": {
+                        "at": "2026-11-24T15:10:26.416260+00:00",
+                        "status": "success"
+                  }
+            },
+            "https://www.ons.gov.uk/visualisations/dvc3678/fig01/index.html": {
+                  "filename": "dvc3678-fig01.jpg",
+                  "publications": [
+                        "https://www.ons.gov.uk/peoplepopulationandcommunity/wellbeing/bulletins/publicopinionsandsocialtrendsgreatbritain/october2026"
+                  ],
+                  "last_success": {
+                        "width": 510,
+                        "height": 796,
+                        "viewport_width": 510,
+                        "captured_at": "2026-11-24T15:11:10.958917+00:00",
+                        "target_reached": false
+                  },
+                  "last_attempt": {
+                        "at": "2026-11-24T15:10:46.326883+00:00",
+                        "status": "success"
+                  }
+            },
+            "https://www.ons.gov.uk/visualisations/dvc3695/dashboard-monthly/index.html": {
+                  "filename": "dvc3695-dashboard-monthly.jpg",
+                  "publications": [
+                        "https://www.ons.gov.uk/economy/economicoutputandproductivity/output/bulletins/economicactivityandsocialchangeintheukrealtimeindicators/19november2026"
+                  ],
+                  "last_success": null,
+                  "last_attempt": {
+                        "at": "2026-11-24T15:11:10.979783+00:00",
+                        "status": "failed",
+                        "error": "No complete chart fits the width range: Visualisation content overflows its container"
+                  }
+            },
+            "https://www.ons.gov.uk/visualisations/dvc3695/footfall-bar-chart/index.html": {
+                  "filename": "dvc3695-footfall-bar-chart.jpg",
+                  "publications": [
+                        "https://www.ons.gov.uk/economy/economicoutputandproductivity/output/bulletins/economicactivityandsocialchangeintheukrealtimeindicators/19november2026"
+                  ],
+                  "last_success": {
+                        "width": 533,
+                        "height": 705,
+                        "viewport_width": 533,
+                        "captured_at": "2026-11-24T15:11:41.754999+00:00",
+                        "target_reached": false
+                  },
+                  "last_attempt": {
+                        "at": "2026-11-24T15:11:17.430699+00:00",
+                        "status": "success"
+                  }
+            },
+            "https://www.ons.gov.uk/visualisations/dvc3695/vat-new/index.html": {
+                  "filename": "dvc3695-vat-new.jpg",
+                  "publications": [
+                        "https://www.ons.gov.uk/economy/economicoutputandproductivity/output/bulletins/economicactivityandsocialchangeintheukrealtimeindicators/19november2026"
+                  ],
+                  "last_success": null,
+                  "last_attempt": {
+                        "at": "2026-11-24T15:11:41.769982+00:00",
+                        "status": "failed",
+                        "error": "Page.wait_for_function: Timeout 30000ms exceeded."
+                  }
+            },
+            "https://www.ons.gov.uk/visualisations/dvc3686/fig03/index.html": {
+                  "filename": "dvc3686-fig03.jpg",
+                  "publications": [
+                        "https://www.ons.gov.uk/economy/inflationandpriceindices/bulletins/privaterentandhousepricesuk/november2026"
+                  ],
+                  "last_success": {
+                        "width": 695,
+                        "height": 700,
+                        "viewport_width": 695,
+                        "captured_at": "2026-11-24T15:12:32.712232+00:00",
+                        "target_reached": true
+                  },
+                  "last_attempt": {
+                        "at": "2026-11-24T15:12:12.334376+00:00",
+                        "status": "success"
+                  }
+            },
+            "https://www.ons.gov.uk/visualisations/dvc3686/fig04/index.html": {
+                  "filename": "dvc3686-fig04.jpg",
+                  "publications": [
+                        "https://www.ons.gov.uk/economy/inflationandpriceindices/bulletins/privaterentandhousepricesuk/november2026"
+                  ],
+                  "last_success": {
+                        "width": 682,
+                        "height": 700,
+                        "viewport_width": 682,
+                        "captured_at": "2026-11-24T15:12:55.347044+00:00",
+                        "target_reached": true
+                  },
+                  "last_attempt": {
+                        "at": "2026-11-24T15:12:32.734765+00:00",
+                        "status": "success"
+                  }
+            },
+            "https://www.ons.gov.uk/visualisations/dvc3686/fig06/index.html": {
+                  "filename": "dvc3686-fig06.jpg",
+                  "publications": [
+                        "https://www.ons.gov.uk/economy/inflationandpriceindices/bulletins/privaterentandhousepricesuk/november2026"
+                  ],
+                  "last_success": {
+                        "width": 641,
+                        "height": 700,
+                        "viewport_width": 641,
+                        "captured_at": "2026-11-24T15:13:20.889695+00:00",
+                        "target_reached": true
+                  },
+                  "last_attempt": {
+                        "at": "2026-11-24T15:12:55.364599+00:00",
+                        "status": "success"
+                  }
+            },
+            "https://www.ons.gov.uk/visualisations/dvc3686/fig07/index.html": {
+                  "filename": "dvc3686-fig07.jpg",
+                  "publications": [
+                        "https://www.ons.gov.uk/economy/inflationandpriceindices/bulletins/privaterentandhousepricesuk/november2026"
+                  ],
+                  "last_success": {
+                        "width": 700,
+                        "height": 850,
+                        "viewport_width": 700,
+                        "captured_at": "2026-11-24T15:14:19.386475+00:00",
+                        "target_reached": false
+                  },
+                  "last_attempt": {
+                        "at": "2026-11-24T15:13:20.923706+00:00",
+                        "status": "success"
+                  }
+            },
+            "https://www.ons.gov.uk/visualisations/dvc3686/fig08/index.html": {
+                  "filename": "dvc3686-fig08.jpg",
+                  "publications": [
+                        "https://www.ons.gov.uk/economy/inflationandpriceindices/bulletins/privaterentandhousepricesuk/november2026"
+                  ],
+                  "last_success": {
+                        "width": 700,
+                        "height": 823,
+                        "viewport_width": 700,
+                        "captured_at": "2026-11-24T15:14:54.579040+00:00",
+                        "target_reached": false
+                  },
+                  "last_attempt": {
+                        "at": "2026-11-24T15:14:19.404530+00:00",
+                        "status": "success"
+                  }
+            },
+            "https://www.ons.gov.uk/visualisations/dvc368/dashboard/index.html": {
+                  "filename": "dvc368-dashboard.jpg",
+                  "publications": [
+                        "https://www.ons.gov.uk/economy/nationalaccounts/articles/dashboardunderstandingtheukeconomy/2017-02-22"
+                  ],
+                  "last_success": null,
+                  "last_attempt": {
+                        "at": "2026-11-24T15:14:54.593055+00:00",
+                        "status": "failed",
+                        "error": "Screenshot dimensions do not match measured container bounds"
+                  }
+            },
+            "https://www.ons.gov.uk/visualisations/dvc3692/build/": {
+                  "filename": "dvc3692-build.jpg",
+                  "publications": [
+                        "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/bulletins/uklabourmarket/november2026"
+                  ],
+                  "last_success": null,
+                  "last_attempt": {
+                        "at": "2026-11-24T15:15:14.751256+00:00",
+                        "status": "failed",
+                        "error": "Page.wait_for_function: Timeout 30000ms exceeded."
+                  }
+            },
+            "https://www.ons.gov.uk/visualisations/dvc3685/fig05/index.html": {
+                  "filename": "dvc3685-fig05.jpg",
+                  "publications": [
+                        "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/labourproductivity/articles/ukproductivityintroduction/julytoseptember2026"
+                  ],
+                  "last_success": {
+                        "width": 601,
+                        "height": 701,
+                        "viewport_width": 601,
+                        "captured_at": "2026-11-24T15:16:10.236435+00:00",
+                        "target_reached": true
+                  },
+                  "last_attempt": {
+                        "at": "2026-11-24T15:15:44.946963+00:00",
                         "status": "success"
                   }
             }
