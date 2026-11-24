@@ -1,5 +1,46 @@
 [
       {
+            "doc_uri": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/articles/newinsightsonlabourmarketdynamicsfromuklinkedemployeremployeedataleed/2026",
+            "release_date": "2026-11-23",
+            "title": "New insights on labour market dynamics from UK Linked Employer-Employee Data (LEED): 2026",
+            "edition": "2026",
+            "vis": [
+                  {
+                        "url": "/visualisations/dvc3690/fig01/index.html",
+                        "chart_type": "small-multiple-line-chart-multiline"
+                  },
+                  {
+                        "url": "/visualisations/dvc3690/fig02/index.html",
+                        "chart_type": "small-multiple-line-chart-multiline"
+                  },
+                  {
+                        "url": "/visualisations/dvc3690/fig03/index.html",
+                        "chart_type": "small-multiple-line-chart-multiline"
+                  },
+                  {
+                        "url": "/visualisations/dvc3690/fig04/index.html",
+                        "chart_type": "small-multiple-line-chart-focus"
+                  },
+                  {
+                        "url": "/visualisations/dvc3690/fig05/index.html",
+                        "chart_type": "line-chart"
+                  },
+                  {
+                        "url": "/visualisations/dvc3690/fig06/index.html",
+                        "chart_type": null
+                  },
+                  {
+                        "url": "/visualisations/dvc3690/fig07/index.html",
+                        "chart_type": "small-multiple-line-chart-multiline"
+                  }
+            ],
+            "theme": "employmentandlabourmarket",
+            "topic": "peopleinwork",
+            "subtopic": "employmentandemployeetypes",
+            "series": "New insights on labour market dynamics from UK Linked Employer-Employee Data (LEED)",
+            "latest": true
+      },
+      {
             "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/wellbeing/bulletins/publicopinionsandsocialtrendsgreatbritain/october2026",
             "release_date": "2026-11-20",
             "title": "Public opinions and social trends, Great Britain: October 2026",
