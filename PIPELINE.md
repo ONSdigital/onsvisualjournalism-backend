@@ -15,13 +15,16 @@ on finding a non-empty `vis_urls` array after PNG and download-link filtering.
 | File | Role |
 | --- | --- |
 | [catalogue.ipynb](catalogue.ipynb) | The single orchestration entry point for independent stages |
-| [config.json](config.json) | Selects discovery/catalogue modes, limits and optional URL/start date |
+| [config.json](config.json) | Selects discovery/catalogue/screenshots modes, limits and optional URL/start date |
 | [ons_discovery.py](ons_discovery.py) | Configuration, selection, discovery, metadata reuse, HTTP and safe JSON-writing helpers |
+| [ons_screenshots.py](ons_screenshots.py) | Independent whole-visualisation JPG capture, responsive sizing and image index |
+| `screenshots/` | Generated JPGs and `index.json` mapping visualisations to images and publications |
 | [articles-and-dvcs.json](articles-and-dvcs.json) | Locally maintained history cache, initially seeded from upstream |
 | [data.json](data.json) | Generated, enriched catalogue |
 | `discovery-state.json` | Last successfully scanned published-release day; created by a successful run |
 | [requirements.txt](requirements.txt) | Python dependencies |
-| [.github/workflows/test.yml](.github/workflows/test.yml) | Executes the integrated notebook and commits generated JSON |
+| [.github/workflows/test.yml](.github/workflows/test.yml) | Executes the integrated notebook and commits generated JSON/JPG outputs |
+| [test_ons_screenshots.py](test_ons_screenshots.py) | Offline selection, capture, sizing, persistence and integration tests |
 | [README.md](README.md) | Configuration and field reference |
 
 There should be only one pipeline notebook. Do not introduce separate update and
@@ -70,6 +73,12 @@ same notebook with the committed configuration and no overrides.
 Discovery modes are `off`, `new`, `recent`, `all`, `datestart` and `url`.
 Catalogue modes are `off`, `new`, `recent` and `all`. Both default to `new`, with
 `limit: null`. Discovery also defaults `url` and `start_date` to `null`.
+Screenshots accepts the same six modes and settings as discovery but defaults
+to `off`. It selects cached publications rather than searching releases. Its
+`new` mode captures missing/failed images; other enabled modes recapture selected
+charts. Recent selects newest eligible cached publications. URL mode requires a
+cached publication URL; use discovery URL mode alongside it to populate the cache.
+All selected charts are considered, but limits count publications, not charts.
 Limits are positive article counts or null; recent mode requires a count.
 Start-date discovery uses publication dates strictly after the selected day.
 Unused URL/date inputs may remain in place when switching modes.
@@ -103,7 +112,7 @@ known cache history plus incremental discoveries, not the entire ONS archive.
 With a limit, source discovery takes matching release links first and uses any
 remaining all-mode budget on cached history in newest-publication order.
 
-Both stages off is a logged no-op. Preserve the source cache and return config
+All three stages off is a logged no-op. Preserve the source cache and return config
 to normal settings after one-off runs. Commit the new config for scheduled runs;
 the notebook does not change it automatically.
 
@@ -125,7 +134,73 @@ the notebook does not change it automatically.
   derive series, preserve/default editions and remove `vis_urls` and PNG links.
 8. Recalculate `latest` across the entire output.
 9. Stage only enabled/changed JSON artifacts before replacing any. Replace the
-  catalogue, then cache, then checkpoint when applicable. Close the HTTP session.
+  catalogue, then cache, then checkpoint when applicable.
+10. If screenshots is enabled, select publications from the final cache and
+  capture unique eligible chart URLs. Persist successful JPGs and the merged
+  screenshot index, log a consolidated failure summary and close browser resources.
+11. Report the current screenshot result to Actions, then raise if captures
+  failed. Close the HTTP session even on failure. Actions commits expected
+  partial screenshot results before marking the run failed; fatal pipeline
+  errors do not take that commit path.
+
+### Screenshot Capture and Linking
+
+The full configuration and index reference is in
+[README.md](README.md#screenshots). Screenshot-only runs do not read/write
+`data.json` or advance discovery state. Off mode does not read the image index or
+start a browser; Playwright/Pillow imports are deferred until capture is needed.
+
+Find a supported rendered plot, then capture its full wrapping div. Expand to
+the common ancestor of chart panels, legends, controls, source and notes; fall
+back to the visualisation page body when no suitable div contains them. Preserve
+padding and all visible contents, including interactive controls and attribution.
+Hidden panels remain hidden; this does not enumerate interactive states.
+Unknown layouts, overflowing content, blank plots, script errors and
+unstable layouts/pixels are explicit per-chart failures.
+
+Start at 700px viewport width. If full-container height is already 700px within one pixel,
+do not adjust it. Otherwise sample widths between 320px and 700px using a bounded
+coarse-to-fine search, without assuming monotonic responsiveness. Reload at every
+trial width to handle standalone Pym charts that do not resize themselves.
+Choose the closest measured height, with wider layouts winning ties. Never
+stretch or crop content, and enforce a maximum actual JPEG width of 700px.
+Measure and validate the final JPEG, recording actual dimensions and whether
+the target was reached. A container unable to reach 700px height is not a failure.
+Measure the whole captured container, not only the SVG/canvas. Check blankness
+using the plot surfaces so non-empty legends/source cannot mask a blank chart.
+
+The index is keyed by normalised absolute visualisation URL, retaining query
+strings and fragments. Filenames normally use `dvcXXXX-figXX.jpg` in lowercase.
+Collisions append eight SHA-256 characters from the full URL, with a numeric
+suffix if that also collides. Non-standard URLs use a readable path-based stem.
+Reserve existing filenames case-insensitively and preserve indexed assignments;
+never overwrite another URL's image or an unknown pre-existing file.
+Shared URLs have one image and a list of all referencing cached
+publications, even when only some were selected for capture. `data.json` has no
+additional screenshot fields.
+
+Enabled stages migrate legacy long hashed filenames and update their index
+links. Existing image bytes and saved capture metadata are preserved. Legacy
+images left unindexed by an interrupted run can be identified from their full
+URL hash and cached URL list; register these with missing success metadata and
+an explicit failed-attempt explanation requiring recapture, rather than inventing
+successful metadata. Migration is skipped when screenshots is off. Save index
+entries after each capture attempt to retain filename ownership if later work
+is interrupted.
+
+Failures update `last_attempt` without replacing the prior JPG or `last_success`.
+`new` retries failed attempts and missing images. It does not detect changed
+content behind an unchanged successfully captured URL; request a recapture mode.
+Unselected entries/images are preserved and unused images are not deleted.
+Use a recapture mode to refresh images made with the earlier plot-only boundary.
+
+Image and index replacements are independently atomic. An interrupted or fatal
+write can leave an image newer than its success metadata; explicitly recapture
+that publication to repair a failed refresh, or use `new` for missing/failed
+entries. Screenshot errors do not undo already-published catalogue/cache/state.
+Browser-startup, index-validation and filesystem errors remain fatal, not
+silently skipped charts. The workflow propagates current-run failure status,
+not historical errors retained for unselected charts.
 
 ### Checkpoint and Failure Recovery
 
@@ -291,13 +366,18 @@ python -m jupyter nbconvert --to notebook --execute catalogue.ipynb --ExecutePre
 ```
 
 The executed notebook goes outside the repository; the catalogue still writes
-to the repository. Which files and pages are touched depends on both stage
+to the repository. Which files and pages are touched depends on all stage
 settings. Catalogue-only rebuilding reuses saved inputs, fetching missing
 metadata when necessary. Explicit discovery refreshes also refresh catalogue
 metadata for processed publications. Live requests have a 30-second timeout and one
 second of pacing between uncached requests. Up to three retries with bounded
 exponential backoff handle selected transient failures. A full rebuild can take
-many minutes; publication HTML is reused, and no browser or screenshot step runs.
+many minutes; publication HTML is reused. An enabled screenshots stage separately
+starts Chromium and visits the selected chart URLs. Install it first:
+
+```powershell
+python -m playwright install chromium
+```
 
 Before a production rebuild, retain copies of cache, data and checkpoint. Afterward, inspect
 the output diff and restore normal stage settings if required. Neither the notebook nor a
@@ -314,11 +394,17 @@ of `35 4 * * *` (04:35 UTC). It:
 
 1. Checks out the repository and configures Python 3.11.
 2. Installs requirements; there is no upstream-repository download step.
-3. Installs Jupyter and executes the integrated notebook using the tracked config.
-4. Saves the executed notebook under `/tmp`.
-5. Stages only existing cache, catalogue and checkpoint files, then uses the automated Git
+3. Installs Jupyter, checks the screenshot settings, and installs Chromium/system
+   dependencies only if screenshots is enabled.
+4. Executes the integrated notebook using the tracked config and saves its
+   executed output under `/tmp`.
+5. Stages only existing cache, catalogue and checkpoint files plus screenshot
+  JPGs/index when present, then uses the automated Git
   identity, stashes generated changes, rebases
    against `origin/main`, reapplies the stash, and commits and pushes changes.
+6. Marks the run failed if the notebook failed. Expected individual screenshot
+   failures allow step 5 to commit successful work first; unrelated fatal
+   notebook failures skip that step.
 
 Review the workflow before changing branch behavior. A concurrency group prevents
 overlapping runs on the same branch without cancelling active runs. The workflow
@@ -327,12 +413,13 @@ coordination to avoid concurrent writers.
 
 ## Current Operational Limitations
 
-- Search, landing, publication and chart requests all use the bounded HTTP
+- Search, landing, publication and chart metadata requests use the bounded HTTP
   client and reject unsuccessful HTTP responses. A broken historical publication
   or chart can stop a rebuild rather than silently produce partial data.
 - Requests use `verify=False`, and insecure-request warnings are suppressed.
   This disables TLS certificate verification; it is existing behavior, not a
-  recommendation for new integrations.
+  recommendation for new integrations. Screenshot browser requests keep normal
+  browser TLS verification and have separate navigation/rendering timeouts.
 - Chart metadata extraction tries template-name and template-property fallbacks
   before saving the entry. A null chart type still does not establish that the
   chart is unclassifiable; use discovery refresh with catalogue enabled after
@@ -346,16 +433,32 @@ coordination to avoid concurrent writers.
   require previously unrecorded page content cannot be rebuilt strictly offline.
 - Separate atomic file replacements are not a cross-file transaction. Failed
   replacement leaves the checkpoint behind for replay; do not advance it manually
-  to hide a failed run.
+  to hide a failed discovery/catalogue run. Screenshot work happens after those
+  writes and can fail with an already-advanced successful discovery checkpoint.
+- Screenshot container support is deliberately conservative, not universal
+  coverage of all legacy templates. Maps wait for network/layout/pixel stability
+  and globally exposed renderer ready state when available; this is not proof
+  that every possible interactive state or data layer has been captured.
+- JPG history grows the Git repository; unused images are not pruned or archived
+  separately. Coordinate manual runs to avoid competing writers.
 
 These are observed behaviors to consider when maintaining the pipeline. This
 guide does not change or fix them.
 
 ## Validation and Maintenance Checklist
 
-There is currently no committed automated test suite in this workspace. Do not
-document commands for removed test files. Validate changes with focused offline
-fixtures and mocked HTTP/file writes before running the live pipeline.
+Run the focused screenshot suite after installing requirements and Chromium:
+
+```powershell
+python -m unittest -v test_ons_screenshots
+```
+
+The suite uses in-memory browser routes rather than live ONS requests and never
+reads the user configuration. It checks modes, publication limits, shared URLs,
+responsive sizing, reloads, whole-container JPEG dimensions, complete panels, map
+readiness/visible controls, partial failures, atomic image writes and notebook
+stage isolation. Broader discovery/catalogue checks below remain maintenance
+guidance, not claims of complete automated coverage.
 
 - Exercise every discovery/catalogue mode with duplicate cached URLs
   and more than ten discoveries.

@@ -23,7 +23,7 @@ DEFAULT_DISCOVERY = {'page_size': 50, 'max_pages': 15, 'lookback_days': 7}
 
 
 def validate_config(config):
-    if not isinstance(config, dict) or set(config) - {'discovery', 'catalogue'}:
+    if not isinstance(config, dict) or set(config) - {'discovery', 'catalogue', 'screenshots'}:
         raise ValueError('Unsupported pipeline configuration')
     supplied = config.get('discovery', {})
     if not isinstance(supplied, dict):
@@ -34,16 +34,18 @@ def validate_config(config):
     if discovery['mode'] not in ('off', 'new', 'recent', 'all', 'datestart', 'url'):
         raise ValueError('Unsupported discovery mode')
     validate_limit(discovery, 'Discovery')
-    if discovery['mode'] == 'url':
-        value = discovery['url']
-        url = ons_url(value) if isinstance(value, str) and value.startswith(('https://', 'http://')) else None
-        if url is None or not extract_doc_urls(f'<a href="{url}"></a>', ONS_URL):
-            raise ValueError('Discovery mode url requires an absolute ONS publication URL')
-        discovery['url'] = url
-    if discovery['mode'] == 'datestart':
-        value = discovery['start_date']
-        if not isinstance(value, str) or date.fromisoformat(value).isoformat() != value:
-            raise ValueError('Discovery mode datestart requires start_date as YYYY-MM-DD')
+    validate_source_selection(discovery, 'Discovery')
+
+    supplied = config.get('screenshots', {})
+    if not isinstance(supplied, dict):
+        raise ValueError('Unsupported screenshots settings')
+    screenshots = {'mode': 'off', 'limit': None, 'url': None, 'start_date': None, **supplied}
+    if set(screenshots) - {'mode', 'limit', 'url', 'start_date'}:
+        raise ValueError('Unsupported screenshots settings')
+    if screenshots['mode'] not in ('off', 'new', 'recent', 'all', 'datestart', 'url'):
+        raise ValueError('Unsupported screenshots mode')
+    validate_limit(screenshots, 'Screenshots')
+    validate_source_selection(screenshots, 'Screenshots')
 
     supplied = config.get('catalogue', {})
     if not isinstance(supplied, dict):
@@ -54,7 +56,20 @@ def validate_config(config):
     if catalogue['mode'] not in ('off', 'new', 'recent', 'all'):
         raise ValueError('Unsupported catalogue mode')
     validate_limit(catalogue, 'Catalogue')
-    return {'discovery': discovery, 'catalogue': catalogue}
+    return {'discovery': discovery, 'catalogue': catalogue, 'screenshots': screenshots}
+
+
+def validate_source_selection(settings, stage):
+    if settings['mode'] == 'url':
+        value = settings['url']
+        url = ons_url(value) if isinstance(value, str) and value.startswith(('https://', 'http://')) else None
+        if url is None or not extract_doc_urls(f'<a href="{url}"></a>', ONS_URL):
+            raise ValueError(f'{stage} mode url requires an absolute ONS publication URL')
+        settings['url'] = url
+    if settings['mode'] == 'datestart':
+        value = settings['start_date']
+        if not isinstance(value, str) or date.fromisoformat(value).isoformat() != value:
+            raise ValueError(f'{stage} mode datestart requires start_date as YYYY-MM-DD')
 
 
 def validate_limit(settings, stage):

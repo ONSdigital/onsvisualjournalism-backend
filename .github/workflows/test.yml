@@ -39,10 +39,29 @@ jobs:
     - name: Install notebook runner
       run: |
         pip install jupyter
+    - name: Check screenshot settings
+      id: screenshots
+      run: |
+        python - <<'PY'
+        import json
+        import os
+        from ons_discovery import validate_config
+
+        with open('config.json', encoding='utf-8') as source:
+            config = validate_config(json.load(source))
+        with open(os.environ['GITHUB_OUTPUT'], 'a', encoding='utf-8') as output:
+            output.write(f"enabled={str(config['screenshots']['mode'] != 'off').lower()}\n")
+        PY
+    - name: Install screenshot browser
+      if: steps.screenshots.outputs.enabled == 'true'
+      run: python -m playwright install --with-deps chromium
     - name: Run notebook
+      id: pipeline
+      continue-on-error: true
       run: |
         python -m jupyter nbconvert --to notebook --execute catalogue.ipynb --ExecutePreprocessor.timeout=-1 --output catalogue-output.ipynb --output-dir /tmp
     - name: Commit and push
+      if: steps.pipeline.outcome == 'success' || (steps.pipeline.outputs.screenshots_completed == 'true' && steps.pipeline.outputs.screenshots_failed > 0)
       run: |-
         git config user.name "Automated"
         git config user.email "actions@users.noreply.github.com"
@@ -52,6 +71,12 @@ jobs:
             generated+=("$file")
           fi
         done
+        if [ -f screenshots/index.json ]; then
+          generated+=("screenshots/index.json")
+          while IFS= read -r -d '' file; do
+            generated+=("$file")
+          done < <(find screenshots -maxdepth 1 -type f -name '*.jpg' -print0)
+        fi
         if [ ${#generated[@]} -eq 0 ]; then
           exit 0
         fi
@@ -66,3 +91,8 @@ jobs:
         timestamp=$(date -u)
         git commit -m "${timestamp}"
         git push
+    - name: Report pipeline failure
+      if: always() && steps.pipeline.outcome == 'failure'
+      run: |
+        echo "::error::Pipeline failed. Expected screenshot failures are listed in the notebook log; any successful captures were saved before failure."
+        exit 1

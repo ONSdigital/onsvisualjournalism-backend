@@ -20,6 +20,12 @@ Actions runs. It reads [config.json](config.json) from the repository root:
     "catalogue": {
         "mode": "new",
         "limit": null
+    },
+    "screenshots": {
+        "mode": "off",
+        "limit": null,
+        "url": null,
+        "start_date": null
     }
 }
 ```
@@ -30,8 +36,10 @@ omitted settings use the defaults above. `null` limit means no article-count
 limit within the selected mode. A positive integer caps that stage's work.
 
 Discovery maintains the source list in [articles-and-dvcs.json](articles-and-dvcs.json).
-Catalogue builds the enriched output in [data.json](data.json). Their limits are
-independent. Turning a stage off leaves its output untouched.
+Catalogue builds the enriched output in [data.json](data.json). Screenshots saves
+whole-visualisation JPGs and a linking index under `screenshots`. All three limits are
+independent. Turning a stage off leaves its output untouched. If configuration
+is excluded from an AI agent's access, apply these settings manually.
 
 | `discovery.mode` | Work performed |
 | --- | --- |
@@ -65,6 +73,95 @@ Limited runs preserve all unprocessed output. A complete catalogue `all` rebuild
 replaces the output from the source cache. Local fields and `latest` flags are
 always recalculated over the complete resulting catalogue.
 
+### Screenshots
+
+| `screenshots.mode` | Work performed |
+| --- | --- |
+| `off` | Do not read/write screenshot outputs or start a browser; the default |
+| `new` | Capture missing images and retry failed captures, including failed refreshes with an older image |
+| `recent` | Recapture all charts from the newest `limit` eligible cached publications; positive limit required |
+| `all` | Recapture all eligible cached publications, subject to `limit` |
+| `datestart` | Recapture publications strictly after `start_date`, subject to `limit` |
+| `url` | Recapture one cached publication identified by its absolute ONS publication `url` |
+
+Limits count **publications**, not charts. Every selected publication contributes
+all its eligible visualisations; `new` captures only pending charts. Selection
+uses the source cache after discovery/catalogue processing, newest publication
+first, with URL as a tie-breaker. Shared visualisation URLs are captured once.
+Screenshot selection does not search releases or advance the discovery checkpoint.
+In `url` mode, use a publication URL, not a chart URL; if it is not cached, run
+discovery `url` first or alongside screenshots. Existing successful images are
+not automatically refreshed when content changes at the same URL: use `recent`,
+`all`, `datestart` or `url`.
+
+Capture the complete visualisation container, not just its SVG/canvas. Use the
+chart's wrapping div, expanding to a common ancestor when legends, controls,
+source, notes or other chart panels are siblings. Fall back to the visualisation
+page body when no wrapping div contains them. Keep padding, headings, legends,
+source, notes, map attribution and visible interactive controls as rendered;
+do not open hidden panels or enumerate interactive states. Unsupported layouts
+are reported rather than silently saving an empty chart.
+
+The browser starts at **700px wide**. If the full container is already 700px tall (within
+one output pixel), its width is unchanged. Otherwise a bounded coarse-to-fine
+search samples responsive widths from **320px to 700px**, including breakpoints
+in that search. The complete chart closest to 700px tall among measured layouts
+is used, preferring wider layouts on a tie. The height target includes legends,
+controls and source/notes, not only the plotted area. Some charts get shorter when narrowed
+and cannot reach the target. Nothing is stretched, scaled or cropped to force it;
+JPG width never exceeds 700px. Charts reload at each trial width because some
+standalone ONS embeds do not redraw on viewport resize. Fonts, layout, pixels and
+available map-ready state are checked before capture.
+The first layout is reloaded with warm fonts so SVG legend dimensions do not
+depend on fallback-font measurements from a cold navigation.
+
+`screenshots/index.json` has `version: 1` and a `charts` object keyed by absolute
+visualisation URL. Each entry contains:
+
+- `filename`: normally `dvc3682-fig01.jpg`, using the DVC and figure numbers
+  from the URL, normalised to lowercase. If another URL or an unknown existing
+  file owns that name, append eight SHA-256 characters from the full URL, such as
+  `dvc3682-fig01-a1b2c3d4.jpg`. A further collision adds `-2`, `-3`, etc.
+  Query strings, fragments and case differences remain distinct URL identities.
+  URLs without a DVC/figure pair use a readable path-based stem with the same
+  collision protection. Existing indexed filename assignments remain stable.
+- `publications`: all cached publication URLs referencing that visualisation.
+- `last_success`: actual `width`, `height`, `viewport_width`, UTC `captured_at`
+  and boolean `target_reached`, or `null` if it has never succeeded.
+- `last_attempt`: UTC `at`, `status` (`success` or `failed`) and an `error` on
+  failure. A failed refresh retains the previous image and success metadata.
+
+Join the index keys to absolute catalogue `vis[].url` values (resolve relative
+paths against `https://www.ons.gov.uk`). The catalogue schema is unchanged.
+Partial runs preserve unselected images and entries; unused images are not pruned.
+Enabled screenshot runs migrate the older long hashed filenames and update the
+index without changing image bytes. Legacy files left without metadata by an
+interrupted run are linked back to their cached URLs and explicitly marked for
+recapture; no successful capture metadata is invented. Screenshot-off does not
+perform migration.
+Images captured with the earlier plot-only boundary are not automatically
+invalidated; use a recapture mode to replace them with full-container captures.
+
+Each failed chart is logged while other charts continue. Successful JPGs and the
+index entries are saved after each completed capture attempt, so filename
+ownership survives later interruptions. The notebook raises a consolidated failure. Actions
+commits these partial results before marking the run failed. Invalid index data,
+browser startup failures and filesystem failures remain fatal. JPGs and the index
+are replaced atomically per file, not as one transaction: an interrupted run can
+leave an image ahead of its index entry. Retry `new` for missing/failed entries;
+explicitly recapture the affected publication after a fatal interrupted refresh.
+Images are committed to Git, which increases repository size over time.
+
+Install the browser once into the environment used by the notebook:
+
+```powershell
+python -m pip install -r requirements.txt
+python -m playwright install chromium
+```
+
+GitHub Actions installs Chromium and its system dependencies when enabled.
+Chromium is not needed for discovery/catalogue-only runs.
+
 ### Common Runs
 
 Rebuild the catalogue after a data-structure change, without source discovery:
@@ -75,6 +172,21 @@ Rebuild the catalogue after a data-structure change, without source discovery:
     "catalogue": {"mode": "all", "limit": null}
 }
 ```
+
+Capture charts from the newest five cached publications without changing the
+source cache, catalogue or checkpoint:
+
+```json
+{
+    "discovery": {"mode": "off"},
+    "catalogue": {"mode": "off"},
+    "screenshots": {"mode": "recent", "limit": 5}
+}
+```
+
+For ongoing missing-image capture, set `screenshots.mode` to `new`. For a single
+cached publication, set it to `url` and paste the publication URL into
+`screenshots.url`. Keep the limit `null` unless deliberately sampling.
 
 Other runs only need a few changes to the default object:
 
@@ -97,8 +209,9 @@ string limits are invalid. Old top-level `mode`/`update_limit`, `scope`,
 [ons_discovery.py](ons_discovery.py) queries the ONS release search API directly,
 follows publication links and maintains [articles-and-dvcs.json](articles-and-dvcs.json)
 as the local history cache. The screenshot repository is no longer downloaded.
-No screenshots, browser automation or PNG files are generated; original PNG
-visualisation links are excluded too. SVG and JPEG publication assets are retained.
+The optional [ons_screenshots.py](ons_screenshots.py) stage generates JPGs using
+Playwright Chromium. Original PNG visualisation links remain excluded.
+SVG and JPEG publication assets are retained.
 
 `discovery-state.json` records the last successfully scanned published-release
 day. Only completed `new` and `all` scans advance it. A scan stopped by its
@@ -114,7 +227,7 @@ normal settings after a one-off run; the notebook does not reset configuration.
 After pasting the new format locally, commit `config.json` so the automated
 pipeline uses the same settings. No separate workflow configuration is needed.
 
-Both stages use shared fetching, merge and enrichment code. Only enabled or
+Discovery and catalogue use shared fetching, merge and enrichment code. Only enabled or
 changed artifacts are written; catalogue-off leaves output untouched. Catalogue
 enrichment can update the source cache even with discovery off. All selected
 JSON writes are staged before publication. Catalogue and cache are replaced first,
@@ -123,6 +236,8 @@ three-file update is not a transaction: a replacement failure can leave newer
 data with the older checkpoint, which is replayed on the next successful run.
 Discovery, request, parse or serialization failures before publication leave the
 existing files untouched.
+The independent screenshot stage runs after those JSON writes; a screenshot
+failure does not roll back a successful discovery/catalogue update.
 
 The pipeline identifies releases by `doc_uri`, preserving different releases
 that share a title. A repeated URL refreshes the same release instead of adding
