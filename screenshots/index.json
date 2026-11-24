@@ -5509,11 +5509,11 @@
                         "width": 700,
                         "height": 850,
                         "viewport_width": 700,
-                        "captured_at": "2026-11-24T15:14:19.386475+00:00",
+                        "captured_at": "2026-11-24T16:28:35.837944+00:00",
                         "target_reached": false
                   },
                   "last_attempt": {
-                        "at": "2026-11-24T15:13:20.923706+00:00",
+                        "at": "2026-11-24T16:26:59.751932+00:00",
                         "status": "success"
                   }
             },

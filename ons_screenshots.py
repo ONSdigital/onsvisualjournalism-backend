@@ -19,6 +19,9 @@ TARGET_HEIGHT = 700
 MIN_WIDTH = 320
 MAX_WIDTH = 700
 TIMEOUT_MS = 30_000
+READINESS_TIMEOUT_MS = 90_000
+PIXEL_QUIET_SECONDS = 2
+MAP_QUIET_SECONDS = 10
 CAPTURE_TIMEOUT_SECONDS = 300
 
 
@@ -318,11 +321,70 @@ FIND_CHART = r"""() => {
                     || r.top < box.top - 1 || r.bottom > box.bottom + 1;
             })) return {error: 'Visualisation content overflows its container'};
     return {x: box.x + scrollX, y: box.y + scrollY, width: box.width, height: box.height,
-        map: !!element.querySelector('.maplibregl-canvas, .mapboxgl-canvas'),
+        map: !!element.querySelector(
+            '.maplibregl-canvas, .mapboxgl-canvas, .leaflet-container, .ol-viewport'),
         plots: surfaces.map(s => {
             const r = s.getBoundingClientRect();
             return {x:r.x + scrollX, y:r.y + scrollY, width:r.width, height:r.height};
         })};
+}"""
+
+
+# Module-scoped map instances are not available through window.map.
+TRACK_MAPS = r"""(() => {
+    if (globalThis.__onsScreenshotMaps) return;
+    const maps = globalThis.__onsScreenshotMaps = new Set();
+    const constructors = new WeakMap();
+    const wrap = library => library && new Proxy(library, {
+        get(target, key, receiver) {
+            const value = Reflect.get(target, key, receiver);
+            if (key !== 'Map' || typeof value !== 'function') return value;
+            if (!constructors.has(value)) constructors.set(value, new Proxy(value, {
+                construct(target, args, newTarget) {
+                    const instance = Reflect.construct(target, args, newTarget);
+                    maps.add(instance);
+                    if (typeof instance.on === 'function')
+                        instance.on('remove', () => maps.delete(instance));
+                    return instance;
+                }
+            }));
+            return constructors.get(value);
+        }
+    });
+    for (const name of ['maplibregl', 'mapboxgl']) {
+        let library = wrap(globalThis[name]);
+        Object.defineProperty(globalThis, name, {
+            configurable: true, enumerable: true,
+            get: () => library,
+            set: value => { library = wrap(value); }
+        });
+    }
+})()"""
+
+
+MAPS_READY = r"""() => {
+    const maps = [...(globalThis.__onsScreenshotMaps || []),
+        globalThis.map, globalThis.map1, globalThis.map2]
+        .filter(m => m && typeof m.loaded === 'function');
+    return maps.every(m => m.loaded()
+        && (typeof m.isStyleLoaded !== 'function' || m.isStyleLoaded())
+        && (typeof m.areTilesLoaded !== 'function' || m.areTilesLoaded())
+        && (typeof m.isMoving !== 'function' || !m.isMoving()));
+}"""
+
+
+CAPTURE_READY = r"""() => {
+    const visible = element => {
+        const box = element.getBoundingClientRect();
+        const style = getComputedStyle(element);
+        return box.width > 0 && box.height > 0
+            && style.display !== 'none' && style.visibility !== 'hidden';
+    };
+    return document.fonts.status === 'loaded'
+        && [...document.images].filter(visible).every(img => img.complete && img.naturalWidth > 0)
+        && ![...document.querySelectorAll('[aria-busy="true"], [role="progressbar"]')]
+            .some(visible)
+        && (""" + MAPS_READY + r""")();
 }"""
 
 
@@ -333,19 +395,15 @@ async def measure_chart(page, url, width):
         raise ChartCaptureError(f'HTTP {response.status}: {url}')
     if ons_url(page.url, keep_fragment=True) is None:
         raise ChartCaptureError(f'Non-ONS redirect rejected: {page.url}')
-    await page.wait_for_function("() => document.fonts.status === 'loaded'", timeout=TIMEOUT_MS)
+    await page.wait_for_function("() => document.fonts.status === 'loaded'",
+                                 timeout=READINESS_TIMEOUT_MS)
     await page.wait_for_function(
         f'() => ({FIND_CHART})().error !== "No supported rendered plotting container"',
-        timeout=TIMEOUT_MS)
-    await page.wait_for_load_state('networkidle', timeout=TIMEOUT_MS)
+        timeout=READINESS_TIMEOUT_MS)
+    await page.wait_for_load_state('networkidle', timeout=READINESS_TIMEOUT_MS)
     box = await page.evaluate(FIND_CHART)
     if box.get('map'):
-        await page.wait_for_function("""() => {
-            const maps = [globalThis.map, globalThis.map1, globalThis.map2]
-                .filter(m => m && typeof m.loaded === 'function');
-            return maps.every(m => m.loaded()
-                && (typeof m.areTilesLoaded !== 'function' || m.areTilesLoaded()));
-        }""", timeout=TIMEOUT_MS)
+        await page.wait_for_function(MAPS_READY, timeout=READINESS_TIMEOUT_MS)
     previous = None
     stable = 0
     for _ in range(20):
@@ -367,11 +425,59 @@ async def measure_chart(page, url, width):
     return Measurement(width, left, top, right - left, bottom - top)
 
 
+async def settled_image(page, final):
+    box = await page.evaluate(FIND_CHART)
+    quiet_seconds = MAP_QUIET_SECONDS if box.get('map') else PIXEL_QUIET_SECONDS
+    loop = asyncio.get_running_loop()
+    deadline = loop.time() + READINESS_TIMEOUT_MS / 1000
+    last_request = loop.time()
+    pending = set()
+
+    def requested(request):
+        nonlocal last_request
+        pending.add(request)
+        last_request = loop.time()
+
+    def finished(request):
+        nonlocal last_request
+        pending.discard(request)
+        last_request = loop.time()
+
+    page.on('request', requested)
+    page.on('requestfinished', finished)
+    page.on('requestfailed', finished)
+    previous = None
+    stable_since = loop.time()
+    try:
+        while loop.time() < deadline:
+            image = await page.screenshot(type='png', animations='disabled', full_page=True,
+                                         omit_background=False,
+                                         clip={'x': final.x, 'y': final.y,
+                                               'width': final.width, 'height': final.height},
+                                         timeout=TIMEOUT_MS)
+            ready = await page.evaluate(CAPTURE_READY)
+            now = loop.time()
+            if image != previous or pending or not ready:
+                stable_since = now
+            elif now - max(stable_since, last_request) >= quiet_seconds:
+                return image
+            previous = image
+            await asyncio.sleep(0.5)
+        raise ChartCaptureError(
+            f'Chart data, map tiles or pixels did not settle within '
+            f'{READINESS_TIMEOUT_MS / 1000:g} seconds')
+    finally:
+        page.remove_listener('request', requested)
+        page.remove_listener('requestfinished', finished)
+        page.remove_listener('requestfailed', finished)
+
+
 async def capture_chart(page, url):
     from PIL import Image, ImageStat
 
     errors = []
     page.on('pageerror', lambda error: errors.append(str(error)))
+    await page.add_init_script(TRACK_MAPS)
     warmed = False
 
     async def measure(width):
@@ -389,19 +495,7 @@ async def capture_chart(page, url):
     final = await measure(best.viewport_width)
     if abs(final.height - best.height) > 1 or final.width != best.width:
         raise ChartCaptureError('Chart dimensions changed before capture')
-    previous = None
-    for _ in range(10):
-        image = await page.screenshot(type='png', animations='disabled', full_page=True,
-                                     omit_background=False,
-                                     clip={'x': final.x, 'y': final.y,
-                                           'width': final.width, 'height': final.height},
-                                     timeout=TIMEOUT_MS)
-        if image == previous:
-            break
-        previous = image
-        await asyncio.sleep(0.2)
-    else:
-        raise ChartCaptureError('Chart pixels did not stabilise')
+    image = await settled_image(page, final)
     bounds = await page.evaluate(FIND_CHART)
     if bounds.get('error') or any(abs(bounds[key] - getattr(final, key)) > 1
                                   for key in ('x', 'y', 'width', 'height')):

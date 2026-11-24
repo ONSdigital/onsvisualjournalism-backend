@@ -110,10 +110,19 @@ is used, preferring wider layouts on a tie. The height target includes legends,
 controls and source/notes, not only the plotted area. Some charts get shorter when narrowed
 and cannot reach the target. Nothing is stretched, scaled or cropped to force it;
 JPG width never exceeds 700px. Charts reload at each trial width because some
-standalone ONS embeds do not redraw on viewport resize. Fonts, layout, pixels and
-available map-ready state are checked before capture.
+standalone ONS embeds do not redraw on viewport resize. Fonts, layout, visible images
+and loading indicators are checked before capture. MapLibre/Mapbox constructors
+are tracked before page scripts run, so module-scoped maps also wait for their
+renderer, style and tiles to finish loading.
+Before saving, require unchanged pixels and no pending/new network requests for
+**2 seconds**, or **10 seconds for maps**. Further requests or rendering changes
+restart that quiet period, allowing delayed data layers to finish. Readiness waits
+allow up to **90 seconds**; the overall per-chart limit remains **300 seconds**.
+Charts that never settle are recorded as failures, not successful partial images.
 The first layout is reloaded with warm fonts so SVG legend dimensions do not
 depend on fallback-font measurements from a cold navigation.
+Existing successful screenshots are not automatically refreshed by this change;
+use `recent`, `all`, `datestart` or `url` to replace previously incomplete captures.
 
 `screenshots/index.json` has `version: 1` and a `charts` object keyed by absolute
 visualisation URL. Each entry contains:

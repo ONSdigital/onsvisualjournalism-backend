@@ -67,6 +67,32 @@ def chart_html(height='700', width='innerWidth'):
         </script>"""
 
 
+def scoped_map_html(delay):
+    return f"""<!doctype html><style>body{{margin:0}}canvas{{display:block}}</style>
+        <div id="graphic"><canvas class="maplibregl-canvas"
+            width="700" height="700"></canvas></div>
+        <script>
+        window.maplibregl = {{Map: class {{
+            constructor() {{
+                this.ready = false;
+                const context = document.querySelector('canvas').getContext('2d');
+                context.fillStyle = 'steelblue';
+                context.fillRect(0, 0, 700, 700);
+                context.fillStyle = 'grey';
+                context.fillRect(500, 500, 100, 100);
+                setTimeout(() => {{
+                    context.fillStyle = 'green';
+                    context.fillRect(50, 50, 400, 400);
+                    this.ready = true;
+                }}, {delay});
+            }}
+            loaded() {{ return this.ready; }}
+            areTilesLoaded() {{ return this.ready; }}
+        }}}};
+        </script>
+        <script type="module">const state = {{map: new maplibregl.Map()}};</script>"""
+
+
 class SelectionTests(unittest.TestCase):
     def setUp(self):
         self.temporary = tempfile.TemporaryDirectory()
@@ -336,6 +362,47 @@ class BrowserTests(unittest.IsolatedAsyncioTestCase):
         self.assertEqual(await self.page.locator('button').evaluate(
             '(element) => getComputedStyle(element).visibility'), 'visible')
 
+    async def test_module_scoped_map_waits_for_data_not_just_basemap_pixels(self):
+        await self.route(scoped_map_html(1800))
+        with patch('ons_screenshots.choose_size',
+                   AsyncMock(return_value=Measurement(700, 0, 0, 700, 700))):
+            image, _ = await capture_chart(self.page, URL)
+        with Image.open(BytesIO(image)) as decoded:
+            red, green, blue = decoded.getpixel((100, 100))
+            self.assertLess(red, 30)
+            self.assertGreater(green, 100)
+            self.assertLess(blue, 30)
+        self.assertTrue(await self.page.evaluate('globalThis.map === undefined'))
+
+    async def test_delayed_data_request_resets_pixel_and_network_quiet_period(self):
+        html = chart_html('640').replace('</script>', """
+            setTimeout(async () => {
+                await fetch('./chart-data.json');
+                document.querySelector('#graphic rect:nth-child(2)')
+                    .setAttribute('fill', 'green');
+            }, 1200);
+            </script>""")
+        await self.route(html)
+
+        async def data(route):
+            await asyncio.sleep(2.5)
+            await route.fulfill(content_type='application/json', body='{}')
+
+        await self.page.route('**/chart-data.json', data)
+        with patch('ons_screenshots.choose_size',
+                   AsyncMock(return_value=Measurement(700, 0, 0, 700, 700))):
+            image, _ = await capture_chart(self.page, URL)
+        with Image.open(BytesIO(image)) as decoded:
+            self.assertLess(decoded.getpixel((100, 100))[2], 30)
+
+    async def test_unready_scoped_map_times_out_instead_of_saving_basemap(self):
+        await self.route(scoped_map_html(60_000))
+        with patch('ons_screenshots.READINESS_TIMEOUT_MS', 1000):
+            with patch('ons_screenshots.choose_size',
+                       AsyncMock(return_value=Measurement(700, 0, 0, 700, 700))):
+                with self.assertRaises(PlaywrightTimeoutError):
+                    await capture_chart(self.page, URL)
+
     async def test_wrapper_includes_multiple_charts_controls_and_notes(self):
         await self.route("""<style>body{margin:0}svg{display:block}</style>
             <div id="visualisation"><div id="legend" style="height:30px">Legend</div>
@@ -404,7 +471,7 @@ class BrowserTests(unittest.IsolatedAsyncioTestCase):
             self.assertGreater(decoded.getpixel((100, 1150))[2], 100)
 
     async def test_overflow_and_failed_render_are_explicit(self):
-        with patch('ons_screenshots.TIMEOUT_MS', 1000):
+        with patch('ons_screenshots.READINESS_TIMEOUT_MS', 1000):
             for html in (
                     chart_html(width='800'),
                     '<div id="graphic"></div>'):

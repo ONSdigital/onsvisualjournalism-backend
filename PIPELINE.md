@@ -168,6 +168,13 @@ Measure and validate the final JPEG, recording actual dimensions and whether
 the target was reached. A container unable to reach 700px height is not a failure.
 Measure the whole captured container, not only the SVG/canvas. Check blankness
 using the plot surfaces so non-empty legends/source cannot mask a blank chart.
+Track MapLibre/Mapbox constructors before navigation to observe renderer/style/tile
+readiness even when instances are held in module-local state. Before saving, wait
+for visible images and loading indicators, and require unchanged pixels with no
+pending/new network requests for two seconds (ten seconds for maps). New activity
+resets the quiet period. Readiness waits are bounded at 90 seconds and the overall
+chart timeout remains 300 seconds; unready charts fail without replacing old images.
+Previously successful partial captures require an explicit refresh mode.
 
 The index is keyed by normalised absolute visualisation URL, retaining query
 strings and fragments. Filenames normally use `dvcXXXX-figXX.jpg` in lowercase.
@@ -437,7 +444,7 @@ coordination to avoid concurrent writers.
   writes and can fail with an already-advanced successful discovery checkpoint.
 - Screenshot container support is deliberately conservative, not universal
   coverage of all legacy templates. Maps wait for network/layout/pixel stability
-  and globally exposed renderer ready state when available; this is not proof
+  and tracked or globally exposed renderer ready state when available; this is not proof
   that every possible interactive state or data layer has been captured.
 - JPG history grows the Git repository; unused images are not pruned or archived
   separately. Coordinate manual runs to avoid competing writers.
