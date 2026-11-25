@@ -6,7 +6,7 @@ including the data contract, operating instructions and known limitations.
 
 ## Pipeline Configuration
 
-[catalogue.ipynb](catalogue.ipynb) is the single pipeline for local and GitHub
+[catalogue.py](catalogue.py) is the single pipeline for local and GitHub
 Actions runs. It reads [config.json](config.json) from the repository root:
 
 ```json
@@ -141,7 +141,8 @@ visualisation URL. Each entry contains:
   failure. A failed refresh retains the previous image and success metadata.
 
 Join the index keys to absolute catalogue `vis[].url` values (resolve relative
-paths against `https://www.ons.gov.uk`). The catalogue schema is unchanged.
+paths against `https://www.ons.gov.uk`). Screenshot metadata remains separate
+from the catalogue's chart categories.
 Partial runs preserve unselected images and entries; unused images are not pruned.
 Enabled screenshot runs migrate the older long hashed filenames and update the
 index without changing image bytes. Legacy files left without metadata by an
@@ -153,7 +154,7 @@ invalidated; use a recapture mode to replace them with full-container captures.
 
 Each failed chart is logged while other charts continue. Successful JPGs and the
 index entries are saved after each completed capture attempt, so filename
-ownership survives later interruptions. The notebook raises a consolidated failure. Actions
+ownership survives later interruptions. The script raises a consolidated failure. Actions
 commits these partial results before marking the run failed. Invalid index data,
 browser startup failures and filesystem failures remain fatal. JPGs and the index
 are replaced atomically per file, not as one transaction: an interrupted run can
@@ -161,7 +162,7 @@ leave an image ahead of its index entry. Retry `new` for missing/failed entries;
 explicitly recapture the affected publication after a fatal interrupted refresh.
 Images are committed to Git, which increases repository size over time.
 
-Install the browser once into the environment used by the notebook:
+Install the browser once into the Python environment used by the pipeline:
 
 ```powershell
 python -m pip install -r requirements.txt
@@ -170,6 +171,16 @@ python -m playwright install chromium
 
 GitHub Actions installs Chromium and its system dependencies when enabled.
 Chromium is not needed for discovery/catalogue-only runs.
+
+Run the pipeline from the repository root:
+
+```powershell
+python catalogue.py
+```
+
+The script uses `asyncio.run()` for screenshot capture and can be imported without
+executing the pipeline. GitHub Actions uses `python -u catalogue.py` so progress
+appears immediately in its logs. No notebook runner is needed.
 
 ### Common Runs
 
@@ -232,7 +243,7 @@ explicit `datestart` scans continue until they reach the requested date or exhau
 results. Historical discovery is limited by the ONS API's available coverage.
 
 GitHub Actions uses the same configuration without an override. Restore your
-normal settings after a one-off run; the notebook does not reset configuration.
+normal settings after a one-off run; the script does not reset configuration.
 After pasting the new format locally, commit `config.json` so the automated
 pipeline uses the same settings. No separate workflow configuration is needed.
 
@@ -256,6 +267,54 @@ extraction. Publications with empty `vis_urls` after PNG filtering are excluded
 from the output, including selected records already present in the catalogue.
 Recovering historical releases collapsed by the previous title-based logic
 requires retaining the history cache and using catalogue mode `all`.
+
+## Chart Categories
+
+Each object in the catalogue's `vis` array retains its original nullable
+`chart_type` and adds three multi-select string arrays:
+
+| Field | Available values |
+| --- | --- |
+| `chart_families` | `bar`, `line`, `area`, `scatter`, `range`, `map`, `heatmap`, `table`, `population-pyramid` |
+| `chart_variants` | `grouped`, `stacked`, `small-multiple`, `multi-series`, `bubble`, `beeswarm`, `choropleth`, `focus` |
+| `chart_features` | `dropdown`, `confidence-interval`, `range-slider` |
+
+For example:
+
+```json
+{
+    "url": "/visualisations/example/index.html",
+    "chart_type": "grouped-stacked-bar-chart",
+    "chart_families": ["bar"],
+    "chart_variants": ["grouped", "stacked"],
+    "chart_features": []
+}
+```
+
+Classification currently uses only the saved HTML template tag, not the chart
+image, URL, source code or rendered controls. It inherits inaccuracies in that
+tag. Null and unsupported tags receive three empty arrays: this means no
+supported classification was identified, not that the chart has no features.
+Tags outside the agreed vocabulary, such as `doughnut-chart` and `waterfall`,
+remain available in `chart_type` but are not forced into an unrelated family.
+
+Columns map to `bar`; column-and-line tags map to both `bar` and `line`.
+Grouped/clustered aliases become `grouped`, and multiline becomes `multi-series`.
+Population pyramids have their own family, not a bar variant. Horizontal and
+vertical variants are intentionally omitted. Confidence interval and CI-band
+tags both produce `confidence-interval`. Range sliders are assigned only when
+explicitly named in a supported chart tag. `focus` preserves the literal tag
+distinction without inferring an interaction. Ambiguous `line-chart-with-area`
+tags remain `line` only; explicit area-chart tags use the `area` family.
+
+The shared mapping is applied to every final catalogue visualisation, including
+older records retained during `new`, `recent` and limited runs. Arrays are
+deduplicated and written in the fixed order above. Existing metadata is preserved.
+Derived categories are not stored in the source enrichment cache: they are
+recomputed locally, so mapping changes do not require a page fetch or cache reset.
+They also do not make an otherwise-current article pending in catalogue `new`.
+Catalogue `off` still leaves the catalogue unchanged. Screenshot processing is
+independent and does not need to be rerun to populate these fields.
 
 ## Theme Hierarchy
 

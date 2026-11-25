@@ -424,6 +424,87 @@ def extract_chart_type(html):
     return meta.get('content') if meta else None
 
 
+CHART_FAMILIES = ('bar', 'line', 'area', 'scatter', 'range', 'map', 'heatmap', 'table',
+                  'population-pyramid')
+CHART_VARIANTS = ('grouped', 'stacked', 'small-multiple', 'multi-series', 'bubble',
+                  'beeswarm', 'choropleth', 'focus')
+CHART_FEATURES = ('dropdown', 'confidence-interval', 'range-slider')
+CHART_TYPE_CATEGORIES = {
+    'bar-chart': (('bar',), ()),
+    'column-chart': (('bar',), ()),
+    'column-chart-sm': (('bar',), ()),
+    'split-bar-chart': (('bar',), ()),
+    'line-chart': (('line',), ()),
+    'line-chart-with-area': (('line',), ()),
+    'line-chart-multiline': (('line',), ('multi-series',)),
+    'line-chart-focus': (('line',), ('focus',)),
+    'area-chart': (('area',), ()),
+    'stacked-area-chart': (('area',), ('stacked',)),
+    'scatter-plot': (('scatter',), ()),
+    'scatter-bubble-plot': (('scatter',), ('bubble',)),
+    'dot-plot': (('scatter',), ()),
+    'beeswarm': (('scatter',), ('beeswarm',)),
+    'range-plot': (('range',), ()),
+    'range-arrow-dot-bar-reference-plot': (('range',), ()),
+    'choropleth': (('map',), ('choropleth',)),
+    'map': (('map',), ()),
+    'heatmap': (('heatmap',), ()),
+    'grouped-row-table': (('table',), ('grouped',)),
+    'table': (('table',), ()),
+    'population-pyramid': (('population-pyramid',), ()),
+    'static-population-pyramid': (('population-pyramid',), ()),
+    'grouped-bar-chart': (('bar',), ('grouped',)),
+    'clustered-bar-chart': (('bar',), ('grouped',)),
+    'grouped-clustered-bar-chart': (('bar',), ('grouped',)),
+    'stacked-bar-chart': (('bar',), ('stacked',)),
+    'stacked-column-chart': (('bar',), ('stacked',)),
+    'stacked-horizontal-bar-chart': (('bar',), ('stacked',)),
+    'grouped-stacked-bar-chart': (('bar',), ('grouped', 'stacked')),
+    'column-and-line-chart': (('bar', 'line'), ()),
+    'column-and-line': (('bar', 'line'), ()),
+}
+
+
+def derive_chart_taxonomy(chart_type):
+    empty = {'chart_families': [], 'chart_variants': [], 'chart_features': []}
+    if not isinstance(chart_type, str):
+        return empty
+    tag = re.sub(r'[\s_]+', '-', chart_type.strip().lower())
+    variants = set()
+    features = set()
+    if tag.startswith('small-multiple-'):
+        tag = tag.removeprefix('small-multiple-')
+        variants.add('small-multiple')
+    suffixes = {
+        '-small-multiple': ('variant', 'small-multiple'),
+        '-with-dropdown': ('feature', 'dropdown'),
+        '-with-range-slider': ('feature', 'range-slider'),
+        '-with-confidence-intervals': ('feature', 'confidence-interval'),
+        '-with-confidence-interval': ('feature', 'confidence-interval'),
+        '-with-confidence-bands': ('feature', 'confidence-interval'),
+        '-ci-bands': ('feature', 'confidence-interval'),
+    }
+    while True:
+        suffix = next((value for value in suffixes if tag.endswith(value)), None)
+        if suffix is None:
+            break
+        kind, value = suffixes[suffix]
+        (variants if kind == 'variant' else features).add(value)
+        tag = tag[:-len(suffix)]
+    categories = CHART_TYPE_CATEGORIES.get(tag)
+    if categories is None:
+        return empty
+    families, base_variants = categories
+    variants.update(base_variants)
+    return {'chart_families': [value for value in CHART_FAMILIES if value in families],
+            'chart_variants': [value for value in CHART_VARIANTS if value in variants],
+            'chart_features': [value for value in CHART_FEATURES if value in features]}
+
+
+def classify_visualisations(visualisations):
+    return [{**chart, **derive_chart_taxonomy(chart.get('chart_type'))} for chart in visualisations]
+
+
 def prepare_catalogue(cached_publications, existing_data, config, refreshed, client, extract_edition):
     settings = config['catalogue']
     if settings['mode'] == 'off':
@@ -449,9 +530,11 @@ def prepare_catalogue(cached_publications, existing_data, config, refreshed, cli
             metadata = saved_metadata(record, old)
             if old is not None and metadata is not None:
                 old_source = {**old, 'vis_urls': [vis['url'] for vis in old.get('vis', [])]}
+                old_charts = [{'url': vis['url'], 'chart_type': vis.get('chart_type')}
+                          for vis in old.get('vis', [])]
                 if (urls and source_signature(old_source) == source_signature(record)
                         and old.get('edition') == metadata['edition']
-                        and old.get('vis') == metadata['vis']):
+                    and old_charts == metadata['vis']):
                     continue
         selected.append(record)
         if settings['limit'] is not None and len(selected) >= settings['limit']:

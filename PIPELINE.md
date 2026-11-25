@@ -14,7 +14,7 @@ on finding a non-empty `vis_urls` array after PNG and download-link filtering.
 
 | File | Role |
 | --- | --- |
-| [catalogue.ipynb](catalogue.ipynb) | The single orchestration entry point for independent stages |
+| [catalogue.py](catalogue.py) | The single orchestration entry point for independent stages |
 | [config.json](config.json) | Selects discovery/catalogue/screenshots modes, limits and optional URL/start date |
 | [ons_discovery.py](ons_discovery.py) | Configuration, selection, discovery, metadata reuse, HTTP and safe JSON-writing helpers |
 | [ons_screenshots.py](ons_screenshots.py) | Independent whole-visualisation JPG capture, responsive sizing and image index |
@@ -23,11 +23,11 @@ on finding a non-empty `vis_urls` array after PNG and download-link filtering.
 | [data.json](data.json) | Generated, enriched catalogue |
 | `discovery-state.json` | Last successfully scanned published-release day; created by a successful run |
 | [requirements.txt](requirements.txt) | Python dependencies |
-| [.github/workflows/test.yml](.github/workflows/test.yml) | Executes the integrated notebook and commits generated JSON/JPG outputs |
+| [.github/workflows/test.yml](.github/workflows/test.yml) | Executes the pipeline script and commits generated JSON/JPG outputs |
 | [test_ons_screenshots.py](test_ons_screenshots.py) | Offline selection, capture, sizing, persistence and integration tests |
 | [README.md](README.md) | Configuration and field reference |
 
-There should be only one pipeline notebook. Do not introduce separate update and
+There should be only one pipeline script. Do not introduce separate update and
 rebuild implementations: their scraping and enrichment logic must stay shared.
 
 ## Discovery and Cached History
@@ -66,9 +66,9 @@ does not imply a source refresh. No mode claims a complete historical archive cr
 ## Configuration and Modes
 
 The single configuration reference, default JSON and common-run instructions
-are in [README.md](README.md#pipeline-configuration). The notebook reads
+are in [README.md](README.md#pipeline-configuration). The script reads
 [config.json](config.json) from the repository root; GitHub Actions executes that
-same notebook with the committed configuration and no overrides.
+same script with the committed configuration and no overrides.
 
 Discovery modes are `off`, `new`, `recent`, `all`, `datestart` and `url`.
 Catalogue modes are `off`, `new`, `recent` and `all`. Both default to `new`, with
@@ -114,7 +114,7 @@ remaining all-mode budget on cached history in newest-publication order.
 
 All three stages off is a logged no-op. Preserve the source cache and return config
 to normal settings after one-off runs. Commit the new config for scheduled runs;
-the notebook does not change it automatically.
+the script does not change it automatically.
 
 ## Processing Stages
 
@@ -256,7 +256,7 @@ The output is a JSON array with one record per stored `doc_uri`.
 | `theme` | First taxonomy path segment |
 | `topic` | Second taxonomy path segment, or `null` if absent |
 | `subtopic` | Third taxonomy path segment, or `null` if absent |
-| `vis` | Array of objects containing `url` and nullable `chart_type` |
+| `vis` | Visualisation objects containing `url`, nullable raw `chart_type` and the three chart-category arrays below |
 
 `theme`, `topic` and `subtopic` are written consecutively as flat fields. Their
 values are raw URL slugs, not human-readable labels. Key order helps readability
@@ -265,6 +265,34 @@ but is not a JSON identity or grouping mechanism.
 The output omits `vis_urls` and cache-only `enrichment`; visualisation URLs are
 available under `vis`. PNG and download links are filtered before eligibility,
 so publications containing only those paths are excluded.
+
+### Chart Categories
+
+Every final `vis` object has `chart_families`, `chart_variants` and
+`chart_features` arrays. The approved values and mapping examples are in
+[README.md](README.md#chart-categories). The raw `chart_type` is retained;
+existing visualisation metadata is not replaced by these derived fields.
+
+`derive_chart_taxonomy` maps supported tags to deterministic, duplicate-free
+arrays. `classify_visualisations` applies it without mutating its input and
+preserves other fields. Unknown or null tags yield empty arrays, not guessed
+categories. Population pyramid is a family; orientation variants are excluded;
+confidence bands and intervals share `confidence-interval`. `range-slider`
+requires explicit tag evidence. With-area line templates remain line-only
+because a tag alone does not establish whether the area is a separate encoding.
+
+The final catalogue output pass applies the mapping to ALL merged visualisations,
+including retained records outside the current processing limit. Catalogue-off
+does not run this pass. Cache reuse still stores only source chart metadata:
+taxonomy is re-derived rather than cached, so mapping changes need no source
+refresh. Catalogue-new freshness compares the original URL/chart-type pairs,
+not the derived arrays, preventing repeated processing or limit starvation.
+
+The initial existing-data backfill uses the same helper directly against the
+saved catalogue, without executing discovery, metadata fetching or screenshots.
+It adds only the three arrays, retaining list order, URLs, raw tags and all
+other metadata. Reapplying it is idempotent. Future enabled catalogue writes
+keep the fields up to date; no additional workflow stage or config is required.
 
 ## Release Identity Versus Series
 
@@ -357,23 +385,20 @@ missing publication boundaries or deeper paths raise an error.
 ## Running Locally
 
 Use the repository root as the working directory. GitHub Actions uses Python
-3.11. Install dependencies into the interpreter or notebook kernel you intend to
-use, and install Jupyter if running through nbconvert:
+3.11. Install dependencies into the Python interpreter you intend to use:
 
 ```powershell
 python -m pip install -r requirements.txt
-python -m pip install jupyter
 ```
 
-Inspect the current configuration before running. Open the notebook and run its
-cells from top to bottom in a fresh kernel, or execute it from PowerShell:
+Inspect the current configuration before running, then execute from PowerShell:
 
 ```powershell
-python -m jupyter nbconvert --to notebook --execute catalogue.ipynb --ExecutePreprocessor.timeout=-1 --output catalogue-run.ipynb --output-dir "$env:TEMP"
+python catalogue.py
 ```
 
-The executed notebook goes outside the repository; the catalogue still writes
-to the repository. Which files and pages are touched depends on all stage
+The script reads configuration and writes generated files relative to the
+working directory. Which files and pages are touched depends on all stage
 settings. Catalogue-only rebuilding reuses saved inputs, fetching missing
 metadata when necessary. Explicit discovery refreshes also refresh catalogue
 metadata for processed publications. Live requests have a 30-second timeout and one
@@ -387,7 +412,7 @@ python -m playwright install chromium
 ```
 
 Before a production rebuild, retain copies of cache, data and checkpoint. Afterward, inspect
-the output diff and restore normal stage settings if required. Neither the notebook nor a
+the output diff and restore normal stage settings if required. Neither the script nor a
 local run commits or pushes changes automatically.
 
 If configuration or another file is excluded from an AI agent's access, respect
@@ -401,17 +426,17 @@ of `35 4 * * *` (04:35 UTC). It:
 
 1. Checks out the repository and configures Python 3.11.
 2. Installs requirements; there is no upstream-repository download step.
-3. Installs Jupyter, checks the screenshot settings, and installs Chromium/system
+3. Checks the screenshot settings and installs Chromium/system
    dependencies only if screenshots is enabled.
-4. Executes the integrated notebook using the tracked config and saves its
-   executed output under `/tmp`.
+4. Executes `python -u catalogue.py` using the tracked config. Unbuffered output
+  shows progress directly in Actions logs; no notebook execution is required.
 5. Stages only existing cache, catalogue and checkpoint files plus screenshot
   JPGs/index when present, then uses the automated Git
   identity, stashes generated changes, rebases
    against `origin/main`, reapplies the stash, and commits and pushes changes.
-6. Marks the run failed if the notebook failed. Expected individual screenshot
+6. Marks the run failed if the script failed. Expected individual screenshot
    failures allow step 5 to commit successful work first; unrelated fatal
-   notebook failures skip that step.
+  pipeline failures skip that step.
 
 Review the workflow before changing branch behavior. A concurrency group prevents
 overlapping runs on the same branch without cancelling active runs. The workflow
@@ -463,8 +488,8 @@ python -m unittest -v test_ons_screenshots
 The suite uses in-memory browser routes rather than live ONS requests and never
 reads the user configuration. It checks modes, publication limits, shared URLs,
 responsive sizing, reloads, whole-container JPEG dimensions, complete panels, map
-readiness/visible controls, partial failures, atomic image writes and notebook
-stage isolation. Broader discovery/catalogue checks below remain maintenance
+readiness/visible controls, partial failures, atomic image writes and script
+stage isolation, including cached catalogue derivation. Broader discovery/catalogue checks below remain maintenance
 guidance, not claims of complete automated coverage.
 
 - Exercise every discovery/catalogue mode with duplicate cached URLs
@@ -495,5 +520,5 @@ guidance, not claims of complete automated coverage.
   do not commit, push or trigger a production run without authorization.
 
 Avoid hard-coding catalogue counts into documentation or validation assumptions;
-the upstream source and generated output change over time. The notebook and
+the upstream source and generated output change over time. The script and
 workflow are the source of truth when this guide needs updating.

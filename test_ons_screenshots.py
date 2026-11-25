@@ -1,7 +1,6 @@
-import ast
 import asyncio
 from copy import deepcopy
-from io import BytesIO
+from io import BytesIO, StringIO
 import json
 import os
 from pathlib import Path
@@ -13,6 +12,7 @@ from unittest.mock import AsyncMock, Mock, patch
 from PIL import Image
 from playwright.async_api import TimeoutError as PlaywrightTimeoutError, async_playwright
 
+import catalogue
 from ons_discovery import validate_config
 from ons_screenshots import (
     CaptureSummary, ChartCaptureError, Measurement, ScreenshotFailures,
@@ -572,37 +572,76 @@ class PersistenceTests(unittest.IsolatedAsyncioTestCase):
         self.assertTrue(needs_capture(URL, index, self.folder))
         self.assertIsNone(index['charts'][URL]['last_success'])
 
-    async def test_notebook_screenshots_only_and_all_off_preserve_other_outputs(self):
-        notebook = json.loads(Path('catalogue.ipynb').read_text(encoding='utf-8'))
-        for cell in notebook['cells']:
-            if cell['cell_type'] == 'code':
-                compile(''.join(cell['source']), '<notebook>', 'exec',
-                        flags=ast.PyCF_ALLOW_TOP_LEVEL_AWAIT)
-        final_cell = ''.join(notebook['cells'][-1]['source'])
+    async def test_script_screenshots_only_and_all_off_preserve_other_outputs(self):
         records = [publication()]
         for mode, failed in (('off', False), ('all', False), ('all', True)):
-            config = validate_config({
+            supplied = {
                 'discovery': {'mode': 'off'}, 'catalogue': {'mode': 'off'},
-                'screenshots': {'mode': mode}})
+                'screenshots': {'mode': mode}}
+            config = validate_config(supplied)
             writes = Mock()
             client = SimpleNamespace(session=Mock())
             capture = AsyncMock(return_value=CaptureSummary(
                 1, [{'url': URL, 'error': 'timeout'}] if failed else []))
-            namespace = {
-                'pages': None, 'config': config, 'cached_publications': records, 'seed': records,
-                'next_state': None, 'state': None, 'client': client, 'write_json_files': writes,
-                'capture_screenshots': capture, 'finish_screenshots': finish_screenshots,
-            }
-            code = compile(final_cell, '<notebook>', 'exec', flags=ast.PyCF_ALLOW_TOP_LEVEL_AWAIT)
-            with patch.dict(os.environ, {'GITHUB_OUTPUT': ''}):
+            inputs = {'config.json': json.dumps(supplied),
+                      'articles-and-dvcs.json': json.dumps(records)}
+
+            def read_input(filename, *args, **kwargs):
+                return StringIO(inputs[filename])
+
+            with patch.dict(os.environ, {'GITHUB_OUTPUT': ''}), \
+                    patch('catalogue.open', side_effect=read_input, create=True), \
+                    patch('catalogue.DiscoveryClient', return_value=client), \
+                    patch('catalogue.prepare_run', return_value=(records, [], None)), \
+                    patch('catalogue.prepare_catalogue', return_value=None), \
+                    patch('catalogue.write_json_files', writes), \
+                    patch('catalogue.capture_screenshots', capture):
                 if failed:
                     with self.assertRaises(ScreenshotFailures):
-                        await eval(code, namespace)
+                        await catalogue.main()
                 else:
-                    await eval(code, namespace)
+                    await catalogue.main()
             writes.assert_called_once_with([])
             capture.assert_awaited_once_with(records, config['screenshots'])
             client.session.close.assert_called_once()
+
+    async def test_script_cached_catalogue_preserves_derivations_without_http(self):
+        supplied = {'discovery': {'mode': 'off'}, 'catalogue': {'mode': 'all'},
+                    'screenshots': {'mode': 'off'}}
+        records = [publication(), publication(OTHER_DOC, '2026-10-01', [OTHER_URL])]
+        existing = []
+        for record, chart_type in zip(records, ('column-and-line-chart', 'line-chart-with-dropdown')):
+            article = {key: record[key] for key in ('doc_uri', 'title', 'release_date')}
+            article.update(edition=None, vis=[{'url': record['vis_urls'][0], 'chart_type': chart_type}])
+            existing.append(article)
+        inputs = {'config.json': json.dumps(supplied),
+                  'articles-and-dvcs.json': json.dumps(records), 'data.json': json.dumps(existing)}
+
+        def read_input(filename, *args, **kwargs):
+            return StringIO(inputs[filename])
+
+        client = SimpleNamespace(session=Mock(), html_cache={},
+                                 get_text=Mock(side_effect=AssertionError('unexpected HTTP')))
+        capture = AsyncMock(return_value=CaptureSummary(0, []))
+        with patch.dict(os.environ, {'GITHUB_OUTPUT': ''}), \
+                patch('catalogue.open', side_effect=read_input, create=True), \
+                patch('catalogue.DiscoveryClient', return_value=client), \
+                patch('catalogue.write_json_files') as writes, \
+                patch('catalogue.capture_screenshots', capture):
+            await catalogue.main()
+        files = writes.call_args.args[0]
+        self.assertEqual(files[0][0], 'data.json')
+        self.assertNotIn('discovery-state.json', dict(files))
+        data = dict(files)['data.json']
+        self.assertEqual([article['latest'] for article in data], [True, False])
+        self.assertEqual([article['series'] for article in data], ['Example', 'Example'])
+        self.assertTrue(all(article['theme'] == 'economy' for article in data))
+        self.assertEqual(data[0]['vis'][0]['chart_families'], ['bar', 'line'])
+        self.assertEqual(data[1]['vis'][0]['chart_features'], ['dropdown'])
+        self.assertTrue(all('vis_urls' not in article for article in data))
+        client.get_text.assert_not_called()
+        client.session.close.assert_called_once()
+        capture.assert_awaited_once()
 
 
 if __name__ == '__main__':

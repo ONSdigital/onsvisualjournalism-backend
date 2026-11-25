@@ -36,9 +36,6 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         pip install -r requirements.txt
-    - name: Install notebook runner
-      run: |
-        pip install jupyter
     - name: Check screenshot settings
       id: screenshots
       run: |
@@ -55,11 +52,11 @@ jobs:
     - name: Install screenshot browser
       if: steps.screenshots.outputs.enabled == 'true'
       run: python -m playwright install --with-deps chromium
-    - name: Run notebook
+    - name: Run pipeline
       id: pipeline
       continue-on-error: true
       run: |
-        python -m jupyter nbconvert --to notebook --execute catalogue.ipynb --ExecutePreprocessor.timeout=-1 --output catalogue-output.ipynb --output-dir /tmp
+        python -u catalogue.py
     - name: Commit and push
       if: steps.pipeline.outcome == 'success' || (steps.pipeline.outputs.screenshots_completed == 'true' && steps.pipeline.outputs.screenshots_failed > 0)
       run: |-
@@ -94,5 +91,5 @@ jobs:
     - name: Report pipeline failure
       if: always() && steps.pipeline.outcome == 'failure'
       run: |
-        echo "::error::Pipeline failed. Expected screenshot failures are listed in the notebook log; any successful captures were saved before failure."
+        echo "::error::Pipeline failed. Expected screenshot failures are listed in the pipeline log; any successful captures were saved before failure."
         exit 1
