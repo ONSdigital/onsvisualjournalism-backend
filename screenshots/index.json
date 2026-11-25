@@ -10,11 +10,10 @@
                         "width": 700,
                         "height": 535,
                         "viewport_width": 700,
-                        "captured_at": "2026-11-24T11:10:29.535310+00:00",
-                        "target_reached": false
+                        "captured_at": "2026-11-25T16:48:49.409765+00:00"
                   },
                   "last_attempt": {
-                        "at": "2026-11-24T11:10:01.100050+00:00",
+                        "at": "2026-11-25T16:48:43.962440+00:00",
                         "status": "success"
                   }
             },
@@ -27,11 +26,10 @@
                         "width": 700,
                         "height": 865,
                         "viewport_width": 700,
-                        "captured_at": "2026-11-24T12:08:11.528823+00:00",
-                        "target_reached": false
+                        "captured_at": "2026-11-25T16:49:05.514615+00:00"
                   },
                   "last_attempt": {
-                        "at": "2026-11-24T12:07:13.565134+00:00",
+                        "at": "2026-11-25T16:48:49.419185+00:00",
                         "status": "success"
                   }
             },
@@ -41,14 +39,13 @@
                         "https://www.ons.gov.uk/peoplepopulationandcommunity/housing/bulletins/shorttermletsthroughonlinecollaborativeeconomyplatformsuk/july2023tojune2026"
                   ],
                   "last_success": {
-                        "width": 380,
-                        "height": 413,
-                        "viewport_width": 380,
-                        "captured_at": "2026-11-24T11:11:31.524685+00:00",
-                        "target_reached": false
+                        "width": 700,
+                        "height": 351,
+                        "viewport_width": 700,
+                        "captured_at": "2026-11-25T16:49:10.636321+00:00"
                   },
                   "last_attempt": {
-                        "at": "2026-11-24T11:11:10.643946+00:00",
+                        "at": "2026-11-25T16:49:05.527110+00:00",
                         "status": "success"
                   }
             },
@@ -61,11 +58,10 @@
                         "width": 700,
                         "height": 876,
                         "viewport_width": 700,
-                        "captured_at": "2026-11-24T11:12:07.495742+00:00",
-                        "target_reached": false
+                        "captured_at": "2026-11-25T16:49:26.401100+00:00"
                   },
                   "last_attempt": {
-                        "at": "2026-11-24T11:11:31.528079+00:00",
+                        "at": "2026-11-25T16:49:10.647469+00:00",
                         "status": "success"
                   }
             },
@@ -78,11 +74,10 @@
                         "width": 700,
                         "height": 747,
                         "viewport_width": 700,
-                        "captured_at": "2026-11-24T12:34:09.631624+00:00",
-                        "target_reached": false
+                        "captured_at": "2026-11-25T16:52:00.307741+00:00"
                   },
                   "last_attempt": {
-                        "at": "2026-11-24T12:33:47.973559+00:00",
+                        "at": "2026-11-25T16:51:54.702321+00:00",
                         "status": "success"
                   }
             },
@@ -95,11 +90,10 @@
                         "width": 700,
                         "height": 1054,
                         "viewport_width": 700,
-                        "captured_at": "2026-11-24T12:34:27.340767+00:00",
-                        "target_reached": false
+                        "captured_at": "2026-11-25T16:52:05.646284+00:00"
                   },
                   "last_attempt": {
-                        "at": "2026-11-24T12:34:09.640937+00:00",
+                        "at": "2026-11-25T16:52:00.317688+00:00",
                         "status": "success"
                   }
             },
@@ -112,11 +106,10 @@
                         "width": 700,
                         "height": 837,
                         "viewport_width": 700,
-                        "captured_at": "2026-11-24T12:34:45.591061+00:00",
-                        "target_reached": false
+                        "captured_at": "2026-11-25T16:52:11.110867+00:00"
                   },
                   "last_attempt": {
-                        "at": "2026-11-24T12:34:27.345779+00:00",
+                        "at": "2026-11-25T16:52:05.658151+00:00",
                         "status": "success"
                   }
             },
@@ -129,11 +122,10 @@
                         "width": 700,
                         "height": 889,
                         "viewport_width": 700,
-                        "captured_at": "2026-11-24T12:35:08.254530+00:00",
-                        "target_reached": false
+                        "captured_at": "2026-11-25T16:52:17.906474+00:00"
                   },
                   "last_attempt": {
-                        "at": "2026-11-24T12:34:45.596106+00:00",
+                        "at": "2026-11-25T16:52:11.129398+00:00",
                         "status": "success"
                   }
             },
@@ -143,14 +135,13 @@
                         "https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/internationalmigration/methodologies/researchupdateonpopulationestimatesbycountryofbirthforenglandandwales"
                   ],
                   "last_success": {
-                        "width": 400,
-                        "height": 702,
-                        "viewport_width": 400,
-                        "captured_at": "2026-11-24T12:33:11.251634+00:00",
-                        "target_reached": false
+                        "width": 700,
+                        "height": 640,
+                        "viewport_width": 700,
+                        "captured_at": "2026-11-25T16:51:44.119522+00:00"
                   },
                   "last_attempt": {
-                        "at": "2026-11-24T12:32:30.251626+00:00",
+                        "at": "2026-11-25T16:51:38.536774+00:00",
                         "status": "success"
                   }
             },
@@ -163,11 +154,10 @@
                         "width": 700,
                         "height": 844,
                         "viewport_width": 700,
-                        "captured_at": "2026-11-24T12:33:28.555032+00:00",
-                        "target_reached": false
+                        "captured_at": "2026-11-25T16:51:49.296676+00:00"
                   },
                   "last_attempt": {
-                        "at": "2026-11-24T12:33:11.262310+00:00",
+                        "at": "2026-11-25T16:51:44.129608+00:00",
                         "status": "success"
                   }
             },
@@ -180,11 +170,10 @@
                         "width": 700,
                         "height": 1246,
                         "viewport_width": 700,
-                        "captured_at": "2026-11-24T12:33:46.526434+00:00",
-                        "target_reached": false
+                        "captured_at": "2026-11-25T16:51:54.692411+00:00"
                   },
                   "last_attempt": {
-                        "at": "2026-11-24T12:33:28.560092+00:00",
+                        "at": "2026-11-25T16:51:49.308666+00:00",
                         "status": "success"
                   }
             },
@@ -195,9 +184,9 @@
                   ],
                   "last_success": null,
                   "last_attempt": {
-                        "at": "2026-11-24T12:35:08.259531+00:00",
+                        "at": "2026-11-25T16:52:17.916515+00:00",
                         "status": "failed",
-                        "error": "Page.wait_for_function: Timeout 30000ms exceeded."
+                        "error": "Page.wait_for_function: Timeout 90000ms exceeded."
                   }
             },
             "https://www.ons.gov.uk/visualisations/dvc3672/fig02/index.html": {
@@ -209,11 +198,10 @@
                         "width": 700,
                         "height": 1077,
                         "viewport_width": 700,
-                        "captured_at": "2026-11-24T12:36:00.105838+00:00",
-                        "target_reached": false
+                        "captured_at": "2026-11-25T16:53:54.177584+00:00"
                   },
                   "last_attempt": {
-                        "at": "2026-11-24T12:35:39.350390+00:00",
+                        "at": "2026-11-25T16:53:48.485034+00:00",
                         "status": "success"
                   }
             },
@@ -223,14 +211,13 @@
                         "https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/populationestimates/methodologies/developingpopulationestimatesbyethnicityforenglandandwales"
                   ],
                   "last_success": {
-                        "width": 509,
-                        "height": 896,
-                        "viewport_width": 509,
-                        "captured_at": "2026-11-24T12:36:27.567801+00:00",
-                        "target_reached": false
+                        "width": 700,
+                        "height": 951,
+                        "viewport_width": 700,
+                        "captured_at": "2026-11-25T16:54:00.141746+00:00"
                   },
                   "last_attempt": {
-                        "at": "2026-11-24T12:36:00.113336+00:00",
+                        "at": "2026-11-25T16:53:54.189001+00:00",
                         "status": "success"
                   }
             },
@@ -247,8 +234,9 @@
                         "target_reached": false
                   },
                   "last_attempt": {
-                        "at": "2026-11-24T12:36:28.395634+00:00",
-                        "status": "success"
+                        "at": "2026-11-25T16:54:00.154313+00:00",
+                        "status": "failed",
+                        "error": "Screenshot dimensions do not match measured container bounds"
                   }
             },
             "https://www.ons.gov.uk/visualisations/dvc3659/Fig05/index.html": {
@@ -257,14 +245,13 @@
                         "https://www.ons.gov.uk/peoplepopulationandcommunity/healthandsocialcare/causesofdeath/bulletins/avoidablemortalityinenglandandwales/2025"
                   ],
                   "last_success": {
-                        "width": 510,
-                        "height": 769,
-                        "viewport_width": 510,
-                        "captured_at": "2026-11-24T12:37:21.239571+00:00",
-                        "target_reached": false
+                        "width": 700,
+                        "height": 937,
+                        "viewport_width": 700,
+                        "captured_at": "2026-11-25T16:54:10.928203+00:00"
                   },
                   "last_attempt": {
-                        "at": "2026-11-24T12:36:56.641819+00:00",
+                        "at": "2026-11-25T16:54:05.780814+00:00",
                         "status": "success"
                   }
             },
@@ -274,14 +261,13 @@
                         "https://www.ons.gov.uk/peoplepopulationandcommunity/healthandsocialcare/causesofdeath/bulletins/avoidablemortalityinenglandandwales/2025"
                   ],
                   "last_success": {
-                        "width": 510,
-                        "height": 769,
-                        "viewport_width": 510,
-                        "captured_at": "2026-11-24T12:37:45.552124+00:00",
-                        "target_reached": false
+                        "width": 700,
+                        "height": 937,
+                        "viewport_width": 700,
+                        "captured_at": "2026-11-25T16:54:16.125646+00:00"
                   },
                   "last_attempt": {
-                        "at": "2026-11-24T12:37:21.244297+00:00",
+                        "at": "2026-11-25T16:54:10.940436+00:00",
                         "status": "success"
                   }
             },
@@ -292,9 +278,9 @@
                   ],
                   "last_success": null,
                   "last_attempt": {
-                        "at": "2026-11-24T12:37:46.373992+00:00",
+                        "at": "2026-11-25T16:54:16.137499+00:00",
                         "status": "failed",
-                        "error": "Page.wait_for_function: Timeout 30000ms exceeded."
+                        "error": "Page.wait_for_function: Timeout 90000ms exceeded."
                   }
             },
             "https://www.ons.gov.uk/visualisations/dvc3658/treemap-export/index.html": {
@@ -305,9 +291,9 @@
                   ],
                   "last_success": null,
                   "last_attempt": {
-                        "at": "2026-11-24T12:38:17.519942+00:00",
+                        "at": "2026-11-25T16:51:34.612841+00:00",
                         "status": "failed",
-                        "error": "No complete chart fits the width range: Visualisation content overflows its container"
+                        "error": "Visualisation content overflows its container"
                   }
             },
             "https://www.ons.gov.uk/visualisations/dvc3658/treemap-import/index.html": {
@@ -318,9 +304,9 @@
                   ],
                   "last_success": null,
                   "last_attempt": {
-                        "at": "2026-11-24T12:38:22.453110+00:00",
+                        "at": "2026-11-25T16:51:37.101804+00:00",
                         "status": "failed",
-                        "error": "No complete chart fits the width range: Visualisation content overflows its container"
+                        "error": "Visualisation content overflows its container"
                   }
             },
             "https://www.ons.gov.uk/visualisations/dvc3668/map/index.html": {
@@ -330,9 +316,9 @@
                   ],
                   "last_success": null,
                   "last_attempt": {
-                        "at": "2026-11-24T12:38:28.562788+00:00",
+                        "at": "2026-11-25T16:55:46.757337+00:00",
                         "status": "failed",
-                        "error": "Page.wait_for_function: Timeout 30000ms exceeded."
+                        "error": "Page.wait_for_function: Timeout 90000ms exceeded."
                   }
             },
             "https://www.ons.gov.uk/visualisations/pinkgloss/pinkbook_gloss/index.html": {
@@ -346,9 +332,9 @@
                   ],
                   "last_success": null,
                   "last_attempt": {
-                        "at": "2026-11-24T13:58:01.841135+00:00",
+                        "at": "2026-11-25T16:57:17.330094+00:00",
                         "status": "failed",
-                        "error": "No complete chart fits the width range: Visualisation content overflows its container"
+                        "error": "Visualisation content overflows its container"
                   }
             },
             "https://www.ons.gov.uk/visualisations/dvc3671/fig02/index.html": {
@@ -364,8 +350,9 @@
                         "target_reached": false
                   },
                   "last_attempt": {
-                        "at": "2026-11-24T12:39:05.160920+00:00",
-                        "status": "success"
+                        "at": "2026-11-25T16:57:18.701595+00:00",
+                        "status": "failed",
+                        "error": "Visualisation content overflows its container"
                   }
             },
             "https://www.ons.gov.uk/visualisations/dvc3671/fig03/index.html": {
@@ -377,11 +364,10 @@
                         "width": 700,
                         "height": 599,
                         "viewport_width": 700,
-                        "captured_at": "2026-11-24T12:39:50.848234+00:00",
-                        "target_reached": false
+                        "captured_at": "2026-11-25T16:57:25.307705+00:00"
                   },
                   "last_attempt": {
-                        "at": "2026-11-24T12:39:33.470508+00:00",
+                        "at": "2026-11-25T16:57:20.132488+00:00",
                         "status": "success"
                   }
             },
@@ -394,11 +380,10 @@
                         "width": 700,
                         "height": 633,
                         "viewport_width": 700,
-                        "captured_at": "2026-11-24T12:40:08.200990+00:00",
-                        "target_reached": false
+                        "captured_at": "2026-11-25T16:57:30.524342+00:00"
                   },
                   "last_attempt": {
-                        "at": "2026-11-24T12:39:50.854238+00:00",
+                        "at": "2026-11-25T16:57:25.319760+00:00",
                         "status": "success"
                   }
             },
@@ -411,11 +396,10 @@
                         "width": 700,
                         "height": 413,
                         "viewport_width": 700,
-                        "captured_at": "2026-11-24T12:40:25.341065+00:00",
-                        "target_reached": false
+                        "captured_at": "2026-11-25T16:57:36.001811+00:00"
                   },
                   "last_attempt": {
-                        "at": "2026-11-24T12:40:08.208647+00:00",
+                        "at": "2026-11-25T16:57:30.534056+00:00",
                         "status": "success"
                   }
             },
@@ -432,8 +416,9 @@
                         "target_reached": false
                   },
                   "last_attempt": {
-                        "at": "2026-11-24T12:40:25.346329+00:00",
-                        "status": "success"
+                        "at": "2026-11-25T16:57:36.012022+00:00",
+                        "status": "failed",
+                        "error": "Visualisation content overflows its container"
                   }
             },
             "https://www.ons.gov.uk/visualisations/dvc3671/fig08/index.html": {
@@ -445,11 +430,10 @@
                         "width": 700,
                         "height": 409,
                         "viewport_width": 700,
-                        "captured_at": "2026-11-24T12:41:05.566808+00:00",
-                        "target_reached": false
+                        "captured_at": "2026-11-25T16:57:42.416567+00:00"
                   },
                   "last_attempt": {
-                        "at": "2026-11-24T12:40:48.298672+00:00",
+                        "at": "2026-11-25T16:57:37.319032+00:00",
                         "status": "success"
                   }
             },
@@ -462,11 +446,10 @@
                         "width": 700,
                         "height": 931,
                         "viewport_width": 700,
-                        "captured_at": "2026-11-24T12:41:27.579192+00:00",
-                        "target_reached": false
+                        "captured_at": "2026-11-25T17:00:05.159707+00:00"
                   },
                   "last_attempt": {
-                        "at": "2026-11-24T12:41:06.909834+00:00",
+                        "at": "2026-11-25T16:59:59.303767+00:00",
                         "status": "success"
                   }
             },
@@ -477,9 +460,9 @@
                   ],
                   "last_success": null,
                   "last_attempt": {
-                        "at": "2026-11-24T12:41:27.591804+00:00",
+                        "at": "2026-11-25T17:00:05.169564+00:00",
                         "status": "failed",
-                        "error": "No complete chart fits the width range: Visualisation content overflows its container"
+                        "error": "Visualisation content overflows its container"
                   }
             },
             "https://www.ons.gov.uk/visualisations/dvc3665/fig04/index.html": {
@@ -491,11 +474,10 @@
                         "width": 700,
                         "height": 701,
                         "viewport_width": 700,
-                        "captured_at": "2026-11-24T12:41:35.125993+00:00",
-                        "target_reached": true
+                        "captured_at": "2026-11-25T17:00:11.588638+00:00"
                   },
                   "last_attempt": {
-                        "at": "2026-11-24T12:41:31.902529+00:00",
+                        "at": "2026-11-25T17:00:06.401753+00:00",
                         "status": "success"
                   }
             },
@@ -505,14 +487,13 @@
                         "https://www.ons.gov.uk/peoplepopulationandcommunity/birthsdeathsandmarriages/ageing/bulletins/estimatesoftheveryoldincludingcentenarians/2002to2025"
                   ],
                   "last_success": {
-                        "width": 400,
-                        "height": 434,
-                        "viewport_width": 400,
-                        "captured_at": "2026-11-24T12:42:00.055404+00:00",
-                        "target_reached": false
+                        "width": 700,
+                        "height": 379,
+                        "viewport_width": 700,
+                        "captured_at": "2026-11-25T17:00:16.743862+00:00"
                   },
                   "last_attempt": {
-                        "at": "2026-11-24T12:41:35.134181+00:00",
+                        "at": "2026-11-25T17:00:11.600353+00:00",
                         "status": "success"
                   }
             },
@@ -523,9 +504,9 @@
                   ],
                   "last_success": null,
                   "last_attempt": {
-                        "at": "2026-11-24T12:42:01.061132+00:00",
+                        "at": "2026-11-25T17:00:16.754657+00:00",
                         "status": "failed",
-                        "error": "Page.wait_for_function: Timeout 30000ms exceeded."
+                        "error": "Page.wait_for_function: Timeout 90000ms exceeded."
                   }
             },
             "https://www.ons.gov.uk/visualisations/dvc3669/dashboard-monthly/index.html": {
@@ -535,9 +516,9 @@
                   ],
                   "last_success": null,
                   "last_attempt": {
-                        "at": "2026-11-24T12:42:32.566383+00:00",
+                        "at": "2026-11-25T17:01:46.997271+00:00",
                         "status": "failed",
-                        "error": "No complete chart fits the width range: Visualisation content overflows its container"
+                        "error": "Visualisation content overflows its container"
                   }
             },
             "https://www.ons.gov.uk/visualisations/dvc3669/footfall-bar-chart/index.html": {
@@ -546,14 +527,13 @@
                         "https://www.ons.gov.uk/economy/economicoutputandproductivity/output/bulletins/economicactivityandsocialchangeintheukrealtimeindicators/22october2026"
                   ],
                   "last_success": {
-                        "width": 533,
-                        "height": 705,
-                        "viewport_width": 533,
-                        "captured_at": "2026-11-24T12:43:03.231152+00:00",
-                        "target_reached": false
+                        "width": 700,
+                        "height": 680,
+                        "viewport_width": 700,
+                        "captured_at": "2026-11-25T17:01:53.850142+00:00"
                   },
                   "last_attempt": {
-                        "at": "2026-11-24T12:42:38.311622+00:00",
+                        "at": "2026-11-25T17:01:48.361532+00:00",
                         "status": "success"
                   }
             },
@@ -564,9 +544,9 @@
                   ],
                   "last_success": null,
                   "last_attempt": {
-                        "at": "2026-11-24T12:43:03.238459+00:00",
+                        "at": "2026-11-25T17:01:53.861990+00:00",
                         "status": "failed",
-                        "error": "Page.wait_for_function: Timeout 30000ms exceeded."
+                        "error": "Page.wait_for_function: Timeout 90000ms exceeded."
                   }
             },
             "https://www.ons.gov.uk/visualisations/dvc3663/fig01/index.html": {
@@ -578,11 +558,10 @@
                         "width": 700,
                         "height": 525,
                         "viewport_width": 700,
-                        "captured_at": "2026-11-24T12:43:55.408828+00:00",
-                        "target_reached": false
+                        "captured_at": "2026-11-25T16:57:47.837145+00:00"
                   },
                   "last_attempt": {
-                        "at": "2026-11-24T12:43:34.786356+00:00",
+                        "at": "2026-11-25T16:57:42.427045+00:00",
                         "status": "success"
                   }
             },
@@ -592,14 +571,13 @@
                         "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/earningsandworkinghours/bulletins/annualsurveyofhoursandearnings/2026"
                   ],
                   "last_success": {
-                        "width": 669,
-                        "height": 533,
-                        "viewport_width": 669,
-                        "captured_at": "2026-11-24T12:44:18.358336+00:00",
-                        "target_reached": false
+                        "width": 700,
+                        "height": 531,
+                        "viewport_width": 700,
+                        "captured_at": "2026-11-25T16:57:52.935430+00:00"
                   },
                   "last_attempt": {
-                        "at": "2026-11-24T12:43:55.420989+00:00",
+                        "at": "2026-11-25T16:57:47.849466+00:00",
                         "status": "success"
                   }
             },
@@ -612,11 +590,10 @@
                         "width": 700,
                         "height": 1276,
                         "viewport_width": 700,
-                        "captured_at": "2026-11-24T12:44:36.271158+00:00",
-                        "target_reached": false
+                        "captured_at": "2026-11-25T16:57:58.930788+00:00"
                   },
                   "last_attempt": {
-                        "at": "2026-11-24T12:44:18.369568+00:00",
+                        "at": "2026-11-25T16:57:52.947586+00:00",
                         "status": "success"
                   }
             },
@@ -626,14 +603,13 @@
                         "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/earningsandworkinghours/bulletins/annualsurveyofhoursandearnings/2026"
                   ],
                   "last_success": {
-                        "width": 336,
-                        "height": 688,
-                        "viewport_width": 336,
-                        "captured_at": "2026-11-24T12:44:58.472537+00:00",
-                        "target_reached": false
+                        "width": 700,
+                        "height": 618,
+                        "viewport_width": 700,
+                        "captured_at": "2026-11-25T16:58:04.039877+00:00"
                   },
                   "last_attempt": {
-                        "at": "2026-11-24T12:44:36.286719+00:00",
+                        "at": "2026-11-25T16:57:58.951200+00:00",
                         "status": "success"
                   }
             },
@@ -646,11 +622,10 @@
                         "width": 700,
                         "height": 795,
                         "viewport_width": 700,
-                        "captured_at": "2026-11-24T12:46:10.288485+00:00",
-                        "target_reached": false
+                        "captured_at": "2026-11-25T16:58:23.038059+00:00"
                   },
                   "last_attempt": {
-                        "at": "2026-11-24T12:44:58.481220+00:00",
+                        "at": "2026-11-25T16:58:04.050430+00:00",
                         "status": "success"
                   }
             },
@@ -660,14 +635,13 @@
                         "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/earningsandworkinghours/bulletins/genderpaygapintheuk/2026"
                   ],
                   "last_success": {
-                        "width": 336,
-                        "height": 434,
-                        "viewport_width": 336,
-                        "captured_at": "2026-11-24T12:46:36.444552+00:00",
-                        "target_reached": false
+                        "width": 700,
+                        "height": 372,
+                        "viewport_width": 700,
+                        "captured_at": "2026-11-25T17:03:30.252205+00:00"
                   },
                   "last_attempt": {
-                        "at": "2026-11-24T12:46:11.540131+00:00",
+                        "at": "2026-11-25T17:03:24.674665+00:00",
                         "status": "success"
                   }
             },
@@ -677,14 +651,13 @@
                         "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/earningsandworkinghours/bulletins/genderpaygapintheuk/2026"
                   ],
                   "last_success": {
-                        "width": 669,
-                        "height": 599,
-                        "viewport_width": 669,
-                        "captured_at": "2026-11-24T12:46:58.871049+00:00",
-                        "target_reached": false
+                        "width": 700,
+                        "height": 597,
+                        "viewport_width": 700,
+                        "captured_at": "2026-11-25T17:03:35.425329+00:00"
                   },
                   "last_attempt": {
-                        "at": "2026-11-24T12:46:36.459143+00:00",
+                        "at": "2026-11-25T17:03:30.261886+00:00",
                         "status": "success"
                   }
             },
@@ -694,14 +667,13 @@
                         "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/earningsandworkinghours/bulletins/genderpaygapintheuk/2026"
                   ],
                   "last_success": {
-                        "width": 669,
-                        "height": 599,
-                        "viewport_width": 669,
-                        "captured_at": "2026-11-24T12:47:21.536958+00:00",
-                        "target_reached": false
+                        "width": 700,
+                        "height": 597,
+                        "viewport_width": 700,
+                        "captured_at": "2026-11-25T17:03:40.560468+00:00"
                   },
                   "last_attempt": {
-                        "at": "2026-11-24T12:46:58.878049+00:00",
+                        "at": "2026-11-25T17:03:35.435294+00:00",
                         "status": "success"
                   }
             },
@@ -711,14 +683,13 @@
                         "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/earningsandworkinghours/bulletins/genderpaygapintheuk/2026"
                   ],
                   "last_success": {
-                        "width": 669,
-                        "height": 625,
-                        "viewport_width": 669,
-                        "captured_at": "2026-11-24T12:47:43.983606+00:00",
-                        "target_reached": false
+                        "width": 700,
+                        "height": 623,
+                        "viewport_width": 700,
+                        "captured_at": "2026-11-25T17:03:45.829128+00:00"
                   },
                   "last_attempt": {
-                        "at": "2026-11-24T12:47:21.543852+00:00",
+                        "at": "2026-11-25T17:03:40.572496+00:00",
                         "status": "success"
                   }
             },
@@ -731,11 +702,10 @@
                         "width": 700,
                         "height": 695,
                         "viewport_width": 700,
-                        "captured_at": "2026-11-24T12:48:01.253975+00:00",
-                        "target_reached": false
+                        "captured_at": "2026-11-25T17:03:50.994374+00:00"
                   },
                   "last_attempt": {
-                        "at": "2026-11-24T12:47:43.990812+00:00",
+                        "at": "2026-11-25T17:03:45.843403+00:00",
                         "status": "success"
                   }
             },
@@ -745,14 +715,13 @@
                         "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/earningsandworkinghours/bulletins/genderpaygapintheuk/2026"
                   ],
                   "last_success": {
-                        "width": 336,
-                        "height": 684,
-                        "viewport_width": 336,
-                        "captured_at": "2026-11-24T12:48:22.782402+00:00",
-                        "target_reached": false
+                        "width": 700,
+                        "height": 657,
+                        "viewport_width": 700,
+                        "captured_at": "2026-11-25T17:03:56.146125+00:00"
                   },
                   "last_attempt": {
-                        "at": "2026-11-24T12:48:01.261209+00:00",
+                        "at": "2026-11-25T17:03:51.007494+00:00",
                         "status": "success"
                   }
             },
@@ -762,14 +731,13 @@
                         "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/earningsandworkinghours/bulletins/lowandhighpayuk/2026"
                   ],
                   "last_success": {
-                        "width": 669,
-                        "height": 599,
-                        "viewport_width": 669,
-                        "captured_at": "2026-11-24T12:48:49.981737+00:00",
-                        "target_reached": false
+                        "width": 700,
+                        "height": 597,
+                        "viewport_width": 700,
+                        "captured_at": "2026-11-25T16:58:28.438817+00:00"
                   },
                   "last_attempt": {
-                        "at": "2026-11-24T12:48:23.631725+00:00",
+                        "at": "2026-11-25T16:58:23.050290+00:00",
                         "status": "success"
                   }
             },
@@ -780,9 +748,9 @@
                   ],
                   "last_success": null,
                   "last_attempt": {
-                        "at": "2026-11-24T12:48:49.989942+00:00",
+                        "at": "2026-11-25T16:58:28.448393+00:00",
                         "status": "failed",
-                        "error": "Page.wait_for_function: Timeout 30000ms exceeded."
+                        "error": "Page.wait_for_function: Timeout 90000ms exceeded."
                   }
             },
             "https://www.ons.gov.uk/visualisations/dvc3664/table1/index.html": {
@@ -794,11 +762,10 @@
                         "width": 700,
                         "height": 1122,
                         "viewport_width": 700,
-                        "captured_at": "2026-11-24T12:49:46.902868+00:00",
-                        "target_reached": false
+                        "captured_at": "2026-11-25T17:04:02.749394+00:00"
                   },
                   "last_attempt": {
-                        "at": "2026-11-24T12:49:21.281744+00:00",
+                        "at": "2026-11-25T17:03:56.155955+00:00",
                         "status": "success"
                   }
             },
@@ -808,14 +775,13 @@
                         "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/earningsandworkinghours/bulletins/earningsandemploymentfrompayasyouearnrealtimeinformationuk/october2026"
                   ],
                   "last_success": {
-                        "width": 510,
-                        "height": 802,
-                        "viewport_width": 510,
-                        "captured_at": "2026-11-24T12:50:17.546432+00:00",
-                        "target_reached": false
+                        "width": 700,
+                        "height": 949,
+                        "viewport_width": 700,
+                        "captured_at": "2026-11-25T17:04:08.322578+00:00"
                   },
                   "last_attempt": {
-                        "at": "2026-11-24T12:49:47.928604+00:00",
+                        "at": "2026-11-25T17:04:02.759224+00:00",
                         "status": "success"
                   }
             },
@@ -828,11 +794,10 @@
                         "width": 700,
                         "height": 869,
                         "viewport_width": 700,
-                        "captured_at": "2026-11-24T12:51:03.714122+00:00",
-                        "target_reached": false
+                        "captured_at": "2026-11-25T17:04:24.393341+00:00"
                   },
                   "last_attempt": {
-                        "at": "2026-11-24T12:50:17.555544+00:00",
+                        "at": "2026-11-25T17:04:08.332623+00:00",
                         "status": "success"
                   }
             },
@@ -845,11 +810,10 @@
                         "width": 700,
                         "height": 839,
                         "viewport_width": 700,
-                        "captured_at": "2026-11-24T12:51:36.253404+00:00",
-                        "target_reached": false
+                        "captured_at": "2026-11-25T17:04:40.241488+00:00"
                   },
                   "last_attempt": {
-                        "at": "2026-11-24T12:51:03.722328+00:00",
+                        "at": "2026-11-25T17:04:24.403353+00:00",
                         "status": "success"
                   }
             },
@@ -866,8 +830,9 @@
                         "target_reached": false
                   },
                   "last_attempt": {
-                        "at": "2026-11-24T12:51:36.261955+00:00",
-                        "status": "success"
+                        "at": "2026-11-25T17:04:40.255512+00:00",
+                        "status": "failed",
+                        "error": "Screenshot dimensions do not match measured container bounds"
                   }
             },
             "https://www.ons.gov.uk/visualisations/dvc3660/fig06/index.html": {
@@ -876,14 +841,13 @@
                         "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/articles/labourforcesurveyqualityupdate/october2026"
                   ],
                   "last_success": {
-                        "width": 510,
-                        "height": 771,
-                        "viewport_width": 510,
-                        "captured_at": "2026-11-24T12:52:29.645241+00:00",
-                        "target_reached": false
+                        "width": 700,
+                        "height": 961,
+                        "viewport_width": 700,
+                        "captured_at": "2026-11-25T17:04:51.485766+00:00"
                   },
                   "last_attempt": {
-                        "at": "2026-11-24T12:52:01.658292+00:00",
+                        "at": "2026-11-25T17:04:45.727180+00:00",
                         "status": "success"
                   }
             },
@@ -894,9 +858,9 @@
                   ],
                   "last_success": null,
                   "last_attempt": {
-                        "at": "2026-11-24T12:52:30.694274+00:00",
+                        "at": "2026-11-25T17:04:51.496130+00:00",
                         "status": "failed",
-                        "error": "Page.wait_for_function: Timeout 30000ms exceeded."
+                        "error": "Page.wait_for_function: Timeout 90000ms exceeded."
                   }
             },
             "https://www.ons.gov.uk/visualisations/dvc3654/line-chart/index.html": {
@@ -908,11 +872,10 @@
                         "width": 700,
                         "height": 531,
                         "viewport_width": 700,
-                        "captured_at": "2026-11-24T12:53:23.635465+00:00",
-                        "target_reached": false
+                        "captured_at": "2026-11-25T17:06:27.319499+00:00"
                   },
                   "last_attempt": {
-                        "at": "2026-11-24T12:53:02.231352+00:00",
+                        "at": "2026-11-25T17:06:21.804185+00:00",
                         "status": "success"
                   }
             },
@@ -925,11 +888,10 @@
                         "width": 700,
                         "height": 1030,
                         "viewport_width": 700,
-                        "captured_at": "2026-11-24T12:53:46.333002+00:00",
-                        "target_reached": false
+                        "captured_at": "2026-11-25T17:06:32.814587+00:00"
                   },
                   "last_attempt": {
-                        "at": "2026-11-24T12:53:25.036950+00:00",
+                        "at": "2026-11-25T17:06:27.329220+00:00",
                         "status": "success"
                   }
             },
@@ -942,11 +904,10 @@
                         "width": 700,
                         "height": 1030,
                         "viewport_width": 700,
-                        "captured_at": "2026-11-24T12:54:04.141375+00:00",
-                        "target_reached": false
+                        "captured_at": "2026-11-25T17:06:38.098535+00:00"
                   },
                   "last_attempt": {
-                        "at": "2026-11-24T12:53:46.343263+00:00",
+                        "at": "2026-11-25T17:06:32.824544+00:00",
                         "status": "success"
                   }
             },
@@ -959,11 +920,10 @@
                         "width": 700,
                         "height": 1030,
                         "viewport_width": 700,
-                        "captured_at": "2026-11-24T12:54:21.873564+00:00",
-                        "target_reached": false
+                        "captured_at": "2026-11-25T17:06:43.365570+00:00"
                   },
                   "last_attempt": {
-                        "at": "2026-11-24T12:54:04.149373+00:00",
+                        "at": "2026-11-25T17:06:38.111066+00:00",
                         "status": "success"
                   }
             },
@@ -974,9 +934,9 @@
                   ],
                   "last_success": null,
                   "last_attempt": {
-                        "at": "2026-11-24T12:54:23.741497+00:00",
+                        "at": "2026-11-25T17:06:43.377622+00:00",
                         "status": "failed",
-                        "error": "Page.wait_for_function: Timeout 30000ms exceeded."
+                        "error": "Page.wait_for_function: Timeout 90000ms exceeded."
                   }
             },
             "https://www.ons.gov.uk/visualisations/dvc3613/fig04/index.html": {
@@ -985,14 +945,13 @@
                         "https://www.ons.gov.uk/businessindustryandtrade/business/activitysizeandlocation/bulletins/trendsinukindustryconcentration/2007to2025"
                   ],
                   "last_success": {
-                        "width": 668,
-                        "height": 550,
-                        "viewport_width": 668,
-                        "captured_at": "2026-11-24T12:55:23.867070+00:00",
-                        "target_reached": false
+                        "width": 700,
+                        "height": 549,
+                        "viewport_width": 700,
+                        "captured_at": "2026-11-25T17:08:19.647325+00:00"
                   },
                   "last_attempt": {
-                        "at": "2026-11-24T12:54:55.676149+00:00",
+                        "at": "2026-11-25T17:08:14.073290+00:00",
                         "status": "success"
                   }
             },
@@ -1002,14 +961,13 @@
                         "https://www.ons.gov.uk/businessindustryandtrade/business/activitysizeandlocation/bulletins/trendsinukindustryconcentration/2007to2025"
                   ],
                   "last_success": {
-                        "width": 338,
-                        "height": 639,
-                        "viewport_width": 338,
-                        "captured_at": "2026-11-24T12:55:46.665853+00:00",
-                        "target_reached": false
+                        "width": 700,
+                        "height": 577,
+                        "viewport_width": 700,
+                        "captured_at": "2026-11-25T17:08:25.644576+00:00"
                   },
                   "last_attempt": {
-                        "at": "2026-11-24T12:55:23.876773+00:00",
+                        "at": "2026-11-25T17:08:19.657129+00:00",
                         "status": "success"
                   }
             },
@@ -1022,11 +980,10 @@
                         "width": 700,
                         "height": 795,
                         "viewport_width": 700,
-                        "captured_at": "2026-11-24T12:56:22.044840+00:00",
-                        "target_reached": false
+                        "captured_at": "2026-11-25T17:08:41.800171+00:00"
                   },
                   "last_attempt": {
-                        "at": "2026-11-24T12:55:47.476679+00:00",
+                        "at": "2026-11-25T17:08:25.654531+00:00",
                         "status": "success"
                   }
             },
@@ -1037,9 +994,9 @@
                   ],
                   "last_success": null,
                   "last_attempt": {
-                        "at": "2026-11-24T12:56:22.052416+00:00",
+                        "at": "2026-11-25T17:08:41.809947+00:00",
                         "status": "failed",
-                        "error": "No complete chart fits the width range: Visualisation content overflows its container"
+                        "error": "Visualisation content overflows its container"
                   }
             },
             "https://www.ons.gov.uk/visualisations/dvc3650/Fig03/index.html": {
@@ -1048,14 +1005,13 @@
                         "https://www.ons.gov.uk/peoplepopulationandcommunity/armedforcescommunity/bulletins/ukarmedforcesveteransenglandandwales/2024and2025"
                   ],
                   "last_success": {
-                        "width": 344,
-                        "height": 700,
-                        "viewport_width": 344,
-                        "captured_at": "2026-11-24T12:56:48.033230+00:00",
-                        "target_reached": true
+                        "width": 700,
+                        "height": 387,
+                        "viewport_width": 700,
+                        "captured_at": "2026-11-25T17:08:48.125878+00:00"
                   },
                   "last_attempt": {
-                        "at": "2026-11-24T12:56:26.290670+00:00",
+                        "at": "2026-11-25T17:08:43.012115+00:00",
                         "status": "success"
                   }
             },
@@ -1068,11 +1024,10 @@
                         "width": 700,
                         "height": 653,
                         "viewport_width": 700,
-                        "captured_at": "2026-11-24T12:57:09.404799+00:00",
-                        "target_reached": false
+                        "captured_at": "2026-11-25T17:08:53.733226+00:00"
                   },
                   "last_attempt": {
-                        "at": "2026-11-24T12:56:48.806387+00:00",
+                        "at": "2026-11-25T17:08:48.138217+00:00",
                         "status": "success"
                   }
             },
@@ -1082,14 +1037,13 @@
                         "https://www.ons.gov.uk/peoplepopulationandcommunity/birthsdeathsandmarriages/deaths/bulletins/suicidesintheunitedkingdom/1981to2025"
                   ],
                   "last_success": {
-                        "width": 509,
-                        "height": 699,
-                        "viewport_width": 509,
-                        "captured_at": "2026-11-24T12:57:33.763514+00:00",
-                        "target_reached": true
+                        "width": 700,
+                        "height": 651,
+                        "viewport_width": 700,
+                        "captured_at": "2026-11-25T17:08:58.947530+00:00"
                   },
                   "last_attempt": {
-                        "at": "2026-11-24T12:57:09.413799+00:00",
+                        "at": "2026-11-25T17:08:53.745672+00:00",
                         "status": "success"
                   }
             },
@@ -1099,14 +1053,13 @@
                         "https://www.ons.gov.uk/peoplepopulationandcommunity/birthsdeathsandmarriages/deaths/bulletins/suicidesintheunitedkingdom/1981to2025"
                   ],
                   "last_success": {
-                        "width": 509,
-                        "height": 705,
-                        "viewport_width": 509,
-                        "captured_at": "2026-11-24T12:57:58.081900+00:00",
-                        "target_reached": false
+                        "width": 700,
+                        "height": 629,
+                        "viewport_width": 700,
+                        "captured_at": "2026-11-25T17:09:04.281232+00:00"
                   },
                   "last_attempt": {
-                        "at": "2026-11-24T12:57:33.770593+00:00",
+                        "at": "2026-11-25T17:08:58.957421+00:00",
                         "status": "success"
                   }
             },
@@ -1116,14 +1069,13 @@
                         "https://www.ons.gov.uk/peoplepopulationandcommunity/birthsdeathsandmarriages/deaths/bulletins/suicidesintheunitedkingdom/1981to2025"
                   ],
                   "last_success": {
-                        "width": 676,
-                        "height": 700,
-                        "viewport_width": 676,
-                        "captured_at": "2026-11-24T12:58:20.655082+00:00",
-                        "target_reached": true
+                        "width": 700,
+                        "height": 719,
+                        "viewport_width": 700,
+                        "captured_at": "2026-11-25T17:09:09.468146+00:00"
                   },
                   "last_attempt": {
-                        "at": "2026-11-24T12:57:58.090652+00:00",
+                        "at": "2026-11-25T17:09:04.299698+00:00",
                         "status": "success"
                   }
             },
@@ -1134,9 +1086,9 @@
                   ],
                   "last_success": null,
                   "last_attempt": {
-                        "at": "2026-11-24T12:58:21.405956+00:00",
+                        "at": "2026-11-25T17:09:09.480297+00:00",
                         "status": "failed",
-                        "error": "Page.wait_for_function: Timeout 30000ms exceeded."
+                        "error": "Page.wait_for_function: Timeout 90000ms exceeded."
                   }
             },
             "https://www.ons.gov.uk/visualisations/dvc3642/fig01/index.html": {
@@ -1145,14 +1097,13 @@
                         "https://www.ons.gov.uk/peoplepopulationandcommunity/healthandsocialcare/healthandlifeexpectancies/bulletins/adultsmokinghabitsingreatbritain/2025"
                   ],
                   "last_success": {
-                        "width": 629,
-                        "height": 700,
-                        "viewport_width": 629,
-                        "captured_at": "2026-11-24T12:59:20.633553+00:00",
-                        "target_reached": true
+                        "width": 700,
+                        "height": 719,
+                        "viewport_width": 700,
+                        "captured_at": "2026-11-25T17:10:45.414791+00:00"
                   },
                   "last_attempt": {
-                        "at": "2026-11-24T12:58:53.318226+00:00",
+                        "at": "2026-11-25T17:10:40.216714+00:00",
                         "status": "success"
                   }
             },
@@ -1165,11 +1116,10 @@
                         "width": 700,
                         "height": 872,
                         "viewport_width": 700,
-                        "captured_at": "2026-11-24T12:59:42.169262+00:00",
-                        "target_reached": false
+                        "captured_at": "2026-11-25T17:10:51.499433+00:00"
                   },
                   "last_attempt": {
-                        "at": "2026-11-24T12:59:20.641558+00:00",
+                        "at": "2026-11-25T17:10:45.426892+00:00",
                         "status": "success"
                   }
             },
@@ -1179,14 +1129,13 @@
                         "https://www.ons.gov.uk/peoplepopulationandcommunity/healthandsocialcare/healthandlifeexpectancies/bulletins/adultsmokinghabitsingreatbritain/2025"
                   ],
                   "last_success": {
-                        "width": 400,
-                        "height": 460,
-                        "viewport_width": 400,
-                        "captured_at": "2026-11-24T13:00:05.136645+00:00",
-                        "target_reached": false
+                        "width": 700,
+                        "height": 434,
+                        "viewport_width": 700,
+                        "captured_at": "2026-11-25T17:10:56.570126+00:00"
                   },
                   "last_attempt": {
-                        "at": "2026-11-24T12:59:42.177037+00:00",
+                        "at": "2026-11-25T17:10:51.512776+00:00",
                         "status": "success"
                   }
             },
@@ -1196,14 +1145,13 @@
                         "https://www.ons.gov.uk/peoplepopulationandcommunity/healthandsocialcare/healthandlifeexpectancies/bulletins/adultsmokinghabitsingreatbritain/2025"
                   ],
                   "last_success": {
-                        "width": 400,
-                        "height": 370,
-                        "viewport_width": 400,
-                        "captured_at": "2026-11-24T13:00:27.918683+00:00",
-                        "target_reached": false
+                        "width": 700,
+                        "height": 314,
+                        "viewport_width": 700,
+                        "captured_at": "2026-11-25T17:11:01.665800+00:00"
                   },
                   "last_attempt": {
-                        "at": "2026-11-24T13:00:05.143940+00:00",
+                        "at": "2026-11-25T17:10:56.580283+00:00",
                         "status": "success"
                   }
             },
@@ -1213,14 +1161,13 @@
                         "https://www.ons.gov.uk/peoplepopulationandcommunity/healthandsocialcare/healthandlifeexpectancies/bulletins/adultsmokinghabitsingreatbritain/2025"
                   ],
                   "last_success": {
-                        "width": 400,
-                        "height": 520,
-                        "viewport_width": 400,
-                        "captured_at": "2026-11-24T13:00:50.856095+00:00",
-                        "target_reached": false
+                        "width": 700,
+                        "height": 434,
+                        "viewport_width": 700,
+                        "captured_at": "2026-11-25T17:11:06.769758+00:00"
                   },
                   "last_attempt": {
-                        "at": "2026-11-24T13:00:27.925683+00:00",
+                        "at": "2026-11-25T17:11:01.675508+00:00",
                         "status": "success"
                   }
             },
@@ -1233,11 +1180,10 @@
                         "width": 700,
                         "height": 665,
                         "viewport_width": 700,
-                        "captured_at": "2026-11-24T13:01:08.147830+00:00",
-                        "target_reached": false
+                        "captured_at": "2026-11-25T17:11:12.095482+00:00"
                   },
                   "last_attempt": {
-                        "at": "2026-11-24T13:00:50.864093+00:00",
+                        "at": "2026-11-25T17:11:06.779591+00:00",
                         "status": "success"
                   }
             },
@@ -1247,14 +1193,13 @@
                         "https://www.ons.gov.uk/peoplepopulationandcommunity/healthandsocialcare/healthandlifeexpectancies/bulletins/adultsmokinghabitsingreatbritain/2025"
                   ],
                   "last_success": {
-                        "width": 400,
-                        "height": 376,
-                        "viewport_width": 400,
-                        "captured_at": "2026-11-24T13:01:32.187101+00:00",
-                        "target_reached": false
+                        "width": 700,
+                        "height": 314,
+                        "viewport_width": 700,
+                        "captured_at": "2026-11-25T17:11:17.180866+00:00"
                   },
                   "last_attempt": {
-                        "at": "2026-11-24T13:01:08.155824+00:00",
+                        "at": "2026-11-25T17:11:12.105370+00:00",
                         "status": "success"
                   }
             },
@@ -1264,14 +1209,13 @@
                         "https://www.ons.gov.uk/peoplepopulationandcommunity/healthandsocialcare/healthandlifeexpectancies/bulletins/adultsmokinghabitsingreatbritain/2025"
                   ],
                   "last_success": {
-                        "width": 400,
-                        "height": 412,
-                        "viewport_width": 400,
-                        "captured_at": "2026-11-24T13:01:55.217676+00:00",
-                        "target_reached": false
+                        "width": 700,
+                        "height": 386,
+                        "viewport_width": 700,
+                        "captured_at": "2026-11-25T17:11:22.267320+00:00"
                   },
                   "last_attempt": {
-                        "at": "2026-11-24T13:01:32.195624+00:00",
+                        "at": "2026-11-25T17:11:17.192029+00:00",
                         "status": "success"
                   }
             },
@@ -1284,11 +1228,10 @@
                         "width": 700,
                         "height": 613,
                         "viewport_width": 700,
-                        "captured_at": "2026-11-24T13:02:12.614737+00:00",
-                        "target_reached": false
+                        "captured_at": "2026-11-25T17:11:27.790993+00:00"
                   },
                   "last_attempt": {
-                        "at": "2026-11-24T13:01:55.224678+00:00",
+                        "at": "2026-11-25T17:11:22.279637+00:00",
                         "status": "success"
                   }
             },
@@ -1301,11 +1244,10 @@
                         "width": 700,
                         "height": 672,
                         "viewport_width": 700,
-                        "captured_at": "2026-11-24T13:02:33.742864+00:00",
-                        "target_reached": false
+                        "captured_at": "2026-11-25T17:11:33.189778+00:00"
                   },
                   "last_attempt": {
-                        "at": "2026-11-24T13:02:13.531393+00:00",
+                        "at": "2026-11-25T17:11:27.800947+00:00",
                         "status": "success"
                   }
             },
@@ -1315,14 +1257,13 @@
                         "https://www.ons.gov.uk/peoplepopulationandcommunity/birthsdeathsandmarriages/deaths/bulletins/deathsofhomelesspeopleinenglandandwales/2013to2025registrations"
                   ],
                   "last_success": {
-                        "width": 599,
-                        "height": 604,
-                        "viewport_width": 599,
-                        "captured_at": "2026-11-24T13:02:58.000226+00:00",
-                        "target_reached": false
+                        "width": 700,
+                        "height": 566,
+                        "viewport_width": 700,
+                        "captured_at": "2026-11-25T17:11:38.419276+00:00"
                   },
                   "last_attempt": {
-                        "at": "2026-11-24T13:02:33.757628+00:00",
+                        "at": "2026-11-25T17:11:33.199636+00:00",
                         "status": "success"
                   }
             },
@@ -1335,11 +1276,10 @@
                         "width": 700,
                         "height": 602,
                         "viewport_width": 700,
-                        "captured_at": "2026-11-24T13:03:18.727564+00:00",
-                        "target_reached": false
+                        "captured_at": "2026-11-25T17:11:43.973836+00:00"
                   },
                   "last_attempt": {
-                        "at": "2026-11-24T13:02:58.795687+00:00",
+                        "at": "2026-11-25T17:11:38.430220+00:00",
                         "status": "success"
                   }
             },
@@ -1352,11 +1292,10 @@
                         "width": 700,
                         "height": 599,
                         "viewport_width": 700,
-                        "captured_at": "2026-11-24T13:03:36.295541+00:00",
-                        "target_reached": false
+                        "captured_at": "2026-11-25T17:11:49.139952+00:00"
                   },
                   "last_attempt": {
-                        "at": "2026-11-24T13:03:18.737572+00:00",
+                        "at": "2026-11-25T17:11:43.983398+00:00",
                         "status": "success"
                   }
             },
@@ -1369,11 +1308,10 @@
                         "width": 700,
                         "height": 599,
                         "viewport_width": 700,
-                        "captured_at": "2026-11-24T13:03:54.117164+00:00",
-                        "target_reached": false
+                        "captured_at": "2026-11-25T17:11:54.357254+00:00"
                   },
                   "last_attempt": {
-                        "at": "2026-11-24T13:03:36.306735+00:00",
+                        "at": "2026-11-25T17:11:49.149712+00:00",
                         "status": "success"
                   }
             },
@@ -1386,11 +1324,10 @@
                         "width": 700,
                         "height": 599,
                         "viewport_width": 700,
-                        "captured_at": "2026-11-24T13:04:12.051950+00:00",
-                        "target_reached": false
+                        "captured_at": "2026-11-25T17:11:59.623750+00:00"
                   },
                   "last_attempt": {
-                        "at": "2026-11-24T13:03:54.138508+00:00",
+                        "at": "2026-11-25T17:11:54.367352+00:00",
                         "status": "success"
                   }
             },
@@ -1403,11 +1340,10 @@
                         "width": 700,
                         "height": 547,
                         "viewport_width": 700,
-                        "captured_at": "2026-11-24T13:04:30.185651+00:00",
-                        "target_reached": false
+                        "captured_at": "2026-11-25T17:12:04.787506+00:00"
                   },
                   "last_attempt": {
-                        "at": "2026-11-24T13:04:12.068967+00:00",
+                        "at": "2026-11-25T17:11:59.635643+00:00",
                         "status": "success"
                   }
             },
@@ -1417,14 +1353,13 @@
                         "https://www.ons.gov.uk/peoplepopulationandcommunity/birthsdeathsandmarriages/deaths/articles/deathcertificationreformenglandandwales/2025"
                   ],
                   "last_success": {
-                        "width": 320,
-                        "height": 723,
-                        "viewport_width": 320,
-                        "captured_at": "2026-11-24T13:04:52.933014+00:00",
-                        "target_reached": false
+                        "width": 700,
+                        "height": 417,
+                        "viewport_width": 700,
+                        "captured_at": "2026-11-25T17:12:10.218382+00:00"
                   },
                   "last_attempt": {
-                        "at": "2026-11-24T13:04:32.113848+00:00",
+                        "at": "2026-11-25T17:12:04.797858+00:00",
                         "status": "success"
                   }
             },
@@ -1434,14 +1369,13 @@
                         "https://www.ons.gov.uk/peoplepopulationandcommunity/birthsdeathsandmarriages/deaths/articles/deathcertificationreformenglandandwales/2025"
                   ],
                   "last_success": {
-                        "width": 400,
-                        "height": 430,
-                        "viewport_width": 400,
-                        "captured_at": "2026-11-24T13:05:18.041779+00:00",
-                        "target_reached": false
+                        "width": 700,
+                        "height": 368,
+                        "viewport_width": 700,
+                        "captured_at": "2026-11-25T17:12:15.330949+00:00"
                   },
                   "last_attempt": {
-                        "at": "2026-11-24T13:04:52.947301+00:00",
+                        "at": "2026-11-25T17:12:10.228055+00:00",
                         "status": "success"
                   }
             },
@@ -1454,11 +1388,10 @@
                         "width": 700,
                         "height": 688,
                         "viewport_width": 700,
-                        "captured_at": "2026-11-24T13:05:35.356073+00:00",
-                        "target_reached": false
+                        "captured_at": "2026-11-25T17:12:20.509136+00:00"
                   },
                   "last_attempt": {
-                        "at": "2026-11-24T13:05:18.053436+00:00",
+                        "at": "2026-11-25T17:12:15.342574+00:00",
                         "status": "success"
                   }
             },
@@ -1468,14 +1401,13 @@
                         "https://www.ons.gov.uk/peoplepopulationandcommunity/birthsdeathsandmarriages/deaths/articles/deathcertificationreformenglandandwales/2025"
                   ],
                   "last_success": {
-                        "width": 661,
-                        "height": 700,
-                        "viewport_width": 661,
-                        "captured_at": "2026-11-24T13:06:00.716828+00:00",
-                        "target_reached": true
+                        "width": 700,
+                        "height": 721,
+                        "viewport_width": 700,
+                        "captured_at": "2026-11-25T17:12:25.761429+00:00"
                   },
                   "last_attempt": {
-                        "at": "2026-11-24T13:05:35.370395+00:00",
+                        "at": "2026-11-25T17:12:20.521060+00:00",
                         "status": "success"
                   }
             },
@@ -1486,9 +1418,9 @@
                   ],
                   "last_success": null,
                   "last_attempt": {
-                        "at": "2026-11-24T13:06:01.818312+00:00",
+                        "at": "2026-11-25T17:12:25.773812+00:00",
                         "status": "failed",
-                        "error": "Page.wait_for_function: Timeout 30000ms exceeded."
+                        "error": "Page.wait_for_function: Timeout 90000ms exceeded."
                   }
             },
             "https://www.ons.gov.uk/visualisations/dvc3627/Fig02/index.html": {
@@ -1500,11 +1432,10 @@
                         "width": 700,
                         "height": 356,
                         "viewport_width": 700,
-                        "captured_at": "2026-11-24T13:06:50.737753+00:00",
-                        "target_reached": false
+                        "captured_at": "2026-11-25T17:14:02.077256+00:00"
                   },
                   "last_attempt": {
-                        "at": "2026-11-24T13:06:33.010938+00:00",
+                        "at": "2026-11-25T17:13:56.830625+00:00",
                         "status": "success"
                   }
             },
@@ -1517,11 +1448,10 @@
                         "width": 700,
                         "height": 644,
                         "viewport_width": 700,
-                        "captured_at": "2026-11-24T13:07:08.452144+00:00",
-                        "target_reached": false
+                        "captured_at": "2026-11-25T17:14:07.284840+00:00"
                   },
                   "last_attempt": {
-                        "at": "2026-11-24T13:06:50.751190+00:00",
+                        "at": "2026-11-25T17:14:02.086887+00:00",
                         "status": "success"
                   }
             },
@@ -1534,11 +1464,10 @@
                         "width": 700,
                         "height": 444,
                         "viewport_width": 700,
-                        "captured_at": "2026-11-24T13:07:26.024199+00:00",
-                        "target_reached": false
+                        "captured_at": "2026-11-25T17:14:13.062597+00:00"
                   },
                   "last_attempt": {
-                        "at": "2026-11-24T13:07:08.461196+00:00",
+                        "at": "2026-11-25T17:14:07.295022+00:00",
                         "status": "success"
                   }
             },
@@ -1551,11 +1480,10 @@
                         "width": 700,
                         "height": 444,
                         "viewport_width": 700,
-                        "captured_at": "2026-11-24T13:07:43.889654+00:00",
-                        "target_reached": false
+                        "captured_at": "2026-11-25T17:14:18.112320+00:00"
                   },
                   "last_attempt": {
-                        "at": "2026-11-24T13:07:26.036990+00:00",
+                        "at": "2026-11-25T17:14:13.072966+00:00",
                         "status": "success"
                   }
             },
@@ -1568,11 +1496,10 @@
                         "width": 700,
                         "height": 795,
                         "viewport_width": 700,
-                        "captured_at": "2026-11-24T13:08:56.118208+00:00",
-                        "target_reached": false
+                        "captured_at": "2026-11-25T17:14:36.859686+00:00"
                   },
                   "last_attempt": {
-                        "at": "2026-11-24T13:07:43.903723+00:00",
+                        "at": "2026-11-25T17:14:18.123262+00:00",
                         "status": "success"
                   }
             },
@@ -1585,11 +1512,10 @@
                         "width": 700,
                         "height": 793,
                         "viewport_width": 700,
-                        "captured_at": "2026-11-24T13:09:19.565770+00:00",
-                        "target_reached": false
+                        "captured_at": "2026-11-25T17:14:42.472196+00:00"
                   },
                   "last_attempt": {
-                        "at": "2026-11-24T13:08:58.828555+00:00",
+                        "at": "2026-11-25T17:14:36.869425+00:00",
                         "status": "success"
                   }
             },
@@ -1599,14 +1525,13 @@
                         "https://www.ons.gov.uk/peoplepopulationandcommunity/housing/bulletins/mortgagestatisticsuk/2025"
                   ],
                   "last_success": {
-                        "width": 517,
-                        "height": 667,
-                        "viewport_width": 517,
-                        "captured_at": "2026-11-24T13:09:50.333728+00:00",
-                        "target_reached": false
+                        "width": 700,
+                        "height": 553,
+                        "viewport_width": 700,
+                        "captured_at": "2026-11-25T17:14:47.913645+00:00"
                   },
                   "last_attempt": {
-                        "at": "2026-11-24T13:09:20.525006+00:00",
+                        "at": "2026-11-25T17:14:42.484165+00:00",
                         "status": "success"
                   }
             },
@@ -1616,14 +1541,13 @@
                         "https://www.ons.gov.uk/peoplepopulationandcommunity/housing/bulletins/mortgagestatisticsuk/2025"
                   ],
                   "last_success": {
-                        "width": 478,
-                        "height": 700,
-                        "viewport_width": 478,
-                        "captured_at": "2026-11-24T13:10:15.319699+00:00",
-                        "target_reached": true
+                        "width": 700,
+                        "height": 892,
+                        "viewport_width": 700,
+                        "captured_at": "2026-11-25T17:14:53.344096+00:00"
                   },
                   "last_attempt": {
-                        "at": "2026-11-24T13:09:50.354621+00:00",
+                        "at": "2026-11-25T17:14:47.925344+00:00",
                         "status": "success"
                   }
             },
@@ -1633,14 +1557,13 @@
                         "https://www.ons.gov.uk/peoplepopulationandcommunity/housing/bulletins/mortgagestatisticsuk/2025"
                   ],
                   "last_success": {
-                        "width": 529,
-                        "height": 700,
-                        "viewport_width": 529,
-                        "captured_at": "2026-11-24T13:10:41.479114+00:00",
-                        "target_reached": true
+                        "width": 700,
+                        "height": 832,
+                        "viewport_width": 700,
+                        "captured_at": "2026-11-25T17:14:58.861185+00:00"
                   },
                   "last_attempt": {
-                        "at": "2026-11-24T13:10:15.334734+00:00",
+                        "at": "2026-11-25T17:14:53.357393+00:00",
                         "status": "success"
                   }
             },
@@ -1650,14 +1573,13 @@
                         "https://www.ons.gov.uk/peoplepopulationandcommunity/wellbeing/bulletins/measuringprogresswellbeingandbeyondgdpintheuk/september2026"
                   ],
                   "last_success": {
-                        "width": 680,
-                        "height": 2440,
-                        "viewport_width": 680,
-                        "captured_at": "2026-11-24T13:11:11.045307+00:00",
-                        "target_reached": false
+                        "width": 700,
+                        "height": 2478,
+                        "viewport_width": 700,
+                        "captured_at": "2026-11-25T17:15:05.322816+00:00"
                   },
                   "last_attempt": {
-                        "at": "2026-11-24T13:10:42.756237+00:00",
+                        "at": "2026-11-25T17:14:58.875429+00:00",
                         "status": "success"
                   }
             },
@@ -1667,14 +1589,13 @@
                         "https://www.ons.gov.uk/peoplepopulationandcommunity/wellbeing/bulletins/publicopinionsandsocialtrendsgreatbritain/august2026"
                   ],
                   "last_success": {
-                        "width": 510,
-                        "height": 796,
-                        "viewport_width": 510,
-                        "captured_at": "2026-11-24T13:11:47.893163+00:00",
-                        "target_reached": false
+                        "width": 700,
+                        "height": 985,
+                        "viewport_width": 700,
+                        "captured_at": "2026-11-25T17:15:10.947311+00:00"
                   },
                   "last_attempt": {
-                        "at": "2026-11-24T13:11:13.140863+00:00",
+                        "at": "2026-11-25T17:15:05.333547+00:00",
                         "status": "success"
                   }
             },
@@ -1685,9 +1606,9 @@
                   ],
                   "last_success": null,
                   "last_attempt": {
-                        "at": "2026-11-24T13:11:48.995415+00:00",
+                        "at": "2026-11-25T17:15:10.957096+00:00",
                         "status": "failed",
-                        "error": "No complete chart fits the width range: Visualisation content overflows its container"
+                        "error": "Visualisation content overflows its container"
                   }
             },
             "https://www.ons.gov.uk/visualisations/dvc3636/footfall-bar-chart/index.html": {
@@ -1696,14 +1617,13 @@
                         "https://www.ons.gov.uk/economy/economicoutputandproductivity/output/bulletins/economicactivityandsocialchangeintheukrealtimeindicators/17september2026"
                   ],
                   "last_success": {
-                        "width": 599,
-                        "height": 675,
-                        "viewport_width": 599,
-                        "captured_at": "2026-11-24T13:12:20.830123+00:00",
-                        "target_reached": false
+                        "width": 700,
+                        "height": 640,
+                        "viewport_width": 700,
+                        "captured_at": "2026-11-25T17:15:17.732702+00:00"
                   },
                   "last_attempt": {
-                        "at": "2026-11-24T13:11:55.541926+00:00",
+                        "at": "2026-11-25T17:15:12.324921+00:00",
                         "status": "success"
                   }
             },
@@ -1714,9 +1634,9 @@
                   ],
                   "last_success": null,
                   "last_attempt": {
-                        "at": "2026-11-24T13:12:20.850600+00:00",
+                        "at": "2026-11-25T17:15:17.744806+00:00",
                         "status": "failed",
-                        "error": "Page.wait_for_function: Timeout 30000ms exceeded."
+                        "error": "Page.wait_for_function: Timeout 90000ms exceeded."
                   }
             },
             "https://www.ons.gov.uk/visualisations/dvc3631/Fig05/index.html": {
@@ -1725,14 +1645,13 @@
                         "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/earningsandworkinghours/bulletins/earningsandemploymentfrompayasyouearnrealtimeinformationuk/september2026"
                   ],
                   "last_success": {
-                        "width": 510,
-                        "height": 802,
-                        "viewport_width": 510,
-                        "captured_at": "2026-11-24T13:13:27.412882+00:00",
-                        "target_reached": false
+                        "width": 700,
+                        "height": 949,
+                        "viewport_width": 700,
+                        "captured_at": "2026-11-25T17:16:54.325236+00:00"
                   },
                   "last_attempt": {
-                        "at": "2026-11-24T13:12:53.369519+00:00",
+                        "at": "2026-11-25T17:16:48.598302+00:00",
                         "status": "success"
                   }
             },
@@ -1745,11 +1664,10 @@
                         "width": 700,
                         "height": 869,
                         "viewport_width": 700,
-                        "captured_at": "2026-11-24T13:14:28.281744+00:00",
-                        "target_reached": false
+                        "captured_at": "2026-11-25T17:17:10.511327+00:00"
                   },
                   "last_attempt": {
-                        "at": "2026-11-24T13:13:27.428894+00:00",
+                        "at": "2026-11-25T17:16:54.338602+00:00",
                         "status": "success"
                   }
             },
@@ -1762,11 +1680,10 @@
                         "width": 700,
                         "height": 839,
                         "viewport_width": 700,
-                        "captured_at": "2026-11-24T13:15:07.657305+00:00",
-                        "target_reached": false
+                        "captured_at": "2026-11-25T17:17:26.426795+00:00"
                   },
                   "last_attempt": {
-                        "at": "2026-11-24T13:14:28.301978+00:00",
+                        "at": "2026-11-25T17:17:10.523787+00:00",
                         "status": "success"
                   }
             },
@@ -1783,8 +1700,9 @@
                         "target_reached": false
                   },
                   "last_attempt": {
-                        "at": "2026-11-24T13:15:07.669303+00:00",
-                        "status": "success"
+                        "at": "2026-11-25T17:17:26.436270+00:00",
+                        "status": "failed",
+                        "error": "Screenshot dimensions do not match measured container bounds"
                   }
             },
             "https://www.ons.gov.uk/visualisations/dvc3634/build": {
@@ -1945,9 +1863,9 @@
                   ],
                   "last_success": null,
                   "last_attempt": {
-                        "at": "2026-11-24T14:11:58.745077+00:00",
+                        "at": "2026-11-25T16:49:26.419468+00:00",
                         "status": "failed",
-                        "error": "No complete chart fits the width range: Visualisation content overflows its container"
+                        "error": "Visualisation content overflows its container"
                   }
             },
             "https://www.ons.gov.uk/visualisations/dvc3626/fig01/index.html": {
@@ -5281,11 +5199,10 @@
                         "width": 700,
                         "height": 589,
                         "viewport_width": 700,
-                        "captured_at": "2026-11-24T15:08:15.110583+00:00",
-                        "target_reached": false
+                        "captured_at": "2026-11-25T16:42:21.312262+00:00"
                   },
                   "last_attempt": {
-                        "at": "2026-11-24T15:07:42.847206+00:00",
+                        "at": "2026-11-25T16:42:15.860034+00:00",
                         "status": "success"
                   }
             },
@@ -5295,14 +5212,13 @@
                         "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/articles/newinsightsonlabourmarketdynamicsfromuklinkedemployeremployeedataleed/2026"
                   ],
                   "last_success": {
-                        "width": 510,
-                        "height": 764,
-                        "viewport_width": 510,
-                        "captured_at": "2026-11-24T15:08:57.426578+00:00",
-                        "target_reached": false
+                        "width": 700,
+                        "height": 932,
+                        "viewport_width": 700,
+                        "captured_at": "2026-11-25T16:42:26.641675+00:00"
                   },
                   "last_attempt": {
-                        "at": "2026-11-24T15:08:15.128056+00:00",
+                        "at": "2026-11-25T16:42:21.323437+00:00",
                         "status": "success"
                   }
             },
@@ -5312,14 +5228,13 @@
                         "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/articles/newinsightsonlabourmarketdynamicsfromuklinkedemployeremployeedataleed/2026"
                   ],
                   "last_success": {
-                        "width": 328,
-                        "height": 714,
-                        "viewport_width": 328,
-                        "captured_at": "2026-11-24T15:09:19.019993+00:00",
-                        "target_reached": false
+                        "width": 700,
+                        "height": 435,
+                        "viewport_width": 700,
+                        "captured_at": "2026-11-25T16:42:31.875503+00:00"
                   },
                   "last_attempt": {
-                        "at": "2026-11-24T15:08:57.443581+00:00",
+                        "at": "2026-11-25T16:42:26.652886+00:00",
                         "status": "success"
                   }
             },
@@ -5329,14 +5244,13 @@
                         "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/articles/newinsightsonlabourmarketdynamicsfromuklinkedemployeremployeedataleed/2026"
                   ],
                   "last_success": {
-                        "width": 552,
-                        "height": 700,
-                        "viewport_width": 552,
-                        "captured_at": "2026-11-24T15:09:43.422989+00:00",
-                        "target_reached": true
+                        "width": 700,
+                        "height": 788,
+                        "viewport_width": 700,
+                        "captured_at": "2026-11-25T16:42:37.084757+00:00"
                   },
                   "last_attempt": {
-                        "at": "2026-11-24T15:09:19.036509+00:00",
+                        "at": "2026-11-25T16:42:31.887054+00:00",
                         "status": "success"
                   }
             },
@@ -5349,11 +5263,10 @@
                         "width": 700,
                         "height": 509,
                         "viewport_width": 700,
-                        "captured_at": "2026-11-24T15:10:00.688796+00:00",
-                        "target_reached": false
+                        "captured_at": "2026-11-25T16:42:42.409081+00:00"
                   },
                   "last_attempt": {
-                        "at": "2026-11-24T15:09:43.445981+00:00",
+                        "at": "2026-11-25T16:42:37.094662+00:00",
                         "status": "success"
                   }
             },
@@ -5363,14 +5276,13 @@
                         "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/articles/newinsightsonlabourmarketdynamicsfromuklinkedemployeremployeedataleed/2026"
                   ],
                   "last_success": {
-                        "width": 434,
-                        "height": 700,
-                        "viewport_width": 434,
-                        "captured_at": "2026-11-24T15:10:26.401259+00:00",
-                        "target_reached": true
+                        "width": 700,
+                        "height": 922,
+                        "viewport_width": 700,
+                        "captured_at": "2026-11-25T16:42:47.732491+00:00"
                   },
                   "last_attempt": {
-                        "at": "2026-11-24T15:10:00.706802+00:00",
+                        "at": "2026-11-25T16:42:42.418435+00:00",
                         "status": "success"
                   }
             },
@@ -5380,14 +5292,13 @@
                         "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/articles/newinsightsonlabourmarketdynamicsfromuklinkedemployeremployeedataleed/2026"
                   ],
                   "last_success": {
-                        "width": 694,
-                        "height": 700,
-                        "viewport_width": 694,
-                        "captured_at": "2026-11-24T15:10:46.308347+00:00",
-                        "target_reached": true
+                        "width": 700,
+                        "height": 705,
+                        "viewport_width": 700,
+                        "captured_at": "2026-11-25T16:42:52.996683+00:00"
                   },
                   "last_attempt": {
-                        "at": "2026-11-24T15:10:26.416260+00:00",
+                        "at": "2026-11-25T16:42:47.744472+00:00",
                         "status": "success"
                   }
             },
@@ -5397,14 +5308,13 @@
                         "https://www.ons.gov.uk/peoplepopulationandcommunity/wellbeing/bulletins/publicopinionsandsocialtrendsgreatbritain/october2026"
                   ],
                   "last_success": {
-                        "width": 510,
-                        "height": 796,
-                        "viewport_width": 510,
-                        "captured_at": "2026-11-24T15:11:10.958917+00:00",
-                        "target_reached": false
+                        "width": 700,
+                        "height": 985,
+                        "viewport_width": 700,
+                        "captured_at": "2026-11-25T16:42:58.507260+00:00"
                   },
                   "last_attempt": {
-                        "at": "2026-11-24T15:10:46.326883+00:00",
+                        "at": "2026-11-25T16:42:53.008134+00:00",
                         "status": "success"
                   }
             },
@@ -5415,9 +5325,9 @@
                   ],
                   "last_success": null,
                   "last_attempt": {
-                        "at": "2026-11-24T15:11:10.979783+00:00",
+                        "at": "2026-11-25T16:42:58.516481+00:00",
                         "status": "failed",
-                        "error": "No complete chart fits the width range: Visualisation content overflows its container"
+                        "error": "Visualisation content overflows its container"
                   }
             },
             "https://www.ons.gov.uk/visualisations/dvc3695/footfall-bar-chart/index.html": {
@@ -5426,14 +5336,13 @@
                         "https://www.ons.gov.uk/economy/economicoutputandproductivity/output/bulletins/economicactivityandsocialchangeintheukrealtimeindicators/19november2026"
                   ],
                   "last_success": {
-                        "width": 533,
-                        "height": 705,
-                        "viewport_width": 533,
-                        "captured_at": "2026-11-24T15:11:41.754999+00:00",
-                        "target_reached": false
+                        "width": 700,
+                        "height": 680,
+                        "viewport_width": 700,
+                        "captured_at": "2026-11-25T16:43:05.127620+00:00"
                   },
                   "last_attempt": {
-                        "at": "2026-11-24T15:11:17.430699+00:00",
+                        "at": "2026-11-25T16:42:59.825950+00:00",
                         "status": "success"
                   }
             },
@@ -5444,9 +5353,9 @@
                   ],
                   "last_success": null,
                   "last_attempt": {
-                        "at": "2026-11-24T15:11:41.769982+00:00",
+                        "at": "2026-11-25T16:43:05.136648+00:00",
                         "status": "failed",
-                        "error": "Page.wait_for_function: Timeout 30000ms exceeded."
+                        "error": "Page.wait_for_function: Timeout 90000ms exceeded."
                   }
             },
             "https://www.ons.gov.uk/visualisations/dvc3686/fig03/index.html": {
@@ -5455,14 +5364,13 @@
                         "https://www.ons.gov.uk/economy/inflationandpriceindices/bulletins/privaterentandhousepricesuk/november2026"
                   ],
                   "last_success": {
-                        "width": 695,
-                        "height": 700,
-                        "viewport_width": 695,
-                        "captured_at": "2026-11-24T15:12:32.712232+00:00",
-                        "target_reached": true
+                        "width": 700,
+                        "height": 704,
+                        "viewport_width": 700,
+                        "captured_at": "2026-11-25T16:44:40.923691+00:00"
                   },
                   "last_attempt": {
-                        "at": "2026-11-24T15:12:12.334376+00:00",
+                        "at": "2026-11-25T16:44:35.873855+00:00",
                         "status": "success"
                   }
             },
@@ -5472,14 +5380,13 @@
                         "https://www.ons.gov.uk/economy/inflationandpriceindices/bulletins/privaterentandhousepricesuk/november2026"
                   ],
                   "last_success": {
-                        "width": 682,
-                        "height": 700,
-                        "viewport_width": 682,
-                        "captured_at": "2026-11-24T15:12:55.347044+00:00",
-                        "target_reached": true
+                        "width": 700,
+                        "height": 714,
+                        "viewport_width": 700,
+                        "captured_at": "2026-11-25T16:44:45.893767+00:00"
                   },
                   "last_attempt": {
-                        "at": "2026-11-24T15:12:32.734765+00:00",
+                        "at": "2026-11-25T16:44:40.935756+00:00",
                         "status": "success"
                   }
             },
@@ -5489,14 +5396,13 @@
                         "https://www.ons.gov.uk/economy/inflationandpriceindices/bulletins/privaterentandhousepricesuk/november2026"
                   ],
                   "last_success": {
-                        "width": 641,
-                        "height": 700,
-                        "viewport_width": 641,
-                        "captured_at": "2026-11-24T15:13:20.889695+00:00",
-                        "target_reached": true
+                        "width": 700,
+                        "height": 747,
+                        "viewport_width": 700,
+                        "captured_at": "2026-11-25T16:44:50.909599+00:00"
                   },
                   "last_attempt": {
-                        "at": "2026-11-24T15:12:55.364599+00:00",
+                        "at": "2026-11-25T16:44:45.905701+00:00",
                         "status": "success"
                   }
             },
@@ -5509,11 +5415,10 @@
                         "width": 700,
                         "height": 850,
                         "viewport_width": 700,
-                        "captured_at": "2026-11-24T16:28:35.837944+00:00",
-                        "target_reached": false
+                        "captured_at": "2026-11-25T16:45:10.210721+00:00"
                   },
                   "last_attempt": {
-                        "at": "2026-11-24T16:26:59.751932+00:00",
+                        "at": "2026-11-25T16:44:50.922658+00:00",
                         "status": "success"
                   }
             },
@@ -5526,11 +5431,10 @@
                         "width": 700,
                         "height": 823,
                         "viewport_width": 700,
-                        "captured_at": "2026-11-24T15:14:54.579040+00:00",
-                        "target_reached": false
+                        "captured_at": "2026-11-25T16:45:29.372012+00:00"
                   },
                   "last_attempt": {
-                        "at": "2026-11-24T15:14:19.404530+00:00",
+                        "at": "2026-11-25T16:45:10.221286+00:00",
                         "status": "success"
                   }
             },
@@ -5539,11 +5443,15 @@
                   "publications": [
                         "https://www.ons.gov.uk/economy/nationalaccounts/articles/dashboardunderstandingtheukeconomy/2017-02-22"
                   ],
-                  "last_success": null,
+                  "last_success": {
+                        "width": 700,
+                        "height": 5502,
+                        "viewport_width": 700,
+                        "captured_at": "2026-11-25T16:45:36.769113+00:00"
+                  },
                   "last_attempt": {
-                        "at": "2026-11-24T15:14:54.593055+00:00",
-                        "status": "failed",
-                        "error": "Screenshot dimensions do not match measured container bounds"
+                        "at": "2026-11-25T16:45:29.381424+00:00",
+                        "status": "success"
                   }
             },
             "https://www.ons.gov.uk/visualisations/dvc3692/build/": {
@@ -5553,9 +5461,9 @@
                   ],
                   "last_success": null,
                   "last_attempt": {
-                        "at": "2026-11-24T15:15:14.751256+00:00",
+                        "at": "2026-11-25T16:45:36.778667+00:00",
                         "status": "failed",
-                        "error": "Page.wait_for_function: Timeout 30000ms exceeded."
+                        "error": "Page.wait_for_function: Timeout 90000ms exceeded."
                   }
             },
             "https://www.ons.gov.uk/visualisations/dvc3685/fig05/index.html": {
@@ -5564,15 +5472,510 @@
                         "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/labourproductivity/articles/ukproductivityintroduction/julytoseptember2026"
                   ],
                   "last_success": {
-                        "width": 601,
-                        "height": 701,
-                        "viewport_width": 601,
-                        "captured_at": "2026-11-24T15:16:10.236435+00:00",
-                        "target_reached": true
+                        "width": 700,
+                        "height": 762,
+                        "viewport_width": 700,
+                        "captured_at": "2026-11-25T16:47:12.539478+00:00"
                   },
                   "last_attempt": {
-                        "at": "2026-11-24T15:15:44.946963+00:00",
+                        "at": "2026-11-25T16:47:07.174426+00:00",
                         "status": "success"
+                  }
+            },
+            "https://www.ons.gov.uk/visualisations/dvc3689/fig-01/index.html": {
+                  "filename": "dvc3689-fig01.jpg",
+                  "publications": [
+                        "https://www.ons.gov.uk/peoplepopulationandcommunity/crimeandjustice/articles/domesticabusevictimcharacteristicsenglandandwales/yearendingmarch2026"
+                  ],
+                  "last_success": {
+                        "width": 700,
+                        "height": 266,
+                        "viewport_width": 700,
+                        "captured_at": "2026-11-25T16:39:13.682641+00:00"
+                  },
+                  "last_attempt": {
+                        "at": "2026-11-25T16:39:08.186593+00:00",
+                        "status": "success"
+                  }
+            },
+            "https://www.ons.gov.uk/visualisations/dvc3689/fig-02/index.html": {
+                  "filename": "dvc3689-fig02.jpg",
+                  "publications": [
+                        "https://www.ons.gov.uk/peoplepopulationandcommunity/crimeandjustice/articles/domesticabusevictimcharacteristicsenglandandwales/yearendingmarch2026"
+                  ],
+                  "last_success": {
+                        "width": 700,
+                        "height": 476,
+                        "viewport_width": 700,
+                        "captured_at": "2026-11-25T16:39:18.698247+00:00"
+                  },
+                  "last_attempt": {
+                        "at": "2026-11-25T16:39:13.693705+00:00",
+                        "status": "success"
+                  }
+            },
+            "https://www.ons.gov.uk/visualisations/dvc3689/fig-04/index.html": {
+                  "filename": "dvc3689-fig04.jpg",
+                  "publications": [
+                        "https://www.ons.gov.uk/peoplepopulationandcommunity/crimeandjustice/articles/domesticabusevictimcharacteristicsenglandandwales/yearendingmarch2026"
+                  ],
+                  "last_success": {
+                        "width": 700,
+                        "height": 426,
+                        "viewport_width": 700,
+                        "captured_at": "2026-11-25T16:39:23.713364+00:00"
+                  },
+                  "last_attempt": {
+                        "at": "2026-11-25T16:39:18.709311+00:00",
+                        "status": "success"
+                  }
+            },
+            "https://www.ons.gov.uk/visualisations/dvc3689/fig-06/index.html": {
+                  "filename": "dvc3689-fig06.jpg",
+                  "publications": [
+                        "https://www.ons.gov.uk/peoplepopulationandcommunity/crimeandjustice/articles/domesticabusevictimcharacteristicsenglandandwales/yearendingmarch2026"
+                  ],
+                  "last_success": {
+                        "width": 700,
+                        "height": 666,
+                        "viewport_width": 700,
+                        "captured_at": "2026-11-25T16:39:28.770623+00:00"
+                  },
+                  "last_attempt": {
+                        "at": "2026-11-25T16:39:23.725807+00:00",
+                        "status": "success"
+                  }
+            },
+            "https://www.ons.gov.uk/visualisations/dvc3689/fig-13/index.html": {
+                  "filename": "dvc3689-fig13.jpg",
+                  "publications": [
+                        "https://www.ons.gov.uk/peoplepopulationandcommunity/crimeandjustice/articles/domesticabusevictimcharacteristicsenglandandwales/yearendingmarch2026"
+                  ],
+                  "last_success": {
+                        "width": 700,
+                        "height": 616,
+                        "viewport_width": 700,
+                        "captured_at": "2026-11-25T16:39:33.800220+00:00"
+                  },
+                  "last_attempt": {
+                        "at": "2026-11-25T16:39:28.779715+00:00",
+                        "status": "success"
+                  }
+            },
+            "https://www.ons.gov.uk/visualisations/dvc3688/fig01/index.html": {
+                  "filename": "dvc3688-fig01.jpg",
+                  "publications": [
+                        "https://www.ons.gov.uk/peoplepopulationandcommunity/crimeandjustice/bulletins/domesticabuseinenglandandwalesoverview/november2026"
+                  ],
+                  "last_success": {
+                        "width": 700,
+                        "height": 330,
+                        "viewport_width": 700,
+                        "captured_at": "2026-11-25T16:39:38.926333+00:00"
+                  },
+                  "last_attempt": {
+                        "at": "2026-11-25T16:39:33.809321+00:00",
+                        "status": "success"
+                  }
+            },
+            "https://www.ons.gov.uk/visualisations/dvc3688/fig02/index.html": {
+                  "filename": "dvc3688-fig02.jpg",
+                  "publications": [
+                        "https://www.ons.gov.uk/peoplepopulationandcommunity/crimeandjustice/bulletins/domesticabuseinenglandandwalesoverview/november2026"
+                  ],
+                  "last_success": {
+                        "width": 700,
+                        "height": 308,
+                        "viewport_width": 700,
+                        "captured_at": "2026-11-25T16:39:43.958308+00:00"
+                  },
+                  "last_attempt": {
+                        "at": "2026-11-25T16:39:38.936185+00:00",
+                        "status": "success"
+                  }
+            },
+            "https://www.ons.gov.uk/visualisations/dvc3688/fig03/index.html": {
+                  "filename": "dvc3688-fig03.jpg",
+                  "publications": [
+                        "https://www.ons.gov.uk/peoplepopulationandcommunity/crimeandjustice/bulletins/domesticabuseinenglandandwalesoverview/november2026"
+                  ],
+                  "last_success": {
+                        "width": 700,
+                        "height": 308,
+                        "viewport_width": 700,
+                        "captured_at": "2026-11-25T16:39:49.007443+00:00"
+                  },
+                  "last_attempt": {
+                        "at": "2026-11-25T16:39:43.971244+00:00",
+                        "status": "success"
+                  }
+            },
+            "https://www.ons.gov.uk/visualisations/dvc3688/fig04/index.html": {
+                  "filename": "dvc3688-fig04.jpg",
+                  "publications": [
+                        "https://www.ons.gov.uk/peoplepopulationandcommunity/crimeandjustice/bulletins/domesticabuseinenglandandwalesoverview/november2026"
+                  ],
+                  "last_success": {
+                        "width": 700,
+                        "height": 268,
+                        "viewport_width": 700,
+                        "captured_at": "2026-11-25T16:39:53.972296+00:00"
+                  },
+                  "last_attempt": {
+                        "at": "2026-11-25T16:39:49.018129+00:00",
+                        "status": "success"
+                  }
+            },
+            "https://www.ons.gov.uk/visualisations/dvc3688/fig05/index.html": {
+                  "filename": "dvc3688-fig05.jpg",
+                  "publications": [
+                        "https://www.ons.gov.uk/peoplepopulationandcommunity/crimeandjustice/bulletins/domesticabuseinenglandandwalesoverview/november2026"
+                  ],
+                  "last_success": {
+                        "width": 700,
+                        "height": 236,
+                        "viewport_width": 700,
+                        "captured_at": "2026-11-25T16:39:58.903660+00:00"
+                  },
+                  "last_attempt": {
+                        "at": "2026-11-25T16:39:53.981768+00:00",
+                        "status": "success"
+                  }
+            },
+            "https://www.ons.gov.uk/visualisations/dvc3688/fig06/index.html": {
+                  "filename": "dvc3688-fig06.jpg",
+                  "publications": [
+                        "https://www.ons.gov.uk/peoplepopulationandcommunity/crimeandjustice/bulletins/domesticabuseinenglandandwalesoverview/november2026"
+                  ],
+                  "last_success": {
+                        "width": 700,
+                        "height": 228,
+                        "viewport_width": 700,
+                        "captured_at": "2026-11-25T16:40:03.886863+00:00"
+                  },
+                  "last_attempt": {
+                        "at": "2026-11-25T16:39:58.912715+00:00",
+                        "status": "success"
+                  }
+            },
+            "https://www.ons.gov.uk/visualisations/dvc3675/fig01/index.html": {
+                  "filename": "dvc3675-fig01.jpg",
+                  "publications": [
+                        "https://www.ons.gov.uk/economy/economicoutputandproductivity/productivitymeasures/bulletins/regionalandsubregionallabourproductivityuk/2024"
+                  ],
+                  "last_success": {
+                        "width": 700,
+                        "height": 421,
+                        "viewport_width": 700,
+                        "captured_at": "2026-11-25T16:40:08.846048+00:00"
+                  },
+                  "last_attempt": {
+                        "at": "2026-11-25T16:40:03.895855+00:00",
+                        "status": "success"
+                  }
+            },
+            "https://www.ons.gov.uk/visualisations/dvc3675/fig02/index.html": {
+                  "filename": "dvc3675-fig02.jpg",
+                  "publications": [
+                        "https://www.ons.gov.uk/economy/economicoutputandproductivity/productivitymeasures/bulletins/regionalandsubregionallabourproductivityuk/2024"
+                  ],
+                  "last_success": {
+                        "width": 700,
+                        "height": 703,
+                        "viewport_width": 700,
+                        "captured_at": "2026-11-25T16:40:14.205761+00:00"
+                  },
+                  "last_attempt": {
+                        "at": "2026-11-25T16:40:08.855472+00:00",
+                        "status": "success"
+                  }
+            },
+            "https://www.ons.gov.uk/visualisations/dvc3675/fig03/index.html": {
+                  "filename": "dvc3675-fig03.jpg",
+                  "publications": [
+                        "https://www.ons.gov.uk/economy/economicoutputandproductivity/productivitymeasures/bulletins/regionalandsubregionallabourproductivityuk/2024"
+                  ],
+                  "last_success": {
+                        "width": 700,
+                        "height": 693,
+                        "viewport_width": 700,
+                        "captured_at": "2026-11-25T16:40:19.269460+00:00"
+                  },
+                  "last_attempt": {
+                        "at": "2026-11-25T16:40:14.216777+00:00",
+                        "status": "success"
+                  }
+            },
+            "https://www.ons.gov.uk/visualisations/dvc3675/fig04/index.html": {
+                  "filename": "dvc3675-fig04.jpg",
+                  "publications": [
+                        "https://www.ons.gov.uk/economy/economicoutputandproductivity/productivitymeasures/bulletins/regionalandsubregionallabourproductivityuk/2024"
+                  ],
+                  "last_success": {
+                        "width": 700,
+                        "height": 902,
+                        "viewport_width": 700,
+                        "captured_at": "2026-11-25T16:40:24.676966+00:00"
+                  },
+                  "last_attempt": {
+                        "at": "2026-11-25T16:40:19.280946+00:00",
+                        "status": "success"
+                  }
+            },
+            "https://www.ons.gov.uk/visualisations/dvc3675/fig05/index.html": {
+                  "filename": "dvc3675-fig05.jpg",
+                  "publications": [
+                        "https://www.ons.gov.uk/economy/economicoutputandproductivity/productivitymeasures/bulletins/regionalandsubregionallabourproductivityuk/2024"
+                  ],
+                  "last_success": null,
+                  "last_attempt": {
+                        "at": "2026-11-25T16:40:24.686636+00:00",
+                        "status": "failed",
+                        "error": "Page.wait_for_function: Timeout 90000ms exceeded."
+                  }
+            },
+            "https://www.ons.gov.uk/visualisations/dvc3697/fig02/index.html": {
+                  "filename": "dvc3697-fig02.jpg",
+                  "publications": [
+                        "https://www.ons.gov.uk/economy/nationalaccounts/satelliteaccounts/bulletins/householdsatelliteaccountuk/2024andprovisional2025estimates"
+                  ],
+                  "last_success": {
+                        "width": 700,
+                        "height": 1015,
+                        "viewport_width": 700,
+                        "captured_at": "2026-11-25T16:42:00.297882+00:00"
+                  },
+                  "last_attempt": {
+                        "at": "2026-11-25T16:41:54.832718+00:00",
+                        "status": "success"
+                  }
+            },
+            "https://www.ons.gov.uk/visualisations/dvc3697/fig04/index.html": {
+                  "filename": "dvc3697-fig04.jpg",
+                  "publications": [
+                        "https://www.ons.gov.uk/economy/nationalaccounts/satelliteaccounts/bulletins/householdsatelliteaccountuk/2024andprovisional2025estimates"
+                  ],
+                  "last_success": {
+                        "width": 700,
+                        "height": 1099,
+                        "viewport_width": 700,
+                        "captured_at": "2026-11-25T16:42:05.467044+00:00"
+                  },
+                  "last_attempt": {
+                        "at": "2026-11-25T16:42:00.308356+00:00",
+                        "status": "success"
+                  }
+            },
+            "https://www.ons.gov.uk/visualisations/dvc3697/fig05/index.html": {
+                  "filename": "dvc3697-fig05.jpg",
+                  "publications": [
+                        "https://www.ons.gov.uk/economy/nationalaccounts/satelliteaccounts/bulletins/householdsatelliteaccountuk/2024andprovisional2025estimates"
+                  ],
+                  "last_success": {
+                        "width": 700,
+                        "height": 1159,
+                        "viewport_width": 700,
+                        "captured_at": "2026-11-25T16:42:10.683630+00:00"
+                  },
+                  "last_attempt": {
+                        "at": "2026-11-25T16:42:05.476978+00:00",
+                        "status": "success"
+                  }
+            },
+            "https://www.ons.gov.uk/visualisations/dvc3697/fig06/index.html": {
+                  "filename": "dvc3697-fig06.jpg",
+                  "publications": [
+                        "https://www.ons.gov.uk/economy/nationalaccounts/satelliteaccounts/bulletins/householdsatelliteaccountuk/2024andprovisional2025estimates"
+                  ],
+                  "last_success": {
+                        "width": 700,
+                        "height": 1159,
+                        "viewport_width": 700,
+                        "captured_at": "2026-11-25T16:42:15.848429+00:00"
+                  },
+                  "last_attempt": {
+                        "at": "2026-11-25T16:42:10.694404+00:00",
+                        "status": "success"
+                  }
+            },
+            "https://www.ons.gov.uk/visualisations/affordabilityexplorer/": {
+                  "filename": "affordabilityexplorer.jpg",
+                  "publications": [
+                        "https://www.ons.gov.uk/peoplepopulationandcommunity/housing/articles/howaffordablearehomesinyourneighbourhood/2026-03-26"
+                  ],
+                  "last_success": null,
+                  "last_attempt": {
+                        "at": "2026-11-25T16:47:12.550872+00:00",
+                        "status": "failed",
+                        "error": "Page.wait_for_function: Timeout 90000ms exceeded."
+                  }
+            },
+            "https://www.ons.gov.uk/visualisations/dvc3683/fig03/index.html": {
+                  "filename": "dvc3683-fig03.jpg",
+                  "publications": [
+                        "https://www.ons.gov.uk/economy/grossdomesticproductgdp/bulletins/gdpmonthlyestimateuk/september2026"
+                  ],
+                  "last_success": null,
+                  "last_attempt": {
+                        "at": "2026-11-25T16:49:27.429724+00:00",
+                        "status": "failed",
+                        "error": "Visualisation content overflows its container"
+                  }
+            },
+            "https://www.ons.gov.uk/visualisations/dvc3683/fig08/index.html": {
+                  "filename": "dvc3683-fig08.jpg",
+                  "publications": [
+                        "https://www.ons.gov.uk/economy/grossdomesticproductgdp/bulletins/gdpmonthlyestimateuk/september2026"
+                  ],
+                  "last_success": null,
+                  "last_attempt": {
+                        "at": "2026-11-25T16:49:28.725479+00:00",
+                        "status": "failed",
+                        "error": "Visualisation content overflows its container"
+                  }
+            },
+            "https://www.ons.gov.uk/visualisations/dvc3683/fig09/index.html": {
+                  "filename": "dvc3683-fig09.jpg",
+                  "publications": [
+                        "https://www.ons.gov.uk/economy/grossdomesticproductgdp/bulletins/gdpmonthlyestimateuk/september2026"
+                  ],
+                  "last_success": null,
+                  "last_attempt": {
+                        "at": "2026-11-25T16:49:29.734569+00:00",
+                        "status": "failed",
+                        "error": "Visualisation content overflows its container"
+                  }
+            },
+            "https://www.ons.gov.uk/visualisations/dvc3683/fig11/index.html": {
+                  "filename": "dvc3683-fig11.jpg",
+                  "publications": [
+                        "https://www.ons.gov.uk/economy/grossdomesticproductgdp/bulletins/gdpmonthlyestimateuk/september2026"
+                  ],
+                  "last_success": null,
+                  "last_attempt": {
+                        "at": "2026-11-25T16:49:30.714013+00:00",
+                        "status": "failed",
+                        "error": "Visualisation content overflows its container"
+                  }
+            },
+            "https://www.ons.gov.uk/visualisations/dvc3683/fig12/index.html": {
+                  "filename": "dvc3683-fig12.jpg",
+                  "publications": [
+                        "https://www.ons.gov.uk/economy/grossdomesticproductgdp/bulletins/gdpmonthlyestimateuk/september2026"
+                  ],
+                  "last_success": null,
+                  "last_attempt": {
+                        "at": "2026-11-25T16:49:31.841717+00:00",
+                        "status": "failed",
+                        "error": "Visualisation content overflows its container"
+                  }
+            },
+            "https://www.ons.gov.uk/visualisations/dvc3681/fig01/index.html": {
+                  "filename": "dvc3681-fig01.jpg",
+                  "publications": [
+                        "https://www.ons.gov.uk/economy/nationalaccounts/balanceofpayments/bulletins/uktrade/september2026"
+                  ],
+                  "last_success": {
+                        "width": 700,
+                        "height": 739,
+                        "viewport_width": 700,
+                        "captured_at": "2026-11-25T16:49:38.081390+00:00"
+                  },
+                  "last_attempt": {
+                        "at": "2026-11-25T16:49:32.860094+00:00",
+                        "status": "success"
+                  }
+            },
+            "https://www.ons.gov.uk/visualisations/dvc3681/fig02/index.html": {
+                  "filename": "dvc3681-fig02.jpg",
+                  "publications": [
+                        "https://www.ons.gov.uk/economy/nationalaccounts/balanceofpayments/bulletins/uktrade/september2026"
+                  ],
+                  "last_success": {
+                        "width": 700,
+                        "height": 441,
+                        "viewport_width": 700,
+                        "captured_at": "2026-11-25T16:49:43.204395+00:00"
+                  },
+                  "last_attempt": {
+                        "at": "2026-11-25T16:49:38.093377+00:00",
+                        "status": "success"
+                  }
+            },
+            "https://www.ons.gov.uk/visualisations/dvc3681/fig03/index.html": {
+                  "filename": "dvc3681-fig03.jpg",
+                  "publications": [
+                        "https://www.ons.gov.uk/economy/nationalaccounts/balanceofpayments/bulletins/uktrade/september2026"
+                  ],
+                  "last_success": {
+                        "width": 700,
+                        "height": 936,
+                        "viewport_width": 700,
+                        "captured_at": "2026-11-25T16:49:48.510242+00:00"
+                  },
+                  "last_attempt": {
+                        "at": "2026-11-25T16:49:43.216304+00:00",
+                        "status": "success"
+                  }
+            },
+            "https://www.ons.gov.uk/visualisations/dvc3681/fig04/index.html": {
+                  "filename": "dvc3681-fig04.jpg",
+                  "publications": [
+                        "https://www.ons.gov.uk/economy/nationalaccounts/balanceofpayments/bulletins/uktrade/september2026"
+                  ],
+                  "last_success": {
+                        "width": 700,
+                        "height": 936,
+                        "viewport_width": 700,
+                        "captured_at": "2026-11-25T16:49:53.671656+00:00"
+                  },
+                  "last_attempt": {
+                        "at": "2026-11-25T16:49:48.520150+00:00",
+                        "status": "success"
+                  }
+            },
+            "https://www.ons.gov.uk/visualisations/dvc3681/fig05/index.html": {
+                  "filename": "dvc3681-fig05.jpg",
+                  "publications": [
+                        "https://www.ons.gov.uk/economy/nationalaccounts/balanceofpayments/bulletins/uktrade/september2026"
+                  ],
+                  "last_success": {
+                        "width": 700,
+                        "height": 497,
+                        "viewport_width": 700,
+                        "captured_at": "2026-11-25T16:49:58.855330+00:00"
+                  },
+                  "last_attempt": {
+                        "at": "2026-11-25T16:49:53.684339+00:00",
+                        "status": "success"
+                  }
+            },
+            "https://www.ons.gov.uk/visualisations/dvc3681/fig06/index.html": {
+                  "filename": "dvc3681-fig06.jpg",
+                  "publications": [
+                        "https://www.ons.gov.uk/economy/nationalaccounts/balanceofpayments/bulletins/uktrade/september2026"
+                  ],
+                  "last_success": {
+                        "width": 700,
+                        "height": 584,
+                        "viewport_width": 700,
+                        "captured_at": "2026-11-25T16:50:04.040184+00:00"
+                  },
+                  "last_attempt": {
+                        "at": "2026-11-25T16:49:58.865078+00:00",
+                        "status": "success"
+                  }
+            },
+            "https://www.ons.gov.uk/visualisations/dvc3681/worldmap/index.html": {
+                  "filename": "dvc3681-worldmap.jpg",
+                  "publications": [
+                        "https://www.ons.gov.uk/economy/nationalaccounts/balanceofpayments/bulletins/uktrade/september2026"
+                  ],
+                  "last_success": null,
+                  "last_attempt": {
+                        "at": "2026-11-25T16:50:04.051835+00:00",
+                        "status": "failed",
+                        "error": "Page.wait_for_function: Timeout 90000ms exceeded."
                   }
             }
       }

@@ -1,5 +1,257 @@
 [
       {
+            "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/crimeandjustice/articles/domesticabusevictimcharacteristicsenglandandwales/yearendingmarch2026",
+            "release_date": "2026-11-25",
+            "title": "Domestic abuse victim characteristics, England and Wales: year ending March 2026",
+            "edition": "year ending March 2026",
+            "vis": [
+                  {
+                        "url": "/visualisations/dvc3689/fig-01/index.html",
+                        "chart_type": "range-plot",
+                        "chart_families": [
+                              "range"
+                        ],
+                        "chart_variants": [],
+                        "chart_features": []
+                  },
+                  {
+                        "url": "/visualisations/dvc3689/fig-02/index.html",
+                        "chart_type": "range-plot",
+                        "chart_families": [
+                              "range"
+                        ],
+                        "chart_variants": [],
+                        "chart_features": []
+                  },
+                  {
+                        "url": "/visualisations/dvc3689/fig-04/index.html",
+                        "chart_type": "range-plot",
+                        "chart_families": [
+                              "range"
+                        ],
+                        "chart_variants": [],
+                        "chart_features": []
+                  },
+                  {
+                        "url": "/visualisations/dvc3689/fig-06/index.html",
+                        "chart_type": "range-plot",
+                        "chart_families": [
+                              "range"
+                        ],
+                        "chart_variants": [],
+                        "chart_features": []
+                  },
+                  {
+                        "url": "/visualisations/dvc3689/fig-13/index.html",
+                        "chart_type": "range-plot",
+                        "chart_families": [
+                              "range"
+                        ],
+                        "chart_variants": [],
+                        "chart_features": []
+                  }
+            ],
+            "theme": "peoplepopulationandcommunity",
+            "topic": "crimeandjustice",
+            "subtopic": null,
+            "series": "Domestic abuse victim characteristics, England and Wales",
+            "latest": true
+      },
+      {
+            "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/crimeandjustice/bulletins/domesticabuseinenglandandwalesoverview/november2026",
+            "release_date": "2026-11-25",
+            "title": "Domestic abuse in England and Wales overview: November 2026",
+            "edition": "November 2026",
+            "vis": [
+                  {
+                        "url": "/visualisations/dvc3688/fig01/index.html",
+                        "chart_type": "bar-chart",
+                        "chart_families": [
+                              "bar"
+                        ],
+                        "chart_variants": [],
+                        "chart_features": []
+                  },
+                  {
+                        "url": "/visualisations/dvc3688/fig02/index.html",
+                        "chart_type": "stacked-horizontal-bar-chart",
+                        "chart_families": [
+                              "bar"
+                        ],
+                        "chart_variants": [
+                              "stacked"
+                        ],
+                        "chart_features": []
+                  },
+                  {
+                        "url": "/visualisations/dvc3688/fig03/index.html",
+                        "chart_type": "stacked-horizontal-bar-chart",
+                        "chart_families": [
+                              "bar"
+                        ],
+                        "chart_variants": [
+                              "stacked"
+                        ],
+                        "chart_features": []
+                  },
+                  {
+                        "url": "/visualisations/dvc3688/fig04/index.html",
+                        "chart_type": "stacked-horizontal-bar-chart",
+                        "chart_families": [
+                              "bar"
+                        ],
+                        "chart_variants": [
+                              "stacked"
+                        ],
+                        "chart_features": []
+                  },
+                  {
+                        "url": "/visualisations/dvc3688/fig05/index.html",
+                        "chart_type": "stacked-horizontal-bar-chart",
+                        "chart_families": [
+                              "bar"
+                        ],
+                        "chart_variants": [
+                              "stacked"
+                        ],
+                        "chart_features": []
+                  },
+                  {
+                        "url": "/visualisations/dvc3688/fig06/index.html",
+                        "chart_type": "stacked-horizontal-bar-chart",
+                        "chart_families": [
+                              "bar"
+                        ],
+                        "chart_variants": [
+                              "stacked"
+                        ],
+                        "chart_features": []
+                  }
+            ],
+            "theme": "peoplepopulationandcommunity",
+            "topic": "crimeandjustice",
+            "subtopic": null,
+            "series": "Domestic abuse in England and Wales overview",
+            "latest": true
+      },
+      {
+            "doc_uri": "https://www.ons.gov.uk/economy/economicoutputandproductivity/productivitymeasures/bulletins/regionalandsubregionallabourproductivityuk/2024",
+            "release_date": "2026-11-24",
+            "title": "Regional and subregional labour productivity, UK: 2024",
+            "edition": "2024",
+            "vis": [
+                  {
+                        "url": "/visualisations/dvc3675/fig01/index.html",
+                        "chart_type": null,
+                        "chart_families": [],
+                        "chart_variants": [],
+                        "chart_features": []
+                  },
+                  {
+                        "url": "/visualisations/dvc3675/fig02/index.html",
+                        "chart_type": "bar-chart",
+                        "chart_families": [
+                              "bar"
+                        ],
+                        "chart_variants": [],
+                        "chart_features": []
+                  },
+                  {
+                        "url": "/visualisations/dvc3675/fig03/index.html",
+                        "chart_type": "bar-chart",
+                        "chart_families": [
+                              "bar"
+                        ],
+                        "chart_variants": [],
+                        "chart_features": []
+                  },
+                  {
+                        "url": "/visualisations/dvc3675/fig04/index.html",
+                        "chart_type": "scatter-bubble-plot",
+                        "chart_families": [
+                              "scatter"
+                        ],
+                        "chart_variants": [
+                              "bubble"
+                        ],
+                        "chart_features": []
+                  },
+                  {
+                        "url": "/visualisations/dvc3675/fig05/index.html",
+                        "chart_type": null,
+                        "chart_families": [],
+                        "chart_variants": [],
+                        "chart_features": []
+                  }
+            ],
+            "theme": "economy",
+            "topic": "economicoutputandproductivity",
+            "subtopic": "productivitymeasures",
+            "series": "Regional and subregional labour productivity, UK",
+            "latest": true
+      },
+      {
+            "doc_uri": "https://www.ons.gov.uk/economy/nationalaccounts/satelliteaccounts/bulletins/householdsatelliteaccountuk/2024andprovisional2025estimates",
+            "release_date": "2026-11-24",
+            "title": "Household Satellite Account, UK: 2024 (and provisional 2025) estimates",
+            "edition": null,
+            "vis": [
+                  {
+                        "url": "/visualisations/dvc3697/fig02/index.html",
+                        "chart_type": "small-multiple-line-chart-focus",
+                        "chart_families": [
+                              "line"
+                        ],
+                        "chart_variants": [
+                              "small-multiple",
+                              "focus"
+                        ],
+                        "chart_features": []
+                  },
+                  {
+                        "url": "/visualisations/dvc3697/fig04/index.html",
+                        "chart_type": "small-multiple-line-chart-focus",
+                        "chart_families": [
+                              "line"
+                        ],
+                        "chart_variants": [
+                              "small-multiple",
+                              "focus"
+                        ],
+                        "chart_features": []
+                  },
+                  {
+                        "url": "/visualisations/dvc3697/fig05/index.html",
+                        "chart_type": "small-multiple-line-chart-focus",
+                        "chart_families": [
+                              "line"
+                        ],
+                        "chart_variants": [
+                              "small-multiple",
+                              "focus"
+                        ],
+                        "chart_features": []
+                  },
+                  {
+                        "url": "/visualisations/dvc3697/fig06/index.html",
+                        "chart_type": "small-multiple-line-chart-focus",
+                        "chart_families": [
+                              "line"
+                        ],
+                        "chart_variants": [
+                              "small-multiple",
+                              "focus"
+                        ],
+                        "chart_features": []
+                  }
+            ],
+            "theme": "economy",
+            "topic": "nationalaccounts",
+            "subtopic": "satelliteaccounts",
+            "series": "Household Satellite Account, UK: 2024 (and provisional 2025) estimates",
+            "latest": true
+      },
+      {
             "doc_uri": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/articles/newinsightsonlabourmarketdynamicsfromuklinkedemployeremployeedataleed/2026",
             "release_date": "2026-11-23",
             "title": "New insights on labour market dynamics from UK Linked Employer-Employee Data (LEED): 2026",
@@ -82,11 +334,11 @@
                         "chart_features": []
                   }
             ],
+            "series": "New insights on labour market dynamics from UK Linked Employer-Employee Data (LEED)",
+            "latest": true,
             "theme": "employmentandlabourmarket",
             "topic": "peopleinwork",
-            "subtopic": "employmentandemployeetypes",
-            "series": "New insights on labour market dynamics from UK Linked Employer-Employee Data (LEED)",
-            "latest": true
+            "subtopic": "employmentandemployeetypes"
       },
       {
             "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/wellbeing/bulletins/publicopinionsandsocialtrendsgreatbritain/october2026",
@@ -8649,7 +8901,7 @@
                   }
             ],
             "series": "Domestic abuse in England and Wales overview",
-            "latest": true,
+            "latest": false,
             "theme": "peoplepopulationandcommunity",
             "topic": "crimeandjustice",
             "subtopic": null
@@ -12775,7 +13027,7 @@
                   }
             ],
             "series": "Regional and subregional labour productivity, UK",
-            "latest": true,
+            "latest": false,
             "theme": "economy",
             "topic": "economicoutputandproductivity",
             "subtopic": "productivitymeasures"

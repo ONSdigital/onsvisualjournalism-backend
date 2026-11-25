@@ -1,5 +1,181 @@
 [
       {
+            "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/crimeandjustice/articles/redevelopmentofdomesticabusestatistics/november2026",
+            "release_date": "2026-11-25",
+            "title": "Redevelopment of domestic abuse statistics: research update November 2026",
+            "vis_urls": []
+      },
+      {
+            "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/crimeandjustice/bulletins/domesticabuseinenglandandwalesoverview/november2026",
+            "release_date": "2026-11-25",
+            "title": "Domestic abuse in England and Wales overview: November 2026",
+            "vis_urls": [
+                  "/visualisations/dvc3688/fig01/index.html",
+                  "/visualisations/dvc3688/fig02/index.html",
+                  "/visualisations/dvc3688/fig03/index.html",
+                  "/visualisations/dvc3688/fig04/index.html",
+                  "/visualisations/dvc3688/fig05/index.html",
+                  "/visualisations/dvc3688/fig06/index.html"
+            ],
+            "enrichment": {
+                  "source_signature": "320fa8a84908d21ab9a39b4bb06d5a0ba9c12073c2efd06cd5e4788c91f6cdd0",
+                  "edition": "November 2026",
+                  "vis": [
+                        {
+                              "url": "/visualisations/dvc3688/fig01/index.html",
+                              "chart_type": "bar-chart"
+                        },
+                        {
+                              "url": "/visualisations/dvc3688/fig02/index.html",
+                              "chart_type": "stacked-horizontal-bar-chart"
+                        },
+                        {
+                              "url": "/visualisations/dvc3688/fig03/index.html",
+                              "chart_type": "stacked-horizontal-bar-chart"
+                        },
+                        {
+                              "url": "/visualisations/dvc3688/fig04/index.html",
+                              "chart_type": "stacked-horizontal-bar-chart"
+                        },
+                        {
+                              "url": "/visualisations/dvc3688/fig05/index.html",
+                              "chart_type": "stacked-horizontal-bar-chart"
+                        },
+                        {
+                              "url": "/visualisations/dvc3688/fig06/index.html",
+                              "chart_type": "stacked-horizontal-bar-chart"
+                        }
+                  ]
+            }
+      },
+      {
+            "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/crimeandjustice/articles/domesticabusevictimcharacteristicsenglandandwales/yearendingmarch2026",
+            "release_date": "2026-11-25",
+            "title": "Domestic abuse victim characteristics, England and Wales: year ending March 2026",
+            "vis_urls": [
+                  "/visualisations/dvc3689/fig-01/index.html",
+                  "/visualisations/dvc3689/fig-02/index.html",
+                  "/visualisations/dvc3689/fig-04/index.html",
+                  "/visualisations/dvc3689/fig-06/index.html",
+                  "/visualisations/dvc3689/fig-13/index.html"
+            ],
+            "enrichment": {
+                  "source_signature": "cf160745811e351355e7d74742ad6bcf984fe8f937f40f2e2f3d55097f983890",
+                  "edition": "year ending March 2026",
+                  "vis": [
+                        {
+                              "url": "/visualisations/dvc3689/fig-01/index.html",
+                              "chart_type": "range-plot"
+                        },
+                        {
+                              "url": "/visualisations/dvc3689/fig-02/index.html",
+                              "chart_type": "range-plot"
+                        },
+                        {
+                              "url": "/visualisations/dvc3689/fig-04/index.html",
+                              "chart_type": "range-plot"
+                        },
+                        {
+                              "url": "/visualisations/dvc3689/fig-06/index.html",
+                              "chart_type": "range-plot"
+                        },
+                        {
+                              "url": "/visualisations/dvc3689/fig-13/index.html",
+                              "chart_type": "range-plot"
+                        }
+                  ]
+            }
+      },
+      {
+            "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/crimeandjustice/articles/howdomesticabusedataarecapturedthroughthecriminaljusticesystem/november2026",
+            "release_date": "2026-11-25",
+            "title": "How domestic abuse data are captured through the criminal justice system: November 2026",
+            "vis_urls": []
+      },
+      {
+            "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/crimeandjustice/articles/domesticabuseprevalenceandtrendsenglandandwales/yearendingmarch2026",
+            "release_date": "2026-11-25",
+            "title": "Domestic abuse prevalence and trends, England and Wales: year ending March 2026",
+            "vis_urls": []
+      },
+      {
+            "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/crimeandjustice/methodologies/domesticabuseqmi",
+            "release_date": "2026-11-25",
+            "title": "Domestic abuse QMI",
+            "vis_urls": []
+      },
+      {
+            "doc_uri": "https://www.ons.gov.uk/economy/nationalaccounts/satelliteaccounts/bulletins/householdsatelliteaccountuk/2024andprovisional2025estimates",
+            "release_date": "2026-11-24",
+            "title": "Household Satellite Account, UK: 2024 (and provisional 2025) estimates",
+            "vis_urls": [
+                  "/visualisations/dvc3697/fig02/index.html",
+                  "/visualisations/dvc3697/fig04/index.html",
+                  "/visualisations/dvc3697/fig05/index.html",
+                  "/visualisations/dvc3697/fig06/index.html"
+            ],
+            "enrichment": {
+                  "source_signature": "5c9d80d8dddb63a1d7c98c11abc566ea278870ae8dc756d5f02ffe6b22924729",
+                  "edition": null,
+                  "vis": [
+                        {
+                              "url": "/visualisations/dvc3697/fig02/index.html",
+                              "chart_type": "small-multiple-line-chart-focus"
+                        },
+                        {
+                              "url": "/visualisations/dvc3697/fig04/index.html",
+                              "chart_type": "small-multiple-line-chart-focus"
+                        },
+                        {
+                              "url": "/visualisations/dvc3697/fig05/index.html",
+                              "chart_type": "small-multiple-line-chart-focus"
+                        },
+                        {
+                              "url": "/visualisations/dvc3697/fig06/index.html",
+                              "chart_type": "small-multiple-line-chart-focus"
+                        }
+                  ]
+            }
+      },
+      {
+            "doc_uri": "https://www.ons.gov.uk/economy/economicoutputandproductivity/productivitymeasures/bulletins/regionalandsubregionallabourproductivityuk/2024",
+            "release_date": "2026-11-24",
+            "title": "Regional and subregional labour productivity, UK: 2024",
+            "vis_urls": [
+                  "/visualisations/dvc3675/fig01/index.html",
+                  "/visualisations/dvc3675/fig02/index.html",
+                  "/visualisations/dvc3675/fig03/index.html",
+                  "/visualisations/dvc3675/fig04/index.html",
+                  "/visualisations/dvc3675/fig05/index.html"
+            ],
+            "enrichment": {
+                  "source_signature": "263c56ca48613892335dff19f18d75a9d05bd8c7ba726080fcb72a8469c9cdb3",
+                  "edition": "2024",
+                  "vis": [
+                        {
+                              "url": "/visualisations/dvc3675/fig01/index.html",
+                              "chart_type": null
+                        },
+                        {
+                              "url": "/visualisations/dvc3675/fig02/index.html",
+                              "chart_type": "bar-chart"
+                        },
+                        {
+                              "url": "/visualisations/dvc3675/fig03/index.html",
+                              "chart_type": "bar-chart"
+                        },
+                        {
+                              "url": "/visualisations/dvc3675/fig04/index.html",
+                              "chart_type": "scatter-bubble-plot"
+                        },
+                        {
+                              "url": "/visualisations/dvc3675/fig05/index.html",
+                              "chart_type": null
+                        }
+                  ]
+            }
+      },
+      {
             "doc_uri": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/articles/newinsightsonlabourmarketdynamicsfromuklinkedemployeremployeedataleed/2026",
             "release_date": "2026-11-23",
             "title": "New insights on labour market dynamics from UK Linked Employer-Employee Data (LEED): 2026",
