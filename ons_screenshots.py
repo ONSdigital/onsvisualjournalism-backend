@@ -15,9 +15,7 @@ from urllib.parse import urlsplit
 from ons_discovery import atomic_write_json, eligible_vis_urls, normalize_date, ons_url
 
 
-TARGET_HEIGHT = 700
-MIN_WIDTH = 320
-MAX_WIDTH = 700
+CAPTURE_WIDTH = 700
 TIMEOUT_MS = 30_000
 READINESS_TIMEOUT_MS = 90_000
 PIXEL_QUIET_SECONDS = 2
@@ -46,11 +44,6 @@ class Measurement:
     y: int
     width: int
     height: int
-
-    @property
-    def target_reached(self):
-        return abs(self.height - TARGET_HEIGHT) <= 1
-
 
 def legacy_screenshot_filename(url):
     parsed = urlsplit(url)
@@ -129,9 +122,8 @@ def load_index(folder):
             if (not isinstance(success, dict)
                     or any(type(success.get(key)) is not int or success[key] < 1
                            for key in ('width', 'height', 'viewport_width'))
-                    or success['width'] > MAX_WIDTH
-                    or not MIN_WIDTH <= success['viewport_width'] <= MAX_WIDTH
-                    or type(success.get('target_reached')) is not bool
+                    or success['width'] > CAPTURE_WIDTH
+                    or success['viewport_width'] > CAPTURE_WIDTH
                     or not isinstance(success.get('captured_at'), str)):
                 raise ValueError(f'Invalid screenshot success metadata: {url}')
         elif attempt['status'] == 'success':
@@ -228,43 +220,6 @@ def select_publications(publications, settings, index, folder):
         if settings['limit'] is not None and len(selected) >= settings['limit']:
             break
     return selected
-
-
-async def choose_size(measure):
-    measured = {}
-    failures = []
-
-    async def trial(width):
-        if width not in measured:
-            try:
-                measured[width] = await measure(width)
-            except ChartCaptureError as error:
-                failures.append(str(error))
-                measured[width] = None
-        return measured[width]
-
-    first = await trial(MAX_WIDTH)
-    if first is not None and first.target_reached:
-        return first
-
-    def best():
-        valid = [item for item in measured.values() if item is not None]
-        return min(valid, key=lambda item: (abs(item.height - TARGET_HEIGHT),
-                                            -item.viewport_width)) if valid else None
-
-    for width in (640, 576, 512, 448, 384, MIN_WIDTH):
-        await trial(width)
-    for radius, step in ((64, 16), (16, 4), (4, 1)):
-        closest = best()
-        if closest is None:
-            break
-        for width in range(min(MAX_WIDTH, closest.viewport_width + radius),
-                           max(MIN_WIDTH, closest.viewport_width - radius) - 1, -step):
-            await trial(width)
-    closest = best()
-    if closest is None:
-        raise ChartCaptureError('No complete chart fits the width range: ' + '; '.join(dict.fromkeys(failures)))
-    return closest
 
 
 FIND_CHART = r"""() => {
@@ -420,7 +375,7 @@ async def measure_chart(page, url, width):
         raise ChartCaptureError('Chart layout did not stabilise')
     left, top = math.floor(box['x']), math.floor(box['y'])
     right, bottom = math.ceil(box['x'] + box['width']), math.ceil(box['y'] + box['height'])
-    if left < 0 or top < 0 or not 1 <= right - left <= MAX_WIDTH:
+    if left < 0 or top < 0 or not 1 <= right - left or right > width:
         raise ChartCaptureError('Complete chart bounds exceed the permitted width')
     return Measurement(width, left, top, right - left, bottom - top)
 
@@ -491,11 +446,12 @@ async def capture_chart(page, url):
         warmed = True
         return result
 
-    best = await choose_size(measure)
+    best = await measure(CAPTURE_WIDTH)
     final = await measure(best.viewport_width)
     if abs(final.height - best.height) > 1 or final.width != best.width:
         raise ChartCaptureError('Chart dimensions changed before capture')
-    image = await settled_image(page, final)
+    frame = Measurement(CAPTURE_WIDTH, 0, final.y, CAPTURE_WIDTH, final.height)
+    image = await settled_image(page, frame)
     bounds = await page.evaluate(FIND_CHART)
     if bounds.get('error') or any(abs(bounds[key] - getattr(final, key)) > 1
                                   for key in ('x', 'y', 'width', 'height')):
@@ -503,13 +459,13 @@ async def capture_chart(page, url):
     if errors:
         raise ChartCaptureError('Visualisation script error: ' + '; '.join(dict.fromkeys(errors)))
     with Image.open(BytesIO(image)) as decoded:
-        if decoded.format != 'PNG' or decoded.size != (final.width, final.height):
+        if decoded.format != 'PNG' or decoded.size != (frame.width, frame.height):
             raise ChartCaptureError('Screenshot dimensions do not match measured container bounds')
         variation = []
         for plot in bounds['plots']:
-            rectangle = (math.ceil(plot['x']) - final.x, math.ceil(plot['y']) - final.y,
-                         math.floor(plot['x'] + plot['width']) - final.x,
-                         math.floor(plot['y'] + plot['height']) - final.y)
+            rectangle = (math.ceil(plot['x']) - frame.x, math.ceil(plot['y']) - frame.y,
+                         math.floor(plot['x'] + plot['width']) - frame.x,
+                         math.floor(plot['y'] + plot['height']) - frame.y)
             if rectangle[2] <= rectangle[0] or rectangle[3] <= rectangle[1]:
                 raise ChartCaptureError('Rendered plot is too small to validate')
             variation.append(max(ImageStat.Stat(decoded.crop(rectangle).convert('RGB')).stddev))
@@ -517,7 +473,7 @@ async def capture_chart(page, url):
             raise ChartCaptureError('Rendered chart is blank')
         output = BytesIO()
         decoded.convert('RGB').save(output, format='JPEG', quality=90)
-    return output.getvalue(), final
+    return output.getvalue(), frame
 
 
 def write_image(path, image):
@@ -583,13 +539,11 @@ async def capture_screenshots(publications, settings, folder=Path('screenshots')
                             'width': measurement.width, 'height': measurement.height,
                             'viewport_width': measurement.viewport_width,
                             'captured_at': datetime.now(timezone.utc).isoformat(),
-                            'target_reached': measurement.target_reached,
                         }
                         entry['last_attempt'] = {'at': now, 'status': 'success'}
                         summary.succeeded += 1
                         print(f'Screenshots: {position}/{len(urls)}: {url}: '
-                              f'{measurement.width}x{measurement.height}, '
-                              f'target reached={measurement.target_reached}', flush=True)
+                              f'{measurement.width}x{measurement.height}', flush=True)
                     finally:
                         await page.close()
                     atomic_write_json(folder / 'index.json', index)

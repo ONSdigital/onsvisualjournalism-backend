@@ -102,15 +102,14 @@ source, notes, map attribution and visible interactive controls as rendered;
 do not open hidden panels or enumerate interactive states. Unsupported layouts
 are reported rather than silently saving an empty chart.
 
-The browser starts at **700px wide**. If the full container is already 700px tall (within
-one output pixel), its width is unchanged. Otherwise a bounded coarse-to-fine
-search samples responsive widths from **320px to 700px**, including breakpoints
-in that search. The complete chart closest to 700px tall among measured layouts
-is used, preferring wider layouts on a tie. The height target includes legends,
-controls and source/notes, not only the plotted area. Some charts get shorter when narrowed
-and cannot reach the target. Nothing is stretched, scaled or cropped to force it;
-JPG width never exceeds 700px. Charts reload at each trial width because some
-standalone ONS embeds do not redraw on viewport resize. Fonts, layout, visible images
+The browser viewport and saved JPG are always **700px wide**. Height is the full
+natural height of the visualisation container, including legends, controls and
+source/notes, even when it extends below the browser viewport. There is no height
+target or width search. Narrow containers retain their native size and horizontal
+space in the 700px-wide image; nothing is stretched, scaled or vertically cropped.
+Content that overflows the 700px viewport is reported rather than silently clipped.
+Charts are reloaded at this same fixed width to warm fonts and verify stable
+dimensions before capture. Fonts, layout, visible images
 and loading indicators are checked before capture. MapLibre/Mapbox constructors
 are tracked before page scripts run, so module-scoped maps also wait for their
 renderer, style and tiles to finish loading.
@@ -122,7 +121,7 @@ Charts that never settle are recorded as failures, not successful partial images
 The first layout is reloaded with warm fonts so SVG legend dimensions do not
 depend on fallback-font measurements from a cold navigation.
 Existing successful screenshots are not automatically refreshed by this change;
-use `recent`, `all`, `datestart` or `url` to replace previously incomplete captures.
+use `recent`, `all`, `datestart` or `url` to recapture existing images at fixed width.
 
 `screenshots/index.json` has `version: 1` and a `charts` object keyed by absolute
 visualisation URL. Each entry contains:
@@ -135,8 +134,10 @@ visualisation URL. Each entry contains:
   URLs without a DVC/figure pair use a readable path-based stem with the same
   collision protection. Existing indexed filename assignments remain stable.
 - `publications`: all cached publication URLs referencing that visualisation.
-- `last_success`: actual `width`, `height`, `viewport_width`, UTC `captured_at`
-  and boolean `target_reached`, or `null` if it has never succeeded.
+- `last_success`: actual `width`, `height`, `viewport_width` and UTC `captured_at`,
+    or `null` if it has never succeeded. New captures use width/viewport width 700.
+    Historical entries with other widths and the old `target_reached` field remain
+    readable; new captures no longer write that height-target field.
 - `last_attempt`: UTC `at`, `status` (`success` or `failed`) and an `error` on
   failure. A failed refresh retains the previous image and success metadata.
 

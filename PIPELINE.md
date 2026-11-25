@@ -17,7 +17,7 @@ on finding a non-empty `vis_urls` array after PNG and download-link filtering.
 | [catalogue.py](catalogue.py) | The single orchestration entry point for independent stages |
 | [config.json](config.json) | Selects discovery/catalogue/screenshots modes, limits and optional URL/start date |
 | [ons_discovery.py](ons_discovery.py) | Configuration, selection, discovery, metadata reuse, HTTP and safe JSON-writing helpers |
-| [ons_screenshots.py](ons_screenshots.py) | Independent whole-visualisation JPG capture, responsive sizing and image index |
+| [ons_screenshots.py](ons_screenshots.py) | Independent 700px-wide whole-visualisation JPG capture and image index |
 | `screenshots/` | Generated JPGs and `index.json` mapping visualisations to images and publications |
 | [articles-and-dvcs.json](articles-and-dvcs.json) | Locally maintained history cache, initially seeded from upstream |
 | [data.json](data.json) | Generated, enriched catalogue |
@@ -158,14 +158,14 @@ Hidden panels remain hidden; this does not enumerate interactive states.
 Unknown layouts, overflowing content, blank plots, script errors and
 unstable layouts/pixels are explicit per-chart failures.
 
-Start at 700px viewport width. If full-container height is already 700px within one pixel,
-do not adjust it. Otherwise sample widths between 320px and 700px using a bounded
-coarse-to-fine search, without assuming monotonic responsiveness. Reload at every
-trial width to handle standalone Pym charts that do not resize themselves.
-Choose the closest measured height, with wider layouts winning ties. Never
-stretch or crop content, and enforce a maximum actual JPEG width of 700px.
-Measure and validate the final JPEG, recording actual dimensions and whether
-the target was reached. A container unable to reach 700px height is not a failure.
+Use a fixed 700px viewport width and save a 700px-wide JPEG at the full natural
+container height. There is no height target or responsive-width search. Preserve
+horizontal space around narrower containers rather than stretching them. Reject
+content outside the viewport instead of clipping it; tall containers are captured
+in full, including content below the browser viewport. Reload only at the fixed
+width to warm fonts and compare stable layouts. Measure and validate the final
+JPEG, recording actual dimensions without a target-height flag. Old index entries
+with narrower widths and `target_reached` remain readable until recaptured.
 Measure the whole captured container, not only the SVG/canvas. Check blankness
 using the plot surfaces so non-empty legends/source cannot mask a blank chart.
 Track MapLibre/Mapbox constructors before navigation to observe renderer/style/tile
@@ -174,7 +174,8 @@ for visible images and loading indicators, and require unchanged pixels with no
 pending/new network requests for two seconds (ten seconds for maps). New activity
 resets the quiet period. Readiness waits are bounded at 90 seconds and the overall
 chart timeout remains 300 seconds; unready charts fail without replacing old images.
-Previously successful partial captures require an explicit refresh mode.
+Previously successful captures are not automatically invalidated by the width
+change; use an explicit refresh mode to recapture them.
 
 The index is keyed by normalised absolute visualisation URL, retaining query
 strings and fragments. Filenames normally use `dvcXXXX-figXX.jpg` in lowercase.
@@ -487,7 +488,7 @@ python -m unittest -v test_ons_screenshots
 
 The suite uses in-memory browser routes rather than live ONS requests and never
 reads the user configuration. It checks modes, publication limits, shared URLs,
-responsive sizing, reloads, whole-container JPEG dimensions, complete panels, map
+fixed-width capture at natural height, reloads, whole-container JPEG dimensions, complete panels, map
 readiness/visible controls, partial failures, atomic image writes and script
 stage isolation, including cached catalogue derivation. Broader discovery/catalogue checks below remain maintenance
 guidance, not claims of complete automated coverage.

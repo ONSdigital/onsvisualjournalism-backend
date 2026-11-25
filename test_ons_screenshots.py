@@ -16,7 +16,7 @@ import catalogue
 from ons_discovery import validate_config
 from ons_screenshots import (
     CaptureSummary, ChartCaptureError, Measurement, ScreenshotFailures,
-    canonical_charts, capture_chart, capture_screenshots, choose_size, finish_screenshots,
+    canonical_charts, capture_chart, capture_screenshots, finish_screenshots,
     legacy_screenshot_filename, load_index, measure_chart, migrate_screenshot_filenames,
     needs_capture, screenshot_filename, select_publications, write_image,
 )
@@ -249,6 +249,17 @@ class SelectionTests(unittest.TestCase):
         self.assertEqual(path.read_bytes(), b'old')
         self.assertEqual(list(self.folder.iterdir()), [path])
 
+    def test_index_accepts_fixed_width_and_historical_height_target_metadata(self):
+        for width, legacy in ((380, True), (700, False)):
+            with self.subTest(legacy=legacy):
+                entry = successful_entry()
+                entry['last_success'].update(width=width, viewport_width=width, height=1260)
+                if not legacy:
+                    entry['last_success'].pop('target_reached')
+                index = {'version': 1, 'charts': {URL: entry}}
+                (self.folder / 'index.json').write_text(json.dumps(index), encoding='utf-8')
+                self.assertEqual(load_index(self.folder), index)
+
     def test_failure_status_is_written_before_exception(self):
         output = self.folder / 'workflow-output'
         with patch.dict(os.environ, {'GITHUB_OUTPUT': str(output)}):
@@ -259,36 +270,6 @@ class SelectionTests(unittest.TestCase):
         with patch.dict(os.environ, {'GITHUB_OUTPUT': str(output)}):
             finish_screenshots(CaptureSummary())
         self.assertTrue(output.read_text(encoding='utf-8').endswith('screenshots_failed=0\n'))
-
-
-class SizingTests(unittest.IsolatedAsyncioTestCase):
-    async def test_exact_initial_height_does_not_adjust_width(self):
-        measure = AsyncMock(return_value=Measurement(700, 0, 0, 700, 700))
-        result = await choose_size(measure)
-        self.assertEqual(result.viewport_width, 700)
-        measure.assert_awaited_once_with(700)
-
-    async def test_achievable_impossible_and_breakpoint_heights(self):
-        for formula, expected_width, expected_height in (
-                (lambda width: width + 200, 500, 700),
-                (lambda width: width // 2, 700, 350),
-                (lambda width: 900 if width > 576 else 700, 576, 700)):
-            measured = []
-
-            async def measure(width):
-                measured.append(width)
-                return Measurement(width, 0, 0, width, formula(width))
-
-            result = await choose_size(measure)
-            self.assertEqual((result.viewport_width, result.height), (expected_width, expected_height))
-            self.assertTrue(all(320 <= width <= 700 for width in measured))
-            self.assertLessEqual(len(measured), 40)
-
-    async def test_overflow_is_not_cropped(self):
-        async def overflow(width):
-            raise ChartCaptureError('overflow')
-        with self.assertRaisesRegex(ChartCaptureError, 'No complete chart'):
-            await choose_size(overflow)
 
 
 class BrowserTests(unittest.IsolatedAsyncioTestCase):
@@ -319,7 +300,32 @@ class BrowserTests(unittest.IsolatedAsyncioTestCase):
             self.assertLess(decoded.getpixel((350, 15))[2], 80)
             self.assertLess(decoded.getpixel((350, 685))[2], 80)
         self.assertEqual(measured.y, 0)
-        self.assertTrue(measured.target_reached)
+        self.assertEqual(measured.viewport_width, 700)
+
+    async def test_fixed_width_keeps_short_and_responsive_charts_at_native_height(self):
+        widths = []
+        self.page.on('domcontentloaded', lambda: widths.append(self.page.viewport_size['width']))
+        for formula, height in (('240', 300), ('innerWidth + 200', 960)):
+            with self.subTest(height=height):
+                await self.page.unroute_all()
+                await self.route(chart_html(formula))
+                image, measured = await capture_chart(self.page, URL)
+                self.assertEqual((measured.width, measured.height, measured.viewport_width), (700, height, 700))
+                with Image.open(BytesIO(image)) as decoded:
+                    self.assertEqual(decoded.size, (700, height))
+        self.assertEqual(set(widths), {700})
+
+    async def test_narrow_chart_keeps_native_size_in_700px_wide_image(self):
+        await self.route("""<style>body{margin:0}svg{display:block}</style>
+            <div style="width:400px;margin-left:100px"><div id="graphic">
+            <svg width="400" height="1200"><rect width="400" height="1200" fill="steelblue"/>
+            <path d="M0 0V1200H400" stroke="black" fill="none"/></svg></div></div>""")
+        image, measured = await capture_chart(self.page, URL)
+        self.assertEqual((measured.width, measured.height, measured.viewport_width), (700, 1200, 700))
+        with Image.open(BytesIO(image)) as decoded:
+            self.assertEqual(decoded.size, (700, 1200))
+            self.assertGreater(decoded.getpixel((20, 1100))[0], 240)
+            self.assertGreater(decoded.getpixel((200, 1100))[2], 100)
 
     async def test_reload_required_and_delayed_render(self):
         html = chart_html('innerWidth + 200').replace(
@@ -349,9 +355,7 @@ class BrowserTests(unittest.IsolatedAsyncioTestCase):
                 c.fillStyle='green';c.fillRect(50,50,400,400);ready=true;
             },800);
             </script>""")
-        baseline = await measure_chart(self.page, URL, 700)
-        with patch('ons_screenshots.choose_size', AsyncMock(return_value=baseline)):
-            image, measured = await capture_chart(self.page, URL)
+        image, measured = await capture_chart(self.page, URL)
         self.assertEqual(measured.width, 700)
         self.assertGreaterEqual(measured.height, 700)
         with Image.open(BytesIO(image)) as decoded:
@@ -364,9 +368,7 @@ class BrowserTests(unittest.IsolatedAsyncioTestCase):
 
     async def test_module_scoped_map_waits_for_data_not_just_basemap_pixels(self):
         await self.route(scoped_map_html(1800))
-        with patch('ons_screenshots.choose_size',
-                   AsyncMock(return_value=Measurement(700, 0, 0, 700, 700))):
-            image, _ = await capture_chart(self.page, URL)
+        image, _ = await capture_chart(self.page, URL)
         with Image.open(BytesIO(image)) as decoded:
             red, green, blue = decoded.getpixel((100, 100))
             self.assertLess(red, 30)
@@ -389,19 +391,15 @@ class BrowserTests(unittest.IsolatedAsyncioTestCase):
             await route.fulfill(content_type='application/json', body='{}')
 
         await self.page.route('**/chart-data.json', data)
-        with patch('ons_screenshots.choose_size',
-                   AsyncMock(return_value=Measurement(700, 0, 0, 700, 700))):
-            image, _ = await capture_chart(self.page, URL)
+        image, _ = await capture_chart(self.page, URL)
         with Image.open(BytesIO(image)) as decoded:
             self.assertLess(decoded.getpixel((100, 100))[2], 30)
 
     async def test_unready_scoped_map_times_out_instead_of_saving_basemap(self):
         await self.route(scoped_map_html(60_000))
         with patch('ons_screenshots.READINESS_TIMEOUT_MS', 1000):
-            with patch('ons_screenshots.choose_size',
-                       AsyncMock(return_value=Measurement(700, 0, 0, 700, 700))):
-                with self.assertRaises(PlaywrightTimeoutError):
-                    await capture_chart(self.page, URL)
+            with self.assertRaises(PlaywrightTimeoutError):
+                await capture_chart(self.page, URL)
 
     async def test_wrapper_includes_multiple_charts_controls_and_notes(self):
         await self.route("""<style>body{margin:0}svg{display:block}</style>
@@ -414,9 +412,7 @@ class BrowserTests(unittest.IsolatedAsyncioTestCase):
             <div id="controls" style="height:30px"><button>Choose dataset</button></div>
             <div id="notes" style="height:40px">Notes and source</div></div>
             <p>Outside the visualisation wrapper</p>""")
-        with patch('ons_screenshots.choose_size',
-                   AsyncMock(return_value=Measurement(700, 0, 0, 700, 800))):
-            image, measured = await capture_chart(self.page, URL)
+        image, measured = await capture_chart(self.page, URL)
         self.assertEqual((measured.width, measured.height), (700, 800))
         with Image.open(BytesIO(image)) as decoded:
             self.assertGreater(decoded.getpixel((100, 100))[0], 200)
@@ -444,11 +440,7 @@ class BrowserTests(unittest.IsolatedAsyncioTestCase):
             </script>""")
         await self.route(html)
 
-        async def initial_size(measure):
-            return await measure(700)
-
-        with patch('ons_screenshots.choose_size', initial_size):
-            image, measured = await capture_chart(self.page, URL)
+        image, measured = await capture_chart(self.page, URL)
         self.assertEqual((measured.width, measured.height), (700, 706))
         with Image.open(BytesIO(image)) as decoded:
             self.assertEqual(decoded.size, (700, 706))
@@ -462,9 +454,7 @@ class BrowserTests(unittest.IsolatedAsyncioTestCase):
 
     async def test_tall_chart_is_not_cropped_to_browser_viewport(self):
         await self.route(chart_html('1200'))
-        with patch('ons_screenshots.choose_size',
-                   AsyncMock(return_value=Measurement(700, 0, 0, 700, 1260))):
-            image, measured = await capture_chart(self.page, URL)
+        image, measured = await capture_chart(self.page, URL)
         self.assertEqual(measured.height, 1260)
         with Image.open(BytesIO(image)) as decoded:
             self.assertEqual(decoded.size, (700, 1260))
@@ -515,6 +505,7 @@ class PersistenceTests(unittest.IsolatedAsyncioTestCase):
         self.assertEqual(index['charts'][URL]['last_success'], successful_entry()['last_success'])
         self.assertEqual(index['charts'][URL]['last_attempt']['status'], 'failed')
         self.assertTrue((self.folder / screenshot_filename(OTHER_URL)).is_file())
+        self.assertNotIn('target_reached', index['charts'][OTHER_URL]['last_success'])
         with patch('ons_screenshots.capture_chart',
                    AsyncMock(return_value=(jpeg(), Measurement(700, 0, 0, 700, 700)))) as retry:
             await capture_screenshots(records, settings('new'), self.folder)
