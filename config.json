@@ -10,8 +10,8 @@
     "limit": null
   },
   "screenshots": {
-      "mode": "new",
-      "limit": null,
+      "mode": "recent",
+      "limit": 50,
       "url": null,
       "start_date": null
   }
