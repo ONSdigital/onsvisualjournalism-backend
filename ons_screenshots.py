@@ -27,10 +27,6 @@ class ChartCaptureError(RuntimeError):
     pass
 
 
-class ScreenshotFailures(RuntimeError):
-    pass
-
-
 @dataclass
 class CaptureSummary:
     succeeded: int = 0
@@ -222,9 +218,57 @@ def select_publications(publications, settings, index, folder):
     return selected
 
 
-FIND_CHART = r"""() => {
+CHILD_FRAMES = r"""doc => {
+    const frames = [];
+    for (const element of doc.querySelectorAll('iframe')) {
+        const box = element.getBoundingClientRect();
+        const style = doc.defaultView.getComputedStyle(element);
+        if (box.width <= 1 || box.height <= 1 || style.display === 'none'
+                || style.visibility === 'hidden' || style.opacity === '0') continue;
+        const url = new URL(element.src, doc.baseURI);
+        if (!['http:', 'https:'].includes(url.protocol) || url.username || url.password
+                || !(url.hostname === 'ons.gov.uk' || url.hostname.endsWith('.ons.gov.uk'))
+                || !element.contentDocument) {
+            return {error: `Unsupported or inaccessible visualisation frame: ${url.href}`};
+        }
+        frames.push(element);
+    }
+    return {frames};
+}"""
+
+
+REFLOW_CHARTS = r"""function reflow(doc = document) {
+    doc = doc || document;
+    const children = (""" + CHILD_FRAMES + r""")(doc);
+    for (const frame of children.frames || []) {
+        reflow(frame.contentDocument);
+        const height = frame.contentDocument.documentElement.scrollHeight;
+        if (height > frame.clientHeight + 1) {
+            const style = doc.defaultView.getComputedStyle(frame);
+            const border = style.boxSizing === 'border-box' ? frame.offsetHeight - frame.clientHeight : 0;
+            frame.style.setProperty('height', `${height + border}px`, 'important');
+        }
+    }
+    for (const element of doc.querySelectorAll('#graphic div, #chart div, #graphic, #chart')) {
+        const style = doc.defaultView.getComputedStyle(element);
+        if (!['flex', 'inline-flex'].includes(style.display)
+                || style.flexDirection !== 'row' || style.flexWrap !== 'nowrap'
+                || element.scrollWidth <= element.clientWidth + 1) continue;
+        const panels = [...element.children].filter(child => child.getBoundingClientRect().width > 0);
+        if (panels.length > 1 && panels.every(child => child.matches('div')
+                && child.querySelector('svg,canvas,table,img')
+                && child.getBoundingClientRect().width <= element.clientWidth)) {
+            element.style.setProperty('flex-wrap', 'wrap', 'important');
+        }
+    }
+}"""
+
+
+FIND_CHART = r"""function findChart(doc = document) {
+    doc = doc || document;
+    const view = doc.defaultView;
     const visible = e => {
-        const box = e.getBoundingClientRect(), style = getComputedStyle(e);
+        const box = e.getBoundingClientRect(), style = view.getComputedStyle(e);
         return box.width > 0 && box.height > 0 && style.display !== 'none'
             && style.visibility !== 'hidden' && style.opacity !== '0';
     };
@@ -239,49 +283,100 @@ FIND_CHART = r"""() => {
                 && !/fallback/i.test(s.getAttribute('src') || '')
         ));
     };
-    let candidates = [...document.querySelectorAll(
+    const children = (""" + CHILD_FRAMES + r""")(doc);
+    if (children.error) return children;
+    const embedded = [];
+    for (const frame of children.frames) {
+        const chart = findChart(frame.contentDocument);
+        if (chart.error) return {...chart, error: `${chart.error} (frame ${frame.src})`};
+        const box = frame.getBoundingClientRect();
+        const childView = frame.contentWindow;
+        const dx = box.x + view.scrollX + frame.clientLeft - childView.scrollX;
+        const dy = box.y + view.scrollY + frame.clientTop - childView.scrollY;
+        const plots = chart.plots.map(plot => ({...plot, x: plot.x + dx, y: plot.y + dy}));
+        if (chart.x < childView.scrollX - 1 || chart.y < childView.scrollY - 1
+                || chart.x + chart.width > childView.scrollX + frame.clientWidth + 1
+                || chart.y + chart.height > childView.scrollY + frame.clientHeight + 1
+                || plots.some(plot => plot.x < box.left + view.scrollX - 1
+                || plot.y < box.top + view.scrollY - 1
+                || plot.x + plot.width > box.left + view.scrollX + frame.clientLeft + frame.clientWidth + 1
+                || plot.y + plot.height > box.top + view.scrollY + frame.clientTop + frame.clientHeight + 1)) {
+            return {error: `Visualisation content overflows its frame: ${frame.src}`};
+        }
+        embedded.push({frame, chart, plots});
+    }
+    let candidates = [...doc.querySelectorAll(
         '#graphic, #chart, #map, #map-container, #mapContainer'
     )].filter(e => visible(e) && rendered(e));
     if (!candidates.length) {
-        candidates = [...document.querySelectorAll('body > svg, body > img, body > table')]
+        candidates = [...doc.querySelectorAll('body > svg, body > img, body > table')]
             .filter(e => visible(e) && rendered(e));
-        if (document.documentElement.tagName.toLowerCase() === 'svg'
-                && rendered(document.documentElement)) candidates = [document.documentElement];
+        if (doc.documentElement.tagName.toLowerCase() === 'svg'
+                && rendered(doc.documentElement)) candidates = [doc.documentElement];
     }
+    candidates.push(...embedded.map(item => item.frame));
     candidates = candidates.filter(e => !candidates.some(other => other !== e && other.contains(e)));
-    if (!candidates.length) return {error: 'No supported rendered plotting container'};
+    if (!candidates.length) return {error: 'No supported rendered plotting container', pending: true};
     let element = candidates[0].parentElement?.closest('div')
-        || document.body || document.documentElement;
-    const components = [...document.querySelectorAll(
+        || doc.body || doc.documentElement;
+    const components = [...doc.querySelectorAll(
         '#legend, #source, #controls, #notes, #keycontainer, #timeline-container'
     )].filter(visible);
     for (const component of [...candidates, ...components]) {
         while (!element.contains(component)) {
             element = element.parentElement?.closest('div')
-                || document.body || document.documentElement;
+                || doc.body || doc.documentElement;
         }
     }
-    const box = element.getBoundingClientRect();
-    const surfaces = [...new Set(candidates.flatMap(e => e.matches('svg,canvas,table,img')
-        ? [e] : [...e.querySelectorAll('svg,canvas,table,img')]))]
+    const surfaces = [...new Set(candidates.filter(e => !e.matches('iframe')).flatMap(
+        e => e.matches('svg,canvas,table,img') ? [e] : [...e.querySelectorAll('svg,canvas,table,img')]))]
         .filter(s => visible(s) && !s.closest(
             'button, [role="button"], #legend, .legend, .maplibregl-ctrl, .mapboxgl-ctrl'
         ));
-    if (!surfaces.length) return {error: 'No supported rendered plotting container'};
-    if (element.scrollWidth > Math.ceil(box.width) + 1
-            || element.scrollHeight > Math.ceil(box.height) + 1
+    if (!surfaces.length && !embedded.length)
+        return {error: 'No supported rendered plotting container', pending: true};
+    let bounds = element.getBoundingClientRect();
+    while (element.scrollWidth > Math.ceil(bounds.width) + 1
+            || element.scrollHeight > Math.ceil(bounds.height) + 1) {
+        const style = view.getComputedStyle(element);
+        if (element === doc.body || !element.parentElement
+                || style.overflowX !== 'visible' || style.overflowY !== 'visible') break;
+        element = element.parentElement;
+        bounds = element.getBoundingClientRect();
+    }
+    if (element === doc.body) {
+        const style = view.getComputedStyle(element);
+        const width = style.overflowX === 'visible' ? Math.max(bounds.width, element.scrollWidth) : bounds.width;
+        // Quirks-mode body scroll metrics include the viewport, not just content.
+        const contentHeight = doc.compatMode === 'BackCompat'
+            ? Math.max(0, ...[...element.children].filter(visible)
+                .map(child => child.getBoundingClientRect().bottom - bounds.top))
+            : element.scrollHeight;
+        const height = style.overflowY === 'visible' ? Math.max(bounds.height, contentHeight) : bounds.height;
+        bounds = {x: bounds.x, y: bounds.y, left: bounds.left, top: bounds.top,
+            width, height, right: bounds.x + width, bottom: bounds.y + height};
+    }
+    if (element.scrollWidth > Math.ceil(bounds.width) + 1
+            || !(element === doc.body && doc.compatMode === 'BackCompat')
+                && element.scrollHeight > Math.ceil(bounds.height) + 1
             || surfaces.some(s => {
                 const r = s.getBoundingClientRect();
-                return r.left < box.left - 1 || r.right > box.right + 1
-                    || r.top < box.top - 1 || r.bottom > box.bottom + 1;
+                return r.left < bounds.left - 1 || r.right > bounds.right + 1
+                    || r.top < bounds.top - 1 || r.bottom > bounds.bottom + 1;
             })) return {error: 'Visualisation content overflows its container'};
-    return {x: box.x + scrollX, y: box.y + scrollY, width: box.width, height: box.height,
-        map: !!element.querySelector(
+    if ([...element.querySelectorAll('svg text')].filter(visible).some(text => {
+        const r = text.getBoundingClientRect();
+        return !text.closest('[clip-path]') && r.right > 0 && r.left < view.innerWidth
+            && (r.left < -1 || r.right > view.innerWidth + 1);
+    })) return {error: 'Visible plot labels exceed the permitted width'};
+    return {x: bounds.x + view.scrollX, y: bounds.y + view.scrollY,
+        width: bounds.width, height: bounds.height,
+        map: embedded.some(item => item.chart.map) || !!element.querySelector(
             '.maplibregl-canvas, .mapboxgl-canvas, .leaflet-container, .ol-viewport'),
-        plots: surfaces.map(s => {
+        plots: [...surfaces.map(s => {
             const r = s.getBoundingClientRect();
-            return {x:r.x + scrollX, y:r.y + scrollY, width:r.width, height:r.height};
-        })};
+            return {x:r.x + view.scrollX, y:r.y + view.scrollY, width:r.width, height:r.height};
+        }), ...embedded.flatMap(item => item.plots)]};
 }"""
 
 
@@ -317,9 +412,10 @@ TRACK_MAPS = r"""(() => {
 })()"""
 
 
-MAPS_READY = r"""() => {
-    const maps = [...(globalThis.__onsScreenshotMaps || []),
-        globalThis.map, globalThis.map1, globalThis.map2]
+MAPS_READY = r"""(view = globalThis) => {
+    view = view || globalThis;
+    const maps = [...(view.__onsScreenshotMaps || []),
+        view.map, view.map1, view.map2]
         .filter(m => m && typeof m.loaded === 'function');
     return maps.every(m => m.loaded()
         && (typeof m.isStyleLoaded !== 'function' || m.isStyleLoaded())
@@ -328,37 +424,62 @@ MAPS_READY = r"""() => {
 }"""
 
 
-CAPTURE_READY = r"""() => {
+CAPTURE_READY = r"""function ready(doc = document) {
+    doc = doc || document;
+    const view = doc.defaultView;
     const visible = element => {
         const box = element.getBoundingClientRect();
-        const style = getComputedStyle(element);
+        const style = view.getComputedStyle(element);
         return box.width > 0 && box.height > 0
             && style.display !== 'none' && style.visibility !== 'hidden';
     };
-    return document.fonts.status === 'loaded'
-        && [...document.images].filter(visible).every(img => img.complete && img.naturalWidth > 0)
-        && ![...document.querySelectorAll('[aria-busy="true"], [role="progressbar"]')]
+    const children = (""" + CHILD_FRAMES + r""")(doc);
+    return !children.error && children.frames.every(frame => ready(frame.contentDocument))
+        && doc.fonts.status === 'loaded'
+        && [...doc.images].filter(visible).every(img => img.complete && img.naturalWidth > 0)
+        && ![...doc.querySelectorAll('[aria-busy="true"], [role="progressbar"]')]
             .some(visible)
-        && (""" + MAPS_READY + r""")();
+        && (""" + MAPS_READY + r""")(view);
 }"""
 
 
+async def wait_for_chart(page, expression, stage):
+    from playwright.async_api import TimeoutError as PlaywrightTimeoutError
+
+    try:
+        await page.wait_for_function(expression, timeout=READINESS_TIMEOUT_MS)
+    except PlaywrightTimeoutError as error:
+        box = await page.evaluate(FIND_CHART)
+        detail = box.get('error', 'Chart fonts, images, loading indicators or map data are not ready')
+        raise ChartCaptureError(
+            f'{stage} timed out after {READINESS_TIMEOUT_MS / 1000:g} seconds: {detail}') from error
+
+
 async def measure_chart(page, url, width):
+    from playwright.async_api import Error as PlaywrightError, TimeoutError as PlaywrightTimeoutError
+
     await page.set_viewport_size({'width': width, 'height': 1000})
-    response = await page.goto(url, wait_until='load', timeout=TIMEOUT_MS)
+    try:
+        response = await page.goto(url, wait_until='load', timeout=TIMEOUT_MS)
+    except PlaywrightError as error:
+        if not page.context.browser.is_connected():
+            raise
+        raise ChartCaptureError(f'Navigation failed: {error}') from error
     if response is not None and not response.ok:
         raise ChartCaptureError(f'HTTP {response.status}: {url}')
     if ons_url(page.url, keep_fragment=True) is None:
         raise ChartCaptureError(f'Non-ONS redirect rejected: {page.url}')
-    await page.wait_for_function("() => document.fonts.status === 'loaded'",
-                                 timeout=READINESS_TIMEOUT_MS)
-    await page.wait_for_function(
-        f'() => ({FIND_CHART})().error !== "No supported rendered plotting container"',
-        timeout=READINESS_TIMEOUT_MS)
-    await page.wait_for_load_state('networkidle', timeout=READINESS_TIMEOUT_MS)
+    await wait_for_chart(page, "() => document.fonts.status === 'loaded'", 'Font readiness')
+    await wait_for_chart(page, f'() => !({FIND_CHART})().pending', 'Plot discovery')
+    await page.evaluate(REFLOW_CHARTS)
+    try:
+        await page.wait_for_load_state('networkidle', timeout=READINESS_TIMEOUT_MS)
+    except PlaywrightTimeoutError as error:
+        raise ChartCaptureError(
+            f'Network readiness timed out after {READINESS_TIMEOUT_MS / 1000:g} seconds') from error
     box = await page.evaluate(FIND_CHART)
     if box.get('map'):
-        await page.wait_for_function(MAPS_READY, timeout=READINESS_TIMEOUT_MS)
+        await wait_for_chart(page, CAPTURE_READY, 'Map/frame readiness')
     previous = None
     stable = 0
     for _ in range(20):
@@ -419,8 +540,9 @@ async def settled_image(page, final):
             previous = image
             await asyncio.sleep(0.5)
         raise ChartCaptureError(
-            f'Chart data, map tiles or pixels did not settle within '
-            f'{READINESS_TIMEOUT_MS / 1000:g} seconds')
+            f'Chart/frame images, loading indicators, map data, network or pixels did not settle '
+            f'within {READINESS_TIMEOUT_MS / 1000:g} seconds '
+            f'(ready={ready}, pending requests={len(pending)})')
     finally:
         page.remove_listener('request', requested)
         page.remove_listener('requestfinished', finished)
@@ -451,6 +573,11 @@ async def capture_chart(page, url):
     if abs(final.height - best.height) > 1 or final.width != best.width:
         raise ChartCaptureError('Chart dimensions changed before capture')
     frame = Measurement(CAPTURE_WIDTH, 0, final.y, CAPTURE_WIDTH, final.height)
+    # Chromium clamps clips at the document edge before rounding fractional heights.
+    await page.evaluate("""bottom => {
+        if (document.documentElement.scrollHeight < bottom + 1)
+            document.documentElement.style.minHeight = `${bottom + 1}px`;
+    }""", frame.y + frame.height)
     image = await settled_image(page, frame)
     bounds = await page.evaluate(FIND_CHART)
     if bounds.get('error') or any(abs(bounds[key] - getattr(final, key)) > 1
@@ -460,7 +587,10 @@ async def capture_chart(page, url):
         raise ChartCaptureError('Visualisation script error: ' + '; '.join(dict.fromkeys(errors)))
     with Image.open(BytesIO(image)) as decoded:
         if decoded.format != 'PNG' or decoded.size != (frame.width, frame.height):
-            raise ChartCaptureError('Screenshot dimensions do not match measured container bounds')
+            raise ChartCaptureError(
+                f'Screenshot dimensions do not match measured container bounds: '
+                f'expected {frame.width}x{frame.height} PNG, '
+                f'got {decoded.width}x{decoded.height} {decoded.format}')
         variation = []
         for plot in bounds['plots']:
             rectangle = (math.ceil(plot['x']) - frame.x, math.ceil(plot['y']) - frame.y,
@@ -469,8 +599,8 @@ async def capture_chart(page, url):
             if rectangle[2] <= rectangle[0] or rectangle[3] <= rectangle[1]:
                 raise ChartCaptureError('Rendered plot is too small to validate')
             variation.append(max(ImageStat.Stat(decoded.crop(rectangle).convert('RGB')).stddev))
-        if max(variation) < 1:
-            raise ChartCaptureError('Rendered chart is blank')
+        if min(variation) < 1:
+            raise ChartCaptureError('Rendered chart contains a blank plot')
         output = BytesIO()
         decoded.convert('RGB').save(output, format='JPEG', quality=90)
     return output.getvalue(), frame
@@ -508,7 +638,7 @@ async def capture_screenshots(publications, settings, folder=Path('screenshots')
                              if settings['mode'] != 'new' or needs_capture(url, index, folder)))
     print(f"Screenshots: {settings['mode']}, publications={len(selected)}, charts={len(urls)}", flush=True)
     if urls:
-        from playwright.async_api import Error as PlaywrightError, async_playwright
+        from playwright.async_api import TimeoutError as PlaywrightTimeoutError, async_playwright
 
         folder.mkdir(parents=True, exist_ok=True)
         async with async_playwright() as playwright:
@@ -525,7 +655,7 @@ async def capture_screenshots(publications, settings, folder=Path('screenshots')
                     try:
                         image, measurement = await asyncio.wait_for(
                             capture_chart(page, url), timeout=CAPTURE_TIMEOUT_SECONDS)
-                    except (ChartCaptureError, PlaywrightError, asyncio.TimeoutError) as error:
+                    except (ChartCaptureError, PlaywrightTimeoutError, asyncio.TimeoutError) as error:
                         if not browser.is_connected():
                             raise
                         message = (f'Capture exceeded {CAPTURE_TIMEOUT_SECONDS} seconds'
@@ -563,6 +693,10 @@ def finish_screenshots(summary):
     if output:
         with open(output, 'a', encoding='utf-8') as stream:
             stream.write(f'screenshots_completed=true\nscreenshots_failed={len(summary.failures)}\n')
-    if summary.failures:
-        raise ScreenshotFailures(
-            f'{len(summary.failures)} visualisation screenshot(s) failed; successful outputs were saved')
+    for failure in summary.failures:
+        message = f"{failure['url']}: {failure['error']}"
+        if os.environ.get('GITHUB_ACTIONS') == 'true':
+            escaped = message.replace('%', '%25').replace('\r', '%0D').replace('\n', '%0A')
+            print(f'::warning::{escaped}', flush=True)
+        else:
+            print(f'WARNING: {message}', flush=True)

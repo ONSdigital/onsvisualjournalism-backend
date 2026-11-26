@@ -108,6 +108,16 @@ source/notes, even when it extends below the browser viewport. There is no heigh
 target or width search. Narrow containers retain their native size and horizontal
 space in the 700px-wide image; nothing is stretched, scaled or vertically cropped.
 Content that overflows the 700px viewport is reported rather than silently clipped.
+For overflowing row-based flex chart panels, capture-only CSS enables wrapping
+when each panel fits individually; panel sizes and visible contents are preserved.
+Visible overflow inside a narrower wrapper can be captured through a containing
+ancestor if it still fits 700px. Other over-wide layouts, including source SVG
+labels extending outside the viewport, remain failed attempts rather than
+producing clipped images.
+Visible same-origin ONS iframes are inspected recursively and expanded vertically
+when needed to include their contents. The saved image contains the whole
+dashboard, not separate child images. Hidden/helper frames are ignored;
+visible external or inaccessible frames are reported as unsupported.
 Charts are reloaded at this same fixed width to warm fonts and verify stable
 dimensions before capture. Fonts, layout, visible images
 and loading indicators are checked before capture. MapLibre/Mapbox constructors
@@ -118,6 +128,8 @@ Before saving, require unchanged pixels and no pending/new network requests for
 restart that quiet period, allowing delayed data layers to finish. Readiness waits
 allow up to **90 seconds**; the overall per-chart limit remains **300 seconds**.
 Charts that never settle are recorded as failures, not successful partial images.
+Fractional container bounds are rounded outward, with space reserved at the
+document edge so Chromium does not truncate the last capture row.
 The first layout is reloaded with warm fonts so SVG legend dimensions do not
 depend on fallback-font measurements from a cold navigation.
 Existing successful screenshots are not automatically refreshed by this change;
@@ -155,9 +167,12 @@ invalidated; use a recapture mode to replace them with full-container captures.
 
 Each failed chart is logged while other charts continue. Successful JPGs and the
 index entries are saved after each completed capture attempt, so filename
-ownership survives later interruptions. The script raises a consolidated failure. Actions
-commits these partial results before marking the run failed. Invalid index data,
-browser startup failures and filesystem failures remain fatal. JPGs and the index
+ownership survives later interruptions. Individual chart failures produce warnings,
+including GitHub Actions annotations with the URL and reason, and do not make an
+otherwise completed run fail. Actions commits changed successful outputs and the
+updated index. Failed entries remain failed and eligible for retry; no substitute
+image is saved. Invalid index data, browser startup/disconnection, unexpected
+pipeline errors and filesystem failures remain fatal. JPGs and the index
 are replaced atomically per file, not as one transaction: an interrupted run can
 leave an image ahead of its index entry. Retry `new` for missing/failed entries;
 explicitly recapture the affected publication after a fatal interrupted refresh.

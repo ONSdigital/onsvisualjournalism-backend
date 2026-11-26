@@ -10,12 +10,12 @@ import unittest
 from unittest.mock import AsyncMock, Mock, patch
 
 from PIL import Image
-from playwright.async_api import TimeoutError as PlaywrightTimeoutError, async_playwright
+from playwright.async_api import Error as PlaywrightError, async_playwright
 
 import catalogue
 from ons_discovery import validate_config
 from ons_screenshots import (
-    CaptureSummary, ChartCaptureError, Measurement, ScreenshotFailures,
+    CaptureSummary, ChartCaptureError, Measurement,
     canonical_charts, capture_chart, capture_screenshots, finish_screenshots,
     legacy_screenshot_filename, load_index, measure_chart, migrate_screenshot_filenames,
     needs_capture, screenshot_filename, select_publications, write_image,
@@ -260,13 +260,14 @@ class SelectionTests(unittest.TestCase):
                 (self.folder / 'index.json').write_text(json.dumps(index), encoding='utf-8')
                 self.assertEqual(load_index(self.folder), index)
 
-    def test_failure_status_is_written_before_exception(self):
+    def test_chart_failures_publish_counts_and_escaped_warnings_without_raising(self):
         output = self.folder / 'workflow-output'
-        with patch.dict(os.environ, {'GITHUB_OUTPUT': str(output)}):
-            with self.assertRaises(ScreenshotFailures):
-                finish_screenshots(CaptureSummary(1, [{'url': URL, 'error': 'timeout'}]))
+        with patch.dict(os.environ, {'GITHUB_OUTPUT': str(output), 'GITHUB_ACTIONS': 'true'}), \
+                patch('sys.stdout', new_callable=StringIO) as log:
+            finish_screenshots(CaptureSummary(1, [{'url': URL, 'error': 'timeout 50%\nretry\rnow'}]))
         self.assertIn('screenshots_completed=true\nscreenshots_failed=1\n',
                       output.read_text(encoding='utf-8'))
+        self.assertIn(f'::warning::{URL}: timeout 50%25%0Aretry%0Dnow', log.getvalue())
         with patch.dict(os.environ, {'GITHUB_OUTPUT': str(output)}):
             finish_screenshots(CaptureSummary())
         self.assertTrue(output.read_text(encoding='utf-8').endswith('screenshots_failed=0\n'))
@@ -398,7 +399,7 @@ class BrowserTests(unittest.IsolatedAsyncioTestCase):
     async def test_unready_scoped_map_times_out_instead_of_saving_basemap(self):
         await self.route(scoped_map_html(60_000))
         with patch('ons_screenshots.READINESS_TIMEOUT_MS', 1000):
-            with self.assertRaises(PlaywrightTimeoutError):
+            with self.assertRaisesRegex(ChartCaptureError, 'Map/frame readiness timed out'):
                 await capture_chart(self.page, URL)
 
     async def test_wrapper_includes_multiple_charts_controls_and_notes(self):
@@ -460,6 +461,114 @@ class BrowserTests(unittest.IsolatedAsyncioTestCase):
             self.assertEqual(decoded.size, (700, 1260))
             self.assertGreater(decoded.getpixel((100, 1150))[2], 100)
 
+    async def test_fractional_container_at_document_edge_keeps_complete_bottom(self):
+        await self.route("""<style>body{margin:0}svg{display:block}</style>
+            <div style="height:10px"></div>
+            <div style="height:1160.28125px;background:lime">
+            <div id="graphic"><svg width="700" height="1158">
+            <rect width="700" height="1158" fill="steelblue"/>
+            <rect y="1150" width="700" height="8" fill="red"/></svg></div></div>""")
+        image, measured = await capture_chart(self.page, URL)
+        self.assertEqual((measured.y, measured.width, measured.height), (10, 700, 1161))
+        with Image.open(BytesIO(image)) as decoded:
+            self.assertEqual(decoded.size, (700, 1161))
+            self.assertGreater(decoded.getpixel((350, 1154))[0], 200)
+            self.assertGreater(decoded.getpixel((350, 1159))[1], 150)
+
+    async def test_overflowing_flex_panels_wrap_without_scaling_or_hiding(self):
+        await self.route("""<style>body{margin:0}svg{display:block}</style>
+            <div><div id="graphic"><div style="display:flex;gap:20px">
+            <div><svg width="350" height="200"><rect width="350" height="200" fill="red"
+            stroke="black" stroke-width="2"/>
+            </svg></div><div><svg width="350" height="200">
+            <rect width="350" height="200" fill="blue" stroke="black" stroke-width="2"/>
+            </svg></div></div></div>
+            <div id="notes" style="height:30px;background:lime">Notes</div></div>""")
+        image, measured = await capture_chart(self.page, URL)
+        self.assertEqual((measured.width, measured.height), (700, 450))
+        self.assertEqual(await self.page.locator('svg').evaluate_all(
+            '(elements) => elements.map(e => e.getBoundingClientRect().width)'), [350, 350])
+        with Image.open(BytesIO(image)) as decoded:
+            self.assertGreater(decoded.getpixel((100, 100))[0], 200)
+            self.assertGreater(decoded.getpixel((100, 300))[2], 200)
+            self.assertGreater(decoded.getpixel((100, 435))[1], 150)
+
+    async def test_nested_iframe_dashboard_includes_delayed_plots_and_surroundings(self):
+        documents = {
+            URL: """<style>body{margin:0}iframe{display:block;border:0;width:700px;height:240px}</style>
+                <div><div id="legend" style="height:30px;background:yellow">Legend</div>
+                <iframe src="./nested.html"></iframe>
+                <div id="source" style="height:30px;background:lime">Source</div></div>
+                <iframe style="display:none" src="https://example.com/tracker"></iframe>""",
+            URL.replace('index.html', 'nested.html'):
+                """<style>body{margin:0}iframe{display:block;border:0;width:700px;height:240px}</style>
+                <iframe src="./plot.html"></iframe>""",
+            URL.replace('index.html', 'plot.html'):
+                """<style>body{margin:16px 0 0}svg{display:block}</style><div id="graphic">
+                <svg width="700" height="240"><rect width="700" height="240" fill="steelblue"
+                stroke="black" stroke-width="2"/>
+                </svg></div><script>setTimeout(()=>{
+                document.querySelector('rect').setAttribute('fill','green')},900)</script>""",
+        }
+        await self.page.route('https://www.ons.gov.uk/**', lambda route: route.fulfill(
+            content_type='text/html', body=documents[route.request.url]))
+        image, measured = await capture_chart(self.page, URL)
+        self.assertEqual((measured.width, measured.height), (700, 316))
+        with Image.open(BytesIO(image)) as decoded:
+            self.assertLess(decoded.getpixel((100, 15))[2], 60)
+            self.assertLess(decoded.getpixel((100, 120))[2], 60)
+            self.assertGreater(decoded.getpixel((100, 301))[1], 150)
+
+    async def test_visible_body_overflow_within_viewport_is_captured(self):
+        await self.route("""<!doctype html><style>body{margin:0;width:690px}svg{display:block}</style>
+            <div id="graphic"><svg width="695" height="240">
+            <rect width="695" height="240" fill="steelblue"/>
+            <rect x="690" width="5" height="240" fill="red"/></svg></div>""")
+        image, measured = await capture_chart(self.page, URL)
+        self.assertEqual((measured.width, measured.height), (700, 240))
+        with Image.open(BytesIO(image)) as decoded:
+            self.assertGreater(decoded.getpixel((692, 120))[0], 150)
+
+    async def test_visible_external_frame_is_rejected(self):
+        await self.page.route('https://example.com/**', lambda route: route.fulfill(
+            content_type='text/html', body=chart_html('240')))
+        await self.route('<iframe src="https://example.com/chart"></iframe>')
+        with self.assertRaisesRegex(ChartCaptureError, 'Unsupported or inaccessible.*example.com'):
+            await capture_chart(self.page, URL)
+
+    async def test_plot_labels_outside_viewport_are_not_silently_clipped(self):
+        await self.route("""<!doctype html><style>body{margin:0}svg{display:block}</style>
+            <div id="graphic"><svg width="700" height="240">
+            <rect width="700" height="240" fill="steelblue"/>
+            <text x="20" y="40" text-anchor="end">Long country name</text></svg></div>""")
+        with self.assertRaisesRegex(ChartCaptureError, 'Visible plot labels exceed'):
+            await capture_chart(self.page, URL)
+
+    async def test_fully_offscreen_axis_ticks_do_not_block_capture(self):
+        html = chart_html('240').replace('</svg>',
+            '<text x="-200" y="40" text-anchor="end">Old date tick</text></svg>')
+        await self.route(html)
+        await capture_chart(self.page, URL)
+
+    async def test_navigation_network_error_is_an_explicit_chart_failure(self):
+        await self.page.route('https://www.ons.gov.uk/**', lambda route: route.abort('failed'))
+        with self.assertRaisesRegex(ChartCaptureError, 'Navigation failed:.*net::'):
+            await capture_chart(self.page, URL)
+
+    async def test_blank_iframe_plot_is_not_masked_by_successful_sibling(self):
+        documents = {
+            URL: """<!doctype html><style>
+                body{margin:0}iframe{display:block;border:0;width:700px;height:300px}</style>
+                <iframe src="./good.html"></iframe><iframe src="./blank.html"></iframe>""",
+            URL.replace('index.html', 'good.html'): chart_html('240'),
+            URL.replace('index.html', 'blank.html'): chart_html('240').replace(
+                'fill="steelblue"', 'fill="white"').replace('stroke="black"', 'stroke="white"'),
+        }
+        await self.page.route('https://www.ons.gov.uk/**', lambda route: route.fulfill(
+            content_type='text/html', body=documents[route.request.url]))
+        with self.assertRaisesRegex(ChartCaptureError, 'blank plot'):
+            await capture_chart(self.page, URL)
+
     async def test_overflow_and_failed_render_are_explicit(self):
         with patch('ons_screenshots.READINESS_TIMEOUT_MS', 1000):
             for html in (
@@ -468,9 +577,9 @@ class BrowserTests(unittest.IsolatedAsyncioTestCase):
                 with self.subTest(html=html[:40]):
                     await self.page.unroute_all()
                     await self.route(html)
-                    with self.assertRaises((ChartCaptureError, PlaywrightTimeoutError)) as caught:
+                    with self.assertRaises(ChartCaptureError) as caught:
                         await measure_chart(self.page, URL, 700)
-                    self.assertRegex(str(caught.exception), 'overflow|exceed|Timeout')
+                    self.assertRegex(str(caught.exception), 'overflow|exceed|Plot discovery timed out')
 
 
 class PersistenceTests(unittest.IsolatedAsyncioTestCase):
@@ -519,6 +628,28 @@ class PersistenceTests(unittest.IsolatedAsyncioTestCase):
             with patch('ons_screenshots.write_image', side_effect=OSError('disk full')):
                 with self.assertRaisesRegex(OSError, 'disk full'):
                     await capture_screenshots([publication()], settings('all'), self.folder)
+        self.assertFalse((self.folder / 'index.json').exists())
+
+    async def test_browser_startup_and_disconnection_remain_fatal(self):
+        with patch('playwright.async_api.BrowserType.launch',
+                   AsyncMock(side_effect=PlaywrightError('browser startup failed'))):
+            with self.assertRaisesRegex(PlaywrightError, 'browser startup failed'):
+                await capture_screenshots([publication()], settings('all'), self.folder)
+
+        async def disconnected(page, url):
+            await page.context.browser.close()
+            raise PlaywrightError('browser disconnected')
+
+        with patch('ons_screenshots.capture_chart', disconnected):
+            with self.assertRaisesRegex(PlaywrightError, 'browser disconnected'):
+                await capture_screenshots([publication()], settings('all'), self.folder)
+        self.assertFalse((self.folder / 'index.json').exists())
+
+    async def test_unexpected_browser_evaluation_errors_are_fatal(self):
+        with patch('ons_screenshots.capture_chart', AsyncMock(
+                side_effect=PlaywrightError('Page.evaluate: TypeError: broken capture code'))):
+            with self.assertRaisesRegex(PlaywrightError, 'broken capture code'):
+                await capture_screenshots([publication()], settings('all'), self.folder)
         self.assertFalse((self.folder / 'index.json').exists())
 
     async def test_url_variants_keep_separate_images_and_stable_index_names(self):
@@ -587,11 +718,7 @@ class PersistenceTests(unittest.IsolatedAsyncioTestCase):
                     patch('catalogue.prepare_catalogue', return_value=None), \
                     patch('catalogue.write_json_files', writes), \
                     patch('catalogue.capture_screenshots', capture):
-                if failed:
-                    with self.assertRaises(ScreenshotFailures):
-                        await catalogue.main()
-                else:
-                    await catalogue.main()
+                await catalogue.main()
             writes.assert_called_once_with([])
             capture.assert_awaited_once_with(records, config['screenshots'])
             client.session.close.assert_called_once()

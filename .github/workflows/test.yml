@@ -54,11 +54,9 @@ jobs:
       run: python -m playwright install --with-deps chromium
     - name: Run pipeline
       id: pipeline
-      continue-on-error: true
       run: |
         python -u catalogue.py
     - name: Commit and push
-      if: steps.pipeline.outcome == 'success' || (steps.pipeline.outputs.screenshots_completed == 'true' && steps.pipeline.outputs.screenshots_failed > 0)
       run: |-
         git config user.name "Automated"
         git config user.email "actions@users.noreply.github.com"
@@ -88,8 +86,3 @@ jobs:
         timestamp=$(date -u)
         git commit -m "${timestamp}"
         git push
-    - name: Report pipeline failure
-      if: always() && steps.pipeline.outcome == 'failure'
-      run: |
-        echo "::error::Pipeline failed. Expected screenshot failures are listed in the pipeline log; any successful captures were saved before failure."
-        exit 1

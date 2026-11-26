@@ -138,10 +138,10 @@ the script does not change it automatically.
 10. If screenshots is enabled, select publications from the final cache and
   capture unique eligible chart URLs. Persist successful JPGs and the merged
   screenshot index, log a consolidated failure summary and close browser resources.
-11. Report the current screenshot result to Actions, then raise if captures
-  failed. Close the HTTP session even on failure. Actions commits expected
-  partial screenshot results before marking the run failed; fatal pipeline
-  errors do not take that commit path.
+11. Report the current screenshot counts and per-chart warnings to Actions.
+  Close the HTTP session even on failure. Actions commits completed runs,
+  including partial screenshot results, without failing solely for individual
+  capture failures. Fatal pipeline errors still fail the run and skip committing.
 
 ### Screenshot Capture and Linking
 
@@ -155,8 +155,10 @@ the common ancestor of chart panels, legends, controls, source and notes; fall
 back to the visualisation page body when no suitable div contains them. Preserve
 padding and all visible contents, including interactive controls and attribution.
 Hidden panels remain hidden; this does not enumerate interactive states.
-Unknown layouts, overflowing content, blank plots, script errors and
-unstable layouts/pixels are explicit per-chart failures.
+Unknown layouts, unresolved overflowing content, blank plots, script errors and
+unstable layouts/pixels are explicit per-chart failures reported as warnings.
+They retain the previous image and success metadata, if present; they are not
+recorded as successful captures.
 
 Use a fixed 700px viewport width and save a 700px-wide JPEG at the full natural
 container height. There is no height target or responsive-width search. Preserve
@@ -166,6 +168,17 @@ in full, including content below the browser viewport. Reload only at the fixed
 width to warm fonts and compare stable layouts. Measure and validate the final
 JPEG, recording actual dimensions without a target-height flag. Old index entries
 with narrower widths and `target_reached` remain readable until recaptured.
+Before final measurement, allow capture-only wrapping of overflowing row-based
+flex chart panels when each individual panel fits. Do not scale or hide contents.
+Visible overflow can use a containing ancestor that still fits the viewport.
+Reject source SVG labels outside the viewport rather than silently clipping them.
+Inspect visible same-origin ONS iframes recursively, expanding their heights for
+full content and translating child plot coordinates into the top-level capture.
+Capture the complete dashboard, with child-frame readiness and blankness checks,
+not independent frame images. Ignore hidden/helper frames and report visible
+external/inaccessible frames as unsupported. Round fractional capture bounds
+outward and reserve document-edge space before capturing, rather than accepting
+an undersized/clipped image.
 Measure the whole captured container, not only the SVG/canvas. Check blankness
 using the plot surfaces so non-empty legends/source cannot mask a blank chart.
 Track MapLibre/Mapbox constructors before navigation to observe renderer/style/tile
