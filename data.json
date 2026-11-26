@@ -51,11 +51,11 @@
                         "chart_features": []
                   }
             ],
+            "series": "Domestic abuse victim characteristics, England and Wales",
+            "latest": true,
             "theme": "peoplepopulationandcommunity",
             "topic": "crimeandjustice",
-            "subtopic": null,
-            "series": "Domestic abuse victim characteristics, England and Wales",
-            "latest": true
+            "subtopic": null
       },
       {
             "doc_uri": "https://www.ons.gov.uk/peoplepopulationandcommunity/crimeandjustice/bulletins/domesticabuseinenglandandwalesoverview/november2026",
@@ -128,11 +128,11 @@
                         "chart_features": []
                   }
             ],
+            "series": "Domestic abuse in England and Wales overview",
+            "latest": true,
             "theme": "peoplepopulationandcommunity",
             "topic": "crimeandjustice",
-            "subtopic": null,
-            "series": "Domestic abuse in England and Wales overview",
-            "latest": true
+            "subtopic": null
       },
       {
             "doc_uri": "https://www.ons.gov.uk/economy/economicoutputandproductivity/productivitymeasures/bulletins/regionalandsubregionallabourproductivityuk/2024",
@@ -184,11 +184,11 @@
                         "chart_features": []
                   }
             ],
+            "series": "Regional and subregional labour productivity, UK",
+            "latest": true,
             "theme": "economy",
             "topic": "economicoutputandproductivity",
-            "subtopic": "productivitymeasures",
-            "series": "Regional and subregional labour productivity, UK",
-            "latest": true
+            "subtopic": "productivitymeasures"
       },
       {
             "doc_uri": "https://www.ons.gov.uk/economy/nationalaccounts/satelliteaccounts/bulletins/householdsatelliteaccountuk/2024andprovisional2025estimates",
@@ -245,11 +245,11 @@
                         "chart_features": []
                   }
             ],
+            "series": "Household Satellite Account, UK: 2024 (and provisional 2025) estimates",
+            "latest": true,
             "theme": "economy",
             "topic": "nationalaccounts",
-            "subtopic": "satelliteaccounts",
-            "series": "Household Satellite Account, UK: 2024 (and provisional 2025) estimates",
-            "latest": true
+            "subtopic": "satelliteaccounts"
       },
       {
             "doc_uri": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/articles/newinsightsonlabourmarketdynamicsfromuklinkedemployeremployeedataleed/2026",
